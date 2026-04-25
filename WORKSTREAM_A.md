@@ -70,7 +70,7 @@ Each persona JSON must have (matching PersonaProfile Pydantic model exactly):
 
 All files go in `backend/data/strategies/`. Run `validate_data.py` after each.
 
-- [ ] **A3.1** `strategy_authority_expert.json` — Cialdini Ch. 6
+- [x] **A3.1** `strategy_authority_expert.json` — Cialdini Ch. 6
 - [ ] **A3.2** `strategy_social_proof.json` — Cialdini Ch. 3
 - [ ] **A3.3** `strategy_personal_narrative.json` — Green & Brock 2000 Narrative Transportation Theory
 - [ ] **A3.4** `strategy_statistical_logical.json` — Aristotelian logos
