@@ -58,6 +58,28 @@ describe('PublicConversation', () => {
     expect(screen.getByText(/Opening with a personal story/i)).toBeInTheDocument()
   })
 
+  it('shows pivotal badge for a pivotal turn', () => {
+    render(<PublicConversation turns={turns} currentTurn={0} strategyDisplayName="Personal Narrative" personaDisplayName="Karen M." />)
+    expect(screen.getByTestId('pivotal-badge-1')).toBeInTheDocument()
+  })
+
+  it('does not show pivotal badge for non-pivotal turn', () => {
+    render(<PublicConversation turns={turns} currentTurn={1} strategyDisplayName="Personal Narrative" personaDisplayName="Karen M." />)
+    expect(screen.queryByTestId('pivotal-badge-2')).not.toBeInTheDocument()
+  })
+
+  it('calls onPivotalClick when pivotal turn is clicked', async () => {
+    const { default: userEvent } = await import('@testing-library/user-event')
+    const user = userEvent.setup({ delay: null })
+    const onPivotalClick = vi.fn()
+    render(
+      <PublicConversation turns={turns} currentTurn={0} strategyDisplayName="Personal Narrative"
+        personaDisplayName="Karen M." onPivotalClick={onPivotalClick} />
+    )
+    await user.click(screen.getByTestId('turn-1'))
+    expect(onPivotalClick).toHaveBeenCalledWith(mockTurn1)
+  })
+
   it('previous turns show full persona response without typing', () => {
     render(<PublicConversation turns={turns} currentTurn={1} strategyDisplayName="Personal Narrative" personaDisplayName="Karen M." />)
     // Turn 1 persona response should be fully visible (it's a previous turn)

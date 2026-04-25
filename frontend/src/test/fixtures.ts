@@ -42,6 +42,10 @@ export const mockTurn1: ConversationTurn = {
   persuader_message: "Let me tell you about my neighbor Sarah.",
   persuader_strategy_note: "Opening with a personal story to lower defenses.",
   persona_output: mockPersonaTurnOutput,
+  is_pivotal: true,
+  color_category: 'genuine_persuasion',
+  stance_delta: -1.8,
+  intensity: 0.7,
 }
 
 export const mockTurn2: ConversationTurn = {
@@ -49,6 +53,7 @@ export const mockTurn2: ConversationTurn = {
   persuader_message: "People who push for RTO are those with the least to lose.",
   persuader_strategy_note: "Introducing a fairness/power frame.",
   persona_output: mockThreatTurnOutput,
+  is_pivotal: false,
 }
 
 export const mockNarrativeOutcome: StrategyOutcome = {
