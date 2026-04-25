@@ -11,6 +11,12 @@ vi.mock('../components/report/TrajectoryChart', () => ({
   ),
 }))
 
+vi.mock('../components/report/StrategyCard', () => ({
+  default: ({ outcome }: { outcome: { strategy_id: string } }) => (
+    <div data-testid={`strategy-card-${outcome.strategy_id}`} />
+  ),
+}))
+
 const user = userEvent.setup({ delay: null })
 
 const mockOnViewTranscript = vi.fn()
@@ -203,9 +209,9 @@ describe('ComparisonReport', () => {
     expect(screen.getByTestId('strategy-cards-section')).toBeInTheDocument()
   })
 
-  it('shows strategy card placeholder for each outcome', () => {
+  it('shows strategy card for each outcome', () => {
     renderReport()
-    expect(screen.getByTestId('strategy-card-placeholder-strategy_personal_narrative')).toBeInTheDocument()
-    expect(screen.getByTestId('strategy-card-placeholder-strategy_authority_expert')).toBeInTheDocument()
+    expect(screen.getByTestId('strategy-card-strategy_personal_narrative')).toBeInTheDocument()
+    expect(screen.getByTestId('strategy-card-strategy_authority_expert')).toBeInTheDocument()
   })
 })

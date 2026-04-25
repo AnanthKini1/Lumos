@@ -63,18 +63,18 @@ class TestStrategyDataQuality:
             f"{strategy_id}: academic_citation.primary_source must not be empty"
         )
 
-    def test_interviewer_prompt_minimum_length(self, strategy_id: str) -> None:
+    def test_persuader_prompt_minimum_length(self, strategy_id: str) -> None:
         strategy = load_strategy(strategy_id)
-        assert len(strategy.interviewer_system_prompt) >= MIN_PROMPT_LENGTH, (
-            f"{strategy_id}: interviewer_system_prompt too short "
-            f"(got {len(strategy.interviewer_system_prompt)} chars, need >= {MIN_PROMPT_LENGTH})"
+        assert len(strategy.persuader_system_prompt) >= MIN_PROMPT_LENGTH, (
+            f"{strategy_id}: persuader_system_prompt too short "
+            f"(got {len(strategy.persuader_system_prompt)} chars, need >= {MIN_PROMPT_LENGTH})"
         )
 
-    def test_interviewer_prompt_contains_required_slots(self, strategy_id: str) -> None:
+    def test_persuader_prompt_contains_required_slots(self, strategy_id: str) -> None:
         strategy = load_strategy(strategy_id)
         for slot in REQUIRED_TEMPLATE_SLOTS:
-            assert slot in strategy.interviewer_system_prompt, (
-                f"{strategy_id}: interviewer_system_prompt missing template slot '{slot}'"
+            assert slot in strategy.persuader_system_prompt, (
+                f"{strategy_id}: persuader_system_prompt missing template slot '{slot}'"
             )
 
     def test_predicted_effective_on_references_valid_personas(self, strategy_id: str) -> None:

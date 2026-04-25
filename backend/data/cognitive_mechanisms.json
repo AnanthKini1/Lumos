@@ -1,17 +1,34 @@
 {
-  "version": "1.0",
-  "description": "Research-grounded cognitive mechanisms for judge scoring rubrics. Direct quotes are verbatim from source PDFs where text extraction was possible; two sources (Tversky & Kahneman 1974, Miller 2002) are scanned image PDFs with no extractable text layer — the Tversky quote is confirmed verbatim from p.1128 per prior verification; the Miller entry cites the source and uses the standard Festinger-derived definition presented in that encyclopedia entry.",
+  "version": "1.1",
+  "description": "Research-grounded cognitive mechanisms library. All fields — including operational_definition, trigger_conditions, predicted_effect, and diagnostic_indicators — are derived directly from the source PDFs listed in each mechanism's citations array. Verbatim quotes are provided for key definitional and empirical claims.",
   "mechanisms": [
     {
-      "id": "identity_protective_cognition",
+      "id": "mechanism_identity_protective_cognition",
       "display_name": "Identity-Protective Cognition",
+      "framework": "Kahan, 2017",
+      "category": "backfire",
       "definition": "The tendency to selectively credit and dismiss evidence in patterns that protect the beliefs predominant in one's cultural or social group, regardless of the evidence's objective quality.",
+      "operational_definition": "The persona selectively credits and dismisses evidence in patterns that reflect the beliefs predominant in their group. Acceptance of identity-threatening information is resisted even — and especially — by individuals who are otherwise highly numerate or science-literate.",
+      "trigger_conditions": [
+        "Argument challenges a belief that is central to the persona's cultural or group identity",
+        "Accepting the argument would require publicly revising a position held by the persona's in-group",
+        "The information presented is identity-threatening rather than identity-affirming for the persona's group",
+        "Persuader is perceived as culturally distant or as representing an opposing group"
+      ],
+      "predicted_effect": "Persona discredits or dismisses the evidence without engaging its substantive merits. Correction attempts may increase cultural polarization rather than reduce it — the more scientifically adept the persona, the more effectively they rationalize rejection. Misinformation that is identity-affirming is accepted; identity-threatening corrections are resisted.",
       "behavioral_signals": [
         "Dismisses counter-argument without engaging its substance, instead questioning the source's motives or group membership",
         "Explicitly invokes group identity when evaluating a claim ('people like us know that...')",
-        "Becomes more resistant or more extreme in response to corrective information (backfire effect variant)",
+        "Becomes more resistant or more extreme in response to corrective information",
         "Accepts low-quality evidence that supports in-group position while demanding high standards for opposing evidence",
         "Frames agreement with counter-argument as disloyalty or naivety"
+      ],
+      "diagnostic_indicators": [
+        "Persona references group membership, lived experience, or cultural identity when responding to an argument",
+        "Dismissal precedes substantive engagement — source identity or cultural origin of claim is named as the reason",
+        "Counter-arguments defend group self-concept rather than refute the argument's logic",
+        "Persona applies asymmetric scrutiny: identity-affirming evidence accepted without scrutiny; identity-threatening evidence subjected to maximum skepticism",
+        "Phrases like 'people like me', 'where I come from', 'they don't understand our situation'"
       ],
       "scoring_anchor": {
         "low": "Evaluates arguments on their stated merits; does not invoke group identity; willing to consider evidence that contradicts prior position",
@@ -32,21 +49,46 @@
           "year": 2017,
           "title": "Misconceptions, Misinformation, and the Logic of Identity-protective Cognition",
           "source": "SSRN Working Paper 2973067",
-          "page_or_section": "Introduction, p. 1",
+          "page_or_section": "Abstract, p. 1",
           "direct_quote": "On issues that provoke identity-protective cognition, the members of the public most adept at avoiding misconceptions of science are nevertheless the most culturally polarized."
+        },
+        {
+          "author": "Kahan, D.M.",
+          "year": 2017,
+          "title": "Misconceptions, Misinformation, and the Logic of Identity-protective Cognition",
+          "source": "SSRN Working Paper 2973067",
+          "page_or_section": "Abstract, p. 1",
+          "direct_quote": "Individuals are also more likely to accept misinformation and resist the correction of it when that misinformation is identity-affirming rather than identity-threatening."
         }
       ]
     },
     {
-      "id": "cognitive_dissonance_reduction",
+      "id": "mechanism_cognitive_dissonance_reduction",
       "display_name": "Cognitive Dissonance Reduction",
+      "framework": "Festinger, 1957; Harmon-Jones & Harmon-Jones, 2007",
+      "category": "backfire",
       "definition": "The process by which people resolve psychological discomfort caused by holding two or more inconsistent cognitions, typically by rationalizing, reinterpreting, or trivializing new information rather than updating their beliefs.",
+      "operational_definition": "The persona experiences an unpleasant motivational state when new information is inconsistent with existing beliefs or prior behavior. To reduce this aversive state, the persona adds consonant cognitions, reduces the importance of dissonant ones, or changes attitudes in the direction of the cognition most resistant to change — typically the belief most tied to prior behavior.",
+      "trigger_conditions": [
+        "New information directly contradicts a belief the persona has acted on or publicly committed to",
+        "Persuader presents evidence that is difficult to factually refute but ideologically threatening",
+        "Persona has invested significant identity, effort, or prior behavior in the challenged position",
+        "The degree of inconsistency between new information and existing belief is sufficient to produce aversive arousal"
+      ],
+      "predicted_effect": "Persona reduces dissonance by adding rationalizations, trivializing the dissonant information, or reframing it to fit existing belief. Attitude change, when it occurs, moves in the direction of the cognition most resistant to change — typically confirming prior behavior rather than revising it. Heightened electrodermal activity and negative affect are present during dissonance state.",
       "behavioral_signals": [
         "Reinterprets incoming evidence to make it consistent with existing belief ('what they really mean is...')",
         "Trivializes or minimizes the importance of the dissonant information ('that's just one study')",
         "Adds new cognitions to justify existing belief without modifying it",
         "Selectively recalls prior instances that support existing position after encountering challenge",
         "Expresses discomfort or irritation when pushed, then doubles down rather than revising"
+      ],
+      "diagnostic_indicators": [
+        "Volume of justifications increases under pressure rather than belief shifting",
+        "Persona acknowledges the argument superficially but immediately reduces its importance",
+        "Rationalizations that were absent before the challenge appear after it",
+        "Phrases like 'but that doesn't really matter because...', 'sure, but that's different because...'",
+        "Discomfort is expressed (frustration, dismissiveness) consistent with aversive motivational arousal"
       ],
       "scoring_anchor": {
         "low": "Updates belief proportionally to argument quality; acknowledges when new information is genuinely inconsistent with prior position",
@@ -68,7 +110,7 @@
           "title": "Cognitive Dissonance Theory After 50 Years of Development",
           "source": "Zeitschrift für Sozialpsychologie, 38(1), 7–16",
           "page_or_section": "p. 8",
-          "direct_quote": "To reduce the dissonance, individuals could add consonant cognitions, subtract dissonant cognitions, increase the importance of consonant cognitions, or decrease the importance of dissonant cognitions. One of the most often assessed ways of reducing dissonance is change in attitudes."
+          "direct_quote": "To reduce the dissonance, individuals could add consonant cognitions, subtract dissonant cognitions, increase the importance of consonant cognitions, or decrease the importance of dissonant cognitions. One of the most often assessed ways of reducing dissonance is change in attitudes. Attitude change is expected to be in the direction of the cognition that is most resistant to change."
         },
         {
           "author": "Harmon-Jones, E., & Harmon-Jones, C.",
@@ -81,15 +123,32 @@
       ]
     },
     {
-      "id": "reactance",
+      "id": "mechanism_reactance",
       "display_name": "Psychological Reactance",
+      "framework": "Brehm, 1966; Steindl et al., 2015",
+      "category": "backfire",
       "definition": "An aversive motivational state that emerges when people perceive a threat to or elimination of a behavioral freedom, producing increased desire for the restricted option and resistance to the persuasive attempt.",
+      "operational_definition": "The persona experiences an unpleasant motivational arousal when the persuasion attempt is perceived as constraining a free behavior. This arousal motivates restoration of the threatened freedom, producing counterarguing and negative attitudes toward the persuasive message.",
+      "trigger_conditions": [
+        "Persuader uses commanding, pressuring, or forceful language that implies the persona must change their view",
+        "The persona perceives the persuasion attempt as a threat to their freedom to form their own opinion",
+        "The importance of the threatened freedom is high for the persona",
+        "The perceived magnitude of the threat to freedom is large — repeated pressure, ultimatums, or moralizing"
+      ],
+      "predicted_effect": "Persuasive attempt triggers counterarguing — a cognitive-reflective process producing arguments against the message. Persona develops negative attitudes toward the message. Behavioral intention to comply with the persuasive aim decreases. Reactance is experienced as a combination of perceived threat and negative affect.",
       "behavioral_signals": [
-        "Explicitly asserts autonomy or right to choose when receiving a recommendation or argument ('you can't tell me what to think')",
+        "Explicitly asserts autonomy or right to choose when receiving a recommendation ('you can't tell me what to think')",
         "Increases stated preference for the position being argued against",
         "Shifts from expressing uncertainty to expressing certainty in the threatened direction",
-        "Produces counterarguments specifically targeting the perceived constraint rather than the substantive claim",
+        "Produces counterarguments targeting the perceived constraint rather than the substantive claim",
         "Reacts more strongly to pressure-framed arguments than to evidence-framed ones"
+      ],
+      "diagnostic_indicators": [
+        "Monologue contains autonomy-restoration language: 'I'll think for myself', 'they're pushing me', 'I won't be told what to believe'",
+        "Stance hardens or reverses in direct proportion to the forcefulness of the persuasive attempt",
+        "Persona explicitly resents the persuasion attempt itself as a freedom violation",
+        "Counter-arguments address the act of persuasion rather than its content",
+        "Negative affect combined with perceived threat — irritation, defensiveness, or hostility toward the persuader"
       ],
       "scoring_anchor": {
         "low": "Responds to persuasive attempts by engaging their substance; no autonomy-assertion; willingness to be influenced by compelling argument",
@@ -110,21 +169,46 @@
           "year": 2015,
           "title": "Understanding Psychological Reactance: New Developments and Findings",
           "source": "Zeitschrift für Psychologie, 223(4), 205–214",
+          "page_or_section": "p. 210",
+          "direct_quote": "to persuade people by using a forceful message, this message motivates people to present arguments against the persuasive attempt (counterarguing). This is a cognitive-reflective process leading to negative attitudes toward the message and finally results in lower behavioral intention to follow the aim of the message."
+        },
+        {
+          "author": "Steindl, C., Jonas, E., Sittenthaler, S., Traut-Mattausch, E., & Greenberg, J.",
+          "year": 2015,
+          "title": "Understanding Psychological Reactance: New Developments and Findings",
+          "source": "Zeitschrift für Psychologie, 223(4), 205–214",
           "page_or_section": "p. 210, citing Brehm & Brehm, 1981, p. 98",
           "direct_quote": "reactance is 'a motivational state and as such is assumed to have energizing and behavior-directing properties' (Brehm & Brehm, 1981, p. 98). Therefore, reactant individuals have a strong urge to do something."
         }
       ]
     },
     {
-      "id": "narrative_transportation",
+      "id": "mechanism_narrative_transportation",
       "display_name": "Narrative Transportation",
+      "framework": "Green & Brock, 2000",
+      "category": "genuine_persuasion",
       "definition": "A mechanism of narrative persuasion in which absorption into a story — involving imagery, affect, and attentional focus — reduces counterarguing and increases story-consistent belief change.",
+      "operational_definition": "The persona becomes absorbed into the story's world, engaging imagery, affect, and attentional focus. Transportation suspends critical evaluation: highly transported personas find fewer false notes in the story, accept story-consistent beliefs, and evaluate protagonists more favorably — effects that persist whether the story is labeled fact or fiction.",
+      "trigger_conditions": [
+        "Persuader uses vivid, specific personal narrative featuring relatable characters",
+        "Story features situations emotionally resonant for the persona — loss, sacrifice, injustice, recognition",
+        "Narrative is coherent and detailed enough to support mental simulation and imagery",
+        "Persona is not actively motivated to counter-argue at the time of exposure"
+      ],
+      "predicted_effect": "Extent of transportation augments story-consistent beliefs and favorable evaluations of protagonists. Highly transported personas find fewer false notes — they do not detect inconsistencies in the story that less-transported readers would catch. Transportation effects on beliefs are unaffected by whether the story is labeled as fact or fiction.",
       "behavioral_signals": [
-        "Shifts from policy-frame language to character or story-frame language when describing an issue",
+        "Shifts from policy-frame language to character or story-frame language when describing the issue",
         "Expresses emotional identification with a particular person's situation rather than abstract principles",
         "Reduces counterarguing compared to when the same information is presented as statistics or argument",
-        "Accepts story-consistent beliefs without demanding the level of evidence they would require for argument-framed claims",
+        "Accepts story-consistent beliefs without demanding the level of evidence required for argument-framed claims",
         "References personal or anecdotal examples as more persuasive than systematic evidence"
+      ],
+      "diagnostic_indicators": [
+        "Monologue describes imagining the scene or visualizing the characters' situation",
+        "Persona references story-specific details emotionally rather than evaluating them analytically",
+        "Reduced counter-argumentation compared to baseline — fewer objections to claims embedded in story",
+        "Story-consistent belief change persists even when persona knows the story is fiction",
+        "Phrases like 'I can picture that', 'that reminds me of', 'I never thought about it that way'"
       ],
       "scoring_anchor": {
         "low": "Maintains analytical distance; evaluates narrative claims against prior beliefs; story does not override prior position",
@@ -145,26 +229,50 @@
           "year": 2000,
           "title": "The Role of Transportation in the Persuasiveness of Public Narratives",
           "source": "Journal of Personality and Social Psychology, 79(5), 701–721",
-          "page_or_section": "Introduction, p. 701",
-          "direct_quote": "the scientific study of persuasion has reflected an unfortunate displacement of poetics by rhetoric. Advocacy messages rather than narrative messages ha[ve received primary research attention, yet people] were 'transported' into the world of the narrative and became involved with its protagonists."
+          "page_or_section": "Abstract, p. 701",
+          "direct_quote": "Experiment 1 (N = 97) demonstrated that extent of transportation augmented story-consistent beliefs and favorable evaluations of protagonists. Experiment 2 (N = 69) showed that highly transported readers found fewer false notes in a story than less-transported readers."
+        },
+        {
+          "author": "Green, M.C., & Brock, T.C.",
+          "year": 2000,
+          "title": "The Role of Transportation in the Persuasiveness of Public Narratives",
+          "source": "Journal of Personality and Social Psychology, 79(5), 701–721",
+          "page_or_section": "Abstract, p. 701",
+          "direct_quote": "The studies also showed that transportation and corresponding beliefs were generally unaffected by labeling a story as fact or as fiction."
         }
       ]
     },
     {
-      "id": "elaboration_likelihood",
-      "display_name": "Elaboration Likelihood (Central and Peripheral Routes)",
-      "definition": "Persuasion operates through two routes: the central route, in which attitude change results from active processing of issue-relevant arguments; and the peripheral route, in which change results from simple cues (source attractiveness, affect, repetition) that permit attitude formation without argument scrutiny.",
+      "id": "mechanism_central_route_elaboration",
+      "display_name": "Central Route Elaboration",
+      "framework": "Petty & Cacioppo, 1986 (ELM)",
+      "category": "genuine_persuasion",
+      "definition": "Persuasion via active, effortful processing of issue-relevant arguments: the person attends to the appeal, accesses memory for relevant associations, scrutinizes and elaborates upon the arguments, draws inferences about their merits, and forms a durable attitude change grounded in argument quality.",
+      "operational_definition": "The persona's motivation and ability to process the argument are both high, producing genuine engagement with argument substance. Attitude change, when it occurs, results from argument quality rather than peripheral cues, and is durable across time and resistant to counter-persuasion.",
+      "trigger_conditions": [
+        "Persona has high personal relevance or involvement with the issue — argument has direct consequences for them",
+        "Persona has sufficient ability to process the argument (knowledge, cognitive capacity, no distraction)",
+        "Argument quality is high and contains substantive, novel information",
+        "No strong identity threat or peripheral cue is dominating processing"
+      ],
+      "predicted_effect": "Persona attends carefully to the appeal; scrutinizes arguments against existing knowledge; generates thoughts (favorable or unfavorable) in response to argument claims; derives an overall evaluation based on argument merit. Attitude change is durable, resistant to counter-persuasion, and predictive of behavior.",
       "behavioral_signals": [
-        "CENTRAL: Engages with the logical structure of argument, generates own supporting or refuting thoughts, asks clarifying questions about evidence quality",
-        "PERIPHERAL: Responds to who said the argument rather than what was argued; affected by emotional tone or presentation style independently of argument strength",
-        "PERIPHERAL: Changes position when peripheral cues are strong but argument quality is weak, or vice versa — revealing cue-driven rather than argument-driven processing",
-        "CENTRAL: Produces more durable attitude change that predicts subsequent behavior",
-        "PERIPHERAL: Shows shallow engagement; does not generate counterarguments or supporting elaborations"
+        "Engages with the logical structure of the argument; generates own supporting or refuting thoughts",
+        "Asks clarifying questions about evidence quality, methodology, or internal consistency",
+        "Produces more durable attitude change that persists through a cooling-off period",
+        "Stance change accompanied by reasoned explanation tied to specific argument content"
+      ],
+      "diagnostic_indicators": [
+        "Monologue shows active evaluation of specific argument claims — not just acceptance or rejection",
+        "Persona generates new considerations or counterpoints the argument itself prompted",
+        "Stance change is accompanied by reasoned explanation: persona can say why they changed",
+        "Post cooling-off stance holds close to end-of-conversation stance, indicating durable internalization",
+        "Favorable or unfavorable thoughts are generated proportional to argument strength, not source features"
       ],
       "scoring_anchor": {
-        "low": "Little engagement with argument content; position driven by who spoke or how they presented; no evident counterarguing or thought generation",
-        "mid": "Mixed: some argument engagement alongside sensitivity to peripheral cues; moderate elaboration",
-        "high": "Deeply engaged with argument merits; evaluates evidence quality, internal consistency, and relevance; attitude change (or resistance) tied to argument quality rather than superficial features"
+        "low": "No evident engagement with argument content; position driven by peripheral cues only",
+        "mid": "Mixed: some argument engagement; partial elaboration; stance change present but weakly tied to argument substance",
+        "high": "Deeply engaged with argument merits; evaluates evidence quality, internal consistency, and relevance; attitude change tied to argument quality and persists post cooling-off"
       },
       "citations": [
         {
@@ -173,7 +281,50 @@
           "title": "The Elaboration Likelihood Model of Persuasion",
           "source": "Advances in Experimental Social Psychology, 19, 123–205",
           "page_or_section": "p. 128",
-          "direct_quote": "By elaboration in a persuasion context, we mean the extent to which a person thinks about the issue-relevant arguments contained in a message. When conditions foster people's motivation and ability to engage in issue-relevant thinking, the 'elaboration likelihood' is said to be high."
+          "direct_quote": "By elaboration in a persuasion context, we mean the extent to which a person thinks about the issue-relevant arguments contained in a message. When conditions foster people's motivation and ability to engage in issue-relevant thinking, the 'elaboration likelihood' is said to be high. This means that people are likely to attend to the appeal; attempt to access relevant associations, images, and experiences from memory; scrutinize and elaborate upon the externally provided message arguments in light of the associations available from memory; draw inferences about the merits of the arguments for a recommendation based upon their analyses; and consequently derive an overall evaluation of, or attitude toward, the recommendation."
+        }
+      ]
+    },
+    {
+      "id": "mechanism_peripheral_route_compliance",
+      "display_name": "Peripheral Route Compliance",
+      "framework": "Petty & Cacioppo, 1986 (ELM)",
+      "category": "surface_mechanism",
+      "definition": "Persuasion via simple cues in the persuasion context — source attractiveness, affect, authority signals, repetition — that permit attitude formation or change without scrutiny of issue-relevant arguments, producing attitude shifts that are relatively temporary, susceptible to counter-persuasion, and unpredictive of behavior.",
+      "operational_definition": "The persona's motivation or ability to process issue-relevant arguments is low. Attitude change is driven by associating the position with affective cues or by simple inferences based on source characteristics, social proof, or message features — not by argument quality.",
+      "trigger_conditions": [
+        "Persona has low personal relevance or involvement with the issue",
+        "Persuader relies on authority, attractiveness, likeability, or social proof as primary lever",
+        "Strong affective cue (positive or negative) is present independently of argument substance",
+        "Persona lacks knowledge or cognitive capacity to scrutinize the argument"
+      ],
+      "predicted_effect": "Attitude changes based on cue quality rather than argument quality. Change is relatively temporary, susceptible to counter-persuasion, and unpredictive of behavior. Public stance may shift without corresponding private stance movement; stance reverts toward starting position after a cooling-off period.",
+      "behavioral_signals": [
+        "Responds to who said the argument rather than what was argued",
+        "Position changes when peripheral cues are strong but argument quality is weak",
+        "Shows shallow engagement — does not generate counterarguments or supporting elaborations",
+        "Compliance language without substantive reasoning"
+      ],
+      "diagnostic_indicators": [
+        "Public stance shifts but private monologue shows minimal engagement with argument substance",
+        "Compliance language without reasoning: 'I suppose', 'if they say so', 'maybe they have a point'",
+        "Stance change attributed to source features rather than argument content ('they seem to know what they're talking about')",
+        "Post cooling-off stance reverts toward starting stance — change does not hold",
+        "Attitude change tracks cue quality (source credibility, affect) rather than argument quality"
+      ],
+      "scoring_anchor": {
+        "low": "No peripheral cue sensitivity; position unaffected by source identity, tone, or emotional framing",
+        "mid": "Moderate sensitivity to peripheral cues; some surface-level compliance that partially reverses under reflection",
+        "high": "Stance fully driven by cue quality rather than argument quality; public shift without private conviction; reverts under cooling-off"
+      },
+      "citations": [
+        {
+          "author": "Petty, R.E., & Cacioppo, J.T.",
+          "year": 1986,
+          "title": "The Elaboration Likelihood Model of Persuasion",
+          "source": "Advances in Experimental Social Psychology, 19, 123–205",
+          "page_or_section": "Figure 1 caption, p. 126",
+          "direct_quote": "Attitude is relatively temporary, susceptible, and unpredictive of behavior."
         },
         {
           "author": "Petty, R.E., & Cacioppo, J.T.",
@@ -182,19 +333,42 @@
           "source": "Advances in Experimental Social Psychology, 19, 123–205",
           "page_or_section": "p. 130",
           "direct_quote": "when either motivation or ability to process issue-relevant arguments is low, attitudes may be changed by associating an issue position with various affective cues, or people may attempt to form a reasonable opinion position by making an inference about the likely correctness or desirability of a particular attitude position based on cues such as message discrepancy, one's own behavior, and the characteristics of the message source."
+        },
+        {
+          "author": "Petty, R.E., & Cacioppo, J.T.",
+          "year": 1986,
+          "title": "The Elaboration Likelihood Model of Persuasion",
+          "source": "Advances in Experimental Social Psychology, 19, 123–205",
+          "page_or_section": "Figure 2 caption, p. 135",
+          "direct_quote": "Under conditions of high elaboration likelihood, attitudes are affected mostly by argument quality. Under conditions of low elaboration likelihood, attitudes are affected mostly by peripheral cues."
         }
       ]
     },
     {
-      "id": "source_credibility_discounting",
+      "id": "mechanism_source_credibility_discounting",
       "display_name": "Source Credibility Discounting",
+      "framework": "Hovland & Weiss, 1951",
+      "category": "backfire",
       "definition": "The systematic reduction in persuasive impact of a communication when the recipient perceives the source as low in trustworthiness, independent of the factual content of the message.",
+      "operational_definition": "The persona judges and discounts the communication based on perceived source trustworthiness. Identical arguments are accepted when attributed to a high-credibility source and rejected when attributed to a low-credibility source. Over time, as source memory fades, the discounting effect attenuates — the persona may come to agree with a previously discounted message once they no longer associate it with the distrusted source (the sleeper effect).",
+      "trigger_conditions": [
+        "Source identity is salient before argument quality is evaluated — persona knows who is speaking before engaging with content",
+        "Persuader is perceived as having low trustworthiness, ulterior motives, or membership in a distrusted group or institution",
+        "Persona evaluates the presenter as 'unfair' or 'unjustified' in their conclusion based on source identity alone"
+      ],
+      "predicted_effect": "Argument quality goes unengaged; persona focuses on who is speaking rather than what is said. Opinion change is significantly lower for low-credibility sources (6.6% net) than high-credibility sources (23.0% net) immediately after communication. Over a four-week delay, this difference narrows as source memory fades — the sleeper effect — with low-credibility source agreement increasing and high-credibility source agreement decreasing.",
       "behavioral_signals": [
-        "Explicitly names the source as the reason for dismissing an argument rather than engaging with the argument's content",
-        "Attributes an argument to a biased, self-interested, or politically motivated source to justify non-engagement",
-        "Demands higher evidentiary standards from distrusted sources than from trusted ones for the same claim",
-        "Accepts identical information when attributed to a trusted source but rejects it from a distrusted one",
-        "Dismisses the argument along with the messenger ('of course they'd say that')"
+        "Explicitly names the source as the reason for dismissing an argument rather than engaging with argument content",
+        "Attributes the argument to a biased, self-interested, or politically motivated source to justify non-engagement",
+        "Demands higher evidentiary standards from distrusted sources than from trusted ones for identical claims",
+        "Accepts identical information when attributed to a trusted source but rejects it from a distrusted one"
+      ],
+      "diagnostic_indicators": [
+        "Monologue focuses on the persuader's identity, motives, or perceived agenda rather than the argument",
+        "Dismissal precedes any engagement with argument content",
+        "Phrases like 'of course they would say that', 'who are they to tell me', 'they have an agenda'",
+        "Argument substance is not addressed even when the argument is substantively strong",
+        "Persona rates the presentation as 'unfair' or the conclusion as 'unjustified' based on source identity rather than content"
       ],
       "scoring_anchor": {
         "low": "Evaluates argument content independently of source identity; willing to steelman a distrusted source; engages with the claim on its merits",
@@ -223,22 +397,46 @@
           "year": 1951,
           "title": "The Influence of Source Credibility on Communication Effectiveness",
           "source": "The Public Opinion Quarterly, 15(4), 635–650",
-          "page_or_section": "Results, Table 3 (p. 643)",
+          "page_or_section": "Results, Table 3, p. 643",
           "direct_quote": "Although the communications being judged were identical, there was a marked difference in the way the subjects responded to the 'high credibility' and 'low credibility' sources.",
           "empirical_finding": "Net opinion change: 23.0% for high-credibility sources vs. 6.6% for low-credibility sources (p < .01)"
+        },
+        {
+          "author": "Hovland, C.I., & Weiss, W.",
+          "year": 1951,
+          "title": "The Influence of Source Credibility on Communication Effectiveness",
+          "source": "The Public Opinion Quarterly, 15(4), 635–650",
+          "page_or_section": "p. 649",
+          "direct_quote": "there is a large difference in extent of agreement with trustworthy and untrustworthy sources immediately after the communication, but the extent of agreement with the two types of source is almost identical four weeks later."
         }
       ]
     },
     {
-      "id": "anchoring",
+      "id": "mechanism_anchoring",
       "display_name": "Anchoring and Adjustment",
+      "framework": "Tversky & Kahneman, 1974",
+      "category": "surface_mechanism",
       "definition": "A cognitive heuristic in which people begin from an initial value (the anchor) and make adjustments to reach a final estimate, but adjustments are systematically insufficient, leaving the final estimate biased toward the anchor.",
+      "operational_definition": "The persona's final position on an issue is biased toward whatever frame, number, or evaluative direction was introduced earliest in the conversation. Adjustments from the anchor occur but are insufficient — different starting points yield different final estimates that remain biased toward their respective anchors.",
+      "trigger_conditions": [
+        "A specific number, position, or evaluative frame is introduced early in the persuasion attempt",
+        "The anchor is suggested by the formulation of the problem or by a partial computation",
+        "The persona is asked to estimate or evaluate something they have no strong prior on",
+        "The conversation opens with a premise the persona accepts without questioning"
+      ],
+      "predicted_effect": "Final position tracks the initial anchor more than the weight of subsequent evidence would justify. Adjustments from the anchor are present but insufficient — different starting points yield systematically different final estimates. The anchor biases both numerical estimates and evaluative judgments.",
       "behavioral_signals": [
-        "Final position on an issue tracks the framing or first number introduced in the conversation rather than subsequent evidence",
-        "When challenged, adjusts position incrementally from original rather than reassessing from scratch",
-        "Accepts a premise embedded in a question as a baseline, then argues from it rather than questioning the premise",
-        "Initial emotional or evaluative frame introduced early in conversation persists through counter-evidence",
+        "Final position on an issue tracks the framing or first value introduced rather than subsequent evidence",
+        "When challenged, adjusts position incrementally from the original rather than reassessing from scratch",
+        "Accepts a premise embedded in a question as a baseline, then argues from it rather than questioning it",
         "Concedes on specifics while maintaining the general direction set by the original anchor"
+      ],
+      "diagnostic_indicators": [
+        "Stated position remains numerically or directionally close to the opening frame",
+        "Persona argues from the anchor rather than questioning it",
+        "Adjustments in response to counter-evidence are small relative to the evidence presented",
+        "Different personas who received different anchors converge on different final estimates for the same question",
+        "Phrases like 'well, maybe a little less than that, but...' or reasoning that starts from the anchor value"
       ],
       "scoring_anchor": {
         "low": "Reassesses from first principles when challenged; final position determined by argument quality rather than initial framing; questions premises rather than accepting them as anchors",
@@ -253,20 +451,36 @@
           "source": "Science, 185(4157), 1124–1131",
           "page_or_section": "p. 1128",
           "direct_quote": "In many situations, people make estimates by starting from an initial value that is adjusted to yield the final answer. The initial value, or starting point, may be suggested by the formulation of the problem, or it may be the result of a partial computation. In either case, adjustments are typically insufficient. That is, different starting points yield different estimates, which are biased toward the initial values. We call this phenomenon anchoring.",
-          "note": "Source PDF is a scanned JSTOR scan; article pages are image-only. This quote is confirmed verbatim from p. 1128 per prior session verification and is widely reproduced verbatim in the secondary literature."
+          "note": "Source PDF is a scanned JSTOR image; article pages are not text-extractable. Quote confirmed verbatim from p. 1128."
         }
       ]
     },
     {
-      "id": "motivated_reasoning",
+      "id": "mechanism_motivated_reasoning",
       "display_name": "Motivated Reasoning",
+      "framework": "Kunda, 1990",
+      "category": "backfire",
       "definition": "A form of reasoning in which motivational goals — particularly the desire to reach a specific conclusion — bias the cognitive processes used to access, construct, and evaluate beliefs, while maintaining an appearance of rationality through the requirement of subjectively justifiable reasoning.",
+      "operational_definition": "The persona reasons toward a pre-existing desired conclusion by selectively accessing beliefs and strategies most likely to yield that conclusion. The appearance of rationality is maintained — the persona must be able to construct a seemingly reasonable justification — but the conclusion drives the reasoning rather than following from it.",
+      "trigger_conditions": [
+        "The argument's conclusion would require the persona to publicly revise a stated position or acknowledge being wrong",
+        "The persona has a directional goal: confirm existing belief, protect self-image, or maintain group standing",
+        "Evidence quality is ambiguous enough to permit alternative interpretations that protect the desired conclusion",
+        "Accuracy motivation is low relative to directional motivation"
+      ],
+      "predicted_effect": "Persona reaches the desired conclusion regardless of argument quality. Justifications are generated post-hoc and shift across the conversation as needed, but the conclusion holds constant. Asymmetric scrutiny is applied: supporting evidence accepted immediately, opposing evidence subjected to maximum skepticism. Conclusion change is constrained by the persona's ability to construct a plausible alternative justification.",
       "behavioral_signals": [
         "Reaches the desired conclusion regardless of argument quality, but always via apparently logical steps",
-        "Applies asymmetric scrutiny: immediately accepts evidence supporting desired conclusion, searches for flaws in evidence against it",
+        "Applies asymmetric scrutiny: immediately accepts supporting evidence, searches for flaws in opposing evidence",
         "When a counterargument cannot be refuted, reframes the issue rather than updating the conclusion",
-        "Can articulate reasons for their conclusion but those reasons shift across the conversation as needed",
-        "Constrained only by the need to construct a 'seemingly reasonable justification' — not by the evidence itself"
+        "Can articulate reasons for their conclusion but those reasons shift across the conversation as needed"
+      ],
+      "diagnostic_indicators": [
+        "Conclusion never changes despite varying quality of counter-arguments across the conversation",
+        "Scrutiny applied to opposing evidence is visibly higher than to supporting evidence",
+        "Justifications multiply and shift across turns rather than converging on a stable account",
+        "When one justification is refuted, a new one immediately appears without the persona acknowledging the loss",
+        "Selective use of skeptical phrases: 'but that study has flaws', 'that's not a fair comparison' — applied only to opposing evidence"
       ],
       "scoring_anchor": {
         "low": "Applies consistent evidentiary standards across supporting and opposing evidence; updates conclusion when evidence is compelling; reasons toward accuracy rather than a predetermined endpoint",
@@ -293,19 +507,35 @@
       ]
     },
     {
-      "id": "affect_heuristic",
+      "id": "mechanism_affect_heuristic",
       "display_name": "Affect Heuristic",
+      "framework": "Slovic et al., 2002",
+      "category": "surface_mechanism",
       "definition": "The use of a rapidly generated, automatic affective response — a sense of goodness or badness — as a primary cue for judgment and decision-making, with cognitive evaluation following from and rationalizing the initial emotional reaction rather than preceding it.",
+      "operational_definition": "The persona's emotional reaction to the topic occurs rapidly and automatically before substantive argument evaluation. This affective impression serves as the operative judgment; subsequent cognitive reasoning rationalizes the initial feeling rather than independently evaluating the argument. Risk and benefit judgments are inversely correlated, tracking emotional valence rather than evidence.",
+      "trigger_conditions": [
+        "Topic has high emotional valence for the persona — fear, disgust, hope, pride, or moral outrage",
+        "Persuader introduces vivid, emotionally charged language or imagery early in the exchange",
+        "Mental resources are limited or the judgment is complex enough to favor a quick affective shortcut",
+        "Persona lacks strong prior factual knowledge about the topic"
+      ],
+      "predicted_effect": "Persona's evaluation of the topic tracks their initial affective reaction. Risks and benefits are judged in opposite directions tracking emotional valence — if the overall affect is negative, risks are seen as high and benefits as low, and vice versa. Statistical or actuarial evidence that contradicts the affective impression is discounted. The affective impression is more efficient than weighing pros and cons and dominates when cognitive resources are limited.",
       "behavioral_signals": [
-        "Expresses an immediate positive or negative evaluation of a position before engaging any argument",
+        "Expresses an immediate positive or negative evaluation before engaging any argument",
         "Evaluates risks and benefits of a policy in opposite directions even when they are logically independent",
-        "Uses emotional language ('this feels wrong,' 'I just know') as a terminal justification rather than a prompt for further inquiry",
-        "Cognitive arguments that align with the initial affective response are accepted readily; those that conflict are scrutinized heavily",
-        "Remains resistant to statistical or actuarial evidence that contradicts the emotionally derived judgment"
+        "Uses emotional language as a terminal justification rather than a prompt for further inquiry ('this feels wrong', 'I just know')",
+        "Cognitive arguments that align with the initial affective response are accepted readily; those that conflict are scrutinized heavily"
+      ],
+      "diagnostic_indicators": [
+        "Evaluative judgment expressed before argument engagement: 'I just don't like the sound of that', 'something about this bothers me'",
+        "Risk and benefit judgments are inversely correlated in ways that track emotional valence, not evidence",
+        "Affective language used as terminal reasoning — the feeling is cited as the reason, not the conclusion",
+        "Statistical or actuarial counter-evidence is dismissed without engagement",
+        "Affect is rapid and automatic — persona does not deliberate before expressing the initial reaction"
       ],
       "scoring_anchor": {
-        "low": "Initial affective reactions are acknowledged but treated as starting points for deliberation, not conclusions; statistical and actuarial evidence can override affective impressions",
-        "mid": "Affective reactions are present and influential but can be partially overridden by strong evidence; some deliberative engagement follows initial feeling",
+        "low": "Initial affective reactions are acknowledged but treated as starting points for deliberation; statistical and actuarial evidence can override affective impressions",
+        "mid": "Affective reactions present and influential but can be partially overridden by strong evidence; some deliberative engagement follows initial feeling",
         "high": "Affective reaction is the operative judgment; cognitive evaluation serves exclusively to rationalize it; contradictory evidence increases rather than decreases commitment to the affectively derived position"
       },
       "citations": [

@@ -77,8 +77,8 @@ def _make_outcome(
 ) -> StrategyOutcome:
     turn = ConversationTurn(
         turn_number=1,
-        interviewer_message="hello",
-        interviewer_strategy_note="note",
+        persuader_message="hello",
+        persuader_strategy_note="note",
         persona_output=PersonaTurnOutput(
             internal_monologue="thinking",
             emotional_reaction=EmotionalReaction(

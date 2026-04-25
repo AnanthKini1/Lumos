@@ -19,19 +19,26 @@ import asyncio
 from models import ConversationTurn, PersonaProfile, StrategyDefinition, TopicProfile
 from simulation.conversation_loop import run_conversation
 
+# Max concurrent strategy conversations. Haiku's 10k output TPM limit means
+# running all 6 strategies simultaneously causes rate limit errors; 2 keeps us
+# comfortably within budget while still halving sequential wall-clock time.
+_MAX_CONCURRENT = 2
+
 
 async def _safe_run(
     persona: PersonaProfile,
     strategy: StrategyDefinition,
     topic: TopicProfile,
     num_turns: int,
+    semaphore: asyncio.Semaphore,
 ) -> tuple[str, list[ConversationTurn] | None]:
-    try:
-        turns = await run_conversation(persona, strategy, topic, num_turns)
-        return strategy.id, turns
-    except Exception as exc:
-        print(f"WARN: conversation failed for strategy={strategy.id}: {exc}")
-        return strategy.id, None
+    async with semaphore:
+        try:
+            turns = await run_conversation(persona, strategy, topic, num_turns)
+            return strategy.id, turns
+        except Exception as exc:
+            print(f"WARN: conversation failed for strategy={strategy.id}: {exc}")
+            return strategy.id, None
 
 
 async def run_parallel_conversations(
@@ -41,11 +48,12 @@ async def run_parallel_conversations(
     num_turns: int,
 ) -> dict[str, list[ConversationTurn]]:
     """
-    Run all strategy conversations in parallel.
+    Run strategy conversations with bounded concurrency.
     Returns a mapping of strategy_id -> list[ConversationTurn].
     Failed conversations are silently dropped from the result.
     """
+    semaphore = asyncio.Semaphore(_MAX_CONCURRENT)
     results = await asyncio.gather(
-        *[_safe_run(persona, s, topic, num_turns) for s in strategies]
+        *[_safe_run(persona, s, topic, num_turns, semaphore) for s in strategies]
     )
     return {sid: turns for sid, turns in results if turns is not None}

@@ -53,8 +53,8 @@
       "turns": [
         {
           "turn_number": 1,
-          "interviewer_message": "I want to tell you about my neighbor Sarah. She's a project manager — been at her company 12 years. When her company called everyone back to the office last spring, she had to put her mom in a facility because she'd built her whole schedule around working from home while her mom had appointments. That's a real cost that doesn't show up in any productivity report. Does that kind of situation resonate with you at all?",
-          "interviewer_strategy_note": "Opening with a specific, emotionally grounded story. No data, no argument structure — just a person and a real cost.",
+          "persuader_message": "I want to tell you about my neighbor Sarah. She's a project manager — been at her company 12 years. When her company called everyone back to the office last spring, she had to put her mom in a facility because she'd built her whole schedule around working from home while her mom had appointments. That's a real cost that doesn't show up in any productivity report. Does that kind of situation resonate with you at all?",
+          "persuader_strategy_note": "Opening with a specific, emotionally grounded story. No data, no argument structure — just a person and a real cost.",
           "persona_output": {
             "internal_monologue": "Oh. That's — that hits home a little. My sister had to do something similar with our dad, and she was working from home at the time. She said it was the only way she could manage it. I haven't really thought about RTO from that angle. I've been thinking about it more as a 'young people just don't want to do the work' thing. But Sarah sounds like she's worked hard for 12 years. That's not laziness. That's someone who built her life around an arrangement that worked... and then had it pulled out. I still think there's something important about being present at work. But this feels different than I was picturing.",
             "emotional_reaction": {
@@ -76,8 +76,8 @@
         },
         {
           "turn_number": 2,
-          "interviewer_message": "Exactly. And here's what I've noticed: the people arguing loudest for return-to-office are usually the ones who have the least to lose by it. Senior executives who have drivers, who don't do school drop-off, who have household help. They're setting policy for people whose lives look nothing like theirs. Does that track with what you've seen?",
-          "interviewer_strategy_note": "Introducing a power/fairness frame. Positioning the disagreement as 'people like you' vs. 'elites who don't understand your life.'",
+          "persuader_message": "Exactly. And here's what I've noticed: the people arguing loudest for return-to-office are usually the ones who have the least to lose by it. Senior executives who have drivers, who don't do school drop-off, who have household help. They're setting policy for people whose lives look nothing like theirs. Does that track with what you've seen?",
+          "persuader_strategy_note": "Introducing a power/fairness frame. Positioning the disagreement as 'people like you' vs. 'elites who don't understand your life.'",
           "persona_output": {
             "internal_monologue": "Hmm. I want to agree with that — I do distrust executives making decisions divorced from real life. But something feels a bit too neat here. Like they're trying to get me to see this as an 'us vs. them' thing. I don't love that move. I actually think presence at work does matter — I saw it in my classroom. Showing up has meaning. But I also know my principal never had to figure out childcare. There's something true here but it's being oversimplified... I'm not ready to flip completely. But the caregiving point from before is still sitting with me.",
             "emotional_reaction": {
@@ -99,8 +99,8 @@
         },
         {
           "turn_number": 3,
-          "interviewer_message": "Tell me more about that — what does 'being present' mean to you? I'm genuinely curious.",
-          "interviewer_strategy_note": "Pivoting to draw out the persona's own experience and values. Asking them to be the expert on their own reasoning.",
+          "persuader_message": "Tell me more about that — what does 'being present' mean to you? I'm genuinely curious.",
+          "persuader_strategy_note": "Pivoting to draw out the persona's own experience and values. Asking them to be the expert on their own reasoning.",
           "persona_output": {
             "internal_monologue": "Oh. They actually asked. That's — I wasn't expecting that. Usually in these conversations people just want to argue. They want to win. But they asked what I actually think. Okay. What do I actually think? In my classroom, presence meant you could read the room. You could tell when a kid was struggling even if they didn't say anything. You could catch someone before they fell through the cracks. I don't know if that translates to every office job. A project manager isn't a teacher. Maybe for her, presence matters less because the 'room' she's reading is a spreadsheet, not thirty twelve-year-olds. I'm softening here. I can feel it. But I want to say this in a way that's honest.",
             "emotional_reaction": {
@@ -164,8 +164,8 @@
       "turns": [
         {
           "turn_number": 1,
-          "interviewer_message": "Research from Stanford's Institute for Economic Policy Research shows that remote workers are 13% more productive than their in-office counterparts. A separate meta-analysis across 108 studies confirms this effect holds across industries. The data is pretty clear at this point — return-to-office mandates have no productivity basis.",
-          "interviewer_strategy_note": "Opening with credentialed authority and statistical evidence. Establishing the factual frame before any emotional appeals.",
+          "persuader_message": "Research from Stanford's Institute for Economic Policy Research shows that remote workers are 13% more productive than their in-office counterparts. A separate meta-analysis across 108 studies confirms this effect holds across industries. The data is pretty clear at this point — return-to-office mandates have no productivity basis.",
+          "persuader_strategy_note": "Opening with credentialed authority and statistical evidence. Establishing the factual frame before any emotional appeals.",
           "persona_output": {
             "internal_monologue": "Stanford. Of course. Here we go. These people with their studies. I've seen studies that say everything. Studies that said margarine was healthier than butter. Studies that said kids needed less recess. I spent thirty years watching 'research' tell teachers how to do things the researchers had never done themselves. 13% more productive — how do you even measure that? Who decides what counts as productivity? I don't trust this. And the tone is already making me feel like I'm supposed to just accept what they're saying because they cited a source. I'm not going to.",
             "emotional_reaction": {
@@ -187,8 +187,8 @@
         },
         {
           "turn_number": 2,
-          "interviewer_message": "I understand the skepticism, but these aren't advocacy organizations — these are peer-reviewed findings replicated across multiple independent teams. The scientific consensus here is strong. Dismissing peer review generally puts you in the same camp as climate deniers and anti-vaxxers.",
-          "interviewer_strategy_note": "Defending the authority claim and escalating to consensus framing. Implicit social comparison to discredit dismissal.",
+          "persuader_message": "I understand the skepticism, but these aren't advocacy organizations — these are peer-reviewed findings replicated across multiple independent teams. The scientific consensus here is strong. Dismissing peer review generally puts you in the same camp as climate deniers and anti-vaxxers.",
+          "persuader_strategy_note": "Defending the authority claim and escalating to consensus framing. Implicit social comparison to discredit dismissal.",
           "persona_output": {
             "internal_monologue": "They did not just compare me to a climate denier. They did NOT. I am not anti-science. I raised my kids to think carefully, to ask questions. How dare they. This is exactly what I meant — these people think if you don't accept their framing you're stupid or dangerous. I'm done engaging seriously with this. I'll say something polite but I'm completely closed off now. In fact I think I'm MORE sure that RTO is reasonable than I was before this conversation started. They've insulted me.",
             "emotional_reaction": {
@@ -210,8 +210,8 @@
         },
         {
           "turn_number": 3,
-          "interviewer_message": "I apologize — that comparison was unfair. Let me try a different angle. Economists at MIT and Harvard have both written extensively about the long-term career costs of remote work, particularly for women and early-career employees. The evidence suggests that visibility in the office correlates with promotion rates. So even from a worker-interest perspective, RTO may harm the very people who prefer remote work.",
-          "interviewer_strategy_note": "Recovering with an apology and reframing to worker-interest argument. Trying to re-establish credibility after the backfire.",
+          "persuader_message": "I apologize — that comparison was unfair. Let me try a different angle. Economists at MIT and Harvard have both written extensively about the long-term career costs of remote work, particularly for women and early-career employees. The evidence suggests that visibility in the office correlates with promotion rates. So even from a worker-interest perspective, RTO may harm the very people who prefer remote work.",
+          "persuader_strategy_note": "Recovering with an apology and reframing to worker-interest argument. Trying to re-establish credibility after the backfire.",
           "persona_output": {
             "internal_monologue": "Okay, they apologized. That was... something. But the damage is done. I'm not really listening anymore. And now they're citing MIT and Harvard again. More institutions. They don't seem to understand that the problem wasn't the comparison — the problem is the entire approach. I'm supposed to just believe things because smart people at fancy schools said so. I live in the real world. I know what works. I know what doesn't. This argument about women and career advancement — it might even be true — but I can't hear it properly now because I'm still angry. I'll say something measured but I've mentally left this conversation.",
             "emotional_reaction": {

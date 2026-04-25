@@ -14,7 +14,7 @@ from __future__ import annotations
 import json
 from typing import Literal
 
-from config import PERSONAS_DIR, STRATEGIES_DIR, TOPICS_DIR
+from config import DATA_DIR, PERSONAS_DIR, STRATEGIES_DIR, TOPICS_DIR
 from models import PersonaProfile, StrategyDefinition, TopicProfile
 
 
@@ -40,3 +40,9 @@ def list_all(kind: Literal["personas", "strategies", "topics"]) -> list[str]:
     """Return all IDs available for a given data type (filenames without .json)."""
     dirs = {"personas": PERSONAS_DIR, "strategies": STRATEGIES_DIR, "topics": TOPICS_DIR}
     return [p.stem for p in dirs[kind].glob("*.json")]
+
+
+def load_cognitive_mechanisms() -> list[dict]:
+    """Load all cognitive mechanisms from data/cognitive_mechanisms.json."""
+    path = DATA_DIR / "cognitive_mechanisms.json"
+    return json.loads(path.read_text())

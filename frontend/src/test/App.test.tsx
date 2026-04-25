@@ -40,6 +40,14 @@ vi.mock('../components/report/ComparisonReport', () => ({
   ),
 }))
 
+vi.mock('../components/shared/SourcesPanel', () => ({
+  default: ({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) => (
+    <div data-testid="sources-panel" data-open={isOpen}>
+      <button onClick={onClose}>Close Sources</button>
+    </div>
+  ),
+}))
+
 describe('App', () => {
   it('renders setup screen on mount', () => {
     render(<App />)
@@ -128,5 +136,56 @@ describe('App', () => {
     expect(screen.getByTestId('setup-screen')).toBeInTheDocument()
     expect(screen.queryByTestId('mind-viewer')).not.toBeInTheDocument()
     expect(screen.queryByTestId('comparison-report')).not.toBeInTheDocument()
+  })
+
+  it('shows breadcrumb navigation', () => {
+    render(<App />)
+    expect(screen.getByTestId('breadcrumb')).toBeInTheDocument()
+  })
+
+  it('breadcrumb highlights Setup on initial render', () => {
+    render(<App />)
+    const setupStep = screen.getByTestId('breadcrumb-step-setup')
+    expect(setupStep.className).toContain('bg-purple-100')
+  })
+
+  it('breadcrumb highlights Mind Viewer after running simulation', async () => {
+    const user = userEvent.setup({ delay: null })
+    render(<App />)
+    await user.click(screen.getByText('Run'))
+    expect(screen.getByTestId('breadcrumb-step-mindviewer').className).toContain('bg-purple-100')
+  })
+
+  it('breadcrumb highlights Report after viewing report', async () => {
+    const user = userEvent.setup({ delay: null })
+    render(<App />)
+    await user.click(screen.getByText('Run'))
+    await user.click(screen.getByText('View Report'))
+    expect(screen.getByTestId('breadcrumb-step-report').className).toContain('bg-purple-100')
+  })
+
+  it('shows Sources & Methodology trigger button', () => {
+    render(<App />)
+    expect(screen.getByTestId('sources-trigger')).toBeInTheDocument()
+  })
+
+  it('sources panel starts closed', () => {
+    render(<App />)
+    expect(screen.getByTestId('sources-panel')).toHaveAttribute('data-open', 'false')
+  })
+
+  it('clicking sources trigger opens the panel', async () => {
+    const user = userEvent.setup({ delay: null })
+    render(<App />)
+    await user.click(screen.getByTestId('sources-trigger'))
+    expect(screen.getByTestId('sources-panel')).toHaveAttribute('data-open', 'true')
+  })
+
+  it('closing sources panel sets it back to closed', async () => {
+    const user = userEvent.setup({ delay: null })
+    render(<App />)
+    await user.click(screen.getByTestId('sources-trigger'))
+    await user.click(screen.getByText('Close Sources'))
+    expect(screen.getByTestId('sources-panel')).toHaveAttribute('data-open', 'false')
   })
 })

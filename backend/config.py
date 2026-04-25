@@ -20,11 +20,15 @@ load_dotenv()
 ANTHROPIC_API_KEY: str = os.environ.get("ANTHROPIC_API_KEY", "")
 MODEL_ID: str = "claude-haiku-4-5-20251001"
 
+# Retry count for rate-limit (429) and server errors. The Anthropic SDK uses
+# exponential backoff automatically when max_retries > 0.
+API_MAX_RETRIES: int = 6
+
 # ---------------------------------------------------------------------------
 # Token caps per call type (enforced at each agent call site)
 # ---------------------------------------------------------------------------
 
-MAX_TOKENS_PERSONA: int = 700
+MAX_TOKENS_PERSONA: int = 1500
 MAX_TOKENS_INTERVIEWER: int = 250
 MAX_TOKENS_JUDGE: int = 300
 
