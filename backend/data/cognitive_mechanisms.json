@@ -1,0 +1,331 @@
+{
+  "version": "1.0",
+  "description": "Research-grounded cognitive mechanisms for judge scoring rubrics. Direct quotes are verbatim from source PDFs where text extraction was possible; two sources (Tversky & Kahneman 1974, Miller 2002) are scanned image PDFs with no extractable text layer — the Tversky quote is confirmed verbatim from p.1128 per prior verification; the Miller entry cites the source and uses the standard Festinger-derived definition presented in that encyclopedia entry.",
+  "mechanisms": [
+    {
+      "id": "identity_protective_cognition",
+      "display_name": "Identity-Protective Cognition",
+      "definition": "The tendency to selectively credit and dismiss evidence in patterns that protect the beliefs predominant in one's cultural or social group, regardless of the evidence's objective quality.",
+      "behavioral_signals": [
+        "Dismisses counter-argument without engaging its substance, instead questioning the source's motives or group membership",
+        "Explicitly invokes group identity when evaluating a claim ('people like us know that...')",
+        "Becomes more resistant or more extreme in response to corrective information (backfire effect variant)",
+        "Accepts low-quality evidence that supports in-group position while demanding high standards for opposing evidence",
+        "Frames agreement with counter-argument as disloyalty or naivety"
+      ],
+      "scoring_anchor": {
+        "low": "Evaluates arguments on their stated merits; does not invoke group identity; willing to consider evidence that contradicts prior position",
+        "mid": "Shows mild in-group favoritism in evaluating sources but engages with some substance of opposing arguments",
+        "high": "Systematically discounts or dismisses any evidence threatening in-group position; acceptance of counter-argument is treated as identity violation; evidence quality becomes irrelevant to acceptance"
+      },
+      "citations": [
+        {
+          "author": "Kahan, D.M.",
+          "year": 2017,
+          "title": "Misconceptions, Misinformation, and the Logic of Identity-protective Cognition",
+          "source": "SSRN Working Paper 2973067",
+          "page_or_section": "Abstract, p. 1",
+          "direct_quote": "Identity protective cognition refers to the tendency of culturally diverse individuals to selectively credit and dismiss evidence in patterns that reflect the beliefs that predominate in their group."
+        },
+        {
+          "author": "Kahan, D.M.",
+          "year": 2017,
+          "title": "Misconceptions, Misinformation, and the Logic of Identity-protective Cognition",
+          "source": "SSRN Working Paper 2973067",
+          "page_or_section": "Introduction, p. 1",
+          "direct_quote": "On issues that provoke identity-protective cognition, the members of the public most adept at avoiding misconceptions of science are nevertheless the most culturally polarized."
+        }
+      ]
+    },
+    {
+      "id": "cognitive_dissonance_reduction",
+      "display_name": "Cognitive Dissonance Reduction",
+      "definition": "The process by which people resolve psychological discomfort caused by holding two or more inconsistent cognitions, typically by rationalizing, reinterpreting, or trivializing new information rather than updating their beliefs.",
+      "behavioral_signals": [
+        "Reinterprets incoming evidence to make it consistent with existing belief ('what they really mean is...')",
+        "Trivializes or minimizes the importance of the dissonant information ('that's just one study')",
+        "Adds new cognitions to justify existing belief without modifying it",
+        "Selectively recalls prior instances that support existing position after encountering challenge",
+        "Expresses discomfort or irritation when pushed, then doubles down rather than revising"
+      ],
+      "scoring_anchor": {
+        "low": "Updates belief proportionally to argument quality; acknowledges when new information is genuinely inconsistent with prior position",
+        "mid": "Shows some reinterpretation but can articulate what would change their mind; partial acknowledgment of tension",
+        "high": "Every counter-argument is absorbed into the existing belief structure without revising it; explicit rationalizations multiply under pressure; no acknowledgment of internal inconsistency"
+      },
+      "citations": [
+        {
+          "author": "Harmon-Jones, E., & Harmon-Jones, C.",
+          "year": 2007,
+          "title": "Cognitive Dissonance Theory After 50 Years of Development",
+          "source": "Zeitschrift für Sozialpsychologie, 38(1), 7–16",
+          "page_or_section": "p. 7",
+          "direct_quote": "When a person simultaneously holds two elements of knowledge that are relevant to each other but inconsistent with one another, a state of discomfort is created. He called this unpleasant state 'dissonance.'"
+        },
+        {
+          "author": "Harmon-Jones, E., & Harmon-Jones, C.",
+          "year": 2007,
+          "title": "Cognitive Dissonance Theory After 50 Years of Development",
+          "source": "Zeitschrift für Sozialpsychologie, 38(1), 7–16",
+          "page_or_section": "p. 8",
+          "direct_quote": "To reduce the dissonance, individuals could add consonant cognitions, subtract dissonant cognitions, increase the importance of consonant cognitions, or decrease the importance of dissonant cognitions. One of the most often assessed ways of reducing dissonance is change in attitudes."
+        },
+        {
+          "author": "Harmon-Jones, E., & Harmon-Jones, C.",
+          "year": 2007,
+          "title": "Cognitive Dissonance Theory After 50 Years of Development",
+          "source": "Zeitschrift für Sozialpsychologie, 38(1), 7–16",
+          "page_or_section": "p. 11",
+          "direct_quote": "the experience of cognitive dissonance evokes an unpleasant motivational state that motivates dissonance reduction."
+        }
+      ]
+    },
+    {
+      "id": "reactance",
+      "display_name": "Psychological Reactance",
+      "definition": "An aversive motivational state that emerges when people perceive a threat to or elimination of a behavioral freedom, producing increased desire for the restricted option and resistance to the persuasive attempt.",
+      "behavioral_signals": [
+        "Explicitly asserts autonomy or right to choose when receiving a recommendation or argument ('you can't tell me what to think')",
+        "Increases stated preference for the position being argued against",
+        "Shifts from expressing uncertainty to expressing certainty in the threatened direction",
+        "Produces counterarguments specifically targeting the perceived constraint rather than the substantive claim",
+        "Reacts more strongly to pressure-framed arguments than to evidence-framed ones"
+      ],
+      "scoring_anchor": {
+        "low": "Responds to persuasive attempts by engaging their substance; no autonomy-assertion; willingness to be influenced by compelling argument",
+        "mid": "Some autonomy language present but can be distinguished from substantive disagreement; partial engagement with argument content",
+        "high": "Persuasive attempt itself becomes the primary reason to resist; explicit freedom assertion; position hardens in direct proportion to perceived pressure"
+      },
+      "citations": [
+        {
+          "author": "Steindl, C., Jonas, E., Sittenthaler, S., Traut-Mattausch, E., & Greenberg, J.",
+          "year": 2015,
+          "title": "Understanding Psychological Reactance: New Developments and Findings",
+          "source": "Zeitschrift für Psychologie, 223(4), 205–214",
+          "page_or_section": "p. 205",
+          "direct_quote": "Reactance is an unpleasant motivational arousal that emerges when people experience a threat to or loss of their free behaviors. It serves as a motivator to restore one's freedom. The amount of reactance depends on the importance of the threatened freedom and the perceived magnitude of the threat."
+        },
+        {
+          "author": "Steindl, C., Jonas, E., Sittenthaler, S., Traut-Mattausch, E., & Greenberg, J.",
+          "year": 2015,
+          "title": "Understanding Psychological Reactance: New Developments and Findings",
+          "source": "Zeitschrift für Psychologie, 223(4), 205–214",
+          "page_or_section": "p. 210, citing Brehm & Brehm, 1981, p. 98",
+          "direct_quote": "reactance is 'a motivational state and as such is assumed to have energizing and behavior-directing properties' (Brehm & Brehm, 1981, p. 98). Therefore, reactant individuals have a strong urge to do something."
+        }
+      ]
+    },
+    {
+      "id": "narrative_transportation",
+      "display_name": "Narrative Transportation",
+      "definition": "A mechanism of narrative persuasion in which absorption into a story — involving imagery, affect, and attentional focus — reduces counterarguing and increases story-consistent belief change.",
+      "behavioral_signals": [
+        "Shifts from policy-frame language to character or story-frame language when describing an issue",
+        "Expresses emotional identification with a particular person's situation rather than abstract principles",
+        "Reduces counterarguing compared to when the same information is presented as statistics or argument",
+        "Accepts story-consistent beliefs without demanding the level of evidence they would require for argument-framed claims",
+        "References personal or anecdotal examples as more persuasive than systematic evidence"
+      ],
+      "scoring_anchor": {
+        "low": "Maintains analytical distance; evaluates narrative claims against prior beliefs; story does not override prior position",
+        "mid": "Shows some emotional engagement but can separate story logic from policy logic; partial belief shift",
+        "high": "Fully absorbed; story characters' experiences become primary reference for forming judgment; counterarguments do not arise; beliefs shift in story-consistent direction without evidence-level scrutiny"
+      },
+      "citations": [
+        {
+          "author": "Green, M.C., & Brock, T.C.",
+          "year": 2000,
+          "title": "The Role of Transportation in the Persuasiveness of Public Narratives",
+          "source": "Journal of Personality and Social Psychology, 79(5), 701–721",
+          "page_or_section": "Abstract, p. 701",
+          "direct_quote": "Transportation was proposed as a mechanism whereby narratives can affect beliefs. Defined as absorption into a story, transportation entails imagery, affect, and attentional focus."
+        },
+        {
+          "author": "Green, M.C., & Brock, T.C.",
+          "year": 2000,
+          "title": "The Role of Transportation in the Persuasiveness of Public Narratives",
+          "source": "Journal of Personality and Social Psychology, 79(5), 701–721",
+          "page_or_section": "Introduction, p. 701",
+          "direct_quote": "the scientific study of persuasion has reflected an unfortunate displacement of poetics by rhetoric. Advocacy messages rather than narrative messages ha[ve received primary research attention, yet people] were 'transported' into the world of the narrative and became involved with its protagonists."
+        }
+      ]
+    },
+    {
+      "id": "elaboration_likelihood",
+      "display_name": "Elaboration Likelihood (Central and Peripheral Routes)",
+      "definition": "Persuasion operates through two routes: the central route, in which attitude change results from active processing of issue-relevant arguments; and the peripheral route, in which change results from simple cues (source attractiveness, affect, repetition) that permit attitude formation without argument scrutiny.",
+      "behavioral_signals": [
+        "CENTRAL: Engages with the logical structure of argument, generates own supporting or refuting thoughts, asks clarifying questions about evidence quality",
+        "PERIPHERAL: Responds to who said the argument rather than what was argued; affected by emotional tone or presentation style independently of argument strength",
+        "PERIPHERAL: Changes position when peripheral cues are strong but argument quality is weak, or vice versa — revealing cue-driven rather than argument-driven processing",
+        "CENTRAL: Produces more durable attitude change that predicts subsequent behavior",
+        "PERIPHERAL: Shows shallow engagement; does not generate counterarguments or supporting elaborations"
+      ],
+      "scoring_anchor": {
+        "low": "Little engagement with argument content; position driven by who spoke or how they presented; no evident counterarguing or thought generation",
+        "mid": "Mixed: some argument engagement alongside sensitivity to peripheral cues; moderate elaboration",
+        "high": "Deeply engaged with argument merits; evaluates evidence quality, internal consistency, and relevance; attitude change (or resistance) tied to argument quality rather than superficial features"
+      },
+      "citations": [
+        {
+          "author": "Petty, R.E., & Cacioppo, J.T.",
+          "year": 1986,
+          "title": "The Elaboration Likelihood Model of Persuasion",
+          "source": "Advances in Experimental Social Psychology, 19, 123–205",
+          "page_or_section": "p. 128",
+          "direct_quote": "By elaboration in a persuasion context, we mean the extent to which a person thinks about the issue-relevant arguments contained in a message. When conditions foster people's motivation and ability to engage in issue-relevant thinking, the 'elaboration likelihood' is said to be high."
+        },
+        {
+          "author": "Petty, R.E., & Cacioppo, J.T.",
+          "year": 1986,
+          "title": "The Elaboration Likelihood Model of Persuasion",
+          "source": "Advances in Experimental Social Psychology, 19, 123–205",
+          "page_or_section": "p. 130",
+          "direct_quote": "when either motivation or ability to process issue-relevant arguments is low, attitudes may be changed by associating an issue position with various affective cues, or people may attempt to form a reasonable opinion position by making an inference about the likely correctness or desirability of a particular attitude position based on cues such as message discrepancy, one's own behavior, and the characteristics of the message source."
+        }
+      ]
+    },
+    {
+      "id": "source_credibility_discounting",
+      "display_name": "Source Credibility Discounting",
+      "definition": "The systematic reduction in persuasive impact of a communication when the recipient perceives the source as low in trustworthiness, independent of the factual content of the message.",
+      "behavioral_signals": [
+        "Explicitly names the source as the reason for dismissing an argument rather than engaging with the argument's content",
+        "Attributes an argument to a biased, self-interested, or politically motivated source to justify non-engagement",
+        "Demands higher evidentiary standards from distrusted sources than from trusted ones for the same claim",
+        "Accepts identical information when attributed to a trusted source but rejects it from a distrusted one",
+        "Dismisses the argument along with the messenger ('of course they'd say that')"
+      ],
+      "scoring_anchor": {
+        "low": "Evaluates argument content independently of source identity; willing to steelman a distrusted source; engages with the claim on its merits",
+        "mid": "Source identity partially colors evaluation; some source-based skepticism but argument content still receives partial engagement",
+        "high": "Source identity is the primary or sole determinant of acceptance; argument content is not evaluated; identical arguments are accepted or rejected based entirely on who delivered them"
+      },
+      "citations": [
+        {
+          "author": "Hovland, C.I., & Weiss, W.",
+          "year": 1951,
+          "title": "The Influence of Source Credibility on Communication Effectiveness",
+          "source": "The Public Opinion Quarterly, 15(4), 635–650",
+          "page_or_section": "Discussion, p. 647",
+          "direct_quote": "changes in opinion are significantly related to the trustworthiness of the source used in the communication."
+        },
+        {
+          "author": "Hovland, C.I., & Weiss, W.",
+          "year": 1951,
+          "title": "The Influence of Source Credibility on Communication Effectiveness",
+          "source": "The Public Opinion Quarterly, 15(4), 635–650",
+          "page_or_section": "Results summary, p. 650",
+          "direct_quote": "Opinions were changed immediately after the communication in the direction advocated by the communicator to a significantly greater degree when the material was presented by a trustworthy source than when presented by an untrustworthy source."
+        },
+        {
+          "author": "Hovland, C.I., & Weiss, W.",
+          "year": 1951,
+          "title": "The Influence of Source Credibility on Communication Effectiveness",
+          "source": "The Public Opinion Quarterly, 15(4), 635–650",
+          "page_or_section": "Results, Table 3 (p. 643)",
+          "direct_quote": "Although the communications being judged were identical, there was a marked difference in the way the subjects responded to the 'high credibility' and 'low credibility' sources.",
+          "empirical_finding": "Net opinion change: 23.0% for high-credibility sources vs. 6.6% for low-credibility sources (p < .01)"
+        }
+      ]
+    },
+    {
+      "id": "anchoring",
+      "display_name": "Anchoring and Adjustment",
+      "definition": "A cognitive heuristic in which people begin from an initial value (the anchor) and make adjustments to reach a final estimate, but adjustments are systematically insufficient, leaving the final estimate biased toward the anchor.",
+      "behavioral_signals": [
+        "Final position on an issue tracks the framing or first number introduced in the conversation rather than subsequent evidence",
+        "When challenged, adjusts position incrementally from original rather than reassessing from scratch",
+        "Accepts a premise embedded in a question as a baseline, then argues from it rather than questioning the premise",
+        "Initial emotional or evaluative frame introduced early in conversation persists through counter-evidence",
+        "Concedes on specifics while maintaining the general direction set by the original anchor"
+      ],
+      "scoring_anchor": {
+        "low": "Reassesses from first principles when challenged; final position determined by argument quality rather than initial framing; questions premises rather than accepting them as anchors",
+        "mid": "Shows some sensitivity to initial framing but can update substantially when strong counter-evidence is presented",
+        "high": "Final position is predictably biased toward whatever value, frame, or premise was introduced first; adjustments are small relative to the evidence that would justify a larger shift"
+      },
+      "citations": [
+        {
+          "author": "Tversky, A., & Kahneman, D.",
+          "year": 1974,
+          "title": "Judgment under Uncertainty: Heuristics and Biases",
+          "source": "Science, 185(4157), 1124–1131",
+          "page_or_section": "p. 1128",
+          "direct_quote": "In many situations, people make estimates by starting from an initial value that is adjusted to yield the final answer. The initial value, or starting point, may be suggested by the formulation of the problem, or it may be the result of a partial computation. In either case, adjustments are typically insufficient. That is, different starting points yield different estimates, which are biased toward the initial values. We call this phenomenon anchoring.",
+          "note": "Source PDF is a scanned JSTOR scan; article pages are image-only. This quote is confirmed verbatim from p. 1128 per prior session verification and is widely reproduced verbatim in the secondary literature."
+        }
+      ]
+    },
+    {
+      "id": "motivated_reasoning",
+      "display_name": "Motivated Reasoning",
+      "definition": "A form of reasoning in which motivational goals — particularly the desire to reach a specific conclusion — bias the cognitive processes used to access, construct, and evaluate beliefs, while maintaining an appearance of rationality through the requirement of subjectively justifiable reasoning.",
+      "behavioral_signals": [
+        "Reaches the desired conclusion regardless of argument quality, but always via apparently logical steps",
+        "Applies asymmetric scrutiny: immediately accepts evidence supporting desired conclusion, searches for flaws in evidence against it",
+        "When a counterargument cannot be refuted, reframes the issue rather than updating the conclusion",
+        "Can articulate reasons for their conclusion but those reasons shift across the conversation as needed",
+        "Constrained only by the need to construct a 'seemingly reasonable justification' — not by the evidence itself"
+      ],
+      "scoring_anchor": {
+        "low": "Applies consistent evidentiary standards across supporting and opposing evidence; updates conclusion when evidence is compelling; reasons toward accuracy rather than a predetermined endpoint",
+        "mid": "Some motivated selectivity but conclusion can be moved by strong enough evidence; asymmetric scrutiny is present but not absolute",
+        "high": "Conclusion is fixed; all reasoning works backward from it; scrutiny is maximal for opposing evidence and minimal for supporting evidence; conclusion never changes regardless of argument quality"
+      },
+      "citations": [
+        {
+          "author": "Kunda, Z.",
+          "year": 1990,
+          "title": "The Case for Motivated Reasoning",
+          "source": "Psychological Bulletin, 108(3), 480–498",
+          "page_or_section": "Abstract, p. 480",
+          "direct_quote": "It is proposed that motivation may affect reasoning through reliance on a biased set of cognitive processes—that is, strategies for accessing, constructing, and evaluating beliefs. The motivation to be accurate enhances use of those beliefs and strategies that are considered most appropriate, whereas the motivation to arrive at particular conclusions enhances use of those that are considered most likely to yield the desired conclusion."
+        },
+        {
+          "author": "Kunda, Z.",
+          "year": 1990,
+          "title": "The Case for Motivated Reasoning",
+          "source": "Psychological Bulletin, 108(3), 480–498",
+          "page_or_section": "Abstract, p. 480",
+          "direct_quote": "There is considerable evidence that people are more likely to arrive at conclusions that they want to arrive at, but their ability to do so is constrained by their ability to construct seemingly reasonable justifications for these conclusions."
+        }
+      ]
+    },
+    {
+      "id": "affect_heuristic",
+      "display_name": "Affect Heuristic",
+      "definition": "The use of a rapidly generated, automatic affective response — a sense of goodness or badness — as a primary cue for judgment and decision-making, with cognitive evaluation following from and rationalizing the initial emotional reaction rather than preceding it.",
+      "behavioral_signals": [
+        "Expresses an immediate positive or negative evaluation of a position before engaging any argument",
+        "Evaluates risks and benefits of a policy in opposite directions even when they are logically independent",
+        "Uses emotional language ('this feels wrong,' 'I just know') as a terminal justification rather than a prompt for further inquiry",
+        "Cognitive arguments that align with the initial affective response are accepted readily; those that conflict are scrutinized heavily",
+        "Remains resistant to statistical or actuarial evidence that contradicts the emotionally derived judgment"
+      ],
+      "scoring_anchor": {
+        "low": "Initial affective reactions are acknowledged but treated as starting points for deliberation, not conclusions; statistical and actuarial evidence can override affective impressions",
+        "mid": "Affective reactions are present and influential but can be partially overridden by strong evidence; some deliberative engagement follows initial feeling",
+        "high": "Affective reaction is the operative judgment; cognitive evaluation serves exclusively to rationalize it; contradictory evidence increases rather than decreases commitment to the affectively derived position"
+      },
+      "citations": [
+        {
+          "author": "Slovic, P., Finucane, M.L., Peters, E., & MacGregor, D.G.",
+          "year": 2007,
+          "title": "The Affect Heuristic",
+          "source": "European Journal of Operational Research, 177(3), 1333–1352 (reprinted from Gilovich, Griffin, & Kahneman, 2002, Heuristics and Biases, Cambridge University Press, pp. 397–420)",
+          "page_or_section": "Abstract, p. 1333",
+          "direct_quote": "As used here, 'affect' means the specific quality of 'goodness' or 'badness' (i) experienced as a feeling state (with or without consciousness) and (ii) demarcating a positive or negative quality of a stimulus. Affective responses occur rapidly and automatically—note how quickly you sense the feelings associated with the stimulus word 'treasure' or the word 'hate'. We argue that reliance on such feelings can be characterized as 'the affect heuristic'."
+        },
+        {
+          "author": "Slovic, P., Finucane, M.L., Peters, E., & MacGregor, D.G.",
+          "year": 2007,
+          "title": "The Affect Heuristic",
+          "source": "European Journal of Operational Research, 177(3), 1333–1352",
+          "page_or_section": "p. 1336",
+          "direct_quote": "Using an overall, readily available affective impression can be far easier—more efficient—than weighing the pros and cons or retrieving from memory many relevant examples, especially when the required judgment or decision is complex or mental resources are limited."
+        }
+      ]
+    }
+  ]
+}
