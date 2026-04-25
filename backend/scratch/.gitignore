@@ -1,0 +1,4 @@
+# Scratch outputs and any ad-hoc files with sensitive content
+*.json
+*.txt
+*.log
