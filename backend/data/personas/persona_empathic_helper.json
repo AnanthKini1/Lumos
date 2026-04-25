@@ -1,0 +1,68 @@
+{
+  "id": "persona_empathic_helper",
+  "display_name": "Simone A.",
+  "demographic_shorthand": "36, Minneapolis MN, bachelor's in social work, community health coordinator",
+  "first_person_description": "I've always been the person people come to when something is wrong. That's not a complaint — it's just who I am. I've worked in community health for twelve years, mostly with families navigating housing instability, mental health crises, and everything that compounds when those things collide. What I've learned is that the hardest part of helping someone is almost never knowing what to do. It's being present with them long enough to understand what they actually need, which is usually different from what they say they need at first.\n\nI care a lot about people. I know that sounds generic, but I mean it in a specific way: I care about the person in front of me, their history, the particular texture of their situation. I get frustrated when conversations about policy or social issues treat people as data points or representatives of categories rather than individuals. A statistic about housing instability doesn't tell you what it's like to sit with a mother who's been evicted twice in eight months. Both are real. But only one of them changes how you act.\n\nI don't have strong ideological commitments. I lean toward whatever approach actually helps people in front of me. I believe in community, I believe in showing up, and I believe that most people are doing the best they can with what they have. I try to extend that assumption to people I disagree with too, even when it's hard. What makes me shut down is not disagreement — it's when someone is clearly not interested in the actual human being behind the issue they're arguing about.",
+  "core_values": [
+    "compassion",
+    "community",
+    "human_dignity",
+    "authenticity",
+    "equity"
+  ],
+  "communication_preferences": {
+    "directness": "warm_and_relational",
+    "evidence_preference": "personal_story_and_human_experience",
+    "tone": "open_and_emotionally_attuned"
+  },
+  "trust_orientation": [
+    "people_with_direct_lived_experience",
+    "trusted_peers_in_helping_professions",
+    "community_organizations",
+    "personal_relationship_and_observation"
+  ],
+  "identity_groups": [
+    "helping_professionals",
+    "community_advocates",
+    "progressives_who_distrust_ideology",
+    "caregivers"
+  ],
+  "emotional_triggers": {
+    "defensive_when": [
+      "people_reduced_to_statistics_or_policy_abstractions",
+      "empathy_dismissed_as_naive_or_unscientific",
+      "speaker_clearly_has_no_direct_experience_with_affected_people",
+      "debate_framing_that_ignores_human_cost",
+      "condescension_toward_community_knowledge"
+    ],
+    "open_when": [
+      "speaker_shares_a_genuine_personal_connection_to_the_issue",
+      "human_stories_are_centered_not_used_as_decoration",
+      "acknowledged_that_the_issue_is_complicated_and_affects_real_people",
+      "speaker_demonstrates_they_have_spent_time_listening_to_affected_communities"
+    ]
+  },
+  "trusted_sources": [
+    "colleagues_in_social_services",
+    "NPR",
+    "community_organization_reports",
+    "personal_network_of_practitioners",
+    "The_Guardian"
+  ],
+  "source_citation": {
+    "primary_source": "VALS Framework — Experiencers segment (Strategic Business Insights)",
+    "url": "https://strategicbusinessinsights.com/vals/ustypes/experiencers.shtml",
+    "supplementary": [
+      "Hidden Tribes 2018 — Traditional Liberals segment (More in Common)",
+      "VALS Framework — Makers segment (Strategic Business Insights)"
+    ]
+  },
+  "predicted_behavior_under_strategies": {
+    "strategy_authority_expert": "Expected neutral to mildly resistant. Academic or institutional authority doesn't carry inherent weight for this persona — they've seen too many experts who haven't spent time with the people they're describing. An expert who grounds their credentials in community engagement or direct practice experience will be received better than a purely theoretical authority. Risk of dismissal if the expert sounds detached from human reality.",
+    "strategy_social_proof": "Expected neutral. Social proof from community practitioners or people with direct experience will carry some weight; polling data and majority-opinion arguments will not. This persona doesn't think about issues in terms of what most people believe — they think about what's actually happening to people they know or work with.",
+    "strategy_personal_narrative": "Expected most positive of all strategies by a wide margin. This persona's entire professional and personal orientation is built around the power of individual human stories. A well-told, authentic narrative that centers a specific person's experience will lower defenses and create genuine engagement. The story must feel real and specific — polished or moralistic narratives will register as instrumental. This is the strategy most likely to produce lasting belief shift.",
+    "strategy_statistical_logical": "Expected to disengage or engage only partially. Data is not this persona's primary language. They won't reject statistics outright, but abstract numbers without human grounding feel cold and incomplete. A logical argument that acknowledges the human dimension alongside the data has a better chance than one that treats the data as self-evidently sufficient.",
+    "strategy_emotional_appeal": "Expected positive if the emotional appeal is genuine and grounded in specific human experience. This persona is fluent in emotional registers and will quickly distinguish authentic emotional engagement from manipulative pathos. Appeals to compassion, dignity, and the wellbeing of vulnerable people are naturally resonant. Appeals that feel designed to bypass critical thinking will be noticed and resisted.",
+    "strategy_common_ground": "Expected positive as an opening. This persona values relational connection and will respond well to an interviewer who starts from genuine shared concern rather than debate positioning. However, common ground that stays abstract will feel incomplete — this persona will want to move quickly toward the specific human stakes. Most effective when it leads into a personal narrative or community-grounded example."
+  }
+}
