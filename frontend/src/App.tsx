@@ -6,9 +6,9 @@
  * to child screens as props — no child fetches data directly.
  *
  * Screen flow:
- *   1. SetupScreen    — persona / topic / strategy selection
- *   2. MindViewer     — live turn-by-turn conversation + internal mind panels
- *   3. ComparisonReport — post-run verdict grid, trajectory charts, synthesis
+ *   1. SetupScreen    — persona + topic selection (strategies run automatically)
+ *   2. MindViewer     — turn-by-turn conversation with strategy-switcher tabs
+ *   3. ComparisonReport — 7-way verdict grid, trajectory charts, synthesis
  */
 
 import SetupScreen from './components/setup/SetupScreen'

@@ -6,8 +6,9 @@ launch one conversation_loop per strategy as a concurrent async task and collect
 all results.
 
 Each strategy's conversation is fully independent — they share no state. The same
-persona starts each conversation from the same initial stance. Parallelism here is
-the primary tool for keeping wall-clock time under one minute for a 5-strategy run.
+persona starts each conversation from the same initial stance. Parallelism here is the primary tool for keeping wall-clock time manageable —
+with 7 strategies each running 6 turns, sequential execution would be ~84 LLM
+calls; parallel execution collapses this to ~12 sequential calls' worth of latency.
 
 Does NOT know about:
 - Individual turn logic (conversation_loop.py)
