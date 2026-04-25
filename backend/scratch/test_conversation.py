@@ -37,8 +37,8 @@ async def main() -> None:
 
     for t in turns:
         print(f"\n[Turn {t.turn_number}]")
-        print(f"Interviewer: {t.interviewer_message}")
-        print(f"  strategy note: {t.interviewer_strategy_note}")
+        print(f"Persuader: {t.persuader_message}")
+        print(f"  strategy note: {t.persuader_strategy_note}")
         print(f"Karen's monologue: {t.persona_output.internal_monologue}")
         print(f"Karen says: {t.persona_output.public_response}")
         print(f"  private_stance={t.persona_output.private_stance}  "
@@ -59,8 +59,8 @@ async def main() -> None:
     authority_strategy = load_strategy("strategy_authority_expert")
     authority_turns = await run_conversation(persona, authority_strategy, topic, num_turns=1)
     t = authority_turns[0]
-    print(f"\nInterviewer: {t.interviewer_message}")
-    print(f"  strategy note: {t.interviewer_strategy_note}")
+    print(f"\nPersuader: {t.persuader_message}")
+    print(f"  strategy note: {t.persuader_strategy_note}")
     print(f"Karen's monologue: {t.persona_output.internal_monologue}")
     print(f"Karen says: {t.persona_output.public_response}")
     print(f"  private_stance={t.persona_output.private_stance}  "

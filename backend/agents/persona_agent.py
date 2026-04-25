@@ -98,7 +98,7 @@ _PERSONA_TOOL = {
             },
             "public_response": {
                 "type": "string",
-                "description": "What you actually say out loud to the interviewer.",
+                "description": "What you actually say out loud to the persuader.",
             },
         },
         "required": [
@@ -196,7 +196,7 @@ YOUR STARTING STANCE ON THIS TOPIC: {starting_stance:.1f}/10{scale_context}"""
 def _build_user_message(
     memory_residue: list[str],
     conversation_history: list[ConversationTurn],
-    interviewer_message: str,
+    persuader_message: str,
 ) -> str:
     parts: list[str] = []
 
@@ -209,11 +209,11 @@ def _build_user_message(
     if conversation_history:
         parts.append("CONVERSATION SO FAR:")
         for turn in conversation_history:
-            parts.append(f"Interviewer: {turn.interviewer_message}")
+            parts.append(f"Persuader: {turn.persuader_message}")
             parts.append(f"You said: {turn.persona_output.public_response}")
         parts.append("")
 
-    parts.append(f"The interviewer now says: {interviewer_message}")
+    parts.append(f"The persuader now says: {persuader_message}")
     parts.append("")
     parts.append("Use the submit_persona_response tool to respond.")
 
@@ -226,7 +226,7 @@ async def run_persona_turn(
     starting_stance: float,
     conversation_history: list[ConversationTurn],
     memory_residue: list[str],
-    interviewer_message: str,
+    persuader_message: str,
     stance_scale: dict[str, str] | None = None,
 ) -> PersonaTurnOutput:
     """Make one persona LLM call and return the structured public+private response."""
@@ -235,7 +235,7 @@ async def run_persona_turn(
     system_blocks = _build_persona_system_prompt(
         persona, topic_context, starting_stance, stance_scale
     )
-    user_content = _build_user_message(memory_residue, conversation_history, interviewer_message)
+    user_content = _build_user_message(memory_residue, conversation_history, persuader_message)
 
     response = await client.messages.create(
         model=MODEL_ID,

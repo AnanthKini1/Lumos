@@ -54,7 +54,7 @@ def _compress_conversation(turns: list[ConversationTurn]) -> str:
     lines = []
     for turn in turns:
         lines.append(
-            f"Turn {turn.turn_number}: They said '{turn.interviewer_message[:120]}'. "
+            f"Turn {turn.turn_number}: They said '{turn.persuader_message[:120]}'. "
             f"You said '{turn.persona_output.public_response[:100]}'. "
             f"(Private stance: {turn.persona_output.private_stance:.1f})"
         )

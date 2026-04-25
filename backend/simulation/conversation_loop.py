@@ -17,8 +17,8 @@ Does NOT know about:
 - Scoring or output serialization (pipeline.py)
 """
 
-from agents.interviewer_agent import run_interviewer_turn
 from agents.persona_agent import run_persona_turn
+from agents.persuader_agent import run_persuader_turn
 from models import ConversationTurn, PersonaProfile, StrategyDefinition, TopicProfile
 
 
@@ -32,21 +32,21 @@ async def run_conversation(
     starting_stance = topic.predicted_starting_stances.get(persona.id, 5.0)
 
     # Derive a human-readable target direction from the stance scale
-    # (persona starts at starting_stance; interviewer tries to move them
+    # (persona starts at starting_stance; persuader tries to move them
     #  toward the opposite end of the scale)
     scale = topic.stance_scale_definition
     if starting_stance >= 5.0:
-        # Persona leans toward high end — interviewer argues for the low end
+        # Persona leans toward high end — persuader argues for the low end
         target_direction = scale.get("0", "the opposing position")
     else:
-        # Persona leans toward low end — interviewer argues for the high end
+        # Persona leans toward low end — persuader argues for the high end
         target_direction = scale.get("10", "the opposing position")
 
     conversation_history: list[ConversationTurn] = []
     memory_residue: list[str] = []
 
     for turn_number in range(1, num_turns + 1):
-        interviewer_out = await run_interviewer_turn(
+        persuader_out = await run_persuader_turn(
             strategy=strategy,
             topic_context=topic.context_briefing,
             public_history=conversation_history,
@@ -60,14 +60,14 @@ async def run_conversation(
             starting_stance=starting_stance,
             conversation_history=conversation_history,
             memory_residue=memory_residue,
-            interviewer_message=interviewer_out.message,
+            persuader_message=persuader_out.message,
             stance_scale=topic.stance_scale_definition,
         )
 
         turn = ConversationTurn(
             turn_number=turn_number,
-            interviewer_message=interviewer_out.message,
-            interviewer_strategy_note=interviewer_out.internal_strategy_note,
+            persuader_message=persuader_out.message,
+            persuader_strategy_note=persuader_out.internal_strategy_note,
             persona_output=persona_out,
         )
         conversation_history.append(turn)

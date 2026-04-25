@@ -47,7 +47,7 @@ async def main() -> None:
             starting_stance=starting_stance,
             conversation_history=[],
             memory_residue=[],
-            interviewer_message=_OPENING_MESSAGE,
+            persuader_message=_OPENING_MESSAGE,
         )
         monologues.append(out.internal_monologue)
         print(f"internal_monologue : {out.internal_monologue}")

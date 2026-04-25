@@ -82,7 +82,7 @@ export interface StrategyDefinition {
   display_name: string
   one_line_description: string
   academic_citation: AcademicCitation
-  interviewer_system_prompt: string
+  persuader_system_prompt: string
   predicted_effective_on: string[]
   predicted_ineffective_on: string[]
 }
@@ -122,16 +122,33 @@ export interface PersonaTurnOutput {
   public_response: string
 }
 
-export interface InterviewerOutput {
+export interface PersuaderOutput {
   message: string
   internal_strategy_note: string
 }
 
+export interface MechanismClassification {
+  primary_mechanism_id: string
+  secondary_mechanism_id?: string
+  explanation: string
+  evidence_quotes: string[]
+  color_category: 'backfire' | 'genuine_persuasion' | 'surface_mechanism'
+  intensity: number
+}
+
 export interface ConversationTurn {
   turn_number: number
-  interviewer_message: string
-  interviewer_strategy_note: string
+  persuader_message: string
+  persuader_strategy_note: string
   persona_output: PersonaTurnOutput
+  // Pivotal-moment annotation fields
+  stance_delta?: number
+  is_pivotal?: boolean
+  is_inflection_point?: boolean
+  mechanism_classification?: MechanismClassification
+  per_turn_cognitive_scores?: Record<string, number>
+  color_category?: string
+  intensity?: number
 }
 
 // ---------------------------------------------------------------------------

@@ -25,7 +25,8 @@ from datetime import datetime, timezone
 import anthropic
 
 from config import ANTHROPIC_API_KEY, API_MAX_RETRIES, DEFAULT_TURNS, MODEL_ID, OUTPUT_DIR
-from data.loader import list_all, load_persona, load_strategy, load_topic
+from agents.mechanism_agent import classify_mechanism
+from data.loader import list_all, load_cognitive_mechanisms, load_persona, load_strategy, load_topic
 from measurement.scorer import score_conversation
 from measurement.verdict import compute_verdict
 from models import (
@@ -41,6 +42,36 @@ from simulation.cooling_off import run_cooling_off
 from simulation.orchestrator import run_parallel_conversations
 
 _SYNTHESIS_MAX_TOKENS = 300
+_PIVOTAL_THRESHOLD = 1.0  # private stance delta >= this point flags as pivotal
+
+
+def _annotate_pivotal_moments(
+    turns: list,
+    starting_stance: float,
+) -> list:
+    """
+    Adds stance_delta, is_pivotal, is_inflection_point, and intensity to each turn.
+    Called immediately after run_conversation() returns, before scoring.
+    """
+    prev = starting_stance
+    abs_deltas: list[float] = []
+
+    for turn in turns:
+        delta = turn.persona_output.private_stance - prev
+        turn.stance_delta = delta
+        turn.is_pivotal = abs(delta) >= _PIVOTAL_THRESHOLD
+        prev = turn.persona_output.private_stance
+        abs_deltas.append(abs(delta))
+
+    if abs_deltas:
+        max_idx = abs_deltas.index(max(abs_deltas))
+        turns[max_idx].is_inflection_point = True
+
+    max_delta = max(abs_deltas) if abs_deltas else 1.0
+    for turn, d in zip(turns, abs_deltas):
+        turn.intensity = round(d / max_delta, 3) if max_delta > 0 else 0.0
+
+    return turns
 
 
 def _build_trajectory(
@@ -150,6 +181,7 @@ async def run_simulation(
     persona = load_persona(persona_id)
     topic = load_topic(topic_id)
     strategies = [load_strategy(sid) for sid in list_all("strategies")]
+    mechanisms = load_cognitive_mechanisms()
 
     # Run all strategy conversations in parallel
     conversations = await run_parallel_conversations(persona, topic, strategies, num_turns)
@@ -161,7 +193,7 @@ async def run_simulation(
         turns = conversations.get(strategy.id)
         if turns is None:
             continue
-        outcome = await _build_outcome(persona, topic, strategy, turns)
+        outcome = await _build_outcome(persona, topic, strategy, turns, mechanisms)
         if outcome is not None:
             outcomes.append(outcome)
 
@@ -192,9 +224,27 @@ async def _build_outcome(
     topic,
     strategy,
     turns: list,
+    mechanisms: list,
 ) -> StrategyOutcome | None:
     try:
         starting_stance = topic.predicted_starting_stances.get(persona.id, 5.0)
+
+        _annotate_pivotal_moments(turns, starting_stance)
+
+        # Classify each pivotal turn against the cognitive mechanism library
+        for turn in turns:
+            if turn.is_pivotal:
+                try:
+                    classification = await classify_mechanism(
+                        persuader_phrase=turn.persuader_message,
+                        persona_monologue=turn.persona_output.internal_monologue,
+                        stance_delta=turn.stance_delta,
+                        mechanisms=mechanisms,
+                    )
+                    turn.mechanism_classification = classification
+                    turn.color_category = classification.color_category
+                except Exception as exc:
+                    print(f"WARN: mechanism classification failed turn={turn.turn_number}: {exc}")
 
         cooling = await run_cooling_off(persona, turns, topic.context_briefing)
         trajectory = _build_trajectory(starting_stance, turns, cooling)
