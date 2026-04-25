@@ -128,7 +128,7 @@ Fill in each empty string. Each prompt must:
 
 ### 5b: Judge Agent (`backend/measurement/judge_agent.py`)
 
-- [ ] **A5.8** Implement `run_judge_call(judge_prompt, transcript_text) -> JudgeResult`
+- [x] **A5.8** Implement `run_judge_call(judge_prompt, transcript_text) -> JudgeResult`
   - Calls `claude-haiku-4-5-20251001` with MAX_TOKENS_JUDGE (300) cap
   - Parses JSON response into `JudgeResult` TypedDict: `{score: float, evidence_quotes: list[str]}`
   - Uses `ANTHROPIC_API_KEY` from config
