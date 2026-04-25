@@ -48,8 +48,8 @@ def _make_turn(
 ) -> ConversationTurn:
     return ConversationTurn(
         turn_number=turn_number,
-        interviewer_message="What do you think?",
-        interviewer_strategy_note="strategy note",
+        persuader_message="What do you think?",
+        persuader_strategy_note="strategy note",
         persona_output=PersonaTurnOutput(
             internal_monologue=monologue,
             emotional_reaction=EmotionalReaction(

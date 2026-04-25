@@ -1,11 +1,11 @@
 """
-WS-B — Interviewer agent: single LLM call per conversation turn.
+WS-B — Persuader agent: single LLM call per conversation turn.
 
 Owns one responsibility: given a strategy's system prompt and the public-facing
-conversation history so far, make one LLM call and return the interviewer's
+conversation history so far, make one LLM call and return the persuader's
 next message and an internal strategy note.
 
-Critical constraint: the interviewer ONLY sees public turns — it never receives
+Critical constraint: the persuader ONLY sees public turns — it never receives
 the persona's internal monologue, private stance, or emotional state. This
 separation must be preserved here.
 
@@ -14,7 +14,7 @@ Responsibilities:
 - Fill the {TOPIC}, {TARGET_STANCE_DIRECTION}, {CONTEXT_BRIEFING} placeholders
 - Build context from public-only conversation history
 - Enforce the MAX_TOKENS_INTERVIEWER cap
-- Parse and return the structured InterviewerOutput
+- Parse and return the structured PersuaderOutput
 
 Does NOT know about:
 - Persona internals (persona_agent.py)
@@ -25,12 +25,12 @@ Does NOT know about:
 import anthropic
 
 from config import ANTHROPIC_API_KEY, API_MAX_RETRIES, MAX_TOKENS_INTERVIEWER, MODEL_ID
-from models import ConversationTurn, InterviewerOutput, StrategyDefinition
+from models import ConversationTurn, PersuaderOutput, StrategyDefinition
 
-_INTERVIEWER_TOOL_NAME = "submit_interviewer_response"
+_PERSUADER_TOOL_NAME = "submit_persuader_response"
 
-_INTERVIEWER_TOOL = {
-    "name": _INTERVIEWER_TOOL_NAME,
+_PERSUADER_TOOL = {
+    "name": _PERSUADER_TOOL_NAME,
     "description": "Submit your next message and note your internal strategy reasoning.",
     "input_schema": {
         "type": "object",
@@ -80,24 +80,24 @@ def _build_conversation_context(public_history: list[ConversationTurn]) -> str:
 
     lines = ["CONVERSATION SO FAR (public exchanges only):"]
     for turn in public_history:
-        lines.append(f"You: {turn.interviewer_message}")
+        lines.append(f"You: {turn.persuader_message}")
         lines.append(f"Person: {turn.persona_output.public_response}")
     return "\n".join(lines)
 
 
-async def run_interviewer_turn(
+async def run_persuader_turn(
     strategy: StrategyDefinition,
     topic_context: str,
     public_history: list[ConversationTurn],
     topic_display_name: str = "",
     target_stance_direction: str = "a more open and flexible position on this issue",
-) -> InterviewerOutput:
-    """Make one interviewer LLM call and return the next message."""
+) -> PersuaderOutput:
+    """Make one persuader LLM call and return the next message."""
     client = anthropic.AsyncAnthropic(api_key=ANTHROPIC_API_KEY, max_retries=API_MAX_RETRIES)
 
     # Fill placeholders in the strategy's system prompt
     system_prompt = _fill_strategy_prompt(
-        raw_prompt=strategy.interviewer_system_prompt,
+        raw_prompt=strategy.persuader_system_prompt,
         topic_display_name=topic_display_name or topic_context[:80],
         target_stance_direction=target_stance_direction,
         context_briefing=topic_context,
@@ -115,7 +115,7 @@ async def run_interviewer_turn(
             "text": (
                 "\nKeep your message brief — 1 to 3 sentences maximum. "
                 "Do not give speeches. Real persuasion happens in dialogue, not monologue. "
-                "Use the submit_interviewer_response tool to respond."
+                "Use the submit_persuader_response tool to respond."
             ),
         },
     ]
@@ -126,8 +126,8 @@ async def run_interviewer_turn(
         model=MODEL_ID,
         max_tokens=MAX_TOKENS_INTERVIEWER,
         system=system_blocks,
-        tools=[_INTERVIEWER_TOOL],
-        tool_choice={"type": "tool", "name": _INTERVIEWER_TOOL_NAME},
+        tools=[_PERSUADER_TOOL],
+        tool_choice={"type": "tool", "name": _PERSUADER_TOOL_NAME},
         messages=[{"role": "user", "content": user_content}],
     )
 
@@ -140,4 +140,4 @@ async def run_interviewer_turn(
     if "internal_strategy_note" not in raw:
         raw = {**raw, "internal_strategy_note": ""}
 
-    return InterviewerOutput.model_validate(raw)
+    return PersuaderOutput.model_validate(raw)

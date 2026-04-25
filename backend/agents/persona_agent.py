@@ -21,7 +21,7 @@ Does NOT know about:
 
 import anthropic
 
-from config import ANTHROPIC_API_KEY, MAX_TOKENS_PERSONA, MODEL_ID
+from config import ANTHROPIC_API_KEY, API_MAX_RETRIES, MAX_TOKENS_PERSONA, MODEL_ID
 from models import ConversationTurn, PersonaProfile, PersonaTurnOutput
 
 _PERSONA_TOOL_NAME = "submit_persona_response"
@@ -39,38 +39,36 @@ _PERSONA_TOOL = {
                     "emotional, self-interrupting. NOT a polished paragraph."
                 ),
             },
-            "emotional_reaction": {
-                "type": "object",
-                "properties": {
-                    "primary_emotion": {
-                        "type": "string",
-                        "enum": [
-                            "defensive", "curious", "dismissed", "engaged",
-                            "bored", "threatened", "warm", "frustrated", "intrigued",
-                        ],
-                    },
-                    "intensity": {"type": "integer", "minimum": 0, "maximum": 10},
-                    "trigger": {
-                        "type": "string",
-                        "description": "The specific phrase or moment that caused this emotion.",
-                    },
-                },
-                "required": ["primary_emotion", "intensity", "trigger"],
+            "primary_emotion": {
+                "type": "string",
+                "enum": [
+                    "defensive", "curious", "dismissed", "engaged",
+                    "bored", "threatened", "warm", "frustrated", "intrigued",
+                ],
+                "description": "The dominant emotion you feel right now.",
             },
-            "identity_threat": {
-                "type": "object",
-                "properties": {
-                    "threatened": {"type": "boolean"},
-                    "what_was_threatened": {
-                        "type": "string",
-                        "description": "Which value, group, or self-concept felt under attack. Omit if not threatened.",
-                    },
-                    "response_inclination": {
-                        "type": "string",
-                        "enum": ["defend", "withdraw", "attack", "accept"],
-                    },
-                },
-                "required": ["threatened", "response_inclination"],
+            "emotion_intensity": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 10,
+                "description": "How strongly you feel that emotion (0-10).",
+            },
+            "emotion_trigger": {
+                "type": "string",
+                "description": "The specific phrase or moment that caused this emotion.",
+            },
+            "identity_threatened": {
+                "type": "boolean",
+                "description": "Did this message threaten a value, group, or self-concept you hold?",
+            },
+            "identity_what_threatened": {
+                "type": "string",
+                "description": "Which value or self-concept felt under attack. Leave empty if not threatened.",
+            },
+            "identity_response_inclination": {
+                "type": "string",
+                "enum": ["defend", "withdraw", "attack", "accept"],
+                "description": "Your instinctive response to any threat (or 'accept' if no threat).",
             },
             "private_stance": {
                 "type": "number",
@@ -100,13 +98,17 @@ _PERSONA_TOOL = {
             },
             "public_response": {
                 "type": "string",
-                "description": "What you actually say out loud to the interviewer.",
+                "description": "What you actually say out loud to the persuader.",
             },
         },
         "required": [
             "internal_monologue",
-            "emotional_reaction",
-            "identity_threat",
+            "primary_emotion",
+            "emotion_intensity",
+            "emotion_trigger",
+            "identity_threatened",
+            "identity_what_threatened",
+            "identity_response_inclination",
             "private_stance",
             "public_stance",
             "private_stance_change_reason",
@@ -121,6 +123,7 @@ def _build_persona_system_prompt(
     persona: PersonaProfile,
     topic_context: str,
     starting_stance: float,
+    stance_scale: dict[str, str] | None = None,
 ) -> list[dict]:
     """
     Returns a list of system content blocks. The stable persona identity block
@@ -164,8 +167,18 @@ When an argument challenges your core values or identity groups, identity-protec
 memory_to_carry_forward should be a specific thing — a named fact, a vivid image, a question you can't shake — not a vague summary. It should read like an open tab in working memory."""
 
     # --- DYNAMIC BLOCK (not cached, changes each turn) ---
+    scale_context = ""
+    if stance_scale:
+        low = stance_scale.get("0", "")
+        high = stance_scale.get("10", "")
+        if low and high:
+            scale_context = (
+                f"\nSTANCE SCALE: 0 = {low} | 10 = {high}"
+                f"\nYour private_stance and public_stance must use this same scale."
+            )
+
     dynamic_text = f"""TOPIC: {topic_context}
-YOUR STARTING STANCE ON THIS TOPIC: {starting_stance:.1f}/10"""
+YOUR STARTING STANCE ON THIS TOPIC: {starting_stance:.1f}/10{scale_context}"""
 
     return [
         {
@@ -183,7 +196,7 @@ YOUR STARTING STANCE ON THIS TOPIC: {starting_stance:.1f}/10"""
 def _build_user_message(
     memory_residue: list[str],
     conversation_history: list[ConversationTurn],
-    interviewer_message: str,
+    persuader_message: str,
 ) -> str:
     parts: list[str] = []
 
@@ -196,11 +209,11 @@ def _build_user_message(
     if conversation_history:
         parts.append("CONVERSATION SO FAR:")
         for turn in conversation_history:
-            parts.append(f"Interviewer: {turn.interviewer_message}")
+            parts.append(f"Persuader: {turn.persuader_message}")
             parts.append(f"You said: {turn.persona_output.public_response}")
         parts.append("")
 
-    parts.append(f"The interviewer now says: {interviewer_message}")
+    parts.append(f"The persuader now says: {persuader_message}")
     parts.append("")
     parts.append("Use the submit_persona_response tool to respond.")
 
@@ -213,13 +226,16 @@ async def run_persona_turn(
     starting_stance: float,
     conversation_history: list[ConversationTurn],
     memory_residue: list[str],
-    interviewer_message: str,
+    persuader_message: str,
+    stance_scale: dict[str, str] | None = None,
 ) -> PersonaTurnOutput:
     """Make one persona LLM call and return the structured public+private response."""
-    client = anthropic.AsyncAnthropic(api_key=ANTHROPIC_API_KEY)
+    client = anthropic.AsyncAnthropic(api_key=ANTHROPIC_API_KEY, max_retries=API_MAX_RETRIES)
 
-    system_blocks = _build_persona_system_prompt(persona, topic_context, starting_stance)
-    user_content = _build_user_message(memory_residue, conversation_history, interviewer_message)
+    system_blocks = _build_persona_system_prompt(
+        persona, topic_context, starting_stance, stance_scale
+    )
+    user_content = _build_user_message(memory_residue, conversation_history, persuader_message)
 
     response = await client.messages.create(
         model=MODEL_ID,
@@ -230,8 +246,56 @@ async def run_persona_turn(
         messages=[{"role": "user", "content": user_content}],
     )
 
-    tool_block = next(b for b in response.content if b.type == "tool_use")
+    tool_block = next((b for b in response.content if b.type == "tool_use"), None)
+    if tool_block is None:
+        raise ValueError(f"Model did not invoke the tool. Response: {response.content}")
     raw = tool_block.input
 
-    # Pydantic validates types and ranges
-    return PersonaTurnOutput.model_validate(raw)
+    # Reconstruct nested objects from flat tool fields before Pydantic validation.
+    # The tool schema uses flat keys to avoid the model switching to XML syntax
+    # for nested objects when token budgets are tight.
+    _VALID_EMOTIONS = {
+        "defensive", "curious", "dismissed", "engaged",
+        "bored", "threatened", "warm", "frustrated", "intrigued",
+    }
+    _EMOTION_MAP = {
+        "guarded": "defensive", "anxious": "defensive", "irritated": "frustrated",
+        "skeptical": "defensive", "surprised": "intrigued", "hopeful": "engaged",
+        "interested": "curious", "annoyed": "frustrated", "uncomfortable": "defensive",
+        "resistant": "defensive", "open": "engaged", "neutral": "bored",
+        "conflicted": "engaged", "uncertain": "curious",
+    }
+    raw_emotion = raw.get("primary_emotion", "defensive")
+    emotion = raw_emotion if raw_emotion in _VALID_EMOTIONS else _EMOTION_MAP.get(raw_emotion, "defensive")
+
+    _VALID_INCLINATIONS = {"defend", "withdraw", "attack", "accept"}
+    _INCLINATION_MAP = {
+        "engage": "accept", "listen": "accept", "consider": "accept",
+        "comply": "accept", "question": "defend", "push_back": "defend",
+        "ignore": "withdraw", "deflect": "withdraw", "disengage": "withdraw",
+    }
+    raw_inclination = raw.get("identity_response_inclination", "accept")
+    inclination = (
+        raw_inclination if raw_inclination in _VALID_INCLINATIONS
+        else _INCLINATION_MAP.get(raw_inclination, "accept")
+    )
+
+    structured = {
+        "internal_monologue": raw["internal_monologue"],
+        "emotional_reaction": {
+            "primary_emotion": emotion,
+            "intensity": raw["emotion_intensity"],
+            "trigger": raw["emotion_trigger"],
+        },
+        "identity_threat": {
+            "threatened": raw["identity_threatened"],
+            "what_was_threatened": raw.get("identity_what_threatened") or None,
+            "response_inclination": inclination,
+        },
+        "private_stance": raw.get("private_stance", 5.0),
+        "public_stance": raw.get("public_stance", raw.get("private_stance", 5.0)),
+        "private_stance_change_reason": raw["private_stance_change_reason"],
+        "memory_to_carry_forward": raw["memory_to_carry_forward"],
+        "public_response": raw["public_response"],
+    }
+    return PersonaTurnOutput.model_validate(structured)

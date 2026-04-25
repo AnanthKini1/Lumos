@@ -104,7 +104,7 @@ class StrategyDefinition(BaseModel):
     display_name: str
     one_line_description: str
     academic_citation: AcademicCitation
-    interviewer_system_prompt: str
+    persuader_system_prompt: str
     predicted_effective_on: list[str] = Field(default_factory=list)
     predicted_ineffective_on: list[str] = Field(default_factory=list)
 
@@ -152,16 +152,33 @@ class PersonaTurnOutput(BaseModel):
     public_response: str
 
 
-class InterviewerOutput(BaseModel):
+class PersuaderOutput(BaseModel):
     message: str
     internal_strategy_note: str
 
 
+class MechanismClassification(BaseModel):
+    primary_mechanism_id: str
+    secondary_mechanism_id: Optional[str] = None
+    explanation: str
+    evidence_quotes: list[str] = Field(default_factory=list)
+    color_category: Literal["backfire", "genuine_persuasion", "surface_mechanism"]
+    intensity: float = Field(ge=0.0, le=1.0)
+
+
 class ConversationTurn(BaseModel):
     turn_number: int
-    interviewer_message: str
-    interviewer_strategy_note: str
+    persuader_message: str
+    persuader_strategy_note: str
     persona_output: PersonaTurnOutput
+    # Pivotal-moment annotation fields — added after conversation completes
+    stance_delta: float = 0.0
+    is_pivotal: bool = False
+    is_inflection_point: bool = False
+    mechanism_classification: Optional[MechanismClassification] = None
+    per_turn_cognitive_scores: Optional[dict[str, float]] = None
+    color_category: Optional[str] = None
+    intensity: Optional[float] = None
 
 
 # ---------------------------------------------------------------------------
