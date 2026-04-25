@@ -1,5 +1,6 @@
 import type { SimulationOutput, StrategyOutcome, VerdictCategory } from '../../types/simulation'
 import TrajectoryChart from './TrajectoryChart'
+import StrategyCard from './StrategyCard'
 
 const VERDICT_ORDER: Record<VerdictCategory, number> = {
   GENUINE_BELIEF_SHIFT: 0,
@@ -211,13 +212,12 @@ export default function ComparisonReport({ simulation, onViewTranscript, onBackT
           <h2 className="text-lg font-semibold text-slate-800 tracking-tight mb-4">Strategy Breakdown</h2>
           <div data-testid="strategy-cards-section" className="space-y-4">
             {sortedOutcomes.map(outcome => (
-              <div
+              <StrategyCard
                 key={outcome.strategy_id}
-                data-testid={`strategy-card-placeholder-${outcome.strategy_id}`}
-                className="bg-white border border-slate-200 rounded-xl p-6 text-slate-400 text-sm"
-              >
-                Card — {strategyDisplayName(outcome.strategy_id)}
-              </div>
+                outcome={outcome}
+                strategyDisplayName={strategyDisplayName(outcome.strategy_id)}
+                onViewTranscript={onViewTranscript}
+              />
             ))}
           </div>
         </section>
