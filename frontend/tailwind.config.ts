@@ -5,6 +5,13 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        // UI accent — rich purple used for selections, buttons, step indicators
+        accent: {
+          DEFAULT: '#9333ea', // purple-600
+          hover:   '#7e22ce', // purple-700
+          light:   '#f3e8ff', // purple-100
+          shadow:  '#e9d5ff', // purple-200
+        },
         // Private/internal mind panel palette
         mind: {
           bg: '#f5f3ff',       // violet-50
