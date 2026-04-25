@@ -28,7 +28,7 @@ from typing import TypedDict
 
 import anthropic
 
-from config import ANTHROPIC_API_KEY, MAX_TOKENS_JUDGE, MODEL_ID
+from config import ANTHROPIC_API_KEY, API_MAX_RETRIES, MAX_TOKENS_JUDGE, MODEL_ID
 
 
 class JudgeResult(TypedDict):
@@ -53,7 +53,7 @@ async def run_judge_call(
         ValueError: If the model response cannot be parsed as valid JSON with
                     the required keys.
     """
-    client = anthropic.AsyncAnthropic(api_key=ANTHROPIC_API_KEY)
+    client = anthropic.AsyncAnthropic(api_key=ANTHROPIC_API_KEY, max_retries=API_MAX_RETRIES)
 
     user_message = (
         "Here is the transcript to evaluate:\n\n"

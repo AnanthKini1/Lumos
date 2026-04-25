@@ -21,7 +21,7 @@ Does NOT know about:
 
 import anthropic
 
-from config import ANTHROPIC_API_KEY, MAX_TOKENS_PERSONA, MODEL_ID
+from config import ANTHROPIC_API_KEY, API_MAX_RETRIES, MAX_TOKENS_PERSONA, MODEL_ID
 from models import ConversationTurn, PersonaProfile, PersonaTurnOutput
 
 _PERSONA_TOOL_NAME = "submit_persona_response"
@@ -230,7 +230,7 @@ async def run_persona_turn(
     stance_scale: dict[str, str] | None = None,
 ) -> PersonaTurnOutput:
     """Make one persona LLM call and return the structured public+private response."""
-    client = anthropic.AsyncAnthropic(api_key=ANTHROPIC_API_KEY)
+    client = anthropic.AsyncAnthropic(api_key=ANTHROPIC_API_KEY, max_retries=API_MAX_RETRIES)
 
     system_blocks = _build_persona_system_prompt(
         persona, topic_context, starting_stance, stance_scale
@@ -268,6 +268,18 @@ async def run_persona_turn(
     raw_emotion = raw.get("primary_emotion", "defensive")
     emotion = raw_emotion if raw_emotion in _VALID_EMOTIONS else _EMOTION_MAP.get(raw_emotion, "defensive")
 
+    _VALID_INCLINATIONS = {"defend", "withdraw", "attack", "accept"}
+    _INCLINATION_MAP = {
+        "engage": "accept", "listen": "accept", "consider": "accept",
+        "comply": "accept", "question": "defend", "push_back": "defend",
+        "ignore": "withdraw", "deflect": "withdraw", "disengage": "withdraw",
+    }
+    raw_inclination = raw.get("identity_response_inclination", "accept")
+    inclination = (
+        raw_inclination if raw_inclination in _VALID_INCLINATIONS
+        else _INCLINATION_MAP.get(raw_inclination, "accept")
+    )
+
     structured = {
         "internal_monologue": raw["internal_monologue"],
         "emotional_reaction": {
@@ -278,10 +290,10 @@ async def run_persona_turn(
         "identity_threat": {
             "threatened": raw["identity_threatened"],
             "what_was_threatened": raw.get("identity_what_threatened") or None,
-            "response_inclination": raw["identity_response_inclination"],
+            "response_inclination": inclination,
         },
-        "private_stance": raw["private_stance"],
-        "public_stance": raw["public_stance"],
+        "private_stance": raw.get("private_stance", 5.0),
+        "public_stance": raw.get("public_stance", raw.get("private_stance", 5.0)),
         "private_stance_change_reason": raw["private_stance_change_reason"],
         "memory_to_carry_forward": raw["memory_to_carry_forward"],
         "public_response": raw["public_response"],

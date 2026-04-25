@@ -22,7 +22,7 @@ import anthropic
 
 _JUDGE_SEMAPHORE = asyncio.Semaphore(4)
 
-from config import ANTHROPIC_API_KEY, MAX_TOKENS_JUDGE, MODEL_ID
+from config import ANTHROPIC_API_KEY, API_MAX_RETRIES, MAX_TOKENS_JUDGE, MODEL_ID
 from measurement.judge_agent import JudgeResult, run_judge_call
 from measurement.judge_prompts import (
     AMBIVALENCE_PRESENCE_PROMPT,
@@ -121,7 +121,7 @@ async def _generate_synthesis(
     cooling_off: CoolingOff,
 ) -> str:
     """Call Haiku once to produce a 2-3 sentence synthesis paragraph."""
-    client = anthropic.AsyncAnthropic(api_key=ANTHROPIC_API_KEY)
+    client = anthropic.AsyncAnthropic(api_key=ANTHROPIC_API_KEY, max_retries=API_MAX_RETRIES)
 
     turn_summaries = []
     for turn in turns:

@@ -24,7 +24,7 @@ from datetime import datetime, timezone
 
 import anthropic
 
-from config import ANTHROPIC_API_KEY, DEFAULT_TURNS, MODEL_ID, OUTPUT_DIR
+from config import ANTHROPIC_API_KEY, API_MAX_RETRIES, DEFAULT_TURNS, MODEL_ID, OUTPUT_DIR
 from data.loader import list_all, load_persona, load_strategy, load_topic
 from measurement.scorer import score_conversation
 from measurement.verdict import compute_verdict
@@ -112,7 +112,7 @@ async def _generate_overall_synthesis(
     topic_name: str,
     outcomes: list[StrategyOutcome],
 ) -> str:
-    client = anthropic.AsyncAnthropic(api_key=ANTHROPIC_API_KEY)
+    client = anthropic.AsyncAnthropic(api_key=ANTHROPIC_API_KEY, max_retries=API_MAX_RETRIES)
 
     lines = [
         f"  - {o.strategy_id}: {o.verdict.value} "
@@ -154,16 +154,16 @@ async def run_simulation(
     # Run all strategy conversations in parallel
     conversations = await run_parallel_conversations(persona, topic, strategies, num_turns)
 
-    # Process each strategy sequentially after parallel conversations complete
-    outcome_tasks = []
+    # Build outcomes sequentially to avoid hitting rate limits with simultaneous
+    # cooling-off + 7-judge-call bursts across all strategies.
+    outcomes = []
     for strategy in strategies:
         turns = conversations.get(strategy.id)
         if turns is None:
             continue
-        outcome_tasks.append(_build_outcome(persona, topic, strategy, turns))
-
-    outcomes = await asyncio.gather(*outcome_tasks)
-    outcomes = [o for o in outcomes if o is not None]
+        outcome = await _build_outcome(persona, topic, strategy, turns)
+        if outcome is not None:
+            outcomes.append(outcome)
 
     overall_synthesis = await _generate_overall_synthesis(
         persona.display_name, topic.display_name, outcomes

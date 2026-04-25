@@ -16,7 +16,7 @@ Does NOT know about:
 
 import anthropic
 
-from config import ANTHROPIC_API_KEY, MAX_TOKENS_PERSONA, MODEL_ID
+from config import ANTHROPIC_API_KEY, API_MAX_RETRIES, MAX_TOKENS_PERSONA, MODEL_ID
 from models import CoolingOff, ConversationTurn, PersonaProfile
 
 _COOLING_TOOL_NAME = "submit_cooling_off_reflection"
@@ -67,7 +67,7 @@ async def run_cooling_off(
     topic_context: str,
 ) -> CoolingOff:
     """Run the post-conversation reflection and return the CoolingOff record."""
-    client = anthropic.AsyncAnthropic(api_key=ANTHROPIC_API_KEY)
+    client = anthropic.AsyncAnthropic(api_key=ANTHROPIC_API_KEY, max_retries=API_MAX_RETRIES)
 
     system = f"""You are {persona.display_name}. {persona.first_person_description[:400]}
 

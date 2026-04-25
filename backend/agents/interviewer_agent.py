@@ -24,7 +24,7 @@ Does NOT know about:
 
 import anthropic
 
-from config import ANTHROPIC_API_KEY, MAX_TOKENS_INTERVIEWER, MODEL_ID
+from config import ANTHROPIC_API_KEY, API_MAX_RETRIES, MAX_TOKENS_INTERVIEWER, MODEL_ID
 from models import ConversationTurn, InterviewerOutput, StrategyDefinition
 
 _INTERVIEWER_TOOL_NAME = "submit_interviewer_response"
@@ -93,7 +93,7 @@ async def run_interviewer_turn(
     target_stance_direction: str = "a more open and flexible position on this issue",
 ) -> InterviewerOutput:
     """Make one interviewer LLM call and return the next message."""
-    client = anthropic.AsyncAnthropic(api_key=ANTHROPIC_API_KEY)
+    client = anthropic.AsyncAnthropic(api_key=ANTHROPIC_API_KEY, max_retries=API_MAX_RETRIES)
 
     # Fill placeholders in the strategy's system prompt
     system_prompt = _fill_strategy_prompt(
@@ -135,5 +135,9 @@ async def run_interviewer_turn(
     if tool_block is None:
         raise ValueError(f"Model did not invoke the tool. Response: {response.content}")
     raw = tool_block.input
+
+    # Ensure optional metadata field is present before validation
+    if "internal_strategy_note" not in raw:
+        raw = {**raw, "internal_strategy_note": ""}
 
     return InterviewerOutput.model_validate(raw)
