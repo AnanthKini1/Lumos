@@ -207,6 +207,16 @@ describe('MindViewer', () => {
     await user.click(screen.getByTestId('view-report-btn'))
     expect(mockOnViewReport).toHaveBeenCalledOnce()
   })
+
+  it('initialTurnNumber=2 starts on Turn 2', () => {
+    render(<MindViewer simulation={mockSimulation} initialTurnNumber={2} onViewReport={mockOnViewReport} />)
+    expect(screen.getByTestId('turn-label')).toHaveTextContent('Turn 2 / 2')
+  })
+
+  it('initialTurnNumber out of range is clamped to last turn', () => {
+    render(<MindViewer simulation={mockSimulation} initialTurnNumber={99} onViewReport={mockOnViewReport} />)
+    expect(screen.getByTestId('turn-label')).toHaveTextContent('Turn 2 / 2')
+  })
 })
 
 // Ensure real timers are restored after module even if a test crashes

@@ -12,7 +12,7 @@ const VERDICT_LABEL: Record<VerdictCategory, string> = {
 interface Props {
   outcome: StrategyOutcome
   strategyDisplayName: string
-  onViewTranscript: (strategyId: string) => void
+  onViewTranscript: (strategyId: string, turnNumber?: number) => void
 }
 
 function ScoreBar({ value }: { value: number }) {
@@ -64,7 +64,7 @@ export default function StrategyCard({ outcome, strategyDisplayName, onViewTrans
               </span>
             )}
           </div>
-          <p className="font-serif text-base text-[#0f0f0f] group-hover:text-[#fafafa] opacity-60 leading-snug">{verdict_reasoning}</p>
+          <p className="font-serif text-base text-[#0f0f0f] group-hover:text-[#fafafa] opacity-60 group-hover:opacity-100 leading-snug">{verdict_reasoning}</p>
         </div>
         <span
           className="font-mono text-xl font-bold text-[#0f0f0f] group-hover:text-[#fafafa] shrink-0 mt-0.5"
@@ -104,7 +104,9 @@ export default function StrategyCard({ outcome, strategyDisplayName, onViewTrans
                 <blockquote
                   key={i}
                   data-testid={`quote-${i}-${outcome.strategy_id}`}
-                  className="pt-4 border-t-2 border-[#0f0f0f]"
+                  className="pt-4 border-t-2 border-[#0f0f0f] cursor-pointer hover:bg-[#f5f5f5] transition-colors px-2 -mx-2"
+                  onClick={() => onViewTranscript(outcome.strategy_id, quote.turn)}
+                  title={`Go to Turn ${quote.turn} in Mind Viewer`}
                 >
                   <div className="flex gap-3 mb-2">
                     <span className="font-mono text-xs font-bold text-[#0f0f0f] opacity-30 leading-none tabular-nums">{String(i + 1).padStart(2, '0')}</span>
@@ -119,6 +121,7 @@ export default function StrategyCard({ outcome, strategyDisplayName, onViewTrans
                   </div>
                   <p className="font-serif text-base italic text-[#0f0f0f] leading-relaxed">&ldquo;{quote.text}&rdquo;</p>
                   <p className="font-mono text-xs text-[#0f0f0f] opacity-50 mt-1">{quote.annotation}</p>
+                  <p className="font-mono text-xs text-[#0f0f0f] opacity-40 mt-1.5">→ Go to Turn {quote.turn}</p>
                 </blockquote>
               ))}
             </div>

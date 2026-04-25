@@ -72,7 +72,7 @@ export default function InternalMind({ turnOutput, priorMemoryNotes, turnNumber,
               {emotional_reaction.primary_emotion} — {emotional_reaction.intensity}/10
             </p>
           </motion.div>
-          <p className="font-mono text-xs text-[#fafafa] opacity-50 mt-1.5">
+          <p className="font-mono text-xs text-[#fafafa] opacity-60 mt-1.5">
             Triggered by: &ldquo;{emotional_reaction.trigger}&rdquo;
           </p>
         </div>
@@ -91,11 +91,11 @@ export default function InternalMind({ turnOutput, priorMemoryNotes, turnNumber,
 
         {/* Internal monologue */}
         <div className="space-y-2">
-          <p className="text-xs font-mono text-[#fafafa] opacity-40 uppercase tracking-wider">Thinking</p>
+          <p className="text-xs font-mono text-[#fafafa] opacity-60 uppercase tracking-wider">Thinking</p>
 
           {/* Prior turns faded */}
           {priorMemoryNotes.length > 0 && (
-            <div className="space-y-1 opacity-25">
+            <div className="space-y-1 opacity-40">
               {turnOutput.internal_monologue && priorMemoryNotes.map((_, i) => (
                 <div key={i} className="text-sm font-serif italic text-[#fafafa] line-clamp-2">
                   {/* prior monologue is not stored, show memory note as proxy */}
@@ -115,29 +115,29 @@ export default function InternalMind({ turnOutput, priorMemoryNotes, turnNumber,
 
         {/* Private stance — hero number */}
         <div data-testid="private-stance" className="space-y-1 border-t border-[#fafafa] border-opacity-10 pt-4">
-          <p className="text-xs font-mono text-[#fafafa] opacity-40 uppercase tracking-wider">Private Stance</p>
+          <p className="text-xs font-mono text-[#fafafa] opacity-60 uppercase tracking-wider">Private Stance</p>
           <div className="flex items-baseline gap-3">
             <span className="text-6xl font-mono font-bold text-[#fafafa] leading-none">
               {private_stance.toFixed(1)}
             </span>
-            <span className="text-[#fafafa] opacity-30 font-mono text-xl">/ 10</span>
+            <span className="text-[#fafafa] opacity-50 font-mono text-xl">/ 10</span>
             <span data-testid="stance-arrow" className="text-2xl text-[#fafafa] font-mono">
               {stanceDirection}
             </span>
           </div>
-          <p className="text-sm font-serif italic text-[#fafafa] opacity-50 mt-1">{private_stance_change_reason}</p>
+          <p className="text-sm font-serif italic text-[#fafafa] opacity-70 mt-1">{private_stance_change_reason}</p>
         </div>
 
         {/* Memory residue */}
         <div className="space-y-2 border-t border-[#fafafa] border-opacity-10 pt-4">
-          <p className="text-xs font-mono text-[#fafafa] opacity-40 uppercase tracking-wider">Memory</p>
+          <p className="text-xs font-mono text-[#fafafa] opacity-60 uppercase tracking-wider">Memory</p>
 
           {priorMemoryNotes.map((note, i) => (
             <div
               key={i}
-              className="px-3 py-2 border border-[#fafafa] border-opacity-20 opacity-40"
+              className="px-3 py-2 border border-[#fafafa] border-opacity-30 opacity-60"
             >
-              <span className="font-mono text-xs text-[#fafafa] mr-2 opacity-60">Turn {i + 1}</span>
+              <span className="font-mono text-xs text-[#fafafa] mr-2 opacity-70">Turn {i + 1}</span>
               <span className="font-serif text-xs text-[#fafafa]">{note}</span>
             </div>
           ))}

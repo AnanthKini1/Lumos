@@ -77,10 +77,10 @@ describe('StrategyCard — collapsed state', () => {
     expect(card.className).toContain('border-[#0f0f0f]')
   })
 
-  it('card has red left border for BACKFIRE', () => {
+  it('card has red border for BACKFIRE', () => {
     renderAuthority()
     const card = screen.getByTestId('strategy-card-strategy_authority_expert')
-    expect(card.className).toContain('border-l-[#dc2626]')
+    expect(card.className).toContain('border-[#dc2626]')
   })
 
   it('shows verdict_reasoning text', () => {
@@ -199,5 +199,18 @@ describe('StrategyCard — expanded state', () => {
     await user.click(screen.getByTestId('strategy-card-toggle-strategy_authority_expert'))
     await user.click(screen.getByTestId('watch-transcript-strategy_authority_expert'))
     expect(mockOnViewTranscript).toHaveBeenCalledWith('strategy_authority_expert')
+  })
+
+  it('clicking a standout quote calls onViewTranscript with strategyId and turn number', async () => {
+    renderNarrative()
+    await user.click(screen.getByTestId('strategy-card-toggle-strategy_personal_narrative'))
+    await user.click(screen.getByTestId('quote-0-strategy_personal_narrative'))
+    expect(mockOnViewTranscript).toHaveBeenCalledWith('strategy_personal_narrative', 1)
+  })
+
+  it('standout quote shows "Go to Turn N" affordance', async () => {
+    renderNarrative()
+    await user.click(screen.getByTestId('strategy-card-toggle-strategy_personal_narrative'))
+    expect(screen.getByText('→ Go to Turn 1')).toBeInTheDocument()
   })
 })

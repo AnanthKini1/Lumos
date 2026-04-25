@@ -72,7 +72,7 @@ function computeRow(outcome: StrategyOutcome) {
 
 interface Props {
   simulation: SimulationOutput
-  onViewTranscript: (strategyId: string) => void
+  onViewTranscript: (strategyId: string, turnNumber?: number) => void
   onBackToSetup: () => void
 }
 
