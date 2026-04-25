@@ -4,6 +4,13 @@ import userEvent from '@testing-library/user-event'
 import ComparisonReport from '../components/report/ComparisonReport'
 import { mockSimulation } from './fixtures'
 
+// Avoid pulling in recharts (requires browser SVG/ResizeObserver APIs)
+vi.mock('../components/report/TrajectoryChart', () => ({
+  default: ({ outcome }: { outcome: { strategy_id: string } }) => (
+    <div data-testid={`trajectory-chart-${outcome.strategy_id}`} />
+  ),
+}))
+
 const user = userEvent.setup({ delay: null })
 
 const mockOnViewTranscript = vi.fn()
@@ -185,10 +192,10 @@ describe('ComparisonReport', () => {
     expect(screen.getByTestId('trajectory-section')).toBeInTheDocument()
   })
 
-  it('shows trajectory placeholder for each outcome', () => {
+  it('shows trajectory chart for each outcome', () => {
     renderReport()
-    expect(screen.getByTestId('trajectory-placeholder-strategy_personal_narrative')).toBeInTheDocument()
-    expect(screen.getByTestId('trajectory-placeholder-strategy_authority_expert')).toBeInTheDocument()
+    expect(screen.getByTestId('trajectory-chart-strategy_personal_narrative')).toBeInTheDocument()
+    expect(screen.getByTestId('trajectory-chart-strategy_authority_expert')).toBeInTheDocument()
   })
 
   it('shows strategy cards section', () => {
