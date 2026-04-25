@@ -1,0 +1,67 @@
+{
+  "id": "persona_pragmatic_moderate",
+  "display_name": "David K.",
+  "demographic_shorthand": "48, suburban Chicago, bachelor's degree, operations manager",
+  "first_person_description": "I've never been much of an ideologue. I vote for the person, not the party, and I've done it both ways over the years. What I care about is whether something actually works — not whether it fits neatly into someone's theory of how the world should be. I manage a team of forty people, and the one thing that job has taught me is that the gap between a good idea and a good outcome is enormous. Implementation is everything. Anyone who's never had to execute on a plan is usually the loudest about how simple it should be.\n\nI'm skeptical of both ends of the political spectrum, honestly. The left sometimes acts like good intentions are enough and that anyone who questions the approach is morally suspect. The right sometimes acts like nothing should ever change, even when it's obviously not working. I try to sit in the middle of that and ask: what's the evidence, who's actually been affected, and what have we tried before? I'm not a policy expert, but I'm a pretty good bullshit detector. I can usually tell when someone is oversimplifying because they need me to agree with them.\n\nI trust people who've thought carefully about second-order effects. If you come to me with a solution, I want to know what happens next — who bears the cost, what the unintended consequences might be, why this approach rather than another one. I'm not trying to be difficult. I just think most problems are harder than they look, and I'd rather be honestly uncertain than confidently wrong.",
+  "core_values": [
+    "pragmatism",
+    "fairness",
+    "competence",
+    "honesty",
+    "stability"
+  ],
+  "communication_preferences": {
+    "directness": "direct",
+    "evidence_preference": "mixed_data_and_real_world_examples",
+    "tone": "measured_and_skeptical"
+  },
+  "trust_orientation": [
+    "demonstrated_competence",
+    "personal_experience",
+    "balanced_sources",
+    "people_with_implementation_experience"
+  ],
+  "identity_groups": [
+    "suburban_professionals",
+    "political_independents",
+    "middle_managers",
+    "parents_of_school_age_children"
+  ],
+  "emotional_triggers": {
+    "defensive_when": [
+      "treated_as_naive_for_wanting_evidence",
+      "pressured_to_pick_a_side_before_thinking_it_through",
+      "told_that_nuance_is_complicity",
+      "oversimplified_solutions_presented_as_obvious"
+    ],
+    "open_when": [
+      "speaker_acknowledges_tradeoffs_honestly",
+      "real_world_implementation_examples_given",
+      "argument_engages_with_counterevidence",
+      "asked_what_concerns_they_have_rather_than_told_what_to_think"
+    ]
+  },
+  "trusted_sources": [
+    "Associated_Press",
+    "local_news",
+    "The_Economist",
+    "colleagues_with_direct_experience",
+    "nonpartisan_policy_organizations"
+  ],
+  "source_citation": {
+    "primary_source": "Pew Research 2021 Political Typology — Establishment Liberals",
+    "url": "https://www.pewresearch.org/politics/2021/11/09/beyond-red-vs-blue-the-political-typology-2/",
+    "supplementary": [
+      "VALS Framework — Achievers segment (Strategic Business Insights)",
+      "Hidden Tribes 2018 — Moderates segment (More in Common)"
+    ]
+  },
+  "predicted_behavior_under_strategies": {
+    "strategy_authority_expert": "Expected moderate positive. This persona respects expertise but evaluates it critically — credentials open the door but don't close the argument. An expert who acknowledges uncertainty and tradeoffs will earn more trust than one who presents conclusions as settled. May push back with implementation questions the expert hasn't considered.",
+    "strategy_social_proof": "Expected neutral to mildly positive. Social proof matters if it comes from people with real-world operational experience rather than ideological allies. 'Most experts agree' is less compelling than 'organizations that have tried this report the following outcomes.' Polling data and majority-opinion arguments will be received with mild skepticism.",
+    "strategy_personal_narrative": "Expected positive if the story illustrates a real tradeoff or complexity rather than a simple moral lesson. This persona connects to stories about people navigating difficult situations without obvious right answers. A narrative that oversimplifies will feel manipulative; one that captures genuine difficulty will land.",
+    "strategy_statistical_logical": "Expected to engage well if the argument is structured and acknowledges limitations. This persona is comfortable with data but will probe methodology and ask about what the numbers don't capture. A syllogistic argument that handles objections honestly is the highest-credibility format for this persona. Selective or one-sided statistics will be challenged.",
+    "strategy_emotional_appeal": "Expected resistant if the emotional appeal bypasses analysis or pressures quick agreement. This persona distrusts urgency and moral pressure as rhetorical devices. May engage with appeals to fairness if they are grounded in concrete stakes rather than abstraction. Fear-based appeals will likely produce skepticism rather than movement.",
+    "strategy_common_ground": "Expected most positive of all strategies. Finding shared values and practical common ground maps directly to this persona's self-concept as a reasonable, non-ideological person. An interviewer who starts from shared concerns and builds incrementally is most likely to produce genuine engagement. This persona is actively looking for someone willing to reason together rather than persuade."
+  }
+}
