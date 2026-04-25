@@ -87,12 +87,19 @@ export interface StrategyDefinition {
   predicted_ineffective_on: string[]
 }
 
+export interface KeyStatistic {
+  claim: string
+  source: string
+  direction?: string  // "supports_stance_10" | "supports_stance_0" | "neutral"
+}
+
 export interface TopicProfile {
   id: string
   display_name: string
   stance_scale_definition: Record<string, string>
   context_briefing: string
   predicted_starting_stances: Record<string, number>
+  key_statistics?: KeyStatistic[]
 }
 
 // ---------------------------------------------------------------------------

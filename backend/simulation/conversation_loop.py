@@ -42,13 +42,23 @@ async def run_conversation(
         # Persona leans toward low end — persuader argues for the high end
         target_direction = scale.get("10", "the opposing position")
 
+    # Enrich context with key statistics when the topic provides them.
+    # This appends to context_briefing so both agents see the same grounded data.
+    topic_context = topic.context_briefing
+    if topic.key_statistics:
+        stats_lines = ["\n\nKEY STATISTICS (cite these when relevant):"]
+        for s in topic.key_statistics:
+            direction_note = f" [{s.direction}]" if s.direction else ""
+            stats_lines.append(f"- {s.claim} (Source: {s.source}){direction_note}")
+        topic_context += "\n".join(stats_lines)
+
     conversation_history: list[ConversationTurn] = []
     memory_residue: list[str] = []
 
     for turn_number in range(1, num_turns + 1):
         persuader_out = await run_persuader_turn(
             strategy=strategy,
-            topic_context=topic.context_briefing,
+            topic_context=topic_context,
             public_history=conversation_history,
             topic_display_name=topic.display_name,
             target_stance_direction=target_direction,
@@ -56,7 +66,7 @@ async def run_conversation(
 
         persona_out = await run_persona_turn(
             persona=persona,
-            topic_context=topic.context_briefing,
+            topic_context=topic_context,
             starting_stance=starting_stance,
             conversation_history=conversation_history,
             memory_residue=memory_residue,
