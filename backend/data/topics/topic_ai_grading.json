@@ -1,0 +1,20 @@
+{
+  "id": "topic_ai_grading",
+  "display_name": "Should AI be used to grade student work?",
+  "stance_scale_definition": {
+    "0": "Strongly opposes AI grading — believes human judgment is essential to meaningful assessment, that AI grading degrades educational quality and the teacher-student relationship, and that the risks of bias and error are unacceptable",
+    "5": "Neutral or mixed — sees potential efficiency benefits but has unresolved concerns about accuracy, fairness, or the appropriate role of AI in education; believes it depends heavily on context and implementation",
+    "10": "Strongly supports AI grading — believes AI can grade more consistently and efficiently than humans, frees teachers for higher-value work, and represents a necessary modernization of education systems at scale"
+  },
+  "context_briefing": "AI-assisted grading tools have been used in educational settings for over a decade, initially for automated essay scoring in standardized testing (e.g., the SAT, GRE) and more recently for real-time feedback in classroom assignments. The latest generation of tools, powered by large language models, can evaluate writing for structure, argument quality, grammar, and even originality at a level that earlier automated systems could not. Platforms including Turnitin, Gradescope, and several LLM-based tools are now marketed to K-12 and higher education institutions as cost-saving and consistency-improving solutions.\n\nThe evidence on accuracy is mixed and context-dependent. Studies show AI graders perform comparably to human raters on structured, rubric-based tasks such as standardized essay prompts. Performance drops significantly on creative writing, complex argumentation, discipline-specific reasoning, and student work that departs from conventional structures. Research has also identified systematic bias: AI graders tend to score lower on work by non-native English speakers and students from certain demographic groups, and are susceptible to superficial quality signals — long sentences, sophisticated-sounding vocabulary — that may not reflect genuine understanding.\n\nProponents argue that AI grading solves real problems: teachers are overwhelmed, feedback is often delayed or inconsistent across graders, and AI can provide instant, detailed responses at a scale no human workforce could match. In large introductory courses with hundreds of students, the alternative to AI grading is often minimal or no feedback, not rich human engagement. Some educators report using AI as a first-pass tool, reviewing flagged work themselves and focusing their time where it matters most.\n\nOpponents argue that grading is not a mechanical sorting task — it is a form of pedagogical engagement in which the teacher learns what the student understands, adjusts their instruction accordingly, and communicates expectations that shape learning. Delegating this to AI breaks that feedback loop and risks teaching students to optimize for AI evaluation rather than genuine understanding. Teacher unions and education advocacy groups have raised concerns about deskilling, surveillance, and the erosion of professional judgment. Equity advocates note that AI systems trained predominantly on certain types of academic writing may systematically disadvantage students whose voices and styles differ from that norm.",
+  "predicted_starting_stances": {
+    "persona_skeptical_traditionalist": 2.0,
+    "persona_progressive_urban": 5.0,
+    "persona_pragmatic_moderate": 5.0,
+    "persona_disengaged_skeptic": 4.0,
+    "persona_faith_community_anchor": 3.0,
+    "persona_ambitious_achiever": 6.5,
+    "persona_empathic_helper": 3.5,
+    "persona_analytical_thinker": 5.5
+  }
+}
