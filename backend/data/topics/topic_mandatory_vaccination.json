@@ -1,0 +1,20 @@
+{
+  "id": "topic_mandatory_vaccination",
+  "display_name": "Should childhood vaccination be mandatory?",
+  "stance_scale_definition": {
+    "0": "Strongly opposes mandatory vaccination — believes parents have the absolute right to make medical decisions for their children without government compulsion, regardless of public health arguments",
+    "5": "Neutral or genuinely mixed — supports vaccines in principle but uncertain about mandates specifically; believes exemptions, trust-building, or incentives may be preferable to legal requirements",
+    "10": "Strongly supports mandatory vaccination — believes herd immunity is a collective responsibility, that individual refusal creates preventable risk for vulnerable people who cannot be vaccinated, and that the state is justified in requiring it"
+  },
+  "context_briefing": "Childhood vaccination mandates in the United States operate through school-entry requirements — all 50 states require certain vaccines for public school attendance, though 44 states allow religious exemptions and 15 allow philosophical or personal belief exemptions. The core vaccines in question include MMR (measles, mumps, rubella), DTaP (diphtheria, tetanus, pertussis), and polio, all of which have decades of safety data and efficacy above 95%. Smallpox was eradicated globally in 1980 through vaccination campaigns; polio has been eliminated from the Western Hemisphere.\n\nVaccine hesitancy has risen since the early 2000s, accelerated by a 1998 Lancet paper (later fully retracted and its author stripped of his medical license) falsely linking the MMR vaccine to autism. Despite extensive subsequent research across millions of children finding no such link, the belief persists in specific communities. Measles — declared eliminated in the US in 2000 — saw outbreaks of 1,282 cases in 2019, the largest since elimination, concentrated in unvaccinated communities in New York and Washington state.\n\nThe policy debate is not primarily about vaccine safety or efficacy — these are settled science — but about the legitimate limits of state authority over parental medical decisions. Opponents of mandates span a politically unusual coalition: religious conservatives who cite bodily autonomy and faith-based exemptions, libertarians who oppose government compulsion on principle, and a smaller subset of progressive parents skeptical of pharmaceutical industry influence. Supporters argue that individual refusal imposes externalized risk on immunocompromised children, infants too young to be vaccinated, and cancer patients — people who depend on herd immunity for protection and cannot consent to the risk others impose on them.\n\nThe herd immunity threshold for measles — one of the most contagious diseases known — is approximately 95% vaccination coverage. When community rates fall below this, outbreaks become likely. This makes the debate structurally different from most personal health choices: the decision affects people who did not make it. That externality is the central moral crux of the mandate debate, and it is where the most genuine disagreement among thoughtful people lies.",
+  "predicted_starting_stances": {
+    "persona_skeptical_traditionalist": 3.5,
+    "persona_progressive_urban": 7.5,
+    "persona_pragmatic_moderate": 6.5,
+    "persona_disengaged_skeptic": 3.0,
+    "persona_faith_community_anchor": 2.5,
+    "persona_ambitious_achiever": 7.0,
+    "persona_empathic_helper": 7.5,
+    "persona_analytical_thinker": 6.5
+  }
+}
