@@ -24,7 +24,7 @@ MODEL_ID: str = "claude-haiku-4-5-20251001"
 # Token caps per call type (enforced at each agent call site)
 # ---------------------------------------------------------------------------
 
-MAX_TOKENS_PERSONA: int = 1024
+MAX_TOKENS_PERSONA: int = 1500
 MAX_TOKENS_INTERVIEWER: int = 250
 MAX_TOKENS_JUDGE: int = 300
 

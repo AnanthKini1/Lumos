@@ -61,6 +61,7 @@ async def run_conversation(
             conversation_history=conversation_history,
             memory_residue=memory_residue,
             interviewer_message=interviewer_out.message,
+            stance_scale=topic.stance_scale_definition,
         )
 
         turn = ConversationTurn(

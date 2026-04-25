@@ -123,6 +123,7 @@ def _build_persona_system_prompt(
     persona: PersonaProfile,
     topic_context: str,
     starting_stance: float,
+    stance_scale: dict[str, str] | None = None,
 ) -> list[dict]:
     """
     Returns a list of system content blocks. The stable persona identity block
@@ -166,8 +167,18 @@ When an argument challenges your core values or identity groups, identity-protec
 memory_to_carry_forward should be a specific thing — a named fact, a vivid image, a question you can't shake — not a vague summary. It should read like an open tab in working memory."""
 
     # --- DYNAMIC BLOCK (not cached, changes each turn) ---
+    scale_context = ""
+    if stance_scale:
+        low = stance_scale.get("0", "")
+        high = stance_scale.get("10", "")
+        if low and high:
+            scale_context = (
+                f"\nSTANCE SCALE: 0 = {low} | 10 = {high}"
+                f"\nYour private_stance and public_stance must use this same scale."
+            )
+
     dynamic_text = f"""TOPIC: {topic_context}
-YOUR STARTING STANCE ON THIS TOPIC: {starting_stance:.1f}/10"""
+YOUR STARTING STANCE ON THIS TOPIC: {starting_stance:.1f}/10{scale_context}"""
 
     return [
         {
@@ -216,11 +227,14 @@ async def run_persona_turn(
     conversation_history: list[ConversationTurn],
     memory_residue: list[str],
     interviewer_message: str,
+    stance_scale: dict[str, str] | None = None,
 ) -> PersonaTurnOutput:
     """Make one persona LLM call and return the structured public+private response."""
     client = anthropic.AsyncAnthropic(api_key=ANTHROPIC_API_KEY)
 
-    system_blocks = _build_persona_system_prompt(persona, topic_context, starting_stance)
+    system_blocks = _build_persona_system_prompt(
+        persona, topic_context, starting_stance, stance_scale
+    )
     user_content = _build_user_message(memory_residue, conversation_history, interviewer_message)
 
     response = await client.messages.create(
