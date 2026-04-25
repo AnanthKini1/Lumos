@@ -12,18 +12,24 @@ const sim = mockData as SimulationOutput
 const availablePersonas: PersonaProfile[] = [sim.metadata.persona]
 const availableTopics: TopicProfile[] = [sim.metadata.topic]
 
+function toTitleCase(s: string): string {
+  return s.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase())
+}
+
 function CitationBadge({ text }: { text: string }) {
   return (
-    <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded text-xs font-mono bg-violet-50 text-violet-600 border border-violet-200">
-      <span className="opacity-60">src:</span> {text.split('—')[0].trim()}
+    <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-sm font-mono bg-violet-50 text-violet-700 border border-violet-200">
+      <span className="opacity-50 text-xs">src</span>
+      <span className="opacity-30 text-xs">·</span>
+      {text.split('—')[0].trim()}
     </span>
   )
 }
 
 function ValuePill({ value }: { value: string }) {
   return (
-    <span className="inline-block px-2 py-0.5 rounded-full text-xs bg-slate-100 text-slate-600 border border-slate-200">
-      {value}
+    <span className="inline-block px-3 py-1 rounded-full text-sm bg-slate-100 text-slate-700 border border-slate-200 font-medium">
+      {toTitleCase(value)}
     </span>
   )
 }
@@ -37,31 +43,31 @@ interface PersonaCardProps {
 function PersonaCard({ persona, selected, onSelect }: PersonaCardProps) {
   return (
     <motion.button
-      whileHover={{ scale: 1.02 }}
+      whileHover={{ scale: 1.02, y: -2 }}
       whileTap={{ scale: 0.99 }}
       onClick={onSelect}
       data-testid={`persona-card-${persona.id}`}
       className={[
-        'w-full text-left p-4 rounded-xl border-2 transition-colors duration-150 bg-white',
+        'w-full text-left p-6 rounded-2xl border-2 transition-all duration-150 bg-white',
         selected
-          ? 'border-amber-400 shadow-md shadow-amber-100'
-          : 'border-slate-200 hover:border-slate-300',
+          ? 'border-purple-500 shadow-lg shadow-purple-100'
+          : 'border-slate-200 hover:border-slate-300 hover:shadow-md',
       ].join(' ')}
     >
-      <div className="flex items-start justify-between gap-2 mb-2">
+      <div className="flex items-start justify-between gap-3 mb-3">
         <div>
-          <p className="font-semibold text-slate-900">{persona.display_name}</p>
-          <p className="text-sm text-slate-500">{persona.demographic_shorthand}</p>
+          <p className="font-bold text-lg text-slate-900 leading-tight">{persona.display_name}</p>
+          <p className="text-base text-slate-500 mt-0.5">{persona.demographic_shorthand}</p>
         </div>
         {selected && (
-          <span className="shrink-0 w-5 h-5 rounded-full bg-amber-400 flex items-center justify-center">
-            <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+          <span className="shrink-0 w-6 h-6 rounded-full bg-purple-600 flex items-center justify-center shadow-sm">
+            <svg className="w-3.5 h-3.5 text-white" fill="currentColor" viewBox="0 0 20 20">
               <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
             </svg>
           </span>
         )}
       </div>
-      <div className="flex flex-wrap gap-1 mb-3">
+      <div className="flex flex-wrap gap-2 mb-4">
         {persona.core_values.slice(0, 3).map(v => (
           <ValuePill key={v} value={v} />
         ))}
@@ -80,22 +86,22 @@ function ProfilePanel({ persona, onClose }: ProfilePanelProps) {
   return (
     <motion.div
       data-testid="profile-panel"
-      initial={{ x: '100%', opacity: 0 }}
+      initial={{ x: '-100%', opacity: 0 }}
       animate={{ x: 0, opacity: 1 }}
-      exit={{ x: '100%', opacity: 0 }}
-      transition={{ type: 'spring', stiffness: 300, damping: 30 }}
-      className="fixed top-0 right-0 h-full w-[420px] bg-white border-l border-slate-200 shadow-xl overflow-y-auto z-50"
+      exit={{ x: '-100%', opacity: 0 }}
+      transition={{ type: 'spring', stiffness: 320, damping: 32 }}
+      className="fixed top-0 left-0 h-full w-[520px] bg-white border-r border-slate-200 shadow-2xl overflow-y-auto z-50"
     >
-      <div className="p-6">
-        <div className="flex items-center justify-between mb-6">
+      <div className="p-8">
+        <div className="flex items-start justify-between mb-8">
           <div>
-            <h2 className="font-semibold text-xl text-slate-900">{persona.display_name}</h2>
-            <p className="text-sm text-slate-500">{persona.demographic_shorthand}</p>
+            <h2 className="font-bold text-2xl text-slate-900 leading-tight">{persona.display_name}</h2>
+            <p className="text-base text-slate-500 mt-1">{persona.demographic_shorthand}</p>
           </div>
           <button
             data-testid="close-profile-panel"
             onClick={onClose}
-            className="p-2 rounded-lg text-slate-400 hover:text-slate-600 hover:bg-slate-100 transition-colors"
+            className="p-2.5 rounded-xl text-slate-400 hover:text-slate-700 hover:bg-slate-100 transition-colors"
           >
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -103,79 +109,85 @@ function ProfilePanel({ persona, onClose }: ProfilePanelProps) {
           </button>
         </div>
 
-        <p className="text-sm italic text-slate-700 leading-relaxed mb-6 border-l-2 border-violet-200 pl-3">
+        <blockquote className="text-base italic text-slate-700 leading-relaxed mb-8 border-l-4 border-violet-300 pl-4 bg-violet-50 py-3 pr-3 rounded-r-lg">
           "{persona.first_person_description}"
-        </p>
+        </blockquote>
 
-        <section className="mb-5">
-          <h3 className="text-xs font-mono text-slate-400 uppercase tracking-widest mb-2">Core Values</h3>
-          <div className="flex flex-wrap gap-1.5">
+        <section className="mb-6">
+          <h3 className="text-xs font-mono text-slate-400 uppercase tracking-widest mb-3">Core Values</h3>
+          <div className="flex flex-wrap gap-2">
             {persona.core_values.map(v => <ValuePill key={v} value={v} />)}
           </div>
         </section>
 
-        <section className="mb-5">
-          <h3 className="text-xs font-mono text-slate-400 uppercase tracking-widest mb-2">Trust Orientation</h3>
-          <div className="flex flex-wrap gap-1.5">
+        <section className="mb-6">
+          <h3 className="text-xs font-mono text-slate-400 uppercase tracking-widest mb-3">Trust Orientation</h3>
+          <div className="flex flex-wrap gap-2">
             {persona.trust_orientation.map(t => (
-              <span key={t} className="px-2 py-0.5 rounded-full text-xs bg-sky-50 text-sky-700 border border-sky-200">{t.replace(/_/g, ' ')}</span>
+              <span key={t} className="px-3 py-1 rounded-full text-sm bg-sky-50 text-sky-700 border border-sky-200 font-medium">
+                {toTitleCase(t)}
+              </span>
             ))}
           </div>
         </section>
 
-        <section className="mb-5">
-          <h3 className="text-xs font-mono text-slate-400 uppercase tracking-widest mb-2">Opens Up When</h3>
-          <ul className="space-y-1">
+        <section className="mb-6">
+          <h3 className="text-xs font-mono text-slate-400 uppercase tracking-widest mb-3">Opens Up When</h3>
+          <ul className="space-y-2">
             {persona.emotional_triggers.open_when.map(t => (
-              <li key={t} className="text-sm text-emerald-700 flex gap-2">
-                <span className="text-emerald-400 shrink-0">↑</span>
-                {t.replace(/_/g, ' ')}
+              <li key={t} className="text-base text-emerald-800 flex gap-2.5 items-start">
+                <span className="text-emerald-500 shrink-0 mt-0.5 font-bold">↑</span>
+                {toTitleCase(t)}
               </li>
             ))}
           </ul>
         </section>
 
-        <section className="mb-5">
-          <h3 className="text-xs font-mono text-slate-400 uppercase tracking-widest mb-2">Gets Defensive When</h3>
-          <ul className="space-y-1">
+        <section className="mb-6">
+          <h3 className="text-xs font-mono text-slate-400 uppercase tracking-widest mb-3">Gets Defensive When</h3>
+          <ul className="space-y-2">
             {persona.emotional_triggers.defensive_when.map(t => (
-              <li key={t} className="text-sm text-rose-600 flex gap-2">
-                <span className="text-rose-400 shrink-0">↓</span>
-                {t.replace(/_/g, ' ')}
+              <li key={t} className="text-base text-rose-700 flex gap-2.5 items-start">
+                <span className="text-rose-400 shrink-0 mt-0.5 font-bold">↓</span>
+                {toTitleCase(t)}
               </li>
             ))}
           </ul>
         </section>
 
         {Object.keys(persona.predicted_behavior_under_strategies).length > 0 && (
-          <section className="mb-6">
-            <h3 className="text-xs font-mono text-slate-400 uppercase tracking-widest mb-2">Predicted Responses</h3>
-            <div className="space-y-2">
+          <section className="mb-8">
+            <h3 className="text-xs font-mono text-slate-400 uppercase tracking-widest mb-3">Predicted Responses by Strategy</h3>
+            <div className="space-y-3">
               {Object.entries(persona.predicted_behavior_under_strategies).map(([strategy, prediction]) => (
-                <div key={strategy} className="text-sm p-2 rounded bg-slate-50 border border-slate-200">
-                  <span className="font-mono text-xs text-violet-600">{strategy.replace('strategy_', '').replace(/_/g, ' ')}</span>
-                  <p className="text-slate-600 mt-0.5">{prediction}</p>
+                <div key={strategy} className="p-4 rounded-xl bg-slate-50 border border-slate-200">
+                  <span className="font-mono text-sm text-purple-700 font-semibold">
+                    {toTitleCase(strategy.replace('strategy_', ''))}
+                  </span>
+                  <p className="text-base text-slate-600 mt-1.5 leading-snug">{prediction}</p>
                 </div>
               ))}
             </div>
           </section>
         )}
 
-        <section className="pt-4 border-t border-slate-100">
-          <h3 className="text-xs font-mono text-slate-400 uppercase tracking-widest mb-2">Source</h3>
-          <p className="text-sm text-slate-700 mb-1">{persona.source_citation.primary_source}</p>
+        <section className="pt-6 border-t border-slate-100">
+          <h3 className="text-xs font-mono text-slate-400 uppercase tracking-widest mb-3">Research Source</h3>
+          <p className="text-base text-slate-700 mb-2 font-medium">{persona.source_citation.primary_source}</p>
           {persona.source_citation.url && (
             <a
               href={persona.source_citation.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-xs text-violet-600 hover:text-violet-800 underline underline-offset-2"
+              className="text-sm text-purple-600 hover:text-purple-800 underline underline-offset-2"
             >
               View original research →
             </a>
           )}
           {persona.source_citation.supplementary.length > 0 && (
-            <p className="text-xs text-slate-400 mt-1">Also: {persona.source_citation.supplementary.join(', ')}</p>
+            <p className="text-sm text-slate-400 mt-2">
+              Also informed by: {persona.source_citation.supplementary.join(', ')}
+            </p>
           )}
         </section>
       </div>
@@ -195,26 +207,31 @@ function TopicCard({ topic, selectedPersonaId, selected, onSelect }: TopicCardPr
 
   return (
     <motion.button
-      whileHover={{ scale: 1.01 }}
+      whileHover={{ scale: 1.01, y: -1 }}
       whileTap={{ scale: 0.99 }}
       onClick={onSelect}
       data-testid={`topic-card-${topic.id}`}
       className={[
-        'w-full text-left p-4 rounded-xl border-2 transition-colors duration-150 bg-white',
+        'w-full text-left p-6 rounded-2xl border-2 transition-all duration-150 bg-white',
         selected
-          ? 'border-amber-400 shadow-md shadow-amber-100'
-          : 'border-slate-200 hover:border-slate-300',
+          ? 'border-purple-500 shadow-lg shadow-purple-100'
+          : 'border-slate-200 hover:border-slate-300 hover:shadow-md',
       ].join(' ')}
     >
-      <div className="flex items-start justify-between gap-4">
+      <div className="flex items-start justify-between gap-6">
         <div className="flex-1 min-w-0">
-          <p className="font-semibold text-slate-900 mb-1">{topic.display_name}</p>
-          <p className="text-sm text-slate-500 line-clamp-2">{topic.context_briefing.slice(0, 130)}…</p>
+          <p className="font-bold text-lg text-slate-900 mb-2">{topic.display_name}</p>
+          <p className="text-base text-slate-500 leading-relaxed line-clamp-2">
+            {topic.context_briefing.slice(0, 160)}…
+          </p>
         </div>
         {startingStance !== null && (
-          <div className="shrink-0 text-right">
-            <p className="text-xs text-slate-400 mb-0.5">Starting stance</p>
-            <p className="font-mono text-lg font-semibold text-slate-800">{startingStance.toFixed(1)}<span className="text-slate-400 text-sm">/10</span></p>
+          <div className="shrink-0 text-right bg-slate-50 rounded-xl p-3 border border-slate-100">
+            <p className="text-xs text-slate-400 mb-1 font-medium uppercase tracking-wide">Starting Stance</p>
+            <p className="font-mono text-2xl font-bold text-slate-800">
+              {startingStance.toFixed(1)}
+              <span className="text-slate-400 text-base font-normal">/10</span>
+            </p>
           </div>
         )}
       </div>
@@ -249,24 +266,28 @@ export default function SetupScreen({ onRunSimulation }: Props) {
   return (
     <div className="min-h-screen bg-slate-50" data-testid="setup-screen">
       {/* Header */}
-      <header className="border-b border-slate-200 bg-white px-8 py-5">
-        <div className="max-w-4xl mx-auto">
-          <h1 className="text-2xl font-semibold tracking-tight text-slate-900">Lumos</h1>
-          <p className="text-sm text-slate-500 mt-0.5">Internal Mind Simulator — configure your simulation</p>
+      <header className="border-b border-slate-200 bg-white px-10 py-6">
+        <div className="max-w-5xl mx-auto">
+          <h1 className="text-3xl font-bold tracking-tight text-slate-900">Lumos</h1>
+          <p className="text-base text-slate-500 mt-1">Internal Mind Simulator — Configure Your Simulation</p>
         </div>
       </header>
 
-      <main className="max-w-4xl mx-auto px-8 py-10 space-y-12">
+      <main className="max-w-5xl mx-auto px-10 py-14 space-y-16">
         {/* Step 1: Persona */}
         <section>
-          <div className="mb-4">
-            <div className="flex items-center gap-2 mb-1">
-              <span className="w-6 h-6 rounded-full bg-amber-400 text-white text-xs font-semibold flex items-center justify-center">1</span>
-              <h2 className="font-semibold text-slate-900">Select a persona</h2>
+          <div className="mb-6">
+            <div className="flex items-center gap-3 mb-2">
+              <span className="w-8 h-8 rounded-full bg-purple-600 text-white text-sm font-bold flex items-center justify-center shadow-sm shadow-purple-200">
+                1
+              </span>
+              <h2 className="text-xl font-bold text-slate-900">Select a Persona</h2>
             </div>
-            <p className="text-sm text-slate-500 pl-8">Each persona is grounded in published psychographic research. Click to read their full profile.</p>
+            <p className="text-base text-slate-500 pl-11">
+              Each persona is grounded in published psychographic research. Click any card to read their full profile.
+            </p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {availablePersonas.map(persona => (
               <PersonaCard
                 key={persona.id}
@@ -280,14 +301,18 @@ export default function SetupScreen({ onRunSimulation }: Props) {
 
         {/* Step 2: Topic */}
         <section>
-          <div className="mb-4">
-            <div className="flex items-center gap-2 mb-1">
-              <span className="w-6 h-6 rounded-full bg-amber-400 text-white text-xs font-semibold flex items-center justify-center">2</span>
-              <h2 className="font-semibold text-slate-900">Select a topic</h2>
+          <div className="mb-6">
+            <div className="flex items-center gap-3 mb-2">
+              <span className="w-8 h-8 rounded-full bg-purple-600 text-white text-sm font-bold flex items-center justify-center shadow-sm shadow-purple-200">
+                2
+              </span>
+              <h2 className="text-xl font-bold text-slate-900">Select a Topic</h2>
             </div>
-            <p className="text-sm text-slate-500 pl-8">All persuasion strategies run automatically in parallel against the selected persona.</p>
+            <p className="text-base text-slate-500 pl-11">
+              All persuasion strategies run automatically in parallel against the selected persona.
+            </p>
           </div>
-          <div className="space-y-3">
+          <div className="space-y-4">
             {availableTopics.map(topic => (
               <TopicCard
                 key={topic.id}
@@ -300,27 +325,29 @@ export default function SetupScreen({ onRunSimulation }: Props) {
           </div>
         </section>
 
-        {/* Run button */}
-        <div className="flex items-center justify-between pt-2 border-t border-slate-200">
-          <p className="text-sm text-slate-400">
-            {!canRun ? 'Select a persona and topic to continue' : 'Ready — all 7 strategies will run in parallel'}
+        {/* Run */}
+        <div className="flex items-center justify-between pt-4 border-t border-slate-200">
+          <p className="text-base text-slate-400">
+            {!canRun
+              ? 'Select a persona and topic to continue'
+              : 'Ready — All 7 strategies will run in parallel'}
           </p>
           <motion.button
-            whileHover={canRun ? { scale: 1.02 } : {}}
-            whileTap={canRun ? { scale: 0.98 } : {}}
+            whileHover={canRun ? { scale: 1.03 } : {}}
+            whileTap={canRun ? { scale: 0.97 } : {}}
             onClick={handleRun}
             disabled={!canRun || loading}
             data-testid="run-button"
             className={[
-              'px-6 py-2.5 rounded-lg font-semibold text-sm transition-colors duration-150',
+              'px-8 py-3.5 rounded-xl font-bold text-base transition-colors duration-150',
               canRun && !loading
-                ? 'bg-amber-400 text-slate-900 hover:bg-amber-500 cursor-pointer'
+                ? 'bg-purple-600 text-white hover:bg-purple-700 shadow-md shadow-purple-200 cursor-pointer'
                 : 'bg-slate-200 text-slate-400 cursor-not-allowed',
             ].join(' ')}
           >
             {loading ? (
-              <span className="flex items-center gap-2">
-                <svg className="w-4 h-4 animate-spin" fill="none" viewBox="0 0 24 24">
+              <span className="flex items-center gap-2.5">
+                <svg className="w-5 h-5 animate-spin" fill="none" viewBox="0 0 24 24">
                   <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
                   <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8z" />
                 </svg>
@@ -331,7 +358,7 @@ export default function SetupScreen({ onRunSimulation }: Props) {
         </div>
       </main>
 
-      {/* Profile side panel */}
+      {/* Profile side panel — slides from LEFT */}
       <AnimatePresence>
         {panelPersona && (
           <>
@@ -341,7 +368,7 @@ export default function SetupScreen({ onRunSimulation }: Props) {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               onClick={() => setPanelPersona(null)}
-              className="fixed inset-0 bg-black/10 z-40"
+              className="fixed inset-0 bg-black/15 backdrop-blur-[1px] z-40"
             />
             <ProfilePanel
               persona={panelPersona}

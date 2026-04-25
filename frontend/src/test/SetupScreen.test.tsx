@@ -48,11 +48,11 @@ describe('SetupScreen', () => {
     expect(screen.getByText('62, suburban Pennsylvania, retired schoolteacher')).toBeInTheDocument()
   })
 
-  it('renders core value pills on persona card', () => {
+  it('renders core value pills on persona card with title case', () => {
     render(<SetupScreen onRunSimulation={mockOnRunSimulation} />)
-    expect(screen.getByText('family')).toBeInTheDocument()
-    expect(screen.getByText('tradition')).toBeInTheDocument()
-    expect(screen.getByText('self-reliance')).toBeInTheDocument()
+    expect(screen.getByText('Family')).toBeInTheDocument()
+    expect(screen.getByText('Tradition')).toBeInTheDocument()
+    expect(screen.getByText('Self-Reliance')).toBeInTheDocument()
   })
 
   it('renders citation badge on persona card', () => {
