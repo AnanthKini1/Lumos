@@ -85,28 +85,34 @@ export default function ComparisonReport({ simulation, onViewTranscript, onBackT
 
   return (
     <div className="min-h-screen bg-[#fafafa]" data-testid="comparison-report">
-      {/* Top bar */}
-      <header className="bg-[#fafafa] border-b-2 border-[#0f0f0f] px-6 py-4 flex items-center gap-4">
+      {/* Thin nav strip */}
+      <div className="bg-[#fafafa] border-b border-[#0f0f0f] border-opacity-20 px-8 py-2">
         <button
           data-testid="back-btn"
           onClick={onBackToSetup}
-          className="font-mono text-sm text-[#0f0f0f] underline font-bold hover:opacity-60 transition-opacity"
+          className="font-mono text-xs text-[#0f0f0f] underline font-bold hover:opacity-60 transition-opacity"
         >
           ← Back to Setup
         </button>
-        <span className="text-[#0f0f0f] opacity-20 select-none">|</span>
-        <h1 className="font-bold font-serif text-xl text-[#0f0f0f]">Strategy Comparison Report</h1>
+      </div>
+
+      {/* Masthead */}
+      <header className="border-b-4 border-[#0f0f0f] px-8 pt-10 pb-8">
+        <p className="font-mono text-xs text-[#0f0f0f] opacity-40 uppercase tracking-widest mb-3">Lumos / Analysis</p>
+        <h1 className="font-black font-serif text-6xl leading-none text-[#0f0f0f]">
+          Strategy Comparison Report
+        </h1>
       </header>
 
       <div className="max-w-4xl mx-auto px-8 py-12 space-y-16">
 
         {/* Insight synthesis */}
         <div data-testid="synthesis-card">
-          <p className="text-sm font-mono font-bold text-[#0f0f0f] uppercase tracking-widest mb-4">Synthesis</p>
-          <div className="border-l-4 border-[#0f0f0f] pl-6">
-            <p className="text-2xl font-serif leading-relaxed text-[#0f0f0f]">{overall_synthesis}</p>
+          <p className="text-xs font-mono font-bold text-[#0f0f0f] uppercase tracking-widest mb-4">Synthesis</p>
+          <div className="border-2 border-[#0f0f0f] p-8">
+            <p className="text-3xl font-serif leading-snug text-[#0f0f0f]">{overall_synthesis}</p>
             {validation_note && (
-              <p data-testid="validation-note" className="font-serif text-base italic text-[#0f0f0f] opacity-50 mt-4">
+              <p data-testid="validation-note" className="font-serif text-base italic text-[#0f0f0f] opacity-50 mt-6 pt-6 border-t border-[#0f0f0f] border-opacity-20">
                 {validation_note}
               </p>
             )}
@@ -115,9 +121,11 @@ export default function ComparisonReport({ simulation, onViewTranscript, onBackT
 
         {/* Strategy comparison table */}
         <section>
-          <p className="text-sm font-mono font-bold text-[#0f0f0f] uppercase tracking-widest border-t-2 border-[#0f0f0f] pt-6 mb-6">
-            Strategy Comparison
-          </p>
+          <div className="bg-[#0f0f0f] -mx-8 px-8 py-3 mb-8">
+            <p className="text-sm font-mono font-bold text-[#fafafa] uppercase tracking-widest">
+              Strategy Comparison
+            </p>
+          </div>
 
           <div className="overflow-x-auto">
             <table className="w-full border-collapse border-2 border-[#0f0f0f]" data-testid="comparison-table">
@@ -141,23 +149,23 @@ export default function ComparisonReport({ simulation, onViewTranscript, onBackT
                     <tr
                       key={outcome.strategy_id}
                       data-testid={`report-row-${outcome.strategy_id}`}
-                      className="border-b border-[#d4d4d4] hover:bg-[#f5f5f5] transition-colors"
+                      className="group border-b border-[#0f0f0f] hover:bg-[#0f0f0f] transition-colors cursor-default"
                     >
-                      <td className="px-4 py-3 font-serif font-bold text-[#0f0f0f] border border-[#d4d4d4]">
+                      <td className="px-4 py-3 font-serif font-bold text-[#0f0f0f] group-hover:text-[#fafafa] border border-[#0f0f0f]">
                         {strategyDisplayName(outcome.strategy_id)}
                       </td>
-                      <td className="px-4 py-3 border border-[#d4d4d4]">
+                      <td className="px-4 py-3 border border-[#0f0f0f]">
                         <span
                           data-testid={`verdict-badge-${outcome.strategy_id}`}
-                          className="font-mono text-xs font-bold text-[#0f0f0f] uppercase"
+                          className="font-mono text-xs font-bold text-[#0f0f0f] group-hover:text-[#fafafa] uppercase"
                         >
                           {VERDICT_LABEL[outcome.verdict]}
                         </span>
                         {inflection && inflection.mechanism_classification && (
                           <div
                             data-testid={`inflection-callout-${outcome.strategy_id}`}
-                            className="mt-1.5 pl-2 font-mono text-xs text-[#0f0f0f] opacity-70 leading-snug"
-                            style={{ borderLeft: `2px solid ${CATEGORY_COLOR[inflection.color_category ?? ''] ?? '#0f0f0f'}` }}
+                            className="mt-2 px-3 py-2 font-mono text-xs text-[#0f0f0f] group-hover:text-[#fafafa] opacity-70 leading-snug border"
+                            style={{ borderColor: CATEGORY_COLOR[inflection.color_category ?? ''] ?? '#0f0f0f' }}
                           >
                             <span className="font-bold">Turn {inflection.turn_number}</span>
                             {' — '}
@@ -174,41 +182,41 @@ export default function ComparisonReport({ simulation, onViewTranscript, onBackT
                       </td>
                       <td
                         data-testid={`public-delta-${outcome.strategy_id}`}
-                        className="px-4 py-3 text-right font-mono text-sm text-[#0f0f0f] border border-[#d4d4d4]"
+                        className="px-4 py-3 text-right font-mono text-sm text-[#0f0f0f] group-hover:text-[#fafafa] border border-[#0f0f0f]"
                       >
                         {row.publicDelta}
                       </td>
                       <td
                         data-testid={`private-delta-${outcome.strategy_id}`}
-                        className="px-4 py-3 text-right font-mono text-sm text-[#0f0f0f] border border-[#d4d4d4]"
+                        className="px-4 py-3 text-right font-mono text-sm text-[#0f0f0f] group-hover:text-[#fafafa] border border-[#0f0f0f]"
                       >
                         {row.privateDelta}
                       </td>
                       <td
                         data-testid={`max-gap-${outcome.strategy_id}`}
-                        className="px-4 py-3 text-right font-mono text-sm text-[#0f0f0f] border border-[#d4d4d4]"
+                        className="px-4 py-3 text-right font-mono text-sm text-[#0f0f0f] group-hover:text-[#fafafa] border border-[#0f0f0f]"
                       >
                         {row.maxGap}
                       </td>
                       <td
                         data-testid={`threats-${outcome.strategy_id}`}
-                        className="px-4 py-3 text-right font-mono text-sm text-[#0f0f0f] border border-[#d4d4d4]"
+                        className="px-4 py-3 text-right font-mono text-sm text-[#0f0f0f] group-hover:text-[#fafafa] border border-[#0f0f0f]"
                       >
                         {row.threats}
                       </td>
-                      <td className="px-4 py-3 border border-[#d4d4d4]">
+                      <td className="px-4 py-3 border border-[#0f0f0f]">
                         <span
                           data-testid={`persistence-${outcome.strategy_id}`}
-                          className="font-mono text-xs font-bold text-[#0f0f0f] uppercase"
+                          className="font-mono text-xs font-bold text-[#0f0f0f] group-hover:text-[#fafafa] uppercase"
                         >
                           {PERSISTENCE_LABEL[row.persistence] ?? row.persistence.replace(/_/g, ' ').toUpperCase()}
                         </span>
                       </td>
-                      <td className="px-4 py-3 border border-[#d4d4d4]">
+                      <td className="px-4 py-3 border border-[#0f0f0f]">
                         <button
                           data-testid={`view-transcript-${outcome.strategy_id}`}
                           onClick={() => onViewTranscript(outcome.strategy_id)}
-                          className="font-mono text-xs font-bold text-[#0f0f0f] underline hover:opacity-60 transition-opacity"
+                          className="font-mono text-xs font-bold text-[#0f0f0f] group-hover:text-[#fafafa] underline hover:opacity-60 transition-opacity"
                         >
                           Watch →
                         </button>
@@ -223,9 +231,11 @@ export default function ComparisonReport({ simulation, onViewTranscript, onBackT
 
         {/* Stance trajectories */}
         <section>
-          <p className="text-sm font-mono font-bold text-[#0f0f0f] uppercase tracking-widest border-t-2 border-[#0f0f0f] pt-6 mb-6">
-            Stance Trajectories
-          </p>
+          <div className="bg-[#0f0f0f] -mx-8 px-8 py-3 mb-8">
+            <p className="text-sm font-mono font-bold text-[#fafafa] uppercase tracking-widest">
+              Stance Trajectories
+            </p>
+          </div>
           <div data-testid="trajectory-section" className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             {sortedOutcomes.map(outcome => (
               <TrajectoryChart
@@ -239,9 +249,11 @@ export default function ComparisonReport({ simulation, onViewTranscript, onBackT
 
         {/* Strategy breakdown */}
         <section>
-          <p className="text-sm font-mono font-bold text-[#0f0f0f] uppercase tracking-widest border-t-2 border-[#0f0f0f] pt-6 mb-6">
-            Strategy Breakdown
-          </p>
+          <div className="bg-[#0f0f0f] -mx-8 px-8 py-3 mb-8">
+            <p className="text-sm font-mono font-bold text-[#fafafa] uppercase tracking-widest">
+              Strategy Breakdown
+            </p>
+          </div>
           <div data-testid="strategy-cards-section" className="space-y-6">
             {sortedOutcomes.map(outcome => (
               <StrategyCard

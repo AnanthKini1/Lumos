@@ -48,7 +48,7 @@ describe('PublicConversation', () => {
     expect(screen.getByText('Karen M.')).toBeInTheDocument()
   })
 
-  it('renders persuader message text immediately', () => {
+  it('renders persuader message text for previous turns immediately', () => {
     render(<PublicConversation turns={turns} currentTurn={0} strategyDisplayName="Personal Narrative" personaDisplayName="Karen M." />)
     expect(screen.getByText(/Let me tell you about my neighbor Sarah/i)).toBeInTheDocument()
   })

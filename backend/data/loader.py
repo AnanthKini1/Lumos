@@ -45,4 +45,5 @@ def list_all(kind: Literal["personas", "strategies", "topics"]) -> list[str]:
 def load_cognitive_mechanisms() -> list[dict]:
     """Load all cognitive mechanisms from data/cognitive_mechanisms.json."""
     path = DATA_DIR / "cognitive_mechanisms.json"
-    return json.loads(path.read_text())
+    data = json.loads(path.read_text())
+    return data["mechanisms"]

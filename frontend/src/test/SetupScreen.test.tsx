@@ -19,8 +19,15 @@ vi.mock('framer-motion', () => ({
 
 vi.mock('../data/loader')
 
+const mockCatalog = {
+  personas: [mockSimulation.metadata.persona],
+  topics: [mockSimulation.metadata.topic],
+  strategies: [],
+}
+
 beforeEach(() => {
   vi.mocked(loader.loadScenario).mockResolvedValue(mockSimulation)
+  vi.mocked(loader.loadCatalog).mockResolvedValue(mockCatalog)
 })
 
 const mockOnRunSimulation = vi.fn()
@@ -42,27 +49,27 @@ describe('SetupScreen', () => {
     expect(screen.getByRole('heading', { name: /select a topic/i })).toBeInTheDocument()
   })
 
-  it('renders persona card with display name and demographic shorthand', () => {
+  it('renders persona card with display name and demographic shorthand', async () => {
     render(<SetupScreen onRunSimulation={mockOnRunSimulation} />)
-    expect(screen.getByText('Karen M.')).toBeInTheDocument()
-    expect(screen.getByText('62, suburban Pennsylvania, retired schoolteacher')).toBeInTheDocument()
+    expect(await screen.findByText('Karen M.')).toBeInTheDocument()
+    expect(await screen.findByText('62, suburban Pennsylvania, retired schoolteacher')).toBeInTheDocument()
   })
 
-  it('renders core value pills on persona card with title case', () => {
+  it('renders core value pills on persona card with title case', async () => {
     render(<SetupScreen onRunSimulation={mockOnRunSimulation} />)
-    expect(screen.getByText('Family')).toBeInTheDocument()
-    expect(screen.getByText('Tradition')).toBeInTheDocument()
-    expect(screen.getByText('Self-Reliance')).toBeInTheDocument()
+    expect(await screen.findByText('Family')).toBeInTheDocument()
+    expect(await screen.findByText('Tradition')).toBeInTheDocument()
+    expect(await screen.findByText('Self-Reliance')).toBeInTheDocument()
   })
 
-  it('renders citation badge on persona card', () => {
+  it('renders citation badge on persona card', async () => {
     render(<SetupScreen onRunSimulation={mockOnRunSimulation} />)
-    expect(screen.getByText(/Pew Research 2021/i)).toBeInTheDocument()
+    expect(await screen.findByText(/Pew Research 2021/i)).toBeInTheDocument()
   })
 
-  it('renders topic card with display name', () => {
+  it('renders topic card with display name', async () => {
     render(<SetupScreen onRunSimulation={mockOnRunSimulation} />)
-    expect(screen.getByText('Should companies require return-to-office?')).toBeInTheDocument()
+    expect(await screen.findByText('Should companies require return-to-office?')).toBeInTheDocument()
   })
 
   it('run button is disabled initially', () => {
@@ -74,7 +81,7 @@ describe('SetupScreen', () => {
     const user = userEvent.setup()
     render(<SetupScreen onRunSimulation={mockOnRunSimulation} />)
 
-    await user.click(screen.getByTestId('persona-card-persona_skeptical_traditionalist'))
+    await user.click(await screen.findByTestId('persona-card-persona_skeptical_traditionalist'))
     expect(screen.getByTestId('run-button')).toBeDisabled()
   })
 
@@ -82,7 +89,7 @@ describe('SetupScreen', () => {
     const user = userEvent.setup()
     render(<SetupScreen onRunSimulation={mockOnRunSimulation} />)
 
-    await user.click(screen.getByTestId('topic-card-topic_return_to_office'))
+    await user.click(await screen.findByTestId('topic-card-topic_return_to_office'))
     expect(screen.getByTestId('run-button')).toBeDisabled()
   })
 
@@ -90,8 +97,8 @@ describe('SetupScreen', () => {
     const user = userEvent.setup()
     render(<SetupScreen onRunSimulation={mockOnRunSimulation} />)
 
-    await user.click(screen.getByTestId('persona-card-persona_skeptical_traditionalist'))
-    await user.click(screen.getByTestId('topic-card-topic_return_to_office'))
+    await user.click(await screen.findByTestId('persona-card-persona_skeptical_traditionalist'))
+    await user.click(await screen.findByTestId('topic-card-topic_return_to_office'))
 
     expect(screen.getByTestId('run-button')).not.toBeDisabled()
   })
@@ -101,7 +108,7 @@ describe('SetupScreen', () => {
     render(<SetupScreen onRunSimulation={mockOnRunSimulation} />)
 
     expect(screen.queryByTestId('profile-panel')).not.toBeInTheDocument()
-    await user.click(screen.getByTestId('persona-card-persona_skeptical_traditionalist'))
+    await user.click(await screen.findByTestId('persona-card-persona_skeptical_traditionalist'))
     expect(screen.getByTestId('profile-panel')).toBeInTheDocument()
   })
 
@@ -109,7 +116,7 @@ describe('SetupScreen', () => {
     const user = userEvent.setup()
     render(<SetupScreen onRunSimulation={mockOnRunSimulation} />)
 
-    await user.click(screen.getByTestId('persona-card-persona_skeptical_traditionalist'))
+    await user.click(await screen.findByTestId('persona-card-persona_skeptical_traditionalist'))
     expect(screen.getByText(/thirty years in a classroom/i)).toBeInTheDocument()
   })
 
@@ -117,7 +124,7 @@ describe('SetupScreen', () => {
     const user = userEvent.setup()
     render(<SetupScreen onRunSimulation={mockOnRunSimulation} />)
 
-    await user.click(screen.getByTestId('persona-card-persona_skeptical_traditionalist'))
+    await user.click(await screen.findByTestId('persona-card-persona_skeptical_traditionalist'))
     expect(screen.getByText(/lectured to/i)).toBeInTheDocument()
     expect(screen.getByText(/asked about their experience/i)).toBeInTheDocument()
   })
@@ -126,7 +133,7 @@ describe('SetupScreen', () => {
     const user = userEvent.setup()
     render(<SetupScreen onRunSimulation={mockOnRunSimulation} />)
 
-    await user.click(screen.getByTestId('persona-card-persona_skeptical_traditionalist'))
+    await user.click(await screen.findByTestId('persona-card-persona_skeptical_traditionalist'))
     const link = screen.getByText(/view original research/i)
     expect(link).toBeInTheDocument()
     expect(link.closest('a')).toHaveAttribute('href', expect.stringContaining('pewresearch.org'))
@@ -136,7 +143,7 @@ describe('SetupScreen', () => {
     const user = userEvent.setup()
     render(<SetupScreen onRunSimulation={mockOnRunSimulation} />)
 
-    await user.click(screen.getByTestId('persona-card-persona_skeptical_traditionalist'))
+    await user.click(await screen.findByTestId('persona-card-persona_skeptical_traditionalist'))
     expect(screen.getByTestId('profile-panel')).toBeInTheDocument()
 
     await user.click(screen.getByTestId('close-profile-panel'))
@@ -147,7 +154,7 @@ describe('SetupScreen', () => {
     const user = userEvent.setup()
     render(<SetupScreen onRunSimulation={mockOnRunSimulation} />)
 
-    await user.click(screen.getByTestId('persona-card-persona_skeptical_traditionalist'))
+    await user.click(await screen.findByTestId('persona-card-persona_skeptical_traditionalist'))
     await user.click(screen.getByTestId('panel-overlay'))
     expect(screen.queryByTestId('profile-panel')).not.toBeInTheDocument()
   })
@@ -156,7 +163,7 @@ describe('SetupScreen', () => {
     const user = userEvent.setup()
     render(<SetupScreen onRunSimulation={mockOnRunSimulation} />)
 
-    await user.click(screen.getByTestId('persona-card-persona_skeptical_traditionalist'))
+    await user.click(await screen.findByTestId('persona-card-persona_skeptical_traditionalist'))
     expect(screen.getByText(/7\.0/)).toBeInTheDocument()
   })
 
@@ -164,8 +171,8 @@ describe('SetupScreen', () => {
     const user = userEvent.setup()
     render(<SetupScreen onRunSimulation={mockOnRunSimulation} />)
 
-    await user.click(screen.getByTestId('persona-card-persona_skeptical_traditionalist'))
-    await user.click(screen.getByTestId('topic-card-topic_return_to_office'))
+    await user.click(await screen.findByTestId('persona-card-persona_skeptical_traditionalist'))
+    await user.click(await screen.findByTestId('topic-card-topic_return_to_office'))
     await user.click(screen.getByTestId('run-button'))
 
     await waitFor(() => {
@@ -178,8 +185,8 @@ describe('SetupScreen', () => {
     const user = userEvent.setup()
     render(<SetupScreen onRunSimulation={mockOnRunSimulation} />)
 
-    await user.click(screen.getByTestId('persona-card-persona_skeptical_traditionalist'))
-    await user.click(screen.getByTestId('topic-card-topic_return_to_office'))
+    await user.click(await screen.findByTestId('persona-card-persona_skeptical_traditionalist'))
+    await user.click(await screen.findByTestId('topic-card-topic_return_to_office'))
 
     expect(screen.getByText(/all 7 strategies will run in parallel/i)).toBeInTheDocument()
   })

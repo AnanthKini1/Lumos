@@ -68,7 +68,7 @@ export default function InternalMind({ turnOutput, priorMemoryNotes, turnNumber,
             animate={{ opacity: [0.4, 1] }}
             transition={{ duration: 0.3 }}
           >
-            <p className="font-mono font-bold text-2xl text-[#fafafa] uppercase tracking-wide">
+            <p className="font-mono font-bold text-4xl text-[#fafafa] uppercase tracking-wide leading-none">
               {emotional_reaction.primary_emotion} — {emotional_reaction.intensity}/10
             </p>
           </motion.div>

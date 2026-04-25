@@ -86,9 +86,7 @@ function ChatBubble({ text, isTyping, label, side, annotation, turnNumber, isNew
         {label}
       </span>
       <div
-        className={[
-          'max-w-[80%] border-2 border-[#0f0f0f] px-4 py-3 font-serif text-base leading-relaxed text-[#0f0f0f] bg-[#fafafa]',
-        ].join(' ')}
+        className="max-w-[80%] border-2 border-[#0f0f0f] px-4 py-3 font-serif text-base leading-relaxed text-[#0f0f0f] bg-[#fafafa]"
       >
         {displayText}
         {showCursor && (
@@ -96,7 +94,7 @@ function ChatBubble({ text, isTyping, label, side, annotation, turnNumber, isNew
         )}
       </div>
       {annotation && side === 'left' && (
-        <p className="font-mono text-xs italic text-[#0f0f0f] opacity-50 max-w-[80%] px-1 leading-relaxed border-l-2 border-[#0f0f0f] pl-2 ml-1">
+        <p className="font-mono text-xs italic text-[#0f0f0f] opacity-50 max-w-[80%] px-1 leading-relaxed mt-1">
           {annotation}
         </p>
       )}
@@ -126,6 +124,7 @@ export default function PublicConversation({ turns, currentTurn, strategyDisplay
         <AnimatePresence initial={false}>
           {visibleTurns.map((turn, idx) => {
             const isCurrentTurn = idx === currentTurn
+            const isInflection = turn.is_inflection_point
             const isPivotal = turn.is_pivotal === true
             const category = turn.color_category ?? ''
             const accentColor = CATEGORY_COLOR[category] ?? null
@@ -135,22 +134,25 @@ export default function PublicConversation({ turns, currentTurn, strategyDisplay
                 key={turn.turn_number}
                 data-testid={`turn-${turn.turn_number}`}
                 onClick={isPivotal && onPivotalClick ? () => onPivotalClick(turn) : undefined}
-                className={[
-                  'transition-colors duration-150',
-                  isPivotal ? 'cursor-pointer pl-3' : '',
-                ].join(' ')}
-                style={isPivotal && accentColor ? {
-                  borderLeft: `4px solid ${accentColor}`,
-                  paddingLeft: '12px',
-                  backgroundColor: `${accentColor}0d`,
-                } : undefined}
+                className={['transition-colors duration-150', isPivotal ? 'cursor-pointer' : ''].join(' ')}
               >
-                {/* Turn badge + pivotal label */}
+                {/* Turn badge + inflection / pivotal labels */}
                 <div className="flex items-center justify-center gap-2 mb-3">
-                  <span className="text-xs font-mono font-bold text-[#0f0f0f] opacity-40 uppercase tracking-widest">
+                  <span
+                    data-testid={`turn-badge-${turn.turn_number}`}
+                    className="text-xs font-mono font-bold text-[#0f0f0f] opacity-40 uppercase tracking-widest"
+                  >
                     Turn {turn.turn_number}
                   </span>
-                  {isPivotal && accentColor && (
+                  {isInflection && (
+                    <span
+                      data-testid={`inflection-badge-${turn.turn_number}`}
+                      className="font-mono text-xs font-bold uppercase tracking-wide text-[#0f0f0f]"
+                    >
+                      ★ INFLECTION
+                    </span>
+                  )}
+                  {isPivotal && !isInflection && accentColor && (
                     <span
                       data-testid={`pivotal-badge-${turn.turn_number}`}
                       className="font-mono text-xs font-bold uppercase tracking-wide"
@@ -161,28 +163,36 @@ export default function PublicConversation({ turns, currentTurn, strategyDisplay
                   )}
                 </div>
 
-                {/* Persuader message — fades + slides up when new */}
-                <div className="mb-3">
+                {/* Pivotal highlight — full border box, no side-stripe */}
+                <div
+                  className={isPivotal ? 'border-2 p-3' : ''}
+                  style={isPivotal && accentColor
+                    ? { borderColor: accentColor, backgroundColor: `${accentColor}0d` }
+                    : undefined}
+                >
+                  {/* Persuader message */}
+                  <div className="mb-3">
+                    <ChatBubble
+                      text={turn.persuader_message}
+                      isTyping={false}
+                      label="Persuader"
+                      side="left"
+                      annotation={turn.persuader_strategy_note}
+                      turnNumber={turn.turn_number}
+                      isNew={isCurrentTurn}
+                    />
+                  </div>
+
+                  {/* Persona response — types in only on the current turn */}
                   <ChatBubble
-                    text={turn.persuader_message}
-                    isTyping={false}
-                    label="Persuader"
-                    side="left"
-                    annotation={turn.persuader_strategy_note}
+                    text={turn.persona_output.public_response}
+                    isTyping={isCurrentTurn}
+                    label={personaDisplayName}
+                    side="right"
                     turnNumber={turn.turn_number}
                     isNew={isCurrentTurn}
                   />
                 </div>
-
-                {/* Persona response — types in only on the current turn */}
-                <ChatBubble
-                  text={turn.persona_output.public_response}
-                  isTyping={isCurrentTurn}
-                  label={personaDisplayName}
-                  side="right"
-                  turnNumber={turn.turn_number}
-                  isNew={isCurrentTurn}
-                />
               </div>
             )
           })}
