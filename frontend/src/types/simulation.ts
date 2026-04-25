@@ -116,6 +116,7 @@ export interface PersonaTurnOutput {
   emotional_reaction: EmotionalReaction
   identity_threat: IdentityThreat
   private_stance: number
+  public_stance: number
   private_stance_change_reason: string
   memory_to_carry_forward: string
   public_response: string
