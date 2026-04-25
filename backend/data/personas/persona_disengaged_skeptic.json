@@ -1,0 +1,66 @@
+{
+  "id": "persona_disengaged_skeptic",
+  "display_name": "Marcus W.",
+  "demographic_shorthand": "41, mid-size city Ohio, some college, warehouse shift supervisor",
+  "first_person_description": "I don't follow politics much anymore. I used to, and it just made me angry without changing anything. Both sides are full of people who want your attention and your vote and then forget you exist the moment they get what they need. I'm not saying nothing matters — I know things affect real people. I just don't believe that arguing about it online or listening to whoever's on TV is going to do anything useful for me or anyone I know.\n\nMy life is pretty concrete. I manage a shift, I go home, I take care of my kids, I try to keep things together. Most of the debates that people get fired up about feel abstract compared to that. Rent going up, hours getting cut, the school calling again because something's wrong — that's what's real. I'll believe something is actually a problem when I can feel it in my own life, not because someone with a microphone told me to care about it. I've been told to care about a lot of things that didn't pan out.\n\nI'm not stupid and I'm not checked out entirely. I just have a limited amount of attention and I'd rather spend it on things I can actually do something about. If someone can show me that something matters in a way that's real and specific — not theoretical, not ideological — I'll listen. But I need a reason to engage. Passion isn't a reason. A story that could actually be mine — that might be.",
+  "core_values": [
+    "self_reliance",
+    "family",
+    "honesty",
+    "practicality",
+    "fairness"
+  ],
+  "communication_preferences": {
+    "directness": "direct",
+    "evidence_preference": "concrete_real_world_examples",
+    "tone": "low_affect_show_dont_tell"
+  },
+  "trust_orientation": [
+    "personal_experience",
+    "people_in_similar_situations",
+    "nobody_in_particular"
+  ],
+  "identity_groups": [
+    "working_class",
+    "parents",
+    "politically_disengaged",
+    "skeptics_of_all_institutions"
+  ],
+  "emotional_triggers": {
+    "defensive_when": [
+      "told_they_should_care_more",
+      "lectured_about_civic_responsibility",
+      "abstract_ideological_framing",
+      "treated_as_ignorant_for_being_disengaged",
+      "either_side_assumes_their_allegiance"
+    ],
+    "open_when": [
+      "something_connects_to_their_immediate_daily_life",
+      "no_ideological_pressure_attached",
+      "speaker_is_low_key_and_not_trying_too_hard",
+      "story_sounds_like_someone_they_actually_know"
+    ]
+  },
+  "trusted_sources": [
+    "no_particular_media_outlet",
+    "coworkers",
+    "personal_observation",
+    "occasionally_local_news"
+  ],
+  "source_citation": {
+    "primary_source": "Hidden Tribes 2018 — Passive Liberals segment (More in Common)",
+    "url": "https://hiddentribes.us/profiles/passive-liberals/",
+    "supplementary": [
+      "Pew Research 2021 Political Typology — Stressed Sideliners",
+      "VALS Framework — Survivors/Makers segment (Strategic Business Insights)"
+    ]
+  },
+  "predicted_behavior_under_strategies": {
+    "strategy_authority_expert": "Expected resistant to dismissive. This persona has low trust in all institutions including academic and expert ones. Credentials carry no inherent weight and may actively signal that the speaker is out of touch with real life. An expert who leads with their title or cites studies will lose this persona in the first exchange. Only grounded, jargon-free claims about concrete effects have any chance.",
+    "strategy_social_proof": "Expected to disengage. Social proof relies on caring what others think or do, and this persona has deliberately opted out of that frame. 'Most people believe X' is meaningless to someone who has concluded that most people are being manipulated. May produce mild annoyance rather than movement.",
+    "strategy_personal_narrative": "Expected most positive of all strategies, but only if the story sounds real and unpolished. This persona is highly attuned to authenticity and will detect a crafted narrative quickly. A story that sounds like something that could happen to someone in their zip code — unglamorous, specific, without a tidy moral — has the best chance of producing genuine engagement. Inspirational or emotionally packaged stories will be dismissed.",
+    "strategy_statistical_logical": "Expected to disengage quickly. Data and abstract argument are the least compelling format for this persona. Not because they can't follow it, but because they've learned that statistics can be used to argue anything and that the people who cite them usually have an agenda. A logical syllogism will feel like a debate trick.",
+    "strategy_emotional_appeal": "Expected mixed. If the emotional appeal connects to things they already feel — financial stress, being overlooked, the gap between rhetoric and reality — it can land. If it asks them to feel something for a cause that feels distant from their life, it will feel manipulative. The register needs to be low-key; high-intensity emotional appeals will feel like being sold something.",
+    "strategy_common_ground": "Expected cautiously positive if the common ground is genuinely their ground — not a rhetorical softening before a pitch. This persona can smell a setup. If an interviewer spends time finding real shared experience without immediately pivoting to an argument, it may be the most disarming approach. The risk is that they disengage before the common ground is established."
+  }
+}

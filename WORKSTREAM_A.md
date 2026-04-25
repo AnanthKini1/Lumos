@@ -45,7 +45,7 @@ All files go in `backend/data/personas/`. Run `python backend/validate_data.py` 
 - [x] **A2.1** `persona_skeptical_traditionalist.json` — Pew Faith & Flag Conservatives + VALS Believers (from A1.3, confirm complete)
 - [x] **A2.2** `persona_progressive_urban.json` — Pew Progressive Left + Hidden Tribes Progressive Activists
 - [x] **A2.3** `persona_pragmatic_moderate.json` — Pew Establishment Liberals + VALS Achievers
-- [ ] **A2.4** `persona_disengaged_skeptic.json` — Hidden Tribes Passive Liberals + Pew Stressed Sideliners
+- [x] **A2.4** `persona_disengaged_skeptic.json` — Hidden Tribes Passive Liberals + Pew Stressed Sideliners
 - [ ] **A2.5** `persona_faith_community_anchor.json` — Pew Committed Conservatives + VALS Believers
 - [ ] **A2.6** `persona_ambitious_achiever.json` — VALS Achievers + Pew Enterprisers
 - [ ] **A2.7** `persona_empathic_helper.json` — VALS Experiencers/Makers + Hidden Tribes Traditional Liberals
