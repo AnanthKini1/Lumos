@@ -118,13 +118,13 @@ Fill in each empty string. Each prompt must:
 - Specify exact JSON output format: `{score: float, evidence_quotes: [str, str]}`
 - Reference specific fields from PersonaTurnOutput: `internal_monologue`, `emotional_reaction.trigger`, `identity_threat`, `private_stance`, `memory_to_carry_forward`, `public_response`
 
-- [ ] **A5.1** `PUBLIC_PRIVATE_GAP_PROMPT` — how much public speech diverged from private belief
-- [ ] **A5.2** `IDENTITY_THREAT_PROMPT` — whether the persona's values/groups were threatened
-- [ ] **A5.3** `MOTIVATED_REASONING_PROMPT` — reasoning toward conclusion vs. genuine update
-- [ ] **A5.4** `ENGAGEMENT_DEPTH_PROMPT` — active thinking vs. mental dismissal
-- [ ] **A5.5** `AMBIVALENCE_PRESENCE_PROMPT` — conflicting views vs. monolithic certainty
-- [ ] **A5.6** `MEMORY_RESIDUE_PROMPT` — what the persona signals they'll carry forward
-- [ ] **A5.7** `PERSISTENCE_PROMPT` — used on cooling-off turn to assess held vs. reverted change
+- [x] **A5.1** `PUBLIC_PRIVATE_GAP_PROMPT` — how much public speech diverged from private belief
+- [x] **A5.2** `IDENTITY_THREAT_PROMPT` — whether the persona's values/groups were threatened
+- [x] **A5.3** `MOTIVATED_REASONING_PROMPT` — reasoning toward conclusion vs. genuine update
+- [x] **A5.4** `ENGAGEMENT_DEPTH_PROMPT` — active thinking vs. mental dismissal
+- [x] **A5.5** `AMBIVALENCE_PRESENCE_PROMPT` — conflicting views vs. monolithic certainty
+- [x] **A5.6** `MEMORY_RESIDUE_PROMPT` — what the persona signals they'll carry forward
+- [x] **A5.7** `PERSISTENCE_PROMPT` — used on cooling-off turn to assess held vs. reverted change
 
 ### 5b: Judge Agent (`backend/measurement/judge_agent.py`)
 
