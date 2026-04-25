@@ -72,7 +72,7 @@ All files go in `backend/data/strategies/`. Run `validate_data.py` after each.
 
 - [x] **A3.1** `strategy_authority_expert.json` — Cialdini Ch. 6
 - [x] **A3.2** `strategy_social_proof.json` — Cialdini Ch. 3
-- [ ] **A3.3** `strategy_personal_narrative.json` — Green & Brock 2000 Narrative Transportation Theory
+- [x] **A3.3** `strategy_personal_narrative.json` — Green & Brock 2000 Narrative Transportation Theory
 - [ ] **A3.4** `strategy_statistical_logical.json` — Aristotelian logos
 - [ ] **A3.5** `strategy_emotional_appeal.json` — Aristotelian pathos
 - [ ] **A3.6** `strategy_common_ground.json` — Burkean identification
