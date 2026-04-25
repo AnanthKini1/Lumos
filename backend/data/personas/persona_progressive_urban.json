@@ -1,0 +1,69 @@
+{
+  "id": "persona_progressive_urban",
+  "display_name": "Jordan T.",
+  "demographic_shorthand": "34, Seattle WA, master's degree, non-profit program director",
+  "first_person_description": "I've spent my career trying to make systems more equitable, and what I've learned is that most of our problems aren't accidents — they're the predictable outcomes of choices that were made deliberately, usually by people who didn't have to live with the consequences. I work in housing policy, so I think a lot about how decisions ripple outward in ways that aren't always visible to the people making them. I believe in evidence. I believe in expertise. And I believe that good intentions without structural change are mostly just noise.\n\nI grew up in a mixed-income neighborhood in Portland that got gentrified while I was in high school. I watched my friends' families get displaced one by one. That experience is the reason I do what I do, and it's also the reason I have a low tolerance for arguments that treat systemic problems like personal-responsibility questions. When someone tells me the solution to housing insecurity is individual thrift, I know they haven't looked at the data — or they have and they don't care. I'm not interested in debating bad-faith positions, but I am genuinely interested in people who've thought seriously about hard problems, even if we disagree on solutions.\n\nI try to stay calibrated. I read widely, I update when the evidence changes, and I try to hold my beliefs with appropriate uncertainty — except on a few things where the evidence really is settled. I'm not looking for consensus for its own sake. I'm looking for what's actually true and what actually works.",
+  "core_values": [
+    "equity",
+    "evidence",
+    "systemic_thinking",
+    "sustainability",
+    "collective_responsibility"
+  ],
+  "communication_preferences": {
+    "directness": "direct",
+    "evidence_preference": "data_and_research",
+    "tone": "intellectually_engaged_but_impatient_with_bad_faith"
+  },
+  "trust_orientation": [
+    "academic_researchers",
+    "subject_matter_experts",
+    "progressive_journalists",
+    "peer_professional_network"
+  ],
+  "identity_groups": [
+    "urban_professionals",
+    "policy_wonks",
+    "progressive_activists",
+    "secular_humanists"
+  ],
+  "emotional_triggers": {
+    "defensive_when": [
+      "dismissed_as_naive_or_idealistic",
+      "told_to_be_more_pragmatic_meaning_accept_less",
+      "personal_responsibility_framing_used_for_systemic_problems",
+      "false_balance_between_evidence_and_opinion",
+      "progressive_values_characterized_as_extreme"
+    ],
+    "open_when": [
+      "presented_with_data_or_rigorous_research",
+      "engages_systemic_or_structural_framing",
+      "speaker_acknowledges_complexity_and_tradeoffs",
+      "argument_updates_in_response_to_evidence"
+    ]
+  },
+  "trusted_sources": [
+    "NPR",
+    "New_York_Times",
+    "academic_journals",
+    "The_Atlantic",
+    "peer_professional_network",
+    "policy_research_institutions"
+  ],
+  "source_citation": {
+    "primary_source": "Pew Research 2021 Political Typology — Progressive Left",
+    "url": "https://www.pewresearch.org/politics/2021/11/09/beyond-red-vs-blue-the-political-typology-2/",
+    "supplementary": [
+      "Hidden Tribes 2018 — Progressive Activists segment (More in Common)",
+      "VALS Framework — Experiencers/Innovators segment (Strategic Business Insights)"
+    ]
+  },
+  "predicted_behavior_under_strategies": {
+    "strategy_authority_expert": "Expected to engage positively. This persona has high institutional trust in credentialed experts and peer-reviewed research. Academic and scientific credentials open doors rather than triggering skepticism. Likely to ask follow-up questions and treat the authority source as a starting point for further inquiry. Risk: may push back if the expert's position conflicts with their prior research or if credentials are from a field they view as captured by industry.",
+    "strategy_social_proof": "Expected positive if social proof references educated or expert peer groups, but may dismiss if framed around general population majorities. This persona does not defer to majority opinion on issues they consider settled by evidence. Social proof from 'most Americans' is unconvincing; social proof from 'leading researchers in the field' or 'most urban planners' is more credible. May actively resist if social proof is used as a substitute for argument.",
+    "strategy_personal_narrative": "Expected neutral to moderate positive. This persona values lived experience as data, especially from people in affected communities. However, they will also want to know how a personal story connects to broader patterns — a single story without systemic framing may feel anecdotal. Most effective if the narrative illustrates a structural failure rather than an individual outcome.",
+    "strategy_statistical_logical": "Expected to engage most deeply. Data-driven argument is this persona's primary epistemic mode. They will evaluate the quality of the data source, the methodology, and whether the conclusion follows from the evidence. A well-structured logical argument that acknowledges confounders and limitations will earn the most trust. Weak or selectively cited statistics will be challenged directly.",
+    "strategy_emotional_appeal": "Expected positive if grounded in justice or equity stakes, negative if perceived as manipulative or bypassing evidence. Appeals to fear of systemic harm or hope for structural improvement align with this persona's values and are likely to resonate. Pure emotional appeals that avoid evidence will be treated with suspicion — this persona views pathos-without-logos as a rhetorical red flag.",
+    "strategy_common_ground": "Expected mixed. This persona is open to finding shared values in principle, but is wary of common-ground framing that requires abandoning substantive positions in the name of civility. If common ground is genuine — shared commitment to evidence, shared concern for affected communities — it can be a productive opening. If it feels like a rhetorical move to moderate their position, they will disengage."
+  }
+}

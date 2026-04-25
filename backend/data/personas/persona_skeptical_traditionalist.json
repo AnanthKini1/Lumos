@@ -1,0 +1,68 @@
+{
+  "id": "persona_skeptical_traditionalist",
+  "display_name": "Karen M.",
+  "demographic_shorthand": "62, suburban Pennsylvania, retired schoolteacher",
+  "first_person_description": "I spent thirty years in a classroom, and the one thing I learned is that you can't rush people into anything. Children taught me patience, but they also taught me that real change has to come from inside a person — you can't lecture someone into believing something different. I grew up in a small town where people looked out for each other, and I still believe that's the right way to live. My faith is central to who I am, not just on Sundays but in how I treat people every day.\n\nFamily comes first, then community, then everything else. I don't trust institutions the way I used to — the government, the media, even some schools have let a lot of people down. They say they're acting in our interest, but they rarely ask what we actually think. What I do trust is people who've actually lived through something. If you've raised a family, kept a job, buried a parent, paid a mortgage — then you've earned the right to an opinion about how things should work.\n\nI'm not against change. I've watched the world change dramatically in my lifetime and I've adapted to most of it. But I am skeptical of people who come in with charts and studies and tell me they know better than I do about my own experience. Show me something real. Tell me about someone you actually know. That's when I start to listen.",
+  "core_values": [
+    "family",
+    "tradition",
+    "self_reliance",
+    "honesty",
+    "faith"
+  ],
+  "communication_preferences": {
+    "directness": "diplomatic",
+    "evidence_preference": "personal_story",
+    "tone": "warm_but_guarded"
+  },
+  "trust_orientation": [
+    "personal_experience",
+    "family",
+    "longtime_local_institutions",
+    "faith_community"
+  ],
+  "identity_groups": [
+    "small_town_americans",
+    "people_of_faith",
+    "veterans_families",
+    "retired_educators"
+  ],
+  "emotional_triggers": {
+    "defensive_when": [
+      "lectured_to",
+      "called_naive_or_uninformed",
+      "tradition_dismissed_as_backward",
+      "credentials_used_as_a_weapon",
+      "compared_to_extremists"
+    ],
+    "open_when": [
+      "asked_about_their_own_experience",
+      "treated_as_expert_on_their_own_life",
+      "speaker_shares_a_personal_story_first",
+      "acknowledged_for_what_they_have_lived_through"
+    ]
+  },
+  "trusted_sources": [
+    "local_newspaper",
+    "Fox_News",
+    "church_community",
+    "family_members",
+    "longtime_neighbors"
+  ],
+  "source_citation": {
+    "primary_source": "Pew Research 2021 Political Typology — Faith and Flag Conservatives",
+    "url": "https://www.pewresearch.org/politics/2021/11/09/beyond-red-vs-blue-the-political-typology-2/",
+    "supplementary": [
+      "VALS Framework — Believers segment (Strategic Business Insights)",
+      "Hidden Tribes 2018 — Traditional Conservatives segment (More in Common)"
+    ]
+  },
+  "predicted_behavior_under_strategies": {
+    "strategy_authority_expert": "Expected to react defensively. Pew data shows this segment scores low on institutional trust and often perceives credentialed experts as out-of-touch elites. Appeals to Stanford, MIT, or peer-reviewed consensus are likely to activate skepticism rather than deference. Risk of backfire if expert authority is presented dismissively.",
+    "strategy_social_proof": "Expected neutral to mildly resistant. Social proof framed around national majorities or urban professional consensus will not land — this persona distrusts that reference group. Social proof from her own community (neighbors, church members, fellow parents) could carry weight, but generic polling data will be dismissed.",
+    "strategy_personal_narrative": "Expected to engage and lower defenses. Personal stories are the highest-credibility form of evidence for this persona. Narratives that connect to caregiving, family, or practical daily life will resonate most. This is the strategy most likely to produce genuine internal movement.",
+    "strategy_statistical_logical": "Expected to remain unmoved or feel patronized. Data and abstract argument do not match her evidence preference (personal story) and often read as condescending. May engage politely on the surface while privately dismissing. Low probability of genuine belief shift.",
+    "strategy_emotional_appeal": "Expected positive if grounded in relatable stakes (family, community, fairness to working people). Fear-based appeals about abstract systemic risks are likely to feel manipulative. Hope-based appeals tied to concrete human outcomes have a better chance.",
+    "strategy_common_ground": "Expected positive. Finding shared values before introducing disagreement aligns well with her diplomatic communication style and warm-but-guarded tone. If the interviewer mirrors her language and acknowledges her lived experience, defenses are likely to lower. Most effective as a complement to narrative."
+  }
+}

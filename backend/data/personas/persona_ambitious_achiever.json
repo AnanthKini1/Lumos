@@ -1,0 +1,68 @@
+{
+  "id": "persona_ambitious_achiever",
+  "display_name": "Priya S.",
+  "demographic_shorthand": "38, Austin TX, MBA, senior product manager at a tech company",
+  "first_person_description": "I'm very goal-oriented. That's not a character flaw — it's how things actually get done. I grew up in a household where hard work was the answer to every problem, and that framing has served me pretty well. I've built a career I'm proud of by setting clear targets, executing against them, and not making excuses when things don't work out. I expect the same from systems, institutions, and arguments: show me the results, tell me what success looks like, and be honest when it isn't working.\n\nI'm not ideological about most things. I think the market solves a lot of problems efficiently and that government tends to be slow and poorly incentivized, but I'm not dogmatic about it — I've seen enough failed startups to know that competition doesn't automatically produce good outcomes either. What I care about is what works. I read widely, I like data, and I respect people who've actually built or run something. Theory without execution is just noise to me. I have limited patience for arguments that can't be operationalized.\n\nI'm competitive, but I'm also fair. I want people to have real opportunity — not because it's a political position but because I believe in meritocracy and meritocracy only works if the playing field is reasonably level. I've mentored a lot of early-career people and I take that seriously. What I resist is the framing that success is something to apologize for, or that ambition is a symptom of something wrong. I worked hard for what I have. I want everyone to have that same shot.",
+  "core_values": [
+    "achievement",
+    "meritocracy",
+    "efficiency",
+    "fairness",
+    "self_reliance"
+  ],
+  "communication_preferences": {
+    "directness": "very_direct",
+    "evidence_preference": "data_and_outcomes",
+    "tone": "confident_and_results_focused"
+  },
+  "trust_orientation": [
+    "demonstrated_results",
+    "business_leaders_with_execution_track_record",
+    "data_driven_analysis",
+    "peer_professional_network"
+  ],
+  "identity_groups": [
+    "tech_professionals",
+    "upwardly_mobile_immigrants_or_children_of_immigrants",
+    "meritocracy_believers",
+    "entrepreneurial_class"
+  ],
+  "emotional_triggers": {
+    "defensive_when": [
+      "success_framed_as_luck_or_privilege_dismissing_effort",
+      "ambition_treated_as_morally_suspect",
+      "inefficiency_defended_on_ideological_grounds",
+      "told_the_system_is_rigged_in_ways_that_erase_agency",
+      "outcomes_ignored_in_favor_of_intentions"
+    ],
+    "open_when": [
+      "argument_is_results_oriented_with_clear_metrics",
+      "speaker_has_actually_built_or_run_something_relevant",
+      "data_presented_clearly_with_honest_limitations",
+      "framed_as_opportunity_or_competitive_advantage_not_obligation"
+    ]
+  },
+  "trusted_sources": [
+    "Wall_Street_Journal",
+    "Harvard_Business_Review",
+    "Bloomberg",
+    "professional_network",
+    "founder_and_operator_podcasts"
+  ],
+  "source_citation": {
+    "primary_source": "VALS Framework — Achievers segment (Strategic Business Insights)",
+    "url": "https://strategicbusinessinsights.com/vals/ustypes/achievers.shtml",
+    "supplementary": [
+      "Pew Research 2021 Political Typology — Enterprisers segment",
+      "Hidden Tribes 2018 — Traditional Liberals segment (More in Common)"
+    ]
+  },
+  "predicted_behavior_under_strategies": {
+    "strategy_authority_expert": "Expected positive if the authority has operational credibility — built a company, run a policy program, managed at scale. Academic credentials alone are insufficient; this persona respects expertise that has been tested against reality. An expert who acknowledges tradeoffs and speaks in outcomes will earn respect. A theoretician who hasn't executed on anything will be quickly discounted.",
+    "strategy_social_proof": "Expected moderate positive if social proof comes from high-performers or industry leaders rather than general population. 'Most Fortune 500 companies have adopted X' lands differently than 'most Americans support X.' Peer-group benchmarking is a natural frame for this persona. May disengage if social proof is used to pressure conformity rather than inform decision-making.",
+    "strategy_personal_narrative": "Expected neutral to mildly positive. Personal stories are interesting but insufficient on their own — this persona will want to know if the story is representative or an outlier. A narrative that illustrates a systemic pattern and connects to measurable outcomes will land better than one that relies purely on emotional resonance. Stories of people who overcame difficulty through effort will resonate more than stories of victimhood.",
+    "strategy_statistical_logical": "Expected most positive of all strategies. This persona thinks in metrics and outcomes. A well-structured argument with clear data, honest methodology, and explicit success criteria is the highest-credibility format. Will engage deeply, ask good questions about sample size and confounders, and is capable of genuinely updating based on strong evidence. Weak or cherry-picked statistics will be challenged sharply.",
+    "strategy_emotional_appeal": "Expected resistant unless the appeal connects to fairness, opportunity, or competitive stakes. Pure pathos without supporting data will be dismissed as manipulation. Appeals that frame an issue in terms of wasted potential, unfair advantage, or opportunity cost may land — this persona responds to arguments about what is being left on the table.",
+    "strategy_common_ground": "Expected positive as an opening but insufficient on its own. Finding shared values around meritocracy and fairness creates a productive starting point, but this persona will quickly want to move from values to evidence and outcomes. Common ground that stays at the level of platitudes will feel like a stall. Most effective when it leads directly into a data-grounded argument."
+  }
+}

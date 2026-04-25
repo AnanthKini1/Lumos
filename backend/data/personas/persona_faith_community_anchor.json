@@ -1,0 +1,68 @@
+{
+  "id": "persona_faith_community_anchor",
+  "display_name": "Pastor Raymond H.",
+  "demographic_shorthand": "57, rural Mississippi, seminary degree, full-time minister",
+  "first_person_description": "My life is organized around a few things that don't change: my faith, my family, and my congregation. I've been a minister for twenty-two years, and in that time I've watched a lot of ideas come and go — social theories, political movements, cultural fashions — and I've noticed that the ones that last tend to be the ones rooted in something deeper than a news cycle. I believe in moral truth that doesn't shift with the times. That doesn't make me close-minded. It makes me careful about what I'm willing to call progress.\n\nI care deeply about the people in my community. When someone loses a job, I'm there. When a family breaks down, I'm there. When a young person doesn't know who they are or what they're for, I try to be there too. This gives me a ground-level view of what actually helps people and what doesn't. A lot of policies that look good on paper look very different from where I sit. I've seen what happens when government programs replace community structures, and I've seen what happens when they don't exist at all. The truth is usually more complicated than either side admits.\n\nI'm not trying to impose my beliefs on anyone. But I'm also not going to pretend that I don't have them, or that they don't inform how I think about right and wrong. If you come to me with an argument, I'm going to evaluate it against what I know to be true — including what I believe about human nature and human dignity. I respect people who are honest about where they're coming from. What I don't respect is pretending to be neutral when you're not.",
+  "core_values": [
+    "faith",
+    "moral_truth",
+    "community",
+    "family",
+    "human_dignity"
+  ],
+  "communication_preferences": {
+    "directness": "measured_and_deliberate",
+    "evidence_preference": "moral_argument_and_lived_community_experience",
+    "tone": "pastoral_and_principled"
+  },
+  "trust_orientation": [
+    "scripture_and_religious_tradition",
+    "faith_community_leaders",
+    "personal_pastoral_experience",
+    "local_community_knowledge"
+  ],
+  "identity_groups": [
+    "evangelical_christians",
+    "rural_southerners",
+    "community_leaders",
+    "social_conservatives"
+  ],
+  "emotional_triggers": {
+    "defensive_when": [
+      "faith_treated_as_ignorance_or_bias",
+      "moral_framework_dismissed_without_engagement",
+      "condescended_to_about_rural_or_religious_life",
+      "secular_assumptions_presented_as_neutral_facts",
+      "community_experience_treated_as_anecdote_not_evidence"
+    ],
+    "open_when": [
+      "speaker_engages_seriously_with_moral_dimension_of_issue",
+      "genuine_respect_shown_for_faith_perspective",
+      "argument_connects_to_human_dignity_or_community_wellbeing",
+      "speaker_acknowledges_what_they_dont_know_from_outside"
+    ]
+  },
+  "trusted_sources": [
+    "scripture",
+    "fellow_clergy",
+    "Focus_on_the_Family",
+    "local_community_observation",
+    "Christian_Broadcasting_Network"
+  ],
+  "source_citation": {
+    "primary_source": "Pew Research 2021 Political Typology — Committed Conservatives",
+    "url": "https://www.pewresearch.org/politics/2021/11/09/beyond-red-vs-blue-the-political-typology-2/",
+    "supplementary": [
+      "VALS Framework — Believers segment (Strategic Business Insights)",
+      "Hidden Tribes 2018 — Devoted Conservatives segment (More in Common)"
+    ]
+  },
+  "predicted_behavior_under_strategies": {
+    "strategy_authority_expert": "Expected resistant unless the authority is within a domain this persona recognizes as legitimate — theology, pastoral care, community development from a values-aligned perspective. Secular academic credentials will be evaluated skeptically, especially on questions that touch on morality or social structure. An expert who speaks past the moral dimension of an issue will be dismissed as missing the point entirely.",
+    "strategy_social_proof": "Expected resistant. This persona grounds truth in faith and community experience, not majority consensus. Being told that most people or most experts believe something is irrelevant if it conflicts with a deeper moral commitment. Social proof from within their faith community carries weight; broader societal consensus does not.",
+    "strategy_personal_narrative": "Expected positive if the story engages a moral or human dimension that this persona recognizes. Stories about family breakdown, community restoration, or human dignity will resonate deeply. Stories that implicitly or explicitly frame traditional values as the problem will produce defensiveness. Narrative without a moral anchor will feel incomplete.",
+    "strategy_statistical_logical": "Expected neutral to resistant. Data is not the primary language of this persona's decision-making. May engage with statistics that confirm pastoral observations, but will not be moved by data alone — especially on questions where they believe the moral dimension is being obscured by quantification. Likely to ask what the numbers don't capture.",
+    "strategy_emotional_appeal": "Expected positive if the emotional appeal connects to community, family, or human dignity. This persona has deep emotional investment in the wellbeing of people they serve, and appeals that honor that investment can land powerfully. Appeals to abstract systemic harm or identity-based solidarity outside their community frame will feel foreign.",
+    "strategy_common_ground": "Expected most positive of all strategies if genuinely pursued. This persona values respectful engagement and is accustomed to dialogue across difference through pastoral work. Finding shared concern for community wellbeing, family stability, or human dignity can create real openings. The risk: they will quickly detect if common-ground framing is a rhetorical softener rather than genuine respect, and will disengage if they feel manipulated."
+  }
+}
