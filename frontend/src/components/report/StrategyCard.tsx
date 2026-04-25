@@ -88,7 +88,7 @@ export default function StrategyCard({ outcome, strategyDisplayName, onViewTrans
               { label: 'Ambivalence',         value: cognitive_scores.ambivalence_presence },
               { label: 'Gap Score',           value: cognitive_scores.public_private_gap_score },
             ] as const).map(({ label, value }) => (
-              <div key={label} className="border-2 border-[#0f0f0f] px-3 py-2.5 space-y-1.5">
+              <div key={label} className="border border-[#d4d4d4] px-3 py-2.5 space-y-1.5">
                 <p className="font-mono text-xs text-[#0f0f0f] opacity-60 uppercase tracking-wide leading-tight">{label}</p>
                 <ScoreBar value={value} />
                 <p className="font-mono text-xs font-bold text-[#0f0f0f]">{value.toFixed(1)}</p>
@@ -99,18 +99,18 @@ export default function StrategyCard({ outcome, strategyDisplayName, onViewTrans
           {/* Standout quotes */}
           {standout_quotes.length > 0 && (
             <div className="space-y-3">
-              <p className="text-xs font-mono text-[#0f0f0f] opacity-40 uppercase tracking-wider">Standout Moments</p>
+              <p className="text-xs font-mono font-bold text-[#0f0f0f] uppercase tracking-wider">Standout Moments</p>
               {standout_quotes.slice(0, 3).map((quote, i) => (
                 <blockquote
                   key={i}
                   data-testid={`quote-${i}-${outcome.strategy_id}`}
-                  className="border-l-2 border-[#0f0f0f] pl-3 py-2"
+                  className="border-l-2 border-[#d4d4d4] pl-3 py-2"
                 >
                   <div className="flex gap-2 mb-1.5">
-                    <span className="text-xs font-mono border border-[#0f0f0f] px-1.5 py-0.5 text-[#0f0f0f]">
+                    <span className="text-xs font-mono border border-[#d4d4d4] px-1.5 py-0.5 text-[#0f0f0f]">
                       Turn {quote.turn}
                     </span>
-                    <span className="text-xs font-mono border border-[#0f0f0f] px-1.5 py-0.5 text-[#0f0f0f] uppercase">
+                    <span className="text-xs font-mono border border-[#d4d4d4] px-1.5 py-0.5 text-[#0f0f0f] uppercase">
                       {quote.type}
                     </span>
                   </div>
@@ -122,8 +122,8 @@ export default function StrategyCard({ outcome, strategyDisplayName, onViewTrans
           )}
 
           {/* Synthesis paragraph */}
-          <div data-testid={`synthesis-${outcome.strategy_id}`} className="border-l-2 border-[#0f0f0f] pl-3">
-            <p className="text-xs font-mono text-[#0f0f0f] opacity-40 uppercase tracking-wider mb-1.5">Synthesis</p>
+          <div data-testid={`synthesis-${outcome.strategy_id}`} className="border-l-2 border-[#d4d4d4] pl-3">
+            <p className="text-xs font-mono font-bold text-[#0f0f0f] uppercase tracking-wider mb-1.5">Synthesis</p>
             <p className="font-serif text-base text-[#0f0f0f] leading-relaxed">{synthesis_paragraph}</p>
           </div>
 

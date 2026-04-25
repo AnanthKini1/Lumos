@@ -125,8 +125,8 @@ export default function App() {
         onClose={() => setSourcesOpen(false)}
       />
 
-      {/* Mechanism legend overlay */}
-      <MechanismLegend />
+      {/* Mechanism legend — only visible after setup */}
+      {screen !== 'setup' && <MechanismLegend />}
 
       {/* Screen transitions */}
       <AnimatePresence mode="wait">

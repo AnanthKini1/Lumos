@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
-import type { SimulationOutput, VerdictCategory, ConversationTurn } from '../../types/simulation'
+import type { SimulationOutput, ConversationTurn } from '../../types/simulation'
 import PublicConversation from './PublicConversation'
 import InternalMind from './InternalMind'
 import PivotalMomentPanel from './PivotalMomentPanel'
@@ -18,13 +18,6 @@ export function strategyDisplayName(id: string): string {
     .replace(/\b\w/g, c => c.toUpperCase())
 }
 
-const VERDICT_ABBR: Record<VerdictCategory, string> = {
-  GENUINE_BELIEF_SHIFT: '[GEN]',
-  PARTIAL_SHIFT:        '[PAR]',
-  SURFACE_COMPLIANCE:   '[SFC]',
-  BACKFIRE:             '[BCK]',
-  NO_MOVEMENT:          '[NOM]',
-}
 
 export default function MindViewer({ simulation, initialStrategyId, onViewReport }: Props) {
   const { outcomes, metadata } = simulation
@@ -112,7 +105,6 @@ export default function MindViewer({ simulation, initialStrategyId, onViewReport
           {outcomes.map((outcome, idx) => {
             const active = idx === activeIdx
             const name = strategyDisplayName(outcome.strategy_id)
-            const abbr = VERDICT_ABBR[outcome.verdict]
             return (
               <button
                 key={outcome.strategy_id}
@@ -127,13 +119,6 @@ export default function MindViewer({ simulation, initialStrategyId, onViewReport
                     : 'border-transparent text-[#0f0f0f] opacity-50 hover:opacity-80',
                 ].join(' ')}
               >
-                <span
-                  className="font-mono text-xs shrink-0"
-                  title={outcome.verdict}
-                  data-testid={`verdict-dot-${outcome.strategy_id}`}
-                >
-                  {abbr}
-                </span>
                 {name}
               </button>
             )

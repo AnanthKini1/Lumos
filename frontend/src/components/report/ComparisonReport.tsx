@@ -102,7 +102,7 @@ export default function ComparisonReport({ simulation, onViewTranscript, onBackT
 
         {/* Insight synthesis */}
         <div data-testid="synthesis-card">
-          <p className="text-xs font-mono text-[#0f0f0f] opacity-40 uppercase tracking-widest mb-4">Synthesis</p>
+          <p className="text-sm font-mono font-bold text-[#0f0f0f] uppercase tracking-widest mb-4">Synthesis</p>
           <div className="border-l-4 border-[#0f0f0f] pl-6">
             <p className="text-2xl font-serif leading-relaxed text-[#0f0f0f]">{overall_synthesis}</p>
             {validation_note && (
@@ -115,7 +115,7 @@ export default function ComparisonReport({ simulation, onViewTranscript, onBackT
 
         {/* Strategy comparison table */}
         <section>
-          <p className="text-xs font-mono text-[#0f0f0f] opacity-40 uppercase tracking-widest border-t-2 border-[#0f0f0f] pt-6 mb-6">
+          <p className="text-sm font-mono font-bold text-[#0f0f0f] uppercase tracking-widest border-t-2 border-[#0f0f0f] pt-6 mb-6">
             Strategy Comparison
           </p>
 
@@ -141,12 +141,12 @@ export default function ComparisonReport({ simulation, onViewTranscript, onBackT
                     <tr
                       key={outcome.strategy_id}
                       data-testid={`report-row-${outcome.strategy_id}`}
-                      className="border-b border-[#0f0f0f] hover:bg-[#f0f0f0] transition-colors"
+                      className="border-b border-[#d4d4d4] hover:bg-[#f5f5f5] transition-colors"
                     >
-                      <td className="px-4 py-3 font-serif font-bold text-[#0f0f0f] border border-[#0f0f0f]">
+                      <td className="px-4 py-3 font-serif font-bold text-[#0f0f0f] border border-[#d4d4d4]">
                         {strategyDisplayName(outcome.strategy_id)}
                       </td>
-                      <td className="px-4 py-3 border border-[#0f0f0f]">
+                      <td className="px-4 py-3 border border-[#d4d4d4]">
                         <span
                           data-testid={`verdict-badge-${outcome.strategy_id}`}
                           className="font-mono text-xs font-bold text-[#0f0f0f] uppercase"
@@ -174,29 +174,29 @@ export default function ComparisonReport({ simulation, onViewTranscript, onBackT
                       </td>
                       <td
                         data-testid={`public-delta-${outcome.strategy_id}`}
-                        className="px-4 py-3 text-right font-mono text-sm text-[#0f0f0f] border border-[#0f0f0f]"
+                        className="px-4 py-3 text-right font-mono text-sm text-[#0f0f0f] border border-[#d4d4d4]"
                       >
                         {row.publicDelta}
                       </td>
                       <td
                         data-testid={`private-delta-${outcome.strategy_id}`}
-                        className="px-4 py-3 text-right font-mono text-sm text-[#0f0f0f] border border-[#0f0f0f]"
+                        className="px-4 py-3 text-right font-mono text-sm text-[#0f0f0f] border border-[#d4d4d4]"
                       >
                         {row.privateDelta}
                       </td>
                       <td
                         data-testid={`max-gap-${outcome.strategy_id}`}
-                        className="px-4 py-3 text-right font-mono text-sm text-[#0f0f0f] border border-[#0f0f0f]"
+                        className="px-4 py-3 text-right font-mono text-sm text-[#0f0f0f] border border-[#d4d4d4]"
                       >
                         {row.maxGap}
                       </td>
                       <td
                         data-testid={`threats-${outcome.strategy_id}`}
-                        className="px-4 py-3 text-right font-mono text-sm text-[#0f0f0f] border border-[#0f0f0f]"
+                        className="px-4 py-3 text-right font-mono text-sm text-[#0f0f0f] border border-[#d4d4d4]"
                       >
                         {row.threats}
                       </td>
-                      <td className="px-4 py-3 border border-[#0f0f0f]">
+                      <td className="px-4 py-3 border border-[#d4d4d4]">
                         <span
                           data-testid={`persistence-${outcome.strategy_id}`}
                           className="font-mono text-xs font-bold text-[#0f0f0f] uppercase"
@@ -204,7 +204,7 @@ export default function ComparisonReport({ simulation, onViewTranscript, onBackT
                           {PERSISTENCE_LABEL[row.persistence] ?? row.persistence.replace(/_/g, ' ').toUpperCase()}
                         </span>
                       </td>
-                      <td className="px-4 py-3 border border-[#0f0f0f]">
+                      <td className="px-4 py-3 border border-[#d4d4d4]">
                         <button
                           data-testid={`view-transcript-${outcome.strategy_id}`}
                           onClick={() => onViewTranscript(outcome.strategy_id)}
@@ -223,7 +223,7 @@ export default function ComparisonReport({ simulation, onViewTranscript, onBackT
 
         {/* Stance trajectories */}
         <section>
-          <p className="text-xs font-mono text-[#0f0f0f] opacity-40 uppercase tracking-widest border-t-2 border-[#0f0f0f] pt-6 mb-6">
+          <p className="text-sm font-mono font-bold text-[#0f0f0f] uppercase tracking-widest border-t-2 border-[#0f0f0f] pt-6 mb-6">
             Stance Trajectories
           </p>
           <div data-testid="trajectory-section" className="grid grid-cols-1 lg:grid-cols-2 gap-6">
@@ -239,7 +239,7 @@ export default function ComparisonReport({ simulation, onViewTranscript, onBackT
 
         {/* Strategy breakdown */}
         <section>
-          <p className="text-xs font-mono text-[#0f0f0f] opacity-40 uppercase tracking-widest border-t-2 border-[#0f0f0f] pt-6 mb-6">
+          <p className="text-sm font-mono font-bold text-[#0f0f0f] uppercase tracking-widest border-t-2 border-[#0f0f0f] pt-6 mb-6">
             Strategy Breakdown
           </p>
           <div data-testid="strategy-cards-section" className="space-y-6">
