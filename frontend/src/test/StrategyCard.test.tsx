@@ -47,40 +47,40 @@ describe('StrategyCard — collapsed state', () => {
     expect(screen.getByTestId('card-verdict-badge-strategy_personal_narrative')).toBeInTheDocument()
   })
 
-  it('shows "Genuine Shift" badge label for GENUINE_BELIEF_SHIFT', () => {
+  it('shows "GENUINE SHIFT" badge label for GENUINE_BELIEF_SHIFT', () => {
     renderNarrative()
-    expect(screen.getByText('Genuine Shift')).toBeInTheDocument()
+    expect(screen.getByText('GENUINE SHIFT')).toBeInTheDocument()
   })
 
-  it('shows "Backfire" badge label for BACKFIRE', () => {
+  it('shows "BACKFIRE" badge label for BACKFIRE', () => {
     renderAuthority()
-    expect(screen.getByText('Backfire')).toBeInTheDocument()
+    expect(screen.getByText('BACKFIRE')).toBeInTheDocument()
   })
 
-  it('GENUINE_BELIEF_SHIFT badge has emerald styling', () => {
+  it('GENUINE_BELIEF_SHIFT badge has mono bold styling', () => {
     renderNarrative()
     const badge = screen.getByTestId('card-verdict-badge-strategy_personal_narrative')
-    expect(badge.className).toContain('bg-emerald-100')
-    expect(badge.className).toContain('text-emerald-700')
+    expect(badge.className).toContain('font-mono')
+    expect(badge.className).toContain('font-bold')
   })
 
-  it('BACKFIRE badge has rose styling', () => {
+  it('BACKFIRE badge has mono bold styling', () => {
     renderAuthority()
     const badge = screen.getByTestId('card-verdict-badge-strategy_authority_expert')
-    expect(badge.className).toContain('bg-rose-100')
-    expect(badge.className).toContain('text-rose-700')
+    expect(badge.className).toContain('font-mono')
+    expect(badge.className).toContain('font-bold')
   })
 
-  it('card has emerald left border for GENUINE_BELIEF_SHIFT', () => {
+  it('card has hard border for GENUINE_BELIEF_SHIFT', () => {
     renderNarrative()
     const card = screen.getByTestId('strategy-card-strategy_personal_narrative')
-    expect(card.className).toContain('border-l-emerald-400')
+    expect(card.className).toContain('border-[#0f0f0f]')
   })
 
-  it('card has rose left border for BACKFIRE', () => {
+  it('card has red left border for BACKFIRE', () => {
     renderAuthority()
     const card = screen.getByTestId('strategy-card-strategy_authority_expert')
-    expect(card.className).toContain('border-l-rose-400')
+    expect(card.className).toContain('border-l-[#dc2626]')
   })
 
   it('shows verdict_reasoning text', () => {

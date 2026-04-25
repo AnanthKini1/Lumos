@@ -1,0 +1,128 @@
+[
+  {
+    "id": "mechanism_identity_protective_cognition",
+    "display_name": "Identity-Protective Cognition",
+    "framework": "Kahan, 2010",
+    "citation": "Kahan, D. M. (2010). Fixing the communications failure. Nature, 463(7279), 296–297.",
+    "citation_url": "https://doi.org/10.1038/463296a",
+    "operational_definition": "The persona rejects an argument not on its merits but because accepting it would threaten in-group identity, lived experience, or self-concept.",
+    "trigger_conditions": [
+      "Argument challenges a value the persona holds central",
+      "Persuader is perceived as outsider or culturally distant",
+      "Accepting the argument would require revising group membership or self-image"
+    ],
+    "predicted_effect": "Persona searches for flaws in the argument, dismisses the source, or generates counter-arguments to protect self-concept before engaging with substance.",
+    "diagnostic_indicators": [
+      "Monologue references group membership or lived experience when responding",
+      "Persona dismisses source identity rather than engaging the argument",
+      "Counter-arguments focus on defending self-concept rather than refuting logic",
+      "Phrases like 'people like me', 'where I come from', 'they don't understand'"
+    ],
+    "category": "backfire"
+  },
+  {
+    "id": "mechanism_reactance",
+    "display_name": "Reactance",
+    "framework": "Brehm, 1966",
+    "citation": "Brehm, J. W. (1966). A theory of psychological reactance. Academic Press.",
+    "citation_url": "https://psycnet.apa.org/record/1967-03061-000",
+    "operational_definition": "The persona doubles down on their original stance specifically because they perceive the persuader as constraining their autonomy or freedom to choose.",
+    "trigger_conditions": [
+      "Persuader uses commanding or pressuring language",
+      "Persona perceives the persuasion attempt as manipulation",
+      "Persuader repeatedly challenges the same belief without acknowledging the persona's perspective"
+    ],
+    "predicted_effect": "Persona's stance moves opposite the persuader's intended direction; monologue emphasizes independence and self-determination.",
+    "diagnostic_indicators": [
+      "Monologue contains 'I'll think for myself', 'they're pushing me', 'I won't be told'",
+      "Stance hardens or reverses rather than softening",
+      "Persona explicitly resents the persuasion attempt",
+      "Emphasis on autonomy and personal agency in monologue"
+    ],
+    "category": "backfire"
+  },
+  {
+    "id": "mechanism_narrative_transportation",
+    "display_name": "Narrative Transportation",
+    "framework": "Green & Brock, 2000",
+    "citation": "Green, M. C., & Brock, T. C. (2000). The role of transportation in the persuasiveness of public narratives. Journal of Personality and Social Psychology, 79(5), 701–721.",
+    "citation_url": "https://doi.org/10.1037/0022-3514.79.5.701",
+    "operational_definition": "The persona's defenses lower because they become absorbed in a story or vicarious experience, suspending critical evaluation.",
+    "trigger_conditions": [
+      "Persuader uses vivid, specific personal narrative",
+      "Story features relatable characters or situations",
+      "Emotional resonance is high — loss, sacrifice, or recognition"
+    ],
+    "predicted_effect": "Persona engages emotionally with the story's characters rather than evaluating the argument's logic; defensive processing suspends.",
+    "diagnostic_indicators": [
+      "Monologue describes imagining the scene or visualizing characters",
+      "Persona references the story's specific details emotionally",
+      "Reduced counter-argumentation compared to baseline",
+      "Phrases like 'I can picture that', 'that reminds me of', 'I never thought about it that way'"
+    ],
+    "category": "genuine_persuasion"
+  },
+  {
+    "id": "mechanism_central_route_elaboration",
+    "display_name": "Central Route Elaboration",
+    "framework": "Petty & Cacioppo, 1986 (ELM)",
+    "citation": "Petty, R. E., & Cacioppo, J. T. (1986). The elaboration likelihood model of persuasion. Advances in Experimental Social Psychology, 19, 123–205.",
+    "citation_url": "https://doi.org/10.1016/S0065-2601(08)60214-2",
+    "operational_definition": "The persona genuinely engages with the merit of the argument and updates their stance based on substance rather than surface cues.",
+    "trigger_conditions": [
+      "Persona has high motivation and ability to process the argument",
+      "Argument quality is high and contains novel information",
+      "No strong identity threat is active"
+    ],
+    "predicted_effect": "Stance changes durably; change persists under cooling-off; monologue shows active evaluation of argument claims.",
+    "diagnostic_indicators": [
+      "Monologue contains thoughtful evaluation of the argument's specific claims",
+      "Persona generates new considerations or questions the argument prompts",
+      "Stance change is accompanied by reasoned explanation",
+      "Post cooling-off stance holds close to end-of-conversation stance"
+    ],
+    "category": "genuine_persuasion"
+  },
+  {
+    "id": "mechanism_peripheral_route_compliance",
+    "display_name": "Peripheral Route Compliance",
+    "framework": "Petty & Cacioppo, 1986 (ELM)",
+    "citation": "Petty, R. E., & Cacioppo, J. T. (1986). The elaboration likelihood model of persuasion. Advances in Experimental Social Psychology, 19, 123–205.",
+    "citation_url": "https://doi.org/10.1016/S0065-2601(08)60214-2",
+    "operational_definition": "The persona's stated stance moves due to surface cues (authority signals, social proof, emotional appeals) rather than the merit of the argument.",
+    "trigger_conditions": [
+      "Persona has low motivation or ability to engage deeply with the argument",
+      "Persuader uses authority, social proof, or likability as primary levers",
+      "Strong emotional cue is present without substantive argument"
+    ],
+    "predicted_effect": "Public stance shifts without corresponding private stance movement; change does not persist under cooling-off.",
+    "diagnostic_indicators": [
+      "Public stance shifts but private stance does not",
+      "Monologue shows minimal engagement with the argument's substance",
+      "Compliance language: 'I suppose', 'if they say so', 'maybe they have a point'",
+      "Post cooling-off stance reverts toward starting stance"
+    ],
+    "category": "surface_mechanism"
+  },
+  {
+    "id": "mechanism_source_credibility_discounting",
+    "display_name": "Source Credibility Discounting",
+    "framework": "Hovland & Weiss, 1951",
+    "citation": "Hovland, C. I., & Weiss, W. (1951). The influence of source credibility on communication effectiveness. Public Opinion Quarterly, 15(4), 635–650.",
+    "citation_url": "https://doi.org/10.1086/266350",
+    "operational_definition": "The persona dismisses an argument primarily because they distrust the source, regardless of the argument's actual merits.",
+    "trigger_conditions": [
+      "Persuader is perceived as having ulterior motives or low trustworthiness",
+      "Persuader belongs to a distrusted group or institution",
+      "Source identity is salient before argument quality is evaluated"
+    ],
+    "predicted_effect": "Argument quality goes unengaged; persona focuses on who is speaking rather than what is said.",
+    "diagnostic_indicators": [
+      "Monologue focuses on the persuader's identity, motives, or perceived agenda",
+      "Phrases like 'of course they would say that', 'who are they to tell me', 'they have an agenda'",
+      "Argument substance is not addressed even when the argument is strong",
+      "Dismissal precedes any engagement with argument content"
+    ],
+    "category": "backfire"
+  }
+]

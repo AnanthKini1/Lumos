@@ -30,18 +30,17 @@ describe('InternalMind', () => {
 
   it('shows primary emotion label in badge', () => {
     render(<InternalMind turnOutput={mockPersonaTurnOutput} priorMemoryNotes={[]} turnNumber={1} />)
-    expect(screen.getByText('intrigued')).toBeInTheDocument()
+    expect(screen.getByTestId('emotion-badge')).toHaveTextContent(/intrigued/i)
   })
 
   it('shows "defensive" emotion for threat fixture', () => {
     render(<InternalMind turnOutput={mockThreatTurnOutput} priorMemoryNotes={[]} turnNumber={2} />)
-    expect(screen.getByText('defensive')).toBeInTheDocument()
+    expect(screen.getByTestId('emotion-badge')).toHaveTextContent(/defensive/i)
   })
 
-  it('renders 10 intensity dots', () => {
+  it('shows intensity as N/10 format', () => {
     render(<InternalMind turnOutput={mockPersonaTurnOutput} priorMemoryNotes={[]} turnNumber={1} />)
-    const dotsContainer = screen.getByTestId('intensity-dots')
-    expect(dotsContainer.children).toHaveLength(10)
+    expect(screen.getByTestId('emotion-badge')).toHaveTextContent(/\/10/)
   })
 
   it('shows trigger text', () => {
@@ -65,18 +64,17 @@ describe('InternalMind', () => {
     expect(screen.getByText(/self-reliance and common sense/i)).toBeInTheDocument()
   })
 
-  it('applies rose styling when identity is threatened', () => {
+  it('applies red border when identity is threatened', () => {
     render(<InternalMind turnOutput={mockThreatTurnOutput} priorMemoryNotes={[]} turnNumber={2} />)
     const panel = screen.getByTestId('internal-mind')
-    expect(panel.className).toContain('bg-rose-50')
-    expect(panel.className).toContain('border-rose-400')
+    expect(panel.className).toContain('border-[#dc2626]')
+    expect(panel.className).toContain('border-l-4')
   })
 
-  it('applies violet styling when not threatened', () => {
+  it('applies dark background always (inverted panel)', () => {
     render(<InternalMind turnOutput={mockPersonaTurnOutput} priorMemoryNotes={[]} turnNumber={1} />)
     const panel = screen.getByTestId('internal-mind')
-    expect(panel.className).toContain('bg-violet-50')
-    expect(panel.className).toContain('border-violet-200')
+    expect(panel.className).toContain('bg-[#0f0f0f]')
   })
 
   it('shows private stance section', () => {

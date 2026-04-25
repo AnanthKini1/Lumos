@@ -1,8 +1,9 @@
 import { useState, useEffect, useRef } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
-import type { SimulationOutput, VerdictCategory } from '../../types/simulation'
+import { AnimatePresence, motion } from 'framer-motion'
+import type { SimulationOutput, ConversationTurn } from '../../types/simulation'
 import PublicConversation from './PublicConversation'
 import InternalMind from './InternalMind'
+import PivotalMomentPanel from './PivotalMomentPanel'
 
 interface Props {
   simulation: SimulationOutput
@@ -10,7 +11,6 @@ interface Props {
   onViewReport: () => void
 }
 
-// Strips "strategy_" prefix and converts snake_case to Title Case
 export function strategyDisplayName(id: string): string {
   return id
     .replace(/^strategy_/, '')
@@ -18,21 +18,6 @@ export function strategyDisplayName(id: string): string {
     .replace(/\b\w/g, c => c.toUpperCase())
 }
 
-const VERDICT_DOT: Record<VerdictCategory, string> = {
-  GENUINE_BELIEF_SHIFT: 'bg-emerald-500',
-  PARTIAL_SHIFT:        'bg-sky-500',
-  SURFACE_COMPLIANCE:   'bg-amber-500',
-  BACKFIRE:             'bg-rose-500',
-  NO_MOVEMENT:          'bg-slate-400',
-}
-
-const VERDICT_LABEL: Record<VerdictCategory, string> = {
-  GENUINE_BELIEF_SHIFT: 'Genuine Shift',
-  PARTIAL_SHIFT:        'Partial Shift',
-  SURFACE_COMPLIANCE:   'Surface Compliance',
-  BACKFIRE:             'Backfire',
-  NO_MOVEMENT:          'No Movement',
-}
 
 export default function MindViewer({ simulation, initialStrategyId, onViewReport }: Props) {
   const { outcomes, metadata } = simulation
@@ -45,13 +30,13 @@ export default function MindViewer({ simulation, initialStrategyId, onViewReport
   const [activeIdx, setActiveIdx] = useState(initialIdx)
   const [currentTurn, setCurrentTurn] = useState(0)
   const [isPlaying, setIsPlaying] = useState(false)
+  const [selectedPivotalTurn, setSelectedPivotalTurn] = useState<ConversationTurn | null>(null)
   const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null)
 
   const activeOutcome = outcomes[activeIdx]
   const turns = activeOutcome.turns
   const maxTurn = turns.length - 1
 
-  // Auto-advance when playing
   useEffect(() => {
     if (isPlaying) {
       intervalRef.current = setInterval(() => {
@@ -69,11 +54,11 @@ export default function MindViewer({ simulation, initialStrategyId, onViewReport
     }
   }, [isPlaying, maxTurn])
 
-  // Reset turn when switching strategy
   function handleTabSwitch(idx: number) {
     setActiveIdx(idx)
     setCurrentTurn(0)
     setIsPlaying(false)
+    setSelectedPivotalTurn(null)
   }
 
   function handlePrev() {
@@ -86,7 +71,6 @@ export default function MindViewer({ simulation, initialStrategyId, onViewReport
     setCurrentTurn(t => Math.min(maxTurn, t + 1))
   }
 
-  // Build prior memory notes for InternalMind
   const priorMemoryNotes = turns
     .slice(0, currentTurn)
     .map(t => t.persona_output.memory_to_carry_forward)
@@ -98,30 +82,29 @@ export default function MindViewer({ simulation, initialStrategyId, onViewReport
       : (topic.predicted_starting_stances[persona.id] ?? 5)
 
   return (
-    <div className="h-screen flex flex-col bg-slate-50" data-testid="mind-viewer">
+    <div className="h-screen flex flex-col bg-[#fafafa]" data-testid="mind-viewer">
       {/* Top bar */}
-      <header className="shrink-0 bg-white border-b border-slate-200 px-6 py-3 flex items-center gap-4">
+      <header className="shrink-0 bg-[#fafafa] border-b-2 border-[#0f0f0f] px-6 py-4 flex items-center gap-4">
         <div className="flex-1 min-w-0">
-          <span className="font-bold text-slate-900 text-base">{persona.display_name}</span>
-          <span className="text-slate-300 mx-2">·</span>
-          <span className="text-slate-500 text-base truncate">{topic.display_name}</span>
+          <span className="font-bold font-serif text-xl text-[#0f0f0f]">{persona.display_name}</span>
+          <span className="text-[#0f0f0f] opacity-30 mx-2">·</span>
+          <span className="font-serif text-base text-[#0f0f0f] opacity-60 truncate">{topic.display_name}</span>
         </div>
         <button
           data-testid="view-report-btn"
           onClick={onViewReport}
-          className="shrink-0 px-4 py-2 rounded-lg bg-purple-600 text-white text-sm font-semibold hover:bg-purple-700 transition-colors"
+          className="shrink-0 px-4 py-2 border-2 border-[#0f0f0f] bg-[#0f0f0f] text-[#fafafa] font-bold font-mono text-sm hover:bg-[#333333] transition-colors"
         >
           View Report →
         </button>
       </header>
 
       {/* Strategy tabs */}
-      <div className="shrink-0 bg-white border-b border-slate-200 px-6">
-        <div className="flex gap-1 relative" role="tablist">
+      <div className="shrink-0 bg-[#fafafa] border-b-2 border-[#0f0f0f] px-6">
+        <div className="flex gap-0" role="tablist">
           {outcomes.map((outcome, idx) => {
             const active = idx === activeIdx
             const name = strategyDisplayName(outcome.strategy_id)
-            const dotClass = VERDICT_DOT[outcome.verdict]
             return (
               <button
                 key={outcome.strategy_id}
@@ -130,24 +113,13 @@ export default function MindViewer({ simulation, initialStrategyId, onViewReport
                 data-testid={`strategy-tab-${outcome.strategy_id}`}
                 onClick={() => handleTabSwitch(idx)}
                 className={[
-                  'relative px-4 py-3.5 text-sm font-medium flex items-center gap-2 transition-colors duration-150 border-b-2',
+                  'px-5 py-3.5 font-mono text-sm flex items-center gap-2 transition-all duration-150 border-b-4',
                   active
-                    ? 'text-purple-700 border-purple-600'
-                    : 'text-slate-500 border-transparent hover:text-slate-700 hover:border-slate-300',
+                    ? 'border-[#0f0f0f] font-bold text-[#0f0f0f]'
+                    : 'border-transparent text-[#0f0f0f] opacity-50 hover:opacity-80',
                 ].join(' ')}
               >
-                <span
-                  className={`w-2 h-2 rounded-full shrink-0 ${dotClass}`}
-                  title={VERDICT_LABEL[outcome.verdict]}
-                  data-testid={`verdict-dot-${outcome.strategy_id}`}
-                />
                 {name}
-                {active && (
-                  <motion.span
-                    layoutId="tab-underline"
-                    className="absolute bottom-[-2px] left-0 right-0 h-0.5 bg-purple-600 rounded-full"
-                  />
-                )}
               </button>
             )
           })}
@@ -155,7 +127,7 @@ export default function MindViewer({ simulation, initialStrategyId, onViewReport
       </div>
 
       {/* Main panels */}
-      <div className="flex-1 overflow-hidden">
+      <div className="flex-1 overflow-hidden relative">
         <AnimatePresence mode="wait">
           <motion.div
             key={activeIdx}
@@ -167,12 +139,13 @@ export default function MindViewer({ simulation, initialStrategyId, onViewReport
             data-testid="strategy-panel"
           >
             {/* Public conversation — left / top */}
-            <div className="flex-1 overflow-hidden border-r border-slate-200">
+            <div className="flex-1 overflow-hidden border-r-2 border-[#0f0f0f]">
               <PublicConversation
                 turns={turns}
                 currentTurn={currentTurn}
                 strategyDisplayName={strategyDisplayName(activeOutcome.strategy_id)}
                 personaDisplayName={persona.display_name}
+                onPivotalClick={setSelectedPivotalTurn}
               />
             </div>
 
@@ -187,11 +160,18 @@ export default function MindViewer({ simulation, initialStrategyId, onViewReport
             </div>
           </motion.div>
         </AnimatePresence>
+
+        {/* Pivotal moment detail panel — slides in from right over internal mind */}
+        <PivotalMomentPanel
+          turn={selectedPivotalTurn}
+          onClose={() => setSelectedPivotalTurn(null)}
+          personaDisplayName={persona.display_name}
+        />
       </div>
 
       {/* Turn controls */}
       <footer
-        className="shrink-0 bg-white border-t border-slate-200 px-6 py-3 flex items-center justify-between"
+        className="shrink-0 bg-[#fafafa] border-t-2 border-[#0f0f0f] px-6 py-3 flex items-center justify-between"
         data-testid="turn-controls"
       >
         <div className="flex items-center gap-3">
@@ -200,14 +180,12 @@ export default function MindViewer({ simulation, initialStrategyId, onViewReport
             onClick={handlePrev}
             disabled={currentTurn === 0}
             aria-label="Previous turn"
-            className="p-2 rounded-lg text-slate-500 hover:text-slate-800 hover:bg-slate-100 disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
+            className="px-3 py-2 border-2 border-[#0f0f0f] font-mono text-sm text-[#0f0f0f] hover:bg-[#0f0f0f] hover:text-[#fafafa] disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
           >
-            <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-              <path fillRule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clipRule="evenodd" />
-            </svg>
+            ◀
           </button>
 
-          <span data-testid="turn-label" className="text-sm font-mono text-slate-600 w-24 text-center">
+          <span data-testid="turn-label" className="text-sm font-mono text-[#0f0f0f] w-24 text-center font-bold">
             Turn {currentTurn + 1} / {maxTurn + 1}
           </span>
 
@@ -216,11 +194,9 @@ export default function MindViewer({ simulation, initialStrategyId, onViewReport
             onClick={handleNext}
             disabled={currentTurn === maxTurn}
             aria-label="Next turn"
-            className="p-2 rounded-lg text-slate-500 hover:text-slate-800 hover:bg-slate-100 disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
+            className="px-3 py-2 border-2 border-[#0f0f0f] font-mono text-sm text-[#0f0f0f] hover:bg-[#0f0f0f] hover:text-[#fafafa] disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
           >
-            <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-              <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
-            </svg>
+            ▶
           </button>
         </div>
 
@@ -228,23 +204,15 @@ export default function MindViewer({ simulation, initialStrategyId, onViewReport
           data-testid="play-pause-btn"
           onClick={() => setIsPlaying(p => !p)}
           disabled={currentTurn === maxTurn && !isPlaying}
-          className="flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-semibold text-purple-700 bg-purple-50 hover:bg-purple-100 disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
+          className={[
+            'flex items-center gap-2 px-5 py-2 border-2 font-mono text-sm font-bold transition-colors',
+            isPlaying
+              ? 'border-[#0f0f0f] bg-[#0f0f0f] text-[#fafafa] hover:bg-[#333333]'
+              : 'border-[#0f0f0f] bg-transparent text-[#0f0f0f] hover:bg-[#0f0f0f] hover:text-[#fafafa]',
+            'disabled:opacity-40 disabled:cursor-not-allowed',
+          ].join(' ')}
         >
-          {isPlaying ? (
-            <>
-              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zM7 8a1 1 0 012 0v4a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v4a1 1 0 102 0V8a1 1 0 00-1-1z" clipRule="evenodd" />
-              </svg>
-              Pause
-            </>
-          ) : (
-            <>
-              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clipRule="evenodd" />
-              </svg>
-              Play
-            </>
-          )}
+          {isPlaying ? '⏸ Pause' : '▶ Play'}
         </button>
       </footer>
     </div>

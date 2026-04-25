@@ -1,6 +1,25 @@
-import type { SimulationOutput, StrategyOutcome, VerdictCategory } from '../../types/simulation'
+import type { SimulationOutput, StrategyOutcome, VerdictCategory, ConversationTurn } from '../../types/simulation'
 import TrajectoryChart from './TrajectoryChart'
 import StrategyCard from './StrategyCard'
+import mechanisms from '../../data/cognitive_mechanisms.json'
+
+const CATEGORY_COLOR: Record<string, string> = {
+  backfire:           '#dc2626',
+  genuine_persuasion: '#16a34a',
+  surface_mechanism:  '#d97706',
+}
+
+function findMechanismName(id: string): string {
+  return mechanisms.find(m => m.id === id)?.display_name ?? id
+}
+
+function findMechanismFramework(id: string): string {
+  return mechanisms.find(m => m.id === id)?.framework ?? ''
+}
+
+function inflectionPointTurn(outcome: StrategyOutcome): ConversationTurn | undefined {
+  return outcome.turns.find(t => t.is_inflection_point)
+}
 
 const VERDICT_ORDER: Record<VerdictCategory, number> = {
   GENUINE_BELIEF_SHIFT: 0,
@@ -10,26 +29,18 @@ const VERDICT_ORDER: Record<VerdictCategory, number> = {
   BACKFIRE:             4,
 }
 
-const VERDICT_STYLE: Record<VerdictCategory, { bg: string; text: string; border: string }> = {
-  GENUINE_BELIEF_SHIFT: { bg: 'bg-emerald-100', text: 'text-emerald-700', border: 'border-emerald-200' },
-  PARTIAL_SHIFT:        { bg: 'bg-sky-100',     text: 'text-sky-700',     border: 'border-sky-200' },
-  SURFACE_COMPLIANCE:   { bg: 'bg-amber-100',   text: 'text-amber-700',   border: 'border-amber-200' },
-  BACKFIRE:             { bg: 'bg-rose-100',     text: 'text-rose-700',    border: 'border-rose-200' },
-  NO_MOVEMENT:          { bg: 'bg-slate-100',   text: 'text-slate-600',   border: 'border-slate-200' },
-}
-
 const VERDICT_LABEL: Record<VerdictCategory, string> = {
-  GENUINE_BELIEF_SHIFT: 'Genuine Shift',
-  PARTIAL_SHIFT:        'Partial Shift',
-  SURFACE_COMPLIANCE:   'Surface Compliance',
-  BACKFIRE:             'Backfire',
-  NO_MOVEMENT:          'No Movement',
+  GENUINE_BELIEF_SHIFT: 'GENUINE SHIFT',
+  PARTIAL_SHIFT:        'PARTIAL SHIFT',
+  SURFACE_COMPLIANCE:   'SURFACE COMPLIANCE',
+  BACKFIRE:             'BACKFIRE',
+  NO_MOVEMENT:          'NO MOVEMENT',
 }
 
-const PERSISTENCE_STYLE: Record<string, { bg: string; text: string }> = {
-  held:               { bg: 'bg-emerald-100', text: 'text-emerald-700' },
-  partially_reverted: { bg: 'bg-amber-100',   text: 'text-amber-700' },
-  fully_reverted:     { bg: 'bg-rose-100',     text: 'text-rose-700' },
+const PERSISTENCE_LABEL: Record<string, string> = {
+  held:               'HELD',
+  partially_reverted: 'PARTIAL REVERT',
+  fully_reverted:     'FULL REVERT',
 }
 
 function strategyDisplayName(id: string): string {
@@ -73,114 +84,139 @@ export default function ComparisonReport({ simulation, onViewTranscript, onBackT
   )
 
   return (
-    <div className="min-h-screen bg-slate-50" data-testid="comparison-report">
-      {/* Top bar */}
-      <header className="bg-white border-b border-slate-200 px-6 py-3 flex items-center gap-4">
+    <div className="min-h-screen bg-[#fafafa]" data-testid="comparison-report">
+      {/* Thin nav strip */}
+      <div className="bg-[#fafafa] border-b border-[#0f0f0f] border-opacity-20 px-8 py-2">
         <button
           data-testid="back-btn"
           onClick={onBackToSetup}
-          className="text-sm text-slate-500 hover:text-slate-800 transition-colors"
+          className="font-mono text-xs text-[#0f0f0f] underline font-bold hover:opacity-60 transition-opacity"
         >
           ← Back to Setup
         </button>
-        <span className="text-slate-300 select-none">|</span>
-        <h1 className="font-bold text-slate-900 text-base">Strategy Comparison Report</h1>
+      </div>
+
+      {/* Masthead */}
+      <header className="border-b-4 border-[#0f0f0f] px-8 pt-10 pb-8">
+        <p className="font-mono text-xs text-[#0f0f0f] opacity-40 uppercase tracking-widest mb-3">Lumos / Analysis</p>
+        <h1 className="font-black font-serif text-6xl leading-none text-[#0f0f0f]">
+          Strategy Comparison Report
+        </h1>
       </header>
 
-      <div className="max-w-5xl mx-auto px-6 py-8 space-y-8">
+      <div className="max-w-4xl mx-auto px-8 py-12 space-y-16">
 
         {/* Insight synthesis */}
-        <div
-          data-testid="synthesis-card"
-          className="bg-white border border-slate-200 border-l-4 border-l-amber-400 rounded-xl p-6 shadow-sm"
-        >
-          <p className="text-xs font-mono text-amber-600 uppercase tracking-widest mb-3">Overall Synthesis</p>
-          <p className="text-lg text-slate-900 leading-relaxed">{overall_synthesis}</p>
-          {validation_note && (
-            <p data-testid="validation-note" className="text-sm italic text-slate-500 mt-3">
-              {validation_note}
-            </p>
-          )}
+        <div data-testid="synthesis-card">
+          <p className="text-xs font-mono font-bold text-[#0f0f0f] uppercase tracking-widest mb-4">Synthesis</p>
+          <div className="border-2 border-[#0f0f0f] p-8">
+            <p className="text-3xl font-serif leading-snug text-[#0f0f0f]">{overall_synthesis}</p>
+            {validation_note && (
+              <p data-testid="validation-note" className="font-serif text-base italic text-[#0f0f0f] opacity-50 mt-6 pt-6 border-t border-[#0f0f0f] border-opacity-20">
+                {validation_note}
+              </p>
+            )}
+          </div>
         </div>
 
         {/* Strategy comparison table */}
         <section>
-          <h2 className="text-lg font-semibold text-slate-800 tracking-tight mb-1">Strategy Comparison</h2>
-          <p className="text-sm text-slate-500 mb-4">How each approach landed on this persona.</p>
+          <div className="bg-[#0f0f0f] -mx-8 px-8 py-3 mb-8">
+            <p className="text-sm font-mono font-bold text-[#fafafa] uppercase tracking-widest">
+              Strategy Comparison
+            </p>
+          </div>
 
-          <div className="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm">
-            <table className="w-full text-sm" data-testid="comparison-table">
+          <div className="overflow-x-auto">
+            <table className="w-full border-collapse border-2 border-[#0f0f0f]" data-testid="comparison-table">
               <thead>
-                <tr className="border-b border-slate-100 bg-slate-50">
-                  <th className="text-left px-4 py-3 font-semibold text-slate-600 text-sm">Strategy</th>
-                  <th className="text-left px-4 py-3 font-semibold text-slate-600 text-sm">Verdict</th>
-                  <th className="text-right px-4 py-3 font-semibold text-slate-600 text-sm">Public Δ</th>
-                  <th className="text-right px-4 py-3 font-semibold text-slate-600 text-sm">Private Δ</th>
-                  <th className="text-right px-4 py-3 font-semibold text-slate-600 text-sm">Max Gap</th>
-                  <th className="text-right px-4 py-3 font-semibold text-slate-600 text-sm">Threats</th>
-                  <th className="text-left px-4 py-3 font-semibold text-slate-600 text-sm">Persistence</th>
-                  <th className="px-4 py-3" />
+                <tr>
+                  <th className="text-left px-4 py-3 font-mono text-xs uppercase tracking-widest border border-[#0f0f0f] bg-[#0f0f0f] text-[#fafafa]">Strategy</th>
+                  <th className="text-left px-4 py-3 font-mono text-xs uppercase tracking-widest border border-[#0f0f0f] bg-[#0f0f0f] text-[#fafafa]">Verdict</th>
+                  <th className="text-right px-4 py-3 font-mono text-xs uppercase tracking-widest border border-[#0f0f0f] bg-[#0f0f0f] text-[#fafafa]">Public Δ</th>
+                  <th className="text-right px-4 py-3 font-mono text-xs uppercase tracking-widest border border-[#0f0f0f] bg-[#0f0f0f] text-[#fafafa]">Private Δ</th>
+                  <th className="text-right px-4 py-3 font-mono text-xs uppercase tracking-widest border border-[#0f0f0f] bg-[#0f0f0f] text-[#fafafa]">Max Gap</th>
+                  <th className="text-right px-4 py-3 font-mono text-xs uppercase tracking-widest border border-[#0f0f0f] bg-[#0f0f0f] text-[#fafafa]">Threats</th>
+                  <th className="text-left px-4 py-3 font-mono text-xs uppercase tracking-widest border border-[#0f0f0f] bg-[#0f0f0f] text-[#fafafa]">Persistence</th>
+                  <th className="px-4 py-3 border border-[#0f0f0f] bg-[#0f0f0f]" />
                 </tr>
               </thead>
               <tbody>
                 {sortedOutcomes.map(outcome => {
                   const row = computeRow(outcome)
-                  const vs = VERDICT_STYLE[outcome.verdict]
-                  const ps = PERSISTENCE_STYLE[row.persistence] ?? PERSISTENCE_STYLE.held
+                  const inflection = inflectionPointTurn(outcome)
                   return (
                     <tr
                       key={outcome.strategy_id}
                       data-testid={`report-row-${outcome.strategy_id}`}
-                      className="border-b border-slate-50 hover:bg-slate-50 transition-colors"
+                      className="group border-b border-[#0f0f0f] hover:bg-[#0f0f0f] transition-colors cursor-default"
                     >
-                      <td className="px-4 py-3 font-medium text-slate-800">
+                      <td className="px-4 py-3 font-serif font-bold text-[#0f0f0f] group-hover:text-[#fafafa] border border-[#0f0f0f]">
                         {strategyDisplayName(outcome.strategy_id)}
                       </td>
-                      <td className="px-4 py-3">
+                      <td className="px-4 py-3 border border-[#0f0f0f]">
                         <span
                           data-testid={`verdict-badge-${outcome.strategy_id}`}
-                          className={`inline-block font-mono text-xs px-2.5 py-1 rounded-full border ${vs.bg} ${vs.text} ${vs.border}`}
+                          className="font-mono text-xs font-bold text-[#0f0f0f] group-hover:text-[#fafafa] uppercase"
                         >
                           {VERDICT_LABEL[outcome.verdict]}
                         </span>
+                        {inflection && inflection.mechanism_classification && (
+                          <div
+                            data-testid={`inflection-callout-${outcome.strategy_id}`}
+                            className="mt-2 px-3 py-2 font-mono text-xs text-[#0f0f0f] group-hover:text-[#fafafa] opacity-70 leading-snug border"
+                            style={{ borderColor: CATEGORY_COLOR[inflection.color_category ?? ''] ?? '#0f0f0f' }}
+                          >
+                            <span className="font-bold">Turn {inflection.turn_number}</span>
+                            {' — '}
+                            {inflection.persuader_message.slice(0, 80)}{inflection.persuader_message.length > 80 ? '…' : ''}
+                            <br />
+                            <span className="opacity-75">
+                              {findMechanismName(inflection.mechanism_classification.primary_mechanism_id)}
+                              {' · '}
+                              {findMechanismFramework(inflection.mechanism_classification.primary_mechanism_id)}
+                              {inflection.stance_delta != null && ` · Shift: ${inflection.stance_delta > 0 ? '+' : ''}${inflection.stance_delta.toFixed(1)}`}
+                            </span>
+                          </div>
+                        )}
                       </td>
                       <td
                         data-testid={`public-delta-${outcome.strategy_id}`}
-                        className="px-4 py-3 text-right font-mono text-slate-700"
+                        className="px-4 py-3 text-right font-mono text-sm text-[#0f0f0f] group-hover:text-[#fafafa] border border-[#0f0f0f]"
                       >
                         {row.publicDelta}
                       </td>
                       <td
                         data-testid={`private-delta-${outcome.strategy_id}`}
-                        className="px-4 py-3 text-right font-mono text-slate-700"
+                        className="px-4 py-3 text-right font-mono text-sm text-[#0f0f0f] group-hover:text-[#fafafa] border border-[#0f0f0f]"
                       >
                         {row.privateDelta}
                       </td>
                       <td
                         data-testid={`max-gap-${outcome.strategy_id}`}
-                        className="px-4 py-3 text-right font-mono text-slate-700"
+                        className="px-4 py-3 text-right font-mono text-sm text-[#0f0f0f] group-hover:text-[#fafafa] border border-[#0f0f0f]"
                       >
                         {row.maxGap}
                       </td>
                       <td
                         data-testid={`threats-${outcome.strategy_id}`}
-                        className="px-4 py-3 text-right font-mono text-slate-700"
+                        className="px-4 py-3 text-right font-mono text-sm text-[#0f0f0f] group-hover:text-[#fafafa] border border-[#0f0f0f]"
                       >
                         {row.threats}
                       </td>
-                      <td className="px-4 py-3">
+                      <td className="px-4 py-3 border border-[#0f0f0f]">
                         <span
                           data-testid={`persistence-${outcome.strategy_id}`}
-                          className={`inline-block font-mono text-xs px-2.5 py-1 rounded-full ${ps.bg} ${ps.text}`}
+                          className="font-mono text-xs font-bold text-[#0f0f0f] group-hover:text-[#fafafa] uppercase"
                         >
-                          {row.persistence.replace(/_/g, ' ')}
+                          {PERSISTENCE_LABEL[row.persistence] ?? row.persistence.replace(/_/g, ' ').toUpperCase()}
                         </span>
                       </td>
-                      <td className="px-4 py-3">
+                      <td className="px-4 py-3 border border-[#0f0f0f]">
                         <button
                           data-testid={`view-transcript-${outcome.strategy_id}`}
                           onClick={() => onViewTranscript(outcome.strategy_id)}
-                          className="text-xs text-violet-600 hover:text-violet-800 font-medium transition-colors"
+                          className="font-mono text-xs font-bold text-[#0f0f0f] group-hover:text-[#fafafa] underline hover:opacity-60 transition-opacity"
                         >
                           Watch →
                         </button>
@@ -193,10 +229,14 @@ export default function ComparisonReport({ simulation, onViewTranscript, onBackT
           </div>
         </section>
 
-        {/* Stance trajectories — placeholder for Step 7 */}
+        {/* Stance trajectories */}
         <section>
-          <h2 className="text-lg font-semibold text-slate-800 tracking-tight mb-4">Stance Trajectories</h2>
-          <div data-testid="trajectory-section" className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+          <div className="bg-[#0f0f0f] -mx-8 px-8 py-3 mb-8">
+            <p className="text-sm font-mono font-bold text-[#fafafa] uppercase tracking-widest">
+              Stance Trajectories
+            </p>
+          </div>
+          <div data-testid="trajectory-section" className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             {sortedOutcomes.map(outcome => (
               <TrajectoryChart
                 key={outcome.strategy_id}
@@ -207,10 +247,14 @@ export default function ComparisonReport({ simulation, onViewTranscript, onBackT
           </div>
         </section>
 
-        {/* Strategy breakdown — placeholder for Step 8 */}
+        {/* Strategy breakdown */}
         <section>
-          <h2 className="text-lg font-semibold text-slate-800 tracking-tight mb-4">Strategy Breakdown</h2>
-          <div data-testid="strategy-cards-section" className="space-y-4">
+          <div className="bg-[#0f0f0f] -mx-8 px-8 py-3 mb-8">
+            <p className="text-sm font-mono font-bold text-[#fafafa] uppercase tracking-widest">
+              Strategy Breakdown
+            </p>
+          </div>
+          <div data-testid="strategy-cards-section" className="space-y-6">
             {sortedOutcomes.map(outcome => (
               <StrategyCard
                 key={outcome.strategy_id}

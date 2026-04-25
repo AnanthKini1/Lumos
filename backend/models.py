@@ -117,12 +117,19 @@ class StanceScaleDefinition(BaseModel):
     high: str = Field(alias="10")
 
 
+class KeyStatistic(BaseModel):
+    claim: str
+    source: str
+    direction: str = ""  # "supports_stance_10" | "supports_stance_0" | "neutral"
+
+
 class TopicProfile(BaseModel):
     id: str
     display_name: str
     stance_scale_definition: dict[str, str]
     context_briefing: str
     predicted_starting_stances: dict[str, float] = Field(default_factory=dict)
+    key_statistics: list[KeyStatistic] = Field(default_factory=list)
 
 
 # ---------------------------------------------------------------------------

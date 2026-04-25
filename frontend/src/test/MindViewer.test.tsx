@@ -71,22 +71,10 @@ describe('MindViewer', () => {
     expect(screen.getByText('Authority Expert')).toBeInTheDocument()
   })
 
-  it('renders verdict dots for each tab', () => {
+  it('tabs do not show verdict abbreviations (verdict is revealed only in the report)', () => {
     render(<MindViewer simulation={mockSimulation} onViewReport={mockOnViewReport} />)
-    expect(screen.getByTestId('verdict-dot-strategy_personal_narrative')).toBeInTheDocument()
-    expect(screen.getByTestId('verdict-dot-strategy_authority_expert')).toBeInTheDocument()
-  })
-
-  it('GENUINE_BELIEF_SHIFT dot is emerald', () => {
-    render(<MindViewer simulation={mockSimulation} onViewReport={mockOnViewReport} />)
-    const dot = screen.getByTestId('verdict-dot-strategy_personal_narrative')
-    expect(dot.className).toContain('bg-emerald-500')
-  })
-
-  it('BACKFIRE dot is rose', () => {
-    render(<MindViewer simulation={mockSimulation} onViewReport={mockOnViewReport} />)
-    const dot = screen.getByTestId('verdict-dot-strategy_authority_expert')
-    expect(dot.className).toContain('bg-rose-500')
+    expect(screen.queryByText('[GEN]')).not.toBeInTheDocument()
+    expect(screen.queryByText('[BCK]')).not.toBeInTheDocument()
   })
 
   it('first tab is active by default', () => {

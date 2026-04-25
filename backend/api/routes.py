@@ -19,8 +19,9 @@ from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel
 
 from config import OUTPUT_DIR
+from data.loader import load_persona, load_topic, load_strategy, list_all
 from simulation.pipeline import run_simulation
-from models import SimulationOutput
+from models import PersonaProfile, StrategyDefinition, TopicProfile, SimulationOutput
 import json
 
 router = APIRouter()
@@ -42,6 +43,34 @@ async def trigger_run(request: RunRequest) -> SimulationOutput:
         topic_id=request.topic_id,
         num_turns=request.num_turns,
     )
+
+
+@router.get("/personas", response_model=list[PersonaProfile])
+async def list_personas() -> list[PersonaProfile]:
+    """Return all persona profiles."""
+    return [load_persona(pid) for pid in sorted(list_all("personas"))]
+
+
+@router.get("/topics", response_model=list[TopicProfile])
+async def list_topics() -> list[TopicProfile]:
+    """Return all topic profiles."""
+    return [load_topic(tid) for tid in sorted(list_all("topics"))]
+
+
+@router.get("/strategies", response_model=list[StrategyDefinition])
+async def list_strategies() -> list[StrategyDefinition]:
+    """Return all strategy definitions."""
+    return [load_strategy(sid) for sid in sorted(list_all("strategies"))]
+
+
+@router.get("/catalog")
+async def get_catalog() -> dict:
+    """Return full catalog: all personas, topics, strategies in one call."""
+    return {
+        "personas": [load_persona(pid) for pid in sorted(list_all("personas"))],
+        "topics": [load_topic(tid) for tid in sorted(list_all("topics"))],
+        "strategies": [load_strategy(sid) for sid in sorted(list_all("strategies"))],
+    }
 
 
 @router.get("/scenarios", response_model=list[str])
