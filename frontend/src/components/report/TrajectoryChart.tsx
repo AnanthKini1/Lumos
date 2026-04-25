@@ -87,13 +87,12 @@ export default function TrajectoryChart({ outcome, strategyDisplayName }: Props)
 
       <ResponsiveContainer width="100%" height={220}>
         <ComposedChart data={data} margin={{ top: 4, right: 8, bottom: 4, left: 0 }}>
-          {/* Gap fill area between public and private lines */}
+          {/* Subtle fill under public line to visually suggest the gap */}
           <Area
             type="monotone"
             dataKey="public"
             stroke="none"
-            fill="rgba(251,191,36,0.15)"
-            baseLine={data.map(d => d.private)}
+            fill="rgba(139,92,246,0.08)"
             isAnimationActive={false}
           />
           <XAxis
