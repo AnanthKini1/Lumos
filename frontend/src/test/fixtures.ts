@@ -39,15 +39,15 @@ export const mockThreatTurnOutput: PersonaTurnOutput = {
 
 export const mockTurn1: ConversationTurn = {
   turn_number: 1,
-  interviewer_message: "Let me tell you about my neighbor Sarah.",
-  interviewer_strategy_note: "Opening with a personal story to lower defenses.",
+  persuader_message: "Let me tell you about my neighbor Sarah.",
+  persuader_strategy_note: "Opening with a personal story to lower defenses.",
   persona_output: mockPersonaTurnOutput,
 }
 
 export const mockTurn2: ConversationTurn = {
   turn_number: 2,
-  interviewer_message: "People who push for RTO are those with the least to lose.",
-  interviewer_strategy_note: "Introducing a fairness/power frame.",
+  persuader_message: "People who push for RTO are those with the least to lose.",
+  persuader_strategy_note: "Introducing a fairness/power frame.",
   persona_output: mockThreatTurnOutput,
 }
 

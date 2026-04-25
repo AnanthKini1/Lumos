@@ -1,16 +1,11 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import type { SimulationOutput, PersonaProfile, TopicProfile } from '../../types/simulation'
-import { loadScenario } from '../../data/loader'
-import mockData from '../../data/mock_simulation.json'
+import { loadScenario, loadCatalog } from '../../data/loader'
 
 interface Props {
   onRunSimulation: (simulation: SimulationOutput) => void
 }
-
-const sim = mockData as SimulationOutput
-const availablePersonas: PersonaProfile[] = [sim.metadata.persona]
-const availableTopics: TopicProfile[] = [sim.metadata.topic]
 
 function toTitleCase(s: string): string {
   return s.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase())
@@ -240,18 +235,28 @@ function TopicCard({ topic, selectedPersonaId, selected, onSelect }: TopicCardPr
 }
 
 export default function SetupScreen({ onRunSimulation }: Props) {
+  const [availablePersonas, setAvailablePersonas] = useState<PersonaProfile[]>([])
+  const [availableTopics, setAvailableTopics] = useState<TopicProfile[]>([])
   const [selectedPersonaId, setSelectedPersonaId] = useState<string | null>(null)
   const [selectedTopicId, setSelectedTopicId] = useState<string | null>(null)
   const [panelPersona, setPanelPersona] = useState<PersonaProfile | null>(null)
   const [loading, setLoading] = useState(false)
 
+  useEffect(() => {
+    loadCatalog().then(catalog => {
+      setAvailablePersonas(catalog.personas)
+      setAvailableTopics(catalog.topics)
+    })
+  }, [])
+
   const canRun = selectedPersonaId !== null && selectedTopicId !== null
 
   async function handleRun() {
-    if (!canRun) return
+    if (!selectedPersonaId || !selectedTopicId) return
     setLoading(true)
     try {
-      const sim = await loadScenario('demo_v1')
+      const scenarioId = `${selectedPersonaId}__${selectedTopicId}`
+      const sim = await loadScenario(scenarioId)
       onRunSimulation(sim)
     } finally {
       setLoading(false)

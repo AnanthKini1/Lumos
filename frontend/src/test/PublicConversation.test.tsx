@@ -38,9 +38,9 @@ describe('PublicConversation', () => {
     expect(screen.getByText('Turn 2')).toBeInTheDocument()
   })
 
-  it('shows "Interviewer" label for interviewer messages', () => {
+  it('shows "Persuader" label for persuader messages', () => {
     render(<PublicConversation turns={turns} currentTurn={0} strategyDisplayName="Personal Narrative" personaDisplayName="Karen M." />)
-    expect(screen.getByText('Interviewer')).toBeInTheDocument()
+    expect(screen.getByText('Persuader')).toBeInTheDocument()
   })
 
   it('shows persona display name label for persona responses', () => {
@@ -48,12 +48,12 @@ describe('PublicConversation', () => {
     expect(screen.getByText('Karen M.')).toBeInTheDocument()
   })
 
-  it('renders interviewer message text for previous turns immediately', () => {
+  it('renders persuader message text for previous turns immediately', () => {
     render(<PublicConversation turns={turns} currentTurn={0} strategyDisplayName="Personal Narrative" personaDisplayName="Karen M." />)
     expect(screen.getByText(/Let me tell you about my neighbor Sarah/i)).toBeInTheDocument()
   })
 
-  it('shows strategy annotation below interviewer bubble', () => {
+  it('shows strategy annotation below persuader bubble', () => {
     render(<PublicConversation turns={turns} currentTurn={0} strategyDisplayName="Personal Narrative" personaDisplayName="Karen M." />)
     expect(screen.getByText(/Opening with a personal story/i)).toBeInTheDocument()
   })
