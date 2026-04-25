@@ -142,7 +142,7 @@ Fill in each empty string. Each prompt must:
 
 ### 5d: Scorer (`backend/measurement/scorer.py`)
 
-- [ ] **A5.10** Implement `score_conversation(turns, cooling_off) -> tuple[CognitiveScores, list[StandoutQuote], str]`
+- [x] **A5.10** Implement `score_conversation(turns, cooling_off) -> tuple[CognitiveScores, list[StandoutQuote], str]`
   - Runs all 7 judge calls in parallel via `asyncio.gather`
   - Aggregates into `CognitiveScores` model
   - Selects 2-3 standout quotes from monologues
