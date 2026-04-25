@@ -146,6 +146,7 @@ class PersonaTurnOutput(BaseModel):
     emotional_reaction: EmotionalReaction
     identity_threat: IdentityThreat
     private_stance: float = Field(ge=0.0, le=10.0)
+    public_stance: float = Field(ge=0.0, le=10.0)
     private_stance_change_reason: str
     memory_to_carry_forward: str
     public_response: str

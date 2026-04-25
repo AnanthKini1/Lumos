@@ -68,6 +68,7 @@
               "response_inclination": "accept"
             },
             "private_stance": 6.2,
+            "public_stance": 6.5,
             "private_stance_change_reason": "The caregiving dimension hadn't occurred to me. It's not laziness — it's someone who built real arrangements around a real promise. That's more complicated than I'd been giving credit for.",
             "memory_to_carry_forward": "The Sarah story — caregiving, 12 years of work, the facility. This is the kind of cost I should be weighing.",
             "public_response": "Yes, actually. I have a sister who went through something similar with our father. That kind of caregiving arrangement — it's not nothing. It takes years to build. I hadn't been thinking about it that way."
@@ -90,6 +91,7 @@
               "response_inclination": "accept"
             },
             "private_stance": 5.8,
+            "public_stance": 6.0,
             "private_stance_change_reason": "The fairness frame is real but feels like it's being pushed too hard. I'm moving because of Sarah, not because of the class-warfare framing.",
             "memory_to_carry_forward": "They're using a fairness argument. I partially agree but I don't like it as a rhetorical tool. The caregiving argument is doing more work for me.",
             "public_response": "There's something to that. The people setting policy often have a lot of insulation from the realities of everyday life. I've seen that in education too — administrators setting rules they'd never have to follow themselves. But I also still think being present matters."
@@ -112,6 +114,7 @@
               "response_inclination": "accept"
             },
             "private_stance": 4.9,
+            "public_stance": 5.5,
             "private_stance_change_reason": "Being asked to reflect on my own experience rather than defend a position shifted something. I realized my 'presence matters' belief comes from teaching specifically — and it may not generalize the way I assumed.",
             "memory_to_carry_forward": "They asked me what I actually think. That felt different. My belief in presence comes from teaching — I'm not sure it applies everywhere.",
             "public_response": "In teaching, presence meant I could catch things before they became problems. A child's posture, their quietness, the way they held a pencil. You can't see that on a screen. But I realize now that's a specific kind of work. Not everything is like that. I'm not sure I should be applying classroom logic to a project manager's job."
@@ -176,6 +179,7 @@
               "response_inclination": "defend"
             },
             "private_stance": 7.4,
+            "public_stance": 7.2,
             "private_stance_change_reason": "The data didn't move me — it made me more defensive. The appeal to Stanford specifically activated my skepticism of elite institutions telling regular people how things work.",
             "memory_to_carry_forward": "They opened with Stanford. I don't trust this approach. I'm going to be careful.",
             "public_response": "I've seen a lot of studies over the years. Research can be designed to show almost anything. What I know from my own experience is that being present matters — in the classroom, in a workplace. I'm not sure 13% productivity means what they think it means."
@@ -198,6 +202,7 @@
               "response_inclination": "attack"
             },
             "private_stance": 8.1,
+            "public_stance": 7.5,
             "private_stance_change_reason": "The comparison to anti-vaxxers felt like a personal attack on my intelligence and judgment. My stance hardened. I'm now MORE in favor of RTO than when I started.",
             "memory_to_carry_forward": "They called me a climate denier by implication. I will not forget that. This person doesn't respect me.",
             "public_response": "Comparing someone to an anti-vaxxer because they question a productivity study is not a good-faith argument. I've been a thoughtful person my whole life. I'm not going to pretend that kind of comment doesn't land poorly."
@@ -220,6 +225,7 @@
               "response_inclination": "withdraw"
             },
             "private_stance": 7.9,
+            "public_stance": 7.3,
             "private_stance_change_reason": "Even a reasonable point can't land now. The trust is gone. I'm ending this conversation at roughly where I started, maybe even more firm.",
             "memory_to_carry_forward": "The apology didn't fix it. They went right back to credentials. That says something about who they are.",
             "public_response": "I appreciate the apology. The point about women's careers is worth thinking about — I'll grant that. But I think we see the role of expertise quite differently, and I'm not sure more studies are going to bridge that gap."
