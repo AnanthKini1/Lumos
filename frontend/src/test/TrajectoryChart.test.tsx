@@ -74,27 +74,27 @@ describe('TrajectoryChart', () => {
     expect(screen.getByTestId('chart-dot-strategy_personal_narrative')).toBeInTheDocument()
   })
 
-  it('verdict dot is emerald for GENUINE_BELIEF_SHIFT', () => {
+  it('verdict dot has sr-only text for accessibility', () => {
     render(<TrajectoryChart outcome={mockNarrativeOutcome} strategyDisplayName="Personal Narrative" />)
     const dot = screen.getByTestId('chart-dot-strategy_personal_narrative')
-    expect(dot.className).toContain('bg-emerald-500')
+    expect(dot.className).toContain('sr-only')
   })
 
-  it('verdict dot is rose for BACKFIRE', () => {
+  it('verdict dot shows verdict text for BACKFIRE', () => {
     render(<TrajectoryChart outcome={mockAuthorityOutcome} strategyDisplayName="Authority Expert" />)
     const dot = screen.getByTestId('chart-dot-strategy_authority_expert')
-    expect(dot.className).toContain('bg-rose-500')
+    expect(dot.textContent).toBe('BACKFIRE')
   })
 
-  it('applies emerald top border for GENUINE_BELIEF_SHIFT', () => {
+  it('card has hard black border (monochrome design)', () => {
     render(<TrajectoryChart outcome={mockNarrativeOutcome} strategyDisplayName="Personal Narrative" />)
     const card = screen.getByTestId('trajectory-chart-strategy_personal_narrative')
-    expect(card.className).toContain('border-t-emerald-400')
+    expect(card.className).toContain('border-[#0f0f0f]')
   })
 
-  it('applies rose top border for BACKFIRE', () => {
+  it('card has hard black border for BACKFIRE too', () => {
     render(<TrajectoryChart outcome={mockAuthorityOutcome} strategyDisplayName="Authority Expert" />)
     const card = screen.getByTestId('trajectory-chart-strategy_authority_expert')
-    expect(card.className).toContain('border-t-rose-400')
+    expect(card.className).toContain('border-[#0f0f0f]')
   })
 })

@@ -56,10 +56,10 @@ describe('App', () => {
     expect(screen.queryByTestId('comparison-report')).not.toBeInTheDocument()
   })
 
-  it('has a slate-50 background', () => {
+  it('has a fafafa background', () => {
     render(<App />)
     const root = screen.getByTestId('app-root')
-    expect(root.className).toContain('bg-slate-50')
+    expect(root.className).toContain('bg-[#fafafa]')
   })
 
   it('transitions to mind viewer after run simulation', async () => {
@@ -146,14 +146,17 @@ describe('App', () => {
   it('breadcrumb highlights Setup on initial render', () => {
     render(<App />)
     const setupStep = screen.getByTestId('breadcrumb-step-setup')
-    expect(setupStep.className).toContain('bg-purple-100')
+    expect(setupStep.className).toContain('font-bold')
+    expect(setupStep.className).toContain('underline')
   })
 
   it('breadcrumb highlights Mind Viewer after running simulation', async () => {
     const user = userEvent.setup({ delay: null })
     render(<App />)
     await user.click(screen.getByText('Run'))
-    expect(screen.getByTestId('breadcrumb-step-mindviewer').className).toContain('bg-purple-100')
+    const mindviewerStep = screen.getByTestId('breadcrumb-step-mindviewer')
+    expect(mindviewerStep.className).toContain('font-bold')
+    expect(mindviewerStep.className).toContain('underline')
   })
 
   it('breadcrumb highlights Report after viewing report', async () => {
@@ -161,7 +164,9 @@ describe('App', () => {
     render(<App />)
     await user.click(screen.getByText('Run'))
     await user.click(screen.getByText('View Report'))
-    expect(screen.getByTestId('breadcrumb-step-report').className).toContain('bg-purple-100')
+    const reportStep = screen.getByTestId('breadcrumb-step-report')
+    expect(reportStep.className).toContain('font-bold')
+    expect(reportStep.className).toContain('underline')
   })
 
   it('shows Sources & Methodology trigger button', () => {

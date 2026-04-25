@@ -97,29 +97,29 @@ describe('ComparisonReport', () => {
     expect(secondRowId).toBe('report-row-strategy_authority_expert')
   })
 
-  it('shows GENUINE_BELIEF_SHIFT verdict badge in emerald', () => {
+  it('shows GENUINE_BELIEF_SHIFT verdict badge as uppercase mono text', () => {
     renderReport()
     const badge = screen.getByTestId('verdict-badge-strategy_personal_narrative')
     expect(badge).toBeInTheDocument()
-    expect(badge.className).toContain('bg-emerald-100')
-    expect(badge.className).toContain('text-emerald-700')
+    expect(badge.className).toContain('font-mono')
+    expect(badge.className).toContain('font-bold')
   })
 
-  it('shows BACKFIRE verdict badge in rose', () => {
+  it('shows BACKFIRE verdict badge as uppercase mono text', () => {
     renderReport()
     const badge = screen.getByTestId('verdict-badge-strategy_authority_expert')
-    expect(badge.className).toContain('bg-rose-100')
-    expect(badge.className).toContain('text-rose-700')
+    expect(badge.className).toContain('font-mono')
+    expect(badge.className).toContain('font-bold')
   })
 
-  it('shows "Genuine Shift" label for GENUINE_BELIEF_SHIFT', () => {
+  it('shows "GENUINE SHIFT" label for GENUINE_BELIEF_SHIFT', () => {
     renderReport()
-    expect(screen.getByText('Genuine Shift')).toBeInTheDocument()
+    expect(screen.getByText('GENUINE SHIFT')).toBeInTheDocument()
   })
 
-  it('shows "Backfire" label for BACKFIRE', () => {
+  it('shows "BACKFIRE" label for BACKFIRE', () => {
     renderReport()
-    expect(screen.getByText('Backfire')).toBeInTheDocument()
+    expect(screen.getByText('BACKFIRE')).toBeInTheDocument()
   })
 
   it('computes correct public delta for Personal Narrative', () => {
@@ -168,17 +168,19 @@ describe('ComparisonReport', () => {
     expect(screen.getByTestId('threats-strategy_authority_expert')).toHaveTextContent('2')
   })
 
-  it('shows persistence badge for Personal Narrative', () => {
+  it('shows persistence badge for Personal Narrative as uppercase mono', () => {
     renderReport()
     const badge = screen.getByTestId('persistence-strategy_personal_narrative')
     expect(badge).toBeInTheDocument()
-    expect(badge.className).toContain('bg-emerald-100')
+    expect(badge.className).toContain('font-mono')
+    expect(badge.className).toContain('font-bold')
   })
 
-  it('shows persistence badge for Authority Expert with rose color', () => {
+  it('shows persistence badge for Authority Expert as uppercase mono', () => {
     renderReport()
     const badge = screen.getByTestId('persistence-strategy_authority_expert')
-    expect(badge.className).toContain('bg-rose-100')
+    expect(badge.className).toContain('font-mono')
+    expect(badge.className).toContain('font-bold')
   })
 
   it('calls onViewTranscript with correct strategy_id when Watch button clicked', async () => {

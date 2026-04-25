@@ -77,16 +77,16 @@ describe('MindViewer', () => {
     expect(screen.getByTestId('verdict-dot-strategy_authority_expert')).toBeInTheDocument()
   })
 
-  it('GENUINE_BELIEF_SHIFT dot is emerald', () => {
+  it('GENUINE_BELIEF_SHIFT shows [GEN] abbreviation', () => {
     render(<MindViewer simulation={mockSimulation} onViewReport={mockOnViewReport} />)
     const dot = screen.getByTestId('verdict-dot-strategy_personal_narrative')
-    expect(dot.className).toContain('bg-emerald-500')
+    expect(dot.textContent).toContain('[GEN]')
   })
 
-  it('BACKFIRE dot is rose', () => {
+  it('BACKFIRE shows [BCK] abbreviation', () => {
     render(<MindViewer simulation={mockSimulation} onViewReport={mockOnViewReport} />)
     const dot = screen.getByTestId('verdict-dot-strategy_authority_expert')
-    expect(dot.className).toContain('bg-rose-500')
+    expect(dot.textContent).toContain('[BCK]')
   })
 
   it('first tab is active by default', () => {
