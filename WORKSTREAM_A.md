@@ -157,11 +157,11 @@ Fill in each empty string. Each prompt must:
 
 ## PHASE 6 — Validation Layer
 
-- [ ] **A6.1** Write `backend/validate_predictions.py` — `compute_validation_rate(outcomes, personas, strategies) -> dict`
+- [x] **A6.1** Write `backend/validate_predictions.py` — `compute_validation_rate(outcomes, personas, strategies) -> dict`
   - For each (persona, strategy) pair, compare actual verdict to `predicted_behavior_under_strategies` text
   - Match rules: "expected_positive" text → verdict should be GENUINE_BELIEF_SHIFT or PARTIAL_SHIFT; "expected_defensive" → BACKFIRE or NO_MOVEMENT; "expected_neutral" → any
   - Returns `{match_rate: float, by_strategy: dict, by_persona: dict, surprises: list}`
-- [ ] **A6.2** Run on mock data — verify function runs without error
+- [x] **A6.2** Run on mock data — verify function runs without error
 - [ ] **A6.3** Run on real simulation outputs after WS-B delivers — record match rate
 - [ ] **A6.4** Draft `validation_note` string for pitch deck
 
