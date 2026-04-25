@@ -138,6 +138,32 @@ describe('App', () => {
     expect(screen.queryByTestId('comparison-report')).not.toBeInTheDocument()
   })
 
+  it('shows breadcrumb navigation', () => {
+    render(<App />)
+    expect(screen.getByTestId('breadcrumb')).toBeInTheDocument()
+  })
+
+  it('breadcrumb highlights Setup on initial render', () => {
+    render(<App />)
+    const setupStep = screen.getByTestId('breadcrumb-step-setup')
+    expect(setupStep.className).toContain('bg-purple-100')
+  })
+
+  it('breadcrumb highlights Mind Viewer after running simulation', async () => {
+    const user = userEvent.setup({ delay: null })
+    render(<App />)
+    await user.click(screen.getByText('Run'))
+    expect(screen.getByTestId('breadcrumb-step-mindviewer').className).toContain('bg-purple-100')
+  })
+
+  it('breadcrumb highlights Report after viewing report', async () => {
+    const user = userEvent.setup({ delay: null })
+    render(<App />)
+    await user.click(screen.getByText('Run'))
+    await user.click(screen.getByText('View Report'))
+    expect(screen.getByTestId('breadcrumb-step-report').className).toContain('bg-purple-100')
+  })
+
   it('shows Sources & Methodology trigger button', () => {
     render(<App />)
     expect(screen.getByTestId('sources-trigger')).toBeInTheDocument()
