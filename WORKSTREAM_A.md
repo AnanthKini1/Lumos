@@ -42,7 +42,7 @@ Mark completed items with [x]. Check this file at the start of every feature.
 
 All files go in `backend/data/personas/`. Run `python backend/validate_data.py` after each.
 
-- [ ] **A2.1** `persona_skeptical_traditionalist.json` — Pew Faith & Flag Conservatives + VALS Believers (from A1.3, confirm complete)
+- [x] **A2.1** `persona_skeptical_traditionalist.json` — Pew Faith & Flag Conservatives + VALS Believers (from A1.3, confirm complete)
 - [ ] **A2.2** `persona_progressive_urban.json` — Pew Progressive Left + Hidden Tribes Progressive Activists
 - [ ] **A2.3** `persona_pragmatic_moderate.json` — Pew Establishment Liberals + VALS Achievers
 - [ ] **A2.4** `persona_disengaged_skeptic.json` — Hidden Tribes Passive Liberals + Pew Stressed Sideliners
