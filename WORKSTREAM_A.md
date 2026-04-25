@@ -151,7 +151,7 @@ Fill in each empty string. Each prompt must:
 
 ### 5e: Smoke Test
 
-- [ ] **A5.11** Write `backend/test_scorer.py` — loads mock_simulation.json, calls score_conversation on one outcome's turns + cooling_off, prints result. Verify it returns valid CognitiveScores, standout quotes, and a non-empty synthesis string.
+- [x] **A5.11** Write `backend/test_scorer.py` — loads mock_simulation.json, calls score_conversation on one outcome's turns + cooling_off, prints result. Verify it returns valid CognitiveScores, standout quotes, and a non-empty synthesis string.
 
 ---
 
