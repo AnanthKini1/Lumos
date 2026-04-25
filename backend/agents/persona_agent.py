@@ -230,7 +230,9 @@ async def run_persona_turn(
         messages=[{"role": "user", "content": user_content}],
     )
 
-    tool_block = next(b for b in response.content if b.type == "tool_use")
+    tool_block = next((b for b in response.content if b.type == "tool_use"), None)
+    if tool_block is None:
+        raise ValueError(f"Model did not invoke the tool. Response: {response.content}")
     raw = tool_block.input
 
     # Pydantic validates types and ranges

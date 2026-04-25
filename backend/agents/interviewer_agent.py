@@ -131,7 +131,9 @@ async def run_interviewer_turn(
         messages=[{"role": "user", "content": user_content}],
     )
 
-    tool_block = next(b for b in response.content if b.type == "tool_use")
+    tool_block = next((b for b in response.content if b.type == "tool_use"), None)
+    if tool_block is None:
+        raise ValueError(f"Model did not invoke the tool. Response: {response.content}")
     raw = tool_block.input
 
     return InterviewerOutput.model_validate(raw)

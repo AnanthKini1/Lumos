@@ -96,5 +96,7 @@ Your reflection should be personal and unpolished — the way you actually think
         messages=[{"role": "user", "content": user}],
     )
 
-    tool_block = next(b for b in response.content if b.type == "tool_use")
+    tool_block = next((b for b in response.content if b.type == "tool_use"), None)
+    if tool_block is None:
+        raise ValueError(f"Model did not invoke the tool. Response: {response.content}")
     return CoolingOff.model_validate(tool_block.input)
