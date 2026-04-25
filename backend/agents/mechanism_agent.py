@@ -85,9 +85,18 @@ def _build_mechanism_context(mechanisms: list[dict]) -> str:
         lines.append(f"  Name: {m['display_name']} ({m['framework']})")
         lines.append(f"  Definition: {m['operational_definition']}")
         lines.append(f"  Category: {m['category']}")
-        lines.append(f"  Diagnostic indicators:")
-        for indicator in m["diagnostic_indicators"]:
-            lines.append(f"    - {indicator}")
+        lines.append(f"  Behavioral signals (observable in conversation):")
+        for s in m.get("behavioral_signals", []):
+            lines.append(f"    - {s}")
+        lines.append(f"  Diagnostic indicators (what to look for in the monologue):")
+        for d in m.get("diagnostic_indicators", []):
+            lines.append(f"    - {d}")
+        anchor = m.get("scoring_anchor", {})
+        if anchor:
+            lines.append(
+                f"  Scoring anchor: LOW = {anchor.get('low', '')} "
+                f"| HIGH = {anchor.get('high', '')}"
+            )
     return "\n".join(lines)
 
 
