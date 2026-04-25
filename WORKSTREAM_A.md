@@ -74,7 +74,7 @@ All files go in `backend/data/strategies/`. Run `validate_data.py` after each.
 - [x] **A3.2** `strategy_social_proof.json` — Cialdini Ch. 3
 - [x] **A3.3** `strategy_personal_narrative.json` — Green & Brock 2000 Narrative Transportation Theory
 - [x] **A3.4** `strategy_statistical_logical.json` — Aristotelian logos
-- [ ] **A3.5** `strategy_emotional_appeal.json` — Aristotelian pathos
+- [x] **A3.5** `strategy_emotional_appeal.json` — Aristotelian pathos
 - [ ] **A3.6** `strategy_common_ground.json` — Burkean identification
 - [ ] **A3.7** Sanity check: read all 6 `interviewer_system_prompt` strings — do they produce visibly different behavior under pushback?
 - [ ] **A3.8** All 6 pass `validate_data.py`
