@@ -135,7 +135,7 @@ Fill in each empty string. Each prompt must:
 
 ### 5c: Verdict (`backend/measurement/verdict.py`)
 
-- [ ] **A5.9** Implement `compute_verdict(trajectory, cognitive_scores, starting_stance) -> tuple[VerdictCategory, str]`
+- [x] **A5.9** Implement `compute_verdict(trajectory, cognitive_scores, starting_stance) -> tuple[VerdictCategory, str]`
   - Pure Python, no LLM
   - Thresholds already defined as constants at top of file — use them, do not change values
   - Returns `(VerdictCategory, verdict_reasoning_string)`
