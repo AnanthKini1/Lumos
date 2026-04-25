@@ -49,7 +49,7 @@ All files go in `backend/data/personas/`. Run `python backend/validate_data.py` 
 - [x] **A2.5** `persona_faith_community_anchor.json` — Pew Committed Conservatives + VALS Believers
 - [x] **A2.6** `persona_ambitious_achiever.json` — VALS Achievers + Pew Enterprisers
 - [x] **A2.7** `persona_empathic_helper.json` — VALS Experiencers/Makers + Hidden Tribes Traditional Liberals
-- [ ] **A2.8** `persona_analytical_thinker.json` — Forrester Technographics Empowered + VALS Thinkers
+- [x] **A2.8** `persona_analytical_thinker.json` — Forrester Technographics Empowered + VALS Thinkers
 - [ ] **A2.9** All 8 pass `validate_data.py`
 
 Each persona JSON must have (matching PersonaProfile Pydantic model exactly):
