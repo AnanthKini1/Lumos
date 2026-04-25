@@ -1,3 +1,66 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  html {
+    color-scheme: light;
+    font-family: ui-sans-serif, system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  :root {
+    --mind-bg: #f5f3ff;
+    --mind-border: #ddd6fe;
+    --mind-text: #4c1d95;
+    --mind-muted: #7c3aed;
+    --mind-header: #a78bfa;
+  }
+
+  /* Thin, unobtrusive scrollbars */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #cbd5e1 transparent;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #cbd5e1;
+    border-radius: 3px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #94a3b8;
+  }
+}
+
+@layer utilities {
+  /* Typing cursor blink used by monologue reveal animation */
+  .typing-cursor::after {
+    content: '|';
+    animation: blink 1s step-end infinite;
+    opacity: 1;
+    margin-left: 1px;
+    color: #7c3aed;
+  }
+
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+
+  /* Gradient fade for prior monologue text */
+  .monologue-fade {
+    mask-image: linear-gradient(to bottom, black 0%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 0%, transparent 100%);
+  }
+}
