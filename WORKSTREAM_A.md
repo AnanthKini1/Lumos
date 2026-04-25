@@ -93,7 +93,7 @@ Each strategy JSON must have (matching StrategyDefinition Pydantic model):
 All files go in `backend/data/topics/`. Run `validate_data.py` after each.
 
 - [x] **A4.1** `topic_return_to_office.json` — use mock_simulation.json's topic object as reference
-- [ ] **A4.2** `topic_glp1_drugs.json` — GLP-1/Ozempic for general weight loss
+- [x] **A4.2** `topic_glp1_drugs.json` — GLP-1/Ozempic for general weight loss
 - [ ] **A4.3** `topic_ai_grading.json` — AI grading student work
 - [ ] **A4.4** `topic_four_day_workweek.json` — standard 4-day workweek
 - [ ] **A4.5** All 4 pass `validate_data.py`
