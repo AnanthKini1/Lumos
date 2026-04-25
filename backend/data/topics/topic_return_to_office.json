@@ -1,0 +1,20 @@
+{
+  "id": "topic_return_to_office",
+  "display_name": "Should companies require return-to-office?",
+  "stance_scale_definition": {
+    "0": "Strongly opposes RTO mandates — believes remote work should be a permanent employee right and companies have no legitimate basis to require office presence",
+    "5": "Neutral or genuinely mixed — sees valid arguments on both sides, no strong view, or believes it should vary by role and circumstance",
+    "10": "Strongly supports full RTO mandates — believes office presence is essential for culture, collaboration, and accountability and companies are right to require it"
+  },
+  "context_briefing": "Since 2020, remote work shifted from an emergency accommodation to a permanent expectation for millions of workers, particularly in white-collar and knowledge-work sectors. By 2023, major employers including Amazon, JPMorgan Chase, Goldman Sachs, and Google had issued return-to-office mandates ranging from three to five days per week, citing collaboration, mentorship, culture-building, and productivity concerns. Employee pushback has been significant: surveys consistently show that remote-capable workers rank flexibility among their top job priorities, and some workers who relocated or restructured caregiving arrangements around remote work have faced significant hardship under mandates.\n\nResearch on productivity and performance is genuinely mixed. A widely cited Stanford study by Nicholas Bloom found remote workers 13% more productive on average, but later work from the same researcher found that fully remote work — particularly for early-career employees — may reduce learning, collaboration quality, and long-term career advancement compared to hybrid arrangements. Studies of specific firms post-mandate have shown both improvement and deterioration in output depending on role type and implementation.\n\nThe debate often fractures along demographic lines. Parents of young children and adult caregivers — disproportionately women — bear the highest cost of rigid RTO mandates. Early-career workers may benefit most from in-office mentorship and visibility. Senior employees and executives, who often have more control over their schedules and more insulation from commute costs, have been the loudest advocates for return. Workers in high cost-of-living cities who relocated during the pandemic face particular hardship. Some labor economists argue that RTO mandates function as a form of attrition management — a way to reduce headcount without formal layoffs.\n\nThe policy question is genuinely contested. Those who favor mandates argue that the office creates irreplaceable conditions for culture, spontaneous collaboration, and accountability. Those who oppose them argue that flexibility has become a non-negotiable employment condition and that forcing return ignores demonstrated productivity evidence and imposes real costs on workers with caregiving responsibilities. Both positions are held by thoughtful people with legitimate concerns.",
+  "predicted_starting_stances": {
+    "persona_skeptical_traditionalist": 7.0,
+    "persona_progressive_urban": 2.5,
+    "persona_pragmatic_moderate": 5.0,
+    "persona_disengaged_skeptic": 4.0,
+    "persona_faith_community_anchor": 7.5,
+    "persona_ambitious_achiever": 6.5,
+    "persona_empathic_helper": 3.0,
+    "persona_analytical_thinker": 5.0
+  }
+}
