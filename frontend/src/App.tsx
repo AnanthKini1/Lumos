@@ -4,6 +4,7 @@ import type { SimulationOutput } from './types/simulation'
 import SetupScreen from './components/setup/SetupScreen'
 import MindViewer from './components/mindviewer/MindViewer'
 import ComparisonReport from './components/report/ComparisonReport'
+import SourcesPanel from './components/shared/SourcesPanel'
 
 type Screen = 'setup' | 'mindviewer' | 'report'
 
@@ -17,6 +18,7 @@ export default function App() {
   const [screen, setScreen] = useState<Screen>('setup')
   const [simulation, setSimulation] = useState<SimulationOutput | null>(null)
   const [deepLinkStrategyId, setDeepLinkStrategyId] = useState<string | null>(null)
+  const [sourcesOpen, setSourcesOpen] = useState(false)
 
   function handleRunSimulation(sim: SimulationOutput) {
     setSimulation(sim)
@@ -39,6 +41,21 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-slate-50" data-testid="app-root">
+      {/* Persistent Sources trigger */}
+      <button
+        data-testid="sources-trigger"
+        onClick={() => setSourcesOpen(true)}
+        className="fixed bottom-4 left-4 z-30 text-xs text-slate-400 hover:text-slate-600 underline-offset-2 hover:underline transition-colors"
+      >
+        Sources &amp; Methodology
+      </button>
+
+      {/* Sources drawer — always mounted */}
+      <SourcesPanel
+        simulation={simulation}
+        isOpen={sourcesOpen}
+        onClose={() => setSourcesOpen(false)}
+      />
       <AnimatePresence mode="wait">
         {screen === 'setup' && (
           <motion.div
