@@ -34,7 +34,7 @@ Mark completed items with [x]. Check this file at the start of every feature.
 ## PHASE 1 — Schema Validation
 
 - [x] **A1.2** Write `backend/validate_data.py` — loads every JSON in `backend/data/` via loader.py (which uses Pydantic model_validate). Prints pass/fail per file. Run after every new data file.
-- [ ] **A1.3** Write seed persona `backend/data/personas/persona_skeptical_traditionalist.json` — use mock_simulation.json's persona object as reference for field values and tone. Validate passes.
+- [x] **A1.3** Write seed persona `backend/data/personas/persona_skeptical_traditionalist.json` — use mock_simulation.json's persona object as reference for field values and tone. Validate passes.
 
 ---
 
