@@ -39,38 +39,36 @@ _PERSONA_TOOL = {
                     "emotional, self-interrupting. NOT a polished paragraph."
                 ),
             },
-            "emotional_reaction": {
-                "type": "object",
-                "properties": {
-                    "primary_emotion": {
-                        "type": "string",
-                        "enum": [
-                            "defensive", "curious", "dismissed", "engaged",
-                            "bored", "threatened", "warm", "frustrated", "intrigued",
-                        ],
-                    },
-                    "intensity": {"type": "integer", "minimum": 0, "maximum": 10},
-                    "trigger": {
-                        "type": "string",
-                        "description": "The specific phrase or moment that caused this emotion.",
-                    },
-                },
-                "required": ["primary_emotion", "intensity", "trigger"],
+            "primary_emotion": {
+                "type": "string",
+                "enum": [
+                    "defensive", "curious", "dismissed", "engaged",
+                    "bored", "threatened", "warm", "frustrated", "intrigued",
+                ],
+                "description": "The dominant emotion you feel right now.",
             },
-            "identity_threat": {
-                "type": "object",
-                "properties": {
-                    "threatened": {"type": "boolean"},
-                    "what_was_threatened": {
-                        "type": "string",
-                        "description": "Which value, group, or self-concept felt under attack. Omit if not threatened.",
-                    },
-                    "response_inclination": {
-                        "type": "string",
-                        "enum": ["defend", "withdraw", "attack", "accept"],
-                    },
-                },
-                "required": ["threatened", "response_inclination"],
+            "emotion_intensity": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 10,
+                "description": "How strongly you feel that emotion (0-10).",
+            },
+            "emotion_trigger": {
+                "type": "string",
+                "description": "The specific phrase or moment that caused this emotion.",
+            },
+            "identity_threatened": {
+                "type": "boolean",
+                "description": "Did this message threaten a value, group, or self-concept you hold?",
+            },
+            "identity_what_threatened": {
+                "type": "string",
+                "description": "Which value or self-concept felt under attack. Leave empty if not threatened.",
+            },
+            "identity_response_inclination": {
+                "type": "string",
+                "enum": ["defend", "withdraw", "attack", "accept"],
+                "description": "Your instinctive response to any threat (or 'accept' if no threat).",
             },
             "private_stance": {
                 "type": "number",
@@ -105,8 +103,12 @@ _PERSONA_TOOL = {
         },
         "required": [
             "internal_monologue",
-            "emotional_reaction",
-            "identity_threat",
+            "primary_emotion",
+            "emotion_intensity",
+            "emotion_trigger",
+            "identity_threatened",
+            "identity_what_threatened",
+            "identity_response_inclination",
             "private_stance",
             "public_stance",
             "private_stance_change_reason",
@@ -235,5 +237,25 @@ async def run_persona_turn(
         raise ValueError(f"Model did not invoke the tool. Response: {response.content}")
     raw = tool_block.input
 
-    # Pydantic validates types and ranges
-    return PersonaTurnOutput.model_validate(raw)
+    # Reconstruct nested objects from flat tool fields before Pydantic validation.
+    # The tool schema uses flat keys to avoid the model switching to XML syntax
+    # for nested objects when token budgets are tight.
+    structured = {
+        "internal_monologue": raw["internal_monologue"],
+        "emotional_reaction": {
+            "primary_emotion": raw["primary_emotion"],
+            "intensity": raw["emotion_intensity"],
+            "trigger": raw["emotion_trigger"],
+        },
+        "identity_threat": {
+            "threatened": raw["identity_threatened"],
+            "what_was_threatened": raw.get("identity_what_threatened") or None,
+            "response_inclination": raw["identity_response_inclination"],
+        },
+        "private_stance": raw["private_stance"],
+        "public_stance": raw["public_stance"],
+        "private_stance_change_reason": raw["private_stance_change_reason"],
+        "memory_to_carry_forward": raw["memory_to_carry_forward"],
+        "public_response": raw["public_response"],
+    }
+    return PersonaTurnOutput.model_validate(structured)
