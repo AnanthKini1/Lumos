@@ -1,0 +1,20 @@
+{
+  "id": "topic_four_day_workweek",
+  "display_name": "Should the standard workweek be reduced to four days?",
+  "stance_scale_definition": {
+    "0": "Strongly opposes a standard four-day workweek — believes five days is the right structure for productivity and professional commitment, that shorter weeks would harm businesses and the economy, or that the idea is impractical outside narrow contexts",
+    "5": "Neutral or mixed — interested in the idea but uncertain about feasibility, fairness across industries, or whether the evidence is strong enough to justify widespread adoption",
+    "10": "Strongly supports a standard four-day workweek — believes the evidence shows productivity is maintained or improved, that worker wellbeing benefits are significant, and that a shorter standard workweek is a necessary and overdue reform"
+  },
+  "context_briefing": "The four-day workweek has moved from a fringe idea to a serious policy debate over the past several years, driven by a series of high-profile trials and a broader post-pandemic reassessment of work norms. The most cited evidence comes from Iceland, where trials conducted between 2015 and 2019 involved approximately 2,500 workers — about 1% of Iceland's working population — across government agencies and public institutions. Researchers found that productivity remained the same or improved in most workplaces, while worker wellbeing, stress levels, and work-life balance showed significant gains. Following the trials, the majority of Iceland's workforce moved to shorter hours or gained the right to request them.\n\nOther notable experiments have produced similar results. A 2022 pilot coordinated by 4 Day Week Global involved 61 companies and approximately 2,900 workers, primarily in the United Kingdom. At the end of the six-month trial, 56 of 61 companies continued the policy, revenue held steady, and employee burnout, sick days, and turnover all declined. Microsoft Japan reported a 40% productivity boost during a one-month four-day experiment in 2019, though critics noted the trial was too short and too narrow to generalize. Several countries — including Japan, Belgium, and Spain — have introduced legislation or formal trials exploring reduced-hour workweeks at a national scale.\n\nThe case against is primarily practical and distributional. Most of the positive evidence comes from knowledge-work and office environments where output is relatively flexible. The picture is much less clear for retail, manufacturing, healthcare, food service, and other sectors where staffing requirements are tied directly to operating hours. A mandatory four-day week in these industries would likely require either additional hiring — raising costs — or compressing hours in ways workers may not prefer. Small businesses and sectors with thin margins worry about competitive disadvantage. Some economists argue that the productivity gains seen in trials reflect novelty effects or selection bias: companies that volunteer for four-day week pilots may already be well-run.\n\nThe debate also intersects with questions about what work is for. Proponents argue that a five-day workweek is an artifact of early industrial labor negotiation, not an optimized system, and that technology has made it obsolete. Critics worry about a two-tier economy where professional workers gain flexibility while hourly workers bear the adjustment costs. The policy question is whether this should be a market-driven evolution or a legislated standard — and who bears the burden of transition.",
+  "predicted_starting_stances": {
+    "persona_skeptical_traditionalist": 4.0,
+    "persona_progressive_urban": 7.5,
+    "persona_pragmatic_moderate": 5.5,
+    "persona_disengaged_skeptic": 6.0,
+    "persona_faith_community_anchor": 5.0,
+    "persona_ambitious_achiever": 3.5,
+    "persona_empathic_helper": 7.0,
+    "persona_analytical_thinker": 6.0
+  }
+}

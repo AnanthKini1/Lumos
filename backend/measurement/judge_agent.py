@@ -22,7 +22,12 @@ Does NOT know about:
 - The simulation itself (simulation/)
 """
 
+import json
 from typing import TypedDict
+
+import anthropic
+
+from config import ANTHROPIC_API_KEY, MAX_TOKENS_JUDGE, MODEL_ID
 
 
 class JudgeResult(TypedDict):
@@ -34,5 +39,49 @@ async def run_judge_call(
     judge_prompt: str,
     transcript_text: str,
 ) -> JudgeResult:
-    """Make one judge LLM call for a single cognitive dimension."""
-    raise NotImplementedError
+    """Make one judge LLM call for a single cognitive dimension.
+
+    Args:
+        judge_prompt: The full dimension-specific prompt from judge_prompts.py.
+        transcript_text: JSON-serialized transcript excerpt to evaluate.
+
+    Returns:
+        JudgeResult with score (0-10) and 1-2 evidence_quotes from the transcript.
+
+    Raises:
+        ValueError: If the model response cannot be parsed as valid JSON with
+                    the required keys.
+    """
+    client = anthropic.AsyncAnthropic(api_key=ANTHROPIC_API_KEY)
+
+    user_message = (
+        "Here is the transcript to evaluate:\n\n"
+        f"{transcript_text}\n\n"
+        "Return valid JSON only — no other text."
+    )
+
+    message = await client.messages.create(
+        model=MODEL_ID,
+        max_tokens=MAX_TOKENS_JUDGE,
+        system=judge_prompt,
+        messages=[{"role": "user", "content": user_message}],
+    )
+
+    raw_text = message.content[0].text.strip()
+
+    try:
+        parsed = json.loads(raw_text)
+    except json.JSONDecodeError as exc:
+        raise ValueError(
+            f"Judge response was not valid JSON: {raw_text!r}"
+        ) from exc
+
+    if "score" not in parsed or "evidence_quotes" not in parsed:
+        raise ValueError(
+            f"Judge response missing required keys. Got: {list(parsed.keys())}"
+        )
+
+    return JudgeResult(
+        score=float(parsed["score"]),
+        evidence_quotes=list(parsed["evidence_quotes"]),
+    )

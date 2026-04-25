@@ -51,11 +51,10 @@
     "preprint_servers_with_appropriate_skepticism"
   ],
   "source_citation": {
-    "primary_source": "Forrester Technographics — Empowered segment",
-    "url": "https://www.forrester.com/bold",
+    "primary_source": "Constructed persona — no direct match in Pew 2021 Political Typology or Hidden Tribes 2018",
+    "url": null,
     "supplementary": [
-      "VALS Framework — Thinkers segment (Strategic Business Insights)",
-      "Hidden Tribes 2018 — Traditional Liberals segment (More in Common)"
+      "SOURCING NOTE: The Forrester Technographics 'Empowered' segment is a paywalled commercial dataset not independently verifiable. The VALS 'Thinkers' segment source is unavailable. The 2021 Pew typology and Hidden Tribes 2018 do not contain a segment that maps cleanly to a methodology-first, data-science professional with politically cross-cutting views. The closest Pew analog by education level and engagement is Progressive Left, though this persona's political orientation and epistemic style differ. This persona's values profile (evidence-first, epistemic humility, update-on-evidence) is drawn from the broader academic literature on actively open-minded thinking and is not directly sourced from a named segmentation study."
     ]
   },
   "predicted_behavior_under_strategies": {
