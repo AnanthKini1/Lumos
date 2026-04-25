@@ -17,6 +17,112 @@
     "persona_empathic_helper": 2.5,
     "persona_analytical_thinker": 4.5
   },
+  "citations": [
+    {
+      "id": "cite_bloom_2024",
+      "author": "Bloom, N., Han, R., & Liang, J.",
+      "year": 2024,
+      "title": "Hybrid working from home improves retention without damaging performance",
+      "source": "Nature, 630, 920–925",
+      "url": "https://www.nature.com/articles/s41586-024-07500-2"
+    },
+    {
+      "id": "cite_gibbs_2023",
+      "author": "Gibbs, M., Mengel, F., & Siemroth, C.",
+      "year": 2023,
+      "title": "Work from Home & Productivity: Evidence from Personnel & Analytics Data on IT Professionals",
+      "source": "Journal of Political Economy Microeconomics, 1(1), 7–41",
+      "url": "https://www.journals.uchicago.edu/doi/abs/10.1086/721803"
+    },
+    {
+      "id": "cite_pabilonia_2024",
+      "author": "Pabilonia, S.W., & Redmond, V.",
+      "year": 2024,
+      "title": "Remote Work, Wages, and Hours Worked in the United States",
+      "source": "U.S. Bureau of Labor Statistics, Beyond the Numbers, vol. 13",
+      "url": "https://www.bls.gov/opub/btn/volume-13/remote-work-productivity.htm"
+    },
+    {
+      "id": "cite_pew_2025_rto",
+      "author": "Parker, K., & Horowitz, J.M.",
+      "year": 2025,
+      "title": "Many remote workers say they'd be likely to leave their job if they could no longer work from home",
+      "source": "Pew Research Center",
+      "url": "https://www.pewresearch.org/short-reads/2025/01/13/many-remote-workers-say-theyd-be-likely-to-leave-their-job-if-they-could-no-longer-work-from-home/"
+    },
+    {
+      "id": "cite_gallup_2023_rto",
+      "author": "Gallup",
+      "year": 2023,
+      "title": "Remote Work Stable at Higher Rate Post-Pandemic",
+      "source": "Gallup",
+      "url": "https://news.gallup.com/poll/510785/remote-work-stable-higher-rate-post-pandemic.aspx"
+    },
+    {
+      "id": "cite_harris_stagwell_2024",
+      "author": "Harris Poll / Stagwell",
+      "year": 2024,
+      "title": "What the Data Say: 67% See Office Versus Remote Work Debate as Too Political",
+      "source": "Stagwell Global",
+      "url": "https://www.stagwellglobal.com/what-the-data-say-67-see-office-versus-remote-work-debate-as-too-political/"
+    },
+    {
+      "id": "cite_morningconsult_2024",
+      "author": "Morning Consult",
+      "year": 2024,
+      "title": "State of Workers 2024",
+      "source": "Morning Consult Pro",
+      "url": "https://pro.morningconsult.com/analyst-reports/state-of-workers-2024"
+    },
+    {
+      "id": "cite_trump_eo_rto_2025",
+      "author": "Trump, D.J.",
+      "year": 2025,
+      "title": "Return to In-Person Work (Executive Order)",
+      "source": "White House",
+      "url": "https://www.whitehouse.gov/presidential-actions/2025/01/return-to-in-person-work/"
+    },
+    {
+      "id": "cite_centersquare_2025",
+      "author": "Noble Predictive Insights / Center Square",
+      "year": 2025,
+      "title": "Poll: Majority support requiring federal workers to return to office",
+      "source": "The Center Square",
+      "url": "https://www.thecentersquare.com/national/article_01bd8ff2-6e0f-4691-9f67-1898affec3c8.html"
+    },
+    {
+      "id": "cite_economist_yougov_2025",
+      "author": "The Economist / YouGov",
+      "year": 2025,
+      "title": "Economist/YouGov Poll: January 26–28, 2025",
+      "source": "YouGov",
+      "url": "https://today.yougov.com/politics/articles/51493-comparing-start-donald-trumps-first-second-terms-policy-economy-january-26-28-2025-economist-yougov-poll"
+    },
+    {
+      "id": "cite_cowan_garcia_2024",
+      "author": "Cowan, B., & Garcia, J.",
+      "year": 2024,
+      "title": "Political Partisanship and Work from Home Adoption",
+      "source": "NBER Working Paper 32834",
+      "url": "https://www.nber.org/papers/w32834"
+    },
+    {
+      "id": "cite_stanford_swaa_2024",
+      "author": "Barrero, J.M., Bloom, N., & Davis, S.J.",
+      "year": 2024,
+      "title": "Survey of Working Arrangements and Attitudes (December 2024)",
+      "source": "Stanford University / Atlanta Fed",
+      "url": "https://news.stanford.edu/stories/2025/03/return-to-office-not-everybody-is-doing-it"
+    },
+    {
+      "id": "cite_wapo_ipsos_2025",
+      "author": "Washington Post / Ipsos",
+      "year": 2025,
+      "title": "Washington Post–Ipsos Poll: Civilian Federal Workers (Feb. 28–March 10, 2025)",
+      "source": "The Washington Post",
+      "url": "https://www.washingtonpost.com/tablet/2025/03/18/feb-28-march-10-2025-washington-post-ipsos-poll-civilian-federal-workers/"
+    }
+  ],
   "predicted_starting_stances_sourcing": {
     "persona_skeptical_traditionalist": "No major nonpartisan pollster (Pew, Gallup, KFF, PRRI, YouGov, AP-NORC, NBC/WSJ) has published a Republican-vs.-Democrat crosstab on private-sector RTO preferences as of April 2026. Best proxies: Gallup Aug 2023 productivity-perception question — the only published non-COVID partisan signal on remote work itself — found 42% of Republicans vs. 13% of Democrats say remote workers are less productive than office workers (29-pt gap). Federal-workforce partisan signal: Center Square/Noble Predictive Insights (April 2025, n=2,527) found 54% R vs. 35% D support requiring federal workers back full-time (19-pt gap). Pew Oct 2024: workers 50+ less likely to say they'd leave over RTO (35%) than under-50 (50%). Persona is 62, Republican-leaning, institutional traditionalist — maps to high end of Gallup's Republican productivity-skepticism bracket. Starting stance 7.0: supports return as cultural norm grounded in productivity suspicion; not ideologically rigid about five-day mandate.",
     "persona_progressive_urban": "No major nonpartisan pollster has published a private-sector partisan RTO crosstab. Closest direct private-sector partisan measurement: Harris Poll/Bloomberg (early 2024) found Democrats 14 points more likely than Republicans to call required in-person work 'unfair' for remote-capable jobs. Pew Oct 2024: workers under 50 most likely to say they'd leave over RTO (50%); women slightly more likely than men (49% vs. 43%). College-educated, urban professionals are the demographic most likely to hold teleworkable jobs and most likely to prefer flexibility. NBER county-level ecological data (Cowan & Garcia, 2024): one-SD increase in Democratic county vote share correlates with 1–2 pp more remote work post-2020. Starting stance 2.0: strong opposition to full mandates grounded in lived stake; supports hybrid as worker right.",

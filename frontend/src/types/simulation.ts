@@ -93,6 +93,15 @@ export interface KeyStatistic {
   direction?: string  // "supports_stance_10" | "supports_stance_0" | "neutral"
 }
 
+export interface TopicCitation {
+  id: string
+  author: string
+  year: number
+  title: string
+  source: string
+  url: string
+}
+
 export interface TopicProfile {
   id: string
   display_name: string
@@ -100,6 +109,7 @@ export interface TopicProfile {
   context_briefing: string
   predicted_starting_stances: Record<string, number>
   key_statistics?: KeyStatistic[]
+  citations?: TopicCitation[]
 }
 
 // ---------------------------------------------------------------------------

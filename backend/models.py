@@ -123,6 +123,15 @@ class KeyStatistic(BaseModel):
     direction: str = ""  # "supports_stance_10" | "supports_stance_0" | "neutral"
 
 
+class TopicCitation(BaseModel):
+    id: str
+    author: str
+    year: int
+    title: str
+    source: str
+    url: str
+
+
 class TopicProfile(BaseModel):
     id: str
     display_name: str
@@ -130,6 +139,7 @@ class TopicProfile(BaseModel):
     context_briefing: str
     predicted_starting_stances: dict[str, float] = Field(default_factory=dict)
     key_statistics: list[KeyStatistic] = Field(default_factory=list)
+    citations: list[TopicCitation] = Field(default_factory=list)
 
 
 # ---------------------------------------------------------------------------

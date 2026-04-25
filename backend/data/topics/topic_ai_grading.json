@@ -17,6 +17,272 @@
     "persona_empathic_helper": 2.5,
     "persona_analytical_thinker": 5.5
   },
+  "citations": [
+    {
+      "id": "cite_shermis_2014",
+      "author": "Shermis, M.D.",
+      "year": 2014,
+      "title": "State-of-the-art automated essay scoring: Competition, results, and future directions from a United States demonstration",
+      "source": "Assessing Writing, 20, 53–76",
+      "url": "https://doi.org/10.1016/j.asw.2013.04.001"
+    },
+    {
+      "id": "cite_perelman_2014",
+      "author": "Perelman, L.",
+      "year": 2014,
+      "title": "When 'the state of the art' is counting words",
+      "source": "Assessing Writing, 21, 104–111",
+      "url": "https://doi.org/10.1016/j.asw.2014.05.001"
+    },
+    {
+      "id": "cite_wilson_huang_2024",
+      "author": "Wilson, J., & Huang, Y.",
+      "year": 2024,
+      "title": "Validity of automated essay scores for elementary-age English language learners: Evidence of bias?",
+      "source": "Assessing Writing, 60, 100815",
+      "url": "https://doi.org/10.1016/j.asw.2024.100815"
+    },
+    {
+      "id": "cite_tate_2024",
+      "author": "Tate, T.P., Steiss, J., Bailey, D., Graham, S., Moon, Y., Ritchie, D., Tseng, W., & Warschauer, M.",
+      "year": 2024,
+      "title": "Can AI provide useful holistic essay scoring?",
+      "source": "Computers and Education: Artificial Intelligence, 7, 100255",
+      "url": "https://doi.org/10.1016/j.caeai.2024.100255"
+    },
+    {
+      "id": "cite_ets_gpt4o_2024",
+      "author": "Johnson, M., & Zhang, M. (ETS); reported by The Hechinger Report",
+      "year": 2024,
+      "title": "Proof Points: AI grading tools score Asian American students lower than humans do",
+      "source": "The Hechinger Report, August 2024",
+      "url": "https://hechingerreport.org/proof-points-asian-american-ai-bias/"
+    },
+    {
+      "id": "cite_kumar_2023",
+      "author": "Kumar Singla, Y., Parekh, S., Singh, S., Li, J.J., Shah, R.R., & Chen, C.",
+      "year": 2023,
+      "title": "Automatic Essay Scoring Systems Are Both Overstable and Oversensitive: Explaining Why and Proposing Defenses",
+      "source": "Dialogue & Discourse, 14(1)",
+      "url": "https://journals.uic.edu/ojs/index.php/dad/article/view/12448"
+    },
+    {
+      "id": "cite_ramineni_2012",
+      "author": "Ramineni, C., Trapani, C.S., Williamson, D.M., Davey, T., & Bridgeman, B.",
+      "year": 2012,
+      "title": "Evaluation of the e-rater Scoring Engine for the TOEFL Independent and Integrated Prompts",
+      "source": "ETS Research Report RR-12-06",
+      "url": "https://www.ets.org/research/policy_research_reports/publications/report/2012/jejc.html"
+    },
+    {
+      "id": "cite_perelman_2020",
+      "author": "Perelman, L.",
+      "year": 2020,
+      "title": "The BABEL Generator and e-Rater: 21st Century Writing Constructs and Automated Essay Scoring",
+      "source": "Journal of Writing Assessment, 13(1)",
+      "url": "https://escholarship.org/uc/item/263565cq"
+    },
+    {
+      "id": "cite_fleckenstein_2023",
+      "author": "Fleckenstein, J., Liebenow, L.W., & Meyer, J.",
+      "year": 2023,
+      "title": "Automated feedback and writing: a multi-level meta-analysis",
+      "source": "Frontiers in Artificial Intelligence, 6, 1162454",
+      "url": "https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2023.1162454/full"
+    },
+    {
+      "id": "cite_zhu_2020",
+      "author": "Zhu, M., Liu, O.L., & Lee, H.-S.",
+      "year": 2020,
+      "title": "The effect of automated feedback on revision behavior and learning gains in formative assessment of scientific argument writing",
+      "source": "Computers & Education, 143, 103668",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0360131519302210"
+    },
+    {
+      "id": "cite_pdkpoll_2025",
+      "author": "PDK International / Wason Center for Civic Leadership",
+      "year": 2025,
+      "title": "PDK Poll of the Public's Attitudes Toward the Public Schools, 57th Annual Edition",
+      "source": "PDK International, June 2025 (n=1,005)",
+      "url": "https://pdkpoll.org/2025-poll-results/"
+    },
+    {
+      "id": "cite_quinnipiac_2026",
+      "author": "Quinnipiac University Poll",
+      "year": 2026,
+      "title": "Quinnipiac University National Poll: Higher Education and AI, April 9–13, 2026",
+      "source": "Quinnipiac University Polling Institute (n=1,210)",
+      "url": "https://poll.qu.edu/poll-release?releaseid=3958"
+    },
+    {
+      "id": "cite_gallup_walton_2025",
+      "author": "Gallup & Walton Family Foundation",
+      "year": 2025,
+      "title": "Teaching for Tomorrow: How K-12 Teachers Are Using AI",
+      "source": "Gallup/Walton Family Foundation (RAND American Teacher Panel, n=2,232)",
+      "url": "https://news.gallup.com/poll/691967/three-teachers-weekly-saving-six-weeks-year.aspx"
+    },
+    {
+      "id": "cite_pew_teachers_2023",
+      "author": "Pew Research Center",
+      "year": 2024,
+      "title": "Most U.S. teachers say AI is not ready to be used in K-12 education",
+      "source": "Pew Research Center, May 2024 (n=2,531 public K-12 teachers, fielded Fall 2023)",
+      "url": "https://www.pewresearch.org/short-reads/2024/05/15/most-us-teachers-say-ai-is-not-ready-to-be-used-in-k-12-education/"
+    },
+    {
+      "id": "cite_edweek_grading_2025",
+      "author": "EdWeek Research Center",
+      "year": 2025,
+      "title": "Is It Ethical to Use AI to Grade? Here's What the Research Says",
+      "source": "Education Week, February 2025",
+      "url": "https://www.edweek.org/technology/is-it-ethical-to-use-ai-to-grade/2025/02"
+    },
+    {
+      "id": "cite_npu_2026",
+      "author": "National Parents Union / Echelon Insights",
+      "year": 2026,
+      "title": "How Do Parents Want Schools to Handle AI?",
+      "source": "Education Week, March 2026 (n=1,511 K-12 parents, February 2026)",
+      "url": "https://www.edweek.org/technology/how-do-parents-want-schools-to-handle-ai-insights-from-a-new-survey/2026/03"
+    },
+    {
+      "id": "cite_rand_aep_2025",
+      "author": "RAND Corporation",
+      "year": 2025,
+      "title": "American Educator Panels: Spring 2025",
+      "source": "RAND Corporation Research Report RRA4180-1",
+      "url": "https://www.rand.org/pubs/research_reports/RRA4180-1.html"
+    },
+    {
+      "id": "cite_massinc_2025",
+      "author": "MassINC Polling Group for EdTrust",
+      "year": 2025,
+      "title": "Parents Divided as AI Rapidly Reshapes Massachusetts Classrooms",
+      "source": "MassINC Polling Group (n=1,351 Massachusetts parents, October–November 2025)",
+      "url": "https://www.massincpolling.com/our-work/parents-divided-as-ai-rapidly-reshapes-massachusetts-classrooms"
+    },
+    {
+      "id": "cite_cdt_2025",
+      "author": "Center for Democracy and Technology",
+      "year": 2025,
+      "title": "Rising Use of AI in Schools Comes With Big Downsides for Students",
+      "source": "Education Week, October 2025 (CDT 2024–25 nationally representative survey)",
+      "url": "https://www.edweek.org/technology/rising-use-of-ai-in-schools-comes-with-big-downsides-for-students/2025/10"
+    },
+    {
+      "id": "cite_nea_2024",
+      "author": "National Education Association",
+      "year": 2024,
+      "title": "NEA Policy Statement on Artificial Intelligence in Education",
+      "source": "NEA 103rd Representative Assembly, July 4, 2024",
+      "url": "https://www.nea.org/resource-library/artificial-intelligence-education/vii-full-statement-text"
+    },
+    {
+      "id": "cite_aft_2025",
+      "author": "American Federation of Teachers",
+      "year": 2025,
+      "title": "AFT to Launch National Academy for AI Instruction with Microsoft, OpenAI, Anthropic, and United Federation of Teachers",
+      "source": "AFT Press Release, July 8, 2025",
+      "url": "https://www.aft.org/press-release/aft-launch-national-academy-ai-instruction-microsoft-openai-anthropic-and-united"
+    },
+    {
+      "id": "cite_aaup_2025",
+      "author": "American Association of University Professors",
+      "year": 2025,
+      "title": "Artificial Intelligence and Academic Professions",
+      "source": "AAUP Topical Report, July 22, 2025 (n=500 members, ~200 campuses)",
+      "url": "https://www.aaup.org/reports-publications/aaup-policies-reports/topical-reports/artificial-intelligence-and-academic"
+    },
+    {
+      "id": "cite_usdoe_2023",
+      "author": "U.S. Department of Education, Office of Educational Technology",
+      "year": 2023,
+      "title": "Artificial Intelligence and the Future of Teaching and Learning: Insights and Recommendations",
+      "source": "U.S. Department of Education, May 2023",
+      "url": "https://www.ed.gov/sites/ed/files/documents/ai-report/ai-report.pdf"
+    },
+    {
+      "id": "cite_trump_eo_ai_2025",
+      "author": "The White House",
+      "year": 2025,
+      "title": "Executive Order: Advancing Artificial Intelligence Education for American Youth",
+      "source": "White House Presidential Actions, April 23, 2025",
+      "url": "https://www.whitehouse.gov/presidential-actions/2025/04/advancing-artificial-intelligence-education-for-american-youth/"
+    },
+    {
+      "id": "cite_aft_trump_eo_2025",
+      "author": "American Federation of Teachers",
+      "year": 2025,
+      "title": "AFT's Weingarten: President Trump's Executive Order to Gut AI Regulations Is an Outrageous and Likely Illegal Directive",
+      "source": "AFT Press Release, December 2025",
+      "url": "https://www.aft.org/press-release/afts-weingarten-president-trumps-executive-order-gut-ai-regulations"
+    },
+    {
+      "id": "cite_harris_adams_2024",
+      "author": "Volokh Conspiracy / Reason",
+      "year": 2024,
+      "title": "Court Refuses to Set Aside Discipline of Student for Submitting AI-Generated Assignment",
+      "source": "Reason (Volokh Conspiracy), November 22, 2024 — Harris v. Adams, D. Mass. No. 1:24-cv-12437",
+      "url": "https://reason.com/volokh/2024/11/22/court-refuses-to-set-aside-discipline-of-student-for-submitting-ai-generated-assignment-with-hallucinations/"
+    },
+    {
+      "id": "cite_uk_oia_2024",
+      "author": "Times Higher Education",
+      "year": 2024,
+      "title": "Students Win Plagiarism Appeals Over Generative AI Detection Tool",
+      "source": "Times Higher Education, July 15, 2024",
+      "url": "https://www.timeshighereducation.com/news/students-win-plagiarism-appeals-over-generative-ai-detection-tool"
+    },
+    {
+      "id": "cite_stanford_hai_2023",
+      "author": "Liang, W., Yuksekgonul, M., Mao, Y., Wu, E., & Zou, J.",
+      "year": 2023,
+      "title": "GPT detectors are biased against non-native English writers",
+      "source": "Stanford HAI / Patterns (Cell Press), July 2023",
+      "url": "https://hai.stanford.edu/news/ai-detectors-biased-against-non-native-english-writers"
+    },
+    {
+      "id": "cite_crac_2025",
+      "author": "Council of Regional Accrediting Commissions",
+      "year": 2025,
+      "title": "C-RAC Releases Statement on the Use of Artificial Intelligence",
+      "source": "Middle States Commission on Higher Education, October 6, 2025",
+      "url": "https://www.msche.org/2025/10/06/c-rac-releases-statement-on-the-use-of-artificial-intelligence-ai/"
+    },
+    {
+      "id": "cite_abet_ai",
+      "author": "ABET",
+      "year": 2024,
+      "title": "ABET AI Policy",
+      "source": "ABET Accreditation",
+      "url": "https://www.abet.org/accreditation/ai-policy/"
+    },
+    {
+      "id": "cite_lausd_2024",
+      "author": "Education Week",
+      "year": 2024,
+      "title": "Los Angeles Unified's AI Meltdown: 5 Ways Districts Can Avoid the Same Mistakes",
+      "source": "Education Week, July 2024",
+      "url": "https://www.edweek.org/technology/los-angeles-unifieds-ai-meltdown-5-ways-districts-can-avoid-the-same-mistakes/2024/07"
+    },
+    {
+      "id": "cite_nyc_ai_2026",
+      "author": "Chalkbeat New York",
+      "year": 2026,
+      "title": "NYC schools release preliminary AI policy with 'traffic light' framework",
+      "source": "Chalkbeat, March 24, 2026",
+      "url": "https://www.chalkbeat.org/newyork/2026/03/24/preliminary-ai-policy-nyc-schools/"
+    },
+    {
+      "id": "cite_gsu_grant_2024",
+      "author": "Georgia State University News Hub",
+      "year": 2024,
+      "title": "National Institute for Student Success Awarded $7.6 Million Grant by U.S. Department of Education",
+      "source": "Georgia State University, January 11, 2024",
+      "url": "https://news.gsu.edu/2024/01/11/national-institute-for-student-success-awarded-7-6-million-grant-by-u-s-department-of-education/"
+    }
+  ],
   "predicted_starting_stances_sourcing": {
     "persona_skeptical_traditionalist": "No direct partisan crosstab on AI grading has been published by any major pollster. Best proxies: Quinnipiac April 2026 (n=1,210) on AI screening applications: Republicans 33% support / 54% oppose — slightly more supportive than Democrats (23%/67%) but still majority-opposed. PDK Poll June 2025: 68% of all adults oppose AI access to student grades and assessments (no partisan breakdown published). Persona is 62, Republican-leaning, institutional traditionalist — values human judgment and the teacher-student relationship; distrust of AI surveillance of student data would be high. Republican lean toward tech pragmatism (Quinnipiac: 51% of Republicans support AI tutoring) is counterbalanced by traditionalist view of grading as inherently a human judgment act. Starting stance 2.5: opposes AI grading as a replacement for human judgment; may accept narrow administrative or efficiency uses, but not with strong ideological framing.",
     "persona_progressive_urban": "Quinnipiac April 2026: Democrats are the most opposed to AI in college applications (67% oppose) and AI tutoring (58% oppose) of any partisan group — more opposed than Republicans and Independents. PDK June 2025: ~70% of parents oppose AI access to student grade data (no partisan breakdown, but Democratic lean in opposition consistent with Quinnipiac pattern). Equity concerns land strongly: ETS's own research documents e-rater scored Arabic-L1 writers 0.19 SD lower and African-American GRE writers significantly lower than humans; GPT-4o scored Asian-American writers 1.1 points lower on a 1–6 scale. Stanford HAI 2023: 61.22% of non-native English speaker TOEFL essays were flagged as AI-generated by seven detectors, versus near 0% for U.S. eighth-grade essays. NEA's July 2024 policy prohibition on sole-AI consequential decisions resonates with this persona's labor-solidarity orientation. Starting stance 3.5: strongly opposed to high-stakes AI grading on equity/bias grounds; may accept formative feedback use but frames AI as a threat to the most vulnerable students.",

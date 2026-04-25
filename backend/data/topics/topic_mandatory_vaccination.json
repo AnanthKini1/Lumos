@@ -17,6 +17,112 @@
     "persona_empathic_helper": 7.5,
     "persona_analytical_thinker": 7.0
   },
+  "citations": [
+    {
+      "id": "cite_pingali_2019",
+      "author": "Pingali, S.C., Kim, S., & Salmon, D.A.",
+      "year": 2019,
+      "title": "California's Senate Bill 277: Local Exemption Trends before and after Elimination of Nonmedical Vaccine Exemptions",
+      "source": "JAMA Pediatrics, 173(2), 183–185",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6613302/"
+    },
+    {
+      "id": "cite_delamater_2019",
+      "author": "Delamater, P.L., Leslie, T.F., & Yang, Y.T.",
+      "year": 2019,
+      "title": "Change in Medical Exemptions From Immunization in California After Elimination of Personal Belief Exemptions",
+      "source": "JAMA, 321(18), 1823–1824",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6564056/"
+    },
+    {
+      "id": "cite_beard_2024",
+      "author": "Beard, F.H., et al.",
+      "year": 2024,
+      "title": "No Jab, No Pay: Effect on Immunisation Coverage Rates in Australian Children",
+      "source": "Lancet Regional Health – Western Pacific, 54, 101234",
+      "url": "https://www.thelancet.com/journals/lanwpc/article/PIIS2666-6065(24)00253-0/fulltext"
+    },
+    {
+      "id": "cite_bald_2026",
+      "author": "Bald, T., Gold, J., & Yang, Y.T.",
+      "year": 2026,
+      "title": "Nonmedical Exemption Repeal and Childhood Vaccination Coverage: A Difference-in-Differences Analysis",
+      "source": "JAMA Pediatrics",
+      "url": "https://jamanetwork.com/journals/jamapediatrics/article-abstract/2840422"
+    },
+    {
+      "id": "cite_pew_2025_vax",
+      "author": "Pew Research Center",
+      "year": 2025,
+      "title": "How Do Americans View Childhood Vaccines, Vaccine Research, and Policy?",
+      "source": "Pew Research Center",
+      "url": "https://www.pewresearch.org/science/2025/11/18/how-do-americans-view-childhood-vaccines-vaccine-research-and-policy/"
+    },
+    {
+      "id": "cite_gallup_2024_vax",
+      "author": "Gallup",
+      "year": 2024,
+      "title": "Far Fewer Americans Regard Childhood Vaccinations as Important",
+      "source": "Gallup",
+      "url": "https://news.gallup.com/poll/648308/far-fewer-regard-childhood-vaccinations-important.aspx"
+    },
+    {
+      "id": "cite_kff_wapo_2025",
+      "author": "KFF / Washington Post",
+      "year": 2025,
+      "title": "New KFF/Washington Post Survey Explores Parents' Trust in and Confusion about Childhood Vaccines",
+      "source": "KFF",
+      "url": "https://www.kff.org/public-opinion/new-kff-washington-post-survey-explores-parents-trust-in-and-confusion-about-childhood-vaccines-as-the-trump-administration-revamps-federal-policies/"
+    },
+    {
+      "id": "cite_texas_dshs_2025",
+      "author": "Texas Department of State Health Services",
+      "year": 2025,
+      "title": "Measles Outbreak 2025",
+      "source": "Texas DSHS",
+      "url": "https://www.dshs.texas.gov/news-alerts/measles-outbreak-2025"
+    },
+    {
+      "id": "cite_cdc_measles_2025",
+      "author": "Centers for Disease Control and Prevention",
+      "year": 2025,
+      "title": "Measles Cases and Outbreaks",
+      "source": "CDC",
+      "url": "https://www.cdc.gov/measles/data-research/index.html"
+    },
+    {
+      "id": "cite_omer_2009",
+      "author": "Omer, S.B., et al.",
+      "year": 2009,
+      "title": "Vaccine Refusal, Mandatory Immunization, and the Risks of Vaccine-Preventable Diseases",
+      "source": "New England Journal of Medicine, 360(19), 1981–1988",
+      "url": "https://www.nejm.org/doi/full/10.1056/nejmsa0806477"
+    },
+    {
+      "id": "cite_phadke_2016",
+      "author": "Phadke, V.K., Bednarczyk, R.A., Salmon, D.A., & Omer, S.B.",
+      "year": 2016,
+      "title": "Association Between Vaccine Refusal and Vaccine-Preventable Disease Outbreaks in the United States",
+      "source": "JAMA, 315(11), 1149–1158",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5007135/"
+    },
+    {
+      "id": "cite_navin_largent_2017",
+      "author": "Navin, M., & Largent, M.A.",
+      "year": 2017,
+      "title": "Improving Nonmedical Vaccine Exemption Policies: Three Case Studies",
+      "source": "Public Health Ethics, 10(3), 225–234",
+      "url": "https://academic.oup.com/phe/article-abstract/10/3/225/2993965"
+    },
+    {
+      "id": "cite_jacobson_1905",
+      "author": "U.S. Supreme Court",
+      "year": 1905,
+      "title": "Jacobson v. Massachusetts, 197 U.S. 11",
+      "source": "U.S. Supreme Court",
+      "url": "https://www.law.cornell.edu/supremecourt/text/197/11"
+    }
+  ],
   "predicted_starting_stances_sourcing": {
     "persona_skeptical_traditionalist": "Pew Oct 2025: 52% of Republicans support requirements (down from 79% in 2019); 65% support among HS-or-less education; persona is 62, Fox News-trusting, faith-oriented, institutional-skeptic — maps to low-end Republican bracket. Starting stance 3.5: supports vaccines but opposes government compulsion.",
     "persona_progressive_urban": "Pew Oct 2025: 86% of Democrats support requirements; 78% postgraduate support; persona is college-educated, urban, progressive. Starting stance 8.0: strong support with slight softening for civil-liberties nuance.",
