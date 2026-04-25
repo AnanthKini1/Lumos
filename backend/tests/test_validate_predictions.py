@@ -91,6 +91,7 @@ def _make_outcome(
                 response_inclination=ResponseInclination.ACCEPT,
             ),
             private_stance=5.0,
+            public_stance=5.0,
             private_stance_change_reason="",
             memory_to_carry_forward="",
             public_response="ok",

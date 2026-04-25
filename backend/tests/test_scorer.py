@@ -63,6 +63,7 @@ def _make_turn(
                 response_inclination=ResponseInclination.DEFEND if threatened else ResponseInclination.ACCEPT,
             ),
             private_stance=private_stance,
+            public_stance=private_stance,
             private_stance_change_reason="",
             memory_to_carry_forward=memory,
             public_response=public_response,
