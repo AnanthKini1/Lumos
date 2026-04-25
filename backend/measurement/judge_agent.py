@@ -23,6 +23,7 @@ Does NOT know about:
 """
 
 import json
+import re
 from typing import TypedDict
 
 import anthropic
@@ -69,19 +70,30 @@ async def run_judge_call(
 
     raw_text = message.content[0].text.strip()
 
+    # Strip markdown code fences if the model wrapped the JSON
+    if raw_text.startswith("```"):
+        raw_text = raw_text.split("\n", 1)[-1]  # drop first line (```json or ```)
+        raw_text = raw_text.rsplit("```", 1)[0].strip()
+
     try:
         parsed = json.loads(raw_text)
-    except json.JSONDecodeError as exc:
-        raise ValueError(
-            f"Judge response was not valid JSON: {raw_text!r}"
-        ) from exc
+    except json.JSONDecodeError:
+        # Fallback: extract score via regex if JSON is malformed
+        match = re.search(r'"score"\s*:\s*([0-9]+(?:\.[0-9]+)?)', raw_text)
+        if match:
+            return JudgeResult(score=float(match.group(1)), evidence_quotes=[])
+        raise ValueError(f"Judge response was not valid JSON: {raw_text!r}")
 
     if "score" not in parsed or "evidence_quotes" not in parsed:
         raise ValueError(
             f"Judge response missing required keys. Got: {list(parsed.keys())}"
         )
 
+    # Filter evidence_quotes to strings only — model occasionally mixes in
+    # non-string elements (e.g., a key-value pair) when outputs are long
+    quotes = [q for q in parsed["evidence_quotes"] if isinstance(q, str)]
+
     return JudgeResult(
         score=float(parsed["score"]),
-        evidence_quotes=list(parsed["evidence_quotes"]),
+        evidence_quotes=quotes,
     )

@@ -20,6 +20,8 @@ import json
 
 import anthropic
 
+_JUDGE_SEMAPHORE = asyncio.Semaphore(4)
+
 from config import ANTHROPIC_API_KEY, MAX_TOKENS_JUDGE, MODEL_ID
 from measurement.judge_agent import JudgeResult, run_judge_call
 from measurement.judge_prompts import (
@@ -175,7 +177,11 @@ async def score_conversation(
     cooling_text = _serialize_cooling_off(cooling_off)
     full_transcript = transcript_text + "\n\nCooling-off turn:\n" + cooling_text
 
-    # Run all 7 judge calls in parallel
+    async def _throttled_judge(prompt: str, transcript: str) -> dict:
+        async with _JUDGE_SEMAPHORE:
+            return await run_judge_call(prompt, transcript)
+
+    # Run all 7 judge calls in parallel, capped at 4 concurrent connections
     (
         gap_result,
         threat_result,
@@ -185,13 +191,13 @@ async def score_conversation(
         residue_result,
         persistence_result,
     ) = await asyncio.gather(
-        run_judge_call(PUBLIC_PRIVATE_GAP_PROMPT, transcript_text),
-        run_judge_call(IDENTITY_THREAT_PROMPT, transcript_text),
-        run_judge_call(MOTIVATED_REASONING_PROMPT, transcript_text),
-        run_judge_call(ENGAGEMENT_DEPTH_PROMPT, transcript_text),
-        run_judge_call(AMBIVALENCE_PRESENCE_PROMPT, transcript_text),
-        run_judge_call(MEMORY_RESIDUE_PROMPT, transcript_text),
-        run_judge_call(PERSISTENCE_PROMPT, full_transcript),
+        _throttled_judge(PUBLIC_PRIVATE_GAP_PROMPT, transcript_text),
+        _throttled_judge(IDENTITY_THREAT_PROMPT, transcript_text),
+        _throttled_judge(MOTIVATED_REASONING_PROMPT, transcript_text),
+        _throttled_judge(ENGAGEMENT_DEPTH_PROMPT, transcript_text),
+        _throttled_judge(AMBIVALENCE_PRESENCE_PROMPT, transcript_text),
+        _throttled_judge(MEMORY_RESIDUE_PROMPT, transcript_text),
+        _throttled_judge(PERSISTENCE_PROMPT, full_transcript),
     )
 
     # Count identity threats from the structured turn data (faster + more reliable

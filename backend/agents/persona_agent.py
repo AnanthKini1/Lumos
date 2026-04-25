@@ -254,10 +254,24 @@ async def run_persona_turn(
     # Reconstruct nested objects from flat tool fields before Pydantic validation.
     # The tool schema uses flat keys to avoid the model switching to XML syntax
     # for nested objects when token budgets are tight.
+    _VALID_EMOTIONS = {
+        "defensive", "curious", "dismissed", "engaged",
+        "bored", "threatened", "warm", "frustrated", "intrigued",
+    }
+    _EMOTION_MAP = {
+        "guarded": "defensive", "anxious": "defensive", "irritated": "frustrated",
+        "skeptical": "defensive", "surprised": "intrigued", "hopeful": "engaged",
+        "interested": "curious", "annoyed": "frustrated", "uncomfortable": "defensive",
+        "resistant": "defensive", "open": "engaged", "neutral": "bored",
+        "conflicted": "engaged", "uncertain": "curious",
+    }
+    raw_emotion = raw.get("primary_emotion", "defensive")
+    emotion = raw_emotion if raw_emotion in _VALID_EMOTIONS else _EMOTION_MAP.get(raw_emotion, "defensive")
+
     structured = {
         "internal_monologue": raw["internal_monologue"],
         "emotional_reaction": {
-            "primary_emotion": raw["primary_emotion"],
+            "primary_emotion": emotion,
             "intensity": raw["emotion_intensity"],
             "trigger": raw["emotion_trigger"],
         },
