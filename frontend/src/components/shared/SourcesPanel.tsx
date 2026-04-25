@@ -1,5 +1,6 @@
 import type { SimulationOutput } from '../../types/simulation'
 import strategiesData from '../../data/persuasion_strategies.json'
+import mechanismsData from '../../data/cognitive_mechanisms.json'
 
 interface StrategyEntry {
   id: string
@@ -112,6 +113,50 @@ export default function SourcesPanel({ simulation, isOpen, onClose }: Props) {
                   )}
                 </div>
               ))}
+            </div>
+          </section>
+
+          {/* Cognitive mechanisms section */}
+          <section data-testid="sources-mechanisms-section">
+            <h3 className="text-xs font-mono text-[#0f0f0f] opacity-40 uppercase tracking-widest border-b-2 border-[#0f0f0f] pb-1 mb-4">Cognitive Mechanisms</h3>
+            <div className="space-y-3">
+              {mechanismsData.map(mechanism => {
+                const categoryColor =
+                  mechanism.category === 'backfire'           ? '#dc2626' :
+                  mechanism.category === 'genuine_persuasion' ? '#16a34a' :
+                  mechanism.category === 'surface_mechanism'  ? '#d97706' : '#0f0f0f'
+                const categoryLabel = mechanism.category.replace(/_/g, ' ').toUpperCase()
+
+                return (
+                  <div
+                    key={mechanism.id}
+                    data-testid={`sources-mechanism-${mechanism.id}`}
+                    className="border-2 border-[#0f0f0f] p-4"
+                  >
+                    <div className="flex items-start justify-between gap-2 mb-0.5">
+                      <p className="font-bold font-serif text-base text-[#0f0f0f]">{mechanism.display_name}</p>
+                      <span
+                        className="shrink-0 font-mono text-xs font-bold uppercase"
+                        style={{ color: categoryColor }}
+                      >
+                        {categoryLabel}
+                      </span>
+                    </div>
+                    <p className="font-mono text-xs text-[#0f0f0f] opacity-50 mb-1">{mechanism.framework}</p>
+                    <p className="font-serif text-sm text-[#0f0f0f] opacity-70 leading-relaxed mb-2">
+                      {mechanism.operational_definition}
+                    </p>
+                    <a
+                      href={mechanism.citation_url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="font-mono text-xs text-[#0f0f0f] underline font-bold hover:opacity-60 transition-opacity"
+                    >
+                      {mechanism.citation}
+                    </a>
+                  </div>
+                )
+              })}
             </div>
           </section>
 

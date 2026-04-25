@@ -1,8 +1,9 @@
 import { useState, useEffect, useRef } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
-import type { SimulationOutput, VerdictCategory } from '../../types/simulation'
+import type { SimulationOutput, VerdictCategory, ConversationTurn } from '../../types/simulation'
 import PublicConversation from './PublicConversation'
 import InternalMind from './InternalMind'
+import PivotalMomentPanel from './PivotalMomentPanel'
 
 interface Props {
   simulation: SimulationOutput
@@ -36,6 +37,7 @@ export default function MindViewer({ simulation, initialStrategyId, onViewReport
   const [activeIdx, setActiveIdx] = useState(initialIdx)
   const [currentTurn, setCurrentTurn] = useState(0)
   const [isPlaying, setIsPlaying] = useState(false)
+  const [selectedPivotalTurn, setSelectedPivotalTurn] = useState<ConversationTurn | null>(null)
   const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null)
 
   const activeOutcome = outcomes[activeIdx]
@@ -63,6 +65,7 @@ export default function MindViewer({ simulation, initialStrategyId, onViewReport
     setActiveIdx(idx)
     setCurrentTurn(0)
     setIsPlaying(false)
+    setSelectedPivotalTurn(null)
   }
 
   function handlePrev() {
@@ -139,7 +142,7 @@ export default function MindViewer({ simulation, initialStrategyId, onViewReport
       </div>
 
       {/* Main panels */}
-      <div className="flex-1 overflow-hidden">
+      <div className="flex-1 overflow-hidden relative">
         <AnimatePresence mode="wait">
           <motion.div
             key={activeIdx}
@@ -157,6 +160,7 @@ export default function MindViewer({ simulation, initialStrategyId, onViewReport
                 currentTurn={currentTurn}
                 strategyDisplayName={strategyDisplayName(activeOutcome.strategy_id)}
                 personaDisplayName={persona.display_name}
+                onPivotalClick={setSelectedPivotalTurn}
               />
             </div>
 
@@ -171,6 +175,13 @@ export default function MindViewer({ simulation, initialStrategyId, onViewReport
             </div>
           </motion.div>
         </AnimatePresence>
+
+        {/* Pivotal moment detail panel — slides in from right over internal mind */}
+        <PivotalMomentPanel
+          turn={selectedPivotalTurn}
+          onClose={() => setSelectedPivotalTurn(null)}
+          personaDisplayName={persona.display_name}
+        />
       </div>
 
       {/* Turn controls */}

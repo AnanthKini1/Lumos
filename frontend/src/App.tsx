@@ -6,6 +6,7 @@ import SetupScreen from './components/setup/SetupScreen'
 import MindViewer from './components/mindviewer/MindViewer'
 import ComparisonReport from './components/report/ComparisonReport'
 import SourcesPanel from './components/shared/SourcesPanel'
+import MechanismLegend from './components/shared/MechanismLegend'
 
 type Screen = 'setup' | 'mindviewer' | 'report'
 
@@ -123,6 +124,9 @@ export default function App() {
         isOpen={sourcesOpen}
         onClose={() => setSourcesOpen(false)}
       />
+
+      {/* Mechanism legend overlay */}
+      <MechanismLegend />
 
       {/* Screen transitions */}
       <AnimatePresence mode="wait">

@@ -1,6 +1,25 @@
-import type { SimulationOutput, StrategyOutcome, VerdictCategory } from '../../types/simulation'
+import type { SimulationOutput, StrategyOutcome, VerdictCategory, ConversationTurn } from '../../types/simulation'
 import TrajectoryChart from './TrajectoryChart'
 import StrategyCard from './StrategyCard'
+import mechanisms from '../../data/cognitive_mechanisms.json'
+
+const CATEGORY_COLOR: Record<string, string> = {
+  backfire:           '#dc2626',
+  genuine_persuasion: '#16a34a',
+  surface_mechanism:  '#d97706',
+}
+
+function findMechanismName(id: string): string {
+  return mechanisms.find(m => m.id === id)?.display_name ?? id
+}
+
+function findMechanismFramework(id: string): string {
+  return mechanisms.find(m => m.id === id)?.framework ?? ''
+}
+
+function inflectionPointTurn(outcome: StrategyOutcome): ConversationTurn | undefined {
+  return outcome.turns.find(t => t.is_inflection_point)
+}
 
 const VERDICT_ORDER: Record<VerdictCategory, number> = {
   GENUINE_BELIEF_SHIFT: 0,
@@ -117,6 +136,7 @@ export default function ComparisonReport({ simulation, onViewTranscript, onBackT
               <tbody>
                 {sortedOutcomes.map(outcome => {
                   const row = computeRow(outcome)
+                  const inflection = inflectionPointTurn(outcome)
                   return (
                     <tr
                       key={outcome.strategy_id}
@@ -133,6 +153,24 @@ export default function ComparisonReport({ simulation, onViewTranscript, onBackT
                         >
                           {VERDICT_LABEL[outcome.verdict]}
                         </span>
+                        {inflection && inflection.mechanism_classification && (
+                          <div
+                            data-testid={`inflection-callout-${outcome.strategy_id}`}
+                            className="mt-1.5 pl-2 font-mono text-xs text-[#0f0f0f] opacity-70 leading-snug"
+                            style={{ borderLeft: `2px solid ${CATEGORY_COLOR[inflection.color_category ?? ''] ?? '#0f0f0f'}` }}
+                          >
+                            <span className="font-bold">Turn {inflection.turn_number}</span>
+                            {' — '}
+                            {inflection.persuader_message.slice(0, 80)}{inflection.persuader_message.length > 80 ? '…' : ''}
+                            <br />
+                            <span className="opacity-75">
+                              {findMechanismName(inflection.mechanism_classification.primary_mechanism_id)}
+                              {' · '}
+                              {findMechanismFramework(inflection.mechanism_classification.primary_mechanism_id)}
+                              {inflection.stance_delta != null && ` · Shift: ${inflection.stance_delta > 0 ? '+' : ''}${inflection.stance_delta.toFixed(1)}`}
+                            </span>
+                          </div>
+                        )}
                       </td>
                       <td
                         data-testid={`public-delta-${outcome.strategy_id}`}

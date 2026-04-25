@@ -7,6 +7,13 @@ interface Props {
   currentTurn: number
   strategyDisplayName: string
   personaDisplayName: string
+  onPivotalClick?: (turn: ConversationTurn) => void
+}
+
+const CATEGORY_COLOR: Record<string, string> = {
+  backfire:             '#dc2626',
+  genuine_persuasion:   '#16a34a',
+  surface_mechanism:    '#d97706',
 }
 
 const TYPING_SPEED_MS = 18
@@ -97,7 +104,7 @@ function ChatBubble({ text, isTyping, label, side, annotation, turnNumber, isNew
   )
 }
 
-export default function PublicConversation({ turns, currentTurn, strategyDisplayName, personaDisplayName }: Props) {
+export default function PublicConversation({ turns, currentTurn, strategyDisplayName, personaDisplayName, onPivotalClick }: Props) {
   const bottomRef = useRef<HTMLDivElement>(null)
   const visibleTurns = turns.slice(0, currentTurn + 1)
 
@@ -110,7 +117,7 @@ export default function PublicConversation({ turns, currentTurn, strategyDisplay
       {/* Panel header */}
       <div className="shrink-0 px-5 py-3 border-b-2 border-[#0f0f0f]">
         <p className="text-xs font-mono text-[#0f0f0f] opacity-50 uppercase tracking-widest">
-          Public Conversation — {strategyDisplayName}
+          Persuasion Attempt — {strategyDisplayName}
         </p>
       </div>
 
@@ -119,23 +126,49 @@ export default function PublicConversation({ turns, currentTurn, strategyDisplay
         <AnimatePresence initial={false}>
           {visibleTurns.map((turn, idx) => {
             const isCurrentTurn = idx === currentTurn
+            const isPivotal = turn.is_pivotal === true
+            const category = turn.color_category ?? ''
+            const accentColor = CATEGORY_COLOR[category] ?? null
+
             return (
-              <div key={turn.turn_number} data-testid={`turn-${turn.turn_number}`}>
-                {/* Turn badge */}
-                <div className="flex justify-center mb-3">
+              <div
+                key={turn.turn_number}
+                data-testid={`turn-${turn.turn_number}`}
+                onClick={isPivotal && onPivotalClick ? () => onPivotalClick(turn) : undefined}
+                className={[
+                  'transition-colors duration-150',
+                  isPivotal ? 'cursor-pointer pl-3' : '',
+                ].join(' ')}
+                style={isPivotal && accentColor ? {
+                  borderLeft: `4px solid ${accentColor}`,
+                  paddingLeft: '12px',
+                  backgroundColor: `${accentColor}0d`,
+                } : undefined}
+              >
+                {/* Turn badge + pivotal label */}
+                <div className="flex items-center justify-center gap-2 mb-3">
                   <span className="text-xs font-mono font-bold text-[#0f0f0f] opacity-40 uppercase tracking-widest">
                     Turn {turn.turn_number}
                   </span>
+                  {isPivotal && accentColor && (
+                    <span
+                      data-testid={`pivotal-badge-${turn.turn_number}`}
+                      className="font-mono text-xs font-bold uppercase tracking-wide"
+                      style={{ color: accentColor }}
+                    >
+                      ● PIVOTAL
+                    </span>
+                  )}
                 </div>
 
-                {/* Interviewer message — fades + slides up when new */}
+                {/* Persuader message — fades + slides up when new */}
                 <div className="mb-3">
                   <ChatBubble
-                    text={turn.interviewer_message}
+                    text={turn.persuader_message}
                     isTyping={false}
-                    label="Interviewer"
+                    label="Persuader"
                     side="left"
-                    annotation={turn.interviewer_strategy_note}
+                    annotation={turn.persuader_strategy_note}
                     turnNumber={turn.turn_number}
                     isNew={isCurrentTurn}
                   />
