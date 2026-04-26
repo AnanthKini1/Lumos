@@ -2,21 +2,22 @@ import { useState, useEffect } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import type { SimulationOutput } from './types/simulation'
 import { loadScenario } from './data/loader'
+import LandingPage from './components/landing/LandingPage'
 import SetupScreen from './components/setup/SetupScreen'
 import MindViewer from './components/mindviewer/MindViewer'
 import ComparisonReport from './components/report/ComparisonReport'
 import SourcesPanel from './components/shared/SourcesPanel'
 import MechanismLegend from './components/shared/MechanismLegend'
 
-type Screen = 'setup' | 'mindviewer' | 'report'
+type Screen = 'landing' | 'setup' | 'mindviewer' | 'report'
 
-const STEPS: { key: Screen; label: string }[] = [
+const STEPS: { key: Exclude<Screen, 'landing'>; label: string }[] = [
   { key: 'setup',      label: 'Setup' },
   { key: 'mindviewer', label: 'Mind Viewer' },
   { key: 'report',     label: 'Report' },
 ]
 
-const STEP_IDX: Record<Screen, number> = { setup: 0, mindviewer: 1, report: 2 }
+const STEP_IDX: Record<Exclude<Screen, 'landing'>, number> = { setup: 0, mindviewer: 1, report: 2 }
 
 const fadeVariants = {
   hidden:  { opacity: 0 },
@@ -25,7 +26,7 @@ const fadeVariants = {
 }
 
 function Breadcrumb({ screen, onSourcesOpen }: { screen: Screen; onSourcesOpen: () => void }) {
-  const current = STEP_IDX[screen]
+  const current = screen === 'landing' ? -1 : STEP_IDX[screen]
   return (
     <nav data-testid="breadcrumb" aria-label="Steps" className="flex items-center gap-2 px-6 py-3 bg-[#fafafa] border-b-2 border-[#0f0f0f]">
       {STEPS.map((step, i) => (
@@ -58,7 +59,7 @@ function Breadcrumb({ screen, onSourcesOpen }: { screen: Screen; onSourcesOpen: 
 }
 
 export default function App() {
-  const [screen, setScreen]                         = useState<Screen>('setup')
+  const [screen, setScreen]                         = useState<Screen>('landing')
   const [simulation, setSimulation]                 = useState<SimulationOutput | null>(null)
   const [deepLinkStrategyId, setDeepLinkStrategyId] = useState<string | null>(null)
   const [deepLinkTurnNumber, setDeepLinkTurnNumber] = useState<number | null>(null)
@@ -119,8 +120,10 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-[#fafafa]" data-testid="app-root">
-      {/* Breadcrumb nav */}
-      <Breadcrumb screen={screen} onSourcesOpen={() => setSourcesOpen(true)} />
+      {/* Breadcrumb nav — hidden on landing */}
+      {screen !== 'landing' && (
+        <Breadcrumb screen={screen} onSourcesOpen={() => setSourcesOpen(true)} />
+      )}
 
       {/* Sources drawer */}
       <SourcesPanel
@@ -130,10 +133,23 @@ export default function App() {
       />
 
       {/* Mechanism legend — only visible after setup */}
-      {screen !== 'setup' && <MechanismLegend />}
+      {screen !== 'setup' && screen !== 'landing' && <MechanismLegend />}
 
       {/* Screen transitions */}
       <AnimatePresence mode="wait">
+        {screen === 'landing' && (
+          <motion.div
+            key="landing"
+            variants={fadeVariants}
+            initial="hidden"
+            animate="visible"
+            exit="exit"
+            transition={{ duration: 0.3 }}
+          >
+            <LandingPage onBegin={() => setScreen('setup')} />
+          </motion.div>
+        )}
+
         {screen === 'setup' && (
           <motion.div
             key="setup"

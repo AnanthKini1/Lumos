@@ -8,10 +8,19 @@ import { mockSimulation } from './fixtures'
 vi.mock('framer-motion', () => ({
   AnimatePresence: ({ children }: { children: React.ReactNode }) => <>{children}</>,
   motion: {
-    div: ({ children, ...props }: React.HTMLAttributes<HTMLDivElement> & { variants?: unknown; initial?: unknown; animate?: unknown; exit?: unknown; transition?: unknown }) => (
-      <div {...props}>{children}</div>
-    ),
+    div:    ({ children, ...props }: React.HTMLAttributes<HTMLDivElement> & { variants?: unknown; initial?: unknown; animate?: unknown; exit?: unknown; transition?: unknown; whileHover?: unknown; whileTap?: unknown }) => <div {...props}>{children}</div>,
+    span:   ({ children, ...props }: React.HTMLAttributes<HTMLSpanElement> & { variants?: unknown; initial?: unknown; animate?: unknown; exit?: unknown; transition?: unknown }) => <span {...props}>{children}</span>,
+    button: ({ children, ...props }: React.ButtonHTMLAttributes<HTMLButtonElement> & { variants?: unknown; initial?: unknown; animate?: unknown; exit?: unknown; transition?: unknown; whileHover?: unknown; whileTap?: unknown }) => <button {...props}>{children}</button>,
+    p:      ({ children, ...props }: React.HTMLAttributes<HTMLParagraphElement> & { variants?: unknown; initial?: unknown; animate?: unknown; exit?: unknown; transition?: unknown }) => <p {...props}>{children}</p>,
   },
+}))
+
+vi.mock('../components/landing/LandingPage', () => ({
+  default: ({ onBegin }: { onBegin: () => void }) => (
+    <div data-testid="landing-page">
+      <button onClick={onBegin}>Begin</button>
+    </div>
+  ),
 }))
 
 // Mock child screens so we can test routing without their implementations
@@ -50,11 +59,20 @@ vi.mock('../components/shared/SourcesPanel', () => ({
 }))
 
 describe('App', () => {
-  it('renders setup screen on mount', () => {
+  it('renders landing page on mount', () => {
     render(<App />)
-    expect(screen.getByTestId('setup-screen')).toBeInTheDocument()
+    expect(screen.getByTestId('landing-page')).toBeInTheDocument()
+    expect(screen.queryByTestId('setup-screen')).not.toBeInTheDocument()
     expect(screen.queryByTestId('mind-viewer')).not.toBeInTheDocument()
     expect(screen.queryByTestId('comparison-report')).not.toBeInTheDocument()
+  })
+
+  it('transitions to setup screen after clicking Begin', async () => {
+    const user = userEvent.setup({ delay: null })
+    render(<App />)
+    await user.click(screen.getByText('Begin'))
+    expect(screen.getByTestId('setup-screen')).toBeInTheDocument()
+    expect(screen.queryByTestId('landing-page')).not.toBeInTheDocument()
   })
 
   it('has a fafafa background', () => {
@@ -64,9 +82,9 @@ describe('App', () => {
   })
 
   it('transitions to mind viewer after run simulation', async () => {
-    const user = userEvent.setup()
+    const user = userEvent.setup({ delay: null })
     render(<App />)
-
+    await user.click(screen.getByText('Begin'))
     await user.click(screen.getByText('Run'))
 
     expect(screen.queryByTestId('setup-screen')).not.toBeInTheDocument()
@@ -74,9 +92,9 @@ describe('App', () => {
   })
 
   it('transitions to comparison report from mind viewer', async () => {
-    const user = userEvent.setup()
+    const user = userEvent.setup({ delay: null })
     render(<App />)
-
+    await user.click(screen.getByText('Begin'))
     await user.click(screen.getByText('Run'))
     await user.click(screen.getByText('View Report'))
 
@@ -85,9 +103,9 @@ describe('App', () => {
   })
 
   it('deep-links back to mind viewer with correct strategy id', async () => {
-    const user = userEvent.setup()
+    const user = userEvent.setup({ delay: null })
     render(<App />)
-
+    await user.click(screen.getByText('Begin'))
     await user.click(screen.getByText('Run'))
     await user.click(screen.getByText('View Report'))
     await user.click(screen.getByText('Watch Transcript'))
@@ -98,9 +116,9 @@ describe('App', () => {
   })
 
   it('navigates back to setup from report', async () => {
-    const user = userEvent.setup()
+    const user = userEvent.setup({ delay: null })
     render(<App />)
-
+    await user.click(screen.getByText('Begin'))
     await user.click(screen.getByText('Run'))
     await user.click(screen.getByText('View Report'))
     await user.click(screen.getByText('Back to Setup'))
@@ -110,31 +128,26 @@ describe('App', () => {
   })
 
   it('clears deep link strategy id when starting a new run', async () => {
-    const user = userEvent.setup()
+    const user = userEvent.setup({ delay: null })
     render(<App />)
-
-    // Navigate: setup → run → view report → watch transcript (sets deep link)
+    await user.click(screen.getByText('Begin'))
     await user.click(screen.getByText('Run'))
     await user.click(screen.getByText('View Report'))
     await user.click(screen.getByText('Watch Transcript'))
 
-    // Should be in mindviewer with strategy deep link
     expect(screen.getByTestId('mind-viewer').dataset.strategy).toBe('strategy_personal_narrative')
 
-    // Navigate back to report then back to setup
     await user.click(screen.getByText('View Report'))
     await user.click(screen.getByText('Back to Setup'))
-
-    // Run a fresh simulation — deep link should be cleared
     await user.click(screen.getByText('Run'))
 
     expect(screen.getByTestId('mind-viewer').dataset.strategy).toBe('')
   })
 
   it('deep-links to mind viewer with correct turn number from quote click', async () => {
-    const user = userEvent.setup()
+    const user = userEvent.setup({ delay: null })
     render(<App />)
-
+    await user.click(screen.getByText('Begin'))
     await user.click(screen.getByText('Run'))
     await user.click(screen.getByText('View Report'))
     await user.click(screen.getByText('Watch Transcript Turn 2'))
@@ -145,21 +158,28 @@ describe('App', () => {
     expect(viewer.dataset.turn).toBe('2')
   })
 
-  it('does not show mindviewer or report when simulation is null', () => {
+  it('does not show mindviewer or report on initial render', () => {
     render(<App />)
-    // Initial state: no simulation loaded, setup screen is shown
-    expect(screen.getByTestId('setup-screen')).toBeInTheDocument()
     expect(screen.queryByTestId('mind-viewer')).not.toBeInTheDocument()
     expect(screen.queryByTestId('comparison-report')).not.toBeInTheDocument()
   })
 
-  it('shows breadcrumb navigation', () => {
+  it('hides breadcrumb on landing screen', () => {
     render(<App />)
+    expect(screen.queryByTestId('breadcrumb')).not.toBeInTheDocument()
+  })
+
+  it('shows breadcrumb navigation after Begin', async () => {
+    const user = userEvent.setup({ delay: null })
+    render(<App />)
+    await user.click(screen.getByText('Begin'))
     expect(screen.getByTestId('breadcrumb')).toBeInTheDocument()
   })
 
-  it('breadcrumb highlights Setup on initial render', () => {
+  it('breadcrumb highlights Setup after Begin', async () => {
+    const user = userEvent.setup({ delay: null })
     render(<App />)
+    await user.click(screen.getByText('Begin'))
     const setupStep = screen.getByTestId('breadcrumb-step-setup')
     expect(setupStep.className).toContain('font-bold')
     expect(setupStep.className).toContain('underline')
@@ -168,6 +188,7 @@ describe('App', () => {
   it('breadcrumb highlights Mind Viewer after running simulation', async () => {
     const user = userEvent.setup({ delay: null })
     render(<App />)
+    await user.click(screen.getByText('Begin'))
     await user.click(screen.getByText('Run'))
     const mindviewerStep = screen.getByTestId('breadcrumb-step-mindviewer')
     expect(mindviewerStep.className).toContain('font-bold')
@@ -177,6 +198,7 @@ describe('App', () => {
   it('breadcrumb highlights Report after viewing report', async () => {
     const user = userEvent.setup({ delay: null })
     render(<App />)
+    await user.click(screen.getByText('Begin'))
     await user.click(screen.getByText('Run'))
     await user.click(screen.getByText('View Report'))
     const reportStep = screen.getByTestId('breadcrumb-step-report')
@@ -184,19 +206,24 @@ describe('App', () => {
     expect(reportStep.className).toContain('underline')
   })
 
-  it('shows Sources & Methodology trigger button', () => {
+  it('shows Sources & Methodology trigger button after Begin', async () => {
+    const user = userEvent.setup({ delay: null })
     render(<App />)
+    await user.click(screen.getByText('Begin'))
     expect(screen.getByTestId('sources-trigger')).toBeInTheDocument()
   })
 
-  it('sources panel starts closed', () => {
+  it('sources panel starts closed', async () => {
+    const user = userEvent.setup({ delay: null })
     render(<App />)
+    await user.click(screen.getByText('Begin'))
     expect(screen.getByTestId('sources-panel')).toHaveAttribute('data-open', 'false')
   })
 
   it('clicking sources trigger opens the panel', async () => {
     const user = userEvent.setup({ delay: null })
     render(<App />)
+    await user.click(screen.getByText('Begin'))
     await user.click(screen.getByTestId('sources-trigger'))
     expect(screen.getByTestId('sources-panel')).toHaveAttribute('data-open', 'true')
   })
@@ -204,6 +231,7 @@ describe('App', () => {
   it('closing sources panel sets it back to closed', async () => {
     const user = userEvent.setup({ delay: null })
     render(<App />)
+    await user.click(screen.getByText('Begin'))
     await user.click(screen.getByTestId('sources-trigger'))
     await user.click(screen.getByText('Close Sources'))
     expect(screen.getByTestId('sources-panel')).toHaveAttribute('data-open', 'false')
