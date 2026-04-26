@@ -25,6 +25,18 @@ function findMechanism(id: string) {
   return mechanisms.find(m => m.id === id)
 }
 
+// Converts legacy snake_case identity threat strings (e.g. "intelligence_and_identity_as_thoughtful_person")
+// to readable prose. No-ops on already well-formed sentences.
+function formatIdentityThreat(raw: string | null | undefined): string {
+  if (!raw) return ''
+  // If it looks like a variable name (no spaces, contains underscores), convert it
+  if (!raw.includes(' ') && raw.includes('_')) {
+    const words = raw.replace(/_/g, ' ')
+    return `Their ${words} felt threatened.`
+  }
+  return raw
+}
+
 interface Props {
   outcomes: StrategyOutcome[]
 }
@@ -57,7 +69,7 @@ export default function ConversationTimeline({ outcomes }: Props) {
 
       {/* Strategy selector pills — only shown when there are multiple outcomes */}
       {outcomes.length > 1 && (
-        <div className="flex gap-3 mb-8 flex-wrap">
+        <div className="flex gap-3 mb-8 overflow-x-auto justify-center">
           {outcomes.map((outcome, idx) => (
             <button
               key={outcome.strategy_id}
@@ -184,7 +196,11 @@ function TurnSynthesis({ turn }: TurnSynthesisProps) {
           Round {turn.turn_number}
         </span>
 
-        {turn.stance_delta != null && turn.stance_delta !== 0 && (
+        {turn.stance_delta === 0 ? (
+          <span className="font-mono text-xs font-bold px-2 py-0.5 border border-[#0f0f0f] text-[#0f0f0f] opacity-40">
+            No shift
+          </span>
+        ) : (
           <span
             className="font-mono text-xs font-bold px-2 py-0.5 border"
             style={{ color, borderColor: color }}
@@ -203,49 +219,62 @@ function TurnSynthesis({ turn }: TurnSynthesisProps) {
         )}
       </div>
 
-      {/* Mechanism block */}
+      {/* Internal monologue — what the persona was actually thinking */}
+      <div>
+        <p className="font-mono text-xs uppercase tracking-widest text-[#0f0f0f] opacity-50 mb-2">
+          Internal Monologue
+        </p>
+        <p className="font-serif text-sm text-[#0f0f0f] leading-relaxed italic opacity-80">
+          "{turn.persona_output.internal_monologue}"
+        </p>
+      </div>
+
+      {/* Identity threat — only shown on significant shifts */}
+      {turn.is_pivotal && turn.persona_output.identity_threat.threatened && (
+        <div
+          className="px-4 py-3 space-y-1"
+          style={{ borderLeft: `3px solid ${CATEGORY_COLOR.backfire}` }}
+        >
+          <p className="font-mono text-xs uppercase tracking-widest opacity-50 text-[#0f0f0f]">
+            Identity Threatened
+          </p>
+          <p className="font-serif text-sm text-[#0f0f0f] leading-relaxed">
+            {formatIdentityThreat(turn.persona_output.identity_threat.what_was_threatened)}
+          </p>
+        </div>
+      )}
+
+      {/* Cognitive mechanism — explains WHY this happened psychologically */}
       {mechData && turn.mechanism_classification ? (
         <div
           className="space-y-3 pl-4"
           style={{ borderLeft: `3px solid ${color}` }}
         >
-          {/* Mechanism identity */}
           <div>
             <p className="font-mono text-xs uppercase tracking-widest text-[#0f0f0f] opacity-50 mb-1">
-              Active Mechanism
+              Cognitive Mechanism Triggered
             </p>
-            <p className="font-serif font-bold text-xl text-[#0f0f0f]">{mechData.display_name}</p>
+            <p className="font-serif font-bold text-lg text-[#0f0f0f]">{mechData.display_name}</p>
             <p className="font-mono text-xs text-[#0f0f0f] opacity-50 mt-0.5">{mechData.framework}</p>
           </div>
 
-          {/* Operational definition */}
           <p className="font-serif text-sm text-[#0f0f0f] opacity-70 leading-relaxed">
             {mechData.operational_definition}
           </p>
 
-          {/* Turn-specific explanation */}
           {turn.mechanism_classification.explanation && (
-            <div>
-              <p className="font-mono text-xs uppercase tracking-widest text-[#0f0f0f] opacity-50 mb-1">
-                In This Round
-              </p>
-              <p className="font-serif text-sm text-[#0f0f0f] leading-relaxed">
-                {turn.mechanism_classification.explanation}
-              </p>
-            </div>
+            <p className="font-serif text-sm text-[#0f0f0f] leading-relaxed">
+              {turn.mechanism_classification.explanation}
+            </p>
           )}
 
-          {/* Evidence quotes */}
           {turn.mechanism_classification.evidence_quotes.length > 0 && (
             <div className="space-y-2">
               <p className="font-mono text-xs uppercase tracking-widest text-[#0f0f0f] opacity-50">
-                Evidence
+                From the Persona's Response
               </p>
               {turn.mechanism_classification.evidence_quotes.slice(0, 2).map((q, i) => (
-                <p
-                  key={i}
-                  className="font-serif text-xs italic text-[#0f0f0f] opacity-60 leading-relaxed"
-                >
+                <p key={i} className="font-serif text-xs italic text-[#0f0f0f] opacity-60 leading-relaxed">
                   "{q}"
                 </p>
               ))}
@@ -254,13 +283,8 @@ function TurnSynthesis({ turn }: TurnSynthesisProps) {
         </div>
       ) : (
         <div>
-          <p className="font-mono text-xs uppercase tracking-widest text-[#0f0f0f] opacity-40 mb-2">
+          <p className="font-mono text-xs uppercase tracking-widest text-[#0f0f0f] opacity-40 mb-1">
             No Mechanism Classified
-          </p>
-          <p className="font-serif text-sm text-[#0f0f0f] opacity-60 leading-relaxed">
-            {turn.persuader_message.length > 200
-              ? `${turn.persuader_message.slice(0, 200)}…`
-              : turn.persuader_message}
           </p>
         </div>
       )}
