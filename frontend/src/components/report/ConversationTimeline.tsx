@@ -51,11 +51,9 @@ export default function ConversationTimeline({ outcomes }: Props) {
   return (
     <div data-testid="conversation-timeline">
       {/* Section header */}
-      <div className="bg-[#0f0f0f] -mx-8 px-8 py-3 mb-8">
-        <p className="text-sm font-mono font-bold text-[#fafafa] uppercase tracking-widest">
-          Conversation Timeline
-        </p>
-      </div>
+      <p className="font-mono font-bold text-[#0f0f0f] uppercase tracking-widest text-2xl text-center mb-8">
+        Conversation Timeline
+      </p>
 
       {/* Strategy selector pills — only shown when there are multiple outcomes */}
       {outcomes.length > 1 && (

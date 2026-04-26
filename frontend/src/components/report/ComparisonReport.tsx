@@ -112,7 +112,7 @@ export default function ComparisonReport({ simulation, onViewTranscript, onBackT
 
         {/* Insight synthesis */}
         <div data-testid="synthesis-card">
-          <p className="text-xs font-mono font-bold text-[#0f0f0f] uppercase tracking-widest mb-4">Synthesis</p>
+          <p className="text-xs font-mono font-bold text-[#0f0f0f] uppercase tracking-widest mb-4">Overall Synthesis</p>
           <div className="border-2 border-[#0f0f0f] p-8">
             <p className="text-3xl font-serif leading-snug text-[#0f0f0f]">{overall_synthesis}</p>
             {validation_note && (
