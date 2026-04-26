@@ -15,20 +15,32 @@ interface PersonaCardProps {
   persona: PersonaProfile
   selected: boolean
   onSelect: () => void
+  onViewProfile: () => void
 }
 
-function PersonaCard({ persona, selected, onSelect }: PersonaCardProps) {
+function PersonaCard({ persona, selected, onSelect, onViewProfile }: PersonaCardProps) {
   return (
     <button
       onClick={onSelect}
       data-testid={`persona-card-${persona.id}`}
       className={[
-        'w-full text-left p-6 transition-colors duration-150',
+        'relative w-full text-left p-6 transition-colors duration-150',
         selected
           ? 'border-4 border-[#0f0f0f] bg-white text-[#0f0f0f]'
           : 'border-2 border-[#0f0f0f] bg-white text-[#0f0f0f] hover:bg-[#f0f0f0]',
       ].join(' ')}
     >
+      <button
+        data-testid={`view-profile-${persona.id}`}
+        onClick={e => { e.stopPropagation(); onViewProfile() }}
+        title="View full profile"
+        className="absolute top-3 right-3 p-1 opacity-40 hover:opacity-100 transition-opacity"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4">
+          <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+          <circle cx="12" cy="12" r="3" />
+        </svg>
+      </button>
       <p className="font-bold text-xl font-serif leading-tight mb-1">{persona.display_name}</p>
       <p className="text-sm font-mono mb-3 opacity-70">{persona.demographic_shorthand}</p>
       <p className="text-sm font-serif mb-3">
@@ -226,8 +238,11 @@ export default function SetupScreen({ onRunSimulation }: Props) {
     }
   }
 
-  function handlePersonaClick(persona: PersonaProfile) {
+  function handlePersonaSelect(persona: PersonaProfile) {
     setSelectedPersonaId(persona.id)
+  }
+
+  function handlePersonaViewProfile(persona: PersonaProfile) {
     setPanelPersona(persona)
   }
 
@@ -252,7 +267,7 @@ export default function SetupScreen({ onRunSimulation }: Props) {
               <h2 className="text-2xl font-bold font-serif text-[#0f0f0f]">Select a Persona</h2>
             </div>
             <p className="font-serif text-base text-[#0f0f0f] opacity-60 pl-11">
-              Each persona is grounded in published psychographic research. Click any card to read their full profile.
+              Each persona is grounded in published psychographic research. Click any card to select. Use the eye icon to view their full profile.
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -261,7 +276,8 @@ export default function SetupScreen({ onRunSimulation }: Props) {
                 key={persona.id}
                 persona={persona}
                 selected={selectedPersonaId === persona.id}
-                onSelect={() => handlePersonaClick(persona)}
+                onSelect={() => handlePersonaSelect(persona)}
+                onViewProfile={() => handlePersonaViewProfile(persona)}
               />
             ))}
           </div>

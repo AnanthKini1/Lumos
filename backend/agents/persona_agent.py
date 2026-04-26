@@ -63,7 +63,14 @@ _PERSONA_TOOL = {
             },
             "identity_what_threatened": {
                 "type": "string",
-                "description": "Which value or self-concept felt under attack. Leave empty if not threatened.",
+                "description": (
+                    "One to two complete sentences in proper English, written in third person, describing "
+                    "what aspect of the persona's identity felt threatened. "
+                    "Example: 'Their sense of themselves as an informed, independent thinker is under attack. "
+                    "Being told what to believe feels like a dismissal of their intelligence.' "
+                    "NEVER use snake_case, camelCase, underscores, variable names, or JSON key names. "
+                    "Write only plain prose sentences. Leave empty string if not threatened."
+                ),
             },
             "identity_response_inclination": {
                 "type": "string",

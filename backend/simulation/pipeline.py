@@ -32,6 +32,7 @@ from measurement.scorer import score_conversation
 from measurement.verdict import compute_verdict
 from models import (
     CognitiveScores,
+    MechanismClassification,
     PersistenceResult,
     SimulationMetadata,
     SimulationOutput,
@@ -232,20 +233,61 @@ async def _build_outcome(
 
         _annotate_pivotal_moments(turns, starting_stance)
 
-        # Classify each pivotal turn against the cognitive mechanism library
+        # Classify each pivotal turn against the cognitive mechanism library.
+        # Pivotal turns (|delta| >= 1.0) MUST have a mechanism; retry up to 2
+        # extra times on transient failure, then apply a deterministic fallback
+        # so no pivotal turn ever silently lacks a classification.
         for turn in turns:
             if turn.is_pivotal:
-                try:
-                    classification = await classify_mechanism(
-                        persuader_phrase=turn.persuader_message,
-                        persona_monologue=turn.persona_output.internal_monologue,
-                        stance_delta=turn.stance_delta,
-                        mechanisms=mechanisms,
+                classification = None
+                last_exc: Exception | None = None
+                for attempt in range(3):
+                    try:
+                        classification = await classify_mechanism(
+                            persuader_phrase=turn.persuader_message,
+                            persona_monologue=turn.persona_output.internal_monologue,
+                            stance_delta=turn.stance_delta,
+                            mechanisms=mechanisms,
+                        )
+                        break
+                    except Exception as exc:
+                        last_exc = exc
+                        print(
+                            f"WARN: mechanism classification attempt {attempt + 1}/3 "
+                            f"failed turn={turn.turn_number}: {exc}"
+                        )
+
+                if classification is None:
+                    # Deterministic fallback: pick the first mechanism whose category
+                    # matches the shift direction (toward = genuine_persuasion,
+                    # away = backfire).  This guarantees every pivotal turn has a
+                    # mechanism even when the LLM is unavailable.
+                    fallback_cat = "genuine_persuasion" if turn.stance_delta < 0 else "backfire"
+                    fallback_mech = next(
+                        (m for m in mechanisms if m["category"] == fallback_cat),
+                        mechanisms[0],
                     )
-                    turn.mechanism_classification = classification
-                    turn.color_category = classification.color_category
-                except Exception as exc:
-                    print(f"WARN: mechanism classification failed turn={turn.turn_number}: {exc}")
+                    max_abs = 10.0
+                    intensity = round(min(abs(turn.stance_delta) / max_abs, 1.0), 3)
+                    classification = MechanismClassification(
+                        primary_mechanism_id=fallback_mech["id"],
+                        secondary_mechanism_id=None,
+                        explanation=(
+                            f"Classification could not be completed by the LLM agent "
+                            f"(last error: {last_exc}). A fallback based on shift "
+                            f"direction ({fallback_cat}) has been applied."
+                        ),
+                        evidence_quotes=[],
+                        color_category=fallback_cat,
+                        intensity=intensity,
+                    )
+                    print(
+                        f"INFO: applied fallback mechanism '{fallback_mech['id']}' "
+                        f"to turn={turn.turn_number} (delta={turn.stance_delta:+.1f})"
+                    )
+
+                turn.mechanism_classification = classification
+                turn.color_category = classification.color_category
 
         cooling = await run_cooling_off(persona, turns, topic.context_briefing)
         trajectory = _build_trajectory(starting_stance, turns, cooling)

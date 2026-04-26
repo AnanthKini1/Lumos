@@ -103,20 +103,28 @@ describe('SetupScreen', () => {
     expect(screen.getByTestId('run-button')).not.toBeDisabled()
   })
 
-  it('clicking persona card opens profile panel', async () => {
+  it('clicking eye icon opens profile panel', async () => {
     const user = userEvent.setup()
     render(<SetupScreen onRunSimulation={mockOnRunSimulation} />)
 
     expect(screen.queryByTestId('profile-panel')).not.toBeInTheDocument()
-    await user.click(await screen.findByTestId('persona-card-persona_skeptical_traditionalist'))
+    await user.click(await screen.findByTestId('view-profile-persona_skeptical_traditionalist'))
     expect(screen.getByTestId('profile-panel')).toBeInTheDocument()
+  })
+
+  it('clicking persona card does not open profile panel', async () => {
+    const user = userEvent.setup()
+    render(<SetupScreen onRunSimulation={mockOnRunSimulation} />)
+
+    await user.click(await screen.findByTestId('persona-card-persona_skeptical_traditionalist'))
+    expect(screen.queryByTestId('profile-panel')).not.toBeInTheDocument()
   })
 
   it('profile panel shows first-person description', async () => {
     const user = userEvent.setup()
     render(<SetupScreen onRunSimulation={mockOnRunSimulation} />)
 
-    await user.click(await screen.findByTestId('persona-card-persona_skeptical_traditionalist'))
+    await user.click(await screen.findByTestId('view-profile-persona_skeptical_traditionalist'))
     expect(screen.getByText(/thirty years in a classroom/i)).toBeInTheDocument()
   })
 
@@ -124,7 +132,7 @@ describe('SetupScreen', () => {
     const user = userEvent.setup()
     render(<SetupScreen onRunSimulation={mockOnRunSimulation} />)
 
-    await user.click(await screen.findByTestId('persona-card-persona_skeptical_traditionalist'))
+    await user.click(await screen.findByTestId('view-profile-persona_skeptical_traditionalist'))
     expect(screen.getByText(/lectured to/i)).toBeInTheDocument()
     expect(screen.getByText(/asked about their experience/i)).toBeInTheDocument()
   })
@@ -133,7 +141,7 @@ describe('SetupScreen', () => {
     const user = userEvent.setup()
     render(<SetupScreen onRunSimulation={mockOnRunSimulation} />)
 
-    await user.click(await screen.findByTestId('persona-card-persona_skeptical_traditionalist'))
+    await user.click(await screen.findByTestId('view-profile-persona_skeptical_traditionalist'))
     const link = screen.getByText(/view original research/i)
     expect(link).toBeInTheDocument()
     expect(link.closest('a')).toHaveAttribute('href', expect.stringContaining('pewresearch.org'))
@@ -143,7 +151,7 @@ describe('SetupScreen', () => {
     const user = userEvent.setup()
     render(<SetupScreen onRunSimulation={mockOnRunSimulation} />)
 
-    await user.click(await screen.findByTestId('persona-card-persona_skeptical_traditionalist'))
+    await user.click(await screen.findByTestId('view-profile-persona_skeptical_traditionalist'))
     expect(screen.getByTestId('profile-panel')).toBeInTheDocument()
 
     await user.click(screen.getByTestId('close-profile-panel'))
@@ -154,7 +162,7 @@ describe('SetupScreen', () => {
     const user = userEvent.setup()
     render(<SetupScreen onRunSimulation={mockOnRunSimulation} />)
 
-    await user.click(await screen.findByTestId('persona-card-persona_skeptical_traditionalist'))
+    await user.click(await screen.findByTestId('view-profile-persona_skeptical_traditionalist'))
     await user.click(screen.getByTestId('panel-overlay'))
     expect(screen.queryByTestId('profile-panel')).not.toBeInTheDocument()
   })
