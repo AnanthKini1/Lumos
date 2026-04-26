@@ -57,33 +57,66 @@ function injectCitations(paragraph: string): React.ReactNode[] {
     )
     if (!meta) return part
 
-    const sup = (
-      <sup key={`cite-${i}`} className="ml-0.5">
-        {meta.citationUrl ? (
-          <a
-            href={meta.citationUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="font-mono text-[10px] text-[#0f0f0f] opacity-50 hover:opacity-100 underline transition-opacity"
-            title={meta.citation}
-          >
-            [{meta.framework}]
-          </a>
-        ) : (
-          <span
-            className="font-mono text-[10px] text-[#0f0f0f] opacity-50 cursor-help"
-            title={meta.citation}
-          >
-            [{meta.framework}]
-          </span>
-        )}
-      </sup>
+    const indicator = meta.citationUrl ? (
+      <a
+        key={`cite-${i}`}
+        href={meta.citationUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        title={meta.citation}
+        className="group relative inline-block ml-0.5 align-middle"
+        style={{ textDecoration: 'none' }}
+      >
+        {/* Small superscript dot */}
+        <span
+          className="inline-flex items-center justify-center rounded-full font-mono font-bold leading-none
+                     text-[#fafafa] bg-[#0f0f0f] opacity-30 group-hover:opacity-80
+                     transition-opacity duration-200 cursor-pointer select-none"
+          style={{ width: '12px', height: '12px', fontSize: '7px', verticalAlign: 'super' }}
+        >
+          ¹
+        </span>
+        {/* Tooltip */}
+        <span
+          className="pointer-events-none absolute bottom-full left-1/2 -translate-x-1/2 mb-1.5
+                     whitespace-nowrap font-mono text-[10px] text-[#fafafa] bg-[#0f0f0f]
+                     px-2 py-1 opacity-0 group-hover:opacity-100
+                     transition-opacity duration-200 z-50"
+          style={{ borderRadius: '2px' }}
+        >
+          {meta.citation}
+        </span>
+      </a>
+    ) : (
+      <span
+        key={`cite-${i}`}
+        title={meta.citation}
+        className="group relative inline-block ml-0.5 align-middle cursor-help"
+      >
+        <span
+          className="inline-flex items-center justify-center rounded-full font-mono font-bold leading-none
+                     text-[#fafafa] bg-[#0f0f0f] opacity-30 group-hover:opacity-80
+                     transition-opacity duration-200 select-none"
+          style={{ width: '12px', height: '12px', fontSize: '7px', verticalAlign: 'super' }}
+        >
+          ¹
+        </span>
+        <span
+          className="pointer-events-none absolute bottom-full left-1/2 -translate-x-1/2 mb-1.5
+                     whitespace-nowrap font-mono text-[10px] text-[#fafafa] bg-[#0f0f0f]
+                     px-2 py-1 opacity-0 group-hover:opacity-100
+                     transition-opacity duration-200 z-50"
+          style={{ borderRadius: '2px' }}
+        >
+          {meta.citation}
+        </span>
+      </span>
     )
 
     return (
       <span key={`mech-${i}`}>
         {part}
-        {sup}
+        {indicator}
       </span>
     )
   })
