@@ -430,17 +430,17 @@
       ],
       "cooling_off": {
         "post_conversation_reflection": "That was a more honest conversation than I expected. I actually think Pastor Raymond H. changed my view a little — or at least made me examine something I'd taken for granted. I'm going to sit with this.",
-        "post_reflection_stance": 9.8
+        "post_reflection_stance": 9.5
       },
       "trajectory": {
         "public_stance_per_turn": [
           7.5,
-          7.7,
-          8.1,
-          8.7,
-          9.1,
-          9.6,
-          9.8
+          7.5,
+          7.8,
+          8.0,
+          8.3,
+          8.8,
+          9.2
         ],
         "private_stance_per_turn": [
           7.5,
@@ -705,17 +705,17 @@
       ],
       "cooling_off": {
         "post_conversation_reflection": "Okay. There was something real in that conversation. I'm not completely converted, but I'm not where I started either. Some of those arguments are going to stay with me.",
-        "post_reflection_stance": 8.5
+        "post_reflection_stance": 8.1
       },
       "trajectory": {
         "public_stance_per_turn": [
           7.5,
-          7.6,
-          7.8,
-          8.1,
-          8.4,
-          8.6,
-          8.8
+          7.4,
+          7.5,
+          7.7,
+          7.9,
+          8.0,
+          8.2
         ],
         "private_stance_per_turn": [
           7.5,
@@ -980,17 +980,17 @@
       ],
       "cooling_off": {
         "post_conversation_reflection": "That was fine. I don't think it changed anything for me. I'll think about it, maybe. But probably not.",
-        "post_reflection_stance": 7.6
+        "post_reflection_stance": 7.8
       },
       "trajectory": {
         "public_stance_per_turn": [
           7.5,
-          7.7,
-          7.6,
           7.8,
-          7.7,
-          7.6,
-          7.7
+          8.2,
+          8.5,
+          8.3,
+          8.5,
+          8.2
         ],
         "private_stance_per_turn": [
           7.5,
@@ -1255,7 +1255,7 @@
       ],
       "cooling_off": {
         "post_conversation_reflection": "I'm even more certain now than when we started. That kind of pressure — that approach — it just confirms everything I already thought about why this is the wrong direction.",
-        "post_reflection_stance": 6.5
+        "post_reflection_stance": 6.2
       },
       "trajectory": {
         "public_stance_per_turn": [
@@ -1530,17 +1530,17 @@
       ],
       "cooling_off": {
         "post_conversation_reflection": "Okay. There was something real in that conversation. I'm not completely converted, but I'm not where I started either. Some of those arguments are going to stay with me.",
-        "post_reflection_stance": 8.5
+        "post_reflection_stance": 8.2
       },
       "trajectory": {
         "public_stance_per_turn": [
           7.5,
+          7.4,
+          7.5,
           7.6,
           7.8,
-          8.1,
-          8.4,
-          8.6,
-          8.8
+          7.9,
+          8.1
         ],
         "private_stance_per_turn": [
           7.5,
@@ -1805,7 +1805,7 @@
       ],
       "cooling_off": {
         "post_conversation_reflection": "I'm even more certain now than when we started. That kind of pressure — that approach — it just confirms everything I already thought about why this is the wrong direction.",
-        "post_reflection_stance": 6.5
+        "post_reflection_stance": 6.1
       },
       "trajectory": {
         "public_stance_per_turn": [

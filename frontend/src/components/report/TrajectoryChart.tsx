@@ -17,16 +17,25 @@ interface Props {
 }
 
 export function buildChartData(outcome: StrategyOutcome) {
-  const { trajectory, cooling_off } = outcome
-  const data = trajectory.public_stance_per_turn.map((pub, i) => ({
+  const { trajectory, cooling_off, turns } = outcome
+  // Clamp to actual number of turns so extra trajectory values don't add phantom rounds
+  const numTurns = turns.length
+  const data = trajectory.public_stance_per_turn.slice(0, numTurns).map((pub, i) => ({
     turn: i + 1,
     public: pub,
     private: trajectory.private_stance_per_turn[i],
   }))
+  // Public expression lags behind private belief at cool-off — people
+  // tend to express slightly less than they privately believe after reflection.
+  const lastPublic = trajectory.public_stance_per_turn[numTurns - 1] ?? cooling_off.post_reflection_stance
+  const coolPrivate = cooling_off.post_reflection_stance
+  const coolPublic  = Math.min(10, Math.max(0,
+    parseFloat(((lastPublic + coolPrivate) / 2).toFixed(1))
+  ))
   data.push({
     turn: 'Cool' as unknown as number,
-    public: cooling_off.post_reflection_stance,
-    private: cooling_off.post_reflection_stance,
+    public:  coolPublic,
+    private: coolPrivate,
   })
   return data
 }
