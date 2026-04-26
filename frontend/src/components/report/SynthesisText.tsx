@@ -34,12 +34,17 @@ const MECHANISM_REGEX = new RegExp(
   'gi'
 )
 
+// Matches inline citations the LLM writes after mechanism names, e.g. "(Kahan, 2010)"
+// We strip these because SynthesisText renders its own linked superscript instead.
+const INLINE_CITATION_RE = /\s*\([A-Z][^)]{2,40},\s*\d{4}[a-z]?\)/g
+
 function sanitize(raw: string): string {
   return raw
-    .replace(/ \/ /g, ' and ')   // slash-delimited lists → "and"
-    .replace(/\/(?=\S)/g, ' ')   // residual slashes with no spaces
-    .replace(/,\./g, '.')        // comma-period artifact
-    .replace(/\.{2,}/g, '.')     // multiple dots
+    .replace(/ \/ /g, ' and ')    // slash-delimited lists → "and"
+    .replace(/\/(?=\S)/g, ' ')    // residual slashes with no spaces
+    .replace(INLINE_CITATION_RE, '') // strip "(Author, Year)" — replaced by linked superscript
+    .replace(/,\./g, '.')         // comma-period artifact
+    .replace(/\.{2,}/g, '.')      // multiple dots
     .replace(/[^\S\n]{2,}/g, ' ') // double spaces (preserve newlines for paragraph split)
     .trim()
 }
