@@ -26,6 +26,7 @@ import anthropic
 
 from config import ANTHROPIC_API_KEY, API_MAX_RETRIES, DEFAULT_TURNS, MODEL_ID, OUTPUT_DIR
 from agents.mechanism_agent import classify_mechanism
+from agents.strategy_judge import run_strategy_judge
 from data.loader import list_all, load_cognitive_mechanisms, load_persona, load_strategy, load_topic
 from measurement.scorer import score_conversation
 from measurement.verdict import compute_verdict
@@ -250,9 +251,14 @@ async def _build_outcome(
         trajectory = _build_trajectory(starting_stance, turns, cooling)
 
         try:
-            scores, quotes, synthesis = await score_conversation(turns, cooling)
+            scores, quotes, _ = await score_conversation(turns, cooling)
         except NotImplementedError:
-            scores, quotes, synthesis = _stub_scores(turns, cooling)
+            scores, quotes, _ = _stub_scores(turns, cooling)
+
+        # Strategy-specific judge: mechanism-grounded synthesis replacing the
+        # generic scorer synthesis. Each judge specializes in its strategy's
+        # target mechanism and evaluates whether it fired.
+        synthesis = await run_strategy_judge(strategy, turns, cooling, mechanisms)
 
         verdict, reasoning = compute_verdict(trajectory, scores, starting_stance)
 
