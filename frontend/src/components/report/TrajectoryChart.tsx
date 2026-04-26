@@ -17,11 +17,11 @@ interface Props {
 }
 
 export function buildChartData(outcome: StrategyOutcome) {
-  const { trajectory, cooling_off } = outcome
-  const data = trajectory.public_stance_per_turn.map((pub, i) => ({
+  const { turns, cooling_off } = outcome
+  const data = turns.map((turn, i) => ({
     turn: i + 1,
-    public: pub,
-    private: trajectory.private_stance_per_turn[i],
+    public: turn.persona_output.public_stance,
+    private: turn.persona_output.private_stance,
   }))
   data.push({
     turn: 'Cool' as unknown as number,

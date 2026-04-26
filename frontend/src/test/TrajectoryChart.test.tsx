@@ -28,12 +28,12 @@ describe('buildChartData', () => {
 
   it('first point uses turn 1 public/private stance values', () => {
     const data = buildChartData(mockNarrativeOutcome)
-    expect(data[0]).toMatchObject({ turn: 1, public: 7.0, private: 7.0 })
+    expect(data[0]).toMatchObject({ turn: 1, public: 6.5, private: 6.2 })
   })
 
   it('second point uses turn 2 values', () => {
     const data = buildChartData(mockNarrativeOutcome)
-    expect(data[1]).toMatchObject({ turn: 2, public: 6.5, private: 6.2 })
+    expect(data[1]).toMatchObject({ turn: 2, public: 7.0, private: 7.8 })
   })
 
   it('last point is the cooling-off point with post_reflection_stance for both lines', () => {
@@ -47,7 +47,7 @@ describe('buildChartData', () => {
   it('builds correct data for authority expert outcome', () => {
     const data = buildChartData(mockAuthorityOutcome)
     expect(data).toHaveLength(3)
-    expect(data[1]).toMatchObject({ turn: 2, public: 6.0, private: 7.5 })
+    expect(data[1]).toMatchObject({ turn: 2, public: 7.0, private: 7.8 })
   })
 })
 
