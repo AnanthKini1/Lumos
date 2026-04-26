@@ -1,5 +1,7 @@
 # Lumos — Internal Mind Simulator
 
+**Team:** Isak Pederson · Timothy Llata · Ananth Kini
+
 **What it is:** An AI simulation that models the interior cognition of a person being persuaded. Not just whether stance changes — what's actually happening inside the mind as it does (or doesn't). Public speech versus private thought. Surface compliance versus genuine belief shift. The mechanism of persuasion, not just the outcome.
 
 **Built for:** Hacktech 2026, April 24–26, Caltech. Target track: Listen Labs "Simulate Humanity" ($3,000 prize + interview). Listen Labs runs AI-moderated interviews with real customers; our project models the cognitive substrate underneath anyone who needs to genuinely understand how humans respond to different conversational approaches.
