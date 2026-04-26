@@ -20,6 +20,19 @@ describe('PublicConversation', () => {
     expect(screen.getByText(/Personal Narrative/i)).toBeInTheDocument()
   })
 
+  it('shows "Persuasion Attempt" eyebrow label separately', () => {
+    render(<PublicConversation turns={turns} currentTurn={0} strategyDisplayName="Personal Narrative" personaDisplayName="Karen M." />)
+    expect(screen.getByText('Persuasion Attempt')).toBeInTheDocument()
+  })
+
+  it('renders strategy name as bold header with data-testid', () => {
+    render(<PublicConversation turns={turns} currentTurn={0} strategyDisplayName="Personal Narrative" personaDisplayName="Karen M." />)
+    const header = screen.getByTestId('strategy-name-header')
+    expect(header).toBeInTheDocument()
+    expect(header).toHaveTextContent('Personal Narrative')
+    expect(header.className).toContain('font-bold')
+  })
+
   it('renders only turns up to currentTurn (turn 0 → 1 visible turn)', () => {
     render(<PublicConversation turns={turns} currentTurn={0} strategyDisplayName="Personal Narrative" personaDisplayName="Karen M." />)
     expect(screen.getByTestId('turn-1')).toBeInTheDocument()

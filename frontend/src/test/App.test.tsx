@@ -24,17 +24,18 @@ vi.mock('../components/setup/SetupScreen', () => ({
 }))
 
 vi.mock('../components/mindviewer/MindViewer', () => ({
-  default: ({ onViewReport, initialStrategyId }: { onViewReport: () => void; initialStrategyId?: string }) => (
-    <div data-testid="mind-viewer" data-strategy={initialStrategyId ?? ''}>
+  default: ({ onViewReport, initialStrategyId, initialTurnNumber }: { onViewReport: () => void; initialStrategyId?: string; initialTurnNumber?: number }) => (
+    <div data-testid="mind-viewer" data-strategy={initialStrategyId ?? ''} data-turn={initialTurnNumber ?? ''}>
       <button onClick={onViewReport}>View Report</button>
     </div>
   ),
 }))
 
 vi.mock('../components/report/ComparisonReport', () => ({
-  default: ({ onViewTranscript, onBackToSetup }: { onViewTranscript: (id: string) => void; onBackToSetup: () => void }) => (
+  default: ({ onViewTranscript, onBackToSetup }: { onViewTranscript: (id: string, turnNumber?: number) => void; onBackToSetup: () => void }) => (
     <div data-testid="comparison-report">
       <button onClick={() => onViewTranscript('strategy_personal_narrative')}>Watch Transcript</button>
+      <button onClick={() => onViewTranscript('strategy_personal_narrative', 2)}>Watch Transcript Turn 2</button>
       <button onClick={onBackToSetup}>Back to Setup</button>
     </div>
   ),
@@ -128,6 +129,20 @@ describe('App', () => {
     await user.click(screen.getByText('Run'))
 
     expect(screen.getByTestId('mind-viewer').dataset.strategy).toBe('')
+  })
+
+  it('deep-links to mind viewer with correct turn number from quote click', async () => {
+    const user = userEvent.setup()
+    render(<App />)
+
+    await user.click(screen.getByText('Run'))
+    await user.click(screen.getByText('View Report'))
+    await user.click(screen.getByText('Watch Transcript Turn 2'))
+
+    const viewer = screen.getByTestId('mind-viewer')
+    expect(viewer).toBeInTheDocument()
+    expect(viewer.dataset.strategy).toBe('strategy_personal_narrative')
+    expect(viewer.dataset.turn).toBe('2')
   })
 
   it('does not show mindviewer or report when simulation is null', () => {

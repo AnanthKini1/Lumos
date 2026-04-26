@@ -8,6 +8,7 @@ import PivotalMomentPanel from './PivotalMomentPanel'
 interface Props {
   simulation: SimulationOutput
   initialStrategyId?: string
+  initialTurnNumber?: number
   onViewReport: () => void
 }
 
@@ -19,7 +20,7 @@ export function strategyDisplayName(id: string): string {
 }
 
 
-export default function MindViewer({ simulation, initialStrategyId, onViewReport }: Props) {
+export default function MindViewer({ simulation, initialStrategyId, initialTurnNumber, onViewReport }: Props) {
   const { outcomes, metadata } = simulation
   const { persona, topic } = metadata
 
@@ -27,8 +28,12 @@ export default function MindViewer({ simulation, initialStrategyId, onViewReport
     ? Math.max(0, outcomes.findIndex(o => o.strategy_id === initialStrategyId))
     : 0
 
+  const initialTurnIdx = initialTurnNumber != null
+    ? Math.max(0, Math.min(initialTurnNumber - 1, outcomes[initialIdx].turns.length - 1))
+    : 0
+
   const [activeIdx, setActiveIdx] = useState(initialIdx)
-  const [currentTurn, setCurrentTurn] = useState(0)
+  const [currentTurn, setCurrentTurn] = useState(initialTurnIdx)
   const [isPlaying, setIsPlaying] = useState(false)
   const [selectedPivotalTurn, setSelectedPivotalTurn] = useState<ConversationTurn | null>(null)
   const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null)
