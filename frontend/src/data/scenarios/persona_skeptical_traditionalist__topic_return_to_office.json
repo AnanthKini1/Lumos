@@ -298,7 +298,7 @@
           "is_inflection_point": true,
           "mechanism_classification": null,
           "per_turn_cognitive_scores": null,
-          "color_category": "surface_mechanism",
+          "color_category": null,
           "intensity": 1.0
         },
         {
@@ -388,7 +388,7 @@
           "is_inflection_point": false,
           "mechanism_classification": null,
           "per_turn_cognitive_scores": null,
-          "color_category": "surface_mechanism",
+          "color_category": null,
           "intensity": 0.0
         }
       ],
@@ -590,7 +590,7 @@
           "is_inflection_point": false,
           "mechanism_classification": null,
           "per_turn_cognitive_scores": null,
-          "color_category": "surface_mechanism",
+          "color_category": null,
           "intensity": 0.0
         },
         {
@@ -854,12 +854,12 @@
             "memory_to_carry_forward": "61% of U.S. workers have no teleworkable job regardless of preference—so mandating five days for those who could work hybrid doesn't protect people without options, it just takes away the one flexibility that could help them. I had fairness backwards.",
             "public_response": "You're right. I had it backwards. I was thinking about fairness to the people who've always come in, but they're already coming in—that job doesn't change. A mandate doesn't level anything for them. What it does is take a job that *could* offer flexibility and say no, you have to be here five days like the cashier and the nurse who don't have a choice. That's not protecting fairness; that's spreading the restriction around. And the people most likely to need flexibility—lower-income, less education, already stretched thin—those are the ones who lose when you lock everything back down. That's not what I want. I've spent my whole life thinking about what's actually fair versus what *looks* fair, and I got this one wrong. So here's where I am: I'm not sold on five-day mandates anymore. If the Bloom study is real—and you've been straight with me about what it actually says—then three days does the job. Companies that are losing talent but insisting on five anyway are making a choice about control, not productivity. That I don't trust. And fairness-wise, structured flexibility actually protects the people without options, not the other way around. I'm not going to pretend I've completely flipped on this, but I came in defending mandates and the evidence isn't backing that up."
           },
-          "stance_delta": 0.3,
+          "stance_delta": -0.2,
           "is_pivotal": false,
           "is_inflection_point": false,
           "mechanism_classification": null,
           "per_turn_cognitive_scores": null,
-          "color_category": "genuine_persuasion",
+          "color_category": "backfire",
           "intensity": 0.0
         },
         {
@@ -1065,7 +1065,7 @@
             "memory_to_carry_forward": "Three-day hybrid solves mentorship without losing attrition gains — but actual RTO mandates are going to five days, which contradicts what even the pro-RTO evidence supports.",
             "public_response": "You know, I appreciate that. You're not dodging what I said about junior people needing to see and work alongside experienced folks — you're building on it, not around it. That's different.\n\nAnd you're right: the study you're citing tested three days, not five. So if the research says three days in gets you the mentorship piece *and* keeps people from leaving, then... that's actually sensible. I can't argue with that logic. Three days in, two days home — that feels like it respects both what I know from the classroom and what your research is showing.\n\nBut here's what I'd want to know: when you see companies out there mandating five days, are they doing that because they've thought through the evidence? Or are they doing it because somebody in leadership thinks people should just show up because that's how it used to be? Because those are two different things. The evidence points your way — toward three days. If companies actually followed the evidence, we'd probably agree. But I'm old enough to know that what executives announce and what the research actually supports often aren't the same thing."
           },
-          "stance_delta": 0.3,
+          "stance_delta": -0.2,
           "is_pivotal": false,
           "is_inflection_point": true,
           "mechanism_classification": {
@@ -1079,7 +1079,7 @@
             "intensity": 0.12
           },
           "per_turn_cognitive_scores": null,
-          "color_category": "genuine_persuasion",
+          "color_category": "backfire",
           "intensity": 1.0
         },
         {
@@ -1201,12 +1201,12 @@
             "memory_to_carry_forward": "The persuader got me to three-day hybrid, but now is reframing it as a stepping stone to \"flexibility as non-negotiable employment right for everyone.\" That's a switch. Three days is a schedule; flexibility-as-a-right is a different kind of claim—about entitlement, not just evidence.",
             "public_response": "I need to be careful here, because I think you're moving the conversation in a direction I didn't agree to go. I said three days in-office works — the research supports it, it keeps people employed, it solves the mentorship problem. And I meant that. People with disabilities who genuinely need flexibility? Caregivers? That's not ideology, that's real accommodation. I don't dispute the 63% number about workers with disabilities preferring remote work — that matters.\n\nBut there's a difference between saying \"this population needs real flexibility to stay employed\" and saying \"flexibility is a non-negotiable employment right for everyone.\" One is evidence-based accommodation. The other is a claim about what people owe each other, what the contract between worker and employer *should* be. And those aren't the same thing.\n\nI agreed with three days because the research says it works — zero productivity loss, keeps talent, preserves mentorship. That's a policy argument grounded in evidence. But if you're now asking me to shift from \"this schedule is best\" to \"employees should be able to set their own terms, and companies have to bend,\" that's a different conversation. And I'm not there yet. Maybe I never will be. I still think there's something about work — about showing up, being part of a team, having structure — that matters beyond just \"does the company stay profitable?\"\n\nSo let me ask you: are you saying three-day hybrid should be the policy? Or are you saying that *should be the floor*, and individuals should be free to negotiate for more from there?"
           },
-          "stance_delta": 0.2,
+          "stance_delta": 0.0,
           "is_pivotal": false,
           "is_inflection_point": false,
           "mechanism_classification": null,
           "per_turn_cognitive_scores": null,
-          "color_category": "genuine_persuasion",
+          "color_category": null,
           "intensity": 0.0
         }
       ],
@@ -1414,12 +1414,12 @@
             "memory_to_carry_forward": "David's company lost their best junior developer and two senior people in six months—not because the work suffered before, but because the CEO wanted to see butts in seats. This is the picture of what happens when mandate comes before listening.",
             "public_response": "You know, that gets to me. David's company didn't solve a problem—they created one. Lost people they'd invested in, people who were already doing the work. And for what? So the CEO could feel like the office mattered?\n\nI taught for thirty years, and one thing I learned early is that you can't lead by force. You lead by respect. And if your best people walk out because you're not respecting what they've actually built into their lives, you didn't win anything. You just got smaller.\n\nI'm going to be honest with you—I came into this thinking \"Yeah, sometimes you need people in the office,\" and I still think that's true in some situations. Junior developers learning from senior people, teams that need to be face-to-face to work well together. That's real.\n\nBut what I'm hearing from Jennifer, Marcus, and now David is something different. It's not \"can we work from home sometimes?\"—it's \"we were doing fine, and now someone's forcing us back to prove a point.\" And when I hear it that way, that bothers me. That's not management. That's punishment.\n\nI don't have all the answers about what every company should do. But I know this: if you're losing talent over a policy, you need to stop and ask yourself whether the policy is worth more than the people. And from what you're telling me, David's boss didn't even ask that question."
           },
-          "stance_delta": 0.3,
+          "stance_delta": -0.2,
           "is_pivotal": false,
           "is_inflection_point": false,
           "mechanism_classification": null,
           "per_turn_cognitive_scores": null,
-          "color_category": "genuine_persuasion",
+          "color_category": "backfire",
           "intensity": 0.0
         },
         {
@@ -1609,7 +1609,7 @@
             "memory_to_carry_forward": "The Bloom study found four-days-remote workers are 50% less likely to be promoted, but three-day hybrid workers get promoted just as often while having 33% lower attrition. That's a specific cutoff worth knowing — it's not about remote vs. office, it's about how many days matter.",
             "public_response": "Well, that's different then. I was conflating four days at home with this whole idea, and that's not fair. Three days in the office — two or three — that's actually real presence. That's the learning happening, the informal stuff, the way things actually work in a place. And 33% less turnover — I mean, I've taught long enough to know what constant turnover costs a school. The relationships break down, the culture fractures, you're always training somebody new instead of building something.\n\nNow, when you say mentors and senior leaders are convinced — are we talking about people who've actually *tried* this and seen it work? Or is this still the business school crowd telling people what they should do? Because there's a difference between a consultant's recommendation and someone who's lived through it. But I'll listen to that. Two or three days — that's worth thinking about differently than \"work from home all the time.\" I can see how that might actually balance things out."
           },
-          "stance_delta": 0.2,
+          "stance_delta": 0.4,
           "is_pivotal": false,
           "is_inflection_point": true,
           "mechanism_classification": {
@@ -1648,7 +1648,7 @@
             "memory_to_carry_forward": "The specific cutoff: four days remote creates promotion problems, but two-to-three days hybrid produces zero promotion penalty plus 33% lower turnover. If that's real, it changes everything about whether this is ideology or evidence.",
             "public_response": "Well, now you're talking about people who've actually tried it and kept doing it because it works — that's different from a theory. Microsoft and Google aren't known for being soft on performance or culture. If their senior leaders looked at the numbers and said \"two or three days in the office is what we need,\" and they're still moving fast and promoting their young people, then I have to take that seriously. That's not ideology, that's business sense.\n\nI'll be honest — I'm still not entirely sure whether they're succeeding *because* of the flexibility or *in spite* of it, if you know what I mean. But the fact that they're not backtracking, not panicking about their culture falling apart... that says something. The three-day hybrid piece keeps sticking with me because it addresses what worried me. If kids coming up aren't getting hurt by their chances to move up, that changes the whole conversation.\n\nBut I want to know — are these companies mostly tech, or has this worked in other industries too? Because tech is tech. Different world."
           },
-          "stance_delta": 0.5,
+          "stance_delta": -0.3,
           "is_pivotal": false,
           "is_inflection_point": false,
           "mechanism_classification": {
@@ -1660,7 +1660,7 @@
             "intensity": 0.1
           },
           "per_turn_cognitive_scores": null,
-          "color_category": "genuine_persuasion",
+          "color_category": "backfire",
           "intensity": 1.0
         },
         {
@@ -1722,7 +1722,7 @@
             "memory_to_carry_forward": "Only 12% of executives are actually planning RTO mandates — the gap between JPMorgan's announcement and what the other 88% of decision-makers are choosing to do. That's real-world behavior, not PR.",
             "public_response": "Okay, now you're actually addressing what I asked — what are people with real responsibility doing, not what they're saying? That 12% number tells me something. JPMorgan made headlines, but if nearly 90% of executives looked at their own situation and decided not to go that direction, then we're probably not looking at a case of \"everyone needs to be back full-time.\" That's harder to argue against than trend lines.\n\nI'm still turning this over in my head. The three-day hybrid piece — that feels concrete enough that I want to see whether it actually holds up in places I know about, places that aren't tech companies or brand-name corporations. If a regional hospital or a mid-sized manufacturing company is running that way and their younger people are moving up and staying put, that's the kind of real-world proof I can trust.\n\nBut I'll say this: you've moved me from \"this is all about worker preference overriding what's best\" to \"maybe three days in is actually the balance.\" That's not nothing. I'm not there yet on saying full RTO is wrong — I'm more like... genuinely uncertain now. And I appreciate that you're not just citing studies. You're talking about what people are actually choosing to do with their own companies. That matters to me."
           },
-          "stance_delta": 0.4,
+          "stance_delta": 0.5,
           "is_pivotal": false,
           "is_inflection_point": false,
           "mechanism_classification": null,
@@ -1757,7 +1757,7 @@
           "is_inflection_point": false,
           "mechanism_classification": null,
           "per_turn_cognitive_scores": null,
-          "color_category": "genuine_persuasion",
+          "color_category": null,
           "intensity": 0.0
         }
       ],

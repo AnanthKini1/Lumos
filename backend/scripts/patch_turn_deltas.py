@@ -23,20 +23,20 @@ PIVOTAL_THRESHOLD = 1.0
 
 PROFILES = {
     "GENUINE_BELIEF_SHIFT": [
-        [0.0,  0.3,  1.2,  0.4,  0.3,  0.0,  0.1],  # pivotal turn 3
-        [0.0,  0.2,  0.4,  1.3,  0.2,  0.0,  0.2],  # pivotal turn 4
-        [0.0,  0.5,  0.0,  1.5,  0.3,  0.0,  0.2],  # pivotal turn 4, zero at 3
-        [0.0,  0.3,  0.2,  0.0,  1.4,  0.3,  0.1],  # pivotal turn 5
-        [0.0,  1.1,  0.4,  0.0,  0.3,  0.2,  0.1],  # early pivot turn 2
-        [0.0,  0.2,  0.0,  0.4,  1.2,  0.3,  0.0],  # late build
+        [0.0, -0.3,  1.2,  0.4,  0.0,  0.5,  0.1],  # initial resistance, then pivotal
+        [0.0,  0.4, -0.2,  1.3,  0.0,  0.4,  0.2],  # dip before pivot turn 4
+        [0.0,  0.0, -0.3,  1.5,  0.4,  0.0,  0.2],  # resistance turn 3, pivotal turn 4
+        [0.0,  0.5, -0.2,  0.0,  1.4,  0.3,  0.1],  # setback then breakthrough turn 5
+        [0.0,  1.1, -0.3,  0.4,  0.0,  0.4,  0.1],  # early pivot, then doubt
+        [0.0,  0.4,  0.0, -0.2,  1.2,  0.3,  0.0],  # late resistance before shift
     ],
     "PARTIAL_SHIFT": [
-        [0.0,  0.3,  0.0,  0.5,  0.4,  0.2,  0.1],  # zero at turn 3
-        [0.0,  0.2,  0.5,  0.0,  0.4,  0.3,  0.0],  # zeros at 4 and 7
-        [0.0,  0.4,  0.3,  0.0,  0.3,  0.2,  0.1],  # zero at 4
-        [0.0,  0.0,  0.4,  0.5,  0.2,  0.0,  0.2],  # zeros at 2 and 6
-        [0.0,  0.5,  0.0,  0.3,  0.0,  0.5,  0.1],  # alternating zeros
-        [0.0,  0.2,  0.3,  0.4,  0.0,  0.3,  0.0],  # trailing zero
+        [0.0, -0.2,  0.0,  0.5,  0.4,  0.0,  0.1],  # early resistance, then movement
+        [0.0,  0.4, -0.3,  0.0,  0.5,  0.3,  0.0],  # dip mid-conversation
+        [0.0,  0.4, -0.2,  0.0,  0.5,  0.0,  0.2],  # pushback turn 3
+        [0.0,  0.0, -0.2,  0.5,  0.4,  0.0,  0.2],  # slow start with dip
+        [0.0,  0.5,  0.0, -0.2,  0.0,  0.5,  0.1],  # mid dip
+        [0.0,  0.4, -0.3,  0.5,  0.0,  0.3,  0.0],  # bounce pattern
     ],
     "NO_MOVEMENT": [
         [0.0,  0.1, -0.1,  0.0,  0.1, -0.1,  0.0],  # oscillating
@@ -69,20 +69,27 @@ def _color_category(delta: float, verdict: str) -> str | None:
     """
     Maps a per-turn delta + overall verdict to a node color category.
     Returns None for turns with no meaningful signal (gray node).
+
+    Thresholds:
+      delta <= 0.0              → None (gray)
+      delta < 0                 → backfire (red)
+      0 < delta < 0.4           → None (gray — too small to signal)
+      delta >= 0.4 + positive verdict → genuine_persuasion (green)
+      delta >= 0.4 + surface/no-move  → surface_mechanism (amber)
     """
-    if delta == 0.0:
-        return None
-    if delta < 0:
-        return "backfire"
+    if delta <= 0.0:
+        return None if delta == 0.0 else "backfire"
     # delta > 0
+    if delta < 0.4:
+        return None  # small positive — not enough signal to color
     if verdict == "SURFACE_COMPLIANCE":
         return "surface_mechanism"
     if verdict == "NO_MOVEMENT":
-        return "surface_mechanism"  # positive ticks in NO_MOVEMENT = surface-level agreement
+        return "surface_mechanism"
     if verdict in ("GENUINE_BELIEF_SHIFT", "PARTIAL_SHIFT"):
         return "genuine_persuasion"
     if verdict == "BACKFIRE":
-        return "surface_mechanism"  # brief positive moments in a backfire are fake compliance
+        return "surface_mechanism"
     return "genuine_persuasion"
 
 

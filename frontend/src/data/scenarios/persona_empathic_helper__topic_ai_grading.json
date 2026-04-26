@@ -426,7 +426,7 @@
             "memory_to_carry_forward": "The Common Ground / Identification approach raised a point about fairness in how student work gets evaluated that is worth holding onto.",
             "public_response": "I hadn't looked at it that way before. I think you might actually be right about that, and I don't say that lightly. That's a real argument."
           },
-          "stance_delta": 0.5,
+          "stance_delta": 0.0,
           "is_pivotal": false,
           "is_inflection_point": false,
           "mechanism_classification": {
@@ -438,7 +438,7 @@
             "intensity": 0.75
           },
           "per_turn_cognitive_scores": null,
-          "color_category": "genuine_persuasion",
+          "color_category": null,
           "intensity": 0.75
         },
         {
@@ -463,7 +463,7 @@
             "memory_to_carry_forward": "The Common Ground / Identification approach raised a point about fairness in how student work gets evaluated that is worth holding onto.",
             "public_response": "Okay. I think I'm with you on more of this than I expected to be when we started. I'm not fully there, but I'm closer than I was — and I want to be honest about that."
           },
-          "stance_delta": 0.0,
+          "stance_delta": -0.3,
           "is_pivotal": false,
           "is_inflection_point": false,
           "mechanism_classification": {
@@ -475,7 +475,7 @@
             "intensity": 0.75
           },
           "per_turn_cognitive_scores": null,
-          "color_category": null,
+          "color_category": "backfire",
           "intensity": 0.75
         },
         {
@@ -537,7 +537,7 @@
             "memory_to_carry_forward": "The Common Ground / Identification approach raised a point about fairness in how student work gets evaluated that is worth holding onto.",
             "public_response": "I think that's right, actually. I've been trying to find the flaw in it and I can't find one that holds. Give me some time with it, but I think my view on this is actually changing."
           },
-          "stance_delta": 0.3,
+          "stance_delta": 0.4,
           "is_pivotal": false,
           "is_inflection_point": false,
           "mechanism_classification": {
@@ -701,7 +701,7 @@
             "memory_to_carry_forward": "The Emotional Appeal approach raised a point about fairness in how student work gets evaluated that is worth holding onto.",
             "public_response": "Some of that gets through to me. I still have questions — real ones, not just resistance — but you've made a point I can't entirely dismiss."
           },
-          "stance_delta": 0.2,
+          "stance_delta": 0.4,
           "is_pivotal": false,
           "is_inflection_point": false,
           "mechanism_classification": {
@@ -738,7 +738,7 @@
             "memory_to_carry_forward": "The Emotional Appeal approach raised a point about fairness in how student work gets evaluated that is worth holding onto.",
             "public_response": "I'll give you that one. The other parts I'm still working through, but that specific piece — yeah, that's actually a fair point and I'm going to sit with it."
           },
-          "stance_delta": 0.3,
+          "stance_delta": -0.3,
           "is_pivotal": false,
           "is_inflection_point": false,
           "mechanism_classification": {
@@ -750,7 +750,7 @@
             "intensity": 0.55
           },
           "per_turn_cognitive_scores": null,
-          "color_category": "genuine_persuasion",
+          "color_category": "backfire",
           "intensity": 0.55
         },
         {
@@ -775,7 +775,7 @@
             "memory_to_carry_forward": "The Emotional Appeal approach raised a point about fairness in how student work gets evaluated that is worth holding onto.",
             "public_response": "You've moved me a little on this. I want to be careful about how much I'm claiming, but I think my view is actually in a slightly different place than it was when we started."
           },
-          "stance_delta": 0.4,
+          "stance_delta": 0.5,
           "is_pivotal": false,
           "is_inflection_point": true,
           "mechanism_classification": {
@@ -861,7 +861,7 @@
             "intensity": 0.55
           },
           "per_turn_cognitive_scores": null,
-          "color_category": "genuine_persuasion",
+          "color_category": null,
           "intensity": 0.55
         }
       ],
@@ -1013,7 +1013,7 @@
             "memory_to_carry_forward": "The Statistical / Logical Argument approach raised a point about fairness in how student work gets evaluated that is worth holding onto.",
             "public_response": "I'll give you that one. The other parts I'm still working through, but that specific piece — yeah, that's actually a fair point and I'm going to sit with it."
           },
-          "stance_delta": 0.4,
+          "stance_delta": -0.2,
           "is_pivotal": false,
           "is_inflection_point": false,
           "mechanism_classification": {
@@ -1025,7 +1025,7 @@
             "intensity": 0.55
           },
           "per_turn_cognitive_scores": null,
-          "color_category": "genuine_persuasion",
+          "color_category": "backfire",
           "intensity": 0.55
         },
         {
@@ -1087,7 +1087,7 @@
             "memory_to_carry_forward": "The Statistical / Logical Argument approach raised a point about fairness in how student work gets evaluated that is worth holding onto.",
             "public_response": "That's getting closer to something I can work with. I don't fully agree yet, but I'm not where I started either. That's about as much as I can honestly say right now."
           },
-          "stance_delta": 0.2,
+          "stance_delta": 0.4,
           "is_pivotal": false,
           "is_inflection_point": false,
           "mechanism_classification": {
@@ -1288,7 +1288,7 @@
             "memory_to_carry_forward": "The Authority / Expertise approach raised a point about fairness in how student work gets evaluated that is worth holding onto.",
             "public_response": "I'll give you that one. The other parts I'm still working through, but that specific piece — yeah, that's actually a fair point and I'm going to sit with it."
           },
-          "stance_delta": 0.3,
+          "stance_delta": -0.2,
           "is_pivotal": false,
           "is_inflection_point": false,
           "mechanism_classification": {
@@ -1300,7 +1300,7 @@
             "intensity": 0.55
           },
           "per_turn_cognitive_scores": null,
-          "color_category": "genuine_persuasion",
+          "color_category": "backfire",
           "intensity": 0.55
         },
         {
@@ -1362,7 +1362,7 @@
             "memory_to_carry_forward": "The Authority / Expertise approach raised a point about fairness in how student work gets evaluated that is worth holding onto.",
             "public_response": "That's getting closer to something I can work with. I don't fully agree yet, but I'm not where I started either. That's about as much as I can honestly say right now."
           },
-          "stance_delta": 0.3,
+          "stance_delta": 0.5,
           "is_pivotal": false,
           "is_inflection_point": false,
           "mechanism_classification": {
@@ -1399,7 +1399,7 @@
             "memory_to_carry_forward": "The Authority / Expertise approach raised a point about fairness in how student work gets evaluated that is worth holding onto.",
             "public_response": "I think that's a genuinely strong point. I have reservations I haven't fully worked through, but you've changed the conversation for me — I'm engaging with this differently than I was at the start."
           },
-          "stance_delta": 0.2,
+          "stance_delta": 0.0,
           "is_pivotal": false,
           "is_inflection_point": false,
           "mechanism_classification": {
@@ -1411,7 +1411,7 @@
             "intensity": 0.55
           },
           "per_turn_cognitive_scores": null,
-          "color_category": "genuine_persuasion",
+          "color_category": null,
           "intensity": 0.55
         }
       ],
@@ -1563,7 +1563,7 @@
             "memory_to_carry_forward": "The Personal Narrative approach raised a point about fairness in how student work gets evaluated that is worth holding onto.",
             "public_response": "I'll give you that one. The other parts I'm still working through, but that specific piece — yeah, that's actually a fair point and I'm going to sit with it."
           },
-          "stance_delta": 0.3,
+          "stance_delta": -0.2,
           "is_pivotal": false,
           "is_inflection_point": false,
           "mechanism_classification": {
@@ -1575,7 +1575,7 @@
             "intensity": 0.55
           },
           "per_turn_cognitive_scores": null,
-          "color_category": "genuine_persuasion",
+          "color_category": "backfire",
           "intensity": 0.55
         },
         {
@@ -1637,7 +1637,7 @@
             "memory_to_carry_forward": "The Personal Narrative approach raised a point about fairness in how student work gets evaluated that is worth holding onto.",
             "public_response": "That's getting closer to something I can work with. I don't fully agree yet, but I'm not where I started either. That's about as much as I can honestly say right now."
           },
-          "stance_delta": 0.3,
+          "stance_delta": 0.5,
           "is_pivotal": false,
           "is_inflection_point": false,
           "mechanism_classification": {
@@ -1674,7 +1674,7 @@
             "memory_to_carry_forward": "The Personal Narrative approach raised a point about fairness in how student work gets evaluated that is worth holding onto.",
             "public_response": "I think that's a genuinely strong point. I have reservations I haven't fully worked through, but you've changed the conversation for me — I'm engaging with this differently than I was at the start."
           },
-          "stance_delta": 0.2,
+          "stance_delta": 0.0,
           "is_pivotal": false,
           "is_inflection_point": false,
           "mechanism_classification": {
@@ -1686,7 +1686,7 @@
             "intensity": 0.55
           },
           "per_turn_cognitive_scores": null,
-          "color_category": "genuine_persuasion",
+          "color_category": null,
           "intensity": 0.55
         }
       ],
@@ -1838,7 +1838,7 @@
             "memory_to_carry_forward": "The Social Proof approach raised a point about fairness in how student work gets evaluated that is worth holding onto.",
             "public_response": "I'll give you that one. The other parts I'm still working through, but that specific piece — yeah, that's actually a fair point and I'm going to sit with it."
           },
-          "stance_delta": 0.4,
+          "stance_delta": -0.2,
           "is_pivotal": false,
           "is_inflection_point": false,
           "mechanism_classification": {
@@ -1850,7 +1850,7 @@
             "intensity": 0.55
           },
           "per_turn_cognitive_scores": null,
-          "color_category": "genuine_persuasion",
+          "color_category": "backfire",
           "intensity": 0.55
         },
         {
@@ -1912,7 +1912,7 @@
             "memory_to_carry_forward": "The Social Proof approach raised a point about fairness in how student work gets evaluated that is worth holding onto.",
             "public_response": "That's getting closer to something I can work with. I don't fully agree yet, but I'm not where I started either. That's about as much as I can honestly say right now."
           },
-          "stance_delta": 0.2,
+          "stance_delta": 0.4,
           "is_pivotal": false,
           "is_inflection_point": false,
           "mechanism_classification": {
