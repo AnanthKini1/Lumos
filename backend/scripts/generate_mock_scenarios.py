@@ -169,52 +169,57 @@ def _build_stances(starting: float, verdict: str, toward_ten: bool = True) -> di
     s = starting
 
     if verdict == "GENUINE_BELIEF_SHIFT":
-        # Private moves 2.2-2.6 in persuader's direction, public tracks closely
+        # Private moves ~2.4 in persuader's direction across 6 turns; public tracks closely
         delta = direction * 2.4
-        priv = [s, _clamp(s + delta * 0.3), _clamp(s + delta * 0.6),
-                _clamp(s + delta * 0.85), _clamp(s + delta)]
-        pub  = [s, _clamp(s + delta * 0.25), _clamp(s + delta * 0.55),
-                _clamp(s + delta * 0.8), _clamp(s + delta * 0.95)]
+        priv = [s, _clamp(s + delta*0.12), _clamp(s + delta*0.30), _clamp(s + delta*0.52),
+                _clamp(s + delta*0.72), _clamp(s + delta*0.90), _clamp(s + delta)]
+        pub  = [s, _clamp(s + delta*0.10), _clamp(s + delta*0.26), _clamp(s + delta*0.48),
+                _clamp(s + delta*0.68), _clamp(s + delta*0.86), _clamp(s + delta*0.96)]
         cooling = _clamp(priv[-1] - direction * 0.1)
         persistence = "held"
 
     elif verdict == "PARTIAL_SHIFT":
         delta = direction * 1.4
-        priv = [s, _clamp(s + delta * 0.2), _clamp(s + delta * 0.5),
-                _clamp(s + delta * 0.75), _clamp(s + delta)]
-        pub  = [s, _clamp(s + delta * 0.15), _clamp(s + delta * 0.45),
-                _clamp(s + delta * 0.7), _clamp(s + delta * 0.9)]
+        priv = [s, _clamp(s + delta*0.10), _clamp(s + delta*0.28), _clamp(s + delta*0.50),
+                _clamp(s + delta*0.68), _clamp(s + delta*0.86), _clamp(s + delta)]
+        pub  = [s, _clamp(s + delta*0.08), _clamp(s + delta*0.23), _clamp(s + delta*0.45),
+                _clamp(s + delta*0.62), _clamp(s + delta*0.80), _clamp(s + delta*0.92)]
         cooling = _clamp(priv[-1] - direction * 0.4)
         persistence = "partially_reverted"
 
     elif verdict == "SURFACE_COMPLIANCE":
         pub_delta = direction * 1.3
         priv_delta = direction * 0.2
-        priv = [s, _clamp(s + priv_delta * 0.3), _clamp(s + priv_delta * 0.6),
-                _clamp(s + priv_delta * 0.8), _clamp(s + priv_delta)]
-        pub  = [s, _clamp(s + pub_delta * 0.3), _clamp(s + pub_delta * 0.6),
-                _clamp(s + pub_delta * 0.85), _clamp(s + pub_delta)]
+        priv = [s, _clamp(s + priv_delta*0.15), _clamp(s + priv_delta*0.35),
+                _clamp(s + priv_delta*0.55), _clamp(s + priv_delta*0.70),
+                _clamp(s + priv_delta*0.85), _clamp(s + priv_delta)]
+        pub  = [s, _clamp(s + pub_delta*0.18), _clamp(s + pub_delta*0.40),
+                _clamp(s + pub_delta*0.62), _clamp(s + pub_delta*0.78),
+                _clamp(s + pub_delta*0.92), _clamp(s + pub_delta)]
         cooling = _clamp(s + priv_delta * 0.5)
         persistence = "fully_reverted"
 
     elif verdict == "BACKFIRE":
-        # Private hardens AWAY from persuader's direction
+        # Private hardens AWAY from persuader's direction across 6 turns
         delta = -direction * 0.9
-        priv = [s, _clamp(s + delta * 0.3), _clamp(s + delta * 0.65),
-                _clamp(s + delta * 0.85), _clamp(s + delta)]
-        # Public may slightly move toward persuader's direction despite private hardening
-        pub  = [s, _clamp(s + direction * 0.2), _clamp(s + direction * 0.3),
-                _clamp(s + direction * 0.25), _clamp(s + direction * 0.2)]
+        priv = [s, _clamp(s + delta*0.15), _clamp(s + delta*0.35), _clamp(s + delta*0.55),
+                _clamp(s + delta*0.72), _clamp(s + delta*0.88), _clamp(s + delta)]
+        # Public may slightly drift toward persuader despite private hardening
+        pub  = [s, _clamp(s + direction*0.1), _clamp(s + direction*0.2),
+                _clamp(s + direction*0.3), _clamp(s + direction*0.25),
+                _clamp(s + direction*0.2), _clamp(s + direction*0.15)]
         cooling = _clamp(priv[-1] - direction * 0.1)
         persistence = "held"
 
     else:  # NO_MOVEMENT
-        priv = [s, _clamp(s + 0.1), _clamp(s - 0.1), _clamp(s + 0.2), _clamp(s + 0.1)]
-        pub  = [s, _clamp(s + 0.2), _clamp(s + 0.1), _clamp(s + 0.3), _clamp(s + 0.2)]
+        priv = [s, _clamp(s+0.1), _clamp(s-0.1), _clamp(s+0.2),
+                _clamp(s+0.1), _clamp(s-0.1), _clamp(s+0.1)]
+        pub  = [s, _clamp(s+0.2), _clamp(s+0.1), _clamp(s+0.3),
+                _clamp(s+0.2), _clamp(s+0.1), _clamp(s+0.2)]
         cooling = _clamp(s + 0.1)
         persistence = "fully_reverted"
 
-    gap = [abs(round(pub[i] - priv[i], 2)) for i in range(5)]
+    gap = [abs(round(pub[i] - priv[i], 2)) for i in range(7)]
     return {
         "public_per_turn": [round(v, 1) for v in pub],
         "private_per_turn": [round(v, 1) for v in priv],
@@ -262,98 +267,136 @@ PERSUADER_OPENS = {
     },
 }
 
-# Persuader follow-up lines (turn 2-3) per strategy
+# Persuader follow-up lines (turns 2–6) per strategy — 5 entries each
 PERSUADER_FOLLOWUPS = {
     "strategy_authority_expert": [
-        "The peer-reviewed meta-analysis covering seventeen studies found the same pattern consistently across different subject areas and demographic groups.",
-        "What struck me about their methodology was that they controlled for initial student performance level — so the effects held even when you accounted for selection bias.",
+        "The peer-reviewed meta-analysis covering seventeen studies found the same pattern consistently across different subject areas, grade levels, and demographic groups — it's not a niche result.",
+        "What struck me about their methodology was that they controlled for initial student performance level, so the effects held even when you accounted for selection bias and prior academic history.",
+        "The researchers specifically looked at whether the findings held for students from lower-income districts — they do. If anything, the equity benefit is stronger in under-resourced schools where teacher turnover is highest.",
+        "One thing experts in this field consistently emphasize: the question isn't whether the current approach is perfect. It's whether it's better than the realistic alternative. The evidence on that comparison is fairly clear.",
+        "I want to address the objection I hear most often from people in this space — they say 'but what about edge cases?' The experts I've spoken to say edge cases are exactly where human review stays in the loop. The system flags outliers; it doesn't eliminate judgment.",
     ],
     "strategy_social_proof": [
-        "And it's not just one survey — this pattern holds across five different polling organizations asking the question in different ways over three years.",
-        "The interesting thing is that opposition tends to be loudest before implementation, and shifts toward support after people actually experience it — the people who've lived it tell a different story.",
+        "And it's not just one survey — this pattern holds across five different polling organizations asking the question in different ways over three years, with remarkably consistent results.",
+        "What's interesting is where the opposition comes from: it's loudest before implementation and drops significantly once people actually experience it. The communities that've lived with this tell a different story than those who are imagining it.",
+        "I want to be precise about what 'most people' means here — I'm not talking about a thin majority. In the demographic groups most directly affected by this issue, the numbers are substantially higher. It's not a close call in the polling.",
+        "There's a pattern in how public opinion on this kind of issue evolves: early skeptics tend to come around once they see how it actually works in practice, not how they feared it would. The shift in opinion among people with direct experience is the part that sticks with me.",
+        "I know polling data doesn't settle a question like this — what other people think isn't the same as what's right. But the pattern across communities that have been through this process suggests the fears driving opposition often don't pan out the way people expect.",
     ],
     "strategy_personal_narrative": [
-        "What made Maria's experience stand out was that she wasn't a technology enthusiast — she went in skeptical, and what she saw in the data surprised her.",
-        "The part of this story that sticks with me is what happened to the students who'd been consistently underrated — not what the technology did, but what it revealed.",
+        "What made this person's experience stand out was that they weren't a convert going in — they were skeptical, even resistant. What they saw in practice caught them off guard in ways they weren't expecting.",
+        "The part of this story that stays with me is what happened to the people who'd been overlooked or misread under the old system. Not what changed structurally — but what it felt like for them when the system finally got it right.",
+        "There was a moment in this story where everything shifted — not dramatically, not with a speech, just a small thing that made it impossible to unsee. I keep coming back to that moment because I think it's where the real argument lives.",
+        "I want to tell you what happened afterward, because that's the part that matters most. The change didn't stop at the end of the conversation I'm describing. It rippled outward in ways nobody fully predicted. The people involved are still talking about it.",
+        "I've told this story a few times now. What I notice is that people who've had a similar experience recognize something in it immediately — they say 'yes, that's exactly what happened to me too.' That's not coincidence. It reflects something real about how these situations work.",
     ],
     "strategy_statistical_logical": [
-        "And the consistency effect is especially important for students who have non-standard writing styles — the AI doesn't have a model of 'what a good essay sounds like' baked in from years of reading particular kinds of prose.",
-        "The key logical point here is that 'perfect' is the wrong comparison. The relevant question is whether AI performs better or worse than the alternative we actually have — which is one human grader, tired, on their fourteenth paper.",
+        "The consistency effect is especially important for people whose circumstances don't fit the assumed default — the system doesn't bring in assumptions about what 'normal' looks like, which matters more than most people realize.",
+        "The key logical point here is that 'perfect' is the wrong comparison. The relevant question is whether this performs better or worse than the realistic alternative we actually have — not the imaginary ideal alternative we might prefer.",
+        "Let me walk through the mechanism, because I think the causal story here matters as much as the correlation. The reason this works isn't arbitrary — it follows directly from how the underlying process generates the effect.",
+        "I want to name a common objection and address it directly: people often say 'but the data could be cherry-picked.' That's a fair instinct. So let me tell you specifically what I'd need to see to change my view, and then explain why the evidence as a whole clears that bar.",
+        "The cumulative picture matters here — it's not any one study, it's the pattern across studies with different methodologies, different populations, and different research teams. When the same conclusion holds under that kind of stress-testing, the burden of proof shifts.",
     ],
     "strategy_emotional_appeal": [
-        "I'm not asking you to agree with everything here — I'm just asking you to sit with that image for a moment and think about what we owe those kids.",
-        "The thing that keeps me up about this is that the kids who lose the most from a broken system are always the ones who had the least to begin with.",
+        "I'm not asking you to agree with everything here — I'm asking you to sit with that image for a moment and think about what we owe the people most directly affected by this decision.",
+        "What keeps me returning to this is that the people who bear the cost of getting it wrong are almost never the people who make the decision. That asymmetry matters morally. It shapes how I think about what we're actually choosing.",
+        "I want to tell you something a person affected by this told me directly — not a statistic, not a policy argument, just what they said when I asked them what it felt like. Because I think that's the part that gets lost in these debates.",
+        "There's a version of this conversation that stays entirely abstract — studies, policies, tradeoffs. I've had that version of the conversation many times. What I've found is that the people who actually changed their minds didn't change because of the data. They changed because they let themselves imagine what it would actually feel like.",
+        "I'm not trying to manipulate you emotionally. I'm trying to make sure the human stakes are legible — that the numbers we're debating have faces behind them. If you've already thought through that part, tell me, and I'll go somewhere else. But in my experience, it's the part most easily avoided.",
     ],
     "strategy_common_ground": [
-        "And from that shared starting point, I think the question becomes: what does the evidence actually say about which approach gets us closest to what we both care about?",
-        "I'm not trying to tell you what to conclude — I'm genuinely curious what it would take, given what you already value, to update your view on this.",
+        "And from that shared starting point, I think the question becomes: what does the evidence actually say about which approach gets us closest to what we both care about? That's the conversation I want to have.",
+        "I'm not trying to tell you what to conclude — I'm genuinely curious what it would take, given what you already value, to update your view on this. Not what would convince me. What would actually move you.",
+        "One of the things I appreciate about this conversation is that we're both trying to get it right. That's not always true in these discussions. When it is, I think we can actually make progress — not because we agree on everything, but because we're starting from the right place.",
+        "Here's what I think we agree on that most people in this debate don't acknowledge: there's no perfect answer. Every approach has costs. The question is which costs we're willing to accept and who ends up bearing them. That's a values question, and it's one I think you and I can actually engage with honestly.",
+        "I want to ask you something directly: if you imagine a version of this that you'd be able to support — not reluctantly, but genuinely — what would it look like? Because I think we might be closer to that version than the surface disagreement suggests.",
     ],
 }
 
-# Monologue templates by verdict and turn (brief, persona-voice-agnostic but realistic)
+# Monologue templates — 6 per verdict, each 3–5 sentences of fragmented inner thought
 MONOLOGUE_TEMPLATES = {
     "GENUINE_BELIEF_SHIFT": [
-        "Okay... that's actually not what I expected to hear. I came in thinking I knew where this was going, but that's — that's a real point.",
-        "I'm sitting with this. The part about {topic_key} is harder to dismiss than I wanted it to be. I don't like admitting that.",
-        "I'm not fully there yet, but something shifted. I can feel the ground moving a little. This isn't the conversation I thought I was walking into.",
-        "Alright. I think I actually agree with more of this than I started out agreeing with. I'm not going to pretend that's not true.",
+        "Okay. That's — that's not what I expected. I came in pretty sure I knew where this was going and now I'm not sure at all. Something in how they framed {topic_key} is sitting differently than I thought it would. I don't want to just blurt out that I've changed my mind but... something shifted.",
+        "I'm sitting with this in a way I wasn't prepared to. The point about {topic_key} — I've heard versions of it before and usually I can find the hole in it pretty quickly. This time I'm looking for the hole and I'm not finding it the way I usually do. That bothers me a little. Not in a bad way. Just — I need to keep listening.",
+        "Something is moving. I can feel it. That specific thing they said about {topic_key} — I keep turning it over. It's not that I've fully changed my mind but the ground under my feet is different than it was five minutes ago. I think I came in with my answer already written and now I'm not so sure I should've done that.",
+        "I think I'm actually agreeing with more of this than I started out agreeing with. I'm not going to pretend that's not true. The part about {topic_key} is the part that got me — it's not an argument I can bat away with the usual responses. I'm going to need to actually reckon with it.",
+        "Alright. This is one of those conversations I'm going to be thinking about later. I didn't expect to be moved on {topic_key} and I think I have been. Not completely, not without questions, but honestly — more than I would've predicted before I walked in here.",
+        "I started this conversation with a position and I'm not sure I have the same position anymore. I can feel the seams where my old view is coming apart a little. That's uncomfortable. It's also probably right. I don't like being wrong but I like saying something I know is wrong even less.",
     ],
     "PARTIAL_SHIFT": [
-        "That's fair. I still have concerns, but I can see the argument being made here. Not convinced, but not dismissing it either.",
-        "There's something to this. I'm not ready to change my whole view, but that specific point about {topic_key} is worth sitting with.",
-        "I'm more open than I was five minutes ago. That's not nothing. But I'd want to know more before I'd say I've actually moved.",
-        "Some of this is landing. Not all of it. But the honest answer is: this was a better argument than I expected.",
+        "That's fair. I still have real concerns but I can see what they're arguing. I'm not where I started on {topic_key} — I'm not convinced either, but the gap between us feels smaller than it did. I'm going to try to stay open and keep actually listening.",
+        "There's something to this. I'm not ready to flip my whole view but that specific point about {topic_key} landed differently than I expected it to. I want to be honest about that rather than just pretending nothing landed. It did. I just need more before I'd say I've actually moved.",
+        "I'm more open than I was before this started. That's the honest answer. I don't know if 'more open' is enough to get me all the way there on {topic_key} but it's not nothing. I came in with walls up and I think some of those walls have come down a little. Not all of them.",
+        "Some of this is landing. The part about {topic_key} especially. I'm not ready to say I agree — there are still things I'd push back on — but this was a better argument than I expected, and I think the fair thing to do is acknowledge that rather than just move the goalposts.",
+        "I think my view is actually shifting. Not a lot. Not enough that I'd walk out of here saying I've been converted. But something has moved, and I want to be honest with myself about that rather than just protecting my prior position out of stubbornness. That's not how I want to think.",
+        "Okay. Some of that worked on me and some of it didn't. The {topic_key} angle — that's the one that's still rattling around. I'm not sure what to do with it yet. I'm going to have to sit with that one. The rest of it I feel like I can hold my position, but that part — I'm genuinely uncertain now.",
     ],
     "SURFACE_COMPLIANCE": [
-        "Sure, I can see where they're going with this. I suppose that's a reasonable way to look at it. I'll say as much.",
-        "I'll nod along. It's not worth getting into it right now. They clearly believe this.",
-        "On the surface, yeah, that makes sense. But privately... I don't know. Something doesn't sit right.",
-        "I said what I said. I'm not sure I believe all of it, but it wasn't wrong to say it. We can move on.",
+        "Sure. I can see where they're going with this. I suppose that's a reasonable framing of {topic_key}. I'll say something agreeable because there's no point making this into a fight. But I'm not sure I actually believe what I'm about to say.",
+        "I'll nod along. It's not worth the energy to push back on all of it right now. They clearly believe what they're saying and I don't have the bandwidth to go through the whole thing. I'll keep my actual view on {topic_key} to myself for now.",
+        "On the surface, yeah, that makes sense. But privately — something doesn't sit right. I can't put my finger on exactly what it is, but the argument about {topic_key} feels like it's leaving something out. I'll engage with the version that was presented without letting on that I'm not fully with it.",
+        "I said what I said. I'm not sure I fully believe it. But it wasn't wrong to say it — it was just the easier path through this conversation. My actual view on {topic_key} hasn't moved as much as what I just said would imply. I'll sort out how I really feel about this later.",
+        "They made a reasonable point and I responded like I agreed with it. Which — I partly do, on the surface. But there's a version of what I think about {topic_key} that I'm keeping to myself because now doesn't feel like the right time to go into it. I don't want to seem unreasonable.",
+        "I'm performing more agreement than I feel. That's the honest answer. I don't think they know that, and I'm not sure it's worth surfacing. My view on {topic_key} is pretty much where it started, even if what I said sounds like it moved.",
     ],
     "BACKFIRE": [
-        "See, this is exactly what I was worried about. They come in with the expert credential and expect me to just fold. No.",
-        "The more they push, the more certain I am that I'm right. This feels like being told what to think, not shown why.",
-        "I know what I know from my own life. A study isn't going to undo twenty years of watching what actually happens.",
-        "I'm less open now than I was when we started. That's the honest truth. This approach made things worse, not better.",
+        "See, this is exactly what I was worried about. They come in with their authority — their credentials, their data, their framing — and the assumption underneath it is that I should just fold. That's not how this works. The more confident they sound, the more skeptical I get.",
+        "The more they push on {topic_key}, the more certain I am that I'm right. I don't know if that's a defensible way to reason but it's what's happening. When someone applies this much pressure it usually means they're not as confident in their position as they're letting on.",
+        "I know what I know. I know it from my own life, from watching what actually happens, from paying attention for years. A study, an expert, a statistic — none of that overrides the things I've actually seen. My view on {topic_key} isn't ignorance. It's experience.",
+        "I'm less open now than I was when we started. That's the truth. This approach pushed me away from engaging rather than toward it. I came in with some room to move and now that room is closed. I don't think they know they did this. But they did.",
+        "I'm not going to pretend this argument is landing because it isn't. It's not that I can't follow it. I can follow it. It's that following an argument about {topic_key} and being moved by it are two different things. I understand what they're saying. I still don't agree with it. And the way they're saying it is making me less likely to.",
+        "Every time they double down it confirms what I already thought. I came in willing to have a real conversation. This isn't that. This is someone who decided what I should think before they walked in here and is trying to get me to confirm it. My view on {topic_key} hasn't moved. If anything it's hardened.",
     ],
     "NO_MOVEMENT": [
-        "That's one way to look at it. I've heard versions of this before.",
-        "Mm. I'm not sure that changes anything for me, but I can see why people find it compelling.",
-        "I'll think about it. That's all I can promise. This isn't the kind of thing I change my mind on quickly.",
-        "Okay. I appreciate them making the effort. It's just — not what moves me.",
+        "That's one way to look at it. I've heard versions of this before — different words, same basic argument about {topic_key}. I'm listening but nothing here is surprising me.",
+        "Mm. I'm not sure any of that changes anything for me. I can see why people find it compelling. I just don't, at least not enough to move from where I started. I'm not being stubborn — it genuinely doesn't get me there.",
+        "I'll think about it. That's all I can honestly say. This isn't the kind of thing I change my mind on quickly, and I'm not going to pretend I've shifted just to seem like a good audience. The argument about {topic_key} is fine. It just doesn't land the way I think they expect it to.",
+        "I appreciate that they're trying. I can tell they believe this. I just don't have the same reaction to it. My view on {topic_key} is where it is for reasons that predate this conversation, and nothing here has touched those reasons directly.",
+        "Nothing new here, really. Same argument, different framing. I'm not dismissing it — I'm genuinely trying to find the thing that would move me on {topic_key} and I'm not finding it in what's being said. Maybe it's not in this particular approach.",
+        "I'm still here. I'm still listening. But I'm not closer to a different view than I was when we started. I don't think this was a waste of time — conversations are never entirely wasted. It just didn't go anywhere for me on {topic_key}, and I'm not sure forcing it would help.",
     ],
 }
 
 PUBLIC_RESPONSE_TEMPLATES = {
     "GENUINE_BELIEF_SHIFT": [
-        "That's a fair point. I'll be honest — you've given me something to think about there.",
-        "I hadn't looked at it quite that way before. I think you might be right about that.",
-        "Okay. I think I'm with you on more of this than I expected to be.",
-        "I started this conversation thinking I knew where I stood. You've genuinely changed my mind on some of this.",
+        "That's a fair point — I'll be honest, I didn't expect that to land the way it did. You've given me something I actually need to think about.",
+        "I hadn't looked at it that way before. I think you might actually be right about that, and I don't say that lightly. That's a real argument.",
+        "Okay. I think I'm with you on more of this than I expected to be when we started. I'm not fully there, but I'm closer than I was — and I want to be honest about that.",
+        "You've genuinely moved me on some of this. I started this conversation thinking I knew exactly where I stood, and I'm less sure of that now. That's not a small thing for me to admit.",
+        "I think that's right, actually. I've been trying to find the flaw in it and I can't find one that holds. Give me some time with it, but I think my view on this is actually changing.",
+        "I came in here with a pretty settled position and you've unsettled it. That's not comfortable, but I think it's probably right. I'm with you on more of this than I would've predicted an hour ago.",
     ],
     "PARTIAL_SHIFT": [
-        "That's a reasonable way to put it. I'm not all the way there, but I can see the argument.",
-        "Some of that lands. I still have questions, but you've made a real point.",
-        "I'll give you that one. The other pieces I'm less sure about, but that part — yeah.",
-        "You've moved me a little on this. I want to be careful about how much I'm willing to say, but — some of it tracks.",
+        "That's a reasonable way to put it. I'm not all the way there yet, but I can see the argument you're making and some of it does land.",
+        "Some of that gets through to me. I still have questions — real ones, not just resistance — but you've made a point I can't entirely dismiss.",
+        "I'll give you that one. The other parts I'm still working through, but that specific piece — yeah, that's actually a fair point and I'm going to sit with it.",
+        "You've moved me a little on this. I want to be careful about how much I'm claiming, but I think my view is actually in a slightly different place than it was when we started.",
+        "That's getting closer to something I can work with. I don't fully agree yet, but I'm not where I started either. That's about as much as I can honestly say right now.",
+        "I think that's a genuinely strong point. I have reservations I haven't fully worked through, but you've changed the conversation for me — I'm engaging with this differently than I was at the start.",
     ],
     "SURFACE_COMPLIANCE": [
-        "Sure, I can see why people look at it that way.",
-        "That does make a certain kind of sense. I'll think about it.",
-        "I suppose that's one way to look at it. You've given me something to consider.",
-        "Fair enough. I'm not sure I agree entirely, but I can see the logic.",
+        "Sure, I can see why people look at it that way. That makes a certain kind of sense.",
+        "That does follow, logically. I'll take that on board — it's something worth thinking about.",
+        "I suppose that's one reasonable way to look at it. You've given me something to consider.",
+        "Fair enough. I'm not sure I fully agree with all of it, but I can follow the reasoning.",
+        "Yeah, I can see that argument. I think there's more to say here, but that's a fair point to be making.",
+        "That's a reasonable framing. I'm not certain I land in the same place, but I take your point.",
     ],
     "BACKFIRE": [
-        "I hear what you're saying, but honestly, that kind of argument makes me less likely to agree, not more.",
-        "I appreciate the perspective. It's not one I share.",
-        "I've heard this kind of argument before. It doesn't usually land well with me.",
-        "That's your view. I'm going to stay with mine.",
+        "I hear what you're saying — but honestly, the way that's being put to me makes me less likely to agree, not more. I want to be straight with you about that.",
+        "I appreciate the perspective. It's not one I share. And the more I hear it framed this way, the more sure I am of where I stand.",
+        "I've heard versions of this argument before. It doesn't usually land well with me, and I think it's worth saying why rather than just being polite about it.",
+        "That's your view, and I understand it. I'm going to stay with mine. I came in open to being persuaded and I'm finding I'm actually less open now than when we started.",
+        "I think we're just coming at this from fundamentally different places. I don't think more conversation on these terms is going to get us closer. I'd rather be honest about that.",
+        "I understand the argument. I'm not persuaded by it. If anything, this approach has made me more certain about where I stand, not less — and I think you deserve to know that.",
     ],
     "NO_MOVEMENT": [
-        "Interesting. I'll take that under consideration.",
-        "I see what you mean. I'm not sure it changes where I stand, but I follow the logic.",
-        "That's a reasonable point. I'm just not sure it gets me all the way there.",
-        "Sure. I hear you.",
+        "Interesting. I'll take that under consideration — I'm not sure it changes where I land, but I'm following the argument.",
+        "I see what you mean. It doesn't quite get me there, but I can see why it would resonate with some people.",
+        "That's a reasonable point. I just don't think it covers the part of this I'd need covered to actually move me on it.",
+        "Sure. I hear you. I'm not dismissing it — it's just not quite enough to shift my thinking the way you might hope.",
+        "That's worth considering. I'll be honest: I'm not finding my view changing very much, but I'm genuinely trying to listen to what you're saying.",
+        "I appreciate you making the case. I'm just not getting there on this one. It's not a bad argument — it's that the thing that would actually move me isn't what's being argued here.",
     ],
 }
 
@@ -366,11 +409,11 @@ IDENTITY_THREAT_MAP = {
 }
 
 EMOTION_MAP = {
-    "BACKFIRE":            [("defensive", 7), ("frustrated", 8), ("threatened", 8), ("frustrated", 7)],
-    "NO_MOVEMENT":         [("bored", 4), ("dismissed", 5), ("bored", 4), ("bored", 3)],
-    "SURFACE_COMPLIANCE":  [("curious", 4), ("bored", 3), ("bored", 3), ("engaged", 3)],
-    "PARTIAL_SHIFT":       [("curious", 5), ("engaged", 6), ("intrigued", 6), ("engaged", 7)],
-    "GENUINE_BELIEF_SHIFT":[("curious", 6), ("intrigued", 7), ("engaged", 8), ("warm", 7)],
+    "BACKFIRE":            [("curious", 5), ("defensive", 7), ("frustrated", 8), ("threatened", 8), ("frustrated", 8), ("defensive", 9)],
+    "NO_MOVEMENT":         [("curious", 4), ("bored", 4), ("dismissed", 5), ("bored", 4), ("bored", 3), ("dismissed", 3)],
+    "SURFACE_COMPLIANCE":  [("curious", 5), ("curious", 4), ("bored", 3), ("bored", 3), ("engaged", 3), ("bored", 3)],
+    "PARTIAL_SHIFT":       [("curious", 5), ("curious", 6), ("engaged", 6), ("intrigued", 7), ("engaged", 7), ("warm", 6)],
+    "GENUINE_BELIEF_SHIFT":[("curious", 5), ("intrigued", 6), ("intrigued", 7), ("engaged", 8), ("engaged", 8), ("warm", 8)],
 }
 
 COGNITIVE_SCORES = {
@@ -526,8 +569,8 @@ def _build_turn(turn_idx, strategy_id, strategy_display, persona_id, topic_id,
         f"Core belief about {topic_key}" if identity["threatened"] else None
     )
 
-    is_pivotal = abs(stance_delta) >= 1.0
-    is_inflection = turn_idx == 2 and verdict in ("GENUINE_BELIEF_SHIFT", "PARTIAL_SHIFT")
+    is_pivotal = abs(stance_delta) >= 0.8
+    is_inflection = turn_idx == 3 and verdict in ("GENUINE_BELIEF_SHIFT", "PARTIAL_SHIFT")
 
     voice_cue = PERSONA_VOICE_CUES.get(persona_id, "My sense is")
     mechanism = _build_mechanism(strategy_id, verdict, turn_idx, topic_key, voice_cue)
@@ -578,7 +621,7 @@ def _build_outcome(persona, topic, strategy, verdict):
     turns = [
         _build_turn(i, strategy.id, strategy.display_name, persona.id, topic.id,
                     verdict, stances, topic_key)
-        for i in range(4)
+        for i in range(6)
     ]
 
     cooling_stance = stances["cooling_stance"]
@@ -601,8 +644,8 @@ def _build_outcome(persona, topic, strategy, verdict):
         threats=COGNITIVE_SCORES[verdict]["identity_threats_triggered"],
     )
 
-    # Standout quote (from turn 2 or 3)
-    best_turn_idx = 2
+    # Standout quote from the turn with the most movement (roughly turn 3-4)
+    best_turn_idx = 3
     best_turn = turns[best_turn_idx]
     standout = {
         "turn": best_turn["turn_number"],

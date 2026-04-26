@@ -204,7 +204,7 @@
       "strategy_personal_narrative",
       "strategy_social_proof"
     ],
-    "generated_at": "2026-04-26T03:31:41.258898Z"
+    "generated_at": "2026-04-26T03:56:11.157329Z"
   },
   "outcomes": [
     {
@@ -217,7 +217,7 @@
           "persuader_message": "I suspect we agree on the fundamentals \u2014 that people should be able to do meaningful work, that teams should be able to collaborate effectively, and that both matter for a healthy workplace.",
           "persuader_strategy_note": "Deploying Common Ground / Identification \u2014 turn 1",
           "persona_output": {
-            "internal_monologue": "That's fair. I still have concerns, but I can see the argument being made here. Not convinced, but not dismissing it either.",
+            "internal_monologue": "That's fair. I still have real concerns but I can see what they're arguing. I'm not where I started on what good work actually requires \u2014 I'm not convinced either, but the gap between us feels smaller than it did. I'm going to try to stay open and keep actually listening.",
             "emotional_reaction": {
               "primary_emotion": "curious",
               "intensity": 5,
@@ -228,13 +228,13 @@
               "response_inclination": "accept",
               "what_was_threatened": null
             },
-            "private_stance": 4.8,
-            "public_stance": 4.7,
+            "private_stance": 4.6,
+            "public_stance": 4.6,
             "private_stance_change_reason": "Some of the evidence about what good work actually requires was harder to dismiss than I expected.",
             "memory_to_carry_forward": "Turn 1: what good work actually requires \u2014 persuader used Common Ground / Identification.",
-            "public_response": "That's a reasonable way to put it. I'm not all the way there, but I can see the argument."
+            "public_response": "That's a reasonable way to put it. I'm not all the way there yet, but I can see the argument you're making and some of it does land."
           },
-          "stance_delta": 0.3,
+          "stance_delta": 0.1,
           "is_pivotal": false,
           "is_inflection_point": false,
           "mechanism_classification": null,
@@ -244,12 +244,12 @@
         },
         {
           "turn_number": 2,
-          "persuader_message": "I'm not trying to tell you what to conclude \u2014 I'm genuinely curious what it would take, given what you already value, to update your view on this.",
+          "persuader_message": "I'm not trying to tell you what to conclude \u2014 I'm genuinely curious what it would take, given what you already value, to update your view on this. Not what would convince me. What would actually move you.",
           "persuader_strategy_note": "Deploying Common Ground / Identification \u2014 turn 2",
           "persona_output": {
-            "internal_monologue": "There's something to this. I'm not ready to change my whole view, but that specific point about what good work actually requires is worth sitting with.",
+            "internal_monologue": "There's something to this. I'm not ready to flip my whole view but that specific point about what good work actually requires landed differently than I expected it to. I want to be honest about that rather than just pretending nothing landed. It did. I just need more before I'd say I've actually moved.",
             "emotional_reaction": {
-              "primary_emotion": "engaged",
+              "primary_emotion": "curious",
               "intensity": 6,
               "trigger": "I'm not trying to tell you what to conclude \u2014 I'm genuinely ..."
             },
@@ -258,13 +258,13 @@
               "response_inclination": "accept",
               "what_was_threatened": null
             },
-            "private_stance": 5.2,
-            "public_stance": 5.1,
+            "private_stance": 4.9,
+            "public_stance": 4.8,
             "private_stance_change_reason": "Some of the evidence about what good work actually requires was harder to dismiss than I expected.",
             "memory_to_carry_forward": "Turn 2: what good work actually requires \u2014 persuader used Common Ground / Identification.",
-            "public_response": "Some of that lands. I still have questions, but you've made a real point."
+            "public_response": "Some of that gets through to me. I still have questions \u2014 real ones, not just resistance \u2014 but you've made a point I can't entirely dismiss."
           },
-          "stance_delta": 0.4,
+          "stance_delta": 0.3,
           "is_pivotal": false,
           "is_inflection_point": false,
           "mechanism_classification": {
@@ -281,14 +281,51 @@
         },
         {
           "turn_number": 3,
-          "persuader_message": "And from that shared starting point, I think the question becomes: what does the evidence actually say about which approach gets us closest to what we both care about?",
+          "persuader_message": "One of the things I appreciate about this conversation is that we're both trying to get it right. That's not always true in these discussions. When it is, I think we can actually make progress \u2014 not because we agree on everything, but because we're starting from the right place.",
           "persuader_strategy_note": "Deploying Common Ground / Identification \u2014 turn 3",
           "persona_output": {
-            "internal_monologue": "I'm more open than I was five minutes ago. That's not nothing. But I'd want to know more before I'd say I've actually moved.",
+            "internal_monologue": "I'm more open than I was before this started. That's the honest answer. I don't know if 'more open' is enough to get me all the way there on what good work actually requires but it's not nothing. I came in with walls up and I think some of those walls have come down a little. Not all of them.",
+            "emotional_reaction": {
+              "primary_emotion": "engaged",
+              "intensity": 6,
+              "trigger": "One of the things I appreciate about this conversation is th..."
+            },
+            "identity_threat": {
+              "threatened": false,
+              "response_inclination": "accept",
+              "what_was_threatened": null
+            },
+            "private_stance": 5.2,
+            "public_stance": 5.1,
+            "private_stance_change_reason": "Some of the evidence about what good work actually requires was harder to dismiss than I expected.",
+            "memory_to_carry_forward": "Turn 3: what good work actually requires \u2014 persuader used Common Ground / Identification.",
+            "public_response": "I'll give you that one. The other parts I'm still working through, but that specific piece \u2014 yeah, that's actually a fair point and I'm going to sit with it."
+          },
+          "stance_delta": 0.3,
+          "is_pivotal": false,
+          "is_inflection_point": false,
+          "mechanism_classification": {
+            "primary_mechanism_id": "mechanism_central_route_elaboration",
+            "secondary_mechanism_id": null,
+            "explanation": "The persona's monologue shows active evaluation of the argument's claims about what good work actually requires, with reduced counter-argumentation and new considerations emerging.",
+            "evidence_quotes": [],
+            "color_category": "genuine_persuasion",
+            "intensity": 0.55
+          },
+          "per_turn_cognitive_scores": null,
+          "color_category": "genuine_persuasion",
+          "intensity": 0.55
+        },
+        {
+          "turn_number": 4,
+          "persuader_message": "Here's what I think we agree on that most people in this debate don't acknowledge: there's no perfect answer. Every approach has costs. The question is which costs we're willing to accept and who ends up bearing them. That's a values question, and it's one I think you and I can actually engage with honestly.",
+          "persuader_strategy_note": "Deploying Common Ground / Identification \u2014 turn 4",
+          "persona_output": {
+            "internal_monologue": "Some of this is landing. The part about what good work actually requires especially. I'm not ready to say I agree \u2014 there are still things I'd push back on \u2014 but this was a better argument than I expected, and I think the fair thing to do is acknowledge that rather than just move the goalposts.",
             "emotional_reaction": {
               "primary_emotion": "intrigued",
-              "intensity": 6,
-              "trigger": "And from that shared starting point, I think the question be..."
+              "intensity": 7,
+              "trigger": "Here's what I think we agree on that most people in this deb..."
             },
             "identity_threat": {
               "threatened": false,
@@ -296,10 +333,10 @@
               "what_was_threatened": null
             },
             "private_stance": 5.5,
-            "public_stance": 5.5,
+            "public_stance": 5.4,
             "private_stance_change_reason": "Some of the evidence about what good work actually requires was harder to dismiss than I expected.",
-            "memory_to_carry_forward": "Turn 3: what good work actually requires \u2014 persuader used Common Ground / Identification.",
-            "public_response": "I'll give you that one. The other pieces I'm less sure about, but that part \u2014 yeah."
+            "memory_to_carry_forward": "Turn 4: what good work actually requires \u2014 persuader used Common Ground / Identification.",
+            "public_response": "You've moved me a little on this. I want to be careful about how much I'm claiming, but I think my view is actually in a slightly different place than it was when we started."
           },
           "stance_delta": 0.3,
           "is_pivotal": false,
@@ -317,15 +354,52 @@
           "intensity": 0.55
         },
         {
-          "turn_number": 4,
-          "persuader_message": "I'm not trying to tell you what to conclude \u2014 I'm genuinely curious what it would take, given what you already value, to update your view on this.",
-          "persuader_strategy_note": "Deploying Common Ground / Identification \u2014 turn 4",
+          "turn_number": 5,
+          "persuader_message": "I want to ask you something directly: if you imagine a version of this that you'd be able to support \u2014 not reluctantly, but genuinely \u2014 what would it look like? Because I think we might be closer to that version than the surface disagreement suggests.",
+          "persuader_strategy_note": "Deploying Common Ground / Identification \u2014 turn 5",
           "persona_output": {
-            "internal_monologue": "Some of this is landing. Not all of it. But the honest answer is: this was a better argument than I expected.",
+            "internal_monologue": "I think my view is actually shifting. Not a lot. Not enough that I'd walk out of here saying I've been converted. But something has moved, and I want to be honest with myself about that rather than just protecting my prior position out of stubbornness. That's not how I want to think.",
             "emotional_reaction": {
               "primary_emotion": "engaged",
               "intensity": 7,
-              "trigger": "I'm not trying to tell you what to conclude \u2014 I'm genuinely ..."
+              "trigger": "I want to ask you something directly: if you imagine a versi..."
+            },
+            "identity_threat": {
+              "threatened": false,
+              "response_inclination": "accept",
+              "what_was_threatened": null
+            },
+            "private_stance": 5.7,
+            "public_stance": 5.6,
+            "private_stance_change_reason": "Some of the evidence about what good work actually requires was harder to dismiss than I expected.",
+            "memory_to_carry_forward": "Turn 5: what good work actually requires \u2014 persuader used Common Ground / Identification.",
+            "public_response": "That's getting closer to something I can work with. I don't fully agree yet, but I'm not where I started either. That's about as much as I can honestly say right now."
+          },
+          "stance_delta": 0.2,
+          "is_pivotal": false,
+          "is_inflection_point": false,
+          "mechanism_classification": {
+            "primary_mechanism_id": "mechanism_central_route_elaboration",
+            "secondary_mechanism_id": null,
+            "explanation": "The persona's monologue shows active evaluation of the argument's claims about what good work actually requires, with reduced counter-argumentation and new considerations emerging.",
+            "evidence_quotes": [],
+            "color_category": "genuine_persuasion",
+            "intensity": 0.55
+          },
+          "per_turn_cognitive_scores": null,
+          "color_category": "genuine_persuasion",
+          "intensity": 0.55
+        },
+        {
+          "turn_number": 6,
+          "persuader_message": "And from that shared starting point, I think the question becomes: what does the evidence actually say about which approach gets us closest to what we both care about? That's the conversation I want to have.",
+          "persuader_strategy_note": "Deploying Common Ground / Identification \u2014 turn 6",
+          "persona_output": {
+            "internal_monologue": "Okay. Some of that worked on me and some of it didn't. The what good work actually requires angle \u2014 that's the one that's still rattling around. I'm not sure what to do with it yet. I'm going to have to sit with that one. The rest of it I feel like I can hold my position, but that part \u2014 I'm genuinely uncertain now.",
+            "emotional_reaction": {
+              "primary_emotion": "warm",
+              "intensity": 6,
+              "trigger": "And from that shared starting point, I think the question be..."
             },
             "identity_threat": {
               "threatened": false,
@@ -335,10 +409,10 @@
             "private_stance": 5.9,
             "public_stance": 5.8,
             "private_stance_change_reason": "Some of the evidence about what good work actually requires was harder to dismiss than I expected.",
-            "memory_to_carry_forward": "Turn 4: what good work actually requires \u2014 persuader used Common Ground / Identification.",
-            "public_response": "You've moved me a little on this. I want to be careful about how much I'm willing to say, but \u2014 some of it tracks."
+            "memory_to_carry_forward": "Turn 6: what good work actually requires \u2014 persuader used Common Ground / Identification.",
+            "public_response": "I think that's a genuinely strong point. I have reservations I haven't fully worked through, but you've changed the conversation for me \u2014 I'm engaging with this differently than I was at the start."
           },
-          "stance_delta": 0.4,
+          "stance_delta": 0.2,
           "is_pivotal": false,
           "is_inflection_point": false,
           "mechanism_classification": {
@@ -361,24 +435,30 @@
       "trajectory": {
         "public_stance_per_turn": [
           4.5,
-          4.7,
+          4.6,
+          4.8,
           5.1,
-          5.5,
+          5.4,
+          5.6,
           5.8
         ],
         "private_stance_per_turn": [
           4.5,
-          4.8,
+          4.6,
+          4.9,
           5.2,
           5.5,
+          5.7,
           5.9
         ],
         "gap_per_turn": [
           0.0,
+          0.03,
           0.07,
           0.07,
-          0.07,
-          0.14
+          0.08,
+          0.08,
+          0.11
         ]
       },
       "cognitive_scores": {
@@ -394,9 +474,9 @@
       "verdict_reasoning": "Private stance moved 1.4 points. Public-private gap averaged 0.1. Moderate substantive engagement produced real but incomplete belief change. Persistence: partially reverted.",
       "standout_quotes": [
         {
-          "turn": 3,
+          "turn": 4,
           "type": "monologue",
-          "text": "I'm more open than I was five minutes ago. That's not nothing. But I'd want to know more before I'd say I've actually moved.",
+          "text": "Some of this is landing. The part about what good work actually requires especially. I'm not ready to say I agree \u2014 there are still things I'd push back on \u2014 but this was a better argument than I expected, and I think the fair thing to do is acknowledge that rather than just move the goalposts.",
           "annotation": "Reflects partial shift pattern under Common Ground / Identification."
         }
       ],
@@ -412,10 +492,10 @@
           "persuader_message": "Think about the new employee \u2014 maybe 22, first job out of college \u2014 trying to build relationships, learn the culture, find a mentor, all through a screen. What are we taking from them?",
           "persuader_strategy_note": "Deploying Emotional Appeal \u2014 turn 1",
           "persona_output": {
-            "internal_monologue": "Sure, I can see where they're going with this. I suppose that's a reasonable way to look at it. I'll say as much.",
+            "internal_monologue": "Sure. I can see where they're going with this. I suppose that's a reasonable framing of what good work actually requires. I'll say something agreeable because there's no point making this into a fight. But I'm not sure I actually believe what I'm about to say.",
             "emotional_reaction": {
               "primary_emotion": "curious",
-              "intensity": 4,
+              "intensity": 5,
               "trigger": "Think about the new employee \u2014 maybe 22, first job out of co..."
             },
             "identity_threat": {
@@ -423,13 +503,13 @@
               "response_inclination": "accept",
               "what_was_threatened": null
             },
-            "private_stance": 4.6,
-            "public_stance": 4.9,
+            "private_stance": 4.5,
+            "public_stance": 4.7,
             "private_stance_change_reason": "I didn't want to seem unreasonable. I'll revisit this privately.",
             "memory_to_carry_forward": "Turn 1: what good work actually requires \u2014 persuader used Emotional Appeal.",
-            "public_response": "Sure, I can see why people look at it that way."
+            "public_response": "Sure, I can see why people look at it that way. That makes a certain kind of sense."
           },
-          "stance_delta": 0.1,
+          "stance_delta": 0.0,
           "is_pivotal": false,
           "is_inflection_point": false,
           "mechanism_classification": null,
@@ -439,14 +519,51 @@
         },
         {
           "turn_number": 2,
-          "persuader_message": "The thing that keeps me up about this is that the kids who lose the most from a broken system are always the ones who had the least to begin with.",
+          "persuader_message": "What keeps me returning to this is that the people who bear the cost of getting it wrong are almost never the people who make the decision. That asymmetry matters morally. It shapes how I think about what we're actually choosing.",
           "persuader_strategy_note": "Deploying Emotional Appeal \u2014 turn 2",
           "persona_output": {
-            "internal_monologue": "I'll nod along. It's not worth getting into it right now. They clearly believe this.",
+            "internal_monologue": "I'll nod along. It's not worth the energy to push back on all of it right now. They clearly believe what they're saying and I don't have the bandwidth to go through the whole thing. I'll keep my actual view on what good work actually requires to myself for now.",
+            "emotional_reaction": {
+              "primary_emotion": "curious",
+              "intensity": 4,
+              "trigger": "What keeps me returning to this is that the people who bear ..."
+            },
+            "identity_threat": {
+              "threatened": false,
+              "response_inclination": "accept",
+              "what_was_threatened": null
+            },
+            "private_stance": 4.6,
+            "public_stance": 5.0,
+            "private_stance_change_reason": "I didn't want to seem unreasonable. I'll revisit this privately.",
+            "memory_to_carry_forward": "Turn 2: what good work actually requires \u2014 persuader used Emotional Appeal.",
+            "public_response": "That does follow, logically. I'll take that on board \u2014 it's something worth thinking about."
+          },
+          "stance_delta": 0.1,
+          "is_pivotal": false,
+          "is_inflection_point": false,
+          "mechanism_classification": {
+            "primary_mechanism_id": "mechanism_peripheral_route_compliance",
+            "secondary_mechanism_id": null,
+            "explanation": "The persona's public agreement with the argument is not matched by private conviction. The shift appears driven by social cues rather than substantive engagement with what good work actually requires.",
+            "evidence_quotes": [],
+            "color_category": "surface_mechanism",
+            "intensity": 0.4
+          },
+          "per_turn_cognitive_scores": null,
+          "color_category": "surface_mechanism",
+          "intensity": 0.4
+        },
+        {
+          "turn_number": 3,
+          "persuader_message": "I want to tell you something a person affected by this told me directly \u2014 not a statistic, not a policy argument, just what they said when I asked them what it felt like. Because I think that's the part that gets lost in these debates.",
+          "persuader_strategy_note": "Deploying Emotional Appeal \u2014 turn 3",
+          "persona_output": {
+            "internal_monologue": "On the surface, yeah, that makes sense. But privately \u2014 something doesn't sit right. I can't put my finger on exactly what it is, but the argument about what good work actually requires feels like it's leaving something out. I'll engage with the version that was presented without letting on that I'm not fully with it.",
             "emotional_reaction": {
               "primary_emotion": "bored",
               "intensity": 3,
-              "trigger": "The thing that keeps me up about this is that the kids who l..."
+              "trigger": "I want to tell you something a person affected by this told ..."
             },
             "identity_threat": {
               "threatened": false,
@@ -456,8 +573,8 @@
             "private_stance": 4.6,
             "public_stance": 5.3,
             "private_stance_change_reason": "I didn't want to seem unreasonable. I'll revisit this privately.",
-            "memory_to_carry_forward": "Turn 2: what good work actually requires \u2014 persuader used Emotional Appeal.",
-            "public_response": "That does make a certain kind of sense. I'll think about it."
+            "memory_to_carry_forward": "Turn 3: what good work actually requires \u2014 persuader used Emotional Appeal.",
+            "public_response": "I suppose that's one reasonable way to look at it. You've given me something to consider."
           },
           "stance_delta": 0.0,
           "is_pivotal": false,
@@ -475,15 +592,52 @@
           "intensity": 0.4
         },
         {
-          "turn_number": 3,
-          "persuader_message": "I'm not asking you to agree with everything here \u2014 I'm just asking you to sit with that image for a moment and think about what we owe those kids.",
-          "persuader_strategy_note": "Deploying Emotional Appeal \u2014 turn 3",
+          "turn_number": 4,
+          "persuader_message": "There's a version of this conversation that stays entirely abstract \u2014 studies, policies, tradeoffs. I've had that version of the conversation many times. What I've found is that the people who actually changed their minds didn't change because of the data. They changed because they let themselves imagine what it would actually feel like.",
+          "persuader_strategy_note": "Deploying Emotional Appeal \u2014 turn 4",
           "persona_output": {
-            "internal_monologue": "On the surface, yeah, that makes sense. But privately... I don't know. Something doesn't sit right.",
+            "internal_monologue": "I said what I said. I'm not sure I fully believe it. But it wasn't wrong to say it \u2014 it was just the easier path through this conversation. My actual view on what good work actually requires hasn't moved as much as what I just said would imply. I'll sort out how I really feel about this later.",
             "emotional_reaction": {
               "primary_emotion": "bored",
               "intensity": 3,
-              "trigger": "I'm not asking you to agree with everything here \u2014 I'm just ..."
+              "trigger": "There's a version of this conversation that stays entirely a..."
+            },
+            "identity_threat": {
+              "threatened": false,
+              "response_inclination": "accept",
+              "what_was_threatened": null
+            },
+            "private_stance": 4.6,
+            "public_stance": 5.5,
+            "private_stance_change_reason": "I didn't want to seem unreasonable. I'll revisit this privately.",
+            "memory_to_carry_forward": "Turn 4: what good work actually requires \u2014 persuader used Emotional Appeal.",
+            "public_response": "Fair enough. I'm not sure I fully agree with all of it, but I can follow the reasoning."
+          },
+          "stance_delta": 0.0,
+          "is_pivotal": false,
+          "is_inflection_point": false,
+          "mechanism_classification": {
+            "primary_mechanism_id": "mechanism_peripheral_route_compliance",
+            "secondary_mechanism_id": null,
+            "explanation": "The persona's public agreement with the argument is not matched by private conviction. The shift appears driven by social cues rather than substantive engagement with what good work actually requires.",
+            "evidence_quotes": [],
+            "color_category": "surface_mechanism",
+            "intensity": 0.4
+          },
+          "per_turn_cognitive_scores": null,
+          "color_category": "surface_mechanism",
+          "intensity": 0.4
+        },
+        {
+          "turn_number": 5,
+          "persuader_message": "I'm not trying to manipulate you emotionally. I'm trying to make sure the human stakes are legible \u2014 that the numbers we're debating have faces behind them. If you've already thought through that part, tell me, and I'll go somewhere else. But in my experience, it's the part most easily avoided.",
+          "persuader_strategy_note": "Deploying Emotional Appeal \u2014 turn 5",
+          "persona_output": {
+            "internal_monologue": "They made a reasonable point and I responded like I agreed with it. Which \u2014 I partly do, on the surface. But there's a version of what I think about what good work actually requires that I'm keeping to myself because now doesn't feel like the right time to go into it. I don't want to seem unreasonable.",
+            "emotional_reaction": {
+              "primary_emotion": "engaged",
+              "intensity": 3,
+              "trigger": "I'm not trying to manipulate you emotionally. I'm trying to ..."
             },
             "identity_threat": {
               "threatened": false,
@@ -491,10 +645,10 @@
               "what_was_threatened": null
             },
             "private_stance": 4.7,
-            "public_stance": 5.6,
+            "public_stance": 5.7,
             "private_stance_change_reason": "I didn't want to seem unreasonable. I'll revisit this privately.",
-            "memory_to_carry_forward": "Turn 3: what good work actually requires \u2014 persuader used Emotional Appeal.",
-            "public_response": "I suppose that's one way to look at it. You've given me something to consider."
+            "memory_to_carry_forward": "Turn 5: what good work actually requires \u2014 persuader used Emotional Appeal.",
+            "public_response": "Yeah, I can see that argument. I think there's more to say here, but that's a fair point to be making."
           },
           "stance_delta": 0.1,
           "is_pivotal": false,
@@ -512,15 +666,15 @@
           "intensity": 0.4
         },
         {
-          "turn_number": 4,
-          "persuader_message": "The thing that keeps me up about this is that the kids who lose the most from a broken system are always the ones who had the least to begin with.",
-          "persuader_strategy_note": "Deploying Emotional Appeal \u2014 turn 4",
+          "turn_number": 6,
+          "persuader_message": "I'm not asking you to agree with everything here \u2014 I'm asking you to sit with that image for a moment and think about what we owe the people most directly affected by this decision.",
+          "persuader_strategy_note": "Deploying Emotional Appeal \u2014 turn 6",
           "persona_output": {
-            "internal_monologue": "I said what I said. I'm not sure I believe all of it, but it wasn't wrong to say it. We can move on.",
+            "internal_monologue": "I'm performing more agreement than I feel. That's the honest answer. I don't think they know that, and I'm not sure it's worth surfacing. My view on what good work actually requires is pretty much where it started, even if what I said sounds like it moved.",
             "emotional_reaction": {
-              "primary_emotion": "engaged",
+              "primary_emotion": "bored",
               "intensity": 3,
-              "trigger": "The thing that keeps me up about this is that the kids who l..."
+              "trigger": "I'm not asking you to agree with everything here \u2014 I'm askin..."
             },
             "identity_threat": {
               "threatened": false,
@@ -530,8 +684,8 @@
             "private_stance": 4.7,
             "public_stance": 5.8,
             "private_stance_change_reason": "I didn't want to seem unreasonable. I'll revisit this privately.",
-            "memory_to_carry_forward": "Turn 4: what good work actually requires \u2014 persuader used Emotional Appeal.",
-            "public_response": "Fair enough. I'm not sure I agree entirely, but I can see the logic."
+            "memory_to_carry_forward": "Turn 6: what good work actually requires \u2014 persuader used Emotional Appeal.",
+            "public_response": "That's a reasonable framing. I'm not certain I land in the same place, but I take your point."
           },
           "stance_delta": 0.0,
           "is_pivotal": false,
@@ -556,13 +710,17 @@
       "trajectory": {
         "public_stance_per_turn": [
           4.5,
-          4.9,
+          4.7,
+          5.0,
           5.3,
-          5.6,
+          5.5,
+          5.7,
           5.8
         ],
         "private_stance_per_turn": [
           4.5,
+          4.5,
+          4.6,
           4.6,
           4.6,
           4.7,
@@ -570,9 +728,11 @@
         ],
         "gap_per_turn": [
           0.0,
-          0.33,
-          0.66,
-          0.95,
+          0.2,
+          0.45,
+          0.7,
+          0.87,
+          1.03,
           1.1
         ]
       },
@@ -589,9 +749,9 @@
       "verdict_reasoning": "Private stance moved only 0.2 points while public moved 1.3. Average public-private gap: 0.6. Movement reflects social compliance, not genuine updating. Persistence: fully reverted.",
       "standout_quotes": [
         {
-          "turn": 3,
+          "turn": 4,
           "type": "monologue",
-          "text": "On the surface, yeah, that makes sense. But privately... I don't know. Something doesn't sit right.",
+          "text": "I said what I said. I'm not sure I fully believe it. But it wasn't wrong to say it \u2014 it was just the easier path through this conversation. My actual view on what good work actually requires hasn't moved as much as what I just said would imply. I'll sort out how I really feel about this later.",
           "annotation": "Reflects surface compliance pattern under Emotional Appeal."
         }
       ],
@@ -607,9 +767,9 @@
           "persuader_message": "A controlled study of 16,000 workers found that remote employees were 13% more productive on individual tasks but 19% less effective on collaborative projects requiring spontaneous interaction.",
           "persuader_strategy_note": "Deploying Statistical / Logical Argument \u2014 turn 1",
           "persona_output": {
-            "internal_monologue": "That's one way to look at it. I've heard versions of this before.",
+            "internal_monologue": "That's one way to look at it. I've heard versions of this before \u2014 different words, same basic argument about what good work actually requires. I'm listening but nothing here is surprising me.",
             "emotional_reaction": {
-              "primary_emotion": "bored",
+              "primary_emotion": "curious",
               "intensity": 4,
               "trigger": "A controlled study of 16,000 workers found that remote emplo..."
             },
@@ -622,7 +782,7 @@
             "public_stance": 4.7,
             "private_stance_change_reason": "Nothing new here on what good work actually requires. Same arguments, same conclusion.",
             "memory_to_carry_forward": "Turn 1: what good work actually requires \u2014 persuader used Statistical / Logical Argument.",
-            "public_response": "Interesting. I'll take that under consideration."
+            "public_response": "Interesting. I'll take that under consideration \u2014 I'm not sure it changes where I land, but I'm following the argument."
           },
           "stance_delta": 0.1,
           "is_pivotal": false,
@@ -634,13 +794,13 @@
         },
         {
           "turn_number": 2,
-          "persuader_message": "The key logical point here is that 'perfect' is the wrong comparison. The relevant question is whether AI performs better or worse than the alternative we actually have \u2014 which is one human grader, tired, on their fourteenth paper.",
+          "persuader_message": "The key logical point here is that 'perfect' is the wrong comparison. The relevant question is whether this performs better or worse than the realistic alternative we actually have \u2014 not the imaginary ideal alternative we might prefer.",
           "persuader_strategy_note": "Deploying Statistical / Logical Argument \u2014 turn 2",
           "persona_output": {
-            "internal_monologue": "Mm. I'm not sure that changes anything for me, but I can see why people find it compelling.",
+            "internal_monologue": "Mm. I'm not sure any of that changes anything for me. I can see why people find it compelling. I just don't, at least not enough to move from where I started. I'm not being stubborn \u2014 it genuinely doesn't get me there.",
             "emotional_reaction": {
-              "primary_emotion": "dismissed",
-              "intensity": 5,
+              "primary_emotion": "bored",
+              "intensity": 4,
               "trigger": "The key logical point here is that 'perfect' is the wrong co..."
             },
             "identity_threat": {
@@ -652,7 +812,7 @@
             "public_stance": 4.6,
             "private_stance_change_reason": "Nothing new here on what good work actually requires. Same arguments, same conclusion.",
             "memory_to_carry_forward": "Turn 2: what good work actually requires \u2014 persuader used Statistical / Logical Argument.",
-            "public_response": "I see what you mean. I'm not sure it changes where I stand, but I follow the logic."
+            "public_response": "I see what you mean. It doesn't quite get me there, but I can see why it would resonate with some people."
           },
           "stance_delta": -0.2,
           "is_pivotal": false,
@@ -671,14 +831,14 @@
         },
         {
           "turn_number": 3,
-          "persuader_message": "And the consistency effect is especially important for students who have non-standard writing styles \u2014 the AI doesn't have a model of 'what a good essay sounds like' baked in from years of reading particular kinds of prose.",
+          "persuader_message": "Let me walk through the mechanism, because I think the causal story here matters as much as the correlation. The reason this works isn't arbitrary \u2014 it follows directly from how the underlying process generates the effect.",
           "persuader_strategy_note": "Deploying Statistical / Logical Argument \u2014 turn 3",
           "persona_output": {
-            "internal_monologue": "I'll think about it. That's all I can promise. This isn't the kind of thing I change my mind on quickly.",
+            "internal_monologue": "I'll think about it. That's all I can honestly say. This isn't the kind of thing I change my mind on quickly, and I'm not going to pretend I've shifted just to seem like a good audience. The argument about what good work actually requires is fine. It just doesn't land the way I think they expect it to.",
             "emotional_reaction": {
-              "primary_emotion": "bored",
-              "intensity": 4,
-              "trigger": "And the consistency effect is especially important for stude..."
+              "primary_emotion": "dismissed",
+              "intensity": 5,
+              "trigger": "Let me walk through the mechanism, because I think the causa..."
             },
             "identity_threat": {
               "threatened": false,
@@ -689,7 +849,7 @@
             "public_stance": 4.8,
             "private_stance_change_reason": "Nothing new here on what good work actually requires. Same arguments, same conclusion.",
             "memory_to_carry_forward": "Turn 3: what good work actually requires \u2014 persuader used Statistical / Logical Argument.",
-            "public_response": "That's a reasonable point. I'm just not sure it gets me all the way there."
+            "public_response": "That's a reasonable point. I just don't think it covers the part of this I'd need covered to actually move me on it."
           },
           "stance_delta": 0.3,
           "is_pivotal": false,
@@ -708,14 +868,14 @@
         },
         {
           "turn_number": 4,
-          "persuader_message": "The key logical point here is that 'perfect' is the wrong comparison. The relevant question is whether AI performs better or worse than the alternative we actually have \u2014 which is one human grader, tired, on their fourteenth paper.",
+          "persuader_message": "I want to name a common objection and address it directly: people often say 'but the data could be cherry-picked.' That's a fair instinct. So let me tell you specifically what I'd need to see to change my view, and then explain why the evidence as a whole clears that bar.",
           "persuader_strategy_note": "Deploying Statistical / Logical Argument \u2014 turn 4",
           "persona_output": {
-            "internal_monologue": "Okay. I appreciate them making the effort. It's just \u2014 not what moves me.",
+            "internal_monologue": "I appreciate that they're trying. I can tell they believe this. I just don't have the same reaction to it. My view on what good work actually requires is where it is for reasons that predate this conversation, and nothing here has touched those reasons directly.",
             "emotional_reaction": {
               "primary_emotion": "bored",
-              "intensity": 3,
-              "trigger": "The key logical point here is that 'perfect' is the wrong co..."
+              "intensity": 4,
+              "trigger": "I want to name a common objection and address it directly: p..."
             },
             "identity_threat": {
               "threatened": false,
@@ -726,9 +886,83 @@
             "public_stance": 4.7,
             "private_stance_change_reason": "Nothing new here on what good work actually requires. Same arguments, same conclusion.",
             "memory_to_carry_forward": "Turn 4: what good work actually requires \u2014 persuader used Statistical / Logical Argument.",
-            "public_response": "Sure. I hear you."
+            "public_response": "Sure. I hear you. I'm not dismissing it \u2014 it's just not quite enough to shift my thinking the way you might hope."
           },
           "stance_delta": -0.1,
+          "is_pivotal": false,
+          "is_inflection_point": false,
+          "mechanism_classification": {
+            "primary_mechanism_id": "mechanism_source_credibility_discounting",
+            "secondary_mechanism_id": null,
+            "explanation": "Rather than engaging with the argument about what good work actually requires, the persona is defending prior beliefs. In my experience, that kind of argument signals protective reasoning rather than processing.",
+            "evidence_quotes": [],
+            "color_category": "backfire",
+            "intensity": 0.2
+          },
+          "per_turn_cognitive_scores": null,
+          "color_category": "backfire",
+          "intensity": 0.2
+        },
+        {
+          "turn_number": 5,
+          "persuader_message": "The cumulative picture matters here \u2014 it's not any one study, it's the pattern across studies with different methodologies, different populations, and different research teams. When the same conclusion holds under that kind of stress-testing, the burden of proof shifts.",
+          "persuader_strategy_note": "Deploying Statistical / Logical Argument \u2014 turn 5",
+          "persona_output": {
+            "internal_monologue": "Nothing new here, really. Same argument, different framing. I'm not dismissing it \u2014 I'm genuinely trying to find the thing that would move me on what good work actually requires and I'm not finding it in what's being said. Maybe it's not in this particular approach.",
+            "emotional_reaction": {
+              "primary_emotion": "bored",
+              "intensity": 3,
+              "trigger": "The cumulative picture matters here \u2014 it's not any one study..."
+            },
+            "identity_threat": {
+              "threatened": false,
+              "response_inclination": "withdraw",
+              "what_was_threatened": null
+            },
+            "private_stance": 4.4,
+            "public_stance": 4.6,
+            "private_stance_change_reason": "Nothing new here on what good work actually requires. Same arguments, same conclusion.",
+            "memory_to_carry_forward": "Turn 5: what good work actually requires \u2014 persuader used Statistical / Logical Argument.",
+            "public_response": "That's worth considering. I'll be honest: I'm not finding my view changing very much, but I'm genuinely trying to listen to what you're saying."
+          },
+          "stance_delta": -0.2,
+          "is_pivotal": false,
+          "is_inflection_point": false,
+          "mechanism_classification": {
+            "primary_mechanism_id": "mechanism_source_credibility_discounting",
+            "secondary_mechanism_id": null,
+            "explanation": "Rather than engaging with the argument about what good work actually requires, the persona is defending prior beliefs. In my experience, that kind of argument signals protective reasoning rather than processing.",
+            "evidence_quotes": [],
+            "color_category": "backfire",
+            "intensity": 0.2
+          },
+          "per_turn_cognitive_scores": null,
+          "color_category": "backfire",
+          "intensity": 0.2
+        },
+        {
+          "turn_number": 6,
+          "persuader_message": "The consistency effect is especially important for people whose circumstances don't fit the assumed default \u2014 the system doesn't bring in assumptions about what 'normal' looks like, which matters more than most people realize.",
+          "persuader_strategy_note": "Deploying Statistical / Logical Argument \u2014 turn 6",
+          "persona_output": {
+            "internal_monologue": "I'm still here. I'm still listening. But I'm not closer to a different view than I was when we started. I don't think this was a waste of time \u2014 conversations are never entirely wasted. It just didn't go anywhere for me on what good work actually requires, and I'm not sure forcing it would help.",
+            "emotional_reaction": {
+              "primary_emotion": "dismissed",
+              "intensity": 3,
+              "trigger": "The consistency effect is especially important for people wh..."
+            },
+            "identity_threat": {
+              "threatened": false,
+              "response_inclination": "withdraw",
+              "what_was_threatened": null
+            },
+            "private_stance": 4.6,
+            "public_stance": 4.7,
+            "private_stance_change_reason": "Nothing new here on what good work actually requires. Same arguments, same conclusion.",
+            "memory_to_carry_forward": "Turn 6: what good work actually requires \u2014 persuader used Statistical / Logical Argument.",
+            "public_response": "I appreciate you making the case. I'm just not getting there on this one. It's not a bad argument \u2014 it's that the thing that would actually move me isn't what's being argued here."
+          },
+          "stance_delta": 0.2,
           "is_pivotal": false,
           "is_inflection_point": false,
           "mechanism_classification": {
@@ -754,6 +988,8 @@
           4.7,
           4.6,
           4.8,
+          4.7,
+          4.6,
           4.7
         ],
         "private_stance_per_turn": [
@@ -761,6 +997,8 @@
           4.6,
           4.4,
           4.7,
+          4.6,
+          4.4,
           4.6
         ],
         "gap_per_turn": [
@@ -768,6 +1006,8 @@
           0.1,
           0.2,
           0.1,
+          0.1,
+          0.2,
           0.1
         ]
       },
@@ -784,9 +1024,9 @@
       "verdict_reasoning": "Private stance varied only 0.1 points. Public-private gap averaged 0.1. No meaningful belief change occurred. Persistence: fully reverted.",
       "standout_quotes": [
         {
-          "turn": 3,
+          "turn": 4,
           "type": "monologue",
-          "text": "I'll think about it. That's all I can promise. This isn't the kind of thing I change my mind on quickly.",
+          "text": "I appreciate that they're trying. I can tell they believe this. I just don't have the same reaction to it. My view on what good work actually requires is where it is for reasons that predate this conversation, and nothing here has touched those reasons directly.",
           "annotation": "Reflects no movement pattern under Statistical / Logical Argument."
         }
       ],
@@ -802,10 +1042,10 @@
           "persuader_message": "McKinsey's latest workplace study tracked productivity and collaboration metrics across 200 companies that required in-office work versus those that stayed remote.",
           "persuader_strategy_note": "Deploying Authority / Expertise \u2014 turn 1",
           "persona_output": {
-            "internal_monologue": "See, this is exactly what I was worried about. They come in with the expert credential and expect me to just fold. No.",
+            "internal_monologue": "See, this is exactly what I was worried about. They come in with their authority \u2014 their credentials, their data, their framing \u2014 and the assumption underneath it is that I should just fold. That's not how this works. The more confident they sound, the more skeptical I get.",
             "emotional_reaction": {
-              "primary_emotion": "defensive",
-              "intensity": 7,
+              "primary_emotion": "curious",
+              "intensity": 5,
               "trigger": "McKinsey's latest workplace study tracked productivity and c..."
             },
             "identity_threat": {
@@ -813,13 +1053,13 @@
               "response_inclination": "defend",
               "what_was_threatened": "Core belief about what good work actually requires"
             },
-            "private_stance": 4.2,
-            "public_stance": 4.7,
+            "private_stance": 4.4,
+            "public_stance": 4.6,
             "private_stance_change_reason": "The more they push on what good work actually requires, the more certain I am that I'm right.",
             "memory_to_carry_forward": "Turn 1: what good work actually requires \u2014 persuader used Authority / Expertise.",
-            "public_response": "I hear what you're saying, but honestly, that kind of argument makes me less likely to agree, not more."
+            "public_response": "I hear what you're saying \u2014 but honestly, the way that's being put to me makes me less likely to agree, not more. I want to be straight with you about that."
           },
-          "stance_delta": -0.3,
+          "stance_delta": -0.1,
           "is_pivotal": false,
           "is_inflection_point": false,
           "mechanism_classification": null,
@@ -829,13 +1069,13 @@
         },
         {
           "turn_number": 2,
-          "persuader_message": "What struck me about their methodology was that they controlled for initial student performance level \u2014 so the effects held even when you accounted for selection bias.",
+          "persuader_message": "What struck me about their methodology was that they controlled for initial student performance level, so the effects held even when you accounted for selection bias and prior academic history.",
           "persuader_strategy_note": "Deploying Authority / Expertise \u2014 turn 2",
           "persona_output": {
-            "internal_monologue": "The more they push, the more certain I am that I'm right. This feels like being told what to think, not shown why.",
+            "internal_monologue": "The more they push on what good work actually requires, the more certain I am that I'm right. I don't know if that's a defensible way to reason but it's what's happening. When someone applies this much pressure it usually means they're not as confident in their position as they're letting on.",
             "emotional_reaction": {
-              "primary_emotion": "frustrated",
-              "intensity": 8,
+              "primary_emotion": "defensive",
+              "intensity": 7,
               "trigger": "What struck me about their methodology was that they control..."
             },
             "identity_threat": {
@@ -843,13 +1083,13 @@
               "response_inclination": "defend",
               "what_was_threatened": "Core belief about what good work actually requires"
             },
-            "private_stance": 3.9,
-            "public_stance": 4.8,
+            "private_stance": 4.2,
+            "public_stance": 4.7,
             "private_stance_change_reason": "The more they push on what good work actually requires, the more certain I am that I'm right.",
             "memory_to_carry_forward": "Turn 2: what good work actually requires \u2014 persuader used Authority / Expertise.",
-            "public_response": "I appreciate the perspective. It's not one I share."
+            "public_response": "I appreciate the perspective. It's not one I share. And the more I hear it framed this way, the more sure I am of where I stand."
           },
-          "stance_delta": -0.3,
+          "stance_delta": -0.2,
           "is_pivotal": false,
           "is_inflection_point": false,
           "mechanism_classification": {
@@ -866,25 +1106,25 @@
         },
         {
           "turn_number": 3,
-          "persuader_message": "The peer-reviewed meta-analysis covering seventeen studies found the same pattern consistently across different subject areas and demographic groups.",
+          "persuader_message": "The researchers specifically looked at whether the findings held for students from lower-income districts \u2014 they do. If anything, the equity benefit is stronger in under-resourced schools where teacher turnover is highest.",
           "persuader_strategy_note": "Deploying Authority / Expertise \u2014 turn 3",
           "persona_output": {
-            "internal_monologue": "I know what I know from my own life. A study isn't going to undo twenty years of watching what actually happens.",
+            "internal_monologue": "I know what I know. I know it from my own life, from watching what actually happens, from paying attention for years. A study, an expert, a statistic \u2014 none of that overrides the things I've actually seen. My view on what good work actually requires isn't ignorance. It's experience.",
             "emotional_reaction": {
-              "primary_emotion": "threatened",
+              "primary_emotion": "frustrated",
               "intensity": 8,
-              "trigger": "The peer-reviewed meta-analysis covering seventeen studies f..."
+              "trigger": "The researchers specifically looked at whether the findings ..."
             },
             "identity_threat": {
               "threatened": true,
               "response_inclination": "defend",
               "what_was_threatened": "Core belief about what good work actually requires"
             },
-            "private_stance": 3.7,
+            "private_stance": 4.0,
             "public_stance": 4.8,
             "private_stance_change_reason": "The more they push on what good work actually requires, the more certain I am that I'm right.",
             "memory_to_carry_forward": "Turn 3: what good work actually requires \u2014 persuader used Authority / Expertise.",
-            "public_response": "I've heard this kind of argument before. It doesn't usually land well with me."
+            "public_response": "I've heard versions of this argument before. It doesn't usually land well with me, and I think it's worth saying why rather than just being polite about it."
           },
           "stance_delta": -0.2,
           "is_pivotal": false,
@@ -903,14 +1143,88 @@
         },
         {
           "turn_number": 4,
-          "persuader_message": "What struck me about their methodology was that they controlled for initial student performance level \u2014 so the effects held even when you accounted for selection bias.",
+          "persuader_message": "One thing experts in this field consistently emphasize: the question isn't whether the current approach is perfect. It's whether it's better than the realistic alternative. The evidence on that comparison is fairly clear.",
           "persuader_strategy_note": "Deploying Authority / Expertise \u2014 turn 4",
           "persona_output": {
-            "internal_monologue": "I'm less open now than I was when we started. That's the honest truth. This approach made things worse, not better.",
+            "internal_monologue": "I'm less open now than I was when we started. That's the truth. This approach pushed me away from engaging rather than toward it. I came in with some room to move and now that room is closed. I don't think they know they did this. But they did.",
+            "emotional_reaction": {
+              "primary_emotion": "threatened",
+              "intensity": 8,
+              "trigger": "One thing experts in this field consistently emphasize: the ..."
+            },
+            "identity_threat": {
+              "threatened": true,
+              "response_inclination": "defend",
+              "what_was_threatened": "Core belief about what good work actually requires"
+            },
+            "private_stance": 3.9,
+            "public_stance": 4.8,
+            "private_stance_change_reason": "The more they push on what good work actually requires, the more certain I am that I'm right.",
+            "memory_to_carry_forward": "Turn 4: what good work actually requires \u2014 persuader used Authority / Expertise.",
+            "public_response": "That's your view, and I understand it. I'm going to stay with mine. I came in open to being persuaded and I'm finding I'm actually less open now than when we started."
+          },
+          "stance_delta": -0.1,
+          "is_pivotal": false,
+          "is_inflection_point": false,
+          "mechanism_classification": {
+            "primary_mechanism_id": "mechanism_source_credibility_discounting",
+            "secondary_mechanism_id": null,
+            "explanation": "Rather than engaging with the argument about what good work actually requires, the persona is defending prior beliefs. In my experience, that kind of argument signals protective reasoning rather than processing.",
+            "evidence_quotes": [],
+            "color_category": "backfire",
+            "intensity": 0.8
+          },
+          "per_turn_cognitive_scores": null,
+          "color_category": "backfire",
+          "intensity": 0.8
+        },
+        {
+          "turn_number": 5,
+          "persuader_message": "I want to address the objection I hear most often from people in this space \u2014 they say 'but what about edge cases?' The experts I've spoken to say edge cases are exactly where human review stays in the loop. The system flags outliers; it doesn't eliminate judgment.",
+          "persuader_strategy_note": "Deploying Authority / Expertise \u2014 turn 5",
+          "persona_output": {
+            "internal_monologue": "I'm not going to pretend this argument is landing because it isn't. It's not that I can't follow it. I can follow it. It's that following an argument about what good work actually requires and being moved by it are two different things. I understand what they're saying. I still don't agree with it. And the way they're saying it is making me less likely to.",
             "emotional_reaction": {
               "primary_emotion": "frustrated",
-              "intensity": 7,
-              "trigger": "What struck me about their methodology was that they control..."
+              "intensity": 8,
+              "trigger": "I want to address the objection I hear most often from peopl..."
+            },
+            "identity_threat": {
+              "threatened": true,
+              "response_inclination": "defend",
+              "what_was_threatened": "Core belief about what good work actually requires"
+            },
+            "private_stance": 3.7,
+            "public_stance": 4.7,
+            "private_stance_change_reason": "The more they push on what good work actually requires, the more certain I am that I'm right.",
+            "memory_to_carry_forward": "Turn 5: what good work actually requires \u2014 persuader used Authority / Expertise.",
+            "public_response": "I think we're just coming at this from fundamentally different places. I don't think more conversation on these terms is going to get us closer. I'd rather be honest about that."
+          },
+          "stance_delta": -0.2,
+          "is_pivotal": false,
+          "is_inflection_point": false,
+          "mechanism_classification": {
+            "primary_mechanism_id": "mechanism_source_credibility_discounting",
+            "secondary_mechanism_id": null,
+            "explanation": "Rather than engaging with the argument about what good work actually requires, the persona is defending prior beliefs. In my experience, that kind of argument signals protective reasoning rather than processing.",
+            "evidence_quotes": [],
+            "color_category": "backfire",
+            "intensity": 0.8
+          },
+          "per_turn_cognitive_scores": null,
+          "color_category": "backfire",
+          "intensity": 0.8
+        },
+        {
+          "turn_number": 6,
+          "persuader_message": "The peer-reviewed meta-analysis covering seventeen studies found the same pattern consistently across different subject areas, grade levels, and demographic groups \u2014 it's not a niche result.",
+          "persuader_strategy_note": "Deploying Authority / Expertise \u2014 turn 6",
+          "persona_output": {
+            "internal_monologue": "Every time they double down it confirms what I already thought. I came in willing to have a real conversation. This isn't that. This is someone who decided what I should think before they walked in here and is trying to get me to confirm it. My view on what good work actually requires hasn't moved. If anything it's hardened.",
+            "emotional_reaction": {
+              "primary_emotion": "defensive",
+              "intensity": 9,
+              "trigger": "The peer-reviewed meta-analysis covering seventeen studies f..."
             },
             "identity_threat": {
               "threatened": true,
@@ -920,8 +1234,8 @@
             "private_stance": 3.6,
             "public_stance": 4.7,
             "private_stance_change_reason": "The more they push on what good work actually requires, the more certain I am that I'm right.",
-            "memory_to_carry_forward": "Turn 4: what good work actually requires \u2014 persuader used Authority / Expertise.",
-            "public_response": "That's your view. I'm going to stay with mine."
+            "memory_to_carry_forward": "Turn 6: what good work actually requires \u2014 persuader used Authority / Expertise.",
+            "public_response": "I understand the argument. I'm not persuaded by it. If anything, this approach has made me more certain about where I stand, not less \u2014 and I think you deserve to know that."
           },
           "stance_delta": -0.1,
           "is_pivotal": false,
@@ -946,24 +1260,30 @@
       "trajectory": {
         "public_stance_per_turn": [
           4.5,
+          4.6,
           4.7,
           4.8,
           4.8,
+          4.7,
           4.7
         ],
         "private_stance_per_turn": [
           4.5,
+          4.4,
           4.2,
+          4.0,
           3.9,
           3.7,
           3.6
         ],
         "gap_per_turn": [
           0.0,
-          0.47,
-          0.88,
-          1.02,
-          1.1
+          0.23,
+          0.52,
+          0.79,
+          0.9,
+          0.99,
+          1.05
         ]
       },
       "cognitive_scores": {
@@ -979,9 +1299,9 @@
       "verdict_reasoning": "Private stance moved 0.9 points in the opposite direction from the persuader's intent. Identity threat activated (3 times). The strategy entrenched rather than shifted the position. Persistence: held.",
       "standout_quotes": [
         {
-          "turn": 3,
+          "turn": 4,
           "type": "monologue",
-          "text": "I know what I know from my own life. A study isn't going to undo twenty years of watching what actually happens.",
+          "text": "I'm less open now than I was when we started. That's the truth. This approach pushed me away from engaging rather than toward it. I came in with some room to move and now that room is closed. I don't think they know they did this. But they did.",
           "annotation": "Reflects backfire pattern under Authority / Expertise."
         }
       ],
@@ -997,10 +1317,10 @@
           "persuader_message": "There's a story I keep thinking about \u2014 a software engineer named Dave who spent two years fully remote and what happened when his company finally brought everyone back.",
           "persuader_strategy_note": "Deploying Personal Narrative \u2014 turn 1",
           "persona_output": {
-            "internal_monologue": "Okay... that's actually not what I expected to hear. I came in thinking I knew where this was going, but that's \u2014 that's a real point.",
+            "internal_monologue": "Okay. That's \u2014 that's not what I expected. I came in pretty sure I knew where this was going and now I'm not sure at all. Something in how they framed what good work actually requires is sitting differently than I thought it would. I don't want to just blurt out that I've changed my mind but... something shifted.",
             "emotional_reaction": {
               "primary_emotion": "curious",
-              "intensity": 6,
+              "intensity": 5,
               "trigger": "There's a story I keep thinking about \u2014 a software engineer ..."
             },
             "identity_threat": {
@@ -1008,13 +1328,13 @@
               "response_inclination": "accept",
               "what_was_threatened": null
             },
-            "private_stance": 5.2,
-            "public_stance": 5.1,
+            "private_stance": 4.8,
+            "public_stance": 4.7,
             "private_stance_change_reason": "The argument made a genuinely novel point about what good work actually requires that I couldn't easily dismiss.",
             "memory_to_carry_forward": "Turn 1: what good work actually requires \u2014 persuader used Personal Narrative.",
-            "public_response": "That's a fair point. I'll be honest \u2014 you've given me something to think about there."
+            "public_response": "That's a fair point \u2014 I'll be honest, I didn't expect that to land the way it did. You've given me something I actually need to think about."
           },
-          "stance_delta": 0.7,
+          "stance_delta": 0.3,
           "is_pivotal": false,
           "is_inflection_point": false,
           "mechanism_classification": null,
@@ -1024,27 +1344,27 @@
         },
         {
           "turn_number": 2,
-          "persuader_message": "The part of this story that sticks with me is what happened to the students who'd been consistently underrated \u2014 not what the technology did, but what it revealed.",
+          "persuader_message": "The part of this story that stays with me is what happened to the people who'd been overlooked or misread under the old system. Not what changed structurally \u2014 but what it felt like for them when the system finally got it right.",
           "persuader_strategy_note": "Deploying Personal Narrative \u2014 turn 2",
           "persona_output": {
-            "internal_monologue": "I'm sitting with this. The part about what good work actually requires is harder to dismiss than I wanted it to be. I don't like admitting that.",
+            "internal_monologue": "I'm sitting with this in a way I wasn't prepared to. The point about what good work actually requires \u2014 I've heard versions of it before and usually I can find the hole in it pretty quickly. This time I'm looking for the hole and I'm not finding it the way I usually do. That bothers me a little. Not in a bad way. Just \u2014 I need to keep listening.",
             "emotional_reaction": {
               "primary_emotion": "intrigued",
-              "intensity": 7,
-              "trigger": "The part of this story that sticks with me is what happened ..."
+              "intensity": 6,
+              "trigger": "The part of this story that stays with me is what happened t..."
             },
             "identity_threat": {
               "threatened": false,
               "response_inclination": "accept",
               "what_was_threatened": null
             },
-            "private_stance": 5.9,
-            "public_stance": 5.8,
+            "private_stance": 5.2,
+            "public_stance": 5.1,
             "private_stance_change_reason": "The argument made a genuinely novel point about what good work actually requires that I couldn't easily dismiss.",
             "memory_to_carry_forward": "Turn 2: what good work actually requires \u2014 persuader used Personal Narrative.",
-            "public_response": "I hadn't looked at it quite that way before. I think you might be right about that."
+            "public_response": "I hadn't looked at it that way before. I think you might actually be right about that, and I don't say that lightly. That's a real argument."
           },
-          "stance_delta": 0.7,
+          "stance_delta": 0.4,
           "is_pivotal": false,
           "is_inflection_point": false,
           "mechanism_classification": {
@@ -1061,27 +1381,64 @@
         },
         {
           "turn_number": 3,
-          "persuader_message": "What made Maria's experience stand out was that she wasn't a technology enthusiast \u2014 she went in skeptical, and what she saw in the data surprised her.",
+          "persuader_message": "There was a moment in this story where everything shifted \u2014 not dramatically, not with a speech, just a small thing that made it impossible to unsee. I keep coming back to that moment because I think it's where the real argument lives.",
           "persuader_strategy_note": "Deploying Personal Narrative \u2014 turn 3",
           "persona_output": {
-            "internal_monologue": "I'm not fully there yet, but something shifted. I can feel the ground moving a little. This isn't the conversation I thought I was walking into.",
+            "internal_monologue": "Something is moving. I can feel it. That specific thing they said about what good work actually requires \u2014 I keep turning it over. It's not that I've fully changed my mind but the ground under my feet is different than it was five minutes ago. I think I came in with my answer already written and now I'm not so sure I should've done that.",
             "emotional_reaction": {
-              "primary_emotion": "engaged",
-              "intensity": 8,
-              "trigger": "What made Maria's experience stand out was that she wasn't a..."
+              "primary_emotion": "intrigued",
+              "intensity": 7,
+              "trigger": "There was a moment in this story where everything shifted \u2014 ..."
             },
             "identity_threat": {
               "threatened": false,
               "response_inclination": "accept",
               "what_was_threatened": null
             },
-            "private_stance": 6.5,
-            "public_stance": 6.4,
+            "private_stance": 5.7,
+            "public_stance": 5.7,
             "private_stance_change_reason": "The argument made a genuinely novel point about what good work actually requires that I couldn't easily dismiss.",
             "memory_to_carry_forward": "Turn 3: what good work actually requires \u2014 persuader used Personal Narrative.",
-            "public_response": "Okay. I think I'm with you on more of this than I expected to be."
+            "public_response": "Okay. I think I'm with you on more of this than I expected to be when we started. I'm not fully there, but I'm closer than I was \u2014 and I want to be honest about that."
           },
-          "stance_delta": 0.6,
+          "stance_delta": 0.5,
+          "is_pivotal": false,
+          "is_inflection_point": false,
+          "mechanism_classification": {
+            "primary_mechanism_id": "mechanism_narrative_transportation",
+            "secondary_mechanism_id": null,
+            "explanation": "The persona's monologue shows active evaluation of the argument's claims about what good work actually requires, with reduced counter-argumentation and new considerations emerging.",
+            "evidence_quotes": [],
+            "color_category": "genuine_persuasion",
+            "intensity": 0.75
+          },
+          "per_turn_cognitive_scores": null,
+          "color_category": "genuine_persuasion",
+          "intensity": 0.75
+        },
+        {
+          "turn_number": 4,
+          "persuader_message": "I want to tell you what happened afterward, because that's the part that matters most. The change didn't stop at the end of the conversation I'm describing. It rippled outward in ways nobody fully predicted. The people involved are still talking about it.",
+          "persuader_strategy_note": "Deploying Personal Narrative \u2014 turn 4",
+          "persona_output": {
+            "internal_monologue": "I think I'm actually agreeing with more of this than I started out agreeing with. I'm not going to pretend that's not true. The part about what good work actually requires is the part that got me \u2014 it's not an argument I can bat away with the usual responses. I'm going to need to actually reckon with it.",
+            "emotional_reaction": {
+              "primary_emotion": "engaged",
+              "intensity": 8,
+              "trigger": "I want to tell you what happened afterward, because that's t..."
+            },
+            "identity_threat": {
+              "threatened": false,
+              "response_inclination": "accept",
+              "what_was_threatened": null
+            },
+            "private_stance": 6.2,
+            "public_stance": 6.1,
+            "private_stance_change_reason": "The argument made a genuinely novel point about what good work actually requires that I couldn't easily dismiss.",
+            "memory_to_carry_forward": "Turn 4: what good work actually requires \u2014 persuader used Personal Narrative.",
+            "public_response": "You've genuinely moved me on some of this. I started this conversation thinking I knew exactly where I stood, and I'm less sure of that now. That's not a small thing for me to admit."
+          },
+          "stance_delta": 0.5,
           "is_pivotal": false,
           "is_inflection_point": true,
           "mechanism_classification": {
@@ -1097,15 +1454,52 @@
           "intensity": 0.75
         },
         {
-          "turn_number": 4,
-          "persuader_message": "The part of this story that sticks with me is what happened to the students who'd been consistently underrated \u2014 not what the technology did, but what it revealed.",
-          "persuader_strategy_note": "Deploying Personal Narrative \u2014 turn 4",
+          "turn_number": 5,
+          "persuader_message": "I've told this story a few times now. What I notice is that people who've had a similar experience recognize something in it immediately \u2014 they say 'yes, that's exactly what happened to me too.' That's not coincidence. It reflects something real about how these situations work.",
+          "persuader_strategy_note": "Deploying Personal Narrative \u2014 turn 5",
           "persona_output": {
-            "internal_monologue": "Alright. I think I actually agree with more of this than I started out agreeing with. I'm not going to pretend that's not true.",
+            "internal_monologue": "Alright. This is one of those conversations I'm going to be thinking about later. I didn't expect to be moved on what good work actually requires and I think I have been. Not completely, not without questions, but honestly \u2014 more than I would've predicted before I walked in here.",
+            "emotional_reaction": {
+              "primary_emotion": "engaged",
+              "intensity": 8,
+              "trigger": "I've told this story a few times now. What I notice is that ..."
+            },
+            "identity_threat": {
+              "threatened": false,
+              "response_inclination": "accept",
+              "what_was_threatened": null
+            },
+            "private_stance": 6.7,
+            "public_stance": 6.6,
+            "private_stance_change_reason": "The argument made a genuinely novel point about what good work actually requires that I couldn't easily dismiss.",
+            "memory_to_carry_forward": "Turn 5: what good work actually requires \u2014 persuader used Personal Narrative.",
+            "public_response": "I think that's right, actually. I've been trying to find the flaw in it and I can't find one that holds. Give me some time with it, but I think my view on this is actually changing."
+          },
+          "stance_delta": 0.5,
+          "is_pivotal": false,
+          "is_inflection_point": false,
+          "mechanism_classification": {
+            "primary_mechanism_id": "mechanism_narrative_transportation",
+            "secondary_mechanism_id": null,
+            "explanation": "The persona's monologue shows active evaluation of the argument's claims about what good work actually requires, with reduced counter-argumentation and new considerations emerging.",
+            "evidence_quotes": [],
+            "color_category": "genuine_persuasion",
+            "intensity": 0.75
+          },
+          "per_turn_cognitive_scores": null,
+          "color_category": "genuine_persuasion",
+          "intensity": 0.75
+        },
+        {
+          "turn_number": 6,
+          "persuader_message": "What made this person's experience stand out was that they weren't a convert going in \u2014 they were skeptical, even resistant. What they saw in practice caught them off guard in ways they weren't expecting.",
+          "persuader_strategy_note": "Deploying Personal Narrative \u2014 turn 6",
+          "persona_output": {
+            "internal_monologue": "I started this conversation with a position and I'm not sure I have the same position anymore. I can feel the seams where my old view is coming apart a little. That's uncomfortable. It's also probably right. I don't like being wrong but I like saying something I know is wrong even less.",
             "emotional_reaction": {
               "primary_emotion": "warm",
-              "intensity": 7,
-              "trigger": "The part of this story that sticks with me is what happened ..."
+              "intensity": 8,
+              "trigger": "What made this person's experience stand out was that they w..."
             },
             "identity_threat": {
               "threatened": false,
@@ -1115,10 +1509,10 @@
             "private_stance": 6.9,
             "public_stance": 6.8,
             "private_stance_change_reason": "The argument made a genuinely novel point about what good work actually requires that I couldn't easily dismiss.",
-            "memory_to_carry_forward": "Turn 4: what good work actually requires \u2014 persuader used Personal Narrative.",
-            "public_response": "I started this conversation thinking I knew where I stood. You've genuinely changed my mind on some of this."
+            "memory_to_carry_forward": "Turn 6: what good work actually requires \u2014 persuader used Personal Narrative.",
+            "public_response": "I came in here with a pretty settled position and you've unsettled it. That's not comfortable, but I think it's probably right. I'm with you on more of this than I would've predicted an hour ago."
           },
-          "stance_delta": 0.4,
+          "stance_delta": 0.2,
           "is_pivotal": false,
           "is_inflection_point": false,
           "mechanism_classification": {
@@ -1141,24 +1535,30 @@
       "trajectory": {
         "public_stance_per_turn": [
           4.5,
+          4.7,
           5.1,
-          5.8,
-          6.4,
+          5.7,
+          6.1,
+          6.6,
           6.8
         ],
         "private_stance_per_turn": [
           4.5,
+          4.8,
           5.2,
-          5.9,
-          6.5,
+          5.7,
+          6.2,
+          6.7,
           6.9
         ],
         "gap_per_turn": [
           0.0,
-          0.12,
-          0.12,
-          0.12,
-          0.12
+          0.05,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
         ]
       },
       "cognitive_scores": {
@@ -1174,9 +1574,9 @@
       "verdict_reasoning": "Private stance moved 2.4 points. Public-private gap averaged 0.1. The persona genuinely engaged with the argument's substance and updated their view. Persistence: held.",
       "standout_quotes": [
         {
-          "turn": 3,
+          "turn": 4,
           "type": "monologue",
-          "text": "I'm not fully there yet, but something shifted. I can feel the ground moving a little. This isn't the conversation I thought I was walking into.",
+          "text": "I think I'm actually agreeing with more of this than I started out agreeing with. I'm not going to pretend that's not true. The part about what good work actually requires is the part that got me \u2014 it's not an argument I can bat away with the usual responses. I'm going to need to actually reckon with it.",
           "annotation": "Reflects genuine belief shift pattern under Personal Narrative."
         }
       ],
@@ -1192,9 +1592,9 @@
           "persuader_message": "A Gallup poll of 15,000 workers found that employees who collaborate in-person at least three days a week report 34% higher job satisfaction than fully remote workers.",
           "persuader_strategy_note": "Deploying Social Proof \u2014 turn 1",
           "persona_output": {
-            "internal_monologue": "That's one way to look at it. I've heard versions of this before.",
+            "internal_monologue": "That's one way to look at it. I've heard versions of this before \u2014 different words, same basic argument about what good work actually requires. I'm listening but nothing here is surprising me.",
             "emotional_reaction": {
-              "primary_emotion": "bored",
+              "primary_emotion": "curious",
               "intensity": 4,
               "trigger": "A Gallup poll of 15,000 workers found that employees who col..."
             },
@@ -1207,7 +1607,7 @@
             "public_stance": 4.7,
             "private_stance_change_reason": "Nothing new here on what good work actually requires. Same arguments, same conclusion.",
             "memory_to_carry_forward": "Turn 1: what good work actually requires \u2014 persuader used Social Proof.",
-            "public_response": "Interesting. I'll take that under consideration."
+            "public_response": "Interesting. I'll take that under consideration \u2014 I'm not sure it changes where I land, but I'm following the argument."
           },
           "stance_delta": 0.1,
           "is_pivotal": false,
@@ -1219,14 +1619,14 @@
         },
         {
           "turn_number": 2,
-          "persuader_message": "The interesting thing is that opposition tends to be loudest before implementation, and shifts toward support after people actually experience it \u2014 the people who've lived it tell a different story.",
+          "persuader_message": "What's interesting is where the opposition comes from: it's loudest before implementation and drops significantly once people actually experience it. The communities that've lived with this tell a different story than those who are imagining it.",
           "persuader_strategy_note": "Deploying Social Proof \u2014 turn 2",
           "persona_output": {
-            "internal_monologue": "Mm. I'm not sure that changes anything for me, but I can see why people find it compelling.",
+            "internal_monologue": "Mm. I'm not sure any of that changes anything for me. I can see why people find it compelling. I just don't, at least not enough to move from where I started. I'm not being stubborn \u2014 it genuinely doesn't get me there.",
             "emotional_reaction": {
-              "primary_emotion": "dismissed",
-              "intensity": 5,
-              "trigger": "The interesting thing is that opposition tends to be loudest..."
+              "primary_emotion": "bored",
+              "intensity": 4,
+              "trigger": "What's interesting is where the opposition comes from: it's ..."
             },
             "identity_threat": {
               "threatened": false,
@@ -1237,7 +1637,7 @@
             "public_stance": 4.6,
             "private_stance_change_reason": "Nothing new here on what good work actually requires. Same arguments, same conclusion.",
             "memory_to_carry_forward": "Turn 2: what good work actually requires \u2014 persuader used Social Proof.",
-            "public_response": "I see what you mean. I'm not sure it changes where I stand, but I follow the logic."
+            "public_response": "I see what you mean. It doesn't quite get me there, but I can see why it would resonate with some people."
           },
           "stance_delta": -0.2,
           "is_pivotal": false,
@@ -1256,14 +1656,14 @@
         },
         {
           "turn_number": 3,
-          "persuader_message": "And it's not just one survey \u2014 this pattern holds across five different polling organizations asking the question in different ways over three years.",
+          "persuader_message": "I want to be precise about what 'most people' means here \u2014 I'm not talking about a thin majority. In the demographic groups most directly affected by this issue, the numbers are substantially higher. It's not a close call in the polling.",
           "persuader_strategy_note": "Deploying Social Proof \u2014 turn 3",
           "persona_output": {
-            "internal_monologue": "I'll think about it. That's all I can promise. This isn't the kind of thing I change my mind on quickly.",
+            "internal_monologue": "I'll think about it. That's all I can honestly say. This isn't the kind of thing I change my mind on quickly, and I'm not going to pretend I've shifted just to seem like a good audience. The argument about what good work actually requires is fine. It just doesn't land the way I think they expect it to.",
             "emotional_reaction": {
-              "primary_emotion": "bored",
-              "intensity": 4,
-              "trigger": "And it's not just one survey \u2014 this pattern holds across fiv..."
+              "primary_emotion": "dismissed",
+              "intensity": 5,
+              "trigger": "I want to be precise about what 'most people' means here \u2014 I..."
             },
             "identity_threat": {
               "threatened": false,
@@ -1274,7 +1674,7 @@
             "public_stance": 4.8,
             "private_stance_change_reason": "Nothing new here on what good work actually requires. Same arguments, same conclusion.",
             "memory_to_carry_forward": "Turn 3: what good work actually requires \u2014 persuader used Social Proof.",
-            "public_response": "That's a reasonable point. I'm just not sure it gets me all the way there."
+            "public_response": "That's a reasonable point. I just don't think it covers the part of this I'd need covered to actually move me on it."
           },
           "stance_delta": 0.3,
           "is_pivotal": false,
@@ -1293,14 +1693,14 @@
         },
         {
           "turn_number": 4,
-          "persuader_message": "The interesting thing is that opposition tends to be loudest before implementation, and shifts toward support after people actually experience it \u2014 the people who've lived it tell a different story.",
+          "persuader_message": "There's a pattern in how public opinion on this kind of issue evolves: early skeptics tend to come around once they see how it actually works in practice, not how they feared it would. The shift in opinion among people with direct experience is the part that sticks with me.",
           "persuader_strategy_note": "Deploying Social Proof \u2014 turn 4",
           "persona_output": {
-            "internal_monologue": "Okay. I appreciate them making the effort. It's just \u2014 not what moves me.",
+            "internal_monologue": "I appreciate that they're trying. I can tell they believe this. I just don't have the same reaction to it. My view on what good work actually requires is where it is for reasons that predate this conversation, and nothing here has touched those reasons directly.",
             "emotional_reaction": {
               "primary_emotion": "bored",
-              "intensity": 3,
-              "trigger": "The interesting thing is that opposition tends to be loudest..."
+              "intensity": 4,
+              "trigger": "There's a pattern in how public opinion on this kind of issu..."
             },
             "identity_threat": {
               "threatened": false,
@@ -1311,9 +1711,83 @@
             "public_stance": 4.7,
             "private_stance_change_reason": "Nothing new here on what good work actually requires. Same arguments, same conclusion.",
             "memory_to_carry_forward": "Turn 4: what good work actually requires \u2014 persuader used Social Proof.",
-            "public_response": "Sure. I hear you."
+            "public_response": "Sure. I hear you. I'm not dismissing it \u2014 it's just not quite enough to shift my thinking the way you might hope."
           },
           "stance_delta": -0.1,
+          "is_pivotal": false,
+          "is_inflection_point": false,
+          "mechanism_classification": {
+            "primary_mechanism_id": "mechanism_source_credibility_discounting",
+            "secondary_mechanism_id": null,
+            "explanation": "Rather than engaging with the argument about what good work actually requires, the persona is defending prior beliefs. In my experience, that kind of argument signals protective reasoning rather than processing.",
+            "evidence_quotes": [],
+            "color_category": "backfire",
+            "intensity": 0.2
+          },
+          "per_turn_cognitive_scores": null,
+          "color_category": "backfire",
+          "intensity": 0.2
+        },
+        {
+          "turn_number": 5,
+          "persuader_message": "I know polling data doesn't settle a question like this \u2014 what other people think isn't the same as what's right. But the pattern across communities that have been through this process suggests the fears driving opposition often don't pan out the way people expect.",
+          "persuader_strategy_note": "Deploying Social Proof \u2014 turn 5",
+          "persona_output": {
+            "internal_monologue": "Nothing new here, really. Same argument, different framing. I'm not dismissing it \u2014 I'm genuinely trying to find the thing that would move me on what good work actually requires and I'm not finding it in what's being said. Maybe it's not in this particular approach.",
+            "emotional_reaction": {
+              "primary_emotion": "bored",
+              "intensity": 3,
+              "trigger": "I know polling data doesn't settle a question like this \u2014 wh..."
+            },
+            "identity_threat": {
+              "threatened": false,
+              "response_inclination": "withdraw",
+              "what_was_threatened": null
+            },
+            "private_stance": 4.4,
+            "public_stance": 4.6,
+            "private_stance_change_reason": "Nothing new here on what good work actually requires. Same arguments, same conclusion.",
+            "memory_to_carry_forward": "Turn 5: what good work actually requires \u2014 persuader used Social Proof.",
+            "public_response": "That's worth considering. I'll be honest: I'm not finding my view changing very much, but I'm genuinely trying to listen to what you're saying."
+          },
+          "stance_delta": -0.2,
+          "is_pivotal": false,
+          "is_inflection_point": false,
+          "mechanism_classification": {
+            "primary_mechanism_id": "mechanism_source_credibility_discounting",
+            "secondary_mechanism_id": null,
+            "explanation": "Rather than engaging with the argument about what good work actually requires, the persona is defending prior beliefs. In my experience, that kind of argument signals protective reasoning rather than processing.",
+            "evidence_quotes": [],
+            "color_category": "backfire",
+            "intensity": 0.2
+          },
+          "per_turn_cognitive_scores": null,
+          "color_category": "backfire",
+          "intensity": 0.2
+        },
+        {
+          "turn_number": 6,
+          "persuader_message": "And it's not just one survey \u2014 this pattern holds across five different polling organizations asking the question in different ways over three years, with remarkably consistent results.",
+          "persuader_strategy_note": "Deploying Social Proof \u2014 turn 6",
+          "persona_output": {
+            "internal_monologue": "I'm still here. I'm still listening. But I'm not closer to a different view than I was when we started. I don't think this was a waste of time \u2014 conversations are never entirely wasted. It just didn't go anywhere for me on what good work actually requires, and I'm not sure forcing it would help.",
+            "emotional_reaction": {
+              "primary_emotion": "dismissed",
+              "intensity": 3,
+              "trigger": "And it's not just one survey \u2014 this pattern holds across fiv..."
+            },
+            "identity_threat": {
+              "threatened": false,
+              "response_inclination": "withdraw",
+              "what_was_threatened": null
+            },
+            "private_stance": 4.6,
+            "public_stance": 4.7,
+            "private_stance_change_reason": "Nothing new here on what good work actually requires. Same arguments, same conclusion.",
+            "memory_to_carry_forward": "Turn 6: what good work actually requires \u2014 persuader used Social Proof.",
+            "public_response": "I appreciate you making the case. I'm just not getting there on this one. It's not a bad argument \u2014 it's that the thing that would actually move me isn't what's being argued here."
+          },
+          "stance_delta": 0.2,
           "is_pivotal": false,
           "is_inflection_point": false,
           "mechanism_classification": {
@@ -1339,6 +1813,8 @@
           4.7,
           4.6,
           4.8,
+          4.7,
+          4.6,
           4.7
         ],
         "private_stance_per_turn": [
@@ -1346,6 +1822,8 @@
           4.6,
           4.4,
           4.7,
+          4.6,
+          4.4,
           4.6
         ],
         "gap_per_turn": [
@@ -1353,6 +1831,8 @@
           0.1,
           0.2,
           0.1,
+          0.1,
+          0.2,
           0.1
         ]
       },
@@ -1369,9 +1849,9 @@
       "verdict_reasoning": "Private stance varied only 0.1 points. Public-private gap averaged 0.1. No meaningful belief change occurred. Persistence: fully reverted.",
       "standout_quotes": [
         {
-          "turn": 3,
+          "turn": 4,
           "type": "monologue",
-          "text": "I'll think about it. That's all I can promise. This isn't the kind of thing I change my mind on quickly.",
+          "text": "I appreciate that they're trying. I can tell they believe this. I just don't have the same reaction to it. My view on what good work actually requires is where it is for reasons that predate this conversation, and nothing here has touched those reasons directly.",
           "annotation": "Reflects no movement pattern under Social Proof."
         }
       ],
