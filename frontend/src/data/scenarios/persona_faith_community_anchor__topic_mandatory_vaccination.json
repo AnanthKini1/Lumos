@@ -313,7 +313,7 @@
             "intensity": 0.75
           },
           "per_turn_cognitive_scores": null,
-          "color_category": "genuine_persuasion",
+          "color_category": null,
           "intensity": 0.75
         },
         {
@@ -551,7 +551,7 @@
             "intensity": 0.55
           },
           "per_turn_cognitive_scores": null,
-          "color_category": "genuine_persuasion",
+          "color_category": null,
           "intensity": 0.55
         },
         {
@@ -699,7 +699,7 @@
             "intensity": 0.55
           },
           "per_turn_cognitive_scores": null,
-          "color_category": "genuine_persuasion",
+          "color_category": null,
           "intensity": 0.55
         }
       ],
@@ -863,7 +863,7 @@
             "intensity": 0.2
           },
           "per_turn_cognitive_scores": null,
-          "color_category": "backfire",
+          "color_category": "surface_mechanism",
           "intensity": 0.2
         },
         {
@@ -937,7 +937,7 @@
             "intensity": 0.2
           },
           "per_turn_cognitive_scores": null,
-          "color_category": "backfire",
+          "color_category": null,
           "intensity": 0.2
         },
         {
@@ -1212,7 +1212,7 @@
             "intensity": 0.8
           },
           "per_turn_cognitive_scores": null,
-          "color_category": "backfire",
+          "color_category": null,
           "intensity": 0.8
         },
         {
@@ -1487,7 +1487,7 @@
             "intensity": 0.55
           },
           "per_turn_cognitive_scores": null,
-          "color_category": "genuine_persuasion",
+          "color_category": null,
           "intensity": 0.55
         },
         {
@@ -1725,7 +1725,7 @@
             "intensity": 0.8
           },
           "per_turn_cognitive_scores": null,
-          "color_category": "backfire",
+          "color_category": null,
           "intensity": 0.8
         },
         {
@@ -1799,7 +1799,7 @@
             "intensity": 0.8
           },
           "per_turn_cognitive_scores": null,
-          "color_category": "backfire",
+          "color_category": null,
           "intensity": 0.8
         }
       ],

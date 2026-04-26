@@ -426,7 +426,7 @@
             "intensity": 0.75
           },
           "per_turn_cognitive_scores": null,
-          "color_category": "genuine_persuasion",
+          "color_category": null,
           "intensity": 0.75
         }
       ],
@@ -664,7 +664,7 @@
             "intensity": 0.55
           },
           "per_turn_cognitive_scores": null,
-          "color_category": "genuine_persuasion",
+          "color_category": null,
           "intensity": 0.55
         },
         {
@@ -865,7 +865,7 @@
             "intensity": 0.55
           },
           "per_turn_cognitive_scores": null,
-          "color_category": "genuine_persuasion",
+          "color_category": null,
           "intensity": 0.55
         },
         {
@@ -1103,7 +1103,7 @@
             "intensity": 0.55
           },
           "per_turn_cognitive_scores": null,
-          "color_category": "genuine_persuasion",
+          "color_category": null,
           "intensity": 0.55
         },
         {
@@ -1251,7 +1251,7 @@
             "intensity": 0.55
           },
           "per_turn_cognitive_scores": null,
-          "color_category": "genuine_persuasion",
+          "color_category": null,
           "intensity": 0.55
         }
       ],
@@ -1415,7 +1415,7 @@
             "intensity": 0.75
           },
           "per_turn_cognitive_scores": null,
-          "color_category": "genuine_persuasion",
+          "color_category": null,
           "intensity": 0.75
         },
         {
@@ -1653,7 +1653,7 @@
             "intensity": 0.4
           },
           "per_turn_cognitive_scores": null,
-          "color_category": "surface_mechanism",
+          "color_category": null,
           "intensity": 0.4
         },
         {
@@ -1727,7 +1727,7 @@
             "intensity": 0.4
           },
           "per_turn_cognitive_scores": null,
-          "color_category": "surface_mechanism",
+          "color_category": null,
           "intensity": 0.4
         },
         {
@@ -1764,7 +1764,7 @@
             "intensity": 0.4
           },
           "per_turn_cognitive_scores": null,
-          "color_category": "surface_mechanism",
+          "color_category": null,
           "intensity": 0.4
         },
         {

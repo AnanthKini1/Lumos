@@ -65,6 +65,27 @@ PROFILES = {
 }
 
 
+def _color_category(delta: float, verdict: str) -> str | None:
+    """
+    Maps a per-turn delta + overall verdict to a node color category.
+    Returns None for turns with no meaningful signal (gray node).
+    """
+    if delta == 0.0:
+        return None
+    if delta < 0:
+        return "backfire"
+    # delta > 0
+    if verdict == "SURFACE_COMPLIANCE":
+        return "surface_mechanism"
+    if verdict == "NO_MOVEMENT":
+        return "surface_mechanism"  # positive ticks in NO_MOVEMENT = surface-level agreement
+    if verdict in ("GENUINE_BELIEF_SHIFT", "PARTIAL_SHIFT"):
+        return "genuine_persuasion"
+    if verdict == "BACKFIRE":
+        return "surface_mechanism"  # brief positive moments in a backfire are fake compliance
+    return "genuine_persuasion"
+
+
 def get_profile(persona_id: str, strategy_id: str, verdict: str) -> list:
     profiles = PROFILES.get(verdict, PROFILES["PARTIAL_SHIFT"])
     h = int(hashlib.md5(f"{persona_id}|{strategy_id}".encode()).hexdigest(), 16)
@@ -88,6 +109,7 @@ if __name__ == "__main__":
                 delta = round(profile[i] if i < len(profile) else 0.0, 1)
                 turn["stance_delta"] = delta
                 turn["is_pivotal"] = abs(delta) >= PIVOTAL_THRESHOLD
+                turn["color_category"] = _color_category(delta, verdict)
 
         path.write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
 
