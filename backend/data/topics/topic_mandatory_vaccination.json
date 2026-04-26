@@ -15,7 +15,8 @@
     "persona_faith_community_anchor": 3.0,
     "persona_ambitious_achiever": 7.0,
     "persona_empathic_helper": 7.5,
-    "persona_analytical_thinker": 7.0
+    "persona_analytical_thinker": 7.0,
+    "persona_gen_z_latina": 6.5
   },
   "citations": [
     {
@@ -131,6 +132,7 @@
     "persona_faith_community_anchor": "Pew 2017: White evangelical Protestants at 76% support (already the lowest religious group); by 2023 White evangelical support had fallen to 58%; KFF late-2025: 48% of Republican-leaning parents support removing requirements; persona is rural, evangelical, social conservative. Starting stance 3.0: religious-liberty and parental-rights framing dominate over public-health logic.",
     "persona_ambitious_achiever": "Pew Oct 2025: 78% postgraduate support; persona is career-oriented, educated, pragmatic on health policy. Starting stance 7.0: supports requirements as rational policy; may have mild libertarian-efficiency reservations.",
     "persona_empathic_helper": "Pew Oct 2025: 86% Democrat support; persona prioritizes community welfare, caregiver solidarity, protection of vulnerable — immunocompromised and infant arguments land strongly. Starting stance 7.5: strong support grounded in protection of those who cannot be vaccinated.",
-    "persona_analytical_thinker": "Pew Oct 2025: 78% postgraduate; persona evaluates evidence systematically; the Pingali, Delamater, and Beard studies converge on mandate efficacy; aware of Navin/Largent calibrated-exemption argument. Starting stance 7.0: evidence-driven support with acknowledgment of replacement effects and calibration debate."
+    "persona_analytical_thinker": "Pew Oct 2025: 78% postgraduate; persona evaluates evidence systematically; the Pingali, Delamater, and Beard studies converge on mandate efficacy; aware of Navin/Largent calibrated-exemption argument. Starting stance 7.0: evidence-driven support with acknowledgment of replacement effects and calibration debate.",
+    "persona_gen_z_latina": "No major pollster has published a Gen Z × Hispanic crosstab specifically on vaccination mandates. Best available proxies: Gallup July 2024 (n=1,010): 51% overall support government-required vaccination, with support significantly lower among younger adults and among those with lower institutional trust — both characteristics of this persona. KFF/WaPo July–Aug 2025 (n=2,716 parents): 81% support state vaccine laws with medical and religious exceptions, including 73% of MAGA Republican parents — the medical-exemption-inclusive framing is the modal position across partisan lines and likely reflects this persona's view. Pew Oct 2025: 69% overall support for vaccine requirements; support is higher among those with regular healthcare exposure — this persona works in a community health clinic and directly observes consequences of under-vaccination in underserved populations. Post-COVID institutional distrust (especially of federal health agencies) pulls against absolute mandate framing, but professional proximity to community health elevates her support relative to the average Gen Z or Latino baseline. Family and community health orientation (including Catholic social teaching on collective responsibility) provides additional grounding. Starting stance 6.5: supports requirements with medical exemptions; professional context raises her above the average young Latino baseline; balanced against distrust of top-down mandate enforcement and sympathy for communities with historical reasons to distrust government health interventions."
   }
 }

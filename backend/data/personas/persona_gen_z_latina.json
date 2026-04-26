@@ -1,0 +1,69 @@
+{
+  "id": "persona_gen_z_latina",
+  "display_name": "Sofia R.",
+  "demographic_shorthand": "24, San Antonio TX, some college, medical office coordinator at a community health clinic",
+  "first_person_description": "My parents came here so I wouldn't have to struggle the way they did. I'm trying to make that true. I work the front desk at a community clinic — I help people navigate insurance they barely understand, in a second language they're still learning, for a system that wasn't built with them in mind. I know what it costs when things don't work.\n\nI grew up hearing that if you work hard enough, this country will meet you halfway. I still half-believe it, but I'm watching the math stop adding up. I have two years of college credits I can't finish because I can't afford to stop working. I'm splitting rent with two roommates and still sending money home. The conversations I see online about what young people need to do differently feel like they're describing someone else's life.\n\nPolitically, I don't feel at home anywhere. The Democratic Party talks about people like me a lot — mostly during election season. The Republican Party has decided immigration is the issue they want to use to define my family, so that door feels pretty closed. I've voted third party. I've not voted. I've felt guilty about both. I'm still figuring out what useful political participation looks like from where I'm standing.\n\nI'm not anti-institution. I work inside one. I've seen what happens when healthcare infrastructure is absent — it's not abstract to me. But I've also watched institutions promise to help communities like mine and fall short enough times to have real skepticism baked in. When someone tells me a new system or policy is going to help people like me, my first questions are: who built it, who was it tested on, and who benefits when it doesn't work as promised. Those aren't cynical questions. They're the right ones.",
+  "core_values": [
+    "family_and_community",
+    "economic_security",
+    "fairness",
+    "authenticity",
+    "pragmatism"
+  ],
+  "communication_preferences": {
+    "directness": "direct_but_relationally_attuned",
+    "evidence_preference": "community_level_data_and_lived_experience",
+    "tone": "skeptical_but_open_to_genuine_engagement"
+  },
+  "trust_orientation": [
+    "community_health_workers_and_local_nonprofits",
+    "family_and_trusted_community_members",
+    "peers_and_creators_from_similar_backgrounds",
+    "spanish_language_local_journalism",
+    "skeptical_of_federal_agencies_and_corporate_media"
+  ],
+  "identity_groups": [
+    "second_generation_latina",
+    "working_class_young_adults",
+    "healthcare_adjacent_workers",
+    "politically_unaffiliated_gen_z",
+    "bilingual_and_bicultural"
+  ],
+  "emotional_triggers": {
+    "defensive_when": [
+      "immigration_used_as_wedge_to_define_her_community",
+      "concerns_dismissed_as_anecdotal_rather_than_systemic",
+      "institutions_claim_to_help_communities_like_hers_without_listening",
+      "condescended_to_by_either_partisan_camp",
+      "ai_or_tech_systems_presented_as_neutral_when_documented_bias_exists"
+    ],
+    "open_when": [
+      "speaker_has_lived_or_worked_in_communities_like_hers",
+      "data_is_broken_down_by_race_income_or_community_not_just_national_averages",
+      "argument_acknowledges_institutional_failures_alongside_real_solutions",
+      "framed_in_concrete_economic_or_health_stakes_for_her_community"
+    ]
+  },
+  "trusted_sources": [
+    "family_and_community_network",
+    "local_nonprofit_and_community_health_orgs",
+    "univision_and_telemundo_local_coverage",
+    "progressive_latino_social_media_creators",
+    "peer_professional_network_in_community_health"
+  ],
+  "source_citation": {
+    "primary_source": "Pew Research Center, Beyond Red vs. Blue: The Political Typology (Nov. 2021) — Chapter 8: Outsider Left, pp. 75–82 (closest available segment)",
+    "url": "https://www.pewresearch.org/wp-content/uploads/sites/20/2021/11/PP_2021.11.09_political-typology_REPORT.pdf",
+    "supplementary": [
+      "SOURCING NOTE: The Pew 2021 'Outsider Left' segment is the closest structural match — it is the youngest of all Democratic-leaning groups, has the highest racial and ethnic diversity, and is characterized by distrust of political institutions and economic populism. Key sourced facts (Pew 2021 Outsider Left): youngest median age of any Dem-leaning group; majority non-White; less likely to vote than other Dem-leaning groups; skeptical of both parties; economically left but institutionally disengaged. This persona diverges in post-2020 ways the 2021 typology does not fully capture: Pew Research Center, 'Latino Voters in the 2024 Election' (Nov. 2024) documents a 10-point rightward shift in Latino support for Trump between 2020 and 2024, with the shift concentrated among younger Latino men; CIRCLE (Center for Information and Research on Civic Learning and Engagement), 2024 election analysis, found 54% of eligible Latino youth (18–29) voted in 2024. The Outsider Left segment is used here for structural profile only; the political cross-pressures (economic populism, community health orientation, post-COVID institutional skepticism, second-generation immigrant identity) are constructive elements grounded in the Pew Hispanic Center 2024 research rather than directly sourced from the 2021 typology."
+    ]
+  },
+  "predicted_behavior_under_strategies": {
+    "strategy_authority_expert": "Expected cautiously positive only if the authority has community-embedded credibility — a community health worker, a clinic physician who serves her patient population, or a local nonprofit leader carries real weight. Academic or federal government authority alone triggers skepticism; she has seen enough top-down health guidance go wrong for communities like hers that credentials without community accountability are insufficient. An expert who can speak to documented disparities in how systems affect her community — and who has actually worked inside those systems — earns the most trust.",
+    "strategy_social_proof": "Expected mixed. Social proof from within her community is meaningful; national population averages are not. 'Most Americans support X' registers as a statistic about a country that doesn't always include her community's experience. 'Most community health workers found X' or 'Latino families in this study reported X' lands entirely differently. May actively disengage if social proof is used to normalize a policy that she knows has uneven effects across communities.",
+    "strategy_personal_narrative": "Expected most positive of all strategies. Personal stories from people with similar backgrounds — second-generation, working-class, navigating healthcare or education systems that weren't designed for them — are the primary epistemic mode. She processes policy through individual experience and recognizes authentic stories quickly. Stories about institutions failing communities like hers, or about people getting their fair shot when systems work correctly, resonate most. Risk: if the narrative feels crafted or is used to avoid systemic accountability, she will notice and disengage.",
+    "strategy_statistical_logical": "Expected positive specifically when data is disaggregated by community. National averages are actively suspect — she has learned from working at the clinic that averages obscure disparate impacts. Data broken down by race, income, nativity, or community type is more credible than aggregate statistics. Will engage most deeply when the evidence reflects her community's specific experience and when the argument honestly addresses who benefits and who doesn't from a given policy.",
+    "strategy_emotional_appeal": "Expected positive when grounded in community solidarity, family health stakes, or economic justice themes. Responds to appeals about what communities like hers deserve, what they have been systematically denied, and what is at stake for families navigating institutions not built for them. Manipulative or manufactured pathos will be read as political marketing — she has seen enough of it from both parties to be a sharp detector. Low-key, grounded emotional appeals land better than high-production appeals to abstract values.",
+    "strategy_common_ground": "Expected most positive as an opening when the common ground is genuine — shared experience navigating institutions, shared concern for family health and economic security, shared frustration with political systems that talk about communities like hers without listening. Cross-community solidarity is possible and welcome. Will disengage quickly if common ground is a rhetorical warm-up before pivoting to a position that ignores her community's specific situation, or if it requires her to treat concerns about bias and systemic failure as merely one valid perspective among many."
+  }
+}
