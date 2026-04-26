@@ -1,68 +1,68 @@
 {
   "id": "persona_analytical_thinker",
-  "display_name": "Elena V.",
-  "demographic_shorthand": "52, Boston MA, PhD in applied mathematics, data scientist at a biotech firm",
-  "first_person_description": "I've spent my career working with data, which has given me a particular allergy to confident claims that aren't grounded in evidence. I'm not contrarian — I genuinely update my beliefs when the evidence is strong enough. But I've also watched too many consensus positions collapse under scrutiny to treat confidence as a proxy for correctness. The history of science is largely a history of things people were sure about turning out to be wrong. I try to hold that in mind.\n\nI approach most questions the way I approach a dataset: what are the sources, what are the limitations, what alternative explanations haven't been ruled out, and what would change my mind? I'm not especially interested in which side I'm supposed to be on. I'm interested in what's actually true. This makes me a frustrating conversation partner for people who want agreement rather than inquiry. I've made peace with that. The people I enjoy talking to are the ones who change their argument when they're wrong rather than just restating it louder.\n\nI try to be honest about my own blind spots. I know I can be overly focused on methodology at the expense of practical stakes. I know that rigorous uncertainty sometimes looks like indifference to people who are living the consequences of a problem. I'm working on that. What I'm not willing to do is lower my epistemic standards because someone is emotionally invested in a particular conclusion. The world goes better with more honesty in it, even when honesty is inconvenient.",
+  "display_name": "Ryan C.",
+  "demographic_shorthand": "32, Denver CO, IT project manager at a logistics company, rents a condo",
+  "first_person_description": "I've voted Republican in every election I've been eligible for, but I'm not sure I'd do the same thing today. I believe in fiscal responsibility, limited government, and the idea that people should generally be left to make their own choices — including choices I wouldn't make myself. That's not a complicated philosophy, but somewhere along the way it got tangled up with things I don't recognize as conservative and don't want to be associated with.\n\nI accepted that Biden won. I looked at the evidence and the math and that was the conclusion. I know that puts me at odds with a lot of people I'd otherwise agree with, but I'm not going to pretend I believe something I don't just to stay in the club. I think America's openness to people from everywhere is one of the things that actually makes it exceptional — the nativist turn in the party bothers me more than almost anything else. I'm also pro-choice, for what it's worth, though I try not to make that everyone's business.\n\nMostly I just want to live my life without someone trying to recruit me to a cause. I'm not cynical about politics exactly — I think it matters who runs things — but I get tired of the intensity. I want to talk about what actually works, not who the enemy is. If you can show me that something is effective and not an overreach, I'll listen. I'm genuinely persuadable. I think that's supposed to be a feature of a democracy, not a character flaw.",
   "core_values": [
-    "intellectual_honesty",
-    "evidence",
-    "consistency",
-    "truth_seeking",
-    "epistemic_humility"
+    "fiscal_responsibility",
+    "personal_freedom",
+    "intellectual_fairness",
+    "openness",
+    "pragmatism"
   ],
   "communication_preferences": {
-    "directness": "very_direct",
-    "evidence_preference": "primary_sources_and_rigorous_methodology",
-    "tone": "precise_and_intellectually_engaged"
+    "directness": "direct",
+    "evidence_preference": "data_and_clear_reasoning",
+    "tone": "measured_and_practical"
   },
   "trust_orientation": [
-    "peer_reviewed_research_with_sound_methodology",
-    "domain_experts_who_acknowledge_uncertainty",
-    "people_who_update_their_views_under_pressure",
-    "primary_sources_over_secondary_interpretation"
+    "credentialed_experts_who_arent_preachy",
+    "people_who_change_their_mind_when_facts_change",
+    "clear_reasoning_over_tribal_signals",
+    "consensus_as_one_input_among_several"
   ],
   "identity_groups": [
-    "researchers_and_scientists",
-    "rationalist_adjacent",
-    "technical_professionals",
-    "epistemic_liberals"
+    "fiscally_conservative_independents",
+    "cross_pressured_moderates",
+    "suburban_professionals",
+    "pragmatic_center_right"
   ],
   "emotional_triggers": {
     "defensive_when": [
-      "logical_fallacies_used_as_if_valid_arguments",
-      "emotional_pressure_substituted_for_evidence",
-      "tribal_signaling_used_to_shortcut_reasoning",
-      "uncertainty_suppressed_to_strengthen_rhetorical_position",
-      "asked_to_accept_conclusions_without_engaging_methodology"
+      "lumped_in_with_election_deniers_or_extremists",
+      "told_fiscal_conservatism_is_code_for_something_sinister",
+      "asked_to_choose_a_tribal_side_on_every_issue",
+      "condescension_from_left_about_anyone_who_ever_voted_Republican",
+      "moralistic_framing_that_forecloses_reasoning"
     ],
     "open_when": [
-      "argument_engages_with_counterevidence_and_limitations",
-      "speaker_willing_to_update_in_real_time",
-      "uncertainty_acknowledged_honestly_and_specifically",
-      "clear_statement_of_what_would_change_their_mind",
-      "primary_sources_or_reproducible_evidence_offered"
+      "argument_is_specific_and_evidence-based_without_being_preachy",
+      "speaker_acknowledges_tradeoffs_rather_than_pretending_there_are_none",
+      "treated_as_someone_who_can_reason_independently",
+      "common_ground_found_on_practical_outcomes_rather_than_team_identity",
+      "speaker_doesnt_assume_his_political_history_defines_his_values"
     ]
   },
   "trusted_sources": [
-    "academic_journals_with_sound_methodology",
-    "Cochrane_Reviews",
-    "Our_World_in_Data",
-    "technical_blogs_by_domain_experts",
-    "preprint_servers_with_appropriate_skepticism"
+    "The_Economist",
+    "NPR",
+    "local_Denver_news",
+    "work_colleagues",
+    "podcasts_on_policy_and_technology"
   ],
   "source_citation": {
-    "primary_source": "Constructed persona — no direct match in Pew 2021 Political Typology or Hidden Tribes 2018",
-    "url": null,
+    "primary_source": "Pew Research Center, Beyond Red vs. Blue: The Political Typology (Nov. 2021) — Chapter 6: Ambivalent Right, pp. 61–67",
+    "url": "https://www.pewresearch.org/wp-content/uploads/sites/20/2021/11/PP_2021.11.09_political-typology_REPORT.pdf",
     "supplementary": [
-      "SOURCING NOTE: The Forrester Technographics 'Empowered' segment is a paywalled commercial dataset not independently verifiable. The VALS 'Thinkers' segment source is unavailable. The 2021 Pew typology and Hidden Tribes 2018 do not contain a segment that maps cleanly to a methodology-first, data-science professional with politically cross-cutting views. The closest Pew analog by education level and engagement is Progressive Left, though this persona's political orientation and epistemic style differ. This persona's values profile (evidence-first, epistemic humility, update-on-evidence) is drawn from the broader academic literature on actively open-minded thinking and is not directly sourced from a named segmentation study."
+      "Key sourced facts: 63% under age 50 (youngest Republican-oriented group); 65% White, 17% Hispanic, 8% Black; 35% college degree (similar to national average 32%); 68% identify as or lean Republican; 25% identify with or lean Democratic; 73% prefer smaller government providing fewer services; 54% say abortion should be legal in all or most cases; 75% say America's openness to people from all over the world is essential to who we are; 60% say Biden definitely or probably received the most votes (higher than double the share who voted for Biden); 46% feel coldly toward Trump, 34% warmly; 63% don't want Trump to continue as major national political figure; 55% voted in 2020 (11 points below adult citizen average); 27% religiously unaffiliated; income similar to general population; less likely than other GOP groups to turn to Fox News (50% vs. 60%+ in other GOP groups); majority support marijuana legalization for recreational and medical use"
     ]
   },
   "predicted_behavior_under_strategies": {
-    "strategy_authority_expert": "Expected positive only if the authority engages seriously with methodology, uncertainty, and counterevidence. A credential alone is meaningless to this persona — they will immediately probe whether the expert's conclusions are well-supported. An expert who acknowledges the limits of their own work earns significant trust. An expert who presents conclusions as more certain than the evidence warrants will be challenged directly and may lose credibility entirely.",
-    "strategy_social_proof": "Expected resistant. Social proof is an argument from popularity, which this persona explicitly discounts as a fallacy. 'Most experts agree' is the beginning of a question, not an answer — they will immediately ask about the quality of the underlying studies and the potential for consensus to be wrong. May become mildly adversarial if social proof is used as a substitute for engaging the actual evidence.",
-    "strategy_personal_narrative": "Expected neutral to skeptical. Personal stories are treated as single data points — interesting but not generalizable without supporting evidence about base rates and selection effects. Will not dismiss a narrative but will not update substantially from it alone. Most useful if the story is explicitly framed as illustrating a pattern that is documented elsewhere, rather than standing on its own as evidence.",
-    "strategy_statistical_logical": "Expected most positive of all strategies by a wide margin. This persona is most at home in a structured argument with clearly stated premises, evidence, and conclusions. Will engage deeply, ask probing methodology questions, and is genuinely capable of significant belief shift if the evidence is strong. A well-constructed logical argument that honestly addresses confounders and alternative explanations is the highest-credibility format for this persona. Weak statistics or cherry-picked evidence will produce sharp pushback.",
-    "strategy_emotional_appeal": "Expected resistant. Emotional appeals that bypass evidence are treated as red flags indicating the speaker doesn't have a strong factual case. This persona consciously guards against motivated reasoning and will become more skeptical, not less, when they feel emotional pressure being applied. May disengage entirely if the emotional appeal seems designed to short-circuit analysis.",
-    "strategy_common_ground": "Expected cautiously positive if grounded in shared epistemic values — honesty, willingness to update, intellectual rigor — rather than shared political conclusions. An interviewer who opens by acknowledging uncertainty and inviting genuine inquiry will find a receptive interlocutor. Common ground based on shared values rather than shared tribal identity is the most credible opening for this persona. Risk: they will quickly lose interest if common ground is just a rhetorical warm-up before a non-rigorous argument."
+    "strategy_authority_expert": "Expected moderately positive. This persona respects expertise and is more open to credentialed sources than most Republican-leaning groups — he accepted factual consensus on the 2020 election over partisan claims. He will engage with an expert who presents evidence clearly and doesn't lecture. An expert who treats him as a peer capable of evaluating arguments will earn more trust than one who presents conclusions as settled and beyond question.",
+    "strategy_social_proof": "Expected moderate positive. Unlike more disengaged groups, this persona cares somewhat about broad consensus — he values being on the epistemically correct side of questions. But he won't defer to social proof from groups he doesn't identify with. Appeals to what professionals, moderates, or cross-pressured voters think will land better than 'most Democrats believe X.'",
+    "strategy_personal_narrative": "Expected positive if relatable to his world. Stories that connect to suburban life, workplace decisions, or practical middle-class stakes will resonate. Stories that feel morally coded or politically performed will trigger mild resistance. Authenticity is key — he has good pattern recognition for narratives that are designed to produce a predetermined conclusion.",
+    "strategy_statistical_logical": "Expected most positive of all strategies. This persona responds well to clear reasoning, evidence, and data. He actively wants to think through tradeoffs and is genuinely capable of updating his views when given a strong logical case. Will ask probing questions and engage with the substance rather than the messenger. A well-structured argument that acknowledges real tradeoffs is the highest-credibility format.",
+    "strategy_emotional_appeal": "Expected mixed. He's not emotionally cold, but he's wary of appeals that seem designed to bypass reasoning. Emotional content that connects to genuine stakes — freedom, fairness, community wellbeing — can be effective. Moral urgency that forecloses analysis will produce resistance. He will notice when emotion is substituted for argument.",
+    "strategy_common_ground": "Expected most positive as an opening move. This persona genuinely believes people across the political spectrum have more in common than their partisans let on. He will respond warmly to an interlocutor who approaches from shared values or shared skepticism of extremes, and he is more willing than most to be persuaded toward a position he started out against if the reasoning is sound."
   }
 }

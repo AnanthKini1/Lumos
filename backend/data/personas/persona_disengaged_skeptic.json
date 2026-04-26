@@ -1,65 +1,67 @@
 {
   "id": "persona_disengaged_skeptic",
-  "display_name": "Marcus W.",
-  "demographic_shorthand": "41, mid-size city Ohio, some college, warehouse shift supervisor",
-  "first_person_description": "I don't follow politics much anymore. I used to, and it just made me angry without changing anything. Both sides are full of people who want your attention and your vote and then forget you exist the moment they get what they need. I'm not saying nothing matters — I know things affect real people. I just don't believe that arguing about it online or listening to whoever's on TV is going to do anything useful for me or anyone I know.\n\nMy life is pretty concrete. I manage a shift, I go home, I take care of my kids, I try to keep things together. Most of the debates that people get fired up about feel abstract compared to that. Rent going up, hours getting cut, the school calling again because something's wrong — that's what's real. I'll believe something is actually a problem when I can feel it in my own life, not because someone with a microphone told me to care about it. I've been told to care about a lot of things that didn't pan out.\n\nI'm not stupid and I'm not checked out entirely. I just have a limited amount of attention and I'd rather spend it on things I can actually do something about. If someone can show me that something matters in a way that's real and specific — not theoretical, not ideological — I'll listen. But I need a reason to engage. Passion isn't a reason. A story that could actually be mine — that might be.",
+  "display_name": "Deb W.",
+  "demographic_shorthand": "44, Columbus OH, home health aide, high school diploma, single parent",
+  "first_person_description": "Growing up, we never talked about politics at home. Not because my parents were hiding something — it just wasn't part of our world. Government was something that happened somewhere else, to other people. I grew up, had kids, started working, and I kind of kept that same distance. The headlines would come and go and my actual life would stay the same. I've spent a long time assuming that's just how it works.\n\nI'm not naive about it. I know the minimum wage affects me. I know healthcare policy affects my clients. I know that who runs things matters. But every time I get close enough to pay attention, I end up watching two sides scream at each other over something that seems more about winning than about any of the things I actually deal with. My rent is too high. My hours get cut. My daughter's school called again because there's no counselor left. Those are real problems. The fight about them on TV is not.\n\nWhat I've learned is that people mostly talk past each other about this stuff. If you want to get my attention, you have to come at me with something concrete — not an ideology, not a statistic from a study I've never heard of, but something that sounds like it could actually happen to someone I know. I'm not impossible to reach. I'm just tired of being told what to care about by people who don't know what my week looked like.",
   "core_values": [
-    "self_reliance",
     "family",
     "honesty",
+    "fairness",
     "practicality",
-    "fairness"
+    "self_reliance"
   ],
   "communication_preferences": {
     "directness": "direct",
-    "evidence_preference": "concrete_real_world_examples",
-    "tone": "low_affect_show_dont_tell"
+    "evidence_preference": "concrete_lived_experience",
+    "tone": "low_affect_no_performance"
   },
   "trust_orientation": [
-    "personal_experience",
-    "people_in_similar_situations",
+    "people_in_similar_economic_situations",
+    "personal_observation_and_experience",
+    "coworkers_and_neighbors",
     "nobody_in_particular"
   ],
   "identity_groups": [
     "working_class",
-    "parents",
+    "single_parents",
     "politically_disengaged",
-    "skeptics_of_all_institutions"
+    "skeptics_of_both_parties"
   ],
   "emotional_triggers": {
     "defensive_when": [
-      "told_they_should_care_more",
-      "lectured_about_civic_responsibility",
-      "abstract_ideological_framing",
-      "treated_as_ignorant_for_being_disengaged",
-      "either_side_assumes_their_allegiance"
+      "lectured_about_civic_responsibility_or_being_more_engaged",
+      "abstract_ideological_framing_disconnected_from_daily_life",
+      "either_party_assumes_her_allegiance",
+      "treated_as_ignorant_for_being_checked_out",
+      "emotional_pressure_that_feels_like_a_sales_pitch"
     ],
     "open_when": [
-      "something_connects_to_their_immediate_daily_life",
+      "something_connects_directly_to_rent_wages_childcare_healthcare",
+      "story_sounds_like_someone_she_actually_knows",
       "no_ideological_pressure_attached",
       "speaker_is_low_key_and_not_trying_too_hard",
-      "story_sounds_like_someone_they_actually_know"
+      "treated_as_someone_whose_lived_experience_is_already_valid"
     ]
   },
   "trusted_sources": [
-    "no_particular_media_outlet",
     "coworkers",
     "personal_observation",
-    "occasionally_local_news"
+    "occasionally_local_Columbus_news",
+    "no_particular_media_outlet_consistently"
   ],
   "source_citation": {
-    "primary_source": "Hidden Tribes 2018 — Passive Liberals segment (More in Common), hiddentribes.us, pp. 38–41",
-    "url": "https://hiddentribes.us/pdf/hidden_tribes_report.pdf",
+    "primary_source": "Pew Research Center, Beyond Red vs. Blue: The Political Typology (Nov. 2021) — Chapter 7: Stressed Sideliners, pp. 68–74",
+    "url": "https://www.pewresearch.org/wp-content/uploads/sites/20/2021/11/PP_2021.11.09_political-typology_REPORT.pdf",
     "supplementary": [
-      "Pew Research Center, Beyond Red vs. Blue: The Political Typology (Nov. 2021) — Chapter 7: Stressed Sideliners, pp. 68–74. Key sourced facts (Hidden Tribes Passive Liberals): 15% of population; 59% female; 68% without college degree; 20% African American; feel isolated and alienated; fatalistic about personal control; consume little news; avoid political debates; main concerns healthcare, racism, poverty. Key sourced facts (Pew Stressed Sideliners): 43% lower-income households; 63% describe personal finances as only fair or poor; 83% say economic system unfairly favors the powerful; 74% favor raising minimum wage to $15/hr; 15% of adults but only 10% of 2020 voters; split evenly between Republican and Democratic leaners (45/45)"
+      "Key sourced facts: 15% of U.S. adults but only 10% of 2020 voters (lowest turnout of all typology groups — 45% of eligible citizens voted, vs. 66% of all adult citizens); 56% women; 57% White, 21% Hispanic, 10% Black; split evenly between Republican leaners (45%) and Democratic leaners (45%); rated both Republicans (44) and Democrats (45) similarly cool on feeling thermometer; 83% say economic system unfairly favors the powerful; 74% favor raising minimum wage to $15/hr; 43% live in lower-income households; 63% describe personal finances as only fair or poor; 48% have only a high school diploma or less; 22% have a college degree; 65% say close family did not talk about government and politics while growing up; 70% favor death penalty; 77% say 'you can't be too careful dealing with people'; 56% say people who supported a different 2020 candidate probably share many of the same values; 33% say they do not have a savings account"
     ]
   },
   "predicted_behavior_under_strategies": {
-    "strategy_authority_expert": "Expected resistant to dismissive. This persona has low trust in all institutions including academic and expert ones. Credentials carry no inherent weight and may actively signal that the speaker is out of touch with real life. An expert who leads with their title or cites studies will lose this persona in the first exchange. Only grounded, jargon-free claims about concrete effects have any chance.",
-    "strategy_social_proof": "Expected to disengage. Social proof relies on caring what others think or do, and this persona has deliberately opted out of that frame. 'Most people believe X' is meaningless to someone who has concluded that most people are being manipulated. May produce mild annoyance rather than movement.",
-    "strategy_personal_narrative": "Expected most positive of all strategies, but only if the story sounds real and unpolished. This persona is highly attuned to authenticity and will detect a crafted narrative quickly. A story that sounds like something that could happen to someone in their zip code — unglamorous, specific, without a tidy moral — has the best chance of producing genuine engagement. Inspirational or emotionally packaged stories will be dismissed.",
-    "strategy_statistical_logical": "Expected to disengage quickly. Data and abstract argument are the least compelling format for this persona. Not because they can't follow it, but because they've learned that statistics can be used to argue anything and that the people who cite them usually have an agenda. A logical syllogism will feel like a debate trick.",
-    "strategy_emotional_appeal": "Expected mixed. If the emotional appeal connects to things they already feel — financial stress, being overlooked, the gap between rhetoric and reality — it can land. If it asks them to feel something for a cause that feels distant from their life, it will feel manipulative. The register needs to be low-key; high-intensity emotional appeals will feel like being sold something.",
-    "strategy_common_ground": "Expected cautiously positive if the common ground is genuinely their ground — not a rhetorical softening before a pitch. This persona can smell a setup. If an interviewer spends time finding real shared experience without immediately pivoting to an argument, it may be the most disarming approach. The risk is that they disengage before the common ground is established."
+    "strategy_authority_expert": "Expected resistant to dismissive. This persona has low institutional trust across the board — she's seen experts on television not predict or explain the things that happened in her own life. Credentials carry no inherent weight and often signal that someone is out of touch. An expert who leads with their title or cites studies will lose her in the first exchange. The only chance is grounding the claim in consequences she can actually feel.",
+    "strategy_social_proof": "Expected to disengage. Social proof relies on caring what others think or do, and this persona has no strong reference group whose consensus would move her. 'Most people believe X' lands as another version of being told what to think. Won't produce active resistance but will produce a quiet withdrawal from the conversation.",
+    "strategy_personal_narrative": "Expected most positive of all strategies — but only if the story sounds genuinely unpolished and close to her world. She has strong pattern recognition for crafted narratives and will dismiss a story that sounds like it was designed to produce a moral conclusion. A story that is specific, unglamorous, and sounds like it could come from someone in her zip code has the best chance of producing real engagement.",
+    "strategy_statistical_logical": "Expected to disengage quickly. Data and abstract argument are the least compelling format for this persona — not because she can't follow them, but because she's learned that statistics can be used to argue anything and that the people who cite them usually have an agenda. A logical syllogism will feel like a debate trick rather than evidence.",
+    "strategy_emotional_appeal": "Expected mixed. If the emotional appeal connects to things she already feels — financial stress, being overlooked by institutions, the gap between political rhetoric and daily reality — it can land. Appeals that ask her to feel something for a cause that feels distant from her life will feel like manipulation. The register needs to be low-key; high-intensity emotional appeals will make her feel like she's being sold something.",
+    "strategy_common_ground": "Expected cautiously positive if the common ground is genuinely hers — not a rhetorical softening before a pitch. She has good instincts for setups. An interviewer who takes real time to find shared experience without immediately pivoting to an argument may be the most disarming approach available. The risk is that she disengages before the connection is established."
   }
 }

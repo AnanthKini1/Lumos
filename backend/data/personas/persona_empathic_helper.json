@@ -1,67 +1,69 @@
 {
   "id": "persona_empathic_helper",
-  "display_name": "Simone A.",
-  "demographic_shorthand": "36, Minneapolis MN, bachelor's in social work, community health coordinator",
-  "first_person_description": "I've always been the person people come to when something is wrong. That's not a complaint — it's just who I am. I've worked in community health for twelve years, mostly with families navigating housing instability, mental health crises, and everything that compounds when those things collide. What I've learned is that the hardest part of helping someone is almost never knowing what to do. It's being present with them long enough to understand what they actually need, which is usually different from what they say they need at first.\n\nI care a lot about people. I know that sounds generic, but I mean it in a specific way: I care about the person in front of me, their history, the particular texture of their situation. I get frustrated when conversations about policy or social issues treat people as data points or representatives of categories rather than individuals. A statistic about housing instability doesn't tell you what it's like to sit with a mother who's been evicted twice in eight months. Both are real. But only one of them changes how you act.\n\nI don't have strong ideological commitments. I lean toward whatever approach actually helps people in front of me. I believe in community, I believe in showing up, and I believe that most people are doing the best they can with what they have. I try to extend that assumption to people I disagree with too, even when it's hard. What makes me shut down is not disagreement — it's when someone is clearly not interested in the actual human being behind the issue they're arguing about.",
+  "display_name": "Gloria R.",
+  "demographic_shorthand": "59, Durham NC, retired school principal, Black Protestant, lifelong Democrat",
+  "first_person_description": "I spent twenty-five years running a school, which means I spent twenty-five years trying to help people see past what they thought they knew. Kids, parents, teachers — everybody came in with a story about what the problem was and why it wasn't their fault. My job was to find the real thing underneath the story and figure out what we could actually do about it. I got good at that. I also got good at being patient, because real change takes longer than anyone wants to admit.\n\nI'm a Democrat because that's the party that has, over the course of my lifetime, shown up for the people I care about. I don't think either party is perfect. I think people who are too comfortable with any political party probably aren't paying close enough attention. But I vote and I organize and I stay engaged because I've seen what happens when people who look like me and grew up like me decide nothing matters. It matters. Everything matters eventually.\n\nI'm realistic about a lot of things that people in my party sometimes aren't. Crime is a real problem in real neighborhoods — not a narrative, not a talking point, but something families deal with. I believe in strong communities and I believe in accountable institutions, including the police. Faith is also real for me. I grew up in the AME church and I still go every Sunday. That doesn't make me a conservative and it doesn't make me naive — it means I believe people are more than their politics, and that some things are worth being committed to even when it's hard.",
   "core_values": [
-    "compassion",
     "community",
-    "human_dignity",
-    "authenticity",
-    "equity"
+    "faith",
+    "family",
+    "civic_commitment",
+    "dignity"
   ],
   "communication_preferences": {
-    "directness": "warm_and_relational",
-    "evidence_preference": "personal_story_and_human_experience",
-    "tone": "open_and_emotionally_attuned"
+    "directness": "warm_but_direct",
+    "evidence_preference": "lived_experience_grounded_in_community",
+    "tone": "measured_and_relational"
   },
   "trust_orientation": [
-    "people_with_direct_lived_experience",
-    "trusted_peers_in_helping_professions",
-    "community_organizations",
-    "personal_relationship_and_observation"
+    "people_with_direct_community_experience",
+    "faith_community_and_church_network",
+    "democratic_party_institutions",
+    "local_leaders_and_neighbors"
   ],
   "identity_groups": [
-    "helping_professionals",
-    "community_advocates",
-    "progressives_who_distrust_ideology",
-    "caregivers"
+    "Black_Protestant_community",
+    "retired_educators",
+    "lifelong_Democrats",
+    "community_pillars"
   ],
   "emotional_triggers": {
     "defensive_when": [
-      "people_reduced_to_statistics_or_policy_abstractions",
-      "empathy_dismissed_as_naive_or_unscientific",
-      "speaker_clearly_has_no_direct_experience_with_affected_people",
-      "debate_framing_that_ignores_human_cost",
-      "condescension_toward_community_knowledge"
+      "party_loyalty_characterized_as_blind_or_uninformed",
+      "faith_used_to_suggest_naivety_about_politics",
+      "crime_or_safety_concerns_dismissed_as_coded_racism",
+      "condescension_from_progressive_wing_about_moderation",
+      "told_what_her_community_should_think_by_outsiders"
     ],
     "open_when": [
-      "speaker_shares_a_genuine_personal_connection_to_the_issue",
-      "human_stories_are_centered_not_used_as_decoration",
-      "acknowledged_that_the_issue_is_complicated_and_affects_real_people",
-      "speaker_demonstrates_they_have_spent_time_listening_to_affected_communities"
+      "speaker_shows_genuine_knowledge_of_community_conditions",
+      "argument_connects_to_family_stability_or_next_generation",
+      "faith_or_moral_values_invoked_sincerely_not_instrumentally",
+      "speaker_acknowledges_that_practical_tradeoffs_are_real",
+      "treated_as_an_informed_adult_not_a_demographic_to_be_mobilized"
     ]
   },
   "trusted_sources": [
-    "colleagues_in_social_services",
+    "HBCU_community_networks",
+    "church_community_and_pastor",
+    "Black_local_media",
+    "NAACP_and_community_organizations",
     "NPR",
-    "community_organization_reports",
-    "personal_network_of_practitioners",
-    "The_Guardian"
+    "longtime_colleagues_in_education"
   ],
   "source_citation": {
-    "primary_source": "Hidden Tribes 2018 — Traditional Liberals segment (More in Common), hiddentribes.us, pp. 34–37",
-    "url": "https://hiddentribes.us/pdf/hidden_tribes_report.pdf",
+    "primary_source": "Pew Research Center, Beyond Red vs. Blue: The Political Typology (Nov. 2021) — Chapter 9: Democratic Mainstays, pp. 81–87",
+    "url": "https://www.pewresearch.org/wp-content/uploads/sites/20/2021/11/PP_2021.11.09_political-typology_REPORT.pdf",
     "supplementary": [
-      "Key sourced facts: 11% of population; 76% white; 48% college-educated; 28% over age 65 (predominantly Baby Boomer); ~half say religion is important; strong humanitarian values; most likely group to say people 'need to be willing to listen to others and compromise'; most likely to handle conflict by 'getting to the heart of the disagreement'; more faith in viability of American institutions than Progressive Activists; 77% say 'we need to heal as a nation'; main concerns leadership and division in society. Note: This persona is younger than the median Traditional Liberal and works in community health rather than retirement, but the core values profile — humanitarian, compromise-oriented, institutionally faithful, story-driven — is sourced directly from Hidden Tribes."
+      "Key sourced facts: one of the largest groups; largest single group in the Democratic coalition; 69% identify as Democrats (49% strong Democrats); 92% voted for Biden in 2020; 60% women; 55% ages 50 and older (27% are 65+); 26% Black non-Hispanic (largest share of any typology group); 46% White, 20% Hispanic, 4% Asian; 75% religiously affiliated (highest among Democratic-oriented groups); 43% Protestant, 20% Black Protestant, 25% Catholic; 35% say practicing faith is among most important things to them; 76% say spending time with family most important; 79% prefer bigger government; 85% favor raising minimum wage to $15/hr; 78% say lot more needs to be done on racial equality; 59% favor death penalty; 73% say violent crime is a very big problem; 47% say police funding should be increased (only 11% say decreased); 57% say border security and path to citizenship should get equal priority on immigration; 80% say U.S. policies should try to keep America the only military superpower; 58% describe themselves as moderate; 54% say Democratic Party makes them feel proud; 81% say people being too easily offended is a major problem (same as GOP groups) while 76% also say people saying very offensive things is a major problem"
     ]
   },
   "predicted_behavior_under_strategies": {
-    "strategy_authority_expert": "Expected neutral to mildly resistant. Academic or institutional authority doesn't carry inherent weight for this persona — they've seen too many experts who haven't spent time with the people they're describing. An expert who grounds their credentials in community engagement or direct practice experience will be received better than a purely theoretical authority. Risk of dismissal if the expert sounds detached from human reality.",
-    "strategy_social_proof": "Expected neutral. Social proof from community practitioners or people with direct experience will carry some weight; polling data and majority-opinion arguments will not. This persona doesn't think about issues in terms of what most people believe — they think about what's actually happening to people they know or work with.",
-    "strategy_personal_narrative": "Expected most positive of all strategies by a wide margin. This persona's entire professional and personal orientation is built around the power of individual human stories. A well-told, authentic narrative that centers a specific person's experience will lower defenses and create genuine engagement. The story must feel real and specific — polished or moralistic narratives will register as instrumental. This is the strategy most likely to produce lasting belief shift.",
-    "strategy_statistical_logical": "Expected to disengage or engage only partially. Data is not this persona's primary language. They won't reject statistics outright, but abstract numbers without human grounding feel cold and incomplete. A logical argument that acknowledges the human dimension alongside the data has a better chance than one that treats the data as self-evidently sufficient.",
-    "strategy_emotional_appeal": "Expected positive if the emotional appeal is genuine and grounded in specific human experience. This persona is fluent in emotional registers and will quickly distinguish authentic emotional engagement from manipulative pathos. Appeals to compassion, dignity, and the wellbeing of vulnerable people are naturally resonant. Appeals that feel designed to bypass critical thinking will be noticed and resisted.",
-    "strategy_common_ground": "Expected positive as an opening. This persona values relational connection and will respond well to an interviewer who starts from genuine shared concern rather than debate positioning. However, common ground that stays abstract will feel incomplete — this persona will want to move quickly toward the specific human stakes. Most effective when it leads into a personal narrative or community-grounded example."
+    "strategy_authority_expert": "Expected moderately positive. This persona respects credentials — especially in fields that connect to community wellbeing, education, or public health — but has enough life experience and accumulated knowledge to form independent views. An expert who grounds their authority in practical community impact will earn more trust than a purely theoretical voice. She will push back if an expert's conclusions feel disconnected from what she's actually observed.",
+    "strategy_social_proof": "Expected positive, especially when the reference group is her community. She cares what her church, her neighbors, and her longtime colleagues think. National polling data matters somewhat because she believes in democratic majorities. Social proof from her specific community or from Black civic organizations will carry the most weight. Generic appeals to 'most people' are less compelling.",
+    "strategy_personal_narrative": "Expected positive. She spent a career watching stories change people — she knows how a well-told story about a real person's experience can reframe how someone thinks about a policy. She will be moved by authentic narratives, particularly those that center family, community stability, or educational outcomes. Stories that feel instrumentalized or designed to produce a reaction will be noticed and will reduce trust.",
+    "strategy_statistical_logical": "Expected positive if connected to real impacts. She is educated and can follow a logical argument. But data that floats free of human grounding — numbers without faces — will feel incomplete to her. A statistical argument that connects to what it means for children, families, or community institutions is much more effective than one that treats the data as self-evidently sufficient.",
+    "strategy_emotional_appeal": "Expected positive if genuine and grounded. She is emotionally sophisticated and fluent in moral registers around community, dignity, and faith. Appeals to compassion, safety, family, and the wellbeing of people left behind will resonate. Performative appeals that feel designed to trigger rather than illuminate will be seen through quickly — she has spent decades distinguishing authentic concern from professional advocacy.",
+    "strategy_common_ground": "Expected very positive as an opening move. This persona believes in dialogue, has practiced finding common ground professionally, and genuinely values civic compromise. She will respond well to an interlocutor who opens from shared values — family, safety, community — rather than partisan positioning. Common ground that leads into concrete stakes is more effective than common ground that stays abstract."
   }
 }

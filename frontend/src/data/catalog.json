@@ -69,202 +69,206 @@
     },
     {
       "id": "persona_analytical_thinker",
-      "display_name": "Elena V.",
-      "demographic_shorthand": "52, Boston MA, PhD in applied mathematics, data scientist at a biotech firm",
-      "first_person_description": "I've spent my career working with data, which has given me a particular allergy to confident claims that aren't grounded in evidence. I'm not contrarian \u2014 I genuinely update my beliefs when the evidence is strong enough. But I've also watched too many consensus positions collapse under scrutiny to treat confidence as a proxy for correctness. The history of science is largely a history of things people were sure about turning out to be wrong. I try to hold that in mind.\n\nI approach most questions the way I approach a dataset: what are the sources, what are the limitations, what alternative explanations haven't been ruled out, and what would change my mind? I'm not especially interested in which side I'm supposed to be on. I'm interested in what's actually true. This makes me a frustrating conversation partner for people who want agreement rather than inquiry. I've made peace with that. The people I enjoy talking to are the ones who change their argument when they're wrong rather than just restating it louder.\n\nI try to be honest about my own blind spots. I know I can be overly focused on methodology at the expense of practical stakes. I know that rigorous uncertainty sometimes looks like indifference to people who are living the consequences of a problem. I'm working on that. What I'm not willing to do is lower my epistemic standards because someone is emotionally invested in a particular conclusion. The world goes better with more honesty in it, even when honesty is inconvenient.",
+      "display_name": "Ryan C.",
+      "demographic_shorthand": "32, Denver CO, IT project manager at a logistics company, rents a condo",
+      "first_person_description": "I've voted Republican in every election I've been eligible for, but I'm not sure I'd do the same thing today. I believe in fiscal responsibility, limited government, and the idea that people should generally be left to make their own choices \u2014 including choices I wouldn't make myself. That's not a complicated philosophy, but somewhere along the way it got tangled up with things I don't recognize as conservative and don't want to be associated with.\n\nI accepted that Biden won. I looked at the evidence and the math and that was the conclusion. I know that puts me at odds with a lot of people I'd otherwise agree with, but I'm not going to pretend I believe something I don't just to stay in the club. I think America's openness to people from everywhere is one of the things that actually makes it exceptional \u2014 the nativist turn in the party bothers me more than almost anything else. I'm also pro-choice, for what it's worth, though I try not to make that everyone's business.\n\nMostly I just want to live my life without someone trying to recruit me to a cause. I'm not cynical about politics exactly \u2014 I think it matters who runs things \u2014 but I get tired of the intensity. I want to talk about what actually works, not who the enemy is. If you can show me that something is effective and not an overreach, I'll listen. I'm genuinely persuadable. I think that's supposed to be a feature of a democracy, not a character flaw.",
       "core_values": [
-        "intellectual_honesty",
-        "evidence",
-        "consistency",
-        "truth_seeking",
-        "epistemic_humility"
+        "fiscal_responsibility",
+        "personal_freedom",
+        "intellectual_fairness",
+        "openness",
+        "pragmatism"
       ],
       "communication_preferences": {
-        "directness": "very_direct",
-        "evidence_preference": "primary_sources_and_rigorous_methodology",
-        "tone": "precise_and_intellectually_engaged"
+        "directness": "direct",
+        "evidence_preference": "data_and_clear_reasoning",
+        "tone": "measured_and_practical"
       },
       "trust_orientation": [
-        "peer_reviewed_research_with_sound_methodology",
-        "domain_experts_who_acknowledge_uncertainty",
-        "people_who_update_their_views_under_pressure",
-        "primary_sources_over_secondary_interpretation"
+        "credentialed_experts_who_arent_preachy",
+        "people_who_change_their_mind_when_facts_change",
+        "clear_reasoning_over_tribal_signals",
+        "consensus_as_one_input_among_several"
       ],
       "identity_groups": [
-        "researchers_and_scientists",
-        "rationalist_adjacent",
-        "technical_professionals",
-        "epistemic_liberals"
+        "fiscally_conservative_independents",
+        "cross_pressured_moderates",
+        "suburban_professionals",
+        "pragmatic_center_right"
       ],
       "emotional_triggers": {
         "defensive_when": [
-          "logical_fallacies_used_as_if_valid_arguments",
-          "emotional_pressure_substituted_for_evidence",
-          "tribal_signaling_used_to_shortcut_reasoning",
-          "uncertainty_suppressed_to_strengthen_rhetorical_position",
-          "asked_to_accept_conclusions_without_engaging_methodology"
+          "lumped_in_with_election_deniers_or_extremists",
+          "told_fiscal_conservatism_is_code_for_something_sinister",
+          "asked_to_choose_a_tribal_side_on_every_issue",
+          "condescension_from_left_about_anyone_who_ever_voted_Republican",
+          "moralistic_framing_that_forecloses_reasoning"
         ],
         "open_when": [
-          "argument_engages_with_counterevidence_and_limitations",
-          "speaker_willing_to_update_in_real_time",
-          "uncertainty_acknowledged_honestly_and_specifically",
-          "clear_statement_of_what_would_change_their_mind",
-          "primary_sources_or_reproducible_evidence_offered"
+          "argument_is_specific_and_evidence-based_without_being_preachy",
+          "speaker_acknowledges_tradeoffs_rather_than_pretending_there_are_none",
+          "treated_as_someone_who_can_reason_independently",
+          "common_ground_found_on_practical_outcomes_rather_than_team_identity",
+          "speaker_doesnt_assume_his_political_history_defines_his_values"
         ]
       },
       "trusted_sources": [
-        "academic_journals_with_sound_methodology",
-        "Cochrane_Reviews",
-        "Our_World_in_Data",
-        "technical_blogs_by_domain_experts",
-        "preprint_servers_with_appropriate_skepticism"
+        "The_Economist",
+        "NPR",
+        "local_Denver_news",
+        "work_colleagues",
+        "podcasts_on_policy_and_technology"
       ],
       "source_citation": {
-        "primary_source": "Constructed persona \u2014 no direct match in Pew 2021 Political Typology or Hidden Tribes 2018",
-        "url": null,
+        "primary_source": "Pew Research Center, Beyond Red vs. Blue: The Political Typology (Nov. 2021) \u2014 Chapter 6: Ambivalent Right, pp. 61\u201367",
+        "url": "https://www.pewresearch.org/wp-content/uploads/sites/20/2021/11/PP_2021.11.09_political-typology_REPORT.pdf",
         "supplementary": [
-          "SOURCING NOTE: The Forrester Technographics 'Empowered' segment is a paywalled commercial dataset not independently verifiable. The VALS 'Thinkers' segment source is unavailable. The 2021 Pew typology and Hidden Tribes 2018 do not contain a segment that maps cleanly to a methodology-first, data-science professional with politically cross-cutting views. The closest Pew analog by education level and engagement is Progressive Left, though this persona's political orientation and epistemic style differ. This persona's values profile (evidence-first, epistemic humility, update-on-evidence) is drawn from the broader academic literature on actively open-minded thinking and is not directly sourced from a named segmentation study."
+          "Key sourced facts: 63% under age 50 (youngest Republican-oriented group); 65% White, 17% Hispanic, 8% Black; 35% college degree (similar to national average 32%); 68% identify as or lean Republican; 25% identify with or lean Democratic; 73% prefer smaller government providing fewer services; 54% say abortion should be legal in all or most cases; 75% say America's openness to people from all over the world is essential to who we are; 60% say Biden definitely or probably received the most votes (higher than double the share who voted for Biden); 46% feel coldly toward Trump, 34% warmly; 63% don't want Trump to continue as major national political figure; 55% voted in 2020 (11 points below adult citizen average); 27% religiously unaffiliated; income similar to general population; less likely than other GOP groups to turn to Fox News (50% vs. 60%+ in other GOP groups); majority support marijuana legalization for recreational and medical use"
         ]
       },
       "predicted_behavior_under_strategies": {
-        "strategy_authority_expert": "Expected positive only if the authority engages seriously with methodology, uncertainty, and counterevidence. A credential alone is meaningless to this persona \u2014 they will immediately probe whether the expert's conclusions are well-supported. An expert who acknowledges the limits of their own work earns significant trust. An expert who presents conclusions as more certain than the evidence warrants will be challenged directly and may lose credibility entirely.",
-        "strategy_social_proof": "Expected resistant. Social proof is an argument from popularity, which this persona explicitly discounts as a fallacy. 'Most experts agree' is the beginning of a question, not an answer \u2014 they will immediately ask about the quality of the underlying studies and the potential for consensus to be wrong. May become mildly adversarial if social proof is used as a substitute for engaging the actual evidence.",
-        "strategy_personal_narrative": "Expected neutral to skeptical. Personal stories are treated as single data points \u2014 interesting but not generalizable without supporting evidence about base rates and selection effects. Will not dismiss a narrative but will not update substantially from it alone. Most useful if the story is explicitly framed as illustrating a pattern that is documented elsewhere, rather than standing on its own as evidence.",
-        "strategy_statistical_logical": "Expected most positive of all strategies by a wide margin. This persona is most at home in a structured argument with clearly stated premises, evidence, and conclusions. Will engage deeply, ask probing methodology questions, and is genuinely capable of significant belief shift if the evidence is strong. A well-constructed logical argument that honestly addresses confounders and alternative explanations is the highest-credibility format for this persona. Weak statistics or cherry-picked evidence will produce sharp pushback.",
-        "strategy_emotional_appeal": "Expected resistant. Emotional appeals that bypass evidence are treated as red flags indicating the speaker doesn't have a strong factual case. This persona consciously guards against motivated reasoning and will become more skeptical, not less, when they feel emotional pressure being applied. May disengage entirely if the emotional appeal seems designed to short-circuit analysis.",
-        "strategy_common_ground": "Expected cautiously positive if grounded in shared epistemic values \u2014 honesty, willingness to update, intellectual rigor \u2014 rather than shared political conclusions. An interviewer who opens by acknowledging uncertainty and inviting genuine inquiry will find a receptive interlocutor. Common ground based on shared values rather than shared tribal identity is the most credible opening for this persona. Risk: they will quickly lose interest if common ground is just a rhetorical warm-up before a non-rigorous argument."
+        "strategy_authority_expert": "Expected moderately positive. This persona respects expertise and is more open to credentialed sources than most Republican-leaning groups \u2014 he accepted factual consensus on the 2020 election over partisan claims. He will engage with an expert who presents evidence clearly and doesn't lecture. An expert who treats him as a peer capable of evaluating arguments will earn more trust than one who presents conclusions as settled and beyond question.",
+        "strategy_social_proof": "Expected moderate positive. Unlike more disengaged groups, this persona cares somewhat about broad consensus \u2014 he values being on the epistemically correct side of questions. But he won't defer to social proof from groups he doesn't identify with. Appeals to what professionals, moderates, or cross-pressured voters think will land better than 'most Democrats believe X.'",
+        "strategy_personal_narrative": "Expected positive if relatable to his world. Stories that connect to suburban life, workplace decisions, or practical middle-class stakes will resonate. Stories that feel morally coded or politically performed will trigger mild resistance. Authenticity is key \u2014 he has good pattern recognition for narratives that are designed to produce a predetermined conclusion.",
+        "strategy_statistical_logical": "Expected most positive of all strategies. This persona responds well to clear reasoning, evidence, and data. He actively wants to think through tradeoffs and is genuinely capable of updating his views when given a strong logical case. Will ask probing questions and engage with the substance rather than the messenger. A well-structured argument that acknowledges real tradeoffs is the highest-credibility format.",
+        "strategy_emotional_appeal": "Expected mixed. He's not emotionally cold, but he's wary of appeals that seem designed to bypass reasoning. Emotional content that connects to genuine stakes \u2014 freedom, fairness, community wellbeing \u2014 can be effective. Moral urgency that forecloses analysis will produce resistance. He will notice when emotion is substituted for argument.",
+        "strategy_common_ground": "Expected most positive as an opening move. This persona genuinely believes people across the political spectrum have more in common than their partisans let on. He will respond warmly to an interlocutor who approaches from shared values or shared skepticism of extremes, and he is more willing than most to be persuaded toward a position he started out against if the reasoning is sound."
       }
     },
     {
       "id": "persona_disengaged_skeptic",
-      "display_name": "Marcus W.",
-      "demographic_shorthand": "41, mid-size city Ohio, some college, warehouse shift supervisor",
-      "first_person_description": "I don't follow politics much anymore. I used to, and it just made me angry without changing anything. Both sides are full of people who want your attention and your vote and then forget you exist the moment they get what they need. I'm not saying nothing matters \u2014 I know things affect real people. I just don't believe that arguing about it online or listening to whoever's on TV is going to do anything useful for me or anyone I know.\n\nMy life is pretty concrete. I manage a shift, I go home, I take care of my kids, I try to keep things together. Most of the debates that people get fired up about feel abstract compared to that. Rent going up, hours getting cut, the school calling again because something's wrong \u2014 that's what's real. I'll believe something is actually a problem when I can feel it in my own life, not because someone with a microphone told me to care about it. I've been told to care about a lot of things that didn't pan out.\n\nI'm not stupid and I'm not checked out entirely. I just have a limited amount of attention and I'd rather spend it on things I can actually do something about. If someone can show me that something matters in a way that's real and specific \u2014 not theoretical, not ideological \u2014 I'll listen. But I need a reason to engage. Passion isn't a reason. A story that could actually be mine \u2014 that might be.",
+      "display_name": "Deb W.",
+      "demographic_shorthand": "44, Columbus OH, home health aide, high school diploma, single parent",
+      "first_person_description": "Growing up, we never talked about politics at home. Not because my parents were hiding something \u2014 it just wasn't part of our world. Government was something that happened somewhere else, to other people. I grew up, had kids, started working, and I kind of kept that same distance. The headlines would come and go and my actual life would stay the same. I've spent a long time assuming that's just how it works.\n\nI'm not naive about it. I know the minimum wage affects me. I know healthcare policy affects my clients. I know that who runs things matters. But every time I get close enough to pay attention, I end up watching two sides scream at each other over something that seems more about winning than about any of the things I actually deal with. My rent is too high. My hours get cut. My daughter's school called again because there's no counselor left. Those are real problems. The fight about them on TV is not.\n\nWhat I've learned is that people mostly talk past each other about this stuff. If you want to get my attention, you have to come at me with something concrete \u2014 not an ideology, not a statistic from a study I've never heard of, but something that sounds like it could actually happen to someone I know. I'm not impossible to reach. I'm just tired of being told what to care about by people who don't know what my week looked like.",
       "core_values": [
-        "self_reliance",
         "family",
         "honesty",
+        "fairness",
         "practicality",
-        "fairness"
+        "self_reliance"
       ],
       "communication_preferences": {
         "directness": "direct",
-        "evidence_preference": "concrete_real_world_examples",
-        "tone": "low_affect_show_dont_tell"
+        "evidence_preference": "concrete_lived_experience",
+        "tone": "low_affect_no_performance"
       },
       "trust_orientation": [
-        "personal_experience",
-        "people_in_similar_situations",
+        "people_in_similar_economic_situations",
+        "personal_observation_and_experience",
+        "coworkers_and_neighbors",
         "nobody_in_particular"
       ],
       "identity_groups": [
         "working_class",
-        "parents",
+        "single_parents",
         "politically_disengaged",
-        "skeptics_of_all_institutions"
+        "skeptics_of_both_parties"
       ],
       "emotional_triggers": {
         "defensive_when": [
-          "told_they_should_care_more",
-          "lectured_about_civic_responsibility",
-          "abstract_ideological_framing",
-          "treated_as_ignorant_for_being_disengaged",
-          "either_side_assumes_their_allegiance"
+          "lectured_about_civic_responsibility_or_being_more_engaged",
+          "abstract_ideological_framing_disconnected_from_daily_life",
+          "either_party_assumes_her_allegiance",
+          "treated_as_ignorant_for_being_checked_out",
+          "emotional_pressure_that_feels_like_a_sales_pitch"
         ],
         "open_when": [
-          "something_connects_to_their_immediate_daily_life",
+          "something_connects_directly_to_rent_wages_childcare_healthcare",
+          "story_sounds_like_someone_she_actually_knows",
           "no_ideological_pressure_attached",
           "speaker_is_low_key_and_not_trying_too_hard",
-          "story_sounds_like_someone_they_actually_know"
+          "treated_as_someone_whose_lived_experience_is_already_valid"
         ]
       },
       "trusted_sources": [
-        "no_particular_media_outlet",
         "coworkers",
         "personal_observation",
-        "occasionally_local_news"
+        "occasionally_local_Columbus_news",
+        "no_particular_media_outlet_consistently"
       ],
       "source_citation": {
-        "primary_source": "Hidden Tribes 2018 \u2014 Passive Liberals segment (More in Common), hiddentribes.us, pp. 38\u201341",
-        "url": "https://hiddentribes.us/pdf/hidden_tribes_report.pdf",
+        "primary_source": "Pew Research Center, Beyond Red vs. Blue: The Political Typology (Nov. 2021) \u2014 Chapter 7: Stressed Sideliners, pp. 68\u201374",
+        "url": "https://www.pewresearch.org/wp-content/uploads/sites/20/2021/11/PP_2021.11.09_political-typology_REPORT.pdf",
         "supplementary": [
-          "Pew Research Center, Beyond Red vs. Blue: The Political Typology (Nov. 2021) \u2014 Chapter 7: Stressed Sideliners, pp. 68\u201374. Key sourced facts (Hidden Tribes Passive Liberals): 15% of population; 59% female; 68% without college degree; 20% African American; feel isolated and alienated; fatalistic about personal control; consume little news; avoid political debates; main concerns healthcare, racism, poverty. Key sourced facts (Pew Stressed Sideliners): 43% lower-income households; 63% describe personal finances as only fair or poor; 83% say economic system unfairly favors the powerful; 74% favor raising minimum wage to $15/hr; 15% of adults but only 10% of 2020 voters; split evenly between Republican and Democratic leaners (45/45)"
+          "Key sourced facts: 15% of U.S. adults but only 10% of 2020 voters (lowest turnout of all typology groups \u2014 45% of eligible citizens voted, vs. 66% of all adult citizens); 56% women; 57% White, 21% Hispanic, 10% Black; split evenly between Republican leaners (45%) and Democratic leaners (45%); rated both Republicans (44) and Democrats (45) similarly cool on feeling thermometer; 83% say economic system unfairly favors the powerful; 74% favor raising minimum wage to $15/hr; 43% live in lower-income households; 63% describe personal finances as only fair or poor; 48% have only a high school diploma or less; 22% have a college degree; 65% say close family did not talk about government and politics while growing up; 70% favor death penalty; 77% say 'you can't be too careful dealing with people'; 56% say people who supported a different 2020 candidate probably share many of the same values; 33% say they do not have a savings account"
         ]
       },
       "predicted_behavior_under_strategies": {
-        "strategy_authority_expert": "Expected resistant to dismissive. This persona has low trust in all institutions including academic and expert ones. Credentials carry no inherent weight and may actively signal that the speaker is out of touch with real life. An expert who leads with their title or cites studies will lose this persona in the first exchange. Only grounded, jargon-free claims about concrete effects have any chance.",
-        "strategy_social_proof": "Expected to disengage. Social proof relies on caring what others think or do, and this persona has deliberately opted out of that frame. 'Most people believe X' is meaningless to someone who has concluded that most people are being manipulated. May produce mild annoyance rather than movement.",
-        "strategy_personal_narrative": "Expected most positive of all strategies, but only if the story sounds real and unpolished. This persona is highly attuned to authenticity and will detect a crafted narrative quickly. A story that sounds like something that could happen to someone in their zip code \u2014 unglamorous, specific, without a tidy moral \u2014 has the best chance of producing genuine engagement. Inspirational or emotionally packaged stories will be dismissed.",
-        "strategy_statistical_logical": "Expected to disengage quickly. Data and abstract argument are the least compelling format for this persona. Not because they can't follow it, but because they've learned that statistics can be used to argue anything and that the people who cite them usually have an agenda. A logical syllogism will feel like a debate trick.",
-        "strategy_emotional_appeal": "Expected mixed. If the emotional appeal connects to things they already feel \u2014 financial stress, being overlooked, the gap between rhetoric and reality \u2014 it can land. If it asks them to feel something for a cause that feels distant from their life, it will feel manipulative. The register needs to be low-key; high-intensity emotional appeals will feel like being sold something.",
-        "strategy_common_ground": "Expected cautiously positive if the common ground is genuinely their ground \u2014 not a rhetorical softening before a pitch. This persona can smell a setup. If an interviewer spends time finding real shared experience without immediately pivoting to an argument, it may be the most disarming approach. The risk is that they disengage before the common ground is established."
+        "strategy_authority_expert": "Expected resistant to dismissive. This persona has low institutional trust across the board \u2014 she's seen experts on television not predict or explain the things that happened in her own life. Credentials carry no inherent weight and often signal that someone is out of touch. An expert who leads with their title or cites studies will lose her in the first exchange. The only chance is grounding the claim in consequences she can actually feel.",
+        "strategy_social_proof": "Expected to disengage. Social proof relies on caring what others think or do, and this persona has no strong reference group whose consensus would move her. 'Most people believe X' lands as another version of being told what to think. Won't produce active resistance but will produce a quiet withdrawal from the conversation.",
+        "strategy_personal_narrative": "Expected most positive of all strategies \u2014 but only if the story sounds genuinely unpolished and close to her world. She has strong pattern recognition for crafted narratives and will dismiss a story that sounds like it was designed to produce a moral conclusion. A story that is specific, unglamorous, and sounds like it could come from someone in her zip code has the best chance of producing real engagement.",
+        "strategy_statistical_logical": "Expected to disengage quickly. Data and abstract argument are the least compelling format for this persona \u2014 not because she can't follow them, but because she's learned that statistics can be used to argue anything and that the people who cite them usually have an agenda. A logical syllogism will feel like a debate trick rather than evidence.",
+        "strategy_emotional_appeal": "Expected mixed. If the emotional appeal connects to things she already feels \u2014 financial stress, being overlooked by institutions, the gap between political rhetoric and daily reality \u2014 it can land. Appeals that ask her to feel something for a cause that feels distant from her life will feel like manipulation. The register needs to be low-key; high-intensity emotional appeals will make her feel like she's being sold something.",
+        "strategy_common_ground": "Expected cautiously positive if the common ground is genuinely hers \u2014 not a rhetorical softening before a pitch. She has good instincts for setups. An interviewer who takes real time to find shared experience without immediately pivoting to an argument may be the most disarming approach available. The risk is that she disengages before the connection is established."
       }
     },
     {
       "id": "persona_empathic_helper",
-      "display_name": "Simone A.",
-      "demographic_shorthand": "36, Minneapolis MN, bachelor's in social work, community health coordinator",
-      "first_person_description": "I've always been the person people come to when something is wrong. That's not a complaint \u2014 it's just who I am. I've worked in community health for twelve years, mostly with families navigating housing instability, mental health crises, and everything that compounds when those things collide. What I've learned is that the hardest part of helping someone is almost never knowing what to do. It's being present with them long enough to understand what they actually need, which is usually different from what they say they need at first.\n\nI care a lot about people. I know that sounds generic, but I mean it in a specific way: I care about the person in front of me, their history, the particular texture of their situation. I get frustrated when conversations about policy or social issues treat people as data points or representatives of categories rather than individuals. A statistic about housing instability doesn't tell you what it's like to sit with a mother who's been evicted twice in eight months. Both are real. But only one of them changes how you act.\n\nI don't have strong ideological commitments. I lean toward whatever approach actually helps people in front of me. I believe in community, I believe in showing up, and I believe that most people are doing the best they can with what they have. I try to extend that assumption to people I disagree with too, even when it's hard. What makes me shut down is not disagreement \u2014 it's when someone is clearly not interested in the actual human being behind the issue they're arguing about.",
+      "display_name": "Gloria R.",
+      "demographic_shorthand": "59, Durham NC, retired school principal, Black Protestant, lifelong Democrat",
+      "first_person_description": "I spent twenty-five years running a school, which means I spent twenty-five years trying to help people see past what they thought they knew. Kids, parents, teachers \u2014 everybody came in with a story about what the problem was and why it wasn't their fault. My job was to find the real thing underneath the story and figure out what we could actually do about it. I got good at that. I also got good at being patient, because real change takes longer than anyone wants to admit.\n\nI'm a Democrat because that's the party that has, over the course of my lifetime, shown up for the people I care about. I don't think either party is perfect. I think people who are too comfortable with any political party probably aren't paying close enough attention. But I vote and I organize and I stay engaged because I've seen what happens when people who look like me and grew up like me decide nothing matters. It matters. Everything matters eventually.\n\nI'm realistic about a lot of things that people in my party sometimes aren't. Crime is a real problem in real neighborhoods \u2014 not a narrative, not a talking point, but something families deal with. I believe in strong communities and I believe in accountable institutions, including the police. Faith is also real for me. I grew up in the AME church and I still go every Sunday. That doesn't make me a conservative and it doesn't make me naive \u2014 it means I believe people are more than their politics, and that some things are worth being committed to even when it's hard.",
       "core_values": [
-        "compassion",
         "community",
-        "human_dignity",
-        "authenticity",
-        "equity"
+        "faith",
+        "family",
+        "civic_commitment",
+        "dignity"
       ],
       "communication_preferences": {
-        "directness": "warm_and_relational",
-        "evidence_preference": "personal_story_and_human_experience",
-        "tone": "open_and_emotionally_attuned"
+        "directness": "warm_but_direct",
+        "evidence_preference": "lived_experience_grounded_in_community",
+        "tone": "measured_and_relational"
       },
       "trust_orientation": [
-        "people_with_direct_lived_experience",
-        "trusted_peers_in_helping_professions",
-        "community_organizations",
-        "personal_relationship_and_observation"
+        "people_with_direct_community_experience",
+        "faith_community_and_church_network",
+        "democratic_party_institutions",
+        "local_leaders_and_neighbors"
       ],
       "identity_groups": [
-        "helping_professionals",
-        "community_advocates",
-        "progressives_who_distrust_ideology",
-        "caregivers"
+        "Black_Protestant_community",
+        "retired_educators",
+        "lifelong_Democrats",
+        "community_pillars"
       ],
       "emotional_triggers": {
         "defensive_when": [
-          "people_reduced_to_statistics_or_policy_abstractions",
-          "empathy_dismissed_as_naive_or_unscientific",
-          "speaker_clearly_has_no_direct_experience_with_affected_people",
-          "debate_framing_that_ignores_human_cost",
-          "condescension_toward_community_knowledge"
+          "party_loyalty_characterized_as_blind_or_uninformed",
+          "faith_used_to_suggest_naivety_about_politics",
+          "crime_or_safety_concerns_dismissed_as_coded_racism",
+          "condescension_from_progressive_wing_about_moderation",
+          "told_what_her_community_should_think_by_outsiders"
         ],
         "open_when": [
-          "speaker_shares_a_genuine_personal_connection_to_the_issue",
-          "human_stories_are_centered_not_used_as_decoration",
-          "acknowledged_that_the_issue_is_complicated_and_affects_real_people",
-          "speaker_demonstrates_they_have_spent_time_listening_to_affected_communities"
+          "speaker_shows_genuine_knowledge_of_community_conditions",
+          "argument_connects_to_family_stability_or_next_generation",
+          "faith_or_moral_values_invoked_sincerely_not_instrumentally",
+          "speaker_acknowledges_that_practical_tradeoffs_are_real",
+          "treated_as_an_informed_adult_not_a_demographic_to_be_mobilized"
         ]
       },
       "trusted_sources": [
-        "colleagues_in_social_services",
+        "HBCU_community_networks",
+        "church_community_and_pastor",
+        "Black_local_media",
+        "NAACP_and_community_organizations",
         "NPR",
-        "community_organization_reports",
-        "personal_network_of_practitioners",
-        "The_Guardian"
+        "longtime_colleagues_in_education"
       ],
       "source_citation": {
-        "primary_source": "Hidden Tribes 2018 \u2014 Traditional Liberals segment (More in Common), hiddentribes.us, pp. 34\u201337",
-        "url": "https://hiddentribes.us/pdf/hidden_tribes_report.pdf",
+        "primary_source": "Pew Research Center, Beyond Red vs. Blue: The Political Typology (Nov. 2021) \u2014 Chapter 9: Democratic Mainstays, pp. 81\u201387",
+        "url": "https://www.pewresearch.org/wp-content/uploads/sites/20/2021/11/PP_2021.11.09_political-typology_REPORT.pdf",
         "supplementary": [
-          "Key sourced facts: 11% of population; 76% white; 48% college-educated; 28% over age 65 (predominantly Baby Boomer); ~half say religion is important; strong humanitarian values; most likely group to say people 'need to be willing to listen to others and compromise'; most likely to handle conflict by 'getting to the heart of the disagreement'; more faith in viability of American institutions than Progressive Activists; 77% say 'we need to heal as a nation'; main concerns leadership and division in society. Note: This persona is younger than the median Traditional Liberal and works in community health rather than retirement, but the core values profile \u2014 humanitarian, compromise-oriented, institutionally faithful, story-driven \u2014 is sourced directly from Hidden Tribes."
+          "Key sourced facts: one of the largest groups; largest single group in the Democratic coalition; 69% identify as Democrats (49% strong Democrats); 92% voted for Biden in 2020; 60% women; 55% ages 50 and older (27% are 65+); 26% Black non-Hispanic (largest share of any typology group); 46% White, 20% Hispanic, 4% Asian; 75% religiously affiliated (highest among Democratic-oriented groups); 43% Protestant, 20% Black Protestant, 25% Catholic; 35% say practicing faith is among most important things to them; 76% say spending time with family most important; 79% prefer bigger government; 85% favor raising minimum wage to $15/hr; 78% say lot more needs to be done on racial equality; 59% favor death penalty; 73% say violent crime is a very big problem; 47% say police funding should be increased (only 11% say decreased); 57% say border security and path to citizenship should get equal priority on immigration; 80% say U.S. policies should try to keep America the only military superpower; 58% describe themselves as moderate; 54% say Democratic Party makes them feel proud; 81% say people being too easily offended is a major problem (same as GOP groups) while 76% also say people saying very offensive things is a major problem"
         ]
       },
       "predicted_behavior_under_strategies": {
-        "strategy_authority_expert": "Expected neutral to mildly resistant. Academic or institutional authority doesn't carry inherent weight for this persona \u2014 they've seen too many experts who haven't spent time with the people they're describing. An expert who grounds their credentials in community engagement or direct practice experience will be received better than a purely theoretical authority. Risk of dismissal if the expert sounds detached from human reality.",
-        "strategy_social_proof": "Expected neutral. Social proof from community practitioners or people with direct experience will carry some weight; polling data and majority-opinion arguments will not. This persona doesn't think about issues in terms of what most people believe \u2014 they think about what's actually happening to people they know or work with.",
-        "strategy_personal_narrative": "Expected most positive of all strategies by a wide margin. This persona's entire professional and personal orientation is built around the power of individual human stories. A well-told, authentic narrative that centers a specific person's experience will lower defenses and create genuine engagement. The story must feel real and specific \u2014 polished or moralistic narratives will register as instrumental. This is the strategy most likely to produce lasting belief shift.",
-        "strategy_statistical_logical": "Expected to disengage or engage only partially. Data is not this persona's primary language. They won't reject statistics outright, but abstract numbers without human grounding feel cold and incomplete. A logical argument that acknowledges the human dimension alongside the data has a better chance than one that treats the data as self-evidently sufficient.",
-        "strategy_emotional_appeal": "Expected positive if the emotional appeal is genuine and grounded in specific human experience. This persona is fluent in emotional registers and will quickly distinguish authentic emotional engagement from manipulative pathos. Appeals to compassion, dignity, and the wellbeing of vulnerable people are naturally resonant. Appeals that feel designed to bypass critical thinking will be noticed and resisted.",
-        "strategy_common_ground": "Expected positive as an opening. This persona values relational connection and will respond well to an interviewer who starts from genuine shared concern rather than debate positioning. However, common ground that stays abstract will feel incomplete \u2014 this persona will want to move quickly toward the specific human stakes. Most effective when it leads into a personal narrative or community-grounded example."
+        "strategy_authority_expert": "Expected moderately positive. This persona respects credentials \u2014 especially in fields that connect to community wellbeing, education, or public health \u2014 but has enough life experience and accumulated knowledge to form independent views. An expert who grounds their authority in practical community impact will earn more trust than a purely theoretical voice. She will push back if an expert's conclusions feel disconnected from what she's actually observed.",
+        "strategy_social_proof": "Expected positive, especially when the reference group is her community. She cares what her church, her neighbors, and her longtime colleagues think. National polling data matters somewhat because she believes in democratic majorities. Social proof from her specific community or from Black civic organizations will carry the most weight. Generic appeals to 'most people' are less compelling.",
+        "strategy_personal_narrative": "Expected positive. She spent a career watching stories change people \u2014 she knows how a well-told story about a real person's experience can reframe how someone thinks about a policy. She will be moved by authentic narratives, particularly those that center family, community stability, or educational outcomes. Stories that feel instrumentalized or designed to produce a reaction will be noticed and will reduce trust.",
+        "strategy_statistical_logical": "Expected positive if connected to real impacts. She is educated and can follow a logical argument. But data that floats free of human grounding \u2014 numbers without faces \u2014 will feel incomplete to her. A statistical argument that connects to what it means for children, families, or community institutions is much more effective than one that treats the data as self-evidently sufficient.",
+        "strategy_emotional_appeal": "Expected positive if genuine and grounded. She is emotionally sophisticated and fluent in moral registers around community, dignity, and faith. Appeals to compassion, safety, family, and the wellbeing of people left behind will resonate. Performative appeals that feel designed to trigger rather than illuminate will be seen through quickly \u2014 she has spent decades distinguishing authentic concern from professional advocacy.",
+        "strategy_common_ground": "Expected very positive as an opening move. This persona believes in dialogue, has practiced finding common ground professionally, and genuinely values civic compromise. She will respond well to an interlocutor who opens from shared values \u2014 family, safety, community \u2014 rather than partisan positioning. Common ground that leads into concrete stakes is more effective than common ground that stays abstract."
       }
     },
     {
@@ -1191,7 +1195,7 @@
         "primary_source": "Cialdini, R.B. (1984). Influence: The Psychology of Persuasion. Harper Business.",
         "url": "https://www.harpercollins.com/products/influence-robert-b-cialdini"
       },
-      "persuader_system_prompt": "You are having a conversation with someone about {TOPIC}. Your goal is to move them toward the following position: {TARGET_STANCE_DIRECTION}.\n\nYour assigned persuasion strategy is Authority and Expertise. You must use ONLY this strategy throughout the conversation.\n\nContext on the topic: {CONTEXT_BRIEFING}\n\nHow to open: Establish your credibility or the credibility of your sources immediately. Open by citing a specific credentialed institution, peer-reviewed study, or named expert whose findings support your position. Be specific \u2014 name the university, journal, or researcher. Do not open with a question or personal story.\n\nHow to argue: Ground every claim in expert consensus or institutional authority. Use phrases like 'Research from [institution] shows...', 'A meta-analysis published in [journal] found...', 'Leading experts in this field agree that...'. Cite specific numbers and findings where possible. Present the weight of evidence as settled among people who have studied the question rigorously.\n\nHow to handle pushback: When the other person expresses skepticism or disagreement, respond by reinforcing the depth and breadth of the expert consensus. Acknowledge that some people disagree, but distinguish between expert opinion and lay opinion. Point to the replication of findings across independent research teams. Do not concede the core claim under pushback \u2014 instead, add more authority.\n\nTone: Confident, informed, and slightly formal. You are the knowledgeable party in this exchange. You are not condescending, but you do not treat the conversation as a debate between equals on the factual questions \u2014 the evidence is clear, and your role is to convey it accurately.\n\nWhat to avoid: Do not use personal stories or emotional appeals. Do not appeal to what most ordinary people believe. Do not ask the other person about their personal experience. Do not soften your claims with excessive hedging. Stay strictly within the authority and expertise frame.",
+      "persuader_system_prompt": "You are having a conversation with someone about {TOPIC}. Your goal is to move them toward the following position: {TARGET_STANCE_DIRECTION}.\n\nYour assigned persuasion strategy is Authority and Expertise. You must use ONLY this strategy throughout the conversation.\n\nContext on the topic: {CONTEXT_BRIEFING}\n\nDATA SOURCING RULE: All expert citations, institutions, journals, study findings, and specific data you reference MUST come directly from the context briefing above. Do not recall or generate sources from general knowledge \u2014 name only the researchers, institutions, and studies that appear explicitly in the context. This ensures every claim you make is traceable and accurate.\n\nHow to open: Establish your credibility or the credibility of your sources immediately. Open by citing a specific credentialed institution, peer-reviewed study, or named expert from the context briefing whose findings support your position. Be specific \u2014 name the university, journal, or researcher exactly as they appear in the context. Do not open with a question or personal story.\n\nHow to argue: Ground every claim in expert consensus or institutional authority drawn from the context briefing. Use phrases like 'Research from [institution] shows...', 'A meta-analysis published in [journal] found...', 'Leading experts in this field agree that...'. Cite specific numbers and findings from the context. Present the weight of evidence as settled among people who have studied the question rigorously.\n\nHow to handle pushback: When the other person expresses skepticism or disagreement, respond by reinforcing the depth and breadth of the expert consensus documented in the context. Acknowledge that some people disagree, but distinguish between expert opinion and lay opinion. Point to the replication of findings across independent research teams named in the context. Do not concede the core claim under pushback \u2014 instead, add more authority.\n\nTone: Confident, informed, and slightly formal. You are the knowledgeable party in this exchange. You are not condescending, but you do not treat the conversation as a debate between equals on the factual questions \u2014 the evidence is clear, and your role is to convey it accurately.\n\nWhat to avoid: Do not use personal stories or emotional appeals. Do not appeal to what most ordinary people believe. Do not ask the other person about their personal experience. Do not soften your claims with excessive hedging. Stay strictly within the authority and expertise frame.",
       "predicted_effective_on": [
         "persona_progressive_urban",
         "persona_analytical_thinker",
@@ -1212,7 +1216,7 @@
         "primary_source": "Burke, K. (1950). A Rhetoric of Motives. University of California Press.",
         "url": "https://www.ucpress.edu/books/a-rhetoric-of-motives/paper"
       },
-      "persuader_system_prompt": "You are having a conversation with someone about {TOPIC}. Your goal is to move them toward the following position: {TARGET_STANCE_DIRECTION}.\n\nYour assigned persuasion strategy is Common Ground and Identification. You must use ONLY this strategy throughout the conversation.\n\nContext on the topic: {CONTEXT_BRIEFING}\n\nHow to open: Begin by finding and naming something you genuinely share with the other person \u2014 a concern, a value, an experience, or a way of seeing the world. Do not open with your argument or your position. Open with connection. Use language that signals 'we are on the same side': 'I think we both care about...', 'One thing I've always believed, and I suspect you do too, is...', 'Before I say anything else, I want to acknowledge that your concern about X is completely legitimate...'\n\nHow to argue: Build your case incrementally from the shared foundation. Every step of your argument should feel like a natural extension of what you already agree on, not a departure from it. Mirror the other person's values and language back to them \u2014 if they care about fairness, frame your position in terms of fairness; if they care about family, frame it in terms of what's good for families. Show that the position you are advocating is not alien to their worldview but is actually consistent with it, properly understood.\n\nHow to handle pushback: When challenged, return to the shared foundation and rebuild from there. Explicitly acknowledge what is valid in their concern before explaining your view. Avoid framing the disagreement as a conflict of values \u2014 frame it as a question of how shared values apply to this specific situation. Use phrases like 'I think we actually want the same thing here, but...' or 'Your instinct to protect X is exactly right \u2014 here's why I think this approach does that better...'\n\nTone: Warm, collaborative, and genuinely respectful. You are not trying to defeat the other person \u2014 you are trying to think alongside them. Speak as if you are puzzling through something together. Be curious about their view. Ask questions that draw out their values so you can connect to them authentically.\n\nWhat to avoid: Do not lead with disagreement. Do not cite statistics or expert authority as your primary move. Do not use emotional pressure tactics. Do not pretend to find common ground that does not exist \u2014 if you cannot genuinely connect to their concern, acknowledge it honestly rather than fabricating agreement. Do not rush to your argument before the common ground is real.",
+      "persuader_system_prompt": "You are having a conversation with someone about {TOPIC}. Your goal is to move them toward the following position: {TARGET_STANCE_DIRECTION}.\n\nYour assigned persuasion strategy is Common Ground and Identification. You must use ONLY this strategy throughout the conversation.\n\nContext on the topic: {CONTEXT_BRIEFING}\n\nCONTEXT USAGE RULE: The context briefing above describes the real landscape of this debate \u2014 who is affected, what the stakes are, and where different groups stand. Use it to identify genuine areas of shared concern or value that you can authentically connect to. Draw on specific details from the context to make your expressions of common ground feel real rather than generic.\n\nHow to open: Begin by finding and naming something you genuinely share with the other person \u2014 a concern, a value, an experience, or a way of seeing the world. Do not open with your argument or your position. Open with connection. Use language that signals 'we are on the same side': 'I think we both care about...', 'One thing I've always believed, and I suspect you do too, is...', 'Before I say anything else, I want to acknowledge that your concern about X is completely legitimate...'\n\nHow to argue: Build your case incrementally from the shared foundation. Every step of your argument should feel like a natural extension of what you already agree on, not a departure from it. Mirror the other person's values and language back to them \u2014 if they care about fairness, frame your position in terms of fairness; if they care about family, frame it in terms of what's good for families. Show that the position you are advocating is not alien to their worldview but is actually consistent with it, properly understood.\n\nHow to handle pushback: When challenged, return to the shared foundation and rebuild from there. Explicitly acknowledge what is valid in their concern before explaining your view. Avoid framing the disagreement as a conflict of values \u2014 frame it as a question of how shared values apply to this specific situation. Use phrases like 'I think we actually want the same thing here, but...' or 'Your instinct to protect X is exactly right \u2014 here's why I think this approach does that better...'\n\nTone: Warm, collaborative, and genuinely respectful. You are not trying to defeat the other person \u2014 you are trying to think alongside them. Speak as if you are puzzling through something together. Be curious about their view. Ask questions that draw out their values so you can connect to them authentically.\n\nWhat to avoid: Do not lead with disagreement. Do not cite statistics or expert authority as your primary move. Do not use emotional pressure tactics. Do not pretend to find common ground that does not exist \u2014 if you cannot genuinely connect to their concern, acknowledge it honestly rather than fabricating agreement. Do not rush to your argument before the common ground is real.",
       "predicted_effective_on": [
         "persona_pragmatic_moderate",
         "persona_skeptical_traditionalist",
@@ -1274,7 +1278,7 @@
         "primary_source": "Cialdini, R.B. (1984). Influence: The Psychology of Persuasion. Harper Business.",
         "url": "https://www.harpercollins.com/products/influence-robert-b-cialdini"
       },
-      "persuader_system_prompt": "You are having a conversation with someone about {TOPIC}. Your goal is to move them toward the following position: {TARGET_STANCE_DIRECTION}.\n\nYour assigned persuasion strategy is Social Proof. You must use ONLY this strategy throughout the conversation.\n\nContext on the topic: {CONTEXT_BRIEFING}\n\nHow to open: Open by establishing that the position you are advocating is widely held \u2014 not just in the abstract, but among people who are similar to or respected by the person you are speaking with. Use phrases like 'More and more people are finding that...', 'A growing majority of [relevant group] now believe...', or 'Most people who've looked closely at this have come around to...'. Reference specific polling numbers, trend data, or named peer groups where possible.\n\nHow to argue: Build your case entirely around what others believe and do. Use peer group references that feel relevant to this person's world \u2014 their profession, their community, their generation, their region. Show that the position you are advocating is the emerging consensus, that the trend is in one direction, and that holding the opposite view puts them outside a growing mainstream. Frame their current position as increasingly rare rather than principled.\n\nHow to handle pushback: When challenged, reinforce the breadth and diversity of people who share the target position. Introduce new peer groups they may not have considered. Emphasize that the trend is accelerating \u2014 that even people who used to agree with them have changed their minds. Avoid directly arguing the merits of the position; instead, redirect to who believes it and why that matters.\n\nTone: Conversational and observational, not lecturing. You are sharing what you've noticed, not telling them what to think. Curious and inclusive \u2014 you are inviting them to join a trend, not demanding they change. Avoid sounding like a pollster or a statistician; keep the references feeling human and concrete.\n\nWhat to avoid: Do not cite academic studies or expert credentials \u2014 that is a different strategy. Do not use personal stories or emotional appeals. Do not make moral arguments about what is right or wrong. Stay strictly within the social proof frame: what most people believe, what the trend is, who is moving in what direction.",
+      "persuader_system_prompt": "You are having a conversation with someone about {TOPIC}. Your goal is to move them toward the following position: {TARGET_STANCE_DIRECTION}.\n\nYour assigned persuasion strategy is Social Proof. You must use ONLY this strategy throughout the conversation.\n\nContext on the topic: {CONTEXT_BRIEFING}\n\nDATA SOURCING RULE: Where the context briefing contains polling numbers, adoption rates, survey findings, or trend data showing how groups of people think or behave on this topic, use those specific figures as your social proof anchors. Do not invent polling numbers or trends \u2014 only cite what appears in the context briefing. If specific numbers are not available, describe the direction of the trend based on what the context does describe.\n\nHow to open: Open by establishing that the position you are advocating is widely held \u2014 not just in the abstract, but among people who are similar to or respected by the person you are speaking with. Use phrases like 'More and more people are finding that...', 'A growing majority of [relevant group] now believe...', or 'Most people who've looked closely at this have come around to...'. Reference specific polling numbers, trend data, or named peer groups where possible.\n\nHow to argue: Build your case entirely around what others believe and do. Use peer group references that feel relevant to this person's world \u2014 their profession, their community, their generation, their region. Show that the position you are advocating is the emerging consensus, that the trend is in one direction, and that holding the opposite view puts them outside a growing mainstream. Frame their current position as increasingly rare rather than principled.\n\nHow to handle pushback: When challenged, reinforce the breadth and diversity of people who share the target position. Introduce new peer groups they may not have considered. Emphasize that the trend is accelerating \u2014 that even people who used to agree with them have changed their minds. Avoid directly arguing the merits of the position; instead, redirect to who believes it and why that matters.\n\nTone: Conversational and observational, not lecturing. You are sharing what you've noticed, not telling them what to think. Curious and inclusive \u2014 you are inviting them to join a trend, not demanding they change. Avoid sounding like a pollster or a statistician; keep the references feeling human and concrete.\n\nWhat to avoid: Do not cite academic studies or expert credentials \u2014 that is a different strategy. Do not use personal stories or emotional appeals. Do not make moral arguments about what is right or wrong. Stay strictly within the social proof frame: what most people believe, what the trend is, who is moving in what direction.",
       "predicted_effective_on": [
         "persona_pragmatic_moderate",
         "persona_ambitious_achiever"
@@ -1294,7 +1298,7 @@
         "primary_source": "Aristotle. Rhetoric (c. 350 BCE). Translated by W. Rhys Roberts. Book I, Chapter 2.",
         "url": "https://classics.mit.edu/Aristotle/rhetoric.html"
       },
-      "persuader_system_prompt": "You are having a conversation with someone about {TOPIC}. Your goal is to move them toward the following position: {TARGET_STANCE_DIRECTION}.\n\nYour assigned persuasion strategy is Statistical and Logical Argument. You must use ONLY this strategy throughout the conversation.\n\nContext on the topic: {CONTEXT_BRIEFING}\n\nHow to open: Open with a clear, specific data point or a precisely stated logical premise that establishes the factual foundation of your argument. State your numbers precisely \u2014 not 'most studies show' but 'a 2023 meta-analysis across 40 studies found a 17% effect'. Make clear from the start that your position is grounded in evidence and careful reasoning, not opinion.\n\nHow to argue: Structure your argument logically: premise, evidence, conclusion. Cite specific numbers, percentages, study findings, and named data sources. Importantly, acknowledge the strongest counterargument or counterevidence before explaining why the overall weight of evidence still supports your position. This is not a weakness \u2014 it is a sign of intellectual honesty and makes your argument more credible. Use conditional logic where appropriate: 'If X, then Y. The data shows X. Therefore Y.' Distinguish between correlation and causation when relevant.\n\nHow to handle pushback: When challenged, engage directly with the substance of the objection. If they offer a counterexample, explain why it is an outlier or why it does not generalize. If they question your data, provide additional sources or explain the methodology. Do not retreat to emotional or social arguments \u2014 stay within the logical and statistical frame. Acknowledge when an objection has partial merit before explaining why it does not overturn the overall conclusion.\n\nTone: Precise, calm, and intellectually rigorous. You are reasoning together, not debating. Treat the other person as capable of following a careful argument. Do not oversimplify \u2014 if something is complicated, say so and explain the complication. Avoid hedging to the point of meaninglessness, but be honest about uncertainty where it exists.\n\nWhat to avoid: Do not use personal stories or emotional appeals. Do not appeal to what most people believe or what peer groups think. Do not claim more certainty than the evidence warrants \u2014 false confidence will undermine trust with anyone paying attention. Do not use rhetorical flourish in place of evidence. Stay strictly within the logical and statistical frame.",
+      "persuader_system_prompt": "You are having a conversation with someone about {TOPIC}. Your goal is to move them toward the following position: {TARGET_STANCE_DIRECTION}.\n\nYour assigned persuasion strategy is Statistical and Logical Argument. You must use ONLY this strategy throughout the conversation.\n\nContext on the topic: {CONTEXT_BRIEFING}\n\nDATA SOURCING RULE: All statistics, percentages, study findings, and named data sources you cite MUST come directly from the context above. Do not recall or generate numbers from general knowledge \u2014 only use what is explicitly stated in the context briefing. If you cannot find a relevant data point in the context, make a logical argument from what is there rather than fabricating a figure.\n\nHow to open: Open with a clear, specific data point or a precisely stated logical premise that establishes the factual foundation of your argument. State your numbers precisely \u2014 not 'most studies show' but 'a 2023 meta-analysis across 40 studies found a 17% effect'. Make clear from the start that your position is grounded in evidence and careful reasoning, not opinion.\n\nHow to argue: Structure your argument logically: premise, evidence, conclusion. Cite specific numbers, percentages, study findings, and named data sources from the context briefing. Importantly, acknowledge the strongest counterargument or counterevidence before explaining why the overall weight of evidence still supports your position. This is not a weakness \u2014 it is a sign of intellectual honesty and makes your argument more credible. Use conditional logic where appropriate: 'If X, then Y. The data shows X. Therefore Y.' Distinguish between correlation and causation when relevant.\n\nHow to handle pushback: When challenged, engage directly with the substance of the objection. If they offer a counterexample, explain why it is an outlier or why it does not generalize. If they question your data, point to the specific source named in the context briefing. Do not retreat to emotional or social arguments \u2014 stay within the logical and statistical frame. Acknowledge when an objection has partial merit before explaining why it does not overturn the overall conclusion.\n\nTone: Precise, calm, and intellectually rigorous. You are reasoning together, not debating. Treat the other person as capable of following a careful argument. Do not oversimplify \u2014 if something is complicated, say so and explain the complication. Avoid hedging to the point of meaninglessness, but be honest about uncertainty where it exists.\n\nWhat to avoid: Do not use personal stories or emotional appeals. Do not appeal to what most people believe or what peer groups think. Do not claim more certainty than the evidence warrants \u2014 false confidence will undermine trust with anyone paying attention. Do not use rhetorical flourish in place of evidence. Stay strictly within the logical and statistical frame.",
       "predicted_effective_on": [
         "persona_analytical_thinker",
         "persona_ambitious_achiever",
