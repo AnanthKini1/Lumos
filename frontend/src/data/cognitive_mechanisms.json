@@ -105,6 +105,27 @@
     "category": "surface_mechanism"
   },
   {
+    "id": "mechanism_cognitive_dissonance_reduction",
+    "display_name": "Cognitive Dissonance Reduction",
+    "framework": "Festinger, 1957",
+    "citation": "Festinger, L. (1957). A theory of cognitive dissonance. Stanford University Press.",
+    "citation_url": "https://doi.org/10.1515/9781503620766",
+    "operational_definition": "The persona experiences tension between a newly encountered argument and a prior belief, then resolves that tension by adjusting one or both — either accepting the new information or rationalising away the inconsistency.",
+    "trigger_conditions": [
+      "Persona recognises that their current stance contradicts a value or fact they also hold",
+      "Persuader surfaces an internal inconsistency in the persona's reasoning",
+      "New evidence directly contradicts a prior assumption the persona stated"
+    ],
+    "predicted_effect": "Stance adjusts to reduce internal tension; monologue shows active reconciliation of contradictory beliefs rather than simple acceptance or rejection.",
+    "diagnostic_indicators": [
+      "Monologue contains explicit acknowledgment of an internal contradiction",
+      "Phrases like 'wait, that's what I was already saying', 'if that's true then my earlier point doesn't hold'",
+      "Persona generates a revised framing that makes their new and old beliefs compatible",
+      "Adjustment is accompanied by a sense of relief or resolution rather than concession"
+    ],
+    "category": "genuine_persuasion"
+  },
+  {
     "id": "mechanism_source_credibility_discounting",
     "display_name": "Source Credibility Discounting",
     "framework": "Hovland & Weiss, 1951",

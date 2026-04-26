@@ -132,7 +132,9 @@ function MechanismSection({ turn }: { turn: ConversationTurn }) {
           </a>
         </div>
       ) : (
-        <p className="font-mono text-xs text-[#0f0f0f] opacity-50">{mc.primary_mechanism_id}</p>
+        <p className="font-mono text-xs text-[#0f0f0f] opacity-50">
+          {mc.primary_mechanism_id.replace(/^mechanism_/, '').replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase())}
+        </p>
       )}
 
       <p className="font-serif text-sm leading-relaxed text-[#0f0f0f] mt-3">{mc.explanation}</p>

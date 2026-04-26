@@ -43,10 +43,66 @@ describe('InternalMind', () => {
     expect(screen.getByTestId('emotion-badge')).toHaveTextContent(/\/10/)
   })
 
-  it('shows trigger text', () => {
+  it('shows trigger text from emotional_reaction when no persuaderMessage prop', () => {
     render(<InternalMind turnOutput={mockPersonaTurnOutput} priorMemoryNotes={[]} turnNumber={1} />)
     expect(screen.getByText(/Triggered by/i)).toBeInTheDocument()
     expect(screen.getByText(/the caregiving story/i)).toBeInTheDocument()
+  })
+
+  it('shows persuaderMessage sentence most referenced in monologue', () => {
+    // monologue mentions "caregiving" and "angle" — second sentence overlaps better
+    render(
+      <InternalMind
+        turnOutput={mockPersonaTurnOutput}
+        priorMemoryNotes={[]}
+        turnNumber={1}
+        persuaderMessage="Hello there. The caregiving angle changes everything here."
+      />
+    )
+    // The second sentence shares "caregiving" and "angle" with the monologue fixture
+    expect(screen.getByText(/The caregiving angle changes everything here/i)).toBeInTheDocument()
+  })
+
+  it('truncates the selected sentence at 110 chars with ellipsis', () => {
+    // Single very long sentence (no splits) — truncated at 110
+    const long = 'caregiving '.repeat(12).trim() // 11*10 + 8 = 118 chars, shares "caregiving" with monologue
+    render(
+      <InternalMind
+        turnOutput={mockPersonaTurnOutput}
+        priorMemoryNotes={[]}
+        turnNumber={1}
+        persuaderMessage={long}
+      />
+    )
+    const el = screen.getByText(/caregiving.*…/)
+    expect(el).toBeInTheDocument()
+  })
+
+  it('prior memory Turn N label has font-bold class (full opacity)', () => {
+    render(
+      <InternalMind
+        turnOutput={mockPersonaTurnOutput}
+        priorMemoryNotes={['some memory']}
+        turnNumber={2}
+      />
+    )
+    const label = screen.getByText('Turn 1')
+    expect(label.className).toContain('font-bold')
+    expect(label.className).not.toContain('opacity-40')
+    expect(label.className).not.toContain('opacity-50')
+  })
+
+  it('prior memory container does not have opacity-60', () => {
+    render(
+      <InternalMind
+        turnOutput={mockPersonaTurnOutput}
+        priorMemoryNotes={['some memory']}
+        turnNumber={2}
+      />
+    )
+    const label = screen.getByText('Turn 1')
+    const container = label.parentElement!
+    expect(container.className).not.toContain('opacity-60')
   })
 
   it('does NOT show identity threat badge when not threatened', () => {

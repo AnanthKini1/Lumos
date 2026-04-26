@@ -161,6 +161,7 @@ export default function MindViewer({ simulation, initialStrategyId, initialTurnN
                 priorMemoryNotes={priorMemoryNotes}
                 turnNumber={currentTurn + 1}
                 previousPrivateStance={previousPrivateStance}
+                persuaderMessage={turns[currentTurn].persuader_message}
               />
             </div>
           </motion.div>

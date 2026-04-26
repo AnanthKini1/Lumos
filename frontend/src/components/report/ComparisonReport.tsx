@@ -179,10 +179,14 @@ export default function ComparisonReport({ simulation, onViewTranscript, onBackT
                             {inflection.persuader_message.slice(0, 80)}{inflection.persuader_message.length > 80 ? '…' : ''}
                             <br />
                             <span className="opacity-75">
-                              {findMechanismName(inflection.mechanism_classification.primary_mechanism_id)}
-                              {' · '}
-                              {findMechanismCitation(inflection.mechanism_classification.primary_mechanism_id)}
-                              {inflection.stance_delta != null && ` · Shift: ${inflection.stance_delta > 0 ? '+' : ''}${inflection.stance_delta.toFixed(1)}`}
+                              {(() => {
+                                const name     = findMechanismName(inflection.mechanism_classification.primary_mechanism_id)
+                                const citation = findMechanismCitation(inflection.mechanism_classification.primary_mechanism_id)
+                                const shift    = inflection.stance_delta != null
+                                  ? ` · Shift: ${inflection.stance_delta > 0 ? '+' : ''}${inflection.stance_delta.toFixed(1)}`
+                                  : ''
+                                return `${name}${citation ? ` · ${citation}` : ''}${shift}`
+                              })()}
                             </span>
                           </div>
                         )}

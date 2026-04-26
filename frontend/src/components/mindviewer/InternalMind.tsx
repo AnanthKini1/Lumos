@@ -7,6 +7,7 @@ interface Props {
   priorMemoryNotes: string[]
   turnNumber: number
   previousPrivateStance?: number
+  persuaderMessage?: string
 }
 
 const TYPING_SPEED_MS = 15
@@ -31,7 +32,33 @@ function useTypingReveal(text: string, trigger: number): string {
   return revealed
 }
 
-export default function InternalMind({ turnOutput, priorMemoryNotes, turnNumber, previousPrivateStance }: Props) {
+const STOP_WORDS = new Set(['the','and','that','this','with','from','they','have','been','their','what','when','were','there','will','your','would','about','which','into','than','then','some','more','also','just','like','over','even','after','before','those','other','only','such','much','very','well','here','know','time','good','very','each','both'])
+
+function findTriggerQuote(persuaderMessage: string, monologue: string): string {
+  const sentences = persuaderMessage.match(/[^.!?—]+[.!?—]*/g)?.map(s => s.trim()).filter(Boolean) ?? [persuaderMessage]
+
+  const monologueTokens = new Set(
+    monologue.toLowerCase().replace(/[^a-z0-9\s]/g, ' ').split(/\s+/).filter(w => w.length > 3 && !STOP_WORDS.has(w))
+  )
+
+  let bestSentence = sentences[0]
+  let bestScore = -1
+
+  for (const sentence of sentences) {
+    const words = sentence.toLowerCase().replace(/[^a-z0-9\s]/g, ' ').split(/\s+/).filter(w => w.length > 3 && !STOP_WORDS.has(w))
+    if (words.length === 0) continue
+    const overlap = words.filter(w => monologueTokens.has(w)).length
+    const score = overlap / Math.sqrt(words.length)
+    if (score > bestScore) {
+      bestScore = score
+      bestSentence = sentence
+    }
+  }
+
+  return bestSentence.length > 110 ? bestSentence.slice(0, 110) + '…' : bestSentence
+}
+
+export default function InternalMind({ turnOutput, priorMemoryNotes, turnNumber, previousPrivateStance, persuaderMessage }: Props) {
   const { internal_monologue, emotional_reaction, identity_threat, private_stance, private_stance_change_reason, memory_to_carry_forward } = turnOutput
 
   const monologue = useTypingReveal(internal_monologue, turnNumber)
@@ -73,7 +100,9 @@ export default function InternalMind({ turnOutput, priorMemoryNotes, turnNumber,
             </p>
           </motion.div>
           <p className="font-mono text-sm text-[#0f0f0f] opacity-70 mt-1.5">
-            Triggered by: &ldquo;{emotional_reaction.trigger}&rdquo;
+            Triggered by: &ldquo;{persuaderMessage
+              ? findTriggerQuote(persuaderMessage, internal_monologue)
+              : emotional_reaction.trigger}&rdquo;
           </p>
         </div>
 
@@ -135,10 +164,10 @@ export default function InternalMind({ turnOutput, priorMemoryNotes, turnNumber,
           {priorMemoryNotes.map((note, i) => (
             <div
               key={i}
-              className="px-3 py-2 border border-[#0f0f0f] border-opacity-20 opacity-60"
+              className="px-3 py-2 border border-[#0f0f0f] border-opacity-20"
             >
               <span className="font-mono text-xs text-[#0f0f0f] mr-2 font-bold">Turn {i + 1}</span>
-              <span className="font-serif text-xs text-[#0f0f0f] opacity-70">{note}</span>
+              <span className="font-serif text-xs text-[#0f0f0f] opacity-50">{note}</span>
             </div>
           ))}
 
