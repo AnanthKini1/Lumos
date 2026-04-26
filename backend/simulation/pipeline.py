@@ -156,9 +156,14 @@ async def _generate_overall_synthesis(
 
     user = (
         f"Persona: {persona_name}\nTopic: {topic_name}\n\nStrategy results:\n{summary}\n\n"
-        "Write exactly 2 sentences summarizing what this reveals about persuasion for this "
-        "persona type. Name which strategies worked and why, and which failed and why. "
-        "Be specific. Return only the 2 sentences."
+        "Write exactly 2 complete sentences in plain English prose summarizing what these "
+        "results reveal about persuasion for this persona type. Name which strategies worked "
+        "and why, and which failed and why. Be specific. "
+        "When referencing cognitive mechanisms, use their exact display names followed by "
+        "the author-year citation in parentheses "
+        "(e.g. 'Identity-Protective Cognition (Kahan, 2010)', 'Reactance (Brehm, 1966)', "
+        "'Narrative Transportation (Green & Brock, 2000)'). "
+        "Do not use slashes, bullet points, or list formatting. Return only the 2 sentences."
     )
 
     msg = await client.messages.create(

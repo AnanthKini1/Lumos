@@ -125,6 +125,11 @@ def _build_system_prompt(strategy: StrategyDefinition, mechanisms: list[dict]) -
         "  it applies, referencing the mechanism's diagnostic criteria.",
         "Sentence 3 (if needed): If a backfire mechanism interfered, name it and cite",
         "  a specific signal from the transcript that confirms it.",
+        "CRITICAL: When naming any mechanism, use its EXACT display name as listed above",
+        "  (e.g. 'Identity-Protective Cognition', 'Narrative Transportation', 'Reactance').",
+        "  Include the author-year citation in parentheses after the name",
+        "  (e.g. 'Identity-Protective Cognition (Kahan, 2010)').",
+        "  Do not paraphrase, abbreviate, or invent alternate names for mechanisms.",
         "Return only the paragraph — no headers, no extra text.",
     ]
 

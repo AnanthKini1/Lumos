@@ -2,6 +2,7 @@ import type { SimulationOutput, StrategyOutcome, VerdictCategory, ConversationTu
 import TrajectoryChart from './TrajectoryChart'
 import StrategyCard from './StrategyCard'
 import ConversationTimeline from './ConversationTimeline'
+import SynthesisText from './SynthesisText'
 import mechanisms from '../../data/cognitive_mechanisms.json'
 
 const CATEGORY_COLOR: Record<string, string> = {
@@ -117,7 +118,7 @@ export default function ComparisonReport({ simulation, onViewTranscript, onBackT
         <div data-testid="synthesis-card">
           <p className="text-xs font-mono font-bold text-[#0f0f0f] uppercase tracking-widest mb-4">Overall Synthesis</p>
           <div className="border-2 border-[#0f0f0f] p-8">
-            <p className="text-3xl font-serif leading-snug text-[#0f0f0f]">{overall_synthesis}</p>
+            <SynthesisText text={overall_synthesis} className="text-3xl font-serif leading-snug text-[#0f0f0f]" />
             {validation_note && (
               <p data-testid="validation-note" className="font-serif text-base italic text-[#0f0f0f] opacity-50 mt-6 pt-6 border-t border-[#0f0f0f] border-opacity-20">
                 {validation_note}
