@@ -216,4 +216,17 @@ describe('ComparisonReport', () => {
     expect(screen.getByTestId('strategy-card-strategy_personal_narrative')).toBeInTheDocument()
     expect(screen.getByTestId('strategy-card-strategy_authority_expert')).toBeInTheDocument()
   })
+
+  it('table rows use warm tint hover, not black inversion', () => {
+    renderReport()
+    const row = screen.getByTestId('report-row-strategy_personal_narrative')
+    expect(row.className).not.toContain('hover:bg-[#0f0f0f]')
+    expect(row.className).toContain('hover:bg-[#f0ede8]')
+  })
+
+  it('table rows do not use group class (no child group-hover inversions)', () => {
+    renderReport()
+    const row = screen.getByTestId('report-row-strategy_personal_narrative')
+    expect(row.className).not.toContain('group')
+  })
 })

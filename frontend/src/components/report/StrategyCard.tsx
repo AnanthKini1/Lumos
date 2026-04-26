@@ -12,7 +12,7 @@ const VERDICT_LABEL: Record<VerdictCategory, string> = {
 interface Props {
   outcome: StrategyOutcome
   strategyDisplayName: string
-  onViewTranscript: (strategyId: string) => void
+  onViewTranscript: (strategyId: string, turnNumber?: number) => void
 }
 
 function ScoreBar({ value }: { value: number }) {
@@ -44,14 +44,14 @@ export default function StrategyCard({ outcome, strategyDisplayName, onViewTrans
         data-testid={`strategy-card-toggle-${outcome.strategy_id}`}
         onClick={() => setExpanded(e => !e)}
         aria-expanded={expanded}
-        className="group w-full px-5 py-5 flex items-start gap-3 text-left hover:bg-[#0f0f0f] transition-colors"
+        className="w-full px-5 py-5 flex items-start gap-3 text-left hover:bg-[#ebe8e1] transition-colors border-l-4 border-transparent hover:border-[#0f0f0f]"
       >
         <div className="flex-1 min-w-0">
           <div className="flex flex-wrap items-center gap-3 mb-2">
-            <span className="font-bold font-serif text-xl text-[#0f0f0f] group-hover:text-[#fafafa]">{strategyDisplayName}</span>
+            <span className="font-bold font-serif text-xl text-[#0f0f0f]">{strategyDisplayName}</span>
             <span
               data-testid={`card-verdict-badge-${outcome.strategy_id}`}
-              className="font-mono text-xs font-bold text-[#0f0f0f] group-hover:text-[#fafafa] uppercase"
+              className="font-mono text-xs font-bold text-[#0f0f0f] uppercase"
             >
               {VERDICT_LABEL[verdict]}
             </span>
@@ -64,10 +64,10 @@ export default function StrategyCard({ outcome, strategyDisplayName, onViewTrans
               </span>
             )}
           </div>
-          <p className="font-serif text-base text-[#0f0f0f] group-hover:text-[#fafafa] opacity-60 leading-snug">{verdict_reasoning}</p>
+          <p className="font-serif text-base text-[#0f0f0f] opacity-60 leading-snug">{verdict_reasoning}</p>
         </div>
         <span
-          className="font-mono text-xl font-bold text-[#0f0f0f] group-hover:text-[#fafafa] shrink-0 mt-0.5"
+          className="font-mono text-xl font-bold text-[#0f0f0f] shrink-0 mt-0.5"
           aria-hidden="true"
         >
           {expanded ? '−' : '+'}
@@ -104,7 +104,9 @@ export default function StrategyCard({ outcome, strategyDisplayName, onViewTrans
                 <blockquote
                   key={i}
                   data-testid={`quote-${i}-${outcome.strategy_id}`}
-                  className="pt-4 border-t-2 border-[#0f0f0f]"
+                  className="pt-4 border-t-2 border-[#0f0f0f] cursor-pointer hover:bg-[#f5f5f5] transition-colors px-2 -mx-2"
+                  onClick={() => onViewTranscript(outcome.strategy_id, quote.turn)}
+                  title={`Go to Turn ${quote.turn} in Mind Viewer`}
                 >
                   <div className="flex gap-3 mb-2">
                     <span className="font-mono text-xs font-bold text-[#0f0f0f] opacity-30 leading-none tabular-nums">{String(i + 1).padStart(2, '0')}</span>
@@ -119,6 +121,7 @@ export default function StrategyCard({ outcome, strategyDisplayName, onViewTrans
                   </div>
                   <p className="font-serif text-base italic text-[#0f0f0f] leading-relaxed">&ldquo;{quote.text}&rdquo;</p>
                   <p className="font-mono text-xs text-[#0f0f0f] opacity-50 mt-1">{quote.annotation}</p>
+                  <p className="font-mono text-xs text-[#0f0f0f] opacity-40 mt-1.5">→ Go to Turn {quote.turn}</p>
                 </blockquote>
               ))}
             </div>

@@ -24,7 +24,7 @@ const fadeVariants = {
   exit:    { opacity: 0 },
 }
 
-function Breadcrumb({ screen }: { screen: Screen }) {
+function Breadcrumb({ screen, onSourcesOpen }: { screen: Screen; onSourcesOpen: () => void }) {
   const current = STEP_IDX[screen]
   return (
     <nav data-testid="breadcrumb" aria-label="Steps" className="flex items-center gap-2 px-6 py-3 bg-[#fafafa] border-b-2 border-[#0f0f0f]">
@@ -46,16 +46,24 @@ function Breadcrumb({ screen }: { screen: Screen }) {
           </span>
         </span>
       ))}
+      <button
+        data-testid="sources-trigger"
+        onClick={onSourcesOpen}
+        className="ml-auto font-mono text-xs text-[#0f0f0f] underline hover:opacity-60 transition-opacity"
+      >
+        Sources &amp; Methodology
+      </button>
     </nav>
   )
 }
 
 export default function App() {
-  const [screen, setScreen]                     = useState<Screen>('setup')
-  const [simulation, setSimulation]             = useState<SimulationOutput | null>(null)
+  const [screen, setScreen]                         = useState<Screen>('setup')
+  const [simulation, setSimulation]                 = useState<SimulationOutput | null>(null)
   const [deepLinkStrategyId, setDeepLinkStrategyId] = useState<string | null>(null)
-  const [sourcesOpen, setSourcesOpen]           = useState(false)
-  const [pitchLoading, setPitchLoading]         = useState(false)
+  const [deepLinkTurnNumber, setDeepLinkTurnNumber] = useState<number | null>(null)
+  const [sourcesOpen, setSourcesOpen]               = useState(false)
+  const [pitchLoading, setPitchLoading]             = useState(false)
 
   // Pitch mode: ?pitch=1 skips setup and auto-loads demo
   useEffect(() => {
@@ -66,6 +74,7 @@ export default function App() {
         .then(sim => {
           setSimulation(sim)
           setDeepLinkStrategyId(null)
+          setDeepLinkTurnNumber(null)
           setScreen('mindviewer')
         })
         .finally(() => setPitchLoading(false))
@@ -75,6 +84,7 @@ export default function App() {
   function handleRunSimulation(sim: SimulationOutput) {
     setSimulation(sim)
     setDeepLinkStrategyId(null)
+    setDeepLinkTurnNumber(null)
     setScreen('mindviewer')
   }
 
@@ -82,12 +92,15 @@ export default function App() {
     setScreen('report')
   }
 
-  function handleViewTranscript(strategyId: string) {
+  function handleViewTranscript(strategyId: string, turnNumber?: number) {
     setDeepLinkStrategyId(strategyId)
+    setDeepLinkTurnNumber(turnNumber ?? null)
     setScreen('mindviewer')
   }
 
   function handleBackToSetup() {
+    setDeepLinkStrategyId(null)
+    setDeepLinkTurnNumber(null)
     setScreen('setup')
   }
 
@@ -107,16 +120,7 @@ export default function App() {
   return (
     <div className="min-h-screen bg-[#fafafa]" data-testid="app-root">
       {/* Breadcrumb nav */}
-      <Breadcrumb screen={screen} />
-
-      {/* Persistent Sources trigger */}
-      <button
-        data-testid="sources-trigger"
-        onClick={() => setSourcesOpen(true)}
-        className="fixed bottom-4 left-4 z-30 text-xs text-[#0f0f0f] underline font-mono transition-colors hover:opacity-60"
-      >
-        Sources &amp; Methodology
-      </button>
+      <Breadcrumb screen={screen} onSourcesOpen={() => setSourcesOpen(true)} />
 
       {/* Sources drawer */}
       <SourcesPanel
@@ -155,6 +159,7 @@ export default function App() {
             <MindViewer
               simulation={simulation}
               initialStrategyId={deepLinkStrategyId ?? undefined}
+              initialTurnNumber={deepLinkTurnNumber ?? undefined}
               onViewReport={handleViewReport}
             />
           </motion.div>

@@ -27,7 +27,7 @@ export default function MechanismLegend() {
   return (
     <div
       data-testid="mechanism-legend"
-      className="fixed bottom-4 right-4 z-20 flex flex-col items-end gap-1"
+      className="fixed bottom-16 right-4 z-20 flex flex-col items-end gap-1"
     >
       {expanded && (
         <div className="border-2 border-[#0f0f0f] bg-[#fafafa] p-4 w-64 space-y-3">

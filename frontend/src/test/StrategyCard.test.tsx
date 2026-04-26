@@ -31,6 +31,23 @@ function renderAuthority() {
   )
 }
 
+describe('StrategyCard — header button hover styling', () => {
+  it('header button uses warm tint hover, not black inversion', () => {
+    renderNarrative()
+    const btn = screen.getByTestId('strategy-card-toggle-strategy_personal_narrative')
+    expect(btn.className).not.toContain('hover:bg-[#0f0f0f]')
+    expect(btn.className).toContain('hover:bg-[#ebe8e1]')
+  })
+
+  it('header button has left border accent on hover', () => {
+    renderNarrative()
+    const btn = screen.getByTestId('strategy-card-toggle-strategy_personal_narrative')
+    expect(btn.className).toContain('border-l-4')
+    expect(btn.className).toContain('border-transparent')
+    expect(btn.className).toContain('hover:border-[#0f0f0f]')
+  })
+})
+
 describe('StrategyCard — collapsed state', () => {
   it('renders with data-testid', () => {
     renderNarrative()
@@ -199,5 +216,18 @@ describe('StrategyCard — expanded state', () => {
     await user.click(screen.getByTestId('strategy-card-toggle-strategy_authority_expert'))
     await user.click(screen.getByTestId('watch-transcript-strategy_authority_expert'))
     expect(mockOnViewTranscript).toHaveBeenCalledWith('strategy_authority_expert')
+  })
+
+  it('clicking a standout quote calls onViewTranscript with strategyId and turn number', async () => {
+    renderNarrative()
+    await user.click(screen.getByTestId('strategy-card-toggle-strategy_personal_narrative'))
+    await user.click(screen.getByTestId('quote-0-strategy_personal_narrative'))
+    expect(mockOnViewTranscript).toHaveBeenCalledWith('strategy_personal_narrative', 1)
+  })
+
+  it('standout quote shows "Go to Turn N" affordance', async () => {
+    renderNarrative()
+    await user.click(screen.getByTestId('strategy-card-toggle-strategy_personal_narrative'))
+    expect(screen.getByText('→ Go to Turn 1')).toBeInTheDocument()
   })
 })

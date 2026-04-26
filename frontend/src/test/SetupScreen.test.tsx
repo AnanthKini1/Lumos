@@ -195,4 +195,28 @@ describe('SetupScreen', () => {
     render(<SetupScreen onRunSimulation={mockOnRunSimulation} />)
     expect(screen.getByText(/select a persona and topic to continue/i)).toBeInTheDocument()
   })
+
+  it('selected persona card uses border-4 instead of bg inversion', async () => {
+    const user = userEvent.setup()
+    render(<SetupScreen onRunSimulation={mockOnRunSimulation} />)
+    await user.click(await screen.findByTestId('persona-card-persona_skeptical_traditionalist'))
+    const card = screen.getByTestId('persona-card-persona_skeptical_traditionalist')
+    expect(card.className).toContain('border-4')
+    expect(card.className).not.toContain('bg-[#0f0f0f]')
+  })
+
+  it('unselected persona card uses border-2', async () => {
+    render(<SetupScreen onRunSimulation={mockOnRunSimulation} />)
+    const card = await screen.findByTestId('persona-card-persona_skeptical_traditionalist')
+    expect(card.className).toContain('border-2')
+  })
+
+  it('selected topic card uses border-4 instead of bg inversion', async () => {
+    const user = userEvent.setup()
+    render(<SetupScreen onRunSimulation={mockOnRunSimulation} />)
+    await user.click(await screen.findByTestId('topic-card-topic_return_to_office'))
+    const card = screen.getByTestId('topic-card-topic_return_to_office')
+    expect(card.className).toContain('border-4')
+    expect(card.className).not.toContain('bg-[#0f0f0f]')
+  })
 })
