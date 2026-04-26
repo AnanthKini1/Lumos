@@ -11,11 +11,14 @@ const CATEGORY_COLOR: Record<string, string> = {
 }
 
 function findMechanismName(id: string): string {
-  return mechanisms.find(m => m.id === id)?.display_name ?? id
+  return mechanisms.find(m => m.id === id)?.display_name
+    ?? id.replace(/^mechanism_/, '').replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase())
 }
 
-function findMechanismFramework(id: string): string {
-  return mechanisms.find(m => m.id === id)?.framework ?? ''
+function findMechanismCitation(id: string): string {
+  const m = mechanisms.find(m => m.id === id)
+  if (!m) return ''
+  return m.framework ? `${m.framework}` : ''
 }
 
 function inflectionPointTurn(outcome: StrategyOutcome): ConversationTurn | undefined {
@@ -178,7 +181,7 @@ export default function ComparisonReport({ simulation, onViewTranscript, onBackT
                             <span className="opacity-75">
                               {findMechanismName(inflection.mechanism_classification.primary_mechanism_id)}
                               {' · '}
-                              {findMechanismFramework(inflection.mechanism_classification.primary_mechanism_id)}
+                              {findMechanismCitation(inflection.mechanism_classification.primary_mechanism_id)}
                               {inflection.stance_delta != null && ` · Shift: ${inflection.stance_delta > 0 ? '+' : ''}${inflection.stance_delta.toFixed(1)}`}
                             </span>
                           </div>

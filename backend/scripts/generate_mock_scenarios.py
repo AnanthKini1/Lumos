@@ -577,12 +577,58 @@ def _build_turn(turn_idx, strategy_id, strategy_display, persona_id, topic_id,
     color_category = mechanism["color_category"] if mechanism else None
     mech_intensity = mechanism["intensity"] if mechanism else None
 
+    # Trigger: a specific observable moment/quote, not first-person
+    _triggers_by_verdict = {
+        "GENUINE_BELIEF_SHIFT": [
+            f"A reframing of {topic_key} that introduced an angle not previously considered",
+            f"A specific claim about {topic_key} that resisted the usual counter-arguments",
+            f"The moment the argument connected {topic_key} to a concrete, tangible outcome",
+            f"An acknowledgment of real tradeoffs rather than a one-sided case for {topic_key}",
+            f"A detail about {topic_key} that made the stakes feel immediate rather than abstract",
+            f"The cumulative weight of the argument — no single line, but the pattern across turns",
+        ],
+        "PARTIAL_SHIFT": [
+            f"A new angle on {topic_key} that didn't immediately resolve into the usual categories",
+            f"A specific piece of evidence about {topic_key} that was harder to dismiss than expected",
+            f"The observation that the argument about {topic_key} was more careful than anticipated",
+            f"A point about {topic_key} that raised a question the persona hadn't previously held",
+            f"The acknowledgment of a genuine tradeoff rather than an idealized outcome on {topic_key}",
+            f"A moment where the persuader's argument about {topic_key} found a gap in prior thinking",
+        ],
+        "SURFACE_COMPLIANCE": [
+            f"Social pressure embedded in the framing of the question about {topic_key}",
+            f"An implicit expectation of agreement in how the argument about {topic_key} was presented",
+            f"The conversational cost of visible disagreement on {topic_key} in this context",
+            f"A friendly framing of {topic_key} that made contradiction feel unnecessarily confrontational",
+            f"The low stakes of the moment — agreeing on {topic_key} required no real commitment",
+            f"A reasonable-sounding conclusion that made surface agreement the path of least resistance",
+        ],
+        "BACKFIRE": [
+            f"An appeal to external authority as a substitute for direct engagement with {topic_key}",
+            f"The implicit assumption that the established view on {topic_key} should be deferred to",
+            f"A framing of {topic_key} that treated skepticism as ignorance rather than a different judgment",
+            f"The pressure of repeated assertion — the argument offered the same claim on {topic_key} again",
+            f"A rhetorical move that felt more like closing down the question than opening it",
+            f"The pattern of the argument — more about winning on {topic_key} than finding the truth",
+        ],
+        "NO_MOVEMENT": [
+            f"A familiar line of argument about {topic_key} that had been encountered before",
+            f"A claim about {topic_key} that was not new and did not land differently than prior versions",
+            f"A framing of {topic_key} that did not map onto the reasons for the current position",
+            f"The absence of anything in the argument that addressed the actual basis for skepticism about {topic_key}",
+            f"An argument about {topic_key} that was coherent but did not speak to what was actually in question",
+            f"The recognition that this argument about {topic_key} would require a different kind of evidence to shift",
+        ],
+    }
+    trigger = _pick(_triggers_by_verdict.get(verdict, _triggers_by_verdict["NO_MOVEMENT"]), turn_idx)
+
+    # Change reason: observational third-person, not first-person
     change_reason_map = {
-        "GENUINE_BELIEF_SHIFT": f"The argument made a genuinely novel point about {topic_key} that I couldn't easily dismiss.",
-        "PARTIAL_SHIFT":        f"Some of the evidence about {topic_key} was harder to dismiss than I expected.",
-        "SURFACE_COMPLIANCE":   f"I didn't want to seem unreasonable. I'll revisit this privately.",
-        "BACKFIRE":             f"The more they push on {topic_key}, the more certain I am that I'm right.",
-        "NO_MOVEMENT":          f"Nothing new here on {topic_key}. Same arguments, same conclusion.",
+        "GENUINE_BELIEF_SHIFT": f"The argument introduced a framing of {topic_key} that the persona's usual counter-arguments could not absorb — private conviction began moving toward the persuader's position.",
+        "PARTIAL_SHIFT":        f"One specific element of the argument about {topic_key} found purchase where others hadn't; private stance shifted modestly without full resolution of remaining doubts.",
+        "SURFACE_COMPLIANCE":   f"Public agreement was offered to maintain conversational ease; private conviction on {topic_key} remained substantially unchanged.",
+        "BACKFIRE":             f"Continued pressure on {topic_key} activated identity-protective reasoning — the original position hardened rather than softened under the argument.",
+        "NO_MOVEMENT":          f"The argument about {topic_key} did not engage the basis for the current position; no mechanism for change was activated.",
     }
 
     return {
@@ -594,13 +640,13 @@ def _build_turn(turn_idx, strategy_id, strategy_display, persona_id, topic_id,
             "emotional_reaction": {
                 "primary_emotion": primary_emotion,
                 "intensity": intensity,
-                "trigger": persuader_msg[:60] + "...",
+                "trigger": trigger,
             },
             "identity_threat": identity,
             "private_stance": priv,
             "public_stance": pub,
             "private_stance_change_reason": change_reason_map[verdict],
-            "memory_to_carry_forward": f"Turn {turn_idx + 1}: {topic_key} — persuader used {strategy_display}.",
+            "memory_to_carry_forward": f"The {strategy_display} approach raised a point about {topic_key} that is worth holding onto.",
             "public_response": public_resp,
         },
         "stance_delta": stance_delta,

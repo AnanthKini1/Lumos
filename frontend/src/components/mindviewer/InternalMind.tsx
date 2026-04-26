@@ -137,7 +137,7 @@ export default function InternalMind({ turnOutput, priorMemoryNotes, turnNumber,
               key={i}
               className="px-3 py-2 border border-[#0f0f0f] border-opacity-20 opacity-60"
             >
-              <span className="font-mono text-xs text-[#0f0f0f] mr-2 opacity-40">Turn {i + 1}</span>
+              <span className="font-mono text-xs text-[#0f0f0f] mr-2 font-bold">Turn {i + 1}</span>
               <span className="font-serif text-xs text-[#0f0f0f] opacity-70">{note}</span>
             </div>
           ))}
@@ -146,7 +146,7 @@ export default function InternalMind({ turnOutput, priorMemoryNotes, turnNumber,
             data-testid="current-memory"
             className="px-3 py-2 border-2 border-[#0f0f0f]"
           >
-            <span className="font-mono text-xs text-[#0f0f0f] mr-2 opacity-50">Turn {turnNumber}</span>
+            <span className="font-mono text-xs text-[#0f0f0f] mr-2 font-bold">Turn {turnNumber}</span>
             <span className="font-serif text-xs text-[#0f0f0f]">{memory_to_carry_forward}</span>
           </div>
         </div>

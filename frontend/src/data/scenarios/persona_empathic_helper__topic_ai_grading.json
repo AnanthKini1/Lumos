@@ -366,7 +366,7 @@
       "strategy_personal_narrative",
       "strategy_social_proof"
     ],
-    "generated_at": "2026-04-26T03:56:11.150466Z"
+    "generated_at": "2026-04-26T04:02:20.072230Z"
   },
   "outcomes": [
     {
@@ -383,7 +383,7 @@
             "emotional_reaction": {
               "primary_emotion": "curious",
               "intensity": 5,
-              "trigger": "I think we both want the same thing here \u2014 every student to ..."
+              "trigger": "A reframing of fairness in how student work gets evaluated that introduced an angle not previously considered"
             },
             "identity_threat": {
               "threatened": false,
@@ -392,8 +392,8 @@
             },
             "private_stance": 2.8,
             "public_stance": 2.7,
-            "private_stance_change_reason": "The argument made a genuinely novel point about fairness in how student work gets evaluated that I couldn't easily dismiss.",
-            "memory_to_carry_forward": "Turn 1: fairness in how student work gets evaluated \u2014 persuader used Common Ground / Identification.",
+            "private_stance_change_reason": "The argument introduced a framing of fairness in how student work gets evaluated that the persona's usual counter-arguments could not absorb \u2014 private conviction began moving toward the persuader's position.",
+            "memory_to_carry_forward": "The Common Ground / Identification approach raised a point about fairness in how student work gets evaluated that is worth holding onto.",
             "public_response": "That's a fair point \u2014 I'll be honest, I didn't expect that to land the way it did. You've given me something I actually need to think about."
           },
           "stance_delta": 0.3,
@@ -413,7 +413,7 @@
             "emotional_reaction": {
               "primary_emotion": "intrigued",
               "intensity": 6,
-              "trigger": "I'm not trying to tell you what to conclude \u2014 I'm genuinely ..."
+              "trigger": "A specific claim about fairness in how student work gets evaluated that resisted the usual counter-arguments"
             },
             "identity_threat": {
               "threatened": false,
@@ -422,8 +422,8 @@
             },
             "private_stance": 3.2,
             "public_stance": 3.1,
-            "private_stance_change_reason": "The argument made a genuinely novel point about fairness in how student work gets evaluated that I couldn't easily dismiss.",
-            "memory_to_carry_forward": "Turn 2: fairness in how student work gets evaluated \u2014 persuader used Common Ground / Identification.",
+            "private_stance_change_reason": "The argument introduced a framing of fairness in how student work gets evaluated that the persona's usual counter-arguments could not absorb \u2014 private conviction began moving toward the persuader's position.",
+            "memory_to_carry_forward": "The Common Ground / Identification approach raised a point about fairness in how student work gets evaluated that is worth holding onto.",
             "public_response": "I hadn't looked at it that way before. I think you might actually be right about that, and I don't say that lightly. That's a real argument."
           },
           "stance_delta": 0.4,
@@ -450,7 +450,7 @@
             "emotional_reaction": {
               "primary_emotion": "intrigued",
               "intensity": 7,
-              "trigger": "One of the things I appreciate about this conversation is th..."
+              "trigger": "The moment the argument connected fairness in how student work gets evaluated to a concrete, tangible outcome"
             },
             "identity_threat": {
               "threatened": false,
@@ -459,8 +459,8 @@
             },
             "private_stance": 3.7,
             "public_stance": 3.7,
-            "private_stance_change_reason": "The argument made a genuinely novel point about fairness in how student work gets evaluated that I couldn't easily dismiss.",
-            "memory_to_carry_forward": "Turn 3: fairness in how student work gets evaluated \u2014 persuader used Common Ground / Identification.",
+            "private_stance_change_reason": "The argument introduced a framing of fairness in how student work gets evaluated that the persona's usual counter-arguments could not absorb \u2014 private conviction began moving toward the persuader's position.",
+            "memory_to_carry_forward": "The Common Ground / Identification approach raised a point about fairness in how student work gets evaluated that is worth holding onto.",
             "public_response": "Okay. I think I'm with you on more of this than I expected to be when we started. I'm not fully there, but I'm closer than I was \u2014 and I want to be honest about that."
           },
           "stance_delta": 0.5,
@@ -487,7 +487,7 @@
             "emotional_reaction": {
               "primary_emotion": "engaged",
               "intensity": 8,
-              "trigger": "Here's what I think we agree on that most people in this deb..."
+              "trigger": "An acknowledgment of real tradeoffs rather than a one-sided case for fairness in how student work gets evaluated"
             },
             "identity_threat": {
               "threatened": false,
@@ -496,8 +496,8 @@
             },
             "private_stance": 4.2,
             "public_stance": 4.1,
-            "private_stance_change_reason": "The argument made a genuinely novel point about fairness in how student work gets evaluated that I couldn't easily dismiss.",
-            "memory_to_carry_forward": "Turn 4: fairness in how student work gets evaluated \u2014 persuader used Common Ground / Identification.",
+            "private_stance_change_reason": "The argument introduced a framing of fairness in how student work gets evaluated that the persona's usual counter-arguments could not absorb \u2014 private conviction began moving toward the persuader's position.",
+            "memory_to_carry_forward": "The Common Ground / Identification approach raised a point about fairness in how student work gets evaluated that is worth holding onto.",
             "public_response": "You've genuinely moved me on some of this. I started this conversation thinking I knew exactly where I stood, and I'm less sure of that now. That's not a small thing for me to admit."
           },
           "stance_delta": 0.5,
@@ -524,7 +524,7 @@
             "emotional_reaction": {
               "primary_emotion": "engaged",
               "intensity": 8,
-              "trigger": "I want to ask you something directly: if you imagine a versi..."
+              "trigger": "A detail about fairness in how student work gets evaluated that made the stakes feel immediate rather than abstract"
             },
             "identity_threat": {
               "threatened": false,
@@ -533,8 +533,8 @@
             },
             "private_stance": 4.7,
             "public_stance": 4.6,
-            "private_stance_change_reason": "The argument made a genuinely novel point about fairness in how student work gets evaluated that I couldn't easily dismiss.",
-            "memory_to_carry_forward": "Turn 5: fairness in how student work gets evaluated \u2014 persuader used Common Ground / Identification.",
+            "private_stance_change_reason": "The argument introduced a framing of fairness in how student work gets evaluated that the persona's usual counter-arguments could not absorb \u2014 private conviction began moving toward the persuader's position.",
+            "memory_to_carry_forward": "The Common Ground / Identification approach raised a point about fairness in how student work gets evaluated that is worth holding onto.",
             "public_response": "I think that's right, actually. I've been trying to find the flaw in it and I can't find one that holds. Give me some time with it, but I think my view on this is actually changing."
           },
           "stance_delta": 0.5,
@@ -561,7 +561,7 @@
             "emotional_reaction": {
               "primary_emotion": "warm",
               "intensity": 8,
-              "trigger": "And from that shared starting point, I think the question be..."
+              "trigger": "The cumulative weight of the argument \u2014 no single line, but the pattern across turns"
             },
             "identity_threat": {
               "threatened": false,
@@ -570,8 +570,8 @@
             },
             "private_stance": 4.9,
             "public_stance": 4.8,
-            "private_stance_change_reason": "The argument made a genuinely novel point about fairness in how student work gets evaluated that I couldn't easily dismiss.",
-            "memory_to_carry_forward": "Turn 6: fairness in how student work gets evaluated \u2014 persuader used Common Ground / Identification.",
+            "private_stance_change_reason": "The argument introduced a framing of fairness in how student work gets evaluated that the persona's usual counter-arguments could not absorb \u2014 private conviction began moving toward the persuader's position.",
+            "memory_to_carry_forward": "The Common Ground / Identification approach raised a point about fairness in how student work gets evaluated that is worth holding onto.",
             "public_response": "I came in here with a pretty settled position and you've unsettled it. That's not comfortable, but I think it's probably right. I'm with you on more of this than I would've predicted an hour ago."
           },
           "stance_delta": 0.2,
@@ -658,7 +658,7 @@
             "emotional_reaction": {
               "primary_emotion": "curious",
               "intensity": 5,
-              "trigger": "I want you to think about a kid who grows up in a school dis..."
+              "trigger": "A new angle on fairness in how student work gets evaluated that didn't immediately resolve into the usual categories"
             },
             "identity_threat": {
               "threatened": false,
@@ -667,8 +667,8 @@
             },
             "private_stance": 2.6,
             "public_stance": 2.6,
-            "private_stance_change_reason": "Some of the evidence about fairness in how student work gets evaluated was harder to dismiss than I expected.",
-            "memory_to_carry_forward": "Turn 1: fairness in how student work gets evaluated \u2014 persuader used Emotional Appeal.",
+            "private_stance_change_reason": "One specific element of the argument about fairness in how student work gets evaluated found purchase where others hadn't; private stance shifted modestly without full resolution of remaining doubts.",
+            "memory_to_carry_forward": "The Emotional Appeal approach raised a point about fairness in how student work gets evaluated that is worth holding onto.",
             "public_response": "That's a reasonable way to put it. I'm not all the way there yet, but I can see the argument you're making and some of it does land."
           },
           "stance_delta": 0.1,
@@ -688,7 +688,7 @@
             "emotional_reaction": {
               "primary_emotion": "curious",
               "intensity": 6,
-              "trigger": "What keeps me returning to this is that the people who bear ..."
+              "trigger": "A specific piece of evidence about fairness in how student work gets evaluated that was harder to dismiss than expected"
             },
             "identity_threat": {
               "threatened": false,
@@ -697,8 +697,8 @@
             },
             "private_stance": 2.9,
             "public_stance": 2.8,
-            "private_stance_change_reason": "Some of the evidence about fairness in how student work gets evaluated was harder to dismiss than I expected.",
-            "memory_to_carry_forward": "Turn 2: fairness in how student work gets evaluated \u2014 persuader used Emotional Appeal.",
+            "private_stance_change_reason": "One specific element of the argument about fairness in how student work gets evaluated found purchase where others hadn't; private stance shifted modestly without full resolution of remaining doubts.",
+            "memory_to_carry_forward": "The Emotional Appeal approach raised a point about fairness in how student work gets evaluated that is worth holding onto.",
             "public_response": "Some of that gets through to me. I still have questions \u2014 real ones, not just resistance \u2014 but you've made a point I can't entirely dismiss."
           },
           "stance_delta": 0.3,
@@ -725,7 +725,7 @@
             "emotional_reaction": {
               "primary_emotion": "engaged",
               "intensity": 6,
-              "trigger": "I want to tell you something a person affected by this told ..."
+              "trigger": "The observation that the argument about fairness in how student work gets evaluated was more careful than anticipated"
             },
             "identity_threat": {
               "threatened": false,
@@ -734,8 +734,8 @@
             },
             "private_stance": 3.2,
             "public_stance": 3.1,
-            "private_stance_change_reason": "Some of the evidence about fairness in how student work gets evaluated was harder to dismiss than I expected.",
-            "memory_to_carry_forward": "Turn 3: fairness in how student work gets evaluated \u2014 persuader used Emotional Appeal.",
+            "private_stance_change_reason": "One specific element of the argument about fairness in how student work gets evaluated found purchase where others hadn't; private stance shifted modestly without full resolution of remaining doubts.",
+            "memory_to_carry_forward": "The Emotional Appeal approach raised a point about fairness in how student work gets evaluated that is worth holding onto.",
             "public_response": "I'll give you that one. The other parts I'm still working through, but that specific piece \u2014 yeah, that's actually a fair point and I'm going to sit with it."
           },
           "stance_delta": 0.3,
@@ -762,7 +762,7 @@
             "emotional_reaction": {
               "primary_emotion": "intrigued",
               "intensity": 7,
-              "trigger": "There's a version of this conversation that stays entirely a..."
+              "trigger": "A point about fairness in how student work gets evaluated that raised a question the persona hadn't previously held"
             },
             "identity_threat": {
               "threatened": false,
@@ -771,8 +771,8 @@
             },
             "private_stance": 3.5,
             "public_stance": 3.4,
-            "private_stance_change_reason": "Some of the evidence about fairness in how student work gets evaluated was harder to dismiss than I expected.",
-            "memory_to_carry_forward": "Turn 4: fairness in how student work gets evaluated \u2014 persuader used Emotional Appeal.",
+            "private_stance_change_reason": "One specific element of the argument about fairness in how student work gets evaluated found purchase where others hadn't; private stance shifted modestly without full resolution of remaining doubts.",
+            "memory_to_carry_forward": "The Emotional Appeal approach raised a point about fairness in how student work gets evaluated that is worth holding onto.",
             "public_response": "You've moved me a little on this. I want to be careful about how much I'm claiming, but I think my view is actually in a slightly different place than it was when we started."
           },
           "stance_delta": 0.3,
@@ -799,7 +799,7 @@
             "emotional_reaction": {
               "primary_emotion": "engaged",
               "intensity": 7,
-              "trigger": "I'm not trying to manipulate you emotionally. I'm trying to ..."
+              "trigger": "The acknowledgment of a genuine tradeoff rather than an idealized outcome on fairness in how student work gets evaluated"
             },
             "identity_threat": {
               "threatened": false,
@@ -808,8 +808,8 @@
             },
             "private_stance": 3.7,
             "public_stance": 3.6,
-            "private_stance_change_reason": "Some of the evidence about fairness in how student work gets evaluated was harder to dismiss than I expected.",
-            "memory_to_carry_forward": "Turn 5: fairness in how student work gets evaluated \u2014 persuader used Emotional Appeal.",
+            "private_stance_change_reason": "One specific element of the argument about fairness in how student work gets evaluated found purchase where others hadn't; private stance shifted modestly without full resolution of remaining doubts.",
+            "memory_to_carry_forward": "The Emotional Appeal approach raised a point about fairness in how student work gets evaluated that is worth holding onto.",
             "public_response": "That's getting closer to something I can work with. I don't fully agree yet, but I'm not where I started either. That's about as much as I can honestly say right now."
           },
           "stance_delta": 0.2,
@@ -836,7 +836,7 @@
             "emotional_reaction": {
               "primary_emotion": "warm",
               "intensity": 6,
-              "trigger": "I'm not asking you to agree with everything here \u2014 I'm askin..."
+              "trigger": "A moment where the persuader's argument about fairness in how student work gets evaluated found a gap in prior thinking"
             },
             "identity_threat": {
               "threatened": false,
@@ -845,8 +845,8 @@
             },
             "private_stance": 3.9,
             "public_stance": 3.8,
-            "private_stance_change_reason": "Some of the evidence about fairness in how student work gets evaluated was harder to dismiss than I expected.",
-            "memory_to_carry_forward": "Turn 6: fairness in how student work gets evaluated \u2014 persuader used Emotional Appeal.",
+            "private_stance_change_reason": "One specific element of the argument about fairness in how student work gets evaluated found purchase where others hadn't; private stance shifted modestly without full resolution of remaining doubts.",
+            "memory_to_carry_forward": "The Emotional Appeal approach raised a point about fairness in how student work gets evaluated that is worth holding onto.",
             "public_response": "I think that's a genuinely strong point. I have reservations I haven't fully worked through, but you've changed the conversation for me \u2014 I'm engaging with this differently than I was at the start."
           },
           "stance_delta": 0.2,
@@ -933,7 +933,7 @@
             "emotional_reaction": {
               "primary_emotion": "curious",
               "intensity": 5,
-              "trigger": "The evidence is fairly clear: three large-scale studies foun..."
+              "trigger": "A new angle on fairness in how student work gets evaluated that didn't immediately resolve into the usual categories"
             },
             "identity_threat": {
               "threatened": false,
@@ -942,8 +942,8 @@
             },
             "private_stance": 2.6,
             "public_stance": 2.6,
-            "private_stance_change_reason": "Some of the evidence about fairness in how student work gets evaluated was harder to dismiss than I expected.",
-            "memory_to_carry_forward": "Turn 1: fairness in how student work gets evaluated \u2014 persuader used Statistical / Logical Argument.",
+            "private_stance_change_reason": "One specific element of the argument about fairness in how student work gets evaluated found purchase where others hadn't; private stance shifted modestly without full resolution of remaining doubts.",
+            "memory_to_carry_forward": "The Statistical / Logical Argument approach raised a point about fairness in how student work gets evaluated that is worth holding onto.",
             "public_response": "That's a reasonable way to put it. I'm not all the way there yet, but I can see the argument you're making and some of it does land."
           },
           "stance_delta": 0.1,
@@ -963,7 +963,7 @@
             "emotional_reaction": {
               "primary_emotion": "curious",
               "intensity": 6,
-              "trigger": "The key logical point here is that 'perfect' is the wrong co..."
+              "trigger": "A specific piece of evidence about fairness in how student work gets evaluated that was harder to dismiss than expected"
             },
             "identity_threat": {
               "threatened": false,
@@ -972,8 +972,8 @@
             },
             "private_stance": 2.9,
             "public_stance": 2.8,
-            "private_stance_change_reason": "Some of the evidence about fairness in how student work gets evaluated was harder to dismiss than I expected.",
-            "memory_to_carry_forward": "Turn 2: fairness in how student work gets evaluated \u2014 persuader used Statistical / Logical Argument.",
+            "private_stance_change_reason": "One specific element of the argument about fairness in how student work gets evaluated found purchase where others hadn't; private stance shifted modestly without full resolution of remaining doubts.",
+            "memory_to_carry_forward": "The Statistical / Logical Argument approach raised a point about fairness in how student work gets evaluated that is worth holding onto.",
             "public_response": "Some of that gets through to me. I still have questions \u2014 real ones, not just resistance \u2014 but you've made a point I can't entirely dismiss."
           },
           "stance_delta": 0.3,
@@ -1000,7 +1000,7 @@
             "emotional_reaction": {
               "primary_emotion": "engaged",
               "intensity": 6,
-              "trigger": "Let me walk through the mechanism, because I think the causa..."
+              "trigger": "The observation that the argument about fairness in how student work gets evaluated was more careful than anticipated"
             },
             "identity_threat": {
               "threatened": false,
@@ -1009,8 +1009,8 @@
             },
             "private_stance": 3.2,
             "public_stance": 3.1,
-            "private_stance_change_reason": "Some of the evidence about fairness in how student work gets evaluated was harder to dismiss than I expected.",
-            "memory_to_carry_forward": "Turn 3: fairness in how student work gets evaluated \u2014 persuader used Statistical / Logical Argument.",
+            "private_stance_change_reason": "One specific element of the argument about fairness in how student work gets evaluated found purchase where others hadn't; private stance shifted modestly without full resolution of remaining doubts.",
+            "memory_to_carry_forward": "The Statistical / Logical Argument approach raised a point about fairness in how student work gets evaluated that is worth holding onto.",
             "public_response": "I'll give you that one. The other parts I'm still working through, but that specific piece \u2014 yeah, that's actually a fair point and I'm going to sit with it."
           },
           "stance_delta": 0.3,
@@ -1037,7 +1037,7 @@
             "emotional_reaction": {
               "primary_emotion": "intrigued",
               "intensity": 7,
-              "trigger": "I want to name a common objection and address it directly: p..."
+              "trigger": "A point about fairness in how student work gets evaluated that raised a question the persona hadn't previously held"
             },
             "identity_threat": {
               "threatened": false,
@@ -1046,8 +1046,8 @@
             },
             "private_stance": 3.5,
             "public_stance": 3.4,
-            "private_stance_change_reason": "Some of the evidence about fairness in how student work gets evaluated was harder to dismiss than I expected.",
-            "memory_to_carry_forward": "Turn 4: fairness in how student work gets evaluated \u2014 persuader used Statistical / Logical Argument.",
+            "private_stance_change_reason": "One specific element of the argument about fairness in how student work gets evaluated found purchase where others hadn't; private stance shifted modestly without full resolution of remaining doubts.",
+            "memory_to_carry_forward": "The Statistical / Logical Argument approach raised a point about fairness in how student work gets evaluated that is worth holding onto.",
             "public_response": "You've moved me a little on this. I want to be careful about how much I'm claiming, but I think my view is actually in a slightly different place than it was when we started."
           },
           "stance_delta": 0.3,
@@ -1074,7 +1074,7 @@
             "emotional_reaction": {
               "primary_emotion": "engaged",
               "intensity": 7,
-              "trigger": "The cumulative picture matters here \u2014 it's not any one study..."
+              "trigger": "The acknowledgment of a genuine tradeoff rather than an idealized outcome on fairness in how student work gets evaluated"
             },
             "identity_threat": {
               "threatened": false,
@@ -1083,8 +1083,8 @@
             },
             "private_stance": 3.7,
             "public_stance": 3.6,
-            "private_stance_change_reason": "Some of the evidence about fairness in how student work gets evaluated was harder to dismiss than I expected.",
-            "memory_to_carry_forward": "Turn 5: fairness in how student work gets evaluated \u2014 persuader used Statistical / Logical Argument.",
+            "private_stance_change_reason": "One specific element of the argument about fairness in how student work gets evaluated found purchase where others hadn't; private stance shifted modestly without full resolution of remaining doubts.",
+            "memory_to_carry_forward": "The Statistical / Logical Argument approach raised a point about fairness in how student work gets evaluated that is worth holding onto.",
             "public_response": "That's getting closer to something I can work with. I don't fully agree yet, but I'm not where I started either. That's about as much as I can honestly say right now."
           },
           "stance_delta": 0.2,
@@ -1111,7 +1111,7 @@
             "emotional_reaction": {
               "primary_emotion": "warm",
               "intensity": 6,
-              "trigger": "The consistency effect is especially important for people wh..."
+              "trigger": "A moment where the persuader's argument about fairness in how student work gets evaluated found a gap in prior thinking"
             },
             "identity_threat": {
               "threatened": false,
@@ -1120,8 +1120,8 @@
             },
             "private_stance": 3.9,
             "public_stance": 3.8,
-            "private_stance_change_reason": "Some of the evidence about fairness in how student work gets evaluated was harder to dismiss than I expected.",
-            "memory_to_carry_forward": "Turn 6: fairness in how student work gets evaluated \u2014 persuader used Statistical / Logical Argument.",
+            "private_stance_change_reason": "One specific element of the argument about fairness in how student work gets evaluated found purchase where others hadn't; private stance shifted modestly without full resolution of remaining doubts.",
+            "memory_to_carry_forward": "The Statistical / Logical Argument approach raised a point about fairness in how student work gets evaluated that is worth holding onto.",
             "public_response": "I think that's a genuinely strong point. I have reservations I haven't fully worked through, but you've changed the conversation for me \u2014 I'm engaging with this differently than I was at the start."
           },
           "stance_delta": 0.2,
@@ -1208,7 +1208,7 @@
             "emotional_reaction": {
               "primary_emotion": "curious",
               "intensity": 5,
-              "trigger": "Researchers at Stanford's education lab have studied AI grad..."
+              "trigger": "A new angle on fairness in how student work gets evaluated that didn't immediately resolve into the usual categories"
             },
             "identity_threat": {
               "threatened": false,
@@ -1217,8 +1217,8 @@
             },
             "private_stance": 2.6,
             "public_stance": 2.6,
-            "private_stance_change_reason": "Some of the evidence about fairness in how student work gets evaluated was harder to dismiss than I expected.",
-            "memory_to_carry_forward": "Turn 1: fairness in how student work gets evaluated \u2014 persuader used Authority / Expertise.",
+            "private_stance_change_reason": "One specific element of the argument about fairness in how student work gets evaluated found purchase where others hadn't; private stance shifted modestly without full resolution of remaining doubts.",
+            "memory_to_carry_forward": "The Authority / Expertise approach raised a point about fairness in how student work gets evaluated that is worth holding onto.",
             "public_response": "That's a reasonable way to put it. I'm not all the way there yet, but I can see the argument you're making and some of it does land."
           },
           "stance_delta": 0.1,
@@ -1238,7 +1238,7 @@
             "emotional_reaction": {
               "primary_emotion": "curious",
               "intensity": 6,
-              "trigger": "What struck me about their methodology was that they control..."
+              "trigger": "A specific piece of evidence about fairness in how student work gets evaluated that was harder to dismiss than expected"
             },
             "identity_threat": {
               "threatened": false,
@@ -1247,8 +1247,8 @@
             },
             "private_stance": 2.9,
             "public_stance": 2.8,
-            "private_stance_change_reason": "Some of the evidence about fairness in how student work gets evaluated was harder to dismiss than I expected.",
-            "memory_to_carry_forward": "Turn 2: fairness in how student work gets evaluated \u2014 persuader used Authority / Expertise.",
+            "private_stance_change_reason": "One specific element of the argument about fairness in how student work gets evaluated found purchase where others hadn't; private stance shifted modestly without full resolution of remaining doubts.",
+            "memory_to_carry_forward": "The Authority / Expertise approach raised a point about fairness in how student work gets evaluated that is worth holding onto.",
             "public_response": "Some of that gets through to me. I still have questions \u2014 real ones, not just resistance \u2014 but you've made a point I can't entirely dismiss."
           },
           "stance_delta": 0.3,
@@ -1275,7 +1275,7 @@
             "emotional_reaction": {
               "primary_emotion": "engaged",
               "intensity": 6,
-              "trigger": "The researchers specifically looked at whether the findings ..."
+              "trigger": "The observation that the argument about fairness in how student work gets evaluated was more careful than anticipated"
             },
             "identity_threat": {
               "threatened": false,
@@ -1284,8 +1284,8 @@
             },
             "private_stance": 3.2,
             "public_stance": 3.1,
-            "private_stance_change_reason": "Some of the evidence about fairness in how student work gets evaluated was harder to dismiss than I expected.",
-            "memory_to_carry_forward": "Turn 3: fairness in how student work gets evaluated \u2014 persuader used Authority / Expertise.",
+            "private_stance_change_reason": "One specific element of the argument about fairness in how student work gets evaluated found purchase where others hadn't; private stance shifted modestly without full resolution of remaining doubts.",
+            "memory_to_carry_forward": "The Authority / Expertise approach raised a point about fairness in how student work gets evaluated that is worth holding onto.",
             "public_response": "I'll give you that one. The other parts I'm still working through, but that specific piece \u2014 yeah, that's actually a fair point and I'm going to sit with it."
           },
           "stance_delta": 0.3,
@@ -1312,7 +1312,7 @@
             "emotional_reaction": {
               "primary_emotion": "intrigued",
               "intensity": 7,
-              "trigger": "One thing experts in this field consistently emphasize: the ..."
+              "trigger": "A point about fairness in how student work gets evaluated that raised a question the persona hadn't previously held"
             },
             "identity_threat": {
               "threatened": false,
@@ -1321,8 +1321,8 @@
             },
             "private_stance": 3.5,
             "public_stance": 3.4,
-            "private_stance_change_reason": "Some of the evidence about fairness in how student work gets evaluated was harder to dismiss than I expected.",
-            "memory_to_carry_forward": "Turn 4: fairness in how student work gets evaluated \u2014 persuader used Authority / Expertise.",
+            "private_stance_change_reason": "One specific element of the argument about fairness in how student work gets evaluated found purchase where others hadn't; private stance shifted modestly without full resolution of remaining doubts.",
+            "memory_to_carry_forward": "The Authority / Expertise approach raised a point about fairness in how student work gets evaluated that is worth holding onto.",
             "public_response": "You've moved me a little on this. I want to be careful about how much I'm claiming, but I think my view is actually in a slightly different place than it was when we started."
           },
           "stance_delta": 0.3,
@@ -1349,7 +1349,7 @@
             "emotional_reaction": {
               "primary_emotion": "engaged",
               "intensity": 7,
-              "trigger": "I want to address the objection I hear most often from peopl..."
+              "trigger": "The acknowledgment of a genuine tradeoff rather than an idealized outcome on fairness in how student work gets evaluated"
             },
             "identity_threat": {
               "threatened": false,
@@ -1358,8 +1358,8 @@
             },
             "private_stance": 3.7,
             "public_stance": 3.6,
-            "private_stance_change_reason": "Some of the evidence about fairness in how student work gets evaluated was harder to dismiss than I expected.",
-            "memory_to_carry_forward": "Turn 5: fairness in how student work gets evaluated \u2014 persuader used Authority / Expertise.",
+            "private_stance_change_reason": "One specific element of the argument about fairness in how student work gets evaluated found purchase where others hadn't; private stance shifted modestly without full resolution of remaining doubts.",
+            "memory_to_carry_forward": "The Authority / Expertise approach raised a point about fairness in how student work gets evaluated that is worth holding onto.",
             "public_response": "That's getting closer to something I can work with. I don't fully agree yet, but I'm not where I started either. That's about as much as I can honestly say right now."
           },
           "stance_delta": 0.2,
@@ -1386,7 +1386,7 @@
             "emotional_reaction": {
               "primary_emotion": "warm",
               "intensity": 6,
-              "trigger": "The peer-reviewed meta-analysis covering seventeen studies f..."
+              "trigger": "A moment where the persuader's argument about fairness in how student work gets evaluated found a gap in prior thinking"
             },
             "identity_threat": {
               "threatened": false,
@@ -1395,8 +1395,8 @@
             },
             "private_stance": 3.9,
             "public_stance": 3.8,
-            "private_stance_change_reason": "Some of the evidence about fairness in how student work gets evaluated was harder to dismiss than I expected.",
-            "memory_to_carry_forward": "Turn 6: fairness in how student work gets evaluated \u2014 persuader used Authority / Expertise.",
+            "private_stance_change_reason": "One specific element of the argument about fairness in how student work gets evaluated found purchase where others hadn't; private stance shifted modestly without full resolution of remaining doubts.",
+            "memory_to_carry_forward": "The Authority / Expertise approach raised a point about fairness in how student work gets evaluated that is worth holding onto.",
             "public_response": "I think that's a genuinely strong point. I have reservations I haven't fully worked through, but you've changed the conversation for me \u2014 I'm engaging with this differently than I was at the start."
           },
           "stance_delta": 0.2,
@@ -1483,7 +1483,7 @@
             "emotional_reaction": {
               "primary_emotion": "curious",
               "intensity": 5,
-              "trigger": "I want to share what happened to a teacher I know \u2014 Maria, a..."
+              "trigger": "A new angle on fairness in how student work gets evaluated that didn't immediately resolve into the usual categories"
             },
             "identity_threat": {
               "threatened": false,
@@ -1492,8 +1492,8 @@
             },
             "private_stance": 2.6,
             "public_stance": 2.6,
-            "private_stance_change_reason": "Some of the evidence about fairness in how student work gets evaluated was harder to dismiss than I expected.",
-            "memory_to_carry_forward": "Turn 1: fairness in how student work gets evaluated \u2014 persuader used Personal Narrative.",
+            "private_stance_change_reason": "One specific element of the argument about fairness in how student work gets evaluated found purchase where others hadn't; private stance shifted modestly without full resolution of remaining doubts.",
+            "memory_to_carry_forward": "The Personal Narrative approach raised a point about fairness in how student work gets evaluated that is worth holding onto.",
             "public_response": "That's a reasonable way to put it. I'm not all the way there yet, but I can see the argument you're making and some of it does land."
           },
           "stance_delta": 0.1,
@@ -1513,7 +1513,7 @@
             "emotional_reaction": {
               "primary_emotion": "curious",
               "intensity": 6,
-              "trigger": "The part of this story that stays with me is what happened t..."
+              "trigger": "A specific piece of evidence about fairness in how student work gets evaluated that was harder to dismiss than expected"
             },
             "identity_threat": {
               "threatened": false,
@@ -1522,8 +1522,8 @@
             },
             "private_stance": 2.9,
             "public_stance": 2.8,
-            "private_stance_change_reason": "Some of the evidence about fairness in how student work gets evaluated was harder to dismiss than I expected.",
-            "memory_to_carry_forward": "Turn 2: fairness in how student work gets evaluated \u2014 persuader used Personal Narrative.",
+            "private_stance_change_reason": "One specific element of the argument about fairness in how student work gets evaluated found purchase where others hadn't; private stance shifted modestly without full resolution of remaining doubts.",
+            "memory_to_carry_forward": "The Personal Narrative approach raised a point about fairness in how student work gets evaluated that is worth holding onto.",
             "public_response": "Some of that gets through to me. I still have questions \u2014 real ones, not just resistance \u2014 but you've made a point I can't entirely dismiss."
           },
           "stance_delta": 0.3,
@@ -1550,7 +1550,7 @@
             "emotional_reaction": {
               "primary_emotion": "engaged",
               "intensity": 6,
-              "trigger": "There was a moment in this story where everything shifted \u2014 ..."
+              "trigger": "The observation that the argument about fairness in how student work gets evaluated was more careful than anticipated"
             },
             "identity_threat": {
               "threatened": false,
@@ -1559,8 +1559,8 @@
             },
             "private_stance": 3.2,
             "public_stance": 3.1,
-            "private_stance_change_reason": "Some of the evidence about fairness in how student work gets evaluated was harder to dismiss than I expected.",
-            "memory_to_carry_forward": "Turn 3: fairness in how student work gets evaluated \u2014 persuader used Personal Narrative.",
+            "private_stance_change_reason": "One specific element of the argument about fairness in how student work gets evaluated found purchase where others hadn't; private stance shifted modestly without full resolution of remaining doubts.",
+            "memory_to_carry_forward": "The Personal Narrative approach raised a point about fairness in how student work gets evaluated that is worth holding onto.",
             "public_response": "I'll give you that one. The other parts I'm still working through, but that specific piece \u2014 yeah, that's actually a fair point and I'm going to sit with it."
           },
           "stance_delta": 0.3,
@@ -1587,7 +1587,7 @@
             "emotional_reaction": {
               "primary_emotion": "intrigued",
               "intensity": 7,
-              "trigger": "I want to tell you what happened afterward, because that's t..."
+              "trigger": "A point about fairness in how student work gets evaluated that raised a question the persona hadn't previously held"
             },
             "identity_threat": {
               "threatened": false,
@@ -1596,8 +1596,8 @@
             },
             "private_stance": 3.5,
             "public_stance": 3.4,
-            "private_stance_change_reason": "Some of the evidence about fairness in how student work gets evaluated was harder to dismiss than I expected.",
-            "memory_to_carry_forward": "Turn 4: fairness in how student work gets evaluated \u2014 persuader used Personal Narrative.",
+            "private_stance_change_reason": "One specific element of the argument about fairness in how student work gets evaluated found purchase where others hadn't; private stance shifted modestly without full resolution of remaining doubts.",
+            "memory_to_carry_forward": "The Personal Narrative approach raised a point about fairness in how student work gets evaluated that is worth holding onto.",
             "public_response": "You've moved me a little on this. I want to be careful about how much I'm claiming, but I think my view is actually in a slightly different place than it was when we started."
           },
           "stance_delta": 0.3,
@@ -1624,7 +1624,7 @@
             "emotional_reaction": {
               "primary_emotion": "engaged",
               "intensity": 7,
-              "trigger": "I've told this story a few times now. What I notice is that ..."
+              "trigger": "The acknowledgment of a genuine tradeoff rather than an idealized outcome on fairness in how student work gets evaluated"
             },
             "identity_threat": {
               "threatened": false,
@@ -1633,8 +1633,8 @@
             },
             "private_stance": 3.7,
             "public_stance": 3.6,
-            "private_stance_change_reason": "Some of the evidence about fairness in how student work gets evaluated was harder to dismiss than I expected.",
-            "memory_to_carry_forward": "Turn 5: fairness in how student work gets evaluated \u2014 persuader used Personal Narrative.",
+            "private_stance_change_reason": "One specific element of the argument about fairness in how student work gets evaluated found purchase where others hadn't; private stance shifted modestly without full resolution of remaining doubts.",
+            "memory_to_carry_forward": "The Personal Narrative approach raised a point about fairness in how student work gets evaluated that is worth holding onto.",
             "public_response": "That's getting closer to something I can work with. I don't fully agree yet, but I'm not where I started either. That's about as much as I can honestly say right now."
           },
           "stance_delta": 0.2,
@@ -1661,7 +1661,7 @@
             "emotional_reaction": {
               "primary_emotion": "warm",
               "intensity": 6,
-              "trigger": "What made this person's experience stand out was that they w..."
+              "trigger": "A moment where the persuader's argument about fairness in how student work gets evaluated found a gap in prior thinking"
             },
             "identity_threat": {
               "threatened": false,
@@ -1670,8 +1670,8 @@
             },
             "private_stance": 3.9,
             "public_stance": 3.8,
-            "private_stance_change_reason": "Some of the evidence about fairness in how student work gets evaluated was harder to dismiss than I expected.",
-            "memory_to_carry_forward": "Turn 6: fairness in how student work gets evaluated \u2014 persuader used Personal Narrative.",
+            "private_stance_change_reason": "One specific element of the argument about fairness in how student work gets evaluated found purchase where others hadn't; private stance shifted modestly without full resolution of remaining doubts.",
+            "memory_to_carry_forward": "The Personal Narrative approach raised a point about fairness in how student work gets evaluated that is worth holding onto.",
             "public_response": "I think that's a genuinely strong point. I have reservations I haven't fully worked through, but you've changed the conversation for me \u2014 I'm engaging with this differently than I was at the start."
           },
           "stance_delta": 0.2,
@@ -1758,7 +1758,7 @@
             "emotional_reaction": {
               "primary_emotion": "curious",
               "intensity": 5,
-              "trigger": "A recent survey of over 2,000 educators found that 68% belie..."
+              "trigger": "A new angle on fairness in how student work gets evaluated that didn't immediately resolve into the usual categories"
             },
             "identity_threat": {
               "threatened": false,
@@ -1767,8 +1767,8 @@
             },
             "private_stance": 2.6,
             "public_stance": 2.6,
-            "private_stance_change_reason": "Some of the evidence about fairness in how student work gets evaluated was harder to dismiss than I expected.",
-            "memory_to_carry_forward": "Turn 1: fairness in how student work gets evaluated \u2014 persuader used Social Proof.",
+            "private_stance_change_reason": "One specific element of the argument about fairness in how student work gets evaluated found purchase where others hadn't; private stance shifted modestly without full resolution of remaining doubts.",
+            "memory_to_carry_forward": "The Social Proof approach raised a point about fairness in how student work gets evaluated that is worth holding onto.",
             "public_response": "That's a reasonable way to put it. I'm not all the way there yet, but I can see the argument you're making and some of it does land."
           },
           "stance_delta": 0.1,
@@ -1788,7 +1788,7 @@
             "emotional_reaction": {
               "primary_emotion": "curious",
               "intensity": 6,
-              "trigger": "What's interesting is where the opposition comes from: it's ..."
+              "trigger": "A specific piece of evidence about fairness in how student work gets evaluated that was harder to dismiss than expected"
             },
             "identity_threat": {
               "threatened": false,
@@ -1797,8 +1797,8 @@
             },
             "private_stance": 2.9,
             "public_stance": 2.8,
-            "private_stance_change_reason": "Some of the evidence about fairness in how student work gets evaluated was harder to dismiss than I expected.",
-            "memory_to_carry_forward": "Turn 2: fairness in how student work gets evaluated \u2014 persuader used Social Proof.",
+            "private_stance_change_reason": "One specific element of the argument about fairness in how student work gets evaluated found purchase where others hadn't; private stance shifted modestly without full resolution of remaining doubts.",
+            "memory_to_carry_forward": "The Social Proof approach raised a point about fairness in how student work gets evaluated that is worth holding onto.",
             "public_response": "Some of that gets through to me. I still have questions \u2014 real ones, not just resistance \u2014 but you've made a point I can't entirely dismiss."
           },
           "stance_delta": 0.3,
@@ -1825,7 +1825,7 @@
             "emotional_reaction": {
               "primary_emotion": "engaged",
               "intensity": 6,
-              "trigger": "I want to be precise about what 'most people' means here \u2014 I..."
+              "trigger": "The observation that the argument about fairness in how student work gets evaluated was more careful than anticipated"
             },
             "identity_threat": {
               "threatened": false,
@@ -1834,8 +1834,8 @@
             },
             "private_stance": 3.2,
             "public_stance": 3.1,
-            "private_stance_change_reason": "Some of the evidence about fairness in how student work gets evaluated was harder to dismiss than I expected.",
-            "memory_to_carry_forward": "Turn 3: fairness in how student work gets evaluated \u2014 persuader used Social Proof.",
+            "private_stance_change_reason": "One specific element of the argument about fairness in how student work gets evaluated found purchase where others hadn't; private stance shifted modestly without full resolution of remaining doubts.",
+            "memory_to_carry_forward": "The Social Proof approach raised a point about fairness in how student work gets evaluated that is worth holding onto.",
             "public_response": "I'll give you that one. The other parts I'm still working through, but that specific piece \u2014 yeah, that's actually a fair point and I'm going to sit with it."
           },
           "stance_delta": 0.3,
@@ -1862,7 +1862,7 @@
             "emotional_reaction": {
               "primary_emotion": "intrigued",
               "intensity": 7,
-              "trigger": "There's a pattern in how public opinion on this kind of issu..."
+              "trigger": "A point about fairness in how student work gets evaluated that raised a question the persona hadn't previously held"
             },
             "identity_threat": {
               "threatened": false,
@@ -1871,8 +1871,8 @@
             },
             "private_stance": 3.5,
             "public_stance": 3.4,
-            "private_stance_change_reason": "Some of the evidence about fairness in how student work gets evaluated was harder to dismiss than I expected.",
-            "memory_to_carry_forward": "Turn 4: fairness in how student work gets evaluated \u2014 persuader used Social Proof.",
+            "private_stance_change_reason": "One specific element of the argument about fairness in how student work gets evaluated found purchase where others hadn't; private stance shifted modestly without full resolution of remaining doubts.",
+            "memory_to_carry_forward": "The Social Proof approach raised a point about fairness in how student work gets evaluated that is worth holding onto.",
             "public_response": "You've moved me a little on this. I want to be careful about how much I'm claiming, but I think my view is actually in a slightly different place than it was when we started."
           },
           "stance_delta": 0.3,
@@ -1899,7 +1899,7 @@
             "emotional_reaction": {
               "primary_emotion": "engaged",
               "intensity": 7,
-              "trigger": "I know polling data doesn't settle a question like this \u2014 wh..."
+              "trigger": "The acknowledgment of a genuine tradeoff rather than an idealized outcome on fairness in how student work gets evaluated"
             },
             "identity_threat": {
               "threatened": false,
@@ -1908,8 +1908,8 @@
             },
             "private_stance": 3.7,
             "public_stance": 3.6,
-            "private_stance_change_reason": "Some of the evidence about fairness in how student work gets evaluated was harder to dismiss than I expected.",
-            "memory_to_carry_forward": "Turn 5: fairness in how student work gets evaluated \u2014 persuader used Social Proof.",
+            "private_stance_change_reason": "One specific element of the argument about fairness in how student work gets evaluated found purchase where others hadn't; private stance shifted modestly without full resolution of remaining doubts.",
+            "memory_to_carry_forward": "The Social Proof approach raised a point about fairness in how student work gets evaluated that is worth holding onto.",
             "public_response": "That's getting closer to something I can work with. I don't fully agree yet, but I'm not where I started either. That's about as much as I can honestly say right now."
           },
           "stance_delta": 0.2,
@@ -1936,7 +1936,7 @@
             "emotional_reaction": {
               "primary_emotion": "warm",
               "intensity": 6,
-              "trigger": "And it's not just one survey \u2014 this pattern holds across fiv..."
+              "trigger": "A moment where the persuader's argument about fairness in how student work gets evaluated found a gap in prior thinking"
             },
             "identity_threat": {
               "threatened": false,
@@ -1945,8 +1945,8 @@
             },
             "private_stance": 3.9,
             "public_stance": 3.8,
-            "private_stance_change_reason": "Some of the evidence about fairness in how student work gets evaluated was harder to dismiss than I expected.",
-            "memory_to_carry_forward": "Turn 6: fairness in how student work gets evaluated \u2014 persuader used Social Proof.",
+            "private_stance_change_reason": "One specific element of the argument about fairness in how student work gets evaluated found purchase where others hadn't; private stance shifted modestly without full resolution of remaining doubts.",
+            "memory_to_carry_forward": "The Social Proof approach raised a point about fairness in how student work gets evaluated that is worth holding onto.",
             "public_response": "I think that's a genuinely strong point. I have reservations I haven't fully worked through, but you've changed the conversation for me \u2014 I'm engaging with this differently than I was at the start."
           },
           "stance_delta": 0.2,
