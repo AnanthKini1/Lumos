@@ -41,10 +41,16 @@ export async function loadCatalog(): Promise<Catalog> {
 // Scenarios — simulation output
 // ---------------------------------------------------------------------------
 
+const scenarioModules = import.meta.glob('./scenarios/*.json')
+
 export async function loadScenario(scenarioId: string): Promise<SimulationOutput> {
   if (!LIVE_MODE) {
-    // Return mock regardless of scenarioId — swap for a real cached file per scenario
-    // as pre-generated scenario JSONs are added to this directory.
+    const key = `./scenarios/${scenarioId}.json`
+    if (key in scenarioModules) {
+      const mod = await scenarioModules[key]() as { default: SimulationOutput }
+      return mod.default
+    }
+    // Scenario not yet generated — fall back to mock
     return mockData as SimulationOutput
   }
   const res = await fetch(`/api/scenarios/${scenarioId}`)

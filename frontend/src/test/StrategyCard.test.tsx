@@ -77,10 +77,10 @@ describe('StrategyCard — collapsed state', () => {
     expect(card.className).toContain('border-[#0f0f0f]')
   })
 
-  it('card has red left border for BACKFIRE', () => {
+  it('card has red border for BACKFIRE', () => {
     renderAuthority()
     const card = screen.getByTestId('strategy-card-strategy_authority_expert')
-    expect(card.className).toContain('border-l-[#dc2626]')
+    expect(card.className).toContain('border-[#dc2626]')
   })
 
   it('shows verdict_reasoning text', () => {
