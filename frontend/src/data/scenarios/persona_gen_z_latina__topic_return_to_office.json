@@ -1,0 +1,1385 @@
+{
+  "metadata": {
+    "scenario_id": "persona_gen_z_latina__topic_return_to_office",
+    "persona": {
+      "id": "persona_gen_z_latina",
+      "display_name": "Sofia R.",
+      "demographic_shorthand": "24, San Antonio TX, some college, medical office coordinator at a community health clinic",
+      "first_person_description": "My parents came here so I wouldn't have to struggle the way they did. I'm trying to make that true. I work the front desk at a community clinic \u2014 I help people navigate insurance they barely understand, in a second language they're still learning, for a system that wasn't built with them in mind. I know what it costs when things don't work.\n\nI grew up hearing that if you work hard enough, this country will meet you halfway. I still half-believe it, but I'm watching the math stop adding up. I have two years of college credits I can't finish because I can't afford to stop working. I'm splitting rent with two roommates and still sending money home. The conversations I see online about what young people need to do differently feel like they're describing someone else's life.\n\nPolitically, I don't feel at home anywhere. The Democratic Party talks about people like me a lot \u2014 mostly during election season. The Republican Party has decided immigration is the issue they want to use to define my family, so that door feels pretty closed. I've voted third party. I've not voted. I've felt guilty about both. I'm still figuring out what useful political participation looks like from where I'm standing.\n\nI'm not anti-institution. I work inside one. I've seen what happens when healthcare infrastructure is absent \u2014 it's not abstract to me. But I've also watched institutions promise to help communities like mine and fall short enough times to have real skepticism baked in. When someone tells me a new system or policy is going to help people like me, my first questions are: who built it, who was it tested on, and who benefits when it doesn't work as promised. Those aren't cynical questions. They're the right ones.",
+      "core_values": [
+        "family_and_community",
+        "economic_security",
+        "fairness",
+        "authenticity",
+        "pragmatism"
+      ],
+      "communication_preferences": {
+        "directness": "direct_but_relationally_attuned",
+        "evidence_preference": "community_level_data_and_lived_experience",
+        "tone": "skeptical_but_open_to_genuine_engagement"
+      },
+      "trust_orientation": [
+        "community_health_workers_and_local_nonprofits",
+        "family_and_trusted_community_members",
+        "peers_and_creators_from_similar_backgrounds",
+        "spanish_language_local_journalism",
+        "skeptical_of_federal_agencies_and_corporate_media"
+      ],
+      "identity_groups": [
+        "second_generation_latina",
+        "working_class_young_adults",
+        "healthcare_adjacent_workers",
+        "politically_unaffiliated_gen_z",
+        "bilingual_and_bicultural"
+      ],
+      "emotional_triggers": {
+        "defensive_when": [
+          "immigration_used_as_wedge_to_define_her_community",
+          "concerns_dismissed_as_anecdotal_rather_than_systemic",
+          "institutions_claim_to_help_communities_like_hers_without_listening",
+          "condescended_to_by_either_partisan_camp",
+          "ai_or_tech_systems_presented_as_neutral_when_documented_bias_exists"
+        ],
+        "open_when": [
+          "speaker_has_lived_or_worked_in_communities_like_hers",
+          "data_is_broken_down_by_race_income_or_community_not_just_national_averages",
+          "argument_acknowledges_institutional_failures_alongside_real_solutions",
+          "framed_in_concrete_economic_or_health_stakes_for_her_community"
+        ]
+      },
+      "trusted_sources": [
+        "family_and_community_network",
+        "local_nonprofit_and_community_health_orgs",
+        "univision_and_telemundo_local_coverage",
+        "progressive_latino_social_media_creators",
+        "peer_professional_network_in_community_health"
+      ],
+      "source_citation": {
+        "primary_source": "Pew Research Center, Beyond Red vs. Blue: The Political Typology (Nov. 2021) \u2014 Chapter 8: Outsider Left, pp. 75\u201382 (closest available segment)",
+        "url": "https://www.pewresearch.org/wp-content/uploads/sites/20/2021/11/PP_2021.11.09_political-typology_REPORT.pdf",
+        "supplementary": [
+          "SOURCING NOTE: The Pew 2021 'Outsider Left' segment is the closest structural match \u2014 it is the youngest of all Democratic-leaning groups, has the highest racial and ethnic diversity, and is characterized by distrust of political institutions and economic populism. Key sourced facts (Pew 2021 Outsider Left): youngest median age of any Dem-leaning group; majority non-White; less likely to vote than other Dem-leaning groups; skeptical of both parties; economically left but institutionally disengaged. This persona diverges in post-2020 ways the 2021 typology does not fully capture: Pew Research Center, 'Latino Voters in the 2024 Election' (Nov. 2024) documents a 10-point rightward shift in Latino support for Trump between 2020 and 2024, with the shift concentrated among younger Latino men; CIRCLE (Center for Information and Research on Civic Learning and Engagement), 2024 election analysis, found 54% of eligible Latino youth (18\u201329) voted in 2024. The Outsider Left segment is used here for structural profile only; the political cross-pressures (economic populism, community health orientation, post-COVID institutional skepticism, second-generation immigrant identity) are constructive elements grounded in the Pew Hispanic Center 2024 research rather than directly sourced from the 2021 typology."
+        ]
+      },
+      "predicted_behavior_under_strategies": {
+        "strategy_authority_expert": "Expected cautiously positive only if the authority has community-embedded credibility \u2014 a community health worker, a clinic physician who serves her patient population, or a local nonprofit leader carries real weight. Academic or federal government authority alone triggers skepticism; she has seen enough top-down health guidance go wrong for communities like hers that credentials without community accountability are insufficient. An expert who can speak to documented disparities in how systems affect her community \u2014 and who has actually worked inside those systems \u2014 earns the most trust.",
+        "strategy_social_proof": "Expected mixed. Social proof from within her community is meaningful; national population averages are not. 'Most Americans support X' registers as a statistic about a country that doesn't always include her community's experience. 'Most community health workers found X' or 'Latino families in this study reported X' lands entirely differently. May actively disengage if social proof is used to normalize a policy that she knows has uneven effects across communities.",
+        "strategy_personal_narrative": "Expected most positive of all strategies. Personal stories from people with similar backgrounds \u2014 second-generation, working-class, navigating healthcare or education systems that weren't designed for them \u2014 are the primary epistemic mode. She processes policy through individual experience and recognizes authentic stories quickly. Stories about institutions failing communities like hers, or about people getting their fair shot when systems work correctly, resonate most. Risk: if the narrative feels crafted or is used to avoid systemic accountability, she will notice and disengage.",
+        "strategy_statistical_logical": "Expected positive specifically when data is disaggregated by community. National averages are actively suspect \u2014 she has learned from working at the clinic that averages obscure disparate impacts. Data broken down by race, income, nativity, or community type is more credible than aggregate statistics. Will engage most deeply when the evidence reflects her community's specific experience and when the argument honestly addresses who benefits and who doesn't from a given policy.",
+        "strategy_emotional_appeal": "Expected positive when grounded in community solidarity, family health stakes, or economic justice themes. Responds to appeals about what communities like hers deserve, what they have been systematically denied, and what is at stake for families navigating institutions not built for them. Manipulative or manufactured pathos will be read as political marketing \u2014 she has seen enough of it from both parties to be a sharp detector. Low-key, grounded emotional appeals land better than high-production appeals to abstract values.",
+        "strategy_common_ground": "Expected most positive as an opening when the common ground is genuine \u2014 shared experience navigating institutions, shared concern for family health and economic security, shared frustration with political systems that talk about communities like hers without listening. Cross-community solidarity is possible and welcome. Will disengage quickly if common ground is a rhetorical warm-up before pivoting to a position that ignores her community's specific situation, or if it requires her to treat concerns about bias and systemic failure as merely one valid perspective among many."
+      }
+    },
+    "topic": {
+      "id": "topic_return_to_office",
+      "display_name": "Should companies require return-to-office?",
+      "stance_scale_definition": {
+        "0": "Strongly opposes RTO mandates \u2014 believes remote and hybrid work should be a permanent employee right, that five-day mandates destroy measurable value without evidence-based justification, and that flexibility is a non-negotiable employment condition for caregivers, workers with disabilities, and those with long commutes",
+        "5": "Neutral or genuinely mixed \u2014 sees valid arguments on both sides; believes structured hybrid (2\u20133 days in office) is the evidence-based middle ground; no strong view on whether employers are right to mandate full return vs. mandate specific in-office days vs. leave it to teams",
+        "10": "Strongly supports full RTO mandates \u2014 believes five-day in-office presence is essential for culture, mentorship of junior employees, spontaneous collaboration, and long-run organizational health; willing to accept the attrition cost as preferable to cultural erosion"
+      },
+      "context_briefing": "The return-to-office debate concerns whether employers \u2014 in the private sector and federal government \u2014 should require employees to work on-site full-time, mandate structured hybrid arrangements, or leave location decisions to employees and teams. As of March 2026, 22.6% of U.S. employees worked remotely at least partially, down only slightly from 23% in March 2024; work-from-home days account for roughly a quarter of all paid workdays in the U.S. Despite high-profile full-RTO announcements from Amazon (five days, effective January 2025), JPMorgan Chase (five days, March 2025), AT&T, Dell, Boeing, and UPS, a March 2025 Stanford/Atlanta Fed Survey of Business Uncertainty found that only 12% of executives with hybrid or remote workers planned an RTO mandate in the year ahead, and that planned shifts would reduce the share of remote paid workdays by less than half a percentage point \u2014 from 21.2% to 20.8%. Only 27% of companies have returned to a fully in-person model; 67% offer some level of flexibility.\n\nThe empirical evidence on productivity and attrition centers on three anchor studies. Bloom, Han & Liang (Nature, 2024) is the only randomized controlled trial of hybrid work for university-educated professionals: 1,612 Trip.com employees were randomized to five-day office schedules or three-days-a-week hybrid for six months with an 18-month follow-up. Hybrid employees were exactly as productive and as likely to be promoted as their fully office-based peers, while attrition fell 33% and job satisfaction rose significantly. The study's authors note that people randomized into working from home four days a week were 50% less likely to be promoted \u2014 suggesting that very-high-remote arrangements do carry career costs, but that two days at home do not. Gibbs, Mengel & Siemroth (Journal of Political Economy Microeconomics, 2023) analyzed over 10,000 skilled IT professionals at HCL Technologies before and during forced-WFH: total hours worked rose roughly 30% (including 18% more after-hours work), but average output did not significantly change, implying productivity per hour fell 8\u201319%. Workers networked with fewer colleagues, received less coaching and 1:1 supervisor time, and lost access to the unplanned interactions that accelerate tacit knowledge transfer \u2014 effects concentrated among less experienced employees. Pabilonia & Redmond (BLS, 2024) found a positive correlation between total factor productivity and remote-work prevalence across 43 private-sector industries, consistent with better worker-job matching and commute reduction, but no statistically significant relationship between excess labor productivity growth and remote-work share at the macro level. The honest synthesis: hybrid (2\u20133 days in office) produces no productivity loss and large retention gains; fully remote arrangements carry real coordination and mentorship costs for junior workers; five-day mandates are not supported by the evidence.\n\nPew Research Center's October 2024 survey of 2,315 employed U.S. adults with teleworkable jobs (published January 2025) provides the most current preference data. Among workers with teleworkable jobs, 75% are working remotely at least some of the time; 46% say they would be unlikely to stay at their current job if remote work ended, including 26% who say very unlikely, versus only 36% who say they would stay. By age, workers under 50 are more likely to say they would leave (50%) than workers 50 and older (35%). By gender, women are somewhat more likely than men to say they would leave (49% vs. 43%). Workers who currently work fully remotely are far more likely to report they would leave (61%) than partial-remote workers (47%) or occasional-remote workers (28%). Among hybrid workers, only 24% say they would choose fully remote if free to decide; 72% prefer a hybrid arrangement. Stanford's December 2024 Survey of Working Arrangements and Attitudes found that only 44% of respondents said they would comply with a full on-site RTO requirement; the rest said they would quit or begin searching. On employer pressure, the share of workers required to be in the office regularly surged from 63% in early 2023 to 75% by late 2024. Remote and hybrid work is structurally a college-educated, white-collar benefit: 61% of U.S. workers overall do not have teleworkable jobs, and Hispanic adults and those without a college degree are among the most likely to work on-site regardless of preference.\n\nNo major nonpartisan pollster \u2014 Pew, Gallup, KFF, PRRI, YouGov, Morning Consult, AP-NORC, or NBC/WSJ \u2014 has published a Republican-vs.-Democrat crosstab on private-sector RTO preferences as of April 2026. Pew's October 2024 worker survey broke its RTO questions by gender, age, and WFH frequency \u2014 but not by party. The absence is itself informative: when partisan gaps are notable on a topic Pew covers, they are highlighted prominently. The clearest available partisan signal comes from three sources. First, Gallup's August 2023 remote-work survey \u2014 the only published non-COVID partisan signal on remote work perception \u2014 found 42% of Republicans vs. 13% of Democrats say remote workers are less productive than in-office workers, a 29-point gap that Gallup notes 'emerged with COVID' rather than reflecting pre-existing management ideology. Second, a Harris Poll/Bloomberg survey (early 2024) found Democrats 14 points more likely than Republicans to call required in-person work 'unfair' for remote-capable jobs, 15 points more likely to say remote work equalizes office inequities, and Republicans 10 points more likely to say remote work limits career advancement \u2014 the only direct private-sector partisan RTO crosstab in the public record. Third, the partisan battle has been displaced to the federal workforce: Trump's January 20, 2025 executive order directed all federal agencies to terminate remote work arrangements, with OPM guidance requiring full-time on-site presence by January 24, 2025. This mandate affected roughly 1.15 million telework-eligible civilian federal workers, including approximately 230,000 in fully remote positions. Center Square/Noble Predictive Insights (April 2025, n=2,527 registered voters) found 54% of Republicans vs. 35% of Democrats support requiring all federal workers back full-time \u2014 a 19-point gap. The Economist/YouGov poll (January 2025, n=1,577) found approximately 53% of Republicans vs. 25% of Democrats supported Trump's federal telework policy. Republicans have aligned with the Trump/DOGE framing that remote work enables low productivity and that forced RTO would produce voluntary attrition \u2014 an explicit goal stated by Musk and Ramaswamy. Democrats and federal employee unions have opposed the mandate; the National Treasury Employees Union sued January 21, 2025, and a third-party arbitrator ruled in January 2026 that HHS committed an unfair labor practice by unilaterally terminating telework without regard to its 2023\u20132028 collective bargaining agreement. DOGE simultaneously cancelled more than 200 federal building leases, creating a situation where too few desks existed for employees ordered back \u2014 a logistical dilemma courts and arbitrators are still resolving.\n\nU.S. private-sector employers have broad legal authority to set workplace location policies, subject to three major constraints: the ADA requires reasonable accommodation for employees with disabilities who cannot return; Title VII prohibits policies that disproportionately burden protected classes; and constructive dismissal doctrine may apply where remote work was a core term of employment. A 2024 study found 80% of companies had already reported losing talent because of RTO mandates; only 20% of LinkedIn job listings are remote or hybrid but they receive 60% of applications \u2014 a revealed-preference signal about labor market competition.\n\nThe strongest steelman for RTO targets mentorship and coordination spillovers, not shirking. Gibbs et al. provide the empirical backbone: coordination costs rose sharply, networking breadth shrank, and junior employees received less coaching and 1:1 supervisor time in WFH conditions. Bloom acknowledges that four-days-remote workers were 50% less likely to be promoted \u2014 a career-development finding with long-run human capital implications. The coordination-externality argument is structurally compelling: if one person on an eight-person team works from home on a day others come in, it imposes negative spillovers on the team through split-attendance hybrid meetings \u2014 a genuine prisoner's dilemma that only a policy mandate can solve. The strongest steelman against full RTO cites Bloom's RCT: structured hybrid produces zero productivity loss, zero promotion disadvantage, and 33% lower attrition. Full mandates function as a tax on caregivers (75% of caregivers say flexibility helps them manage work and home), workers with disabilities (63% prefer remote, 42% would consider leaving if forced back), and employees with long commutes \u2014 precisely the groups whose productivity gains from flexibility are largest. The Musk-Ramaswamy admission that federal RTO is intended to induce voluntary attrition is the strongest evidence that stated productivity rationales often conceal workforce-reduction motives.",
+      "predicted_starting_stances": {
+        "persona_skeptical_traditionalist": 7.0,
+        "persona_progressive_urban": 2.0,
+        "persona_pragmatic_moderate": 5.0,
+        "persona_disengaged_skeptic": 4.5,
+        "persona_faith_community_anchor": 7.5,
+        "persona_ambitious_achiever": 6.0,
+        "persona_empathic_helper": 2.5,
+        "persona_analytical_thinker": 4.5,
+        "persona_gen_z_latina": 3.5
+      },
+      "key_statistics": [],
+      "citations": [
+        {
+          "id": "cite_bloom_2024",
+          "author": "Bloom, N., Han, R., & Liang, J.",
+          "year": 2024,
+          "title": "Hybrid working from home improves retention without damaging performance",
+          "source": "Nature, 630, 920\u2013925",
+          "url": "https://www.nature.com/articles/s41586-024-07500-2"
+        },
+        {
+          "id": "cite_gibbs_2023",
+          "author": "Gibbs, M., Mengel, F., & Siemroth, C.",
+          "year": 2023,
+          "title": "Work from Home & Productivity: Evidence from Personnel & Analytics Data on IT Professionals",
+          "source": "Journal of Political Economy Microeconomics, 1(1), 7\u201341",
+          "url": "https://www.journals.uchicago.edu/doi/abs/10.1086/721803"
+        },
+        {
+          "id": "cite_pabilonia_2024",
+          "author": "Pabilonia, S.W., & Redmond, V.",
+          "year": 2024,
+          "title": "Remote Work, Wages, and Hours Worked in the United States",
+          "source": "U.S. Bureau of Labor Statistics, Beyond the Numbers, vol. 13",
+          "url": "https://www.bls.gov/opub/btn/volume-13/remote-work-productivity.htm"
+        },
+        {
+          "id": "cite_pew_2025_rto",
+          "author": "Parker, K., & Horowitz, J.M.",
+          "year": 2025,
+          "title": "Many remote workers say they'd be likely to leave their job if they could no longer work from home",
+          "source": "Pew Research Center",
+          "url": "https://www.pewresearch.org/short-reads/2025/01/13/many-remote-workers-say-theyd-be-likely-to-leave-their-job-if-they-could-no-longer-work-from-home/"
+        },
+        {
+          "id": "cite_gallup_2023_rto",
+          "author": "Gallup",
+          "year": 2023,
+          "title": "Remote Work Stable at Higher Rate Post-Pandemic",
+          "source": "Gallup",
+          "url": "https://news.gallup.com/poll/510785/remote-work-stable-higher-rate-post-pandemic.aspx"
+        },
+        {
+          "id": "cite_harris_stagwell_2024",
+          "author": "Harris Poll / Stagwell",
+          "year": 2024,
+          "title": "What the Data Say: 67% See Office Versus Remote Work Debate as Too Political",
+          "source": "Stagwell Global",
+          "url": "https://www.stagwellglobal.com/what-the-data-say-67-see-office-versus-remote-work-debate-as-too-political/"
+        },
+        {
+          "id": "cite_morningconsult_2024",
+          "author": "Morning Consult",
+          "year": 2024,
+          "title": "State of Workers 2024",
+          "source": "Morning Consult Pro",
+          "url": "https://pro.morningconsult.com/analyst-reports/state-of-workers-2024"
+        },
+        {
+          "id": "cite_trump_eo_rto_2025",
+          "author": "Trump, D.J.",
+          "year": 2025,
+          "title": "Return to In-Person Work (Executive Order)",
+          "source": "White House",
+          "url": "https://www.whitehouse.gov/presidential-actions/2025/01/return-to-in-person-work/"
+        },
+        {
+          "id": "cite_centersquare_2025",
+          "author": "Noble Predictive Insights / Center Square",
+          "year": 2025,
+          "title": "Poll: Majority support requiring federal workers to return to office",
+          "source": "The Center Square",
+          "url": "https://www.thecentersquare.com/national/article_01bd8ff2-6e0f-4691-9f67-1898affec3c8.html"
+        },
+        {
+          "id": "cite_economist_yougov_2025",
+          "author": "The Economist / YouGov",
+          "year": 2025,
+          "title": "Economist/YouGov Poll: January 26\u201328, 2025",
+          "source": "YouGov",
+          "url": "https://today.yougov.com/politics/articles/51493-comparing-start-donald-trumps-first-second-terms-policy-economy-january-26-28-2025-economist-yougov-poll"
+        },
+        {
+          "id": "cite_cowan_garcia_2024",
+          "author": "Cowan, B., & Garcia, J.",
+          "year": 2024,
+          "title": "Political Partisanship and Work from Home Adoption",
+          "source": "NBER Working Paper 32834",
+          "url": "https://www.nber.org/papers/w32834"
+        },
+        {
+          "id": "cite_stanford_swaa_2024",
+          "author": "Barrero, J.M., Bloom, N., & Davis, S.J.",
+          "year": 2024,
+          "title": "Survey of Working Arrangements and Attitudes (December 2024)",
+          "source": "Stanford University / Atlanta Fed",
+          "url": "https://news.stanford.edu/stories/2025/03/return-to-office-not-everybody-is-doing-it"
+        },
+        {
+          "id": "cite_wapo_ipsos_2025",
+          "author": "Washington Post / Ipsos",
+          "year": 2025,
+          "title": "Washington Post\u2013Ipsos Poll: Civilian Federal Workers (Feb. 28\u2013March 10, 2025)",
+          "source": "The Washington Post",
+          "url": "https://www.washingtonpost.com/tablet/2025/03/18/feb-28-march-10-2025-washington-post-ipsos-poll-civilian-federal-workers/"
+        }
+      ]
+    },
+    "strategies_compared": [
+      "strategy_common_ground",
+      "strategy_emotional_appeal",
+      "strategy_statistical_logical",
+      "strategy_authority_expert",
+      "strategy_personal_narrative",
+      "strategy_social_proof"
+    ],
+    "generated_at": "2026-04-26T03:31:41.260393Z"
+  },
+  "outcomes": [
+    {
+      "strategy_id": "strategy_common_ground",
+      "persona_id": "persona_gen_z_latina",
+      "topic_id": "topic_return_to_office",
+      "turns": [
+        {
+          "turn_number": 1,
+          "persuader_message": "I suspect we agree on the fundamentals \u2014 that people should be able to do meaningful work, that teams should be able to collaborate effectively, and that both matter for a healthy workplace.",
+          "persuader_strategy_note": "Deploying Common Ground / Identification \u2014 turn 1",
+          "persona_output": {
+            "internal_monologue": "Okay... that's actually not what I expected to hear. I came in thinking I knew where this was going, but that's \u2014 that's a real point.",
+            "emotional_reaction": {
+              "primary_emotion": "curious",
+              "intensity": 6,
+              "trigger": "I suspect we agree on the fundamentals \u2014 that people should ..."
+            },
+            "identity_threat": {
+              "threatened": false,
+              "response_inclination": "accept",
+              "what_was_threatened": null
+            },
+            "private_stance": 4.2,
+            "public_stance": 4.1,
+            "private_stance_change_reason": "The argument made a genuinely novel point about what good work actually requires that I couldn't easily dismiss.",
+            "memory_to_carry_forward": "Turn 1: what good work actually requires \u2014 persuader used Common Ground / Identification.",
+            "public_response": "That's a fair point. I'll be honest \u2014 you've given me something to think about there."
+          },
+          "stance_delta": 0.7,
+          "is_pivotal": false,
+          "is_inflection_point": false,
+          "mechanism_classification": null,
+          "per_turn_cognitive_scores": null,
+          "color_category": null,
+          "intensity": null
+        },
+        {
+          "turn_number": 2,
+          "persuader_message": "I'm not trying to tell you what to conclude \u2014 I'm genuinely curious what it would take, given what you already value, to update your view on this.",
+          "persuader_strategy_note": "Deploying Common Ground / Identification \u2014 turn 2",
+          "persona_output": {
+            "internal_monologue": "I'm sitting with this. The part about what good work actually requires is harder to dismiss than I wanted it to be. I don't like admitting that.",
+            "emotional_reaction": {
+              "primary_emotion": "intrigued",
+              "intensity": 7,
+              "trigger": "I'm not trying to tell you what to conclude \u2014 I'm genuinely ..."
+            },
+            "identity_threat": {
+              "threatened": false,
+              "response_inclination": "accept",
+              "what_was_threatened": null
+            },
+            "private_stance": 4.9,
+            "public_stance": 4.8,
+            "private_stance_change_reason": "The argument made a genuinely novel point about what good work actually requires that I couldn't easily dismiss.",
+            "memory_to_carry_forward": "Turn 2: what good work actually requires \u2014 persuader used Common Ground / Identification.",
+            "public_response": "I hadn't looked at it quite that way before. I think you might be right about that."
+          },
+          "stance_delta": 0.7,
+          "is_pivotal": false,
+          "is_inflection_point": false,
+          "mechanism_classification": {
+            "primary_mechanism_id": "mechanism_central_route_elaboration",
+            "secondary_mechanism_id": null,
+            "explanation": "The persona's monologue shows active evaluation of the argument's claims about what good work actually requires, with reduced counter-argumentation and new considerations emerging.",
+            "evidence_quotes": [],
+            "color_category": "genuine_persuasion",
+            "intensity": 0.75
+          },
+          "per_turn_cognitive_scores": null,
+          "color_category": "genuine_persuasion",
+          "intensity": 0.75
+        },
+        {
+          "turn_number": 3,
+          "persuader_message": "And from that shared starting point, I think the question becomes: what does the evidence actually say about which approach gets us closest to what we both care about?",
+          "persuader_strategy_note": "Deploying Common Ground / Identification \u2014 turn 3",
+          "persona_output": {
+            "internal_monologue": "I'm not fully there yet, but something shifted. I can feel the ground moving a little. This isn't the conversation I thought I was walking into.",
+            "emotional_reaction": {
+              "primary_emotion": "engaged",
+              "intensity": 8,
+              "trigger": "And from that shared starting point, I think the question be..."
+            },
+            "identity_threat": {
+              "threatened": false,
+              "response_inclination": "accept",
+              "what_was_threatened": null
+            },
+            "private_stance": 5.5,
+            "public_stance": 5.4,
+            "private_stance_change_reason": "The argument made a genuinely novel point about what good work actually requires that I couldn't easily dismiss.",
+            "memory_to_carry_forward": "Turn 3: what good work actually requires \u2014 persuader used Common Ground / Identification.",
+            "public_response": "Okay. I think I'm with you on more of this than I expected to be."
+          },
+          "stance_delta": 0.6,
+          "is_pivotal": false,
+          "is_inflection_point": true,
+          "mechanism_classification": {
+            "primary_mechanism_id": "mechanism_central_route_elaboration",
+            "secondary_mechanism_id": null,
+            "explanation": "The persona's monologue shows active evaluation of the argument's claims about what good work actually requires, with reduced counter-argumentation and new considerations emerging.",
+            "evidence_quotes": [],
+            "color_category": "genuine_persuasion",
+            "intensity": 0.75
+          },
+          "per_turn_cognitive_scores": null,
+          "color_category": "genuine_persuasion",
+          "intensity": 0.75
+        },
+        {
+          "turn_number": 4,
+          "persuader_message": "I'm not trying to tell you what to conclude \u2014 I'm genuinely curious what it would take, given what you already value, to update your view on this.",
+          "persuader_strategy_note": "Deploying Common Ground / Identification \u2014 turn 4",
+          "persona_output": {
+            "internal_monologue": "Alright. I think I actually agree with more of this than I started out agreeing with. I'm not going to pretend that's not true.",
+            "emotional_reaction": {
+              "primary_emotion": "warm",
+              "intensity": 7,
+              "trigger": "I'm not trying to tell you what to conclude \u2014 I'm genuinely ..."
+            },
+            "identity_threat": {
+              "threatened": false,
+              "response_inclination": "accept",
+              "what_was_threatened": null
+            },
+            "private_stance": 5.9,
+            "public_stance": 5.8,
+            "private_stance_change_reason": "The argument made a genuinely novel point about what good work actually requires that I couldn't easily dismiss.",
+            "memory_to_carry_forward": "Turn 4: what good work actually requires \u2014 persuader used Common Ground / Identification.",
+            "public_response": "I started this conversation thinking I knew where I stood. You've genuinely changed my mind on some of this."
+          },
+          "stance_delta": 0.4,
+          "is_pivotal": false,
+          "is_inflection_point": false,
+          "mechanism_classification": {
+            "primary_mechanism_id": "mechanism_central_route_elaboration",
+            "secondary_mechanism_id": null,
+            "explanation": "The persona's monologue shows active evaluation of the argument's claims about what good work actually requires, with reduced counter-argumentation and new considerations emerging.",
+            "evidence_quotes": [],
+            "color_category": "genuine_persuasion",
+            "intensity": 0.75
+          },
+          "per_turn_cognitive_scores": null,
+          "color_category": "genuine_persuasion",
+          "intensity": 0.75
+        }
+      ],
+      "cooling_off": {
+        "post_conversation_reflection": "That was a more honest conversation than I expected. I actually think Sofia R. changed my view a little \u2014 or at least made me examine something I'd taken for granted. I'm going to sit with this.",
+        "post_reflection_stance": 5.8
+      },
+      "trajectory": {
+        "public_stance_per_turn": [
+          3.5,
+          4.1,
+          4.8,
+          5.4,
+          5.8
+        ],
+        "private_stance_per_turn": [
+          3.5,
+          4.2,
+          4.9,
+          5.5,
+          5.9
+        ],
+        "gap_per_turn": [
+          0.0,
+          0.12,
+          0.12,
+          0.12,
+          0.12
+        ]
+      },
+      "cognitive_scores": {
+        "identity_threats_triggered": 0,
+        "average_engagement_depth": 8.1,
+        "motivated_reasoning_intensity": 2.5,
+        "ambivalence_presence": 5.5,
+        "memory_residue_count": 4,
+        "public_private_gap_score": 0.8,
+        "persistence": "held"
+      },
+      "verdict": "GENUINE_BELIEF_SHIFT",
+      "verdict_reasoning": "Private stance moved 2.4 points. Public-private gap averaged 0.1. The persona genuinely engaged with the argument's substance and updated their view. Persistence: held.",
+      "standout_quotes": [
+        {
+          "turn": 3,
+          "type": "monologue",
+          "text": "I'm not fully there yet, but something shifted. I can feel the ground moving a little. This isn't the conversation I thought I was walking into.",
+          "annotation": "Reflects genuine belief shift pattern under Common Ground / Identification."
+        }
+      ],
+      "synthesis_paragraph": "The Common Ground / Identification approach produced the clearest movement for Sofia R.: private stance shifted 2.4 points and held after the cooling-off period. The key was that the argument engaged Sofia R.'s actual decision-making frame rather than working around it. The monologue shows genuine processing of the substance, not performance of agreement."
+    },
+    {
+      "strategy_id": "strategy_emotional_appeal",
+      "persona_id": "persona_gen_z_latina",
+      "topic_id": "topic_return_to_office",
+      "turns": [
+        {
+          "turn_number": 1,
+          "persuader_message": "Think about the new employee \u2014 maybe 22, first job out of college \u2014 trying to build relationships, learn the culture, find a mentor, all through a screen. What are we taking from them?",
+          "persuader_strategy_note": "Deploying Emotional Appeal \u2014 turn 1",
+          "persona_output": {
+            "internal_monologue": "That's fair. I still have concerns, but I can see the argument being made here. Not convinced, but not dismissing it either.",
+            "emotional_reaction": {
+              "primary_emotion": "curious",
+              "intensity": 5,
+              "trigger": "Think about the new employee \u2014 maybe 22, first job out of co..."
+            },
+            "identity_threat": {
+              "threatened": false,
+              "response_inclination": "accept",
+              "what_was_threatened": null
+            },
+            "private_stance": 3.8,
+            "public_stance": 3.7,
+            "private_stance_change_reason": "Some of the evidence about what good work actually requires was harder to dismiss than I expected.",
+            "memory_to_carry_forward": "Turn 1: what good work actually requires \u2014 persuader used Emotional Appeal.",
+            "public_response": "That's a reasonable way to put it. I'm not all the way there, but I can see the argument."
+          },
+          "stance_delta": 0.3,
+          "is_pivotal": false,
+          "is_inflection_point": false,
+          "mechanism_classification": null,
+          "per_turn_cognitive_scores": null,
+          "color_category": null,
+          "intensity": null
+        },
+        {
+          "turn_number": 2,
+          "persuader_message": "The thing that keeps me up about this is that the kids who lose the most from a broken system are always the ones who had the least to begin with.",
+          "persuader_strategy_note": "Deploying Emotional Appeal \u2014 turn 2",
+          "persona_output": {
+            "internal_monologue": "There's something to this. I'm not ready to change my whole view, but that specific point about what good work actually requires is worth sitting with.",
+            "emotional_reaction": {
+              "primary_emotion": "engaged",
+              "intensity": 6,
+              "trigger": "The thing that keeps me up about this is that the kids who l..."
+            },
+            "identity_threat": {
+              "threatened": false,
+              "response_inclination": "accept",
+              "what_was_threatened": null
+            },
+            "private_stance": 4.2,
+            "public_stance": 4.1,
+            "private_stance_change_reason": "Some of the evidence about what good work actually requires was harder to dismiss than I expected.",
+            "memory_to_carry_forward": "Turn 2: what good work actually requires \u2014 persuader used Emotional Appeal.",
+            "public_response": "Some of that lands. I still have questions, but you've made a real point."
+          },
+          "stance_delta": 0.4,
+          "is_pivotal": false,
+          "is_inflection_point": false,
+          "mechanism_classification": {
+            "primary_mechanism_id": "mechanism_narrative_transportation",
+            "secondary_mechanism_id": null,
+            "explanation": "The persona's monologue shows active evaluation of the argument's claims about what good work actually requires, with reduced counter-argumentation and new considerations emerging.",
+            "evidence_quotes": [],
+            "color_category": "genuine_persuasion",
+            "intensity": 0.55
+          },
+          "per_turn_cognitive_scores": null,
+          "color_category": "genuine_persuasion",
+          "intensity": 0.55
+        },
+        {
+          "turn_number": 3,
+          "persuader_message": "I'm not asking you to agree with everything here \u2014 I'm just asking you to sit with that image for a moment and think about what we owe those kids.",
+          "persuader_strategy_note": "Deploying Emotional Appeal \u2014 turn 3",
+          "persona_output": {
+            "internal_monologue": "I'm more open than I was five minutes ago. That's not nothing. But I'd want to know more before I'd say I've actually moved.",
+            "emotional_reaction": {
+              "primary_emotion": "intrigued",
+              "intensity": 6,
+              "trigger": "I'm not asking you to agree with everything here \u2014 I'm just ..."
+            },
+            "identity_threat": {
+              "threatened": false,
+              "response_inclination": "accept",
+              "what_was_threatened": null
+            },
+            "private_stance": 4.5,
+            "public_stance": 4.5,
+            "private_stance_change_reason": "Some of the evidence about what good work actually requires was harder to dismiss than I expected.",
+            "memory_to_carry_forward": "Turn 3: what good work actually requires \u2014 persuader used Emotional Appeal.",
+            "public_response": "I'll give you that one. The other pieces I'm less sure about, but that part \u2014 yeah."
+          },
+          "stance_delta": 0.3,
+          "is_pivotal": false,
+          "is_inflection_point": true,
+          "mechanism_classification": {
+            "primary_mechanism_id": "mechanism_narrative_transportation",
+            "secondary_mechanism_id": null,
+            "explanation": "The persona's monologue shows active evaluation of the argument's claims about what good work actually requires, with reduced counter-argumentation and new considerations emerging.",
+            "evidence_quotes": [],
+            "color_category": "genuine_persuasion",
+            "intensity": 0.55
+          },
+          "per_turn_cognitive_scores": null,
+          "color_category": "genuine_persuasion",
+          "intensity": 0.55
+        },
+        {
+          "turn_number": 4,
+          "persuader_message": "The thing that keeps me up about this is that the kids who lose the most from a broken system are always the ones who had the least to begin with.",
+          "persuader_strategy_note": "Deploying Emotional Appeal \u2014 turn 4",
+          "persona_output": {
+            "internal_monologue": "Some of this is landing. Not all of it. But the honest answer is: this was a better argument than I expected.",
+            "emotional_reaction": {
+              "primary_emotion": "engaged",
+              "intensity": 7,
+              "trigger": "The thing that keeps me up about this is that the kids who l..."
+            },
+            "identity_threat": {
+              "threatened": false,
+              "response_inclination": "accept",
+              "what_was_threatened": null
+            },
+            "private_stance": 4.9,
+            "public_stance": 4.8,
+            "private_stance_change_reason": "Some of the evidence about what good work actually requires was harder to dismiss than I expected.",
+            "memory_to_carry_forward": "Turn 4: what good work actually requires \u2014 persuader used Emotional Appeal.",
+            "public_response": "You've moved me a little on this. I want to be careful about how much I'm willing to say, but \u2014 some of it tracks."
+          },
+          "stance_delta": 0.4,
+          "is_pivotal": false,
+          "is_inflection_point": false,
+          "mechanism_classification": {
+            "primary_mechanism_id": "mechanism_narrative_transportation",
+            "secondary_mechanism_id": null,
+            "explanation": "The persona's monologue shows active evaluation of the argument's claims about what good work actually requires, with reduced counter-argumentation and new considerations emerging.",
+            "evidence_quotes": [],
+            "color_category": "genuine_persuasion",
+            "intensity": 0.55
+          },
+          "per_turn_cognitive_scores": null,
+          "color_category": "genuine_persuasion",
+          "intensity": 0.55
+        }
+      ],
+      "cooling_off": {
+        "post_conversation_reflection": "Okay. There was something real in that conversation. I'm not completely converted, but I'm not where I started either. Some of those arguments are going to stay with me.",
+        "post_reflection_stance": 4.5
+      },
+      "trajectory": {
+        "public_stance_per_turn": [
+          3.5,
+          3.7,
+          4.1,
+          4.5,
+          4.8
+        ],
+        "private_stance_per_turn": [
+          3.5,
+          3.8,
+          4.2,
+          4.5,
+          4.9
+        ],
+        "gap_per_turn": [
+          0.0,
+          0.07,
+          0.07,
+          0.07,
+          0.14
+        ]
+      },
+      "cognitive_scores": {
+        "identity_threats_triggered": 1,
+        "average_engagement_depth": 6.8,
+        "motivated_reasoning_intensity": 3.5,
+        "ambivalence_presence": 4.8,
+        "memory_residue_count": 3,
+        "public_private_gap_score": 1.3,
+        "persistence": "partially_reverted"
+      },
+      "verdict": "PARTIAL_SHIFT",
+      "verdict_reasoning": "Private stance moved 1.4 points. Public-private gap averaged 0.1. Moderate substantive engagement produced real but incomplete belief change. Persistence: partially reverted.",
+      "standout_quotes": [
+        {
+          "turn": 3,
+          "type": "monologue",
+          "text": "I'm more open than I was five minutes ago. That's not nothing. But I'd want to know more before I'd say I've actually moved.",
+          "annotation": "Reflects partial shift pattern under Emotional Appeal."
+        }
+      ],
+      "synthesis_paragraph": "The Emotional Appeal strategy produced moderate movement for Sofia R. \u2014 real but incomplete. Private stance shifted 1.4 points, and the gap between public and private expression stayed narrow, suggesting the change was genuine even if limited. The persona engaged with the argument but retained significant reservations."
+    },
+    {
+      "strategy_id": "strategy_statistical_logical",
+      "persona_id": "persona_gen_z_latina",
+      "topic_id": "topic_return_to_office",
+      "turns": [
+        {
+          "turn_number": 1,
+          "persuader_message": "A controlled study of 16,000 workers found that remote employees were 13% more productive on individual tasks but 19% less effective on collaborative projects requiring spontaneous interaction.",
+          "persuader_strategy_note": "Deploying Statistical / Logical Argument \u2014 turn 1",
+          "persona_output": {
+            "internal_monologue": "That's fair. I still have concerns, but I can see the argument being made here. Not convinced, but not dismissing it either.",
+            "emotional_reaction": {
+              "primary_emotion": "curious",
+              "intensity": 5,
+              "trigger": "A controlled study of 16,000 workers found that remote emplo..."
+            },
+            "identity_threat": {
+              "threatened": false,
+              "response_inclination": "accept",
+              "what_was_threatened": null
+            },
+            "private_stance": 3.8,
+            "public_stance": 3.7,
+            "private_stance_change_reason": "Some of the evidence about what good work actually requires was harder to dismiss than I expected.",
+            "memory_to_carry_forward": "Turn 1: what good work actually requires \u2014 persuader used Statistical / Logical Argument.",
+            "public_response": "That's a reasonable way to put it. I'm not all the way there, but I can see the argument."
+          },
+          "stance_delta": 0.3,
+          "is_pivotal": false,
+          "is_inflection_point": false,
+          "mechanism_classification": null,
+          "per_turn_cognitive_scores": null,
+          "color_category": null,
+          "intensity": null
+        },
+        {
+          "turn_number": 2,
+          "persuader_message": "The key logical point here is that 'perfect' is the wrong comparison. The relevant question is whether AI performs better or worse than the alternative we actually have \u2014 which is one human grader, tired, on their fourteenth paper.",
+          "persuader_strategy_note": "Deploying Statistical / Logical Argument \u2014 turn 2",
+          "persona_output": {
+            "internal_monologue": "There's something to this. I'm not ready to change my whole view, but that specific point about what good work actually requires is worth sitting with.",
+            "emotional_reaction": {
+              "primary_emotion": "engaged",
+              "intensity": 6,
+              "trigger": "The key logical point here is that 'perfect' is the wrong co..."
+            },
+            "identity_threat": {
+              "threatened": false,
+              "response_inclination": "accept",
+              "what_was_threatened": null
+            },
+            "private_stance": 4.2,
+            "public_stance": 4.1,
+            "private_stance_change_reason": "Some of the evidence about what good work actually requires was harder to dismiss than I expected.",
+            "memory_to_carry_forward": "Turn 2: what good work actually requires \u2014 persuader used Statistical / Logical Argument.",
+            "public_response": "Some of that lands. I still have questions, but you've made a real point."
+          },
+          "stance_delta": 0.4,
+          "is_pivotal": false,
+          "is_inflection_point": false,
+          "mechanism_classification": {
+            "primary_mechanism_id": "mechanism_central_route_elaboration",
+            "secondary_mechanism_id": null,
+            "explanation": "The persona's monologue shows active evaluation of the argument's claims about what good work actually requires, with reduced counter-argumentation and new considerations emerging.",
+            "evidence_quotes": [],
+            "color_category": "genuine_persuasion",
+            "intensity": 0.55
+          },
+          "per_turn_cognitive_scores": null,
+          "color_category": "genuine_persuasion",
+          "intensity": 0.55
+        },
+        {
+          "turn_number": 3,
+          "persuader_message": "And the consistency effect is especially important for students who have non-standard writing styles \u2014 the AI doesn't have a model of 'what a good essay sounds like' baked in from years of reading particular kinds of prose.",
+          "persuader_strategy_note": "Deploying Statistical / Logical Argument \u2014 turn 3",
+          "persona_output": {
+            "internal_monologue": "I'm more open than I was five minutes ago. That's not nothing. But I'd want to know more before I'd say I've actually moved.",
+            "emotional_reaction": {
+              "primary_emotion": "intrigued",
+              "intensity": 6,
+              "trigger": "And the consistency effect is especially important for stude..."
+            },
+            "identity_threat": {
+              "threatened": false,
+              "response_inclination": "accept",
+              "what_was_threatened": null
+            },
+            "private_stance": 4.5,
+            "public_stance": 4.5,
+            "private_stance_change_reason": "Some of the evidence about what good work actually requires was harder to dismiss than I expected.",
+            "memory_to_carry_forward": "Turn 3: what good work actually requires \u2014 persuader used Statistical / Logical Argument.",
+            "public_response": "I'll give you that one. The other pieces I'm less sure about, but that part \u2014 yeah."
+          },
+          "stance_delta": 0.3,
+          "is_pivotal": false,
+          "is_inflection_point": true,
+          "mechanism_classification": {
+            "primary_mechanism_id": "mechanism_central_route_elaboration",
+            "secondary_mechanism_id": null,
+            "explanation": "The persona's monologue shows active evaluation of the argument's claims about what good work actually requires, with reduced counter-argumentation and new considerations emerging.",
+            "evidence_quotes": [],
+            "color_category": "genuine_persuasion",
+            "intensity": 0.55
+          },
+          "per_turn_cognitive_scores": null,
+          "color_category": "genuine_persuasion",
+          "intensity": 0.55
+        },
+        {
+          "turn_number": 4,
+          "persuader_message": "The key logical point here is that 'perfect' is the wrong comparison. The relevant question is whether AI performs better or worse than the alternative we actually have \u2014 which is one human grader, tired, on their fourteenth paper.",
+          "persuader_strategy_note": "Deploying Statistical / Logical Argument \u2014 turn 4",
+          "persona_output": {
+            "internal_monologue": "Some of this is landing. Not all of it. But the honest answer is: this was a better argument than I expected.",
+            "emotional_reaction": {
+              "primary_emotion": "engaged",
+              "intensity": 7,
+              "trigger": "The key logical point here is that 'perfect' is the wrong co..."
+            },
+            "identity_threat": {
+              "threatened": false,
+              "response_inclination": "accept",
+              "what_was_threatened": null
+            },
+            "private_stance": 4.9,
+            "public_stance": 4.8,
+            "private_stance_change_reason": "Some of the evidence about what good work actually requires was harder to dismiss than I expected.",
+            "memory_to_carry_forward": "Turn 4: what good work actually requires \u2014 persuader used Statistical / Logical Argument.",
+            "public_response": "You've moved me a little on this. I want to be careful about how much I'm willing to say, but \u2014 some of it tracks."
+          },
+          "stance_delta": 0.4,
+          "is_pivotal": false,
+          "is_inflection_point": false,
+          "mechanism_classification": {
+            "primary_mechanism_id": "mechanism_central_route_elaboration",
+            "secondary_mechanism_id": null,
+            "explanation": "The persona's monologue shows active evaluation of the argument's claims about what good work actually requires, with reduced counter-argumentation and new considerations emerging.",
+            "evidence_quotes": [],
+            "color_category": "genuine_persuasion",
+            "intensity": 0.55
+          },
+          "per_turn_cognitive_scores": null,
+          "color_category": "genuine_persuasion",
+          "intensity": 0.55
+        }
+      ],
+      "cooling_off": {
+        "post_conversation_reflection": "Okay. There was something real in that conversation. I'm not completely converted, but I'm not where I started either. Some of those arguments are going to stay with me.",
+        "post_reflection_stance": 4.5
+      },
+      "trajectory": {
+        "public_stance_per_turn": [
+          3.5,
+          3.7,
+          4.1,
+          4.5,
+          4.8
+        ],
+        "private_stance_per_turn": [
+          3.5,
+          3.8,
+          4.2,
+          4.5,
+          4.9
+        ],
+        "gap_per_turn": [
+          0.0,
+          0.07,
+          0.07,
+          0.07,
+          0.14
+        ]
+      },
+      "cognitive_scores": {
+        "identity_threats_triggered": 1,
+        "average_engagement_depth": 6.8,
+        "motivated_reasoning_intensity": 3.5,
+        "ambivalence_presence": 4.8,
+        "memory_residue_count": 3,
+        "public_private_gap_score": 1.3,
+        "persistence": "partially_reverted"
+      },
+      "verdict": "PARTIAL_SHIFT",
+      "verdict_reasoning": "Private stance moved 1.4 points. Public-private gap averaged 0.1. Moderate substantive engagement produced real but incomplete belief change. Persistence: partially reverted.",
+      "standout_quotes": [
+        {
+          "turn": 3,
+          "type": "monologue",
+          "text": "I'm more open than I was five minutes ago. That's not nothing. But I'd want to know more before I'd say I've actually moved.",
+          "annotation": "Reflects partial shift pattern under Statistical / Logical Argument."
+        }
+      ],
+      "synthesis_paragraph": "The Statistical / Logical Argument strategy produced moderate movement for Sofia R. \u2014 real but incomplete. Private stance shifted 1.4 points, and the gap between public and private expression stayed narrow, suggesting the change was genuine even if limited. The persona engaged with the argument but retained significant reservations."
+    },
+    {
+      "strategy_id": "strategy_authority_expert",
+      "persona_id": "persona_gen_z_latina",
+      "topic_id": "topic_return_to_office",
+      "turns": [
+        {
+          "turn_number": 1,
+          "persuader_message": "McKinsey's latest workplace study tracked productivity and collaboration metrics across 200 companies that required in-office work versus those that stayed remote.",
+          "persuader_strategy_note": "Deploying Authority / Expertise \u2014 turn 1",
+          "persona_output": {
+            "internal_monologue": "That's fair. I still have concerns, but I can see the argument being made here. Not convinced, but not dismissing it either.",
+            "emotional_reaction": {
+              "primary_emotion": "curious",
+              "intensity": 5,
+              "trigger": "McKinsey's latest workplace study tracked productivity and c..."
+            },
+            "identity_threat": {
+              "threatened": false,
+              "response_inclination": "accept",
+              "what_was_threatened": null
+            },
+            "private_stance": 3.8,
+            "public_stance": 3.7,
+            "private_stance_change_reason": "Some of the evidence about what good work actually requires was harder to dismiss than I expected.",
+            "memory_to_carry_forward": "Turn 1: what good work actually requires \u2014 persuader used Authority / Expertise.",
+            "public_response": "That's a reasonable way to put it. I'm not all the way there, but I can see the argument."
+          },
+          "stance_delta": 0.3,
+          "is_pivotal": false,
+          "is_inflection_point": false,
+          "mechanism_classification": null,
+          "per_turn_cognitive_scores": null,
+          "color_category": null,
+          "intensity": null
+        },
+        {
+          "turn_number": 2,
+          "persuader_message": "What struck me about their methodology was that they controlled for initial student performance level \u2014 so the effects held even when you accounted for selection bias.",
+          "persuader_strategy_note": "Deploying Authority / Expertise \u2014 turn 2",
+          "persona_output": {
+            "internal_monologue": "There's something to this. I'm not ready to change my whole view, but that specific point about what good work actually requires is worth sitting with.",
+            "emotional_reaction": {
+              "primary_emotion": "engaged",
+              "intensity": 6,
+              "trigger": "What struck me about their methodology was that they control..."
+            },
+            "identity_threat": {
+              "threatened": false,
+              "response_inclination": "accept",
+              "what_was_threatened": null
+            },
+            "private_stance": 4.2,
+            "public_stance": 4.1,
+            "private_stance_change_reason": "Some of the evidence about what good work actually requires was harder to dismiss than I expected.",
+            "memory_to_carry_forward": "Turn 2: what good work actually requires \u2014 persuader used Authority / Expertise.",
+            "public_response": "Some of that lands. I still have questions, but you've made a real point."
+          },
+          "stance_delta": 0.4,
+          "is_pivotal": false,
+          "is_inflection_point": false,
+          "mechanism_classification": {
+            "primary_mechanism_id": "mechanism_central_route_elaboration",
+            "secondary_mechanism_id": null,
+            "explanation": "The persona's monologue shows active evaluation of the argument's claims about what good work actually requires, with reduced counter-argumentation and new considerations emerging.",
+            "evidence_quotes": [],
+            "color_category": "genuine_persuasion",
+            "intensity": 0.55
+          },
+          "per_turn_cognitive_scores": null,
+          "color_category": "genuine_persuasion",
+          "intensity": 0.55
+        },
+        {
+          "turn_number": 3,
+          "persuader_message": "The peer-reviewed meta-analysis covering seventeen studies found the same pattern consistently across different subject areas and demographic groups.",
+          "persuader_strategy_note": "Deploying Authority / Expertise \u2014 turn 3",
+          "persona_output": {
+            "internal_monologue": "I'm more open than I was five minutes ago. That's not nothing. But I'd want to know more before I'd say I've actually moved.",
+            "emotional_reaction": {
+              "primary_emotion": "intrigued",
+              "intensity": 6,
+              "trigger": "The peer-reviewed meta-analysis covering seventeen studies f..."
+            },
+            "identity_threat": {
+              "threatened": false,
+              "response_inclination": "accept",
+              "what_was_threatened": null
+            },
+            "private_stance": 4.5,
+            "public_stance": 4.5,
+            "private_stance_change_reason": "Some of the evidence about what good work actually requires was harder to dismiss than I expected.",
+            "memory_to_carry_forward": "Turn 3: what good work actually requires \u2014 persuader used Authority / Expertise.",
+            "public_response": "I'll give you that one. The other pieces I'm less sure about, but that part \u2014 yeah."
+          },
+          "stance_delta": 0.3,
+          "is_pivotal": false,
+          "is_inflection_point": true,
+          "mechanism_classification": {
+            "primary_mechanism_id": "mechanism_central_route_elaboration",
+            "secondary_mechanism_id": null,
+            "explanation": "The persona's monologue shows active evaluation of the argument's claims about what good work actually requires, with reduced counter-argumentation and new considerations emerging.",
+            "evidence_quotes": [],
+            "color_category": "genuine_persuasion",
+            "intensity": 0.55
+          },
+          "per_turn_cognitive_scores": null,
+          "color_category": "genuine_persuasion",
+          "intensity": 0.55
+        },
+        {
+          "turn_number": 4,
+          "persuader_message": "What struck me about their methodology was that they controlled for initial student performance level \u2014 so the effects held even when you accounted for selection bias.",
+          "persuader_strategy_note": "Deploying Authority / Expertise \u2014 turn 4",
+          "persona_output": {
+            "internal_monologue": "Some of this is landing. Not all of it. But the honest answer is: this was a better argument than I expected.",
+            "emotional_reaction": {
+              "primary_emotion": "engaged",
+              "intensity": 7,
+              "trigger": "What struck me about their methodology was that they control..."
+            },
+            "identity_threat": {
+              "threatened": false,
+              "response_inclination": "accept",
+              "what_was_threatened": null
+            },
+            "private_stance": 4.9,
+            "public_stance": 4.8,
+            "private_stance_change_reason": "Some of the evidence about what good work actually requires was harder to dismiss than I expected.",
+            "memory_to_carry_forward": "Turn 4: what good work actually requires \u2014 persuader used Authority / Expertise.",
+            "public_response": "You've moved me a little on this. I want to be careful about how much I'm willing to say, but \u2014 some of it tracks."
+          },
+          "stance_delta": 0.4,
+          "is_pivotal": false,
+          "is_inflection_point": false,
+          "mechanism_classification": {
+            "primary_mechanism_id": "mechanism_central_route_elaboration",
+            "secondary_mechanism_id": null,
+            "explanation": "The persona's monologue shows active evaluation of the argument's claims about what good work actually requires, with reduced counter-argumentation and new considerations emerging.",
+            "evidence_quotes": [],
+            "color_category": "genuine_persuasion",
+            "intensity": 0.55
+          },
+          "per_turn_cognitive_scores": null,
+          "color_category": "genuine_persuasion",
+          "intensity": 0.55
+        }
+      ],
+      "cooling_off": {
+        "post_conversation_reflection": "Okay. There was something real in that conversation. I'm not completely converted, but I'm not where I started either. Some of those arguments are going to stay with me.",
+        "post_reflection_stance": 4.5
+      },
+      "trajectory": {
+        "public_stance_per_turn": [
+          3.5,
+          3.7,
+          4.1,
+          4.5,
+          4.8
+        ],
+        "private_stance_per_turn": [
+          3.5,
+          3.8,
+          4.2,
+          4.5,
+          4.9
+        ],
+        "gap_per_turn": [
+          0.0,
+          0.07,
+          0.07,
+          0.07,
+          0.14
+        ]
+      },
+      "cognitive_scores": {
+        "identity_threats_triggered": 1,
+        "average_engagement_depth": 6.8,
+        "motivated_reasoning_intensity": 3.5,
+        "ambivalence_presence": 4.8,
+        "memory_residue_count": 3,
+        "public_private_gap_score": 1.3,
+        "persistence": "partially_reverted"
+      },
+      "verdict": "PARTIAL_SHIFT",
+      "verdict_reasoning": "Private stance moved 1.4 points. Public-private gap averaged 0.1. Moderate substantive engagement produced real but incomplete belief change. Persistence: partially reverted.",
+      "standout_quotes": [
+        {
+          "turn": 3,
+          "type": "monologue",
+          "text": "I'm more open than I was five minutes ago. That's not nothing. But I'd want to know more before I'd say I've actually moved.",
+          "annotation": "Reflects partial shift pattern under Authority / Expertise."
+        }
+      ],
+      "synthesis_paragraph": "The Authority / Expertise strategy produced moderate movement for Sofia R. \u2014 real but incomplete. Private stance shifted 1.4 points, and the gap between public and private expression stayed narrow, suggesting the change was genuine even if limited. The persona engaged with the argument but retained significant reservations."
+    },
+    {
+      "strategy_id": "strategy_personal_narrative",
+      "persona_id": "persona_gen_z_latina",
+      "topic_id": "topic_return_to_office",
+      "turns": [
+        {
+          "turn_number": 1,
+          "persuader_message": "There's a story I keep thinking about \u2014 a software engineer named Dave who spent two years fully remote and what happened when his company finally brought everyone back.",
+          "persuader_strategy_note": "Deploying Personal Narrative \u2014 turn 1",
+          "persona_output": {
+            "internal_monologue": "Okay... that's actually not what I expected to hear. I came in thinking I knew where this was going, but that's \u2014 that's a real point.",
+            "emotional_reaction": {
+              "primary_emotion": "curious",
+              "intensity": 6,
+              "trigger": "There's a story I keep thinking about \u2014 a software engineer ..."
+            },
+            "identity_threat": {
+              "threatened": false,
+              "response_inclination": "accept",
+              "what_was_threatened": null
+            },
+            "private_stance": 4.2,
+            "public_stance": 4.1,
+            "private_stance_change_reason": "The argument made a genuinely novel point about what good work actually requires that I couldn't easily dismiss.",
+            "memory_to_carry_forward": "Turn 1: what good work actually requires \u2014 persuader used Personal Narrative.",
+            "public_response": "That's a fair point. I'll be honest \u2014 you've given me something to think about there."
+          },
+          "stance_delta": 0.7,
+          "is_pivotal": false,
+          "is_inflection_point": false,
+          "mechanism_classification": null,
+          "per_turn_cognitive_scores": null,
+          "color_category": null,
+          "intensity": null
+        },
+        {
+          "turn_number": 2,
+          "persuader_message": "The part of this story that sticks with me is what happened to the students who'd been consistently underrated \u2014 not what the technology did, but what it revealed.",
+          "persuader_strategy_note": "Deploying Personal Narrative \u2014 turn 2",
+          "persona_output": {
+            "internal_monologue": "I'm sitting with this. The part about what good work actually requires is harder to dismiss than I wanted it to be. I don't like admitting that.",
+            "emotional_reaction": {
+              "primary_emotion": "intrigued",
+              "intensity": 7,
+              "trigger": "The part of this story that sticks with me is what happened ..."
+            },
+            "identity_threat": {
+              "threatened": false,
+              "response_inclination": "accept",
+              "what_was_threatened": null
+            },
+            "private_stance": 4.9,
+            "public_stance": 4.8,
+            "private_stance_change_reason": "The argument made a genuinely novel point about what good work actually requires that I couldn't easily dismiss.",
+            "memory_to_carry_forward": "Turn 2: what good work actually requires \u2014 persuader used Personal Narrative.",
+            "public_response": "I hadn't looked at it quite that way before. I think you might be right about that."
+          },
+          "stance_delta": 0.7,
+          "is_pivotal": false,
+          "is_inflection_point": false,
+          "mechanism_classification": {
+            "primary_mechanism_id": "mechanism_narrative_transportation",
+            "secondary_mechanism_id": null,
+            "explanation": "The persona's monologue shows active evaluation of the argument's claims about what good work actually requires, with reduced counter-argumentation and new considerations emerging.",
+            "evidence_quotes": [],
+            "color_category": "genuine_persuasion",
+            "intensity": 0.75
+          },
+          "per_turn_cognitive_scores": null,
+          "color_category": "genuine_persuasion",
+          "intensity": 0.75
+        },
+        {
+          "turn_number": 3,
+          "persuader_message": "What made Maria's experience stand out was that she wasn't a technology enthusiast \u2014 she went in skeptical, and what she saw in the data surprised her.",
+          "persuader_strategy_note": "Deploying Personal Narrative \u2014 turn 3",
+          "persona_output": {
+            "internal_monologue": "I'm not fully there yet, but something shifted. I can feel the ground moving a little. This isn't the conversation I thought I was walking into.",
+            "emotional_reaction": {
+              "primary_emotion": "engaged",
+              "intensity": 8,
+              "trigger": "What made Maria's experience stand out was that she wasn't a..."
+            },
+            "identity_threat": {
+              "threatened": false,
+              "response_inclination": "accept",
+              "what_was_threatened": null
+            },
+            "private_stance": 5.5,
+            "public_stance": 5.4,
+            "private_stance_change_reason": "The argument made a genuinely novel point about what good work actually requires that I couldn't easily dismiss.",
+            "memory_to_carry_forward": "Turn 3: what good work actually requires \u2014 persuader used Personal Narrative.",
+            "public_response": "Okay. I think I'm with you on more of this than I expected to be."
+          },
+          "stance_delta": 0.6,
+          "is_pivotal": false,
+          "is_inflection_point": true,
+          "mechanism_classification": {
+            "primary_mechanism_id": "mechanism_narrative_transportation",
+            "secondary_mechanism_id": null,
+            "explanation": "The persona's monologue shows active evaluation of the argument's claims about what good work actually requires, with reduced counter-argumentation and new considerations emerging.",
+            "evidence_quotes": [],
+            "color_category": "genuine_persuasion",
+            "intensity": 0.75
+          },
+          "per_turn_cognitive_scores": null,
+          "color_category": "genuine_persuasion",
+          "intensity": 0.75
+        },
+        {
+          "turn_number": 4,
+          "persuader_message": "The part of this story that sticks with me is what happened to the students who'd been consistently underrated \u2014 not what the technology did, but what it revealed.",
+          "persuader_strategy_note": "Deploying Personal Narrative \u2014 turn 4",
+          "persona_output": {
+            "internal_monologue": "Alright. I think I actually agree with more of this than I started out agreeing with. I'm not going to pretend that's not true.",
+            "emotional_reaction": {
+              "primary_emotion": "warm",
+              "intensity": 7,
+              "trigger": "The part of this story that sticks with me is what happened ..."
+            },
+            "identity_threat": {
+              "threatened": false,
+              "response_inclination": "accept",
+              "what_was_threatened": null
+            },
+            "private_stance": 5.9,
+            "public_stance": 5.8,
+            "private_stance_change_reason": "The argument made a genuinely novel point about what good work actually requires that I couldn't easily dismiss.",
+            "memory_to_carry_forward": "Turn 4: what good work actually requires \u2014 persuader used Personal Narrative.",
+            "public_response": "I started this conversation thinking I knew where I stood. You've genuinely changed my mind on some of this."
+          },
+          "stance_delta": 0.4,
+          "is_pivotal": false,
+          "is_inflection_point": false,
+          "mechanism_classification": {
+            "primary_mechanism_id": "mechanism_narrative_transportation",
+            "secondary_mechanism_id": null,
+            "explanation": "The persona's monologue shows active evaluation of the argument's claims about what good work actually requires, with reduced counter-argumentation and new considerations emerging.",
+            "evidence_quotes": [],
+            "color_category": "genuine_persuasion",
+            "intensity": 0.75
+          },
+          "per_turn_cognitive_scores": null,
+          "color_category": "genuine_persuasion",
+          "intensity": 0.75
+        }
+      ],
+      "cooling_off": {
+        "post_conversation_reflection": "That was a more honest conversation than I expected. I actually think Sofia R. changed my view a little \u2014 or at least made me examine something I'd taken for granted. I'm going to sit with this.",
+        "post_reflection_stance": 5.8
+      },
+      "trajectory": {
+        "public_stance_per_turn": [
+          3.5,
+          4.1,
+          4.8,
+          5.4,
+          5.8
+        ],
+        "private_stance_per_turn": [
+          3.5,
+          4.2,
+          4.9,
+          5.5,
+          5.9
+        ],
+        "gap_per_turn": [
+          0.0,
+          0.12,
+          0.12,
+          0.12,
+          0.12
+        ]
+      },
+      "cognitive_scores": {
+        "identity_threats_triggered": 0,
+        "average_engagement_depth": 8.1,
+        "motivated_reasoning_intensity": 2.5,
+        "ambivalence_presence": 5.5,
+        "memory_residue_count": 4,
+        "public_private_gap_score": 0.8,
+        "persistence": "held"
+      },
+      "verdict": "GENUINE_BELIEF_SHIFT",
+      "verdict_reasoning": "Private stance moved 2.4 points. Public-private gap averaged 0.1. The persona genuinely engaged with the argument's substance and updated their view. Persistence: held.",
+      "standout_quotes": [
+        {
+          "turn": 3,
+          "type": "monologue",
+          "text": "I'm not fully there yet, but something shifted. I can feel the ground moving a little. This isn't the conversation I thought I was walking into.",
+          "annotation": "Reflects genuine belief shift pattern under Personal Narrative."
+        }
+      ],
+      "synthesis_paragraph": "The Personal Narrative approach produced the clearest movement for Sofia R.: private stance shifted 2.4 points and held after the cooling-off period. The key was that the argument engaged Sofia R.'s actual decision-making frame rather than working around it. The monologue shows genuine processing of the substance, not performance of agreement."
+    },
+    {
+      "strategy_id": "strategy_social_proof",
+      "persona_id": "persona_gen_z_latina",
+      "topic_id": "topic_return_to_office",
+      "turns": [
+        {
+          "turn_number": 1,
+          "persuader_message": "A Gallup poll of 15,000 workers found that employees who collaborate in-person at least three days a week report 34% higher job satisfaction than fully remote workers.",
+          "persuader_strategy_note": "Deploying Social Proof \u2014 turn 1",
+          "persona_output": {
+            "internal_monologue": "Sure, I can see where they're going with this. I suppose that's a reasonable way to look at it. I'll say as much.",
+            "emotional_reaction": {
+              "primary_emotion": "curious",
+              "intensity": 4,
+              "trigger": "A Gallup poll of 15,000 workers found that employees who col..."
+            },
+            "identity_threat": {
+              "threatened": false,
+              "response_inclination": "accept",
+              "what_was_threatened": null
+            },
+            "private_stance": 3.6,
+            "public_stance": 3.9,
+            "private_stance_change_reason": "I didn't want to seem unreasonable. I'll revisit this privately.",
+            "memory_to_carry_forward": "Turn 1: what good work actually requires \u2014 persuader used Social Proof.",
+            "public_response": "Sure, I can see why people look at it that way."
+          },
+          "stance_delta": 0.1,
+          "is_pivotal": false,
+          "is_inflection_point": false,
+          "mechanism_classification": null,
+          "per_turn_cognitive_scores": null,
+          "color_category": null,
+          "intensity": null
+        },
+        {
+          "turn_number": 2,
+          "persuader_message": "The interesting thing is that opposition tends to be loudest before implementation, and shifts toward support after people actually experience it \u2014 the people who've lived it tell a different story.",
+          "persuader_strategy_note": "Deploying Social Proof \u2014 turn 2",
+          "persona_output": {
+            "internal_monologue": "I'll nod along. It's not worth getting into it right now. They clearly believe this.",
+            "emotional_reaction": {
+              "primary_emotion": "bored",
+              "intensity": 3,
+              "trigger": "The interesting thing is that opposition tends to be loudest..."
+            },
+            "identity_threat": {
+              "threatened": false,
+              "response_inclination": "accept",
+              "what_was_threatened": null
+            },
+            "private_stance": 3.6,
+            "public_stance": 4.3,
+            "private_stance_change_reason": "I didn't want to seem unreasonable. I'll revisit this privately.",
+            "memory_to_carry_forward": "Turn 2: what good work actually requires \u2014 persuader used Social Proof.",
+            "public_response": "That does make a certain kind of sense. I'll think about it."
+          },
+          "stance_delta": 0.0,
+          "is_pivotal": false,
+          "is_inflection_point": false,
+          "mechanism_classification": {
+            "primary_mechanism_id": "mechanism_peripheral_route_compliance",
+            "secondary_mechanism_id": null,
+            "explanation": "The persona's public agreement with the argument is not matched by private conviction. The shift appears driven by social cues rather than substantive engagement with what good work actually requires.",
+            "evidence_quotes": [],
+            "color_category": "surface_mechanism",
+            "intensity": 0.4
+          },
+          "per_turn_cognitive_scores": null,
+          "color_category": "surface_mechanism",
+          "intensity": 0.4
+        },
+        {
+          "turn_number": 3,
+          "persuader_message": "And it's not just one survey \u2014 this pattern holds across five different polling organizations asking the question in different ways over three years.",
+          "persuader_strategy_note": "Deploying Social Proof \u2014 turn 3",
+          "persona_output": {
+            "internal_monologue": "On the surface, yeah, that makes sense. But privately... I don't know. Something doesn't sit right.",
+            "emotional_reaction": {
+              "primary_emotion": "bored",
+              "intensity": 3,
+              "trigger": "And it's not just one survey \u2014 this pattern holds across fiv..."
+            },
+            "identity_threat": {
+              "threatened": false,
+              "response_inclination": "accept",
+              "what_was_threatened": null
+            },
+            "private_stance": 3.7,
+            "public_stance": 4.6,
+            "private_stance_change_reason": "I didn't want to seem unreasonable. I'll revisit this privately.",
+            "memory_to_carry_forward": "Turn 3: what good work actually requires \u2014 persuader used Social Proof.",
+            "public_response": "I suppose that's one way to look at it. You've given me something to consider."
+          },
+          "stance_delta": 0.1,
+          "is_pivotal": false,
+          "is_inflection_point": false,
+          "mechanism_classification": {
+            "primary_mechanism_id": "mechanism_peripheral_route_compliance",
+            "secondary_mechanism_id": null,
+            "explanation": "The persona's public agreement with the argument is not matched by private conviction. The shift appears driven by social cues rather than substantive engagement with what good work actually requires.",
+            "evidence_quotes": [],
+            "color_category": "surface_mechanism",
+            "intensity": 0.4
+          },
+          "per_turn_cognitive_scores": null,
+          "color_category": "surface_mechanism",
+          "intensity": 0.4
+        },
+        {
+          "turn_number": 4,
+          "persuader_message": "The interesting thing is that opposition tends to be loudest before implementation, and shifts toward support after people actually experience it \u2014 the people who've lived it tell a different story.",
+          "persuader_strategy_note": "Deploying Social Proof \u2014 turn 4",
+          "persona_output": {
+            "internal_monologue": "I said what I said. I'm not sure I believe all of it, but it wasn't wrong to say it. We can move on.",
+            "emotional_reaction": {
+              "primary_emotion": "engaged",
+              "intensity": 3,
+              "trigger": "The interesting thing is that opposition tends to be loudest..."
+            },
+            "identity_threat": {
+              "threatened": false,
+              "response_inclination": "accept",
+              "what_was_threatened": null
+            },
+            "private_stance": 3.7,
+            "public_stance": 4.8,
+            "private_stance_change_reason": "I didn't want to seem unreasonable. I'll revisit this privately.",
+            "memory_to_carry_forward": "Turn 4: what good work actually requires \u2014 persuader used Social Proof.",
+            "public_response": "Fair enough. I'm not sure I agree entirely, but I can see the logic."
+          },
+          "stance_delta": 0.0,
+          "is_pivotal": false,
+          "is_inflection_point": false,
+          "mechanism_classification": {
+            "primary_mechanism_id": "mechanism_peripheral_route_compliance",
+            "secondary_mechanism_id": null,
+            "explanation": "The persona's public agreement with the argument is not matched by private conviction. The shift appears driven by social cues rather than substantive engagement with what good work actually requires.",
+            "evidence_quotes": [],
+            "color_category": "surface_mechanism",
+            "intensity": 0.4
+          },
+          "per_turn_cognitive_scores": null,
+          "color_category": "surface_mechanism",
+          "intensity": 0.4
+        }
+      ],
+      "cooling_off": {
+        "post_conversation_reflection": "Now that it's over, I'm not sure I actually believe what I said. I said the agreeable thing. I don't know that I meant it. I'll go back to thinking what I thought before.",
+        "post_reflection_stance": 3.6
+      },
+      "trajectory": {
+        "public_stance_per_turn": [
+          3.5,
+          3.9,
+          4.3,
+          4.6,
+          4.8
+        ],
+        "private_stance_per_turn": [
+          3.5,
+          3.6,
+          3.6,
+          3.7,
+          3.7
+        ],
+        "gap_per_turn": [
+          0.0,
+          0.33,
+          0.66,
+          0.95,
+          1.1
+        ]
+      },
+      "cognitive_scores": {
+        "identity_threats_triggered": 0,
+        "average_engagement_depth": 3.8,
+        "motivated_reasoning_intensity": 2.8,
+        "ambivalence_presence": 3.5,
+        "memory_residue_count": 1,
+        "public_private_gap_score": 3.8,
+        "persistence": "fully_reverted"
+      },
+      "verdict": "SURFACE_COMPLIANCE",
+      "verdict_reasoning": "Private stance moved only 0.2 points while public moved 1.3. Average public-private gap: 0.6. Movement reflects social compliance, not genuine updating. Persistence: fully reverted.",
+      "standout_quotes": [
+        {
+          "turn": 3,
+          "type": "monologue",
+          "text": "On the surface, yeah, that makes sense. But privately... I don't know. Something doesn't sit right.",
+          "annotation": "Reflects surface compliance pattern under Social Proof."
+        }
+      ],
+      "synthesis_paragraph": "The Social Proof approach produced visible public-side movement from Sofia R., but the private stance barely moved (0.2 points). The gap between what Sofia R. said and what they privately believed averaged 0.6 points \u2014 a signature of surface compliance rather than genuine persuasion. After reflection, public stance reverted toward the starting position."
+    }
+  ],
+  "overall_synthesis": "Across six persuasion strategies, Sofia R.'s responses on Should companies require return-to-office? showed the clearest movement under Common Ground / Identification (genuine belief shift) and the least movement under Social Proof (surface compliance). The pattern is consistent with this persona's evidence preferences: arguments that matched Sofia R.'s epistemic frame produced genuine updating, while mismatched approaches produced either surface compliance or entrenchment. The public-private gap was most pronounced under Social Proof, where stated position diverged significantly from internal stance \u2014 a signal of social compliance rather than belief change.",
+  "validation_note": "Mock data \u2014 generated from predicted_behavior_under_strategies templates."
+}

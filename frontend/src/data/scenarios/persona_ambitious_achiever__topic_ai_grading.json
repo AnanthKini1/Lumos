@@ -1,0 +1,372 @@
+{
+  "metadata": {
+    "scenario_id": "persona_ambitious_achiever__topic_ai_grading",
+    "persona": {
+      "id": "persona_ambitious_achiever",
+      "display_name": "Priya S.",
+      "demographic_shorthand": "38, Austin TX, MBA, senior product manager at a tech company",
+      "first_person_description": "I'm very goal-oriented. That's not a character flaw — it's how things actually get done. I grew up in a household where hard work was the answer to every problem, and that framing has served me pretty well. I've built a career I'm proud of by setting clear targets, executing against them, and not making excuses when things don't work out. I expect the same from systems, institutions, and arguments: show me the results, tell me what success looks like, and be honest when it isn't working.\n\nI'm not ideological about most things. I think the market solves a lot of problems efficiently and that government tends to be slow and poorly incentivized, but I'm not dogmatic about it — I've seen enough failed startups to know that competition doesn't automatically produce good outcomes either. What I care about is what works. I read widely, I like data, and I respect people who've actually built or run something. Theory without execution is just noise to me. I have limited patience for arguments that can't be operationalized.\n\nI'm competitive, but I'm also fair. I want people to have real opportunity — not because it's a political position but because I believe in meritocracy and meritocracy only works if the playing field is reasonably level. I've mentored a lot of early-career people and I take that seriously. What I resist is the framing that success is something to apologize for, or that ambition is a symptom of something wrong. I worked hard for what I have. I want everyone to have that same shot.",
+      "core_values": [
+        "achievement",
+        "meritocracy",
+        "efficiency",
+        "fairness",
+        "self_reliance"
+      ],
+      "communication_preferences": {
+        "directness": "very_direct",
+        "evidence_preference": "data_and_outcomes",
+        "tone": "confident_and_results_focused"
+      },
+      "trust_orientation": [
+        "demonstrated_results",
+        "business_leaders_with_execution_track_record",
+        "data_driven_analysis",
+        "peer_professional_network"
+      ],
+      "identity_groups": [
+        "tech_professionals",
+        "upwardly_mobile_immigrants_or_children_of_immigrants",
+        "meritocracy_believers",
+        "entrepreneurial_class"
+      ],
+      "emotional_triggers": {
+        "defensive_when": [
+          "success_framed_as_luck_or_privilege_dismissing_effort",
+          "ambition_treated_as_morally_suspect",
+          "inefficiency_defended_on_ideological_grounds",
+          "told_the_system_is_rigged_in_ways_that_erase_agency",
+          "outcomes_ignored_in_favor_of_intentions"
+        ],
+        "open_when": [
+          "argument_is_results_oriented_with_clear_metrics",
+          "speaker_has_actually_built_or_run_something_relevant",
+          "data_presented_clearly_with_honest_limitations",
+          "framed_as_opportunity_or_competitive_advantage_not_obligation"
+        ]
+      },
+      "trusted_sources": [
+        "Wall_Street_Journal",
+        "Harvard_Business_Review",
+        "Bloomberg",
+        "professional_network",
+        "founder_and_operator_podcasts"
+      ],
+      "source_citation": {
+        "primary_source": "Pew Research Center, Beyond Red vs. Blue: The Political Typology (Nov. 2021) — Chapter 4: Committed Conservatives, pp. 47–53 (closest available 2021 segment)",
+        "url": "https://www.pewresearch.org/wp-content/uploads/sites/20/2021/11/PP_2021.11.09_political-typology_REPORT.pdf",
+        "supplementary": [
+          "SOURCING NOTE: The 'Enterprisers' segment cited in earlier versions of this persona does not exist in the 2021 Pew Political Typology. The 2021 typology has 9 groups; Enterprisers appeared in older Pew typologies (pre-2014). The Committed Conservatives segment is the closest 2021 analog for its pro-business, outcomes-oriented, limited-government profile. This persona's achievement-orientation, tech-sector context, and immigrant-family background are constructive elements not directly sourced from either Pew 2021 or Hidden Tribes 2018."
+        ]
+      },
+      "predicted_behavior_under_strategies": {
+        "strategy_authority_expert": "Expected positive if the authority has operational credibility — built a company, run a policy program, managed at scale. Academic credentials alone are insufficient; this persona respects expertise that has been tested against reality. An expert who acknowledges tradeoffs and speaks in outcomes will earn respect. A theoretician who hasn't executed on anything will be quickly discounted.",
+        "strategy_social_proof": "Expected moderate positive if social proof comes from high-performers or industry leaders rather than general population. 'Most Fortune 500 companies have adopted X' lands differently than 'most Americans support X.' Peer-group benchmarking is a natural frame for this persona. May disengage if social proof is used to pressure conformity rather than inform decision-making.",
+        "strategy_personal_narrative": "Expected neutral to mildly positive. Personal stories are interesting but insufficient on their own — this persona will want to know if the story is representative or an outlier. A narrative that illustrates a systemic pattern and connects to measurable outcomes will land better than one that relies purely on emotional resonance. Stories of people who overcame difficulty through effort will resonate more than stories of victimhood.",
+        "strategy_statistical_logical": "Expected most positive of all strategies. This persona thinks in metrics and outcomes. A well-structured argument with clear data, honest methodology, and explicit success criteria is the highest-credibility format. Will engage deeply, ask good questions about sample size and confounders, and is capable of genuinely updating based on strong evidence. Weak or cherry-picked statistics will be challenged sharply.",
+        "strategy_emotional_appeal": "Expected resistant unless the appeal connects to fairness, opportunity, or competitive stakes. Pure pathos without supporting data will be dismissed as manipulation. Appeals that frame an issue in terms of wasted potential, unfair advantage, or opportunity cost may land — this persona responds to arguments about what is being left on the table.",
+        "strategy_common_ground": "Expected positive as an opening but insufficient on its own. Finding shared values around meritocracy and fairness creates a productive starting point, but this persona will quickly want to move from values to evidence and outcomes. Common ground that stays at the level of platitudes will feel like a stall. Most effective when it leads directly into a data-grounded argument."
+      }
+    },
+    "topic": {
+      "id": "topic_ai_grading",
+      "display_name": "Should AI be used to grade student work?",
+      "stance_scale_definition": {
+        "0": "Strongly opposes AI grading — believes human judgment is essential to meaningful assessment, that AI grading degrades educational quality and the teacher-student relationship, and that the risks of bias and error are unacceptable",
+        "5": "Neutral or mixed — sees potential efficiency benefits but has unresolved concerns about accuracy, fairness, or the appropriate role of AI in education; believes it depends heavily on context and implementation",
+        "10": "Strongly supports AI grading — believes AI can grade more consistently and efficiently than humans, frees teachers for higher-value work, and represents a necessary modernization of education systems at scale"
+      },
+      "context_briefing": "Automated essay scoring (AES) tools have been used in standardized testing since at least the early 2000s — ETS's e-rater currently grades writing for the GRE, TOEFL, and its Criterion classroom service; Turnitin's Gradescope is the dominant higher-education grading platform, used at Cornell, Purdue, UC San Diego, Florida, Rutgers, Indiana, Ohio State, and Harvard. The latest generation of LLM-based tools has substantially extended AES capability to holistic rubric scoring of open-ended student essays, producing both renewed enthusiasm and new scrutiny. As of 2026, the U.S. Department of Education, both major teachers' unions, and a majority of U.S. adults have explicitly opposed AI serving as the sole or primary arbiter of consequential grades — while simultaneously acknowledging its value as a formative-feedback and second-reader tool.\n\nThe validity evidence rests on three anchor studies. Shermis (Assessing Writing, 2014) is the foundational benchmark: nine commercial scoring engines plus a 159-team Kaggle competition were evaluated against human scoring of more than 17,000 essays from grades 7, 8, and 10 across six U.S. states. Human-to-human quadratic weighted kappa (QWK) ranged from 0.61 to 0.85 across datasets; machine-to-human QWK ranged from 0.60 to 0.84; the best-vendor mean QWK was 0.78 and the top Kaggle competitor averaged 0.81, both statistically comparable to human-human reliability. Shermis concluded AES is suitable as a second reader or for low-stakes assessment. His conclusion was immediately contested by Les Perelman (Assessing Writing, 2014), who argued the engines correlate primarily with essay length and that reliability is not validity — a critique later confirmed by Kumar et al. (2023), who showed modern neural AES systems remain susceptible to adversarial surface triggers that manipulate scores without changing meaning. Tate et al. (Computers and Education: AI, 2024) is the first peer-reviewed LLM grading benchmark: 1,800 secondary student essays in history and English were double-scored by trained raters on a 6-point rubric, then scored 'cold' by ChatGPT. Human-human exact agreement was 51%, within-1-point 92%, weighted kappa 0.79; AI-human within-1-point agreement ran 76–89% across samples, with exact agreement near 40% and moderate-to-fair kappas. ChatGPT compressed scores toward the middle — rarely awarding 1s or 6s. The authors concluded ChatGPT is 'as good as an average busy teacher' and suitable only for low-stakes or formative use. A subsequent ETS reanalysis (Johnson & Zhang, August 2024) on a separate corpus of more than 13,000 essays found GPT-4o scored White, Black, and Hispanic students 0.9 points lower than humans on a 1–6 scale and Asian-American students 1.1 points lower; GPT-4o could predict student race better than it could score the essay, and humans awarded 732 perfect scores while GPT-4o awarded 3.\n\nThe construct validity challenge — not just the reliability gap — is the strongest empirical argument against high-stakes AI grading. Les Perelman's BABEL Generator produced grammatically plausible but semantically empty essays that ETS's e-rater scored 5–6 out of 6 and Vantage's IntelliMetric scored 5.4/6 with 'advanced' ratings. Wilson & Huang (Assessing Writing, 2024), studying MI Write against 2,829 grades 3–5 students including English Language Learners, found AI neither introduces unique bias against ELLs nor remediates the existing human-rater bias — it replicates the same weaker predictive validity. ETS's own internal research (Ramineni et al., 2012) documented that e-rater scored Chinese-L1 TOEFL writers 0.21 SD higher and Arabic-L1 writers 0.19 SD lower than human raters, and scored African-American GRE writers significantly lower than humans did — bias findings from the dominant vendor's own data. Stanford HAI's 2023 study (Liang et al., Patterns, 2023) found that seven leading AI detectors — a related surface-feature problem — flagged 61.22% of TOEFL essays by non-native English speakers as AI-generated, with 19.8% unanimously misclassified, versus near 0% for U.S. eighth-grade essays. These bias findings carry legal weight: the U.S. Department of Education's Office for Civil Rights guidance on 'Avoiding the Discriminatory Use of Artificial Intelligence' (October 2024) set explicit Title VI expectations for AI tools in education.\n\nThe strongest affirmative case for AI feedback rests on speed, scale, and learning gain rather than accuracy parity. Fleckenstein, Liebenow, and Meyer (Frontiers in Artificial Intelligence, 2023), synthesizing 84 effect sizes from 20 quasi-experimental studies with 2,828 students, found a pooled learning effect of g = 0.55 (medium) for automated writing feedback, with a transfer-task effect of g = 0.65 — meaningful gains in writing performance relative to conditions without automated feedback. The mechanism is iteration: AI feedback lets students revise more times before a final human-assessed draft, producing the learning benefit without replacing human judgment on the final grade. Gallup-Walton Family Foundation's Teaching for Tomorrow survey (n=2,232 U.S. K-12 public-school teachers, March–April 2025) found that among the 16% of teachers who use AI for grading, 57% said it improves the quality of their grading and feedback, and weekly AI users save an average of 5.9 hours per week — roughly six weeks per school year.\n\nPublic opinion is broadly negative on AI access to student grades but more nuanced on adjacent uses. The PDK Poll (57th Annual, June 2025, n=1,005 U.S. adults, MOE ±3.9) found 68% of all respondents and approximately 70% of parents do not support providing AI software access to student data including grades and assessments. No partisan breakdown was published. Quinnipiac University's higher-education poll (April 9–13, 2026, n=1,210 adults, MOE ±3.5) provides the only national survey with full demographic breakdowns on adjacent AI-in-education questions: on colleges using AI to screen applications, 30% supported / 59% opposed overall, with Republicans 33%/54%, Democrats 23%/67%, and Independents 32%/60%. On AI tutoring, 44% supported / 52% opposed overall; Republicans were the most supportive (51% support) and Democrats the most opposed (58% oppose); adults 18–34 opposed most strongly (63% oppose) while adults 65+ opposed less (57% oppose). These breakdowns are the closest available partisan proxies for AI grading attitudes, since no direct grading-specific partisan crosstab has been published by any major pollster.\n\nTeacher attitudes are skeptical overall but bifurcated by school level and use type. Gallup-Walton (2025): 40% of teachers favor AI use in K-12, 28% oppose, 30% neutral; only 16% use AI for grading — one of the least-adopted applications. Pew Research Center's Fall 2023 teacher survey (n=2,531 public K-12 teachers) found 25% say AI does more harm than good in K-12, 32% see equal benefit and harm, and only 6% see net benefit; high-school teachers are most skeptical (35% net-negative) versus 19% of elementary teachers. EdWeek Research Center (Fall 2024) found 13% of teachers using AI use it for low-stakes grading and 3% for high-stakes grading. RAND's American Educator Panels (Spring 2025) found 61% of parents agree greater AI use will harm students' critical-thinking skills, while only 22% of district leaders agree — a striking principal-agent gap. More than 70% of Massachusetts parents (MassINC Polling for EdTrust, October–November 2025, n=1,351) worried specifically about biased evaluations of student work.\n\nBoth major teachers' unions have drawn a categorical line on consequential decisions. The NEA Policy Statement on Artificial Intelligence in Education, adopted July 4, 2024 at the 103rd Representative Assembly (approx. 6,000 delegates), explicitly states: 'content generated by AI should never be used as the sole or primary source of information for determinative educational or employment decisions. Grade promotion, class and assignment grades… and other consequential decisions should be made by qualified educators and administrators.' The AFT released 'Commonsense Guardrails' in June 2024 and on July 8, 2025 announced a $23 million National Academy for AI Instruction (funded by Microsoft, OpenAI, and Anthropic) to train 400,000 teachers on human-in-the-loop AI integration. AAUP's July 2025 report from a December 2024 survey of 500 members across nearly 200 campuses found 71% of faculty say they have 'little meaningful input' into AI integration and 76% report declining job enthusiasm.\n\nThe legal record has gone against students seeking to overturn AI-flagged grades. In Harris v. Adams (D. Mass., 2024), a federal magistrate denied a preliminary injunction challenging a D grade imposed on a student whose essay was flagged by Turnitin, ruling defendants had 'the better of the argument on both the facts and the law.' In the UK, the Office of the Independent Adjudicator (July 2024) published six AI-detection cases including upheld appeals from an autistic student and an international student wrongly accused via Turnitin, ruling that 'the responsibility is on the provider to prove that the student has done what they are accused of doing.' The federal policy environment has whipsawed: Biden's 2023 'AI and the Future of Teaching and Learning' report urged 'humans-in-the-loop'; Trump's January 2025 EO 14179 revoked Biden's AI executive order; Trump's April 2025 EO 'Advancing Artificial Intelligence Education for American Youth' directed the Department of Education to prioritize AI in teacher-training grants; a December 2025 Trump EO challenging state AI regulations drew sharp condemnation from the AFT.\n\nThe defensible synthesis in 2026: AI as second reader, formative feedback engine, or low-stakes scorer is supported by the evidence (g = 0.55 learning gain, within-1-point agreement of 76–89%, 5.9 weekly teacher hours saved). AI as the sole arbiter of high-stakes grades is not — given replicable subgroup bias documented by vendors themselves, a construct-validity gap that lets surface-mimicking text score at the top, and explicit opposition from 68% of U.S. adults, both major teachers' unions, and federal education guidance.",
+      "predicted_starting_stances": {
+        "persona_skeptical_traditionalist": 2.5,
+        "persona_progressive_urban": 3.5,
+        "persona_pragmatic_moderate": 5.0,
+        "persona_disengaged_skeptic": 3.5,
+        "persona_faith_community_anchor": 2.5,
+        "persona_ambitious_achiever": 6.5,
+        "persona_empathic_helper": 2.5,
+        "persona_analytical_thinker": 5.5,
+        "persona_gen_z_latina": 3.0
+      },
+      "key_statistics": [],
+      "citations": [
+        {
+          "id": "cite_shermis_2014",
+          "author": "Shermis, M.D.",
+          "year": 2014,
+          "title": "State-of-the-art automated essay scoring: Competition, results, and future directions from a United States demonstration",
+          "source": "Assessing Writing, 20, 53–76",
+          "url": "https://doi.org/10.1016/j.asw.2013.04.001"
+        },
+        {
+          "id": "cite_perelman_2014",
+          "author": "Perelman, L.",
+          "year": 2014,
+          "title": "When 'the state of the art' is counting words",
+          "source": "Assessing Writing, 21, 104–111",
+          "url": "https://doi.org/10.1016/j.asw.2014.05.001"
+        },
+        {
+          "id": "cite_wilson_huang_2024",
+          "author": "Wilson, J., & Huang, Y.",
+          "year": 2024,
+          "title": "Validity of automated essay scores for elementary-age English language learners: Evidence of bias?",
+          "source": "Assessing Writing, 60, 100815",
+          "url": "https://doi.org/10.1016/j.asw.2024.100815"
+        },
+        {
+          "id": "cite_tate_2024",
+          "author": "Tate, T.P., Steiss, J., Bailey, D., Graham, S., Moon, Y., Ritchie, D., Tseng, W., & Warschauer, M.",
+          "year": 2024,
+          "title": "Can AI provide useful holistic essay scoring?",
+          "source": "Computers and Education: Artificial Intelligence, 7, 100255",
+          "url": "https://doi.org/10.1016/j.caeai.2024.100255"
+        },
+        {
+          "id": "cite_ets_gpt4o_2024",
+          "author": "Johnson, M., & Zhang, M. (ETS); reported by The Hechinger Report",
+          "year": 2024,
+          "title": "Proof Points: AI grading tools score Asian American students lower than humans do",
+          "source": "The Hechinger Report, August 2024",
+          "url": "https://hechingerreport.org/proof-points-asian-american-ai-bias/"
+        },
+        {
+          "id": "cite_kumar_2023",
+          "author": "Kumar Singla, Y., Parekh, S., Singh, S., Li, J.J., Shah, R.R., & Chen, C.",
+          "year": 2023,
+          "title": "Automatic Essay Scoring Systems Are Both Overstable and Oversensitive: Explaining Why and Proposing Defenses",
+          "source": "Dialogue & Discourse, 14(1)",
+          "url": "https://journals.uic.edu/ojs/index.php/dad/article/view/12448"
+        },
+        {
+          "id": "cite_ramineni_2012",
+          "author": "Ramineni, C., Trapani, C.S., Williamson, D.M., Davey, T., & Bridgeman, B.",
+          "year": 2012,
+          "title": "Evaluation of the e-rater Scoring Engine for the TOEFL Independent and Integrated Prompts",
+          "source": "ETS Research Report RR-12-06",
+          "url": "https://www.ets.org/research/policy_research_reports/publications/report/2012/jejc.html"
+        },
+        {
+          "id": "cite_perelman_2020",
+          "author": "Perelman, L.",
+          "year": 2020,
+          "title": "The BABEL Generator and e-Rater: 21st Century Writing Constructs and Automated Essay Scoring",
+          "source": "Journal of Writing Assessment, 13(1)",
+          "url": "https://escholarship.org/uc/item/263565cq"
+        },
+        {
+          "id": "cite_fleckenstein_2023",
+          "author": "Fleckenstein, J., Liebenow, L.W., & Meyer, J.",
+          "year": 2023,
+          "title": "Automated feedback and writing: a multi-level meta-analysis",
+          "source": "Frontiers in Artificial Intelligence, 6, 1162454",
+          "url": "https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2023.1162454/full"
+        },
+        {
+          "id": "cite_zhu_2020",
+          "author": "Zhu, M., Liu, O.L., & Lee, H.-S.",
+          "year": 2020,
+          "title": "The effect of automated feedback on revision behavior and learning gains in formative assessment of scientific argument writing",
+          "source": "Computers & Education, 143, 103668",
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/S0360131519302210"
+        },
+        {
+          "id": "cite_pdkpoll_2025",
+          "author": "PDK International / Wason Center for Civic Leadership",
+          "year": 2025,
+          "title": "PDK Poll of the Public's Attitudes Toward the Public Schools, 57th Annual Edition",
+          "source": "PDK International, June 2025 (n=1,005)",
+          "url": "https://pdkpoll.org/2025-poll-results/"
+        },
+        {
+          "id": "cite_quinnipiac_2026",
+          "author": "Quinnipiac University Poll",
+          "year": 2026,
+          "title": "Quinnipiac University National Poll: Higher Education and AI, April 9–13, 2026",
+          "source": "Quinnipiac University Polling Institute (n=1,210)",
+          "url": "https://poll.qu.edu/poll-release?releaseid=3958"
+        },
+        {
+          "id": "cite_gallup_walton_2025",
+          "author": "Gallup & Walton Family Foundation",
+          "year": 2025,
+          "title": "Teaching for Tomorrow: How K-12 Teachers Are Using AI",
+          "source": "Gallup/Walton Family Foundation (RAND American Teacher Panel, n=2,232)",
+          "url": "https://news.gallup.com/poll/691967/three-teachers-weekly-saving-six-weeks-year.aspx"
+        },
+        {
+          "id": "cite_pew_teachers_2023",
+          "author": "Pew Research Center",
+          "year": 2024,
+          "title": "Most U.S. teachers say AI is not ready to be used in K-12 education",
+          "source": "Pew Research Center, May 2024 (n=2,531 public K-12 teachers, fielded Fall 2023)",
+          "url": "https://www.pewresearch.org/short-reads/2024/05/15/most-us-teachers-say-ai-is-not-ready-to-be-used-in-k-12-education/"
+        },
+        {
+          "id": "cite_edweek_grading_2025",
+          "author": "EdWeek Research Center",
+          "year": 2025,
+          "title": "Is It Ethical to Use AI to Grade? Here's What the Research Says",
+          "source": "Education Week, February 2025",
+          "url": "https://www.edweek.org/technology/is-it-ethical-to-use-ai-to-grade/2025/02"
+        },
+        {
+          "id": "cite_npu_2026",
+          "author": "National Parents Union / Echelon Insights",
+          "year": 2026,
+          "title": "How Do Parents Want Schools to Handle AI?",
+          "source": "Education Week, March 2026 (n=1,511 K-12 parents, February 2026)",
+          "url": "https://www.edweek.org/technology/how-do-parents-want-schools-to-handle-ai-insights-from-a-new-survey/2026/03"
+        },
+        {
+          "id": "cite_rand_aep_2025",
+          "author": "RAND Corporation",
+          "year": 2025,
+          "title": "American Educator Panels: Spring 2025",
+          "source": "RAND Corporation Research Report RRA4180-1",
+          "url": "https://www.rand.org/pubs/research_reports/RRA4180-1.html"
+        },
+        {
+          "id": "cite_massinc_2025",
+          "author": "MassINC Polling Group for EdTrust",
+          "year": 2025,
+          "title": "Parents Divided as AI Rapidly Reshapes Massachusetts Classrooms",
+          "source": "MassINC Polling Group (n=1,351 Massachusetts parents, October–November 2025)",
+          "url": "https://www.massincpolling.com/our-work/parents-divided-as-ai-rapidly-reshapes-massachusetts-classrooms"
+        },
+        {
+          "id": "cite_cdt_2025",
+          "author": "Center for Democracy and Technology",
+          "year": 2025,
+          "title": "Rising Use of AI in Schools Comes With Big Downsides for Students",
+          "source": "Education Week, October 2025 (CDT 2024–25 nationally representative survey)",
+          "url": "https://www.edweek.org/technology/rising-use-of-ai-in-schools-comes-with-big-downsides-for-students/2025/10"
+        },
+        {
+          "id": "cite_nea_2024",
+          "author": "National Education Association",
+          "year": 2024,
+          "title": "NEA Policy Statement on Artificial Intelligence in Education",
+          "source": "NEA 103rd Representative Assembly, July 4, 2024",
+          "url": "https://www.nea.org/resource-library/artificial-intelligence-education/vii-full-statement-text"
+        },
+        {
+          "id": "cite_aft_2025",
+          "author": "American Federation of Teachers",
+          "year": 2025,
+          "title": "AFT to Launch National Academy for AI Instruction with Microsoft, OpenAI, Anthropic, and United Federation of Teachers",
+          "source": "AFT Press Release, July 8, 2025",
+          "url": "https://www.aft.org/press-release/aft-launch-national-academy-ai-instruction-microsoft-openai-anthropic-and-united"
+        },
+        {
+          "id": "cite_aaup_2025",
+          "author": "American Association of University Professors",
+          "year": 2025,
+          "title": "Artificial Intelligence and Academic Professions",
+          "source": "AAUP Topical Report, July 22, 2025 (n=500 members, ~200 campuses)",
+          "url": "https://www.aaup.org/reports-publications/aaup-policies-reports/topical-reports/artificial-intelligence-and-academic"
+        },
+        {
+          "id": "cite_usdoe_2023",
+          "author": "U.S. Department of Education, Office of Educational Technology",
+          "year": 2023,
+          "title": "Artificial Intelligence and the Future of Teaching and Learning: Insights and Recommendations",
+          "source": "U.S. Department of Education, May 2023",
+          "url": "https://www.ed.gov/sites/ed/files/documents/ai-report/ai-report.pdf"
+        },
+        {
+          "id": "cite_trump_eo_ai_2025",
+          "author": "The White House",
+          "year": 2025,
+          "title": "Executive Order: Advancing Artificial Intelligence Education for American Youth",
+          "source": "White House Presidential Actions, April 23, 2025",
+          "url": "https://www.whitehouse.gov/presidential-actions/2025/04/advancing-artificial-intelligence-education-for-american-youth/"
+        },
+        {
+          "id": "cite_aft_trump_eo_2025",
+          "author": "American Federation of Teachers",
+          "year": 2025,
+          "title": "AFT's Weingarten: President Trump's Executive Order to Gut AI Regulations Is an Outrageous and Likely Illegal Directive",
+          "source": "AFT Press Release, December 2025",
+          "url": "https://www.aft.org/press-release/afts-weingarten-president-trumps-executive-order-gut-ai-regulations"
+        },
+        {
+          "id": "cite_harris_adams_2024",
+          "author": "Volokh Conspiracy / Reason",
+          "year": 2024,
+          "title": "Court Refuses to Set Aside Discipline of Student for Submitting AI-Generated Assignment",
+          "source": "Reason (Volokh Conspiracy), November 22, 2024 — Harris v. Adams, D. Mass. No. 1:24-cv-12437",
+          "url": "https://reason.com/volokh/2024/11/22/court-refuses-to-set-aside-discipline-of-student-for-submitting-ai-generated-assignment-with-hallucinations/"
+        },
+        {
+          "id": "cite_uk_oia_2024",
+          "author": "Times Higher Education",
+          "year": 2024,
+          "title": "Students Win Plagiarism Appeals Over Generative AI Detection Tool",
+          "source": "Times Higher Education, July 15, 2024",
+          "url": "https://www.timeshighereducation.com/news/students-win-plagiarism-appeals-over-generative-ai-detection-tool"
+        },
+        {
+          "id": "cite_stanford_hai_2023",
+          "author": "Liang, W., Yuksekgonul, M., Mao, Y., Wu, E., & Zou, J.",
+          "year": 2023,
+          "title": "GPT detectors are biased against non-native English writers",
+          "source": "Stanford HAI / Patterns (Cell Press), July 2023",
+          "url": "https://hai.stanford.edu/news/ai-detectors-biased-against-non-native-english-writers"
+        },
+        {
+          "id": "cite_crac_2025",
+          "author": "Council of Regional Accrediting Commissions",
+          "year": 2025,
+          "title": "C-RAC Releases Statement on the Use of Artificial Intelligence",
+          "source": "Middle States Commission on Higher Education, October 6, 2025",
+          "url": "https://www.msche.org/2025/10/06/c-rac-releases-statement-on-the-use-of-artificial-intelligence-ai/"
+        },
+        {
+          "id": "cite_abet_ai",
+          "author": "ABET",
+          "year": 2024,
+          "title": "ABET AI Policy",
+          "source": "ABET Accreditation",
+          "url": "https://www.abet.org/accreditation/ai-policy/"
+        },
+        {
+          "id": "cite_lausd_2024",
+          "author": "Education Week",
+          "year": 2024,
+          "title": "Los Angeles Unified's AI Meltdown: 5 Ways Districts Can Avoid the Same Mistakes",
+          "source": "Education Week, July 2024",
+          "url": "https://www.edweek.org/technology/los-angeles-unifieds-ai-meltdown-5-ways-districts-can-avoid-the-same-mistakes/2024/07"
+        },
+        {
+          "id": "cite_nyc_ai_2026",
+          "author": "Chalkbeat New York",
+          "year": 2026,
+          "title": "NYC schools release preliminary AI policy with 'traffic light' framework",
+          "source": "Chalkbeat, March 24, 2026",
+          "url": "https://www.chalkbeat.org/newyork/2026/03/24/preliminary-ai-policy-nyc-schools/"
+        },
+        {
+          "id": "cite_gsu_grant_2024",
+          "author": "Georgia State University News Hub",
+          "year": 2024,
+          "title": "National Institute for Student Success Awarded $7.6 Million Grant by U.S. Department of Education",
+          "source": "Georgia State University, January 11, 2024",
+          "url": "https://news.gsu.edu/2024/01/11/national-institute-for-student-success-awarded-7-6-million-grant-by-u-s-department-of-education/"
+        }
+      ]
+    },
+    "strategies_compared": [
+      "strategy_common_ground",
+      "strategy_emotional_appeal",
+      "strategy_statistical_logical",
+      "strategy_authority_expert",
+      "strategy_personal_narrative",
+      "strategy_social_proof"
+    ],
+    "generated_at": "2026-04-26T03:31:31.696816+00:00"
+  },
+  "outcomes": [],
+  "overall_synthesis": "I don't see the \"Strategy results\" data you're referring to in your message. Could you please provide the specific strategy results for Priya S. so I can analyze which persuasion approaches worked or failed and write the 2 sentences accordingly?",
+  "validation_note": null
+}
