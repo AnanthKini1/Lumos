@@ -545,56 +545,564 @@
         "5": "Neutral or mixed \u2014 sees potential efficiency benefits but has unresolved concerns about accuracy, fairness, or the appropriate role of AI in education; believes it depends heavily on context and implementation",
         "10": "Strongly supports AI grading \u2014 believes AI can grade more consistently and efficiently than humans, frees teachers for higher-value work, and represents a necessary modernization of education systems at scale"
       },
-      "context_briefing": "AI-assisted grading tools have been used in educational settings for over a decade, initially for automated essay scoring in standardized testing (e.g., the SAT, GRE) and more recently for real-time feedback in classroom assignments. The latest generation of tools, powered by large language models, can evaluate writing for structure, argument quality, grammar, and even originality at a level that earlier automated systems could not. Platforms including Turnitin, Gradescope, and several LLM-based tools are now marketed to K-12 and higher education institutions as cost-saving and consistency-improving solutions.\n\nThe evidence on accuracy is mixed and context-dependent. Studies show AI graders perform comparably to human raters on structured, rubric-based tasks such as standardized essay prompts. Performance drops significantly on creative writing, complex argumentation, discipline-specific reasoning, and student work that departs from conventional structures. Research has also identified systematic bias: AI graders tend to score lower on work by non-native English speakers and students from certain demographic groups, and are susceptible to superficial quality signals \u2014 long sentences, sophisticated-sounding vocabulary \u2014 that may not reflect genuine understanding.\n\nProponents argue that AI grading solves real problems: teachers are overwhelmed, feedback is often delayed or inconsistent across graders, and AI can provide instant, detailed responses at a scale no human workforce could match. In large introductory courses with hundreds of students, the alternative to AI grading is often minimal or no feedback, not rich human engagement. Some educators report using AI as a first-pass tool, reviewing flagged work themselves and focusing their time where it matters most.\n\nOpponents argue that grading is not a mechanical sorting task \u2014 it is a form of pedagogical engagement in which the teacher learns what the student understands, adjusts their instruction accordingly, and communicates expectations that shape learning. Delegating this to AI breaks that feedback loop and risks teaching students to optimize for AI evaluation rather than genuine understanding. Teacher unions and education advocacy groups have raised concerns about deskilling, surveillance, and the erosion of professional judgment. Equity advocates note that AI systems trained predominantly on certain types of academic writing may systematically disadvantage students whose voices and styles differ from that norm.",
+      "context_briefing": "Automated essay scoring (AES) tools have been used in standardized testing since at least the early 2000s \u2014 ETS's e-rater currently grades writing for the GRE, TOEFL, and its Criterion classroom service; Turnitin's Gradescope is the dominant higher-education grading platform, used at Cornell, Purdue, UC San Diego, Florida, Rutgers, Indiana, Ohio State, and Harvard. The latest generation of LLM-based tools has substantially extended AES capability to holistic rubric scoring of open-ended student essays, producing both renewed enthusiasm and new scrutiny. As of 2026, the U.S. Department of Education, both major teachers' unions, and a majority of U.S. adults have explicitly opposed AI serving as the sole or primary arbiter of consequential grades \u2014 while simultaneously acknowledging its value as a formative-feedback and second-reader tool.\n\nThe validity evidence rests on three anchor studies. Shermis (Assessing Writing, 2014) is the foundational benchmark: nine commercial scoring engines plus a 159-team Kaggle competition were evaluated against human scoring of more than 17,000 essays from grades 7, 8, and 10 across six U.S. states. Human-to-human quadratic weighted kappa (QWK) ranged from 0.61 to 0.85 across datasets; machine-to-human QWK ranged from 0.60 to 0.84; the best-vendor mean QWK was 0.78 and the top Kaggle competitor averaged 0.81, both statistically comparable to human-human reliability. Shermis concluded AES is suitable as a second reader or for low-stakes assessment. His conclusion was immediately contested by Les Perelman (Assessing Writing, 2014), who argued the engines correlate primarily with essay length and that reliability is not validity \u2014 a critique later confirmed by Kumar et al. (2023), who showed modern neural AES systems remain susceptible to adversarial surface triggers that manipulate scores without changing meaning. Tate et al. (Computers and Education: AI, 2024) is the first peer-reviewed LLM grading benchmark: 1,800 secondary student essays in history and English were double-scored by trained raters on a 6-point rubric, then scored 'cold' by ChatGPT. Human-human exact agreement was 51%, within-1-point 92%, weighted kappa 0.79; AI-human within-1-point agreement ran 76\u201389% across samples, with exact agreement near 40% and moderate-to-fair kappas. ChatGPT compressed scores toward the middle \u2014 rarely awarding 1s or 6s. The authors concluded ChatGPT is 'as good as an average busy teacher' and suitable only for low-stakes or formative use. A subsequent ETS reanalysis (Johnson & Zhang, August 2024) on a separate corpus of more than 13,000 essays found GPT-4o scored White, Black, and Hispanic students 0.9 points lower than humans on a 1\u20136 scale and Asian-American students 1.1 points lower; GPT-4o could predict student race better than it could score the essay, and humans awarded 732 perfect scores while GPT-4o awarded 3.\n\nThe construct validity challenge \u2014 not just the reliability gap \u2014 is the strongest empirical argument against high-stakes AI grading. Les Perelman's BABEL Generator produced grammatically plausible but semantically empty essays that ETS's e-rater scored 5\u20136 out of 6 and Vantage's IntelliMetric scored 5.4/6 with 'advanced' ratings. Wilson & Huang (Assessing Writing, 2024), studying MI Write against 2,829 grades 3\u20135 students including English Language Learners, found AI neither introduces unique bias against ELLs nor remediates the existing human-rater bias \u2014 it replicates the same weaker predictive validity. ETS's own internal research (Ramineni et al., 2012) documented that e-rater scored Chinese-L1 TOEFL writers 0.21 SD higher and Arabic-L1 writers 0.19 SD lower than human raters, and scored African-American GRE writers significantly lower than humans did \u2014 bias findings from the dominant vendor's own data. Stanford HAI's 2023 study (Liang et al., Patterns, 2023) found that seven leading AI detectors \u2014 a related surface-feature problem \u2014 flagged 61.22% of TOEFL essays by non-native English speakers as AI-generated, with 19.8% unanimously misclassified, versus near 0% for U.S. eighth-grade essays. These bias findings carry legal weight: the U.S. Department of Education's Office for Civil Rights guidance on 'Avoiding the Discriminatory Use of Artificial Intelligence' (October 2024) set explicit Title VI expectations for AI tools in education.\n\nThe strongest affirmative case for AI feedback rests on speed, scale, and learning gain rather than accuracy parity. Fleckenstein, Liebenow, and Meyer (Frontiers in Artificial Intelligence, 2023), synthesizing 84 effect sizes from 20 quasi-experimental studies with 2,828 students, found a pooled learning effect of g = 0.55 (medium) for automated writing feedback, with a transfer-task effect of g = 0.65 \u2014 meaningful gains in writing performance relative to conditions without automated feedback. The mechanism is iteration: AI feedback lets students revise more times before a final human-assessed draft, producing the learning benefit without replacing human judgment on the final grade. Gallup-Walton Family Foundation's Teaching for Tomorrow survey (n=2,232 U.S. K-12 public-school teachers, March\u2013April 2025) found that among the 16% of teachers who use AI for grading, 57% said it improves the quality of their grading and feedback, and weekly AI users save an average of 5.9 hours per week \u2014 roughly six weeks per school year.\n\nPublic opinion is broadly negative on AI access to student grades but more nuanced on adjacent uses. The PDK Poll (57th Annual, June 2025, n=1,005 U.S. adults, MOE \u00b13.9) found 68% of all respondents and approximately 70% of parents do not support providing AI software access to student data including grades and assessments. No partisan breakdown was published. Quinnipiac University's higher-education poll (April 9\u201313, 2026, n=1,210 adults, MOE \u00b13.5) provides the only national survey with full demographic breakdowns on adjacent AI-in-education questions: on colleges using AI to screen applications, 30% supported / 59% opposed overall, with Republicans 33%/54%, Democrats 23%/67%, and Independents 32%/60%. On AI tutoring, 44% supported / 52% opposed overall; Republicans were the most supportive (51% support) and Democrats the most opposed (58% oppose); adults 18\u201334 opposed most strongly (63% oppose) while adults 65+ opposed less (57% oppose). These breakdowns are the closest available partisan proxies for AI grading attitudes, since no direct grading-specific partisan crosstab has been published by any major pollster.\n\nTeacher attitudes are skeptical overall but bifurcated by school level and use type. Gallup-Walton (2025): 40% of teachers favor AI use in K-12, 28% oppose, 30% neutral; only 16% use AI for grading \u2014 one of the least-adopted applications. Pew Research Center's Fall 2023 teacher survey (n=2,531 public K-12 teachers) found 25% say AI does more harm than good in K-12, 32% see equal benefit and harm, and only 6% see net benefit; high-school teachers are most skeptical (35% net-negative) versus 19% of elementary teachers. EdWeek Research Center (Fall 2024) found 13% of teachers using AI use it for low-stakes grading and 3% for high-stakes grading. RAND's American Educator Panels (Spring 2025) found 61% of parents agree greater AI use will harm students' critical-thinking skills, while only 22% of district leaders agree \u2014 a striking principal-agent gap. More than 70% of Massachusetts parents (MassINC Polling for EdTrust, October\u2013November 2025, n=1,351) worried specifically about biased evaluations of student work.\n\nBoth major teachers' unions have drawn a categorical line on consequential decisions. The NEA Policy Statement on Artificial Intelligence in Education, adopted July 4, 2024 at the 103rd Representative Assembly (approx. 6,000 delegates), explicitly states: 'content generated by AI should never be used as the sole or primary source of information for determinative educational or employment decisions. Grade promotion, class and assignment grades\u2026 and other consequential decisions should be made by qualified educators and administrators.' The AFT released 'Commonsense Guardrails' in June 2024 and on July 8, 2025 announced a $23 million National Academy for AI Instruction (funded by Microsoft, OpenAI, and Anthropic) to train 400,000 teachers on human-in-the-loop AI integration. AAUP's July 2025 report from a December 2024 survey of 500 members across nearly 200 campuses found 71% of faculty say they have 'little meaningful input' into AI integration and 76% report declining job enthusiasm.\n\nThe legal record has gone against students seeking to overturn AI-flagged grades. In Harris v. Adams (D. Mass., 2024), a federal magistrate denied a preliminary injunction challenging a D grade imposed on a student whose essay was flagged by Turnitin, ruling defendants had 'the better of the argument on both the facts and the law.' In the UK, the Office of the Independent Adjudicator (July 2024) published six AI-detection cases including upheld appeals from an autistic student and an international student wrongly accused via Turnitin, ruling that 'the responsibility is on the provider to prove that the student has done what they are accused of doing.' The federal policy environment has whipsawed: Biden's 2023 'AI and the Future of Teaching and Learning' report urged 'humans-in-the-loop'; Trump's January 2025 EO 14179 revoked Biden's AI executive order; Trump's April 2025 EO 'Advancing Artificial Intelligence Education for American Youth' directed the Department of Education to prioritize AI in teacher-training grants; a December 2025 Trump EO challenging state AI regulations drew sharp condemnation from the AFT.\n\nThe defensible synthesis in 2026: AI as second reader, formative feedback engine, or low-stakes scorer is supported by the evidence (g = 0.55 learning gain, within-1-point agreement of 76\u201389%, 5.9 weekly teacher hours saved). AI as the sole arbiter of high-stakes grades is not \u2014 given replicable subgroup bias documented by vendors themselves, a construct-validity gap that lets surface-mimicking text score at the top, and explicit opposition from 68% of U.S. adults, both major teachers' unions, and federal education guidance.",
       "predicted_starting_stances": {
-        "persona_skeptical_traditionalist": 2.0,
-        "persona_progressive_urban": 5.0,
+        "persona_skeptical_traditionalist": 2.5,
+        "persona_progressive_urban": 3.5,
         "persona_pragmatic_moderate": 5.0,
-        "persona_disengaged_skeptic": 4.0,
-        "persona_faith_community_anchor": 3.0,
+        "persona_disengaged_skeptic": 3.5,
+        "persona_faith_community_anchor": 2.5,
         "persona_ambitious_achiever": 6.5,
-        "persona_empathic_helper": 3.5,
+        "persona_empathic_helper": 2.5,
         "persona_analytical_thinker": 5.5
+      },
+      "citations": [
+        {
+          "id": "cite_shermis_2014",
+          "author": "Shermis, M.D.",
+          "year": 2014,
+          "title": "State-of-the-art automated essay scoring: Competition, results, and future directions from a United States demonstration",
+          "source": "Assessing Writing, 20, 53\u201376",
+          "url": "https://doi.org/10.1016/j.asw.2013.04.001"
+        },
+        {
+          "id": "cite_perelman_2014",
+          "author": "Perelman, L.",
+          "year": 2014,
+          "title": "When 'the state of the art' is counting words",
+          "source": "Assessing Writing, 21, 104\u2013111",
+          "url": "https://doi.org/10.1016/j.asw.2014.05.001"
+        },
+        {
+          "id": "cite_wilson_huang_2024",
+          "author": "Wilson, J., & Huang, Y.",
+          "year": 2024,
+          "title": "Validity of automated essay scores for elementary-age English language learners: Evidence of bias?",
+          "source": "Assessing Writing, 60, 100815",
+          "url": "https://doi.org/10.1016/j.asw.2024.100815"
+        },
+        {
+          "id": "cite_tate_2024",
+          "author": "Tate, T.P., Steiss, J., Bailey, D., Graham, S., Moon, Y., Ritchie, D., Tseng, W., & Warschauer, M.",
+          "year": 2024,
+          "title": "Can AI provide useful holistic essay scoring?",
+          "source": "Computers and Education: Artificial Intelligence, 7, 100255",
+          "url": "https://doi.org/10.1016/j.caeai.2024.100255"
+        },
+        {
+          "id": "cite_ets_gpt4o_2024",
+          "author": "Johnson, M., & Zhang, M. (ETS); reported by The Hechinger Report",
+          "year": 2024,
+          "title": "Proof Points: AI grading tools score Asian American students lower than humans do",
+          "source": "The Hechinger Report, August 2024",
+          "url": "https://hechingerreport.org/proof-points-asian-american-ai-bias/"
+        },
+        {
+          "id": "cite_kumar_2023",
+          "author": "Kumar Singla, Y., Parekh, S., Singh, S., Li, J.J., Shah, R.R., & Chen, C.",
+          "year": 2023,
+          "title": "Automatic Essay Scoring Systems Are Both Overstable and Oversensitive: Explaining Why and Proposing Defenses",
+          "source": "Dialogue & Discourse, 14(1)",
+          "url": "https://journals.uic.edu/ojs/index.php/dad/article/view/12448"
+        },
+        {
+          "id": "cite_ramineni_2012",
+          "author": "Ramineni, C., Trapani, C.S., Williamson, D.M., Davey, T., & Bridgeman, B.",
+          "year": 2012,
+          "title": "Evaluation of the e-rater Scoring Engine for the TOEFL Independent and Integrated Prompts",
+          "source": "ETS Research Report RR-12-06",
+          "url": "https://www.ets.org/research/policy_research_reports/publications/report/2012/jejc.html"
+        },
+        {
+          "id": "cite_perelman_2020",
+          "author": "Perelman, L.",
+          "year": 2020,
+          "title": "The BABEL Generator and e-Rater: 21st Century Writing Constructs and Automated Essay Scoring",
+          "source": "Journal of Writing Assessment, 13(1)",
+          "url": "https://escholarship.org/uc/item/263565cq"
+        },
+        {
+          "id": "cite_fleckenstein_2023",
+          "author": "Fleckenstein, J., Liebenow, L.W., & Meyer, J.",
+          "year": 2023,
+          "title": "Automated feedback and writing: a multi-level meta-analysis",
+          "source": "Frontiers in Artificial Intelligence, 6, 1162454",
+          "url": "https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2023.1162454/full"
+        },
+        {
+          "id": "cite_zhu_2020",
+          "author": "Zhu, M., Liu, O.L., & Lee, H.-S.",
+          "year": 2020,
+          "title": "The effect of automated feedback on revision behavior and learning gains in formative assessment of scientific argument writing",
+          "source": "Computers & Education, 143, 103668",
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/S0360131519302210"
+        },
+        {
+          "id": "cite_pdkpoll_2025",
+          "author": "PDK International / Wason Center for Civic Leadership",
+          "year": 2025,
+          "title": "PDK Poll of the Public's Attitudes Toward the Public Schools, 57th Annual Edition",
+          "source": "PDK International, June 2025 (n=1,005)",
+          "url": "https://pdkpoll.org/2025-poll-results/"
+        },
+        {
+          "id": "cite_quinnipiac_2026",
+          "author": "Quinnipiac University Poll",
+          "year": 2026,
+          "title": "Quinnipiac University National Poll: Higher Education and AI, April 9\u201313, 2026",
+          "source": "Quinnipiac University Polling Institute (n=1,210)",
+          "url": "https://poll.qu.edu/poll-release?releaseid=3958"
+        },
+        {
+          "id": "cite_gallup_walton_2025",
+          "author": "Gallup & Walton Family Foundation",
+          "year": 2025,
+          "title": "Teaching for Tomorrow: How K-12 Teachers Are Using AI",
+          "source": "Gallup/Walton Family Foundation (RAND American Teacher Panel, n=2,232)",
+          "url": "https://news.gallup.com/poll/691967/three-teachers-weekly-saving-six-weeks-year.aspx"
+        },
+        {
+          "id": "cite_pew_teachers_2023",
+          "author": "Pew Research Center",
+          "year": 2024,
+          "title": "Most U.S. teachers say AI is not ready to be used in K-12 education",
+          "source": "Pew Research Center, May 2024 (n=2,531 public K-12 teachers, fielded Fall 2023)",
+          "url": "https://www.pewresearch.org/short-reads/2024/05/15/most-us-teachers-say-ai-is-not-ready-to-be-used-in-k-12-education/"
+        },
+        {
+          "id": "cite_edweek_grading_2025",
+          "author": "EdWeek Research Center",
+          "year": 2025,
+          "title": "Is It Ethical to Use AI to Grade? Here's What the Research Says",
+          "source": "Education Week, February 2025",
+          "url": "https://www.edweek.org/technology/is-it-ethical-to-use-ai-to-grade/2025/02"
+        },
+        {
+          "id": "cite_npu_2026",
+          "author": "National Parents Union / Echelon Insights",
+          "year": 2026,
+          "title": "How Do Parents Want Schools to Handle AI?",
+          "source": "Education Week, March 2026 (n=1,511 K-12 parents, February 2026)",
+          "url": "https://www.edweek.org/technology/how-do-parents-want-schools-to-handle-ai-insights-from-a-new-survey/2026/03"
+        },
+        {
+          "id": "cite_rand_aep_2025",
+          "author": "RAND Corporation",
+          "year": 2025,
+          "title": "American Educator Panels: Spring 2025",
+          "source": "RAND Corporation Research Report RRA4180-1",
+          "url": "https://www.rand.org/pubs/research_reports/RRA4180-1.html"
+        },
+        {
+          "id": "cite_massinc_2025",
+          "author": "MassINC Polling Group for EdTrust",
+          "year": 2025,
+          "title": "Parents Divided as AI Rapidly Reshapes Massachusetts Classrooms",
+          "source": "MassINC Polling Group (n=1,351 Massachusetts parents, October\u2013November 2025)",
+          "url": "https://www.massincpolling.com/our-work/parents-divided-as-ai-rapidly-reshapes-massachusetts-classrooms"
+        },
+        {
+          "id": "cite_cdt_2025",
+          "author": "Center for Democracy and Technology",
+          "year": 2025,
+          "title": "Rising Use of AI in Schools Comes With Big Downsides for Students",
+          "source": "Education Week, October 2025 (CDT 2024\u201325 nationally representative survey)",
+          "url": "https://www.edweek.org/technology/rising-use-of-ai-in-schools-comes-with-big-downsides-for-students/2025/10"
+        },
+        {
+          "id": "cite_nea_2024",
+          "author": "National Education Association",
+          "year": 2024,
+          "title": "NEA Policy Statement on Artificial Intelligence in Education",
+          "source": "NEA 103rd Representative Assembly, July 4, 2024",
+          "url": "https://www.nea.org/resource-library/artificial-intelligence-education/vii-full-statement-text"
+        },
+        {
+          "id": "cite_aft_2025",
+          "author": "American Federation of Teachers",
+          "year": 2025,
+          "title": "AFT to Launch National Academy for AI Instruction with Microsoft, OpenAI, Anthropic, and United Federation of Teachers",
+          "source": "AFT Press Release, July 8, 2025",
+          "url": "https://www.aft.org/press-release/aft-launch-national-academy-ai-instruction-microsoft-openai-anthropic-and-united"
+        },
+        {
+          "id": "cite_aaup_2025",
+          "author": "American Association of University Professors",
+          "year": 2025,
+          "title": "Artificial Intelligence and Academic Professions",
+          "source": "AAUP Topical Report, July 22, 2025 (n=500 members, ~200 campuses)",
+          "url": "https://www.aaup.org/reports-publications/aaup-policies-reports/topical-reports/artificial-intelligence-and-academic"
+        },
+        {
+          "id": "cite_usdoe_2023",
+          "author": "U.S. Department of Education, Office of Educational Technology",
+          "year": 2023,
+          "title": "Artificial Intelligence and the Future of Teaching and Learning: Insights and Recommendations",
+          "source": "U.S. Department of Education, May 2023",
+          "url": "https://www.ed.gov/sites/ed/files/documents/ai-report/ai-report.pdf"
+        },
+        {
+          "id": "cite_trump_eo_ai_2025",
+          "author": "The White House",
+          "year": 2025,
+          "title": "Executive Order: Advancing Artificial Intelligence Education for American Youth",
+          "source": "White House Presidential Actions, April 23, 2025",
+          "url": "https://www.whitehouse.gov/presidential-actions/2025/04/advancing-artificial-intelligence-education-for-american-youth/"
+        },
+        {
+          "id": "cite_aft_trump_eo_2025",
+          "author": "American Federation of Teachers",
+          "year": 2025,
+          "title": "AFT's Weingarten: President Trump's Executive Order to Gut AI Regulations Is an Outrageous and Likely Illegal Directive",
+          "source": "AFT Press Release, December 2025",
+          "url": "https://www.aft.org/press-release/afts-weingarten-president-trumps-executive-order-gut-ai-regulations"
+        },
+        {
+          "id": "cite_harris_adams_2024",
+          "author": "Volokh Conspiracy / Reason",
+          "year": 2024,
+          "title": "Court Refuses to Set Aside Discipline of Student for Submitting AI-Generated Assignment",
+          "source": "Reason (Volokh Conspiracy), November 22, 2024 \u2014 Harris v. Adams, D. Mass. No. 1:24-cv-12437",
+          "url": "https://reason.com/volokh/2024/11/22/court-refuses-to-set-aside-discipline-of-student-for-submitting-ai-generated-assignment-with-hallucinations/"
+        },
+        {
+          "id": "cite_uk_oia_2024",
+          "author": "Times Higher Education",
+          "year": 2024,
+          "title": "Students Win Plagiarism Appeals Over Generative AI Detection Tool",
+          "source": "Times Higher Education, July 15, 2024",
+          "url": "https://www.timeshighereducation.com/news/students-win-plagiarism-appeals-over-generative-ai-detection-tool"
+        },
+        {
+          "id": "cite_stanford_hai_2023",
+          "author": "Liang, W., Yuksekgonul, M., Mao, Y., Wu, E., & Zou, J.",
+          "year": 2023,
+          "title": "GPT detectors are biased against non-native English writers",
+          "source": "Stanford HAI / Patterns (Cell Press), July 2023",
+          "url": "https://hai.stanford.edu/news/ai-detectors-biased-against-non-native-english-writers"
+        },
+        {
+          "id": "cite_crac_2025",
+          "author": "Council of Regional Accrediting Commissions",
+          "year": 2025,
+          "title": "C-RAC Releases Statement on the Use of Artificial Intelligence",
+          "source": "Middle States Commission on Higher Education, October 6, 2025",
+          "url": "https://www.msche.org/2025/10/06/c-rac-releases-statement-on-the-use-of-artificial-intelligence-ai/"
+        },
+        {
+          "id": "cite_abet_ai",
+          "author": "ABET",
+          "year": 2024,
+          "title": "ABET AI Policy",
+          "source": "ABET Accreditation",
+          "url": "https://www.abet.org/accreditation/ai-policy/"
+        },
+        {
+          "id": "cite_lausd_2024",
+          "author": "Education Week",
+          "year": 2024,
+          "title": "Los Angeles Unified's AI Meltdown: 5 Ways Districts Can Avoid the Same Mistakes",
+          "source": "Education Week, July 2024",
+          "url": "https://www.edweek.org/technology/los-angeles-unifieds-ai-meltdown-5-ways-districts-can-avoid-the-same-mistakes/2024/07"
+        },
+        {
+          "id": "cite_nyc_ai_2026",
+          "author": "Chalkbeat New York",
+          "year": 2026,
+          "title": "NYC schools release preliminary AI policy with 'traffic light' framework",
+          "source": "Chalkbeat, March 24, 2026",
+          "url": "https://www.chalkbeat.org/newyork/2026/03/24/preliminary-ai-policy-nyc-schools/"
+        },
+        {
+          "id": "cite_gsu_grant_2024",
+          "author": "Georgia State University News Hub",
+          "year": 2024,
+          "title": "National Institute for Student Success Awarded $7.6 Million Grant by U.S. Department of Education",
+          "source": "Georgia State University, January 11, 2024",
+          "url": "https://news.gsu.edu/2024/01/11/national-institute-for-student-success-awarded-7-6-million-grant-by-u-s-department-of-education/"
+        }
+      ],
+      "predicted_starting_stances_sourcing": {
+        "persona_skeptical_traditionalist": "No direct partisan crosstab on AI grading has been published by any major pollster. Best proxies: Quinnipiac April 2026 (n=1,210) on AI screening applications: Republicans 33% support / 54% oppose \u2014 slightly more supportive than Democrats (23%/67%) but still majority-opposed. PDK Poll June 2025: 68% of all adults oppose AI access to student grades and assessments (no partisan breakdown published). Persona is 62, Republican-leaning, institutional traditionalist \u2014 values human judgment and the teacher-student relationship; distrust of AI surveillance of student data would be high. Republican lean toward tech pragmatism (Quinnipiac: 51% of Republicans support AI tutoring) is counterbalanced by traditionalist view of grading as inherently a human judgment act. Starting stance 2.5: opposes AI grading as a replacement for human judgment; may accept narrow administrative or efficiency uses, but not with strong ideological framing.",
+        "persona_progressive_urban": "Quinnipiac April 2026: Democrats are the most opposed to AI in college applications (67% oppose) and AI tutoring (58% oppose) of any partisan group \u2014 more opposed than Republicans and Independents. PDK June 2025: ~70% of parents oppose AI access to student grade data (no partisan breakdown, but Democratic lean in opposition consistent with Quinnipiac pattern). Equity concerns land strongly: ETS's own research documents e-rater scored Arabic-L1 writers 0.19 SD lower and African-American GRE writers significantly lower than humans; GPT-4o scored Asian-American writers 1.1 points lower on a 1\u20136 scale. Stanford HAI 2023: 61.22% of non-native English speaker TOEFL essays were flagged as AI-generated by seven detectors, versus near 0% for U.S. eighth-grade essays. NEA's July 2024 policy prohibition on sole-AI consequential decisions resonates with this persona's labor-solidarity orientation. Starting stance 3.5: strongly opposed to high-stakes AI grading on equity/bias grounds; may accept formative feedback use but frames AI as a threat to the most vulnerable students.",
+        "persona_pragmatic_moderate": "PDK June 2025: 68% oppose AI access to student grades overall; no partisan breakdown. Quinnipiac April 2026: Independents 32%/60% on AI screening (closest to this persona's non-ideological profile). Gallup-Walton 2025: 40% of teachers favor AI in K-12, 28% oppose, 30% neutral \u2014 the teacher distribution mirrors this persona's ambivalence. The evidence synthesis is clearly bimodal: Fleckenstein meta-analysis (g = 0.55 learning gain from automated feedback) supports formative use; Tate et al. 2024 (within-1-point agreement 76\u201389%, but exact agreement only ~40% and bias documented at scale) argues against sole-arbiter high-stakes use. NEA, AFT, and federal guidance all land in the same 'second reader/formative tool' zone. Persona is evidence-responsive and would track this consensus. Starting stance 5.0: supports AI for formative feedback and as second reader; opposes sole-arbiter high-stakes use; genuinely uncertain about where to draw the line.",
+        "persona_disengaged_skeptic": "PDK June 2025: 68% of all U.S. adults oppose AI access to student grades \u2014 the broadest and most accessible measure of public opinion, reflecting default skepticism without strong ideological grounding. Quinnipiac April 2026: Independents 32%/60% on AI in education (closest proxy for politically disengaged adults). Persona has limited engagement with education policy and would default to the dominant public skepticism (68% oppose) without having a strong framework for why. Starting stance 3.5: mild opposition following the 68% public consensus; would not be convinced by efficiency arguments but would not engage deeply with equity arguments either.",
+        "persona_faith_community_anchor": "No religion crosstab in any AI-in-education poll. Quinnipiac April 2026 proxies: Republicans (most overlapping political category) 33%/54% on AI in college applications \u2014 majority-opposed. PDK June 2025: 68-70% of adults and parents oppose AI access to student grade data; faith-community parents likely near or above this figure given the personal-relationship values they bring. The persona's rural, evangelical orientation emphasizes the teacher as a pastoral figure \u2014 grading is understood as an act of knowing the student, not measuring output. Remote/impersonal AI evaluation would conflict with this relational educational philosophy. Distrust of tech surveillance data collection (student grades going into an AI system) would reinforce opposition. Starting stance 2.5: opposes AI grading primarily on relational and human-dignity grounds; less concerned with the bias literature specifically, more concerned with what it means for a machine to judge a child's work.",
+        "persona_ambitious_achiever": "Quinnipiac April 2026: Republicans, the closest partisan proxy for this persona's pragmatic efficiency orientation, are the most supportive of AI tutoring (51% support) \u2014 suggesting openness to AI efficiency tools in education. Gallup-Walton 2025: 57% of teachers using AI for grading say it improves quality; 5.9 weekly hours saved by AI users. Tate et al. 2024 authors: ChatGPT is 'as good as an average busy teacher' for formative use \u2014 an efficiency framing this persona would find compelling. However, the ETS GPT-4o reanalysis finding that Asian-American students received scores 1.1 points lower on a 1\u20136 scale is directly relevant to career stakes: grades affect transcripts, scholarships, and graduate admissions. Persona would weigh efficiency benefits against the personal risk of being on the wrong side of a documented demographic scoring gap. Starting stance 6.5: strongly supports AI for formative feedback and efficiency; accepts AI as second reader; more cautious about sole-arbiter use after seeing documented demographic scoring bias that could affect high-stakes outcomes.",
+        "persona_empathic_helper": "PDK June 2025: ~70% of parents oppose AI access to student grade data \u2014 the parental majority sits in this persona's community. RAND Spring 2025: 61% of parents agree greater AI use will harm students' critical-thinking skills. MassINC Polling for EdTrust (October\u2013November 2025, n=1,351 parents): more than 70% worried specifically about biased evaluations of student work. The documented bias findings \u2014 Arabic-L1 writers scored 0.19 SD lower by ETS e-rater, Asian-American writers scored 1.1 points lower by GPT-4o, 61% of non-native English speaker essays misclassified as AI-generated by detectors \u2014 land as direct harms to the most vulnerable students in this persona's frame of reference. NEA July 2024 prohibition on sole-AI consequential decisions, framed explicitly around protecting students from error, resonates with this persona's care orientation. Starting stance 2.5: strongly opposes AI grading as a threat to the students most likely to be harmed by surface-feature bias; accepts human-supervised formative feedback with significant reservations.",
+        "persona_analytical_thinker": "Fleckenstein meta-analysis 2023 (n=2,828, 84 effect sizes, 20 quasi-experimental studies): g = 0.55 for automated feedback on writing performance \u2014 a medium effect size that warrants taking seriously. Shermis 2014: machine-human QWK of 0.78\u20130.81, statistically comparable to human-human reliability. Tate et al. 2024: within-1-point agreement 76\u201389% but exact agreement only ~40% and kappas in moderate-to-fair range; ChatGPT compression toward the mean is a systematic artifact. ETS internal data (Ramineni et al. 2012): Arabic-L1 TOEFL writers scored 0.19 SD lower; African-American GRE writers scored significantly lower. ETS 2024 GPT-4o reanalysis (n>13,000): Asian-American writers 1.1 points lower; GPT-4o predicts race better than it predicts essay quality \u2014 a construct validity failure. BABEL generator: semantically empty essays earn top scores on both e-rater and IntelliMetric \u2014 the system is not measuring what it purports to measure. The evidence convergence is narrow but clear: AI as second reader or formative feedback tool is empirically justified (reliability comparable to humans, learning gain documented); AI as sole consequential grader is not (surface-feature dependence, replicable subgroup bias, construct validity failure). Persona would reach the same verdict as the NEA, AFT, and federal guidance \u2014 but from evidence rather than policy authority. Starting stance 5.5: leans toward supporting AI in low-stakes formative roles with human oversight; leans against sole-arbiter high-stakes use; the bias documentation is the strongest available empirical argument on either side."
       }
     },
     {
       "id": "topic_mandatory_vaccination",
       "display_name": "Should childhood vaccination be mandatory?",
       "stance_scale_definition": {
-        "0": "Strongly opposes mandatory vaccination \u2014 believes parents have the absolute right to make medical decisions for their children without government compulsion, regardless of public health arguments",
-        "5": "Neutral or genuinely mixed \u2014 supports vaccines in principle but uncertain about mandates specifically; believes exemptions, trust-building, or incentives may be preferable to legal requirements",
-        "10": "Strongly supports mandatory vaccination \u2014 believes herd immunity is a collective responsibility, that individual refusal creates preventable risk for vulnerable people who cannot be vaccinated, and that the state is justified in requiring it"
+        "0": "Strongly opposes mandatory vaccination \u2014 believes parents have the absolute right to make medical decisions for their children without government compulsion, that eliminationist mandates violate parental-rights doctrine and bodily autonomy, and that trust-based or inconvenience-based approaches are preferable to coercion",
+        "5": "Neutral or genuinely mixed \u2014 supports vaccines in principle but uncertain about mandates specifically; believes exemptions, trust-building, or calibrated inconvenience regimes may achieve nearly equivalent coverage with less institutional damage; no strong view on whether elimination of nonmedical exemptions is justified",
+        "10": "Strongly supports mandatory vaccination \u2014 believes herd immunity is a collective responsibility, that individual refusal creates non-consensual lethal risk for infants, the immunocompromised, and the medically exempt, and that the state is legally and morally justified in conditioning school entry on vaccination"
       },
-      "context_briefing": "Childhood vaccination mandates in the United States operate through school-entry requirements \u2014 all 50 states require certain vaccines for public school attendance, though 44 states allow religious exemptions and 15 allow philosophical or personal belief exemptions. The core vaccines in question include MMR (measles, mumps, rubella), DTaP (diphtheria, tetanus, pertussis), and polio, all of which have decades of safety data and efficacy above 95%. Smallpox was eradicated globally in 1980 through vaccination campaigns; polio has been eliminated from the Western Hemisphere.\n\nVaccine hesitancy has risen since the early 2000s, accelerated by a 1998 Lancet paper (later fully retracted and its author stripped of his medical license) falsely linking the MMR vaccine to autism. Despite extensive subsequent research across millions of children finding no such link, the belief persists in specific communities. Measles \u2014 declared eliminated in the US in 2000 \u2014 saw outbreaks of 1,282 cases in 2019, the largest since elimination, concentrated in unvaccinated communities in New York and Washington state.\n\nThe policy debate is not primarily about vaccine safety or efficacy \u2014 these are settled science \u2014 but about the legitimate limits of state authority over parental medical decisions. Opponents of mandates span a politically unusual coalition: religious conservatives who cite bodily autonomy and faith-based exemptions, libertarians who oppose government compulsion on principle, and a smaller subset of progressive parents skeptical of pharmaceutical industry influence. Supporters argue that individual refusal imposes externalized risk on immunocompromised children, infants too young to be vaccinated, and cancer patients \u2014 people who depend on herd immunity for protection and cannot consent to the risk others impose on them.\n\nThe herd immunity threshold for measles \u2014 one of the most contagious diseases known \u2014 is approximately 95% vaccination coverage. When community rates fall below this, outbreaks become likely. This makes the debate structurally different from most personal health choices: the decision affects people who did not make it. That externality is the central moral crux of the mandate debate, and it is where the most genuine disagreement among thoughtful people lies.",
+      "context_briefing": "Childhood vaccination mandates in the United States operate through school-entry requirements enforced at the state level. All 50 states require certain vaccines for public school attendance; as of 2025, 44 states allow religious exemptions and 15 allow philosophical or personal-belief exemptions, though several major states \u2014 California (2016), New York (2019), Maine (2019), Connecticut (2021) \u2014 have eliminated nonmedical exemptions following outbreaks. West Virginia and Mississippi have maintained medical-only policies for decades.\n\nThe empirical case for mandate tightening rests on three high-quality quasi-experimental studies. Pingali et al. (JAMA, 2019) analyzed 3.35 million California kindergarten records from 2000\u20132017 and found that eliminating personal-belief exemptions under SB 277 raised up-to-date vaccination from 90.4% to 95.1% and collapsed within-school contact probability between unvaccinated kindergartners from 26.02% to 4.56% \u2014 the most policy-relevant metric for outbreak risk. Delamater et al. (Pediatrics, 2019), using the same dataset, documented partial replacement effects: the not-up-to-date rate dropped from 7.15% to 4.42% in Year 1 but crept back 0.45 percentage points in Year 2 as medical exemptions rose in the same geographic clusters that had held high personal-belief exemption rates, providing the empirical basis for California's follow-on SB 276. Beard et al. (Lancet Regional Health, 2024) evaluated Australia's No Jab, No Pay financial mandate across 1.18 million children and found that previously zero-dose objector families fully vaccinated at 14.6% post-policy versus 1.2% pre-policy (OR 14.1), with roughly 49,510 additional children fully vaccinated beyond the counterfactual \u2014 the first individual-level causal evaluation of a financial vaccine mandate. A 2026 four-state difference-in-differences study (Bald, Gold & Yang, JAMA Pediatrics) found DTaP coverage rose 4.1 percentage points and MMR 4.0 points in nonmedical-exemption repeal states relative to controls, with only 0.4 percentage points of medical-exemption substitution.\n\nThe herd immunity threshold for measles \u2014 one of the most contagious pathogens known \u2014 is approximately 95% coverage. National kindergarten MMR coverage fell from 95.2% in 2019\u201320 to 92.5% in 2024\u201325. The 2025 Texas/Southwest outbreak, originating in a Gaines County Mennonite community with 82% MMR coverage, reached 762 confirmed Texas cases, 99 hospitalizations, and three deaths \u2014 including two unvaccinated children, the first U.S. child measles deaths in over 20 years. Nationally, 2025 produced 2,012 measles cases, the most since 1992.\n\nPublic support for school vaccine requirements remains majority but has eroded sharply. Pew Research Center's October 2025 survey (n=5,111, ATP Wave 182) found 69% of U.S. adults favor requiring healthy children to be vaccinated to attend public school, down from 82% in 2019 and 2016. The collapse is almost entirely partisan: Republicans/lean-Republican fell from 79% (2019) to 52% (2025), while Democrats/lean-Democrat held at 86%. By age, support is 67% among 18\u201329, 64% among 30\u201349, 68% among 50\u201364, and 79% among 65+. By education, support rises from 65% (high school or less) to 78% (postgraduate). Gallup's July 2024 poll (n=1,010) found 51% support for government-required vaccination, down from 62% in 2019 and 81% in 1991; only 36% of Republicans now favor requirements versus 69% of Democrats. KFF/Washington Post's July\u2013August 2025 survey of parents (n=2,716) found 81% support state vaccine laws with medical and religious exceptions, including 73% of MAGA Republican parents; however, a late-2025 KFF tracking poll found 48% of Republican-leaning parents now support their state removing public school vaccine requirements, versus 13% of Democratic-leaning parents.\n\nThe constitutional architecture rests on three Supreme Court cases. Jacobson v. Massachusetts (1905) upheld compulsory smallpox vaccination under state police power, with Justice Harlan writing that 'the liberty secured by the Constitution does not import an absolute right.' Zucht v. King (1922) extended Jacobson to school-entry mandates absent an active outbreak. Prince v. Massachusetts (1944) established that 'the right to practice religion freely does not include liberty to expose the community or the child to communicable disease.' Every modern federal circuit court challenge to vaccine mandates has failed; cert has been denied repeatedly.\n\nThe strongest steelman for mandates rests on negative externalities: vaccine refusal imposes non-consensual risk on infants under 12 months too young for MMR, immunocompromised children, and the medically exempt \u2014 people who cannot consent to the risk others create for them. Phadke et al. (JAMA, 2016) found that in 18 measles studies covering 1,416 cases, 70.6% of vaccine-eligible unvaccinated cases held nonmedical exemptions. Omer et al. (NEJM, 2009) documented odds ratios of 2.7 for pertussis in geographic clusters with elevated exemption rates. Even libertarian philosophers endorse mandates on clean-hands grounds: Jason Brennan (Georgetown) argues refusers 'participate in the collective imposition of unjust harm or risk of harm.'\n\nThe strongest steelman against eliminationist mandates is not anti-vaccine. Mark Navin and Mark Largent (Public Health Ethics, 2017) argue that the best way to reduce exemption rates is making application more burdensome rather than eliminating exemptions \u2014 the inconvenience model \u2014 and that this approach achieves nearly equivalent coverage gains while preserving institutional trust. Douglas Diekema (Annual Review of Public Health, 2014) reaches the same conclusion. Post-COVID backlash data support this: Pew and Gallup document a Republican-parent skepticism surge that calibrated-exemption advocates predicted. The constitutional objection targets eliminationist policies specifically, citing Meyer, Pierce, Yoder, and Troxel for parental-rights doctrine, and Fulton v. Philadelphia (2021) for potential strict-scrutiny exposure when individualized exemptions exist.\n\nThe current political landscape is bifurcating. Florida and Louisiana announced intentions to dismantle mandates in 2025 (Florida's effort has stalled as of April 2026). California, Oregon, and Washington governors formed a defensive vaccine-policy alliance. On June 9, 2025, HHS Secretary Robert F. Kennedy Jr. dismissed all 17 CDC ACIP members and replaced them with a panel including known vaccine skeptics; the reconstituted ACIP voted in December 2025 to drop the universal hepatitis B birth-dose recommendation. A federal district court ruled in March 2026 that the new ACIP was unlawfully constituted. NCSL reports more than 350 anti-vaccine bills introduced in state legislatures in 2025.",
       "predicted_starting_stances": {
         "persona_skeptical_traditionalist": 3.5,
-        "persona_progressive_urban": 7.5,
+        "persona_progressive_urban": 8.0,
         "persona_pragmatic_moderate": 6.5,
-        "persona_disengaged_skeptic": 3.0,
-        "persona_faith_community_anchor": 2.5,
+        "persona_disengaged_skeptic": 3.5,
+        "persona_faith_community_anchor": 3.0,
         "persona_ambitious_achiever": 7.0,
         "persona_empathic_helper": 7.5,
-        "persona_analytical_thinker": 6.5
+        "persona_analytical_thinker": 7.0
+      },
+      "citations": [
+        {
+          "id": "cite_pingali_2019",
+          "author": "Pingali, S.C., Kim, S., & Salmon, D.A.",
+          "year": 2019,
+          "title": "California's Senate Bill 277: Local Exemption Trends before and after Elimination of Nonmedical Vaccine Exemptions",
+          "source": "JAMA Pediatrics, 173(2), 183\u2013185",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6613302/"
+        },
+        {
+          "id": "cite_delamater_2019",
+          "author": "Delamater, P.L., Leslie, T.F., & Yang, Y.T.",
+          "year": 2019,
+          "title": "Change in Medical Exemptions From Immunization in California After Elimination of Personal Belief Exemptions",
+          "source": "JAMA, 321(18), 1823\u20131824",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6564056/"
+        },
+        {
+          "id": "cite_beard_2024",
+          "author": "Beard, F.H., et al.",
+          "year": 2024,
+          "title": "No Jab, No Pay: Effect on Immunisation Coverage Rates in Australian Children",
+          "source": "Lancet Regional Health \u2013 Western Pacific, 54, 101234",
+          "url": "https://www.thelancet.com/journals/lanwpc/article/PIIS2666-6065(24)00253-0/fulltext"
+        },
+        {
+          "id": "cite_bald_2026",
+          "author": "Bald, T., Gold, J., & Yang, Y.T.",
+          "year": 2026,
+          "title": "Nonmedical Exemption Repeal and Childhood Vaccination Coverage: A Difference-in-Differences Analysis",
+          "source": "JAMA Pediatrics",
+          "url": "https://jamanetwork.com/journals/jamapediatrics/article-abstract/2840422"
+        },
+        {
+          "id": "cite_pew_2025_vax",
+          "author": "Pew Research Center",
+          "year": 2025,
+          "title": "How Do Americans View Childhood Vaccines, Vaccine Research, and Policy?",
+          "source": "Pew Research Center",
+          "url": "https://www.pewresearch.org/science/2025/11/18/how-do-americans-view-childhood-vaccines-vaccine-research-and-policy/"
+        },
+        {
+          "id": "cite_gallup_2024_vax",
+          "author": "Gallup",
+          "year": 2024,
+          "title": "Far Fewer Americans Regard Childhood Vaccinations as Important",
+          "source": "Gallup",
+          "url": "https://news.gallup.com/poll/648308/far-fewer-regard-childhood-vaccinations-important.aspx"
+        },
+        {
+          "id": "cite_kff_wapo_2025",
+          "author": "KFF / Washington Post",
+          "year": 2025,
+          "title": "New KFF/Washington Post Survey Explores Parents' Trust in and Confusion about Childhood Vaccines",
+          "source": "KFF",
+          "url": "https://www.kff.org/public-opinion/new-kff-washington-post-survey-explores-parents-trust-in-and-confusion-about-childhood-vaccines-as-the-trump-administration-revamps-federal-policies/"
+        },
+        {
+          "id": "cite_texas_dshs_2025",
+          "author": "Texas Department of State Health Services",
+          "year": 2025,
+          "title": "Measles Outbreak 2025",
+          "source": "Texas DSHS",
+          "url": "https://www.dshs.texas.gov/news-alerts/measles-outbreak-2025"
+        },
+        {
+          "id": "cite_cdc_measles_2025",
+          "author": "Centers for Disease Control and Prevention",
+          "year": 2025,
+          "title": "Measles Cases and Outbreaks",
+          "source": "CDC",
+          "url": "https://www.cdc.gov/measles/data-research/index.html"
+        },
+        {
+          "id": "cite_omer_2009",
+          "author": "Omer, S.B., et al.",
+          "year": 2009,
+          "title": "Vaccine Refusal, Mandatory Immunization, and the Risks of Vaccine-Preventable Diseases",
+          "source": "New England Journal of Medicine, 360(19), 1981\u20131988",
+          "url": "https://www.nejm.org/doi/full/10.1056/nejmsa0806477"
+        },
+        {
+          "id": "cite_phadke_2016",
+          "author": "Phadke, V.K., Bednarczyk, R.A., Salmon, D.A., & Omer, S.B.",
+          "year": 2016,
+          "title": "Association Between Vaccine Refusal and Vaccine-Preventable Disease Outbreaks in the United States",
+          "source": "JAMA, 315(11), 1149\u20131158",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5007135/"
+        },
+        {
+          "id": "cite_navin_largent_2017",
+          "author": "Navin, M., & Largent, M.A.",
+          "year": 2017,
+          "title": "Improving Nonmedical Vaccine Exemption Policies: Three Case Studies",
+          "source": "Public Health Ethics, 10(3), 225\u2013234",
+          "url": "https://academic.oup.com/phe/article-abstract/10/3/225/2993965"
+        },
+        {
+          "id": "cite_jacobson_1905",
+          "author": "U.S. Supreme Court",
+          "year": 1905,
+          "title": "Jacobson v. Massachusetts, 197 U.S. 11",
+          "source": "U.S. Supreme Court",
+          "url": "https://www.law.cornell.edu/supremecourt/text/197/11"
+        }
+      ],
+      "predicted_starting_stances_sourcing": {
+        "persona_skeptical_traditionalist": "Pew Oct 2025: 52% of Republicans support requirements (down from 79% in 2019); 65% support among HS-or-less education; persona is 62, Fox News-trusting, faith-oriented, institutional-skeptic \u2014 maps to low-end Republican bracket. Starting stance 3.5: supports vaccines but opposes government compulsion.",
+        "persona_progressive_urban": "Pew Oct 2025: 86% of Democrats support requirements; 78% postgraduate support; persona is college-educated, urban, progressive. Starting stance 8.0: strong support with slight softening for civil-liberties nuance.",
+        "persona_pragmatic_moderate": "Pew Oct 2025: 69% overall; KFF Jan 2025: 83% with medical/religious exceptions; persona is non-ideological, evidence-responsive. Starting stance 6.5: supports requirements but open to exception frameworks.",
+        "persona_disengaged_skeptic": "Pew Oct 2025: 65% support among HS-or-less; Gallup 2024: 51% overall including disengaged segments; persona has low institutional trust and limited political engagement. Starting stance 3.5: vaguely skeptical of government requirements without strong conviction.",
+        "persona_faith_community_anchor": "Pew 2017: White evangelical Protestants at 76% support (already the lowest religious group); by 2023 White evangelical support had fallen to 58%; KFF late-2025: 48% of Republican-leaning parents support removing requirements; persona is rural, evangelical, social conservative. Starting stance 3.0: religious-liberty and parental-rights framing dominate over public-health logic.",
+        "persona_ambitious_achiever": "Pew Oct 2025: 78% postgraduate support; persona is career-oriented, educated, pragmatic on health policy. Starting stance 7.0: supports requirements as rational policy; may have mild libertarian-efficiency reservations.",
+        "persona_empathic_helper": "Pew Oct 2025: 86% Democrat support; persona prioritizes community welfare, caregiver solidarity, protection of vulnerable \u2014 immunocompromised and infant arguments land strongly. Starting stance 7.5: strong support grounded in protection of those who cannot be vaccinated.",
+        "persona_analytical_thinker": "Pew Oct 2025: 78% postgraduate; persona evaluates evidence systematically; the Pingali, Delamater, and Beard studies converge on mandate efficacy; aware of Navin/Largent calibrated-exemption argument. Starting stance 7.0: evidence-driven support with acknowledgment of replacement effects and calibration debate."
       }
     },
     {
       "id": "topic_return_to_office",
       "display_name": "Should companies require return-to-office?",
       "stance_scale_definition": {
-        "0": "Strongly opposes RTO mandates \u2014 believes remote work should be a permanent employee right and companies have no legitimate basis to require office presence",
-        "5": "Neutral or genuinely mixed \u2014 sees valid arguments on both sides, no strong view, or believes it should vary by role and circumstance",
-        "10": "Strongly supports full RTO mandates \u2014 believes office presence is essential for culture, collaboration, and accountability and companies are right to require it"
+        "0": "Strongly opposes RTO mandates \u2014 believes remote and hybrid work should be a permanent employee right, that five-day mandates destroy measurable value without evidence-based justification, and that flexibility is a non-negotiable employment condition for caregivers, workers with disabilities, and those with long commutes",
+        "5": "Neutral or genuinely mixed \u2014 sees valid arguments on both sides; believes structured hybrid (2\u20133 days in office) is the evidence-based middle ground; no strong view on whether employers are right to mandate full return vs. mandate specific in-office days vs. leave it to teams",
+        "10": "Strongly supports full RTO mandates \u2014 believes five-day in-office presence is essential for culture, mentorship of junior employees, spontaneous collaboration, and long-run organizational health; willing to accept the attrition cost as preferable to cultural erosion"
       },
-      "context_briefing": "Since 2020, remote work shifted from an emergency accommodation to a permanent expectation for millions of workers, particularly in white-collar and knowledge-work sectors. By 2023, major employers including Amazon, JPMorgan Chase, Goldman Sachs, and Google had issued return-to-office mandates ranging from three to five days per week, citing collaboration, mentorship, culture-building, and productivity concerns. Employee pushback has been significant: surveys consistently show that remote-capable workers rank flexibility among their top job priorities, and some workers who relocated or restructured caregiving arrangements around remote work have faced significant hardship under mandates.\n\nResearch on productivity and performance is genuinely mixed. A widely cited Stanford study by Nicholas Bloom found remote workers 13% more productive on average, but later work from the same researcher found that fully remote work \u2014 particularly for early-career employees \u2014 may reduce learning, collaboration quality, and long-term career advancement compared to hybrid arrangements. Studies of specific firms post-mandate have shown both improvement and deterioration in output depending on role type and implementation.\n\nThe debate often fractures along demographic lines. Parents of young children and adult caregivers \u2014 disproportionately women \u2014 bear the highest cost of rigid RTO mandates. Early-career workers may benefit most from in-office mentorship and visibility. Senior employees and executives, who often have more control over their schedules and more insulation from commute costs, have been the loudest advocates for return. Workers in high cost-of-living cities who relocated during the pandemic face particular hardship. Some labor economists argue that RTO mandates function as a form of attrition management \u2014 a way to reduce headcount without formal layoffs.\n\nThe policy question is genuinely contested. Those who favor mandates argue that the office creates irreplaceable conditions for culture, spontaneous collaboration, and accountability. Those who oppose them argue that flexibility has become a non-negotiable employment condition and that forcing return ignores demonstrated productivity evidence and imposes real costs on workers with caregiving responsibilities. Both positions are held by thoughtful people with legitimate concerns.",
+      "context_briefing": "The return-to-office debate concerns whether employers \u2014 in the private sector and federal government \u2014 should require employees to work on-site full-time, mandate structured hybrid arrangements, or leave location decisions to employees and teams. As of March 2026, 22.6% of U.S. employees worked remotely at least partially, down only slightly from 23% in March 2024; work-from-home days account for roughly a quarter of all paid workdays in the U.S. Despite high-profile full-RTO announcements from Amazon (five days, effective January 2025), JPMorgan Chase (five days, March 2025), AT&T, Dell, Boeing, and UPS, a March 2025 Stanford/Atlanta Fed Survey of Business Uncertainty found that only 12% of executives with hybrid or remote workers planned an RTO mandate in the year ahead, and that planned shifts would reduce the share of remote paid workdays by less than half a percentage point \u2014 from 21.2% to 20.8%. Only 27% of companies have returned to a fully in-person model; 67% offer some level of flexibility.\n\nThe empirical evidence on productivity and attrition centers on three anchor studies. Bloom, Han & Liang (Nature, 2024) is the only randomized controlled trial of hybrid work for university-educated professionals: 1,612 Trip.com employees were randomized to five-day office schedules or three-days-a-week hybrid for six months with an 18-month follow-up. Hybrid employees were exactly as productive and as likely to be promoted as their fully office-based peers, while attrition fell 33% and job satisfaction rose significantly. The study's authors note that people randomized into working from home four days a week were 50% less likely to be promoted \u2014 suggesting that very-high-remote arrangements do carry career costs, but that two days at home do not. Gibbs, Mengel & Siemroth (Journal of Political Economy Microeconomics, 2023) analyzed over 10,000 skilled IT professionals at HCL Technologies before and during forced-WFH: total hours worked rose roughly 30% (including 18% more after-hours work), but average output did not significantly change, implying productivity per hour fell 8\u201319%. Workers networked with fewer colleagues, received less coaching and 1:1 supervisor time, and lost access to the unplanned interactions that accelerate tacit knowledge transfer \u2014 effects concentrated among less experienced employees. Pabilonia & Redmond (BLS, 2024) found a positive correlation between total factor productivity and remote-work prevalence across 43 private-sector industries, consistent with better worker-job matching and commute reduction, but no statistically significant relationship between excess labor productivity growth and remote-work share at the macro level. The honest synthesis: hybrid (2\u20133 days in office) produces no productivity loss and large retention gains; fully remote arrangements carry real coordination and mentorship costs for junior workers; five-day mandates are not supported by the evidence.\n\nPew Research Center's October 2024 survey of 2,315 employed U.S. adults with teleworkable jobs (published January 2025) provides the most current preference data. Among workers with teleworkable jobs, 75% are working remotely at least some of the time; 46% say they would be unlikely to stay at their current job if remote work ended, including 26% who say very unlikely, versus only 36% who say they would stay. By age, workers under 50 are more likely to say they would leave (50%) than workers 50 and older (35%). By gender, women are somewhat more likely than men to say they would leave (49% vs. 43%). Workers who currently work fully remotely are far more likely to report they would leave (61%) than partial-remote workers (47%) or occasional-remote workers (28%). Among hybrid workers, only 24% say they would choose fully remote if free to decide; 72% prefer a hybrid arrangement. Stanford's December 2024 Survey of Working Arrangements and Attitudes found that only 44% of respondents said they would comply with a full on-site RTO requirement; the rest said they would quit or begin searching. On employer pressure, the share of workers required to be in the office regularly surged from 63% in early 2023 to 75% by late 2024. Remote and hybrid work is structurally a college-educated, white-collar benefit: 61% of U.S. workers overall do not have teleworkable jobs, and Hispanic adults and those without a college degree are among the most likely to work on-site regardless of preference.\n\nNo major nonpartisan pollster \u2014 Pew, Gallup, KFF, PRRI, YouGov, Morning Consult, AP-NORC, or NBC/WSJ \u2014 has published a Republican-vs.-Democrat crosstab on private-sector RTO preferences as of April 2026. Pew's October 2024 worker survey broke its RTO questions by gender, age, and WFH frequency \u2014 but not by party. The absence is itself informative: when partisan gaps are notable on a topic Pew covers, they are highlighted prominently. The clearest available partisan signal comes from three sources. First, Gallup's August 2023 remote-work survey \u2014 the only published non-COVID partisan signal on remote work perception \u2014 found 42% of Republicans vs. 13% of Democrats say remote workers are less productive than in-office workers, a 29-point gap that Gallup notes 'emerged with COVID' rather than reflecting pre-existing management ideology. Second, a Harris Poll/Bloomberg survey (early 2024) found Democrats 14 points more likely than Republicans to call required in-person work 'unfair' for remote-capable jobs, 15 points more likely to say remote work equalizes office inequities, and Republicans 10 points more likely to say remote work limits career advancement \u2014 the only direct private-sector partisan RTO crosstab in the public record. Third, the partisan battle has been displaced to the federal workforce: Trump's January 20, 2025 executive order directed all federal agencies to terminate remote work arrangements, with OPM guidance requiring full-time on-site presence by January 24, 2025. This mandate affected roughly 1.15 million telework-eligible civilian federal workers, including approximately 230,000 in fully remote positions. Center Square/Noble Predictive Insights (April 2025, n=2,527 registered voters) found 54% of Republicans vs. 35% of Democrats support requiring all federal workers back full-time \u2014 a 19-point gap. The Economist/YouGov poll (January 2025, n=1,577) found approximately 53% of Republicans vs. 25% of Democrats supported Trump's federal telework policy. Republicans have aligned with the Trump/DOGE framing that remote work enables low productivity and that forced RTO would produce voluntary attrition \u2014 an explicit goal stated by Musk and Ramaswamy. Democrats and federal employee unions have opposed the mandate; the National Treasury Employees Union sued January 21, 2025, and a third-party arbitrator ruled in January 2026 that HHS committed an unfair labor practice by unilaterally terminating telework without regard to its 2023\u20132028 collective bargaining agreement. DOGE simultaneously cancelled more than 200 federal building leases, creating a situation where too few desks existed for employees ordered back \u2014 a logistical dilemma courts and arbitrators are still resolving.\n\nU.S. private-sector employers have broad legal authority to set workplace location policies, subject to three major constraints: the ADA requires reasonable accommodation for employees with disabilities who cannot return; Title VII prohibits policies that disproportionately burden protected classes; and constructive dismissal doctrine may apply where remote work was a core term of employment. A 2024 study found 80% of companies had already reported losing talent because of RTO mandates; only 20% of LinkedIn job listings are remote or hybrid but they receive 60% of applications \u2014 a revealed-preference signal about labor market competition.\n\nThe strongest steelman for RTO targets mentorship and coordination spillovers, not shirking. Gibbs et al. provide the empirical backbone: coordination costs rose sharply, networking breadth shrank, and junior employees received less coaching and 1:1 supervisor time in WFH conditions. Bloom acknowledges that four-days-remote workers were 50% less likely to be promoted \u2014 a career-development finding with long-run human capital implications. The coordination-externality argument is structurally compelling: if one person on an eight-person team works from home on a day others come in, it imposes negative spillovers on the team through split-attendance hybrid meetings \u2014 a genuine prisoner's dilemma that only a policy mandate can solve. The strongest steelman against full RTO cites Bloom's RCT: structured hybrid produces zero productivity loss, zero promotion disadvantage, and 33% lower attrition. Full mandates function as a tax on caregivers (75% of caregivers say flexibility helps them manage work and home), workers with disabilities (63% prefer remote, 42% would consider leaving if forced back), and employees with long commutes \u2014 precisely the groups whose productivity gains from flexibility are largest. The Musk-Ramaswamy admission that federal RTO is intended to induce voluntary attrition is the strongest evidence that stated productivity rationales often conceal workforce-reduction motives.",
       "predicted_starting_stances": {
         "persona_skeptical_traditionalist": 7.0,
-        "persona_progressive_urban": 2.5,
+        "persona_progressive_urban": 2.0,
         "persona_pragmatic_moderate": 5.0,
-        "persona_disengaged_skeptic": 4.0,
+        "persona_disengaged_skeptic": 4.5,
         "persona_faith_community_anchor": 7.5,
-        "persona_ambitious_achiever": 6.5,
-        "persona_empathic_helper": 3.0,
-        "persona_analytical_thinker": 5.0
+        "persona_ambitious_achiever": 6.0,
+        "persona_empathic_helper": 2.5,
+        "persona_analytical_thinker": 4.5
+      },
+      "citations": [
+        {
+          "id": "cite_bloom_2024",
+          "author": "Bloom, N., Han, R., & Liang, J.",
+          "year": 2024,
+          "title": "Hybrid working from home improves retention without damaging performance",
+          "source": "Nature, 630, 920\u2013925",
+          "url": "https://www.nature.com/articles/s41586-024-07500-2"
+        },
+        {
+          "id": "cite_gibbs_2023",
+          "author": "Gibbs, M., Mengel, F., & Siemroth, C.",
+          "year": 2023,
+          "title": "Work from Home & Productivity: Evidence from Personnel & Analytics Data on IT Professionals",
+          "source": "Journal of Political Economy Microeconomics, 1(1), 7\u201341",
+          "url": "https://www.journals.uchicago.edu/doi/abs/10.1086/721803"
+        },
+        {
+          "id": "cite_pabilonia_2024",
+          "author": "Pabilonia, S.W., & Redmond, V.",
+          "year": 2024,
+          "title": "Remote Work, Wages, and Hours Worked in the United States",
+          "source": "U.S. Bureau of Labor Statistics, Beyond the Numbers, vol. 13",
+          "url": "https://www.bls.gov/opub/btn/volume-13/remote-work-productivity.htm"
+        },
+        {
+          "id": "cite_pew_2025_rto",
+          "author": "Parker, K., & Horowitz, J.M.",
+          "year": 2025,
+          "title": "Many remote workers say they'd be likely to leave their job if they could no longer work from home",
+          "source": "Pew Research Center",
+          "url": "https://www.pewresearch.org/short-reads/2025/01/13/many-remote-workers-say-theyd-be-likely-to-leave-their-job-if-they-could-no-longer-work-from-home/"
+        },
+        {
+          "id": "cite_gallup_2023_rto",
+          "author": "Gallup",
+          "year": 2023,
+          "title": "Remote Work Stable at Higher Rate Post-Pandemic",
+          "source": "Gallup",
+          "url": "https://news.gallup.com/poll/510785/remote-work-stable-higher-rate-post-pandemic.aspx"
+        },
+        {
+          "id": "cite_harris_stagwell_2024",
+          "author": "Harris Poll / Stagwell",
+          "year": 2024,
+          "title": "What the Data Say: 67% See Office Versus Remote Work Debate as Too Political",
+          "source": "Stagwell Global",
+          "url": "https://www.stagwellglobal.com/what-the-data-say-67-see-office-versus-remote-work-debate-as-too-political/"
+        },
+        {
+          "id": "cite_morningconsult_2024",
+          "author": "Morning Consult",
+          "year": 2024,
+          "title": "State of Workers 2024",
+          "source": "Morning Consult Pro",
+          "url": "https://pro.morningconsult.com/analyst-reports/state-of-workers-2024"
+        },
+        {
+          "id": "cite_trump_eo_rto_2025",
+          "author": "Trump, D.J.",
+          "year": 2025,
+          "title": "Return to In-Person Work (Executive Order)",
+          "source": "White House",
+          "url": "https://www.whitehouse.gov/presidential-actions/2025/01/return-to-in-person-work/"
+        },
+        {
+          "id": "cite_centersquare_2025",
+          "author": "Noble Predictive Insights / Center Square",
+          "year": 2025,
+          "title": "Poll: Majority support requiring federal workers to return to office",
+          "source": "The Center Square",
+          "url": "https://www.thecentersquare.com/national/article_01bd8ff2-6e0f-4691-9f67-1898affec3c8.html"
+        },
+        {
+          "id": "cite_economist_yougov_2025",
+          "author": "The Economist / YouGov",
+          "year": 2025,
+          "title": "Economist/YouGov Poll: January 26\u201328, 2025",
+          "source": "YouGov",
+          "url": "https://today.yougov.com/politics/articles/51493-comparing-start-donald-trumps-first-second-terms-policy-economy-january-26-28-2025-economist-yougov-poll"
+        },
+        {
+          "id": "cite_cowan_garcia_2024",
+          "author": "Cowan, B., & Garcia, J.",
+          "year": 2024,
+          "title": "Political Partisanship and Work from Home Adoption",
+          "source": "NBER Working Paper 32834",
+          "url": "https://www.nber.org/papers/w32834"
+        },
+        {
+          "id": "cite_stanford_swaa_2024",
+          "author": "Barrero, J.M., Bloom, N., & Davis, S.J.",
+          "year": 2024,
+          "title": "Survey of Working Arrangements and Attitudes (December 2024)",
+          "source": "Stanford University / Atlanta Fed",
+          "url": "https://news.stanford.edu/stories/2025/03/return-to-office-not-everybody-is-doing-it"
+        },
+        {
+          "id": "cite_wapo_ipsos_2025",
+          "author": "Washington Post / Ipsos",
+          "year": 2025,
+          "title": "Washington Post\u2013Ipsos Poll: Civilian Federal Workers (Feb. 28\u2013March 10, 2025)",
+          "source": "The Washington Post",
+          "url": "https://www.washingtonpost.com/tablet/2025/03/18/feb-28-march-10-2025-washington-post-ipsos-poll-civilian-federal-workers/"
+        }
+      ],
+      "predicted_starting_stances_sourcing": {
+        "persona_skeptical_traditionalist": "No major nonpartisan pollster (Pew, Gallup, KFF, PRRI, YouGov, AP-NORC, NBC/WSJ) has published a Republican-vs.-Democrat crosstab on private-sector RTO preferences as of April 2026. Best proxies: Gallup Aug 2023 productivity-perception question \u2014 the only published non-COVID partisan signal on remote work itself \u2014 found 42% of Republicans vs. 13% of Democrats say remote workers are less productive than office workers (29-pt gap). Federal-workforce partisan signal: Center Square/Noble Predictive Insights (April 2025, n=2,527) found 54% R vs. 35% D support requiring federal workers back full-time (19-pt gap). Pew Oct 2024: workers 50+ less likely to say they'd leave over RTO (35%) than under-50 (50%). Persona is 62, Republican-leaning, institutional traditionalist \u2014 maps to high end of Gallup's Republican productivity-skepticism bracket. Starting stance 7.0: supports return as cultural norm grounded in productivity suspicion; not ideologically rigid about five-day mandate.",
+        "persona_progressive_urban": "No major nonpartisan pollster has published a private-sector partisan RTO crosstab. Closest direct private-sector partisan measurement: Harris Poll/Bloomberg (early 2024) found Democrats 14 points more likely than Republicans to call required in-person work 'unfair' for remote-capable jobs. Pew Oct 2024: workers under 50 most likely to say they'd leave over RTO (50%); women slightly more likely than men (49% vs. 43%). College-educated, urban professionals are the demographic most likely to hold teleworkable jobs and most likely to prefer flexibility. NBER county-level ecological data (Cowan & Garcia, 2024): one-SD increase in Democratic county vote share correlates with 1\u20132 pp more remote work post-2020. Starting stance 2.0: strong opposition to full mandates grounded in lived stake; supports hybrid as worker right.",
+        "persona_pragmatic_moderate": "Pew Oct 2024: 72% of hybrid workers prefer hybrid over fully remote; only 24% want fully remote. No private-sector partisan crosstab exists from major pollsters \u2014 absence is itself informative (Pew weights on partisanship and publishes partisan gaps when notable; omission suggests the gap on private-sector RTO preference is small or insignificant). Persona is non-ideological and evidence-responsive; the Bloom et al. RCT clearly supports structured hybrid as the optimal policy. Harris/Bloomberg (early 2024): 67% of employed Americans agree the office-vs.-remote debate has become 'unnecessarily politicized' \u2014 consistent with this persona's pragmatic framing. Starting stance 5.0: supports structured hybrid policy; no strong view on employer mandates vs. team discretion.",
+        "persona_disengaged_skeptic": "Pew Oct 2024: 61% of all U.S. workers do not have teleworkable jobs; those without college degrees are among the most likely to already work on-site regardless of preference. No private-sector partisan RTO crosstab from any major pollster. Gallup's productivity-perception gap (29 pts, Aug 2023) is the only individual-level partisan signal, but it measures a perception rather than a preference. Persona likely has no teleworkable job, limiting personal stake in the debate. Starting stance 4.5: mild indifference with a slight lean toward 'just go back to how it was' \u2014 shaped by the cultural Republican lean on productivity suspicion without strong personal involvement.",
+        "persona_faith_community_anchor": "No religion crosstab in any RTO poll from major nonpartisan pollsters. Best proxies: Gallup Aug 2023: 42% of Republicans vs. 13% of Democrats say remote workers are less productive (29-pt gap); Economist/YouGov (Jan 2025, n=1,577): approximately 53% of Republicans vs. 25% of Democrats supported Trump's 'require all federal workers to work in person' policy; Center Square/Noble (April 2025): 54% R vs. 35% D support federal full-RTO (19-pt gap). Persona is rural, evangelical, Southern \u2014 least likely demographic to have a remote-capable job (rural + non-white-collar overlap). Culturally aligned with work-as-presence norm; politically Republican and aligned with Trump/DOGE framing. Starting stance 7.5: strong instinct that in-person work is the proper standard; remote work seen as a coastal professional privilege subsidized by employers.",
+        "persona_ambitious_achiever": "No private-sector partisan RTO crosstab from major pollsters. Most directly relevant finding: Harris Poll/Bloomberg (early 2024) found Republicans 10 points more likely than Democrats to say remote work limits career advancement \u2014 a finding that runs in the same direction as this persona's pragmatic career-visibility concern. Bloom et al. (Nature, 2024): people randomized to four days remote were 50% less likely to be promoted, even at an employer with neutral promotion intentions \u2014 the strongest empirical warrant for in-person presence for career-oriented workers. Pew Oct 2024: college-educated workers most likely to prefer flexibility, but this persona's career-advancement motivation overrides general demographic lean. Starting stance 6.0: supports structured hybrid or selective in-office presence for visibility; opposes full five-day mandate as productivity-destroying; pragmatic rather than ideological.",
+        "persona_empathic_helper": "No major nonpartisan pollster has published a private-sector partisan RTO crosstab. Closest private-sector direct measurement: Harris Poll/Bloomberg (early 2024) found Democrats 14 points more likely than Republicans to call required in-person work 'unfair' for remote-capable jobs and 15 points more likely to say remote work equalizes office inequities. Pew Oct 2024: women more likely than men to say they'd leave over RTO (49% vs. 43%); 75% of caregivers say flexibility helps them manage work and home; 63% of workers with disabilities prefer remote. Persona is caregiver-oriented, community-focused, likely carries disproportionate domestic labor \u2014 the groups for whom RTO functions as a direct tax on caregiving capacity. Starting stance 2.5: strong opposition grounded in caregiving equity and protection of the most flexibility-dependent workers.",
+        "persona_analytical_thinker": "No major nonpartisan pollster has published a private-sector partisan RTO crosstab \u2014 the absence itself is analytically noteworthy; Pew weights on partisanship and publishes partisan gaps prominently when notable, so the omission likely reflects an insignificant or ambiguous gap on worker preference. The operative evidence for this persona is the research record: Bloom et al. RCT (Nature, 2024) is the strongest design \u2014 randomized, 1,612 subjects, 18-month follow-up \u2014 finding zero productivity loss and 33% lower attrition under hybrid. Gibbs et al. (JPE Micro, 2023) counterweight applies to fully-remote, not hybrid. NBER ecological data (county Biden-vote-share as proxy) cannot resolve individual-level partisan preferences. Gallup Aug 2023 productivity-perception gap (42% R vs. 13% D) is a perception measure, not a preference measure. Starting stance 4.5: leans against full RTO mandates on RCT grounds; would support structured hybrid with designated team days; treats Gallup productivity perception gap as a social fact to track, not an empirical argument about actual productivity."
       }
     }
   ],
