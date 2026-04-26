@@ -82,7 +82,7 @@ function ChatBubble({ text, isTyping, label, side, annotation, turnNumber, isNew
       animate={isNew ? 'visible' : false}
       className={`flex flex-col gap-1 ${side === 'right' ? 'items-end' : 'items-start'}`}
     >
-      <span className="text-xs font-mono text-[#0f0f0f] opacity-50 font-bold uppercase tracking-widest px-1">
+      <span className="text-xs font-mono text-[#0f0f0f] opacity-70 font-bold uppercase tracking-widest px-1">
         {label}
       </span>
       <div
@@ -94,7 +94,7 @@ function ChatBubble({ text, isTyping, label, side, annotation, turnNumber, isNew
         )}
       </div>
       {annotation && side === 'left' && (
-        <p className="font-mono text-xs italic text-[#0f0f0f] opacity-50 max-w-[80%] px-1 leading-relaxed mt-1">
+        <p className="font-mono text-sm italic text-[#0f0f0f] opacity-70 max-w-[80%] px-1 leading-relaxed mt-1">
           {annotation}
         </p>
       )}
@@ -114,8 +114,11 @@ export default function PublicConversation({ turns, currentTurn, strategyDisplay
     <div className="h-full flex flex-col bg-[#fafafa]" data-testid="public-conversation">
       {/* Panel header */}
       <div className="shrink-0 px-5 py-3 border-b-2 border-[#0f0f0f]">
-        <p className="text-xs font-mono text-[#0f0f0f] opacity-50 uppercase tracking-widest">
-          Persuasion Attempt — {strategyDisplayName}
+        <p className="text-xs font-mono text-[#0f0f0f] opacity-50 uppercase tracking-widest mb-0.5">
+          Persuasion Attempt
+        </p>
+        <p data-testid="strategy-name-header" className="text-base font-mono font-bold text-[#0f0f0f]">
+          {strategyDisplayName}
         </p>
       </div>
 

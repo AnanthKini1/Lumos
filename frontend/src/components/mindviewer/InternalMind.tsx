@@ -46,13 +46,13 @@ export default function InternalMind({ turnOutput, priorMemoryNotes, turnNumber,
     <div
       data-testid="internal-mind"
       className={[
-        'h-full flex flex-col bg-[#0f0f0f] text-[#fafafa] transition-colors duration-300',
-        threatened ? 'border-l-4 border-[#dc2626]' : 'border-l-2 border-[#0f0f0f]',
+        'h-full flex flex-col bg-[#f2ede4] text-[#0f0f0f] transition-colors duration-300 border-l-4',
+        threatened ? 'border-[#dc2626]' : 'border-[#0f0f0f]',
       ].join(' ')}
     >
       {/* Panel header */}
-      <div className="shrink-0 px-5 py-3 border-b border-[#fafafa] border-opacity-10">
-        <p data-testid="mind-header" className="text-xs font-mono text-[#fafafa] opacity-50 uppercase tracking-[0.3em]">
+      <div className="shrink-0 px-5 py-3 border-b border-[#0f0f0f] border-opacity-10">
+        <p data-testid="mind-header" className="text-xs font-mono text-[#0f0f0f] opacity-60 font-bold uppercase tracking-[0.3em]">
           Internal Monologue — Turn {turnNumber}
         </p>
       </div>
@@ -68,11 +68,11 @@ export default function InternalMind({ turnOutput, priorMemoryNotes, turnNumber,
             animate={{ opacity: [0.4, 1] }}
             transition={{ duration: 0.3 }}
           >
-            <p className="font-mono font-bold text-4xl text-[#fafafa] uppercase tracking-wide leading-none">
+            <p className="font-mono font-bold text-4xl text-[#0f0f0f] uppercase tracking-wide leading-none">
               {emotional_reaction.primary_emotion} — {emotional_reaction.intensity}/10
             </p>
           </motion.div>
-          <p className="font-mono text-xs text-[#fafafa] opacity-60 mt-1.5">
+          <p className="font-mono text-sm text-[#0f0f0f] opacity-70 mt-1.5">
             Triggered by: &ldquo;{emotional_reaction.trigger}&rdquo;
           </p>
         </div>
@@ -91,13 +91,13 @@ export default function InternalMind({ turnOutput, priorMemoryNotes, turnNumber,
 
         {/* Internal monologue */}
         <div className="space-y-2">
-          <p className="text-xs font-mono text-[#fafafa] opacity-60 uppercase tracking-wider">Thinking</p>
+          <p className="text-sm font-mono font-bold text-[#0f0f0f] opacity-70 uppercase tracking-wider">Thinking</p>
 
           {/* Prior turns faded */}
           {priorMemoryNotes.length > 0 && (
             <div className="space-y-1 opacity-40">
               {turnOutput.internal_monologue && priorMemoryNotes.map((_, i) => (
-                <div key={i} className="text-sm font-serif italic text-[#fafafa] line-clamp-2">
+                <div key={i} className="text-sm font-serif italic text-[#0f0f0f] line-clamp-2">
                   {/* prior monologue is not stored, show memory note as proxy */}
                 </div>
               ))}
@@ -105,49 +105,49 @@ export default function InternalMind({ turnOutput, priorMemoryNotes, turnNumber,
           )}
 
           {/* Current monologue */}
-          <div className="text-lg italic font-serif text-[#fafafa] leading-relaxed min-h-[5rem]">
+          <div className="text-lg italic font-serif text-[#0f0f0f] leading-relaxed min-h-[5rem]">
             {monologue}
             {showCursor && (
-              <span className="typing-cursor-dark" />
+              <span className="typing-cursor" />
             )}
           </div>
         </div>
 
         {/* Private stance — hero number */}
-        <div data-testid="private-stance" className="space-y-1 border-t border-[#fafafa] border-opacity-10 pt-4">
-          <p className="text-xs font-mono text-[#fafafa] opacity-60 uppercase tracking-wider">Private Stance</p>
+        <div data-testid="private-stance" className="space-y-1 border-t border-[#0f0f0f] border-opacity-10 pt-4">
+          <p className="text-sm font-mono font-bold text-[#0f0f0f] opacity-70 uppercase tracking-wider">Private Stance</p>
           <div className="flex items-baseline gap-3">
-            <span className="text-6xl font-mono font-bold text-[#fafafa] leading-none">
+            <span className="text-6xl font-mono font-bold text-[#0f0f0f] leading-none">
               {private_stance.toFixed(1)}
             </span>
-            <span className="text-[#fafafa] opacity-50 font-mono text-xl">/ 10</span>
-            <span data-testid="stance-arrow" className="text-2xl text-[#fafafa] font-mono">
+            <span className="text-[#0f0f0f] opacity-40 font-mono text-xl">/ 10</span>
+            <span data-testid="stance-arrow" className="text-2xl text-[#0f0f0f] font-mono">
               {stanceDirection}
             </span>
           </div>
-          <p className="text-sm font-serif italic text-[#fafafa] opacity-70 mt-1">{private_stance_change_reason}</p>
+          <p className="text-sm font-serif italic text-[#0f0f0f] opacity-80 mt-1">{private_stance_change_reason}</p>
         </div>
 
         {/* Memory residue */}
-        <div className="space-y-2 border-t border-[#fafafa] border-opacity-10 pt-4">
-          <p className="text-xs font-mono text-[#fafafa] opacity-60 uppercase tracking-wider">Memory</p>
+        <div className="space-y-2 border-t border-[#0f0f0f] border-opacity-10 pt-4">
+          <p className="text-sm font-mono font-bold text-[#0f0f0f] opacity-70 uppercase tracking-wider">Memory</p>
 
           {priorMemoryNotes.map((note, i) => (
             <div
               key={i}
-              className="px-3 py-2 border border-[#fafafa] border-opacity-30 opacity-60"
+              className="px-3 py-2 border border-[#0f0f0f] border-opacity-20 opacity-60"
             >
-              <span className="font-mono text-xs text-[#fafafa] mr-2 opacity-70">Turn {i + 1}</span>
-              <span className="font-serif text-xs text-[#fafafa]">{note}</span>
+              <span className="font-mono text-xs text-[#0f0f0f] mr-2 opacity-40">Turn {i + 1}</span>
+              <span className="font-serif text-xs text-[#0f0f0f] opacity-70">{note}</span>
             </div>
           ))}
 
           <div
             data-testid="current-memory"
-            className="px-3 py-2 border border-[#fafafa] border-opacity-60"
+            className="px-3 py-2 border-2 border-[#0f0f0f]"
           >
-            <span className="font-mono text-xs text-[#fafafa] mr-2 opacity-60">Turn {turnNumber}</span>
-            <span className="font-serif text-xs text-[#fafafa]">{memory_to_carry_forward}</span>
+            <span className="font-mono text-xs text-[#0f0f0f] mr-2 opacity-50">Turn {turnNumber}</span>
+            <span className="font-serif text-xs text-[#0f0f0f]">{memory_to_carry_forward}</span>
           </div>
         </div>
       </div>

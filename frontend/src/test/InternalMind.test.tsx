@@ -71,10 +71,24 @@ describe('InternalMind', () => {
     expect(panel.className).toContain('border-l-4')
   })
 
-  it('applies dark background always (inverted panel)', () => {
+  it('has warm parchment background (not dark inverted)', () => {
     render(<InternalMind turnOutput={mockPersonaTurnOutput} priorMemoryNotes={[]} turnNumber={1} />)
     const panel = screen.getByTestId('internal-mind')
-    expect(panel.className).toContain('bg-[#0f0f0f]')
+    expect(panel.className).toContain('bg-[#f2ede4]')
+    expect(panel.className).not.toContain('bg-[#0f0f0f]')
+  })
+
+  it('has dark text on parchment background', () => {
+    render(<InternalMind turnOutput={mockPersonaTurnOutput} priorMemoryNotes={[]} turnNumber={1} />)
+    const panel = screen.getByTestId('internal-mind')
+    expect(panel.className).toContain('text-[#0f0f0f]')
+    expect(panel.className).not.toContain('text-[#fafafa]')
+  })
+
+  it('always has border-l-4 to distinguish from conversation panel', () => {
+    render(<InternalMind turnOutput={mockPersonaTurnOutput} priorMemoryNotes={[]} turnNumber={1} />)
+    const panel = screen.getByTestId('internal-mind')
+    expect(panel.className).toContain('border-l-4')
   })
 
   it('shows private stance section', () => {

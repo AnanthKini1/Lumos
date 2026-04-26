@@ -31,6 +31,23 @@ function renderAuthority() {
   )
 }
 
+describe('StrategyCard — header button hover styling', () => {
+  it('header button uses warm tint hover, not black inversion', () => {
+    renderNarrative()
+    const btn = screen.getByTestId('strategy-card-toggle-strategy_personal_narrative')
+    expect(btn.className).not.toContain('hover:bg-[#0f0f0f]')
+    expect(btn.className).toContain('hover:bg-[#ebe8e1]')
+  })
+
+  it('header button has left border accent on hover', () => {
+    renderNarrative()
+    const btn = screen.getByTestId('strategy-card-toggle-strategy_personal_narrative')
+    expect(btn.className).toContain('border-l-4')
+    expect(btn.className).toContain('border-transparent')
+    expect(btn.className).toContain('hover:border-[#0f0f0f]')
+  })
+})
+
 describe('StrategyCard — collapsed state', () => {
   it('renders with data-testid', () => {
     renderNarrative()

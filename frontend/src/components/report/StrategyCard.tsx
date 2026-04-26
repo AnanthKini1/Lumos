@@ -44,14 +44,14 @@ export default function StrategyCard({ outcome, strategyDisplayName, onViewTrans
         data-testid={`strategy-card-toggle-${outcome.strategy_id}`}
         onClick={() => setExpanded(e => !e)}
         aria-expanded={expanded}
-        className="group w-full px-5 py-5 flex items-start gap-3 text-left hover:bg-[#0f0f0f] transition-colors"
+        className="w-full px-5 py-5 flex items-start gap-3 text-left hover:bg-[#ebe8e1] transition-colors border-l-4 border-transparent hover:border-[#0f0f0f]"
       >
         <div className="flex-1 min-w-0">
           <div className="flex flex-wrap items-center gap-3 mb-2">
-            <span className="font-bold font-serif text-xl text-[#0f0f0f] group-hover:text-[#fafafa]">{strategyDisplayName}</span>
+            <span className="font-bold font-serif text-xl text-[#0f0f0f]">{strategyDisplayName}</span>
             <span
               data-testid={`card-verdict-badge-${outcome.strategy_id}`}
-              className="font-mono text-xs font-bold text-[#0f0f0f] group-hover:text-[#fafafa] uppercase"
+              className="font-mono text-xs font-bold text-[#0f0f0f] uppercase"
             >
               {VERDICT_LABEL[verdict]}
             </span>
@@ -64,10 +64,10 @@ export default function StrategyCard({ outcome, strategyDisplayName, onViewTrans
               </span>
             )}
           </div>
-          <p className="font-serif text-base text-[#0f0f0f] group-hover:text-[#fafafa] opacity-60 group-hover:opacity-100 leading-snug">{verdict_reasoning}</p>
+          <p className="font-serif text-base text-[#0f0f0f] opacity-60 leading-snug">{verdict_reasoning}</p>
         </div>
         <span
-          className="font-mono text-xl font-bold text-[#0f0f0f] group-hover:text-[#fafafa] shrink-0 mt-0.5"
+          className="font-mono text-xl font-bold text-[#0f0f0f] shrink-0 mt-0.5"
           aria-hidden="true"
         >
           {expanded ? '−' : '+'}

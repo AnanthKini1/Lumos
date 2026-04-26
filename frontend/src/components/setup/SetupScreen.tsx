@@ -23,10 +23,10 @@ function PersonaCard({ persona, selected, onSelect }: PersonaCardProps) {
       onClick={onSelect}
       data-testid={`persona-card-${persona.id}`}
       className={[
-        'w-full text-left p-6 border-2 transition-colors duration-150',
+        'w-full text-left p-6 transition-colors duration-150',
         selected
-          ? 'border-[#0f0f0f] bg-[#0f0f0f] text-[#fafafa]'
-          : 'border-[#0f0f0f] bg-white text-[#0f0f0f] hover:bg-[#f0f0f0]',
+          ? 'border-4 border-[#0f0f0f] bg-white text-[#0f0f0f]'
+          : 'border-2 border-[#0f0f0f] bg-white text-[#0f0f0f] hover:bg-[#f0f0f0]',
       ].join(' ')}
     >
       <p className="font-bold text-xl font-serif leading-tight mb-1">{persona.display_name}</p>
@@ -36,10 +36,7 @@ function PersonaCard({ persona, selected, onSelect }: PersonaCardProps) {
           <span key={v}>{i > 0 && <span className="mx-1 opacity-40">·</span>}<span>{toTitleCase(v)}</span></span>
         ))}
       </p>
-      <span className={[
-        'inline-block font-mono text-xs border px-1.5 py-0.5',
-        selected ? 'border-[#fafafa] text-[#fafafa]' : 'border-[#0f0f0f] text-[#0f0f0f]',
-      ].join(' ')}>
+      <span className="inline-block font-mono text-xs border border-[#0f0f0f] text-[#0f0f0f] px-1.5 py-0.5">
         {persona.source_citation.primary_source.split('—')[0].trim()}
       </span>
     </button>
@@ -173,10 +170,10 @@ function TopicCard({ topic, selectedPersonaId, selected, onSelect }: TopicCardPr
       onClick={onSelect}
       data-testid={`topic-card-${topic.id}`}
       className={[
-        'w-full text-left p-6 border-2 transition-colors duration-150',
+        'w-full text-left p-6 transition-colors duration-150',
         selected
-          ? 'border-[#0f0f0f] bg-[#0f0f0f] text-[#fafafa]'
-          : 'border-[#0f0f0f] bg-white text-[#0f0f0f] hover:bg-[#f0f0f0]',
+          ? 'border-4 border-[#0f0f0f] bg-white text-[#0f0f0f]'
+          : 'border-2 border-[#0f0f0f] bg-white text-[#0f0f0f] hover:bg-[#f0f0f0]',
       ].join(' ')}
     >
       <div className="flex items-start justify-between gap-6">
@@ -187,10 +184,7 @@ function TopicCard({ topic, selectedPersonaId, selected, onSelect }: TopicCardPr
           </p>
         </div>
         {startingStance !== null && (
-          <div className={[
-            'shrink-0 text-right border-2 p-3',
-            selected ? 'border-[#fafafa]' : 'border-[#0f0f0f]',
-          ].join(' ')}>
+          <div className="shrink-0 text-right border-2 border-[#0f0f0f] p-3">
             <p className="text-xs font-mono uppercase tracking-wide opacity-60 mb-1">Starting Stance</p>
             <p className="font-mono text-2xl font-bold">
               {startingStance.toFixed(1)}

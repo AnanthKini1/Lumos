@@ -133,10 +133,10 @@ export default function ComparisonReport({ simulation, onViewTranscript, onBackT
                 <tr>
                   <th className="text-left px-4 py-3 font-mono text-xs uppercase tracking-widest border border-[#0f0f0f] bg-[#0f0f0f] text-[#fafafa]">Strategy</th>
                   <th className="text-left px-4 py-3 font-mono text-xs uppercase tracking-widest border border-[#0f0f0f] bg-[#0f0f0f] text-[#fafafa]">Verdict</th>
-                  <th className="text-right px-4 py-3 font-mono text-xs uppercase tracking-widest border border-[#0f0f0f] bg-[#0f0f0f] text-[#fafafa]">Public Δ</th>
-                  <th className="text-right px-4 py-3 font-mono text-xs uppercase tracking-widest border border-[#0f0f0f] bg-[#0f0f0f] text-[#fafafa]">Private Δ</th>
-                  <th className="text-right px-4 py-3 font-mono text-xs uppercase tracking-widest border border-[#0f0f0f] bg-[#0f0f0f] text-[#fafafa]">Max Gap</th>
-                  <th className="text-right px-4 py-3 font-mono text-xs uppercase tracking-widest border border-[#0f0f0f] bg-[#0f0f0f] text-[#fafafa]">Threats</th>
+                  <th className="text-center px-4 py-3 font-mono text-xs uppercase tracking-widest border border-[#0f0f0f] bg-[#0f0f0f] text-[#fafafa]">Public Δ</th>
+                  <th className="text-center px-4 py-3 font-mono text-xs uppercase tracking-widest border border-[#0f0f0f] bg-[#0f0f0f] text-[#fafafa]">Private Δ</th>
+                  <th className="text-center px-4 py-3 font-mono text-xs uppercase tracking-widest border border-[#0f0f0f] bg-[#0f0f0f] text-[#fafafa]">Max Gap</th>
+                  <th className="text-center px-4 py-3 font-mono text-xs uppercase tracking-widest border border-[#0f0f0f] bg-[#0f0f0f] text-[#fafafa]">Threats</th>
                   <th className="text-left px-4 py-3 font-mono text-xs uppercase tracking-widest border border-[#0f0f0f] bg-[#0f0f0f] text-[#fafafa]">Persistence</th>
                   <th className="px-4 py-3 border border-[#0f0f0f] bg-[#0f0f0f]" />
                 </tr>
@@ -149,22 +149,22 @@ export default function ComparisonReport({ simulation, onViewTranscript, onBackT
                     <tr
                       key={outcome.strategy_id}
                       data-testid={`report-row-${outcome.strategy_id}`}
-                      className="group border-b border-[#0f0f0f] hover:bg-[#0f0f0f] transition-colors cursor-default"
+                      className="border-b border-[#0f0f0f] hover:bg-[#f0ede8] transition-colors cursor-default"
                     >
-                      <td className="px-4 py-3 font-serif font-bold text-[#0f0f0f] group-hover:text-[#fafafa] border border-[#0f0f0f]">
+                      <td className="px-4 py-3 font-serif font-bold text-[#0f0f0f] border border-[#0f0f0f]">
                         {strategyDisplayName(outcome.strategy_id)}
                       </td>
                       <td className="px-4 py-3 border border-[#0f0f0f]">
                         <span
                           data-testid={`verdict-badge-${outcome.strategy_id}`}
-                          className="font-mono text-xs font-bold text-[#0f0f0f] group-hover:text-[#fafafa] uppercase"
+                          className="font-mono text-xs font-bold text-[#0f0f0f] uppercase"
                         >
                           {VERDICT_LABEL[outcome.verdict]}
                         </span>
                         {inflection && inflection.mechanism_classification && (
                           <div
                             data-testid={`inflection-callout-${outcome.strategy_id}`}
-                            className="mt-2 px-3 py-2 font-mono text-xs text-[#0f0f0f] group-hover:text-[#fafafa] opacity-70 leading-snug border"
+                            className="mt-2 px-3 py-2 font-mono text-xs text-[#0f0f0f] opacity-70 leading-snug border"
                             style={{ borderColor: CATEGORY_COLOR[inflection.color_category ?? ''] ?? '#0f0f0f' }}
                           >
                             <span className="font-bold">Turn {inflection.turn_number}</span>
@@ -182,32 +182,32 @@ export default function ComparisonReport({ simulation, onViewTranscript, onBackT
                       </td>
                       <td
                         data-testid={`public-delta-${outcome.strategy_id}`}
-                        className="px-4 py-3 text-right font-mono text-sm text-[#0f0f0f] group-hover:text-[#fafafa] border border-[#0f0f0f]"
+                        className="px-4 py-3 text-center font-mono text-sm text-[#0f0f0f] border border-[#0f0f0f]"
                       >
                         {row.publicDelta}
                       </td>
                       <td
                         data-testid={`private-delta-${outcome.strategy_id}`}
-                        className="px-4 py-3 text-right font-mono text-sm text-[#0f0f0f] group-hover:text-[#fafafa] border border-[#0f0f0f]"
+                        className="px-4 py-3 text-center font-mono text-sm text-[#0f0f0f] border border-[#0f0f0f]"
                       >
                         {row.privateDelta}
                       </td>
                       <td
                         data-testid={`max-gap-${outcome.strategy_id}`}
-                        className="px-4 py-3 text-right font-mono text-sm text-[#0f0f0f] group-hover:text-[#fafafa] border border-[#0f0f0f]"
+                        className="px-4 py-3 text-center font-mono text-sm text-[#0f0f0f] border border-[#0f0f0f]"
                       >
                         {row.maxGap}
                       </td>
                       <td
                         data-testid={`threats-${outcome.strategy_id}`}
-                        className="px-4 py-3 text-right font-mono text-sm text-[#0f0f0f] group-hover:text-[#fafafa] border border-[#0f0f0f]"
+                        className="px-4 py-3 text-center font-mono text-sm text-[#0f0f0f] border border-[#0f0f0f]"
                       >
                         {row.threats}
                       </td>
                       <td className="px-4 py-3 border border-[#0f0f0f]">
                         <span
                           data-testid={`persistence-${outcome.strategy_id}`}
-                          className="font-mono text-xs font-bold text-[#0f0f0f] group-hover:text-[#fafafa] uppercase"
+                          className="font-mono text-xs font-bold text-[#0f0f0f] uppercase"
                         >
                           {PERSISTENCE_LABEL[row.persistence] ?? row.persistence.replace(/_/g, ' ').toUpperCase()}
                         </span>
@@ -216,7 +216,7 @@ export default function ComparisonReport({ simulation, onViewTranscript, onBackT
                         <button
                           data-testid={`view-transcript-${outcome.strategy_id}`}
                           onClick={() => onViewTranscript(outcome.strategy_id)}
-                          className="font-mono text-xs font-bold text-[#0f0f0f] group-hover:text-[#fafafa] underline hover:opacity-60 transition-opacity"
+                          className="font-mono text-xs font-bold text-[#0f0f0f] underline hover:opacity-60 transition-opacity"
                         >
                           Watch →
                         </button>
