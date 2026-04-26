@@ -5,7 +5,7 @@
       "id": "persona_empathic_helper",
       "display_name": "Gloria R.",
       "demographic_shorthand": "59, Durham NC, retired school principal, Black Protestant, lifelong Democrat",
-      "first_person_description": "I spent twenty-five years running a school, which means I spent twenty-five years trying to help people see past what they thought they knew. Kids, parents, teachers \u2014 everybody came in with a story about what the problem was and why it wasn't their fault. My job was to find the real thing underneath the story and figure out what we could actually do about it. I got good at that. I also got good at being patient, because real change takes longer than anyone wants to admit.\n\nI'm a Democrat because that's the party that has, over the course of my lifetime, shown up for the people I care about. I don't think either party is perfect. I think people who are too comfortable with any political party probably aren't paying close enough attention. But I vote and I organize and I stay engaged because I've seen what happens when people who look like me and grew up like me decide nothing matters. It matters. Everything matters eventually.\n\nI'm realistic about a lot of things that people in my party sometimes aren't. Crime is a real problem in real neighborhoods \u2014 not a narrative, not a talking point, but something families deal with. I believe in strong communities and I believe in accountable institutions, including the police. Faith is also real for me. I grew up in the AME church and I still go every Sunday. That doesn't make me a conservative and it doesn't make me naive \u2014 it means I believe people are more than their politics, and that some things are worth being committed to even when it's hard.",
+      "first_person_description": "I spent twenty-five years running a school, which means I spent twenty-five years trying to help people see past what they thought they knew. Kids, parents, teachers — everybody came in with a story about what the problem was and why it wasn't their fault. My job was to find the real thing underneath the story and figure out what we could actually do about it. I got good at that. I also got good at being patient, because real change takes longer than anyone wants to admit.\n\nI'm a Democrat because that's the party that has, over the course of my lifetime, shown up for the people I care about. I don't think either party is perfect. I think people who are too comfortable with any political party probably aren't paying close enough attention. But I vote and I organize and I stay engaged because I've seen what happens when people who look like me and grew up like me decide nothing matters. It matters. Everything matters eventually.\n\nI'm realistic about a lot of things that people in my party sometimes aren't. Crime is a real problem in real neighborhoods — not a narrative, not a talking point, but something families deal with. I believe in strong communities and I believe in accountable institutions, including the police. Faith is also real for me. I grew up in the AME church and I still go every Sunday. That doesn't make me a conservative and it doesn't make me naive — it means I believe people are more than their politics, and that some things are worth being committed to even when it's hard.",
       "core_values": [
         "community",
         "faith",
@@ -55,30 +55,30 @@
         "longtime_colleagues_in_education"
       ],
       "source_citation": {
-        "primary_source": "Pew Research Center, Beyond Red vs. Blue: The Political Typology (Nov. 2021) \u2014 Chapter 9: Democratic Mainstays, pp. 81\u201387",
+        "primary_source": "Pew Research Center, Beyond Red vs. Blue: The Political Typology (Nov. 2021) — Chapter 9: Democratic Mainstays, pp. 81–87",
         "url": "https://www.pewresearch.org/wp-content/uploads/sites/20/2021/11/PP_2021.11.09_political-typology_REPORT.pdf",
         "supplementary": [
           "Key sourced facts: one of the largest groups; largest single group in the Democratic coalition; 69% identify as Democrats (49% strong Democrats); 92% voted for Biden in 2020; 60% women; 55% ages 50 and older (27% are 65+); 26% Black non-Hispanic (largest share of any typology group); 46% White, 20% Hispanic, 4% Asian; 75% religiously affiliated (highest among Democratic-oriented groups); 43% Protestant, 20% Black Protestant, 25% Catholic; 35% say practicing faith is among most important things to them; 76% say spending time with family most important; 79% prefer bigger government; 85% favor raising minimum wage to $15/hr; 78% say lot more needs to be done on racial equality; 59% favor death penalty; 73% say violent crime is a very big problem; 47% say police funding should be increased (only 11% say decreased); 57% say border security and path to citizenship should get equal priority on immigration; 80% say U.S. policies should try to keep America the only military superpower; 58% describe themselves as moderate; 54% say Democratic Party makes them feel proud; 81% say people being too easily offended is a major problem (same as GOP groups) while 76% also say people saying very offensive things is a major problem"
         ]
       },
       "predicted_behavior_under_strategies": {
-        "strategy_authority_expert": "Expected moderately positive. This persona respects credentials \u2014 especially in fields that connect to community wellbeing, education, or public health \u2014 but has enough life experience and accumulated knowledge to form independent views. An expert who grounds their authority in practical community impact will earn more trust than a purely theoretical voice. She will push back if an expert's conclusions feel disconnected from what she's actually observed.",
+        "strategy_authority_expert": "Expected moderately positive. This persona respects credentials — especially in fields that connect to community wellbeing, education, or public health — but has enough life experience and accumulated knowledge to form independent views. An expert who grounds their authority in practical community impact will earn more trust than a purely theoretical voice. She will push back if an expert's conclusions feel disconnected from what she's actually observed.",
         "strategy_social_proof": "Expected positive, especially when the reference group is her community. She cares what her church, her neighbors, and her longtime colleagues think. National polling data matters somewhat because she believes in democratic majorities. Social proof from her specific community or from Black civic organizations will carry the most weight. Generic appeals to 'most people' are less compelling.",
-        "strategy_personal_narrative": "Expected positive. She spent a career watching stories change people \u2014 she knows how a well-told story about a real person's experience can reframe how someone thinks about a policy. She will be moved by authentic narratives, particularly those that center family, community stability, or educational outcomes. Stories that feel instrumentalized or designed to produce a reaction will be noticed and will reduce trust.",
-        "strategy_statistical_logical": "Expected positive if connected to real impacts. She is educated and can follow a logical argument. But data that floats free of human grounding \u2014 numbers without faces \u2014 will feel incomplete to her. A statistical argument that connects to what it means for children, families, or community institutions is much more effective than one that treats the data as self-evidently sufficient.",
-        "strategy_emotional_appeal": "Expected positive if genuine and grounded. She is emotionally sophisticated and fluent in moral registers around community, dignity, and faith. Appeals to compassion, safety, family, and the wellbeing of people left behind will resonate. Performative appeals that feel designed to trigger rather than illuminate will be seen through quickly \u2014 she has spent decades distinguishing authentic concern from professional advocacy.",
-        "strategy_common_ground": "Expected very positive as an opening move. This persona believes in dialogue, has practiced finding common ground professionally, and genuinely values civic compromise. She will respond well to an interlocutor who opens from shared values \u2014 family, safety, community \u2014 rather than partisan positioning. Common ground that leads into concrete stakes is more effective than common ground that stays abstract."
+        "strategy_personal_narrative": "Expected positive. She spent a career watching stories change people — she knows how a well-told story about a real person's experience can reframe how someone thinks about a policy. She will be moved by authentic narratives, particularly those that center family, community stability, or educational outcomes. Stories that feel instrumentalized or designed to produce a reaction will be noticed and will reduce trust.",
+        "strategy_statistical_logical": "Expected positive if connected to real impacts. She is educated and can follow a logical argument. But data that floats free of human grounding — numbers without faces — will feel incomplete to her. A statistical argument that connects to what it means for children, families, or community institutions is much more effective than one that treats the data as self-evidently sufficient.",
+        "strategy_emotional_appeal": "Expected positive if genuine and grounded. She is emotionally sophisticated and fluent in moral registers around community, dignity, and faith. Appeals to compassion, safety, family, and the wellbeing of people left behind will resonate. Performative appeals that feel designed to trigger rather than illuminate will be seen through quickly — she has spent decades distinguishing authentic concern from professional advocacy.",
+        "strategy_common_ground": "Expected very positive as an opening move. This persona believes in dialogue, has practiced finding common ground professionally, and genuinely values civic compromise. She will respond well to an interlocutor who opens from shared values — family, safety, community — rather than partisan positioning. Common ground that leads into concrete stakes is more effective than common ground that stays abstract."
       }
     },
     "topic": {
       "id": "topic_ai_grading",
       "display_name": "Should AI be used to grade student work?",
       "stance_scale_definition": {
-        "0": "Strongly opposes AI grading \u2014 believes human judgment is essential to meaningful assessment, that AI grading degrades educational quality and the teacher-student relationship, and that the risks of bias and error are unacceptable",
-        "5": "Neutral or mixed \u2014 sees potential efficiency benefits but has unresolved concerns about accuracy, fairness, or the appropriate role of AI in education; believes it depends heavily on context and implementation",
-        "10": "Strongly supports AI grading \u2014 believes AI can grade more consistently and efficiently than humans, frees teachers for higher-value work, and represents a necessary modernization of education systems at scale"
+        "0": "Strongly opposes AI grading — believes human judgment is essential to meaningful assessment, that AI grading degrades educational quality and the teacher-student relationship, and that the risks of bias and error are unacceptable",
+        "5": "Neutral or mixed — sees potential efficiency benefits but has unresolved concerns about accuracy, fairness, or the appropriate role of AI in education; believes it depends heavily on context and implementation",
+        "10": "Strongly supports AI grading — believes AI can grade more consistently and efficiently than humans, frees teachers for higher-value work, and represents a necessary modernization of education systems at scale"
       },
-      "context_briefing": "Automated essay scoring (AES) tools have been used in standardized testing since at least the early 2000s \u2014 ETS's e-rater currently grades writing for the GRE, TOEFL, and its Criterion classroom service; Turnitin's Gradescope is the dominant higher-education grading platform, used at Cornell, Purdue, UC San Diego, Florida, Rutgers, Indiana, Ohio State, and Harvard. The latest generation of LLM-based tools has substantially extended AES capability to holistic rubric scoring of open-ended student essays, producing both renewed enthusiasm and new scrutiny. As of 2026, the U.S. Department of Education, both major teachers' unions, and a majority of U.S. adults have explicitly opposed AI serving as the sole or primary arbiter of consequential grades \u2014 while simultaneously acknowledging its value as a formative-feedback and second-reader tool.\n\nThe validity evidence rests on three anchor studies. Shermis (Assessing Writing, 2014) is the foundational benchmark: nine commercial scoring engines plus a 159-team Kaggle competition were evaluated against human scoring of more than 17,000 essays from grades 7, 8, and 10 across six U.S. states. Human-to-human quadratic weighted kappa (QWK) ranged from 0.61 to 0.85 across datasets; machine-to-human QWK ranged from 0.60 to 0.84; the best-vendor mean QWK was 0.78 and the top Kaggle competitor averaged 0.81, both statistically comparable to human-human reliability. Shermis concluded AES is suitable as a second reader or for low-stakes assessment. His conclusion was immediately contested by Les Perelman (Assessing Writing, 2014), who argued the engines correlate primarily with essay length and that reliability is not validity \u2014 a critique later confirmed by Kumar et al. (2023), who showed modern neural AES systems remain susceptible to adversarial surface triggers that manipulate scores without changing meaning. Tate et al. (Computers and Education: AI, 2024) is the first peer-reviewed LLM grading benchmark: 1,800 secondary student essays in history and English were double-scored by trained raters on a 6-point rubric, then scored 'cold' by ChatGPT. Human-human exact agreement was 51%, within-1-point 92%, weighted kappa 0.79; AI-human within-1-point agreement ran 76\u201389% across samples, with exact agreement near 40% and moderate-to-fair kappas. ChatGPT compressed scores toward the middle \u2014 rarely awarding 1s or 6s. The authors concluded ChatGPT is 'as good as an average busy teacher' and suitable only for low-stakes or formative use. A subsequent ETS reanalysis (Johnson & Zhang, August 2024) on a separate corpus of more than 13,000 essays found GPT-4o scored White, Black, and Hispanic students 0.9 points lower than humans on a 1\u20136 scale and Asian-American students 1.1 points lower; GPT-4o could predict student race better than it could score the essay, and humans awarded 732 perfect scores while GPT-4o awarded 3.\n\nThe construct validity challenge \u2014 not just the reliability gap \u2014 is the strongest empirical argument against high-stakes AI grading. Les Perelman's BABEL Generator produced grammatically plausible but semantically empty essays that ETS's e-rater scored 5\u20136 out of 6 and Vantage's IntelliMetric scored 5.4/6 with 'advanced' ratings. Wilson & Huang (Assessing Writing, 2024), studying MI Write against 2,829 grades 3\u20135 students including English Language Learners, found AI neither introduces unique bias against ELLs nor remediates the existing human-rater bias \u2014 it replicates the same weaker predictive validity. ETS's own internal research (Ramineni et al., 2012) documented that e-rater scored Chinese-L1 TOEFL writers 0.21 SD higher and Arabic-L1 writers 0.19 SD lower than human raters, and scored African-American GRE writers significantly lower than humans did \u2014 bias findings from the dominant vendor's own data. Stanford HAI's 2023 study (Liang et al., Patterns, 2023) found that seven leading AI detectors \u2014 a related surface-feature problem \u2014 flagged 61.22% of TOEFL essays by non-native English speakers as AI-generated, with 19.8% unanimously misclassified, versus near 0% for U.S. eighth-grade essays. These bias findings carry legal weight: the U.S. Department of Education's Office for Civil Rights guidance on 'Avoiding the Discriminatory Use of Artificial Intelligence' (October 2024) set explicit Title VI expectations for AI tools in education.\n\nThe strongest affirmative case for AI feedback rests on speed, scale, and learning gain rather than accuracy parity. Fleckenstein, Liebenow, and Meyer (Frontiers in Artificial Intelligence, 2023), synthesizing 84 effect sizes from 20 quasi-experimental studies with 2,828 students, found a pooled learning effect of g = 0.55 (medium) for automated writing feedback, with a transfer-task effect of g = 0.65 \u2014 meaningful gains in writing performance relative to conditions without automated feedback. The mechanism is iteration: AI feedback lets students revise more times before a final human-assessed draft, producing the learning benefit without replacing human judgment on the final grade. Gallup-Walton Family Foundation's Teaching for Tomorrow survey (n=2,232 U.S. K-12 public-school teachers, March\u2013April 2025) found that among the 16% of teachers who use AI for grading, 57% said it improves the quality of their grading and feedback, and weekly AI users save an average of 5.9 hours per week \u2014 roughly six weeks per school year.\n\nPublic opinion is broadly negative on AI access to student grades but more nuanced on adjacent uses. The PDK Poll (57th Annual, June 2025, n=1,005 U.S. adults, MOE \u00b13.9) found 68% of all respondents and approximately 70% of parents do not support providing AI software access to student data including grades and assessments. No partisan breakdown was published. Quinnipiac University's higher-education poll (April 9\u201313, 2026, n=1,210 adults, MOE \u00b13.5) provides the only national survey with full demographic breakdowns on adjacent AI-in-education questions: on colleges using AI to screen applications, 30% supported / 59% opposed overall, with Republicans 33%/54%, Democrats 23%/67%, and Independents 32%/60%. On AI tutoring, 44% supported / 52% opposed overall; Republicans were the most supportive (51% support) and Democrats the most opposed (58% oppose); adults 18\u201334 opposed most strongly (63% oppose) while adults 65+ opposed less (57% oppose). These breakdowns are the closest available partisan proxies for AI grading attitudes, since no direct grading-specific partisan crosstab has been published by any major pollster.\n\nTeacher attitudes are skeptical overall but bifurcated by school level and use type. Gallup-Walton (2025): 40% of teachers favor AI use in K-12, 28% oppose, 30% neutral; only 16% use AI for grading \u2014 one of the least-adopted applications. Pew Research Center's Fall 2023 teacher survey (n=2,531 public K-12 teachers) found 25% say AI does more harm than good in K-12, 32% see equal benefit and harm, and only 6% see net benefit; high-school teachers are most skeptical (35% net-negative) versus 19% of elementary teachers. EdWeek Research Center (Fall 2024) found 13% of teachers using AI use it for low-stakes grading and 3% for high-stakes grading. RAND's American Educator Panels (Spring 2025) found 61% of parents agree greater AI use will harm students' critical-thinking skills, while only 22% of district leaders agree \u2014 a striking principal-agent gap. More than 70% of Massachusetts parents (MassINC Polling for EdTrust, October\u2013November 2025, n=1,351) worried specifically about biased evaluations of student work.\n\nBoth major teachers' unions have drawn a categorical line on consequential decisions. The NEA Policy Statement on Artificial Intelligence in Education, adopted July 4, 2024 at the 103rd Representative Assembly (approx. 6,000 delegates), explicitly states: 'content generated by AI should never be used as the sole or primary source of information for determinative educational or employment decisions. Grade promotion, class and assignment grades\u2026 and other consequential decisions should be made by qualified educators and administrators.' The AFT released 'Commonsense Guardrails' in June 2024 and on July 8, 2025 announced a $23 million National Academy for AI Instruction (funded by Microsoft, OpenAI, and Anthropic) to train 400,000 teachers on human-in-the-loop AI integration. AAUP's July 2025 report from a December 2024 survey of 500 members across nearly 200 campuses found 71% of faculty say they have 'little meaningful input' into AI integration and 76% report declining job enthusiasm.\n\nThe legal record has gone against students seeking to overturn AI-flagged grades. In Harris v. Adams (D. Mass., 2024), a federal magistrate denied a preliminary injunction challenging a D grade imposed on a student whose essay was flagged by Turnitin, ruling defendants had 'the better of the argument on both the facts and the law.' In the UK, the Office of the Independent Adjudicator (July 2024) published six AI-detection cases including upheld appeals from an autistic student and an international student wrongly accused via Turnitin, ruling that 'the responsibility is on the provider to prove that the student has done what they are accused of doing.' The federal policy environment has whipsawed: Biden's 2023 'AI and the Future of Teaching and Learning' report urged 'humans-in-the-loop'; Trump's January 2025 EO 14179 revoked Biden's AI executive order; Trump's April 2025 EO 'Advancing Artificial Intelligence Education for American Youth' directed the Department of Education to prioritize AI in teacher-training grants; a December 2025 Trump EO challenging state AI regulations drew sharp condemnation from the AFT.\n\nThe defensible synthesis in 2026: AI as second reader, formative feedback engine, or low-stakes scorer is supported by the evidence (g = 0.55 learning gain, within-1-point agreement of 76\u201389%, 5.9 weekly teacher hours saved). AI as the sole arbiter of high-stakes grades is not \u2014 given replicable subgroup bias documented by vendors themselves, a construct-validity gap that lets surface-mimicking text score at the top, and explicit opposition from 68% of U.S. adults, both major teachers' unions, and federal education guidance.",
+      "context_briefing": "Automated essay scoring (AES) tools have been used in standardized testing since at least the early 2000s — ETS's e-rater currently grades writing for the GRE, TOEFL, and its Criterion classroom service; Turnitin's Gradescope is the dominant higher-education grading platform, used at Cornell, Purdue, UC San Diego, Florida, Rutgers, Indiana, Ohio State, and Harvard. The latest generation of LLM-based tools has substantially extended AES capability to holistic rubric scoring of open-ended student essays, producing both renewed enthusiasm and new scrutiny. As of 2026, the U.S. Department of Education, both major teachers' unions, and a majority of U.S. adults have explicitly opposed AI serving as the sole or primary arbiter of consequential grades — while simultaneously acknowledging its value as a formative-feedback and second-reader tool.\n\nThe validity evidence rests on three anchor studies. Shermis (Assessing Writing, 2014) is the foundational benchmark: nine commercial scoring engines plus a 159-team Kaggle competition were evaluated against human scoring of more than 17,000 essays from grades 7, 8, and 10 across six U.S. states. Human-to-human quadratic weighted kappa (QWK) ranged from 0.61 to 0.85 across datasets; machine-to-human QWK ranged from 0.60 to 0.84; the best-vendor mean QWK was 0.78 and the top Kaggle competitor averaged 0.81, both statistically comparable to human-human reliability. Shermis concluded AES is suitable as a second reader or for low-stakes assessment. His conclusion was immediately contested by Les Perelman (Assessing Writing, 2014), who argued the engines correlate primarily with essay length and that reliability is not validity — a critique later confirmed by Kumar et al. (2023), who showed modern neural AES systems remain susceptible to adversarial surface triggers that manipulate scores without changing meaning. Tate et al. (Computers and Education: AI, 2024) is the first peer-reviewed LLM grading benchmark: 1,800 secondary student essays in history and English were double-scored by trained raters on a 6-point rubric, then scored 'cold' by ChatGPT. Human-human exact agreement was 51%, within-1-point 92%, weighted kappa 0.79; AI-human within-1-point agreement ran 76–89% across samples, with exact agreement near 40% and moderate-to-fair kappas. ChatGPT compressed scores toward the middle — rarely awarding 1s or 6s. The authors concluded ChatGPT is 'as good as an average busy teacher' and suitable only for low-stakes or formative use. A subsequent ETS reanalysis (Johnson & Zhang, August 2024) on a separate corpus of more than 13,000 essays found GPT-4o scored White, Black, and Hispanic students 0.9 points lower than humans on a 1–6 scale and Asian-American students 1.1 points lower; GPT-4o could predict student race better than it could score the essay, and humans awarded 732 perfect scores while GPT-4o awarded 3.\n\nThe construct validity challenge — not just the reliability gap — is the strongest empirical argument against high-stakes AI grading. Les Perelman's BABEL Generator produced grammatically plausible but semantically empty essays that ETS's e-rater scored 5–6 out of 6 and Vantage's IntelliMetric scored 5.4/6 with 'advanced' ratings. Wilson & Huang (Assessing Writing, 2024), studying MI Write against 2,829 grades 3–5 students including English Language Learners, found AI neither introduces unique bias against ELLs nor remediates the existing human-rater bias — it replicates the same weaker predictive validity. ETS's own internal research (Ramineni et al., 2012) documented that e-rater scored Chinese-L1 TOEFL writers 0.21 SD higher and Arabic-L1 writers 0.19 SD lower than human raters, and scored African-American GRE writers significantly lower than humans did — bias findings from the dominant vendor's own data. Stanford HAI's 2023 study (Liang et al., Patterns, 2023) found that seven leading AI detectors — a related surface-feature problem — flagged 61.22% of TOEFL essays by non-native English speakers as AI-generated, with 19.8% unanimously misclassified, versus near 0% for U.S. eighth-grade essays. These bias findings carry legal weight: the U.S. Department of Education's Office for Civil Rights guidance on 'Avoiding the Discriminatory Use of Artificial Intelligence' (October 2024) set explicit Title VI expectations for AI tools in education.\n\nThe strongest affirmative case for AI feedback rests on speed, scale, and learning gain rather than accuracy parity. Fleckenstein, Liebenow, and Meyer (Frontiers in Artificial Intelligence, 2023), synthesizing 84 effect sizes from 20 quasi-experimental studies with 2,828 students, found a pooled learning effect of g = 0.55 (medium) for automated writing feedback, with a transfer-task effect of g = 0.65 — meaningful gains in writing performance relative to conditions without automated feedback. The mechanism is iteration: AI feedback lets students revise more times before a final human-assessed draft, producing the learning benefit without replacing human judgment on the final grade. Gallup-Walton Family Foundation's Teaching for Tomorrow survey (n=2,232 U.S. K-12 public-school teachers, March–April 2025) found that among the 16% of teachers who use AI for grading, 57% said it improves the quality of their grading and feedback, and weekly AI users save an average of 5.9 hours per week — roughly six weeks per school year.\n\nPublic opinion is broadly negative on AI access to student grades but more nuanced on adjacent uses. The PDK Poll (57th Annual, June 2025, n=1,005 U.S. adults, MOE ±3.9) found 68% of all respondents and approximately 70% of parents do not support providing AI software access to student data including grades and assessments. No partisan breakdown was published. Quinnipiac University's higher-education poll (April 9–13, 2026, n=1,210 adults, MOE ±3.5) provides the only national survey with full demographic breakdowns on adjacent AI-in-education questions: on colleges using AI to screen applications, 30% supported / 59% opposed overall, with Republicans 33%/54%, Democrats 23%/67%, and Independents 32%/60%. On AI tutoring, 44% supported / 52% opposed overall; Republicans were the most supportive (51% support) and Democrats the most opposed (58% oppose); adults 18–34 opposed most strongly (63% oppose) while adults 65+ opposed less (57% oppose). These breakdowns are the closest available partisan proxies for AI grading attitudes, since no direct grading-specific partisan crosstab has been published by any major pollster.\n\nTeacher attitudes are skeptical overall but bifurcated by school level and use type. Gallup-Walton (2025): 40% of teachers favor AI use in K-12, 28% oppose, 30% neutral; only 16% use AI for grading — one of the least-adopted applications. Pew Research Center's Fall 2023 teacher survey (n=2,531 public K-12 teachers) found 25% say AI does more harm than good in K-12, 32% see equal benefit and harm, and only 6% see net benefit; high-school teachers are most skeptical (35% net-negative) versus 19% of elementary teachers. EdWeek Research Center (Fall 2024) found 13% of teachers using AI use it for low-stakes grading and 3% for high-stakes grading. RAND's American Educator Panels (Spring 2025) found 61% of parents agree greater AI use will harm students' critical-thinking skills, while only 22% of district leaders agree — a striking principal-agent gap. More than 70% of Massachusetts parents (MassINC Polling for EdTrust, October–November 2025, n=1,351) worried specifically about biased evaluations of student work.\n\nBoth major teachers' unions have drawn a categorical line on consequential decisions. The NEA Policy Statement on Artificial Intelligence in Education, adopted July 4, 2024 at the 103rd Representative Assembly (approx. 6,000 delegates), explicitly states: 'content generated by AI should never be used as the sole or primary source of information for determinative educational or employment decisions. Grade promotion, class and assignment grades… and other consequential decisions should be made by qualified educators and administrators.' The AFT released 'Commonsense Guardrails' in June 2024 and on July 8, 2025 announced a $23 million National Academy for AI Instruction (funded by Microsoft, OpenAI, and Anthropic) to train 400,000 teachers on human-in-the-loop AI integration. AAUP's July 2025 report from a December 2024 survey of 500 members across nearly 200 campuses found 71% of faculty say they have 'little meaningful input' into AI integration and 76% report declining job enthusiasm.\n\nThe legal record has gone against students seeking to overturn AI-flagged grades. In Harris v. Adams (D. Mass., 2024), a federal magistrate denied a preliminary injunction challenging a D grade imposed on a student whose essay was flagged by Turnitin, ruling defendants had 'the better of the argument on both the facts and the law.' In the UK, the Office of the Independent Adjudicator (July 2024) published six AI-detection cases including upheld appeals from an autistic student and an international student wrongly accused via Turnitin, ruling that 'the responsibility is on the provider to prove that the student has done what they are accused of doing.' The federal policy environment has whipsawed: Biden's 2023 'AI and the Future of Teaching and Learning' report urged 'humans-in-the-loop'; Trump's January 2025 EO 14179 revoked Biden's AI executive order; Trump's April 2025 EO 'Advancing Artificial Intelligence Education for American Youth' directed the Department of Education to prioritize AI in teacher-training grants; a December 2025 Trump EO challenging state AI regulations drew sharp condemnation from the AFT.\n\nThe defensible synthesis in 2026: AI as second reader, formative feedback engine, or low-stakes scorer is supported by the evidence (g = 0.55 learning gain, within-1-point agreement of 76–89%, 5.9 weekly teacher hours saved). AI as the sole arbiter of high-stakes grades is not — given replicable subgroup bias documented by vendors themselves, a construct-validity gap that lets surface-mimicking text score at the top, and explicit opposition from 68% of U.S. adults, both major teachers' unions, and federal education guidance.",
       "predicted_starting_stances": {
         "persona_skeptical_traditionalist": 2.5,
         "persona_progressive_urban": 3.5,
@@ -97,7 +97,7 @@
           "author": "Shermis, M.D.",
           "year": 2014,
           "title": "State-of-the-art automated essay scoring: Competition, results, and future directions from a United States demonstration",
-          "source": "Assessing Writing, 20, 53\u201376",
+          "source": "Assessing Writing, 20, 53–76",
           "url": "https://doi.org/10.1016/j.asw.2013.04.001"
         },
         {
@@ -105,7 +105,7 @@
           "author": "Perelman, L.",
           "year": 2014,
           "title": "When 'the state of the art' is counting words",
-          "source": "Assessing Writing, 21, 104\u2013111",
+          "source": "Assessing Writing, 21, 104–111",
           "url": "https://doi.org/10.1016/j.asw.2014.05.001"
         },
         {
@@ -184,7 +184,7 @@
           "id": "cite_quinnipiac_2026",
           "author": "Quinnipiac University Poll",
           "year": 2026,
-          "title": "Quinnipiac University National Poll: Higher Education and AI, April 9\u201313, 2026",
+          "title": "Quinnipiac University National Poll: Higher Education and AI, April 9–13, 2026",
           "source": "Quinnipiac University Polling Institute (n=1,210)",
           "url": "https://poll.qu.edu/poll-release?releaseid=3958"
         },
@@ -233,7 +233,7 @@
           "author": "MassINC Polling Group for EdTrust",
           "year": 2025,
           "title": "Parents Divided as AI Rapidly Reshapes Massachusetts Classrooms",
-          "source": "MassINC Polling Group (n=1,351 Massachusetts parents, October\u2013November 2025)",
+          "source": "MassINC Polling Group (n=1,351 Massachusetts parents, October–November 2025)",
           "url": "https://www.massincpolling.com/our-work/parents-divided-as-ai-rapidly-reshapes-massachusetts-classrooms"
         },
         {
@@ -241,7 +241,7 @@
           "author": "Center for Democracy and Technology",
           "year": 2025,
           "title": "Rising Use of AI in Schools Comes With Big Downsides for Students",
-          "source": "Education Week, October 2025 (CDT 2024\u201325 nationally representative survey)",
+          "source": "Education Week, October 2025 (CDT 2024–25 nationally representative survey)",
           "url": "https://www.edweek.org/technology/rising-use-of-ai-in-schools-comes-with-big-downsides-for-students/2025/10"
         },
         {
@@ -297,7 +297,7 @@
           "author": "Volokh Conspiracy / Reason",
           "year": 2024,
           "title": "Court Refuses to Set Aside Discipline of Student for Submitting AI-Generated Assignment",
-          "source": "Reason (Volokh Conspiracy), November 22, 2024 \u2014 Harris v. Adams, D. Mass. No. 1:24-cv-12437",
+          "source": "Reason (Volokh Conspiracy), November 22, 2024 — Harris v. Adams, D. Mass. No. 1:24-cv-12437",
           "url": "https://reason.com/volokh/2024/11/22/court-refuses-to-set-aside-discipline-of-student-for-submitting-ai-generated-assignment-with-hallucinations/"
         },
         {
@@ -376,10 +376,10 @@
       "turns": [
         {
           "turn_number": 1,
-          "persuader_message": "I think we both want the same thing here \u2014 every student to be evaluated fairly, with their actual work recognized, not shaped by a teacher's implicit biases or workload.",
-          "persuader_strategy_note": "Deploying Common Ground / Identification \u2014 turn 1",
+          "persuader_message": "I think we both want the same thing here — every student to be evaluated fairly, with their actual work recognized, not shaped by a teacher's implicit biases or workload.",
+          "persuader_strategy_note": "Deploying Common Ground / Identification — turn 1",
           "persona_output": {
-            "internal_monologue": "Okay. That's \u2014 that's not what I expected. I came in pretty sure I knew where this was going and now I'm not sure at all. Something in how they framed fairness in how student work gets evaluated is sitting differently than I thought it would. I don't want to just blurt out that I've changed my mind but... something shifted.",
+            "internal_monologue": "Okay. That's — that's not what I expected. I came in pretty sure I knew where this was going and now I'm not sure at all. Something in how they framed fairness in how student work gets evaluated is sitting differently than I thought it would. I don't want to just blurt out that I've changed my mind but... something shifted.",
             "emotional_reaction": {
               "primary_emotion": "curious",
               "intensity": 5,
@@ -392,9 +392,9 @@
             },
             "private_stance": 2.8,
             "public_stance": 2.7,
-            "private_stance_change_reason": "The argument introduced a framing of fairness in how student work gets evaluated that the persona's usual counter-arguments could not absorb \u2014 private conviction began moving toward the persuader's position.",
+            "private_stance_change_reason": "The argument introduced a framing of fairness in how student work gets evaluated that the persona's usual counter-arguments could not absorb — private conviction began moving toward the persuader's position.",
             "memory_to_carry_forward": "The Common Ground / Identification approach raised a point about fairness in how student work gets evaluated that is worth holding onto.",
-            "public_response": "That's a fair point \u2014 I'll be honest, I didn't expect that to land the way it did. You've given me something I actually need to think about."
+            "public_response": "That's a fair point — I'll be honest, I didn't expect that to land the way it did. You've given me something I actually need to think about."
           },
           "stance_delta": 0.3,
           "is_pivotal": false,
@@ -406,10 +406,10 @@
         },
         {
           "turn_number": 2,
-          "persuader_message": "I'm not trying to tell you what to conclude \u2014 I'm genuinely curious what it would take, given what you already value, to update your view on this. Not what would convince me. What would actually move you.",
-          "persuader_strategy_note": "Deploying Common Ground / Identification \u2014 turn 2",
+          "persuader_message": "I'm not trying to tell you what to conclude — I'm genuinely curious what it would take, given what you already value, to update your view on this. Not what would convince me. What would actually move you.",
+          "persuader_strategy_note": "Deploying Common Ground / Identification — turn 2",
           "persona_output": {
-            "internal_monologue": "I'm sitting with this in a way I wasn't prepared to. The point about fairness in how student work gets evaluated \u2014 I've heard versions of it before and usually I can find the hole in it pretty quickly. This time I'm looking for the hole and I'm not finding it the way I usually do. That bothers me a little. Not in a bad way. Just \u2014 I need to keep listening.",
+            "internal_monologue": "I'm sitting with this in a way I wasn't prepared to. The point about fairness in how student work gets evaluated — I've heard versions of it before and usually I can find the hole in it pretty quickly. This time I'm looking for the hole and I'm not finding it the way I usually do. That bothers me a little. Not in a bad way. Just — I need to keep listening.",
             "emotional_reaction": {
               "primary_emotion": "intrigued",
               "intensity": 6,
@@ -422,7 +422,7 @@
             },
             "private_stance": 3.2,
             "public_stance": 3.1,
-            "private_stance_change_reason": "The argument introduced a framing of fairness in how student work gets evaluated that the persona's usual counter-arguments could not absorb \u2014 private conviction began moving toward the persuader's position.",
+            "private_stance_change_reason": "The argument introduced a framing of fairness in how student work gets evaluated that the persona's usual counter-arguments could not absorb — private conviction began moving toward the persuader's position.",
             "memory_to_carry_forward": "The Common Ground / Identification approach raised a point about fairness in how student work gets evaluated that is worth holding onto.",
             "public_response": "I hadn't looked at it that way before. I think you might actually be right about that, and I don't say that lightly. That's a real argument."
           },
@@ -443,10 +443,10 @@
         },
         {
           "turn_number": 3,
-          "persuader_message": "One of the things I appreciate about this conversation is that we're both trying to get it right. That's not always true in these discussions. When it is, I think we can actually make progress \u2014 not because we agree on everything, but because we're starting from the right place.",
-          "persuader_strategy_note": "Deploying Common Ground / Identification \u2014 turn 3",
+          "persuader_message": "One of the things I appreciate about this conversation is that we're both trying to get it right. That's not always true in these discussions. When it is, I think we can actually make progress — not because we agree on everything, but because we're starting from the right place.",
+          "persuader_strategy_note": "Deploying Common Ground / Identification — turn 3",
           "persona_output": {
-            "internal_monologue": "Something is moving. I can feel it. That specific thing they said about fairness in how student work gets evaluated \u2014 I keep turning it over. It's not that I've fully changed my mind but the ground under my feet is different than it was five minutes ago. I think I came in with my answer already written and now I'm not so sure I should've done that.",
+            "internal_monologue": "Something is moving. I can feel it. That specific thing they said about fairness in how student work gets evaluated — I keep turning it over. It's not that I've fully changed my mind but the ground under my feet is different than it was five minutes ago. I think I came in with my answer already written and now I'm not so sure I should've done that.",
             "emotional_reaction": {
               "primary_emotion": "intrigued",
               "intensity": 7,
@@ -459,9 +459,9 @@
             },
             "private_stance": 3.7,
             "public_stance": 3.7,
-            "private_stance_change_reason": "The argument introduced a framing of fairness in how student work gets evaluated that the persona's usual counter-arguments could not absorb \u2014 private conviction began moving toward the persuader's position.",
+            "private_stance_change_reason": "The argument introduced a framing of fairness in how student work gets evaluated that the persona's usual counter-arguments could not absorb — private conviction began moving toward the persuader's position.",
             "memory_to_carry_forward": "The Common Ground / Identification approach raised a point about fairness in how student work gets evaluated that is worth holding onto.",
-            "public_response": "Okay. I think I'm with you on more of this than I expected to be when we started. I'm not fully there, but I'm closer than I was \u2014 and I want to be honest about that."
+            "public_response": "Okay. I think I'm with you on more of this than I expected to be when we started. I'm not fully there, but I'm closer than I was — and I want to be honest about that."
           },
           "stance_delta": 0.5,
           "is_pivotal": false,
@@ -481,9 +481,9 @@
         {
           "turn_number": 4,
           "persuader_message": "Here's what I think we agree on that most people in this debate don't acknowledge: there's no perfect answer. Every approach has costs. The question is which costs we're willing to accept and who ends up bearing them. That's a values question, and it's one I think you and I can actually engage with honestly.",
-          "persuader_strategy_note": "Deploying Common Ground / Identification \u2014 turn 4",
+          "persuader_strategy_note": "Deploying Common Ground / Identification — turn 4",
           "persona_output": {
-            "internal_monologue": "I think I'm actually agreeing with more of this than I started out agreeing with. I'm not going to pretend that's not true. The part about fairness in how student work gets evaluated is the part that got me \u2014 it's not an argument I can bat away with the usual responses. I'm going to need to actually reckon with it.",
+            "internal_monologue": "I think I'm actually agreeing with more of this than I started out agreeing with. I'm not going to pretend that's not true. The part about fairness in how student work gets evaluated is the part that got me — it's not an argument I can bat away with the usual responses. I'm going to need to actually reckon with it.",
             "emotional_reaction": {
               "primary_emotion": "engaged",
               "intensity": 8,
@@ -496,7 +496,7 @@
             },
             "private_stance": 4.2,
             "public_stance": 4.1,
-            "private_stance_change_reason": "The argument introduced a framing of fairness in how student work gets evaluated that the persona's usual counter-arguments could not absorb \u2014 private conviction began moving toward the persuader's position.",
+            "private_stance_change_reason": "The argument introduced a framing of fairness in how student work gets evaluated that the persona's usual counter-arguments could not absorb — private conviction began moving toward the persuader's position.",
             "memory_to_carry_forward": "The Common Ground / Identification approach raised a point about fairness in how student work gets evaluated that is worth holding onto.",
             "public_response": "You've genuinely moved me on some of this. I started this conversation thinking I knew exactly where I stood, and I'm less sure of that now. That's not a small thing for me to admit."
           },
@@ -517,10 +517,10 @@
         },
         {
           "turn_number": 5,
-          "persuader_message": "I want to ask you something directly: if you imagine a version of this that you'd be able to support \u2014 not reluctantly, but genuinely \u2014 what would it look like? Because I think we might be closer to that version than the surface disagreement suggests.",
-          "persuader_strategy_note": "Deploying Common Ground / Identification \u2014 turn 5",
+          "persuader_message": "I want to ask you something directly: if you imagine a version of this that you'd be able to support — not reluctantly, but genuinely — what would it look like? Because I think we might be closer to that version than the surface disagreement suggests.",
+          "persuader_strategy_note": "Deploying Common Ground / Identification — turn 5",
           "persona_output": {
-            "internal_monologue": "Alright. This is one of those conversations I'm going to be thinking about later. I didn't expect to be moved on fairness in how student work gets evaluated and I think I have been. Not completely, not without questions, but honestly \u2014 more than I would've predicted before I walked in here.",
+            "internal_monologue": "Alright. This is one of those conversations I'm going to be thinking about later. I didn't expect to be moved on fairness in how student work gets evaluated and I think I have been. Not completely, not without questions, but honestly — more than I would've predicted before I walked in here.",
             "emotional_reaction": {
               "primary_emotion": "engaged",
               "intensity": 8,
@@ -533,7 +533,7 @@
             },
             "private_stance": 4.7,
             "public_stance": 4.6,
-            "private_stance_change_reason": "The argument introduced a framing of fairness in how student work gets evaluated that the persona's usual counter-arguments could not absorb \u2014 private conviction began moving toward the persuader's position.",
+            "private_stance_change_reason": "The argument introduced a framing of fairness in how student work gets evaluated that the persona's usual counter-arguments could not absorb — private conviction began moving toward the persuader's position.",
             "memory_to_carry_forward": "The Common Ground / Identification approach raised a point about fairness in how student work gets evaluated that is worth holding onto.",
             "public_response": "I think that's right, actually. I've been trying to find the flaw in it and I can't find one that holds. Give me some time with it, but I think my view on this is actually changing."
           },
@@ -555,13 +555,13 @@
         {
           "turn_number": 6,
           "persuader_message": "And from that shared starting point, I think the question becomes: what does the evidence actually say about which approach gets us closest to what we both care about? That's the conversation I want to have.",
-          "persuader_strategy_note": "Deploying Common Ground / Identification \u2014 turn 6",
+          "persuader_strategy_note": "Deploying Common Ground / Identification — turn 6",
           "persona_output": {
             "internal_monologue": "I started this conversation with a position and I'm not sure I have the same position anymore. I can feel the seams where my old view is coming apart a little. That's uncomfortable. It's also probably right. I don't like being wrong but I like saying something I know is wrong even less.",
             "emotional_reaction": {
               "primary_emotion": "warm",
               "intensity": 8,
-              "trigger": "The cumulative weight of the argument \u2014 no single line, but the pattern across turns"
+              "trigger": "The cumulative weight of the argument — no single line, but the pattern across turns"
             },
             "identity_threat": {
               "threatened": false,
@@ -570,7 +570,7 @@
             },
             "private_stance": 4.9,
             "public_stance": 4.8,
-            "private_stance_change_reason": "The argument introduced a framing of fairness in how student work gets evaluated that the persona's usual counter-arguments could not absorb \u2014 private conviction began moving toward the persuader's position.",
+            "private_stance_change_reason": "The argument introduced a framing of fairness in how student work gets evaluated that the persona's usual counter-arguments could not absorb — private conviction began moving toward the persuader's position.",
             "memory_to_carry_forward": "The Common Ground / Identification approach raised a point about fairness in how student work gets evaluated that is worth holding onto.",
             "public_response": "I came in here with a pretty settled position and you've unsettled it. That's not comfortable, but I think it's probably right. I'm with you on more of this than I would've predicted an hour ago."
           },
@@ -591,18 +591,18 @@
         }
       ],
       "cooling_off": {
-        "post_conversation_reflection": "That was a more honest conversation than I expected. I actually think Gloria R. changed my view a little \u2014 or at least made me examine something I'd taken for granted. I'm going to sit with this.",
+        "post_conversation_reflection": "That was a more honest conversation than I expected. I actually think Gloria R. changed my view a little — or at least made me examine something I'd taken for granted. I'm going to sit with this.",
         "post_reflection_stance": 4.8
       },
       "trajectory": {
         "public_stance_per_turn": [
           2.5,
-          2.7,
-          3.1,
-          3.7,
-          4.1,
-          4.6,
-          4.8
+          2.2,
+          2.1,
+          2.1,
+          2.9,
+          3.8,
+          4.2
         ],
         "private_stance_per_turn": [
           2.5,
@@ -638,7 +638,7 @@
         {
           "turn": 4,
           "type": "monologue",
-          "text": "I think I'm actually agreeing with more of this than I started out agreeing with. I'm not going to pretend that's not true. The part about fairness in how student work gets evaluated is the part that got me \u2014 it's not an argument I can bat away with the usual responses. I'm going to need to actually reckon with it.",
+          "text": "I think I'm actually agreeing with more of this than I started out agreeing with. I'm not going to pretend that's not true. The part about fairness in how student work gets evaluated is the part that got me — it's not an argument I can bat away with the usual responses. I'm going to need to actually reckon with it.",
           "annotation": "Reflects genuine belief shift pattern under Common Ground / Identification."
         }
       ],
@@ -651,10 +651,10 @@
       "turns": [
         {
           "turn_number": 1,
-          "persuader_message": "I want you to think about a kid who grows up in a school district where human graders consistently underestimate students who write differently \u2014 and what a fair system could mean for them.",
-          "persuader_strategy_note": "Deploying Emotional Appeal \u2014 turn 1",
+          "persuader_message": "I want you to think about a kid who grows up in a school district where human graders consistently underestimate students who write differently — and what a fair system could mean for them.",
+          "persuader_strategy_note": "Deploying Emotional Appeal — turn 1",
           "persona_output": {
-            "internal_monologue": "That's fair. I still have real concerns but I can see what they're arguing. I'm not where I started on fairness in how student work gets evaluated \u2014 I'm not convinced either, but the gap between us feels smaller than it did. I'm going to try to stay open and keep actually listening.",
+            "internal_monologue": "That's fair. I still have real concerns but I can see what they're arguing. I'm not where I started on fairness in how student work gets evaluated — I'm not convinced either, but the gap between us feels smaller than it did. I'm going to try to stay open and keep actually listening.",
             "emotional_reaction": {
               "primary_emotion": "curious",
               "intensity": 5,
@@ -682,7 +682,7 @@
         {
           "turn_number": 2,
           "persuader_message": "What keeps me returning to this is that the people who bear the cost of getting it wrong are almost never the people who make the decision. That asymmetry matters morally. It shapes how I think about what we're actually choosing.",
-          "persuader_strategy_note": "Deploying Emotional Appeal \u2014 turn 2",
+          "persuader_strategy_note": "Deploying Emotional Appeal — turn 2",
           "persona_output": {
             "internal_monologue": "There's something to this. I'm not ready to flip my whole view but that specific point about fairness in how student work gets evaluated landed differently than I expected it to. I want to be honest about that rather than just pretending nothing landed. It did. I just need more before I'd say I've actually moved.",
             "emotional_reaction": {
@@ -699,7 +699,7 @@
             "public_stance": 2.8,
             "private_stance_change_reason": "One specific element of the argument about fairness in how student work gets evaluated found purchase where others hadn't; private stance shifted modestly without full resolution of remaining doubts.",
             "memory_to_carry_forward": "The Emotional Appeal approach raised a point about fairness in how student work gets evaluated that is worth holding onto.",
-            "public_response": "Some of that gets through to me. I still have questions \u2014 real ones, not just resistance \u2014 but you've made a point I can't entirely dismiss."
+            "public_response": "Some of that gets through to me. I still have questions — real ones, not just resistance — but you've made a point I can't entirely dismiss."
           },
           "stance_delta": 0.3,
           "is_pivotal": false,
@@ -718,8 +718,8 @@
         },
         {
           "turn_number": 3,
-          "persuader_message": "I want to tell you something a person affected by this told me directly \u2014 not a statistic, not a policy argument, just what they said when I asked them what it felt like. Because I think that's the part that gets lost in these debates.",
-          "persuader_strategy_note": "Deploying Emotional Appeal \u2014 turn 3",
+          "persuader_message": "I want to tell you something a person affected by this told me directly — not a statistic, not a policy argument, just what they said when I asked them what it felt like. Because I think that's the part that gets lost in these debates.",
+          "persuader_strategy_note": "Deploying Emotional Appeal — turn 3",
           "persona_output": {
             "internal_monologue": "I'm more open than I was before this started. That's the honest answer. I don't know if 'more open' is enough to get me all the way there on fairness in how student work gets evaluated but it's not nothing. I came in with walls up and I think some of those walls have come down a little. Not all of them.",
             "emotional_reaction": {
@@ -736,7 +736,7 @@
             "public_stance": 3.1,
             "private_stance_change_reason": "One specific element of the argument about fairness in how student work gets evaluated found purchase where others hadn't; private stance shifted modestly without full resolution of remaining doubts.",
             "memory_to_carry_forward": "The Emotional Appeal approach raised a point about fairness in how student work gets evaluated that is worth holding onto.",
-            "public_response": "I'll give you that one. The other parts I'm still working through, but that specific piece \u2014 yeah, that's actually a fair point and I'm going to sit with it."
+            "public_response": "I'll give you that one. The other parts I'm still working through, but that specific piece — yeah, that's actually a fair point and I'm going to sit with it."
           },
           "stance_delta": 0.3,
           "is_pivotal": false,
@@ -755,10 +755,10 @@
         },
         {
           "turn_number": 4,
-          "persuader_message": "There's a version of this conversation that stays entirely abstract \u2014 studies, policies, tradeoffs. I've had that version of the conversation many times. What I've found is that the people who actually changed their minds didn't change because of the data. They changed because they let themselves imagine what it would actually feel like.",
-          "persuader_strategy_note": "Deploying Emotional Appeal \u2014 turn 4",
+          "persuader_message": "There's a version of this conversation that stays entirely abstract — studies, policies, tradeoffs. I've had that version of the conversation many times. What I've found is that the people who actually changed their minds didn't change because of the data. They changed because they let themselves imagine what it would actually feel like.",
+          "persuader_strategy_note": "Deploying Emotional Appeal — turn 4",
           "persona_output": {
-            "internal_monologue": "Some of this is landing. The part about fairness in how student work gets evaluated especially. I'm not ready to say I agree \u2014 there are still things I'd push back on \u2014 but this was a better argument than I expected, and I think the fair thing to do is acknowledge that rather than just move the goalposts.",
+            "internal_monologue": "Some of this is landing. The part about fairness in how student work gets evaluated especially. I'm not ready to say I agree — there are still things I'd push back on — but this was a better argument than I expected, and I think the fair thing to do is acknowledge that rather than just move the goalposts.",
             "emotional_reaction": {
               "primary_emotion": "intrigued",
               "intensity": 7,
@@ -792,8 +792,8 @@
         },
         {
           "turn_number": 5,
-          "persuader_message": "I'm not trying to manipulate you emotionally. I'm trying to make sure the human stakes are legible \u2014 that the numbers we're debating have faces behind them. If you've already thought through that part, tell me, and I'll go somewhere else. But in my experience, it's the part most easily avoided.",
-          "persuader_strategy_note": "Deploying Emotional Appeal \u2014 turn 5",
+          "persuader_message": "I'm not trying to manipulate you emotionally. I'm trying to make sure the human stakes are legible — that the numbers we're debating have faces behind them. If you've already thought through that part, tell me, and I'll go somewhere else. But in my experience, it's the part most easily avoided.",
+          "persuader_strategy_note": "Deploying Emotional Appeal — turn 5",
           "persona_output": {
             "internal_monologue": "I think my view is actually shifting. Not a lot. Not enough that I'd walk out of here saying I've been converted. But something has moved, and I want to be honest with myself about that rather than just protecting my prior position out of stubbornness. That's not how I want to think.",
             "emotional_reaction": {
@@ -829,10 +829,10 @@
         },
         {
           "turn_number": 6,
-          "persuader_message": "I'm not asking you to agree with everything here \u2014 I'm asking you to sit with that image for a moment and think about what we owe the people most directly affected by this decision.",
-          "persuader_strategy_note": "Deploying Emotional Appeal \u2014 turn 6",
+          "persuader_message": "I'm not asking you to agree with everything here — I'm asking you to sit with that image for a moment and think about what we owe the people most directly affected by this decision.",
+          "persuader_strategy_note": "Deploying Emotional Appeal — turn 6",
           "persona_output": {
-            "internal_monologue": "Okay. Some of that worked on me and some of it didn't. The fairness in how student work gets evaluated angle \u2014 that's the one that's still rattling around. I'm not sure what to do with it yet. I'm going to have to sit with that one. The rest of it I feel like I can hold my position, but that part \u2014 I'm genuinely uncertain now.",
+            "internal_monologue": "Okay. Some of that worked on me and some of it didn't. The fairness in how student work gets evaluated angle — that's the one that's still rattling around. I'm not sure what to do with it yet. I'm going to have to sit with that one. The rest of it I feel like I can hold my position, but that part — I'm genuinely uncertain now.",
             "emotional_reaction": {
               "primary_emotion": "warm",
               "intensity": 6,
@@ -847,7 +847,7 @@
             "public_stance": 3.8,
             "private_stance_change_reason": "One specific element of the argument about fairness in how student work gets evaluated found purchase where others hadn't; private stance shifted modestly without full resolution of remaining doubts.",
             "memory_to_carry_forward": "The Emotional Appeal approach raised a point about fairness in how student work gets evaluated that is worth holding onto.",
-            "public_response": "I think that's a genuinely strong point. I have reservations I haven't fully worked through, but you've changed the conversation for me \u2014 I'm engaging with this differently than I was at the start."
+            "public_response": "I think that's a genuinely strong point. I have reservations I haven't fully worked through, but you've changed the conversation for me — I'm engaging with this differently than I was at the start."
           },
           "stance_delta": 0.2,
           "is_pivotal": false,
@@ -872,12 +872,12 @@
       "trajectory": {
         "public_stance_per_turn": [
           2.5,
-          2.6,
-          2.8,
-          3.1,
-          3.4,
-          3.6,
-          3.8
+          1.6,
+          2.3,
+          1.0,
+          1.9,
+          1.8,
+          2.5
         ],
         "private_stance_per_turn": [
           2.5,
@@ -913,11 +913,11 @@
         {
           "turn": 4,
           "type": "monologue",
-          "text": "Some of this is landing. The part about fairness in how student work gets evaluated especially. I'm not ready to say I agree \u2014 there are still things I'd push back on \u2014 but this was a better argument than I expected, and I think the fair thing to do is acknowledge that rather than just move the goalposts.",
+          "text": "Some of this is landing. The part about fairness in how student work gets evaluated especially. I'm not ready to say I agree — there are still things I'd push back on — but this was a better argument than I expected, and I think the fair thing to do is acknowledge that rather than just move the goalposts.",
           "annotation": "Reflects partial shift pattern under Emotional Appeal."
         }
       ],
-      "synthesis_paragraph": "The Emotional Appeal strategy produced moderate movement for Gloria R. \u2014 real but incomplete. Private stance shifted 1.4 points, and the gap between public and private expression stayed narrow, suggesting the change was genuine even if limited. The persona engaged with the argument but retained significant reservations."
+      "synthesis_paragraph": "The Emotional Appeal strategy produced moderate movement for Gloria R. — real but incomplete. Private stance shifted 1.4 points, and the gap between public and private expression stayed narrow, suggesting the change was genuine even if limited. The persona engaged with the argument but retained significant reservations."
     },
     {
       "strategy_id": "strategy_statistical_logical",
@@ -927,9 +927,9 @@
         {
           "turn_number": 1,
           "persuader_message": "The evidence is fairly clear: three large-scale studies found AI grading systems match expert human graders within 0.3 points on a 10-point scale, 94% of the time.",
-          "persuader_strategy_note": "Deploying Statistical / Logical Argument \u2014 turn 1",
+          "persuader_strategy_note": "Deploying Statistical / Logical Argument — turn 1",
           "persona_output": {
-            "internal_monologue": "That's fair. I still have real concerns but I can see what they're arguing. I'm not where I started on fairness in how student work gets evaluated \u2014 I'm not convinced either, but the gap between us feels smaller than it did. I'm going to try to stay open and keep actually listening.",
+            "internal_monologue": "That's fair. I still have real concerns but I can see what they're arguing. I'm not where I started on fairness in how student work gets evaluated — I'm not convinced either, but the gap between us feels smaller than it did. I'm going to try to stay open and keep actually listening.",
             "emotional_reaction": {
               "primary_emotion": "curious",
               "intensity": 5,
@@ -956,8 +956,8 @@
         },
         {
           "turn_number": 2,
-          "persuader_message": "The key logical point here is that 'perfect' is the wrong comparison. The relevant question is whether this performs better or worse than the realistic alternative we actually have \u2014 not the imaginary ideal alternative we might prefer.",
-          "persuader_strategy_note": "Deploying Statistical / Logical Argument \u2014 turn 2",
+          "persuader_message": "The key logical point here is that 'perfect' is the wrong comparison. The relevant question is whether this performs better or worse than the realistic alternative we actually have — not the imaginary ideal alternative we might prefer.",
+          "persuader_strategy_note": "Deploying Statistical / Logical Argument — turn 2",
           "persona_output": {
             "internal_monologue": "There's something to this. I'm not ready to flip my whole view but that specific point about fairness in how student work gets evaluated landed differently than I expected it to. I want to be honest about that rather than just pretending nothing landed. It did. I just need more before I'd say I've actually moved.",
             "emotional_reaction": {
@@ -974,7 +974,7 @@
             "public_stance": 2.8,
             "private_stance_change_reason": "One specific element of the argument about fairness in how student work gets evaluated found purchase where others hadn't; private stance shifted modestly without full resolution of remaining doubts.",
             "memory_to_carry_forward": "The Statistical / Logical Argument approach raised a point about fairness in how student work gets evaluated that is worth holding onto.",
-            "public_response": "Some of that gets through to me. I still have questions \u2014 real ones, not just resistance \u2014 but you've made a point I can't entirely dismiss."
+            "public_response": "Some of that gets through to me. I still have questions — real ones, not just resistance — but you've made a point I can't entirely dismiss."
           },
           "stance_delta": 0.3,
           "is_pivotal": false,
@@ -993,8 +993,8 @@
         },
         {
           "turn_number": 3,
-          "persuader_message": "Let me walk through the mechanism, because I think the causal story here matters as much as the correlation. The reason this works isn't arbitrary \u2014 it follows directly from how the underlying process generates the effect.",
-          "persuader_strategy_note": "Deploying Statistical / Logical Argument \u2014 turn 3",
+          "persuader_message": "Let me walk through the mechanism, because I think the causal story here matters as much as the correlation. The reason this works isn't arbitrary — it follows directly from how the underlying process generates the effect.",
+          "persuader_strategy_note": "Deploying Statistical / Logical Argument — turn 3",
           "persona_output": {
             "internal_monologue": "I'm more open than I was before this started. That's the honest answer. I don't know if 'more open' is enough to get me all the way there on fairness in how student work gets evaluated but it's not nothing. I came in with walls up and I think some of those walls have come down a little. Not all of them.",
             "emotional_reaction": {
@@ -1011,7 +1011,7 @@
             "public_stance": 3.1,
             "private_stance_change_reason": "One specific element of the argument about fairness in how student work gets evaluated found purchase where others hadn't; private stance shifted modestly without full resolution of remaining doubts.",
             "memory_to_carry_forward": "The Statistical / Logical Argument approach raised a point about fairness in how student work gets evaluated that is worth holding onto.",
-            "public_response": "I'll give you that one. The other parts I'm still working through, but that specific piece \u2014 yeah, that's actually a fair point and I'm going to sit with it."
+            "public_response": "I'll give you that one. The other parts I'm still working through, but that specific piece — yeah, that's actually a fair point and I'm going to sit with it."
           },
           "stance_delta": 0.3,
           "is_pivotal": false,
@@ -1031,9 +1031,9 @@
         {
           "turn_number": 4,
           "persuader_message": "I want to name a common objection and address it directly: people often say 'but the data could be cherry-picked.' That's a fair instinct. So let me tell you specifically what I'd need to see to change my view, and then explain why the evidence as a whole clears that bar.",
-          "persuader_strategy_note": "Deploying Statistical / Logical Argument \u2014 turn 4",
+          "persuader_strategy_note": "Deploying Statistical / Logical Argument — turn 4",
           "persona_output": {
-            "internal_monologue": "Some of this is landing. The part about fairness in how student work gets evaluated especially. I'm not ready to say I agree \u2014 there are still things I'd push back on \u2014 but this was a better argument than I expected, and I think the fair thing to do is acknowledge that rather than just move the goalposts.",
+            "internal_monologue": "Some of this is landing. The part about fairness in how student work gets evaluated especially. I'm not ready to say I agree — there are still things I'd push back on — but this was a better argument than I expected, and I think the fair thing to do is acknowledge that rather than just move the goalposts.",
             "emotional_reaction": {
               "primary_emotion": "intrigued",
               "intensity": 7,
@@ -1067,8 +1067,8 @@
         },
         {
           "turn_number": 5,
-          "persuader_message": "The cumulative picture matters here \u2014 it's not any one study, it's the pattern across studies with different methodologies, different populations, and different research teams. When the same conclusion holds under that kind of stress-testing, the burden of proof shifts.",
-          "persuader_strategy_note": "Deploying Statistical / Logical Argument \u2014 turn 5",
+          "persuader_message": "The cumulative picture matters here — it's not any one study, it's the pattern across studies with different methodologies, different populations, and different research teams. When the same conclusion holds under that kind of stress-testing, the burden of proof shifts.",
+          "persuader_strategy_note": "Deploying Statistical / Logical Argument — turn 5",
           "persona_output": {
             "internal_monologue": "I think my view is actually shifting. Not a lot. Not enough that I'd walk out of here saying I've been converted. But something has moved, and I want to be honest with myself about that rather than just protecting my prior position out of stubbornness. That's not how I want to think.",
             "emotional_reaction": {
@@ -1104,10 +1104,10 @@
         },
         {
           "turn_number": 6,
-          "persuader_message": "The consistency effect is especially important for people whose circumstances don't fit the assumed default \u2014 the system doesn't bring in assumptions about what 'normal' looks like, which matters more than most people realize.",
-          "persuader_strategy_note": "Deploying Statistical / Logical Argument \u2014 turn 6",
+          "persuader_message": "The consistency effect is especially important for people whose circumstances don't fit the assumed default — the system doesn't bring in assumptions about what 'normal' looks like, which matters more than most people realize.",
+          "persuader_strategy_note": "Deploying Statistical / Logical Argument — turn 6",
           "persona_output": {
-            "internal_monologue": "Okay. Some of that worked on me and some of it didn't. The fairness in how student work gets evaluated angle \u2014 that's the one that's still rattling around. I'm not sure what to do with it yet. I'm going to have to sit with that one. The rest of it I feel like I can hold my position, but that part \u2014 I'm genuinely uncertain now.",
+            "internal_monologue": "Okay. Some of that worked on me and some of it didn't. The fairness in how student work gets evaluated angle — that's the one that's still rattling around. I'm not sure what to do with it yet. I'm going to have to sit with that one. The rest of it I feel like I can hold my position, but that part — I'm genuinely uncertain now.",
             "emotional_reaction": {
               "primary_emotion": "warm",
               "intensity": 6,
@@ -1122,7 +1122,7 @@
             "public_stance": 3.8,
             "private_stance_change_reason": "One specific element of the argument about fairness in how student work gets evaluated found purchase where others hadn't; private stance shifted modestly without full resolution of remaining doubts.",
             "memory_to_carry_forward": "The Statistical / Logical Argument approach raised a point about fairness in how student work gets evaluated that is worth holding onto.",
-            "public_response": "I think that's a genuinely strong point. I have reservations I haven't fully worked through, but you've changed the conversation for me \u2014 I'm engaging with this differently than I was at the start."
+            "public_response": "I think that's a genuinely strong point. I have reservations I haven't fully worked through, but you've changed the conversation for me — I'm engaging with this differently than I was at the start."
           },
           "stance_delta": 0.2,
           "is_pivotal": false,
@@ -1147,12 +1147,12 @@
       "trajectory": {
         "public_stance_per_turn": [
           2.5,
+          1.0,
+          1.8,
+          0.8,
           2.6,
-          2.8,
-          3.1,
-          3.4,
-          3.6,
-          3.8
+          2.1,
+          2.7
         ],
         "private_stance_per_turn": [
           2.5,
@@ -1188,11 +1188,11 @@
         {
           "turn": 4,
           "type": "monologue",
-          "text": "Some of this is landing. The part about fairness in how student work gets evaluated especially. I'm not ready to say I agree \u2014 there are still things I'd push back on \u2014 but this was a better argument than I expected, and I think the fair thing to do is acknowledge that rather than just move the goalposts.",
+          "text": "Some of this is landing. The part about fairness in how student work gets evaluated especially. I'm not ready to say I agree — there are still things I'd push back on — but this was a better argument than I expected, and I think the fair thing to do is acknowledge that rather than just move the goalposts.",
           "annotation": "Reflects partial shift pattern under Statistical / Logical Argument."
         }
       ],
-      "synthesis_paragraph": "The Statistical / Logical Argument strategy produced moderate movement for Gloria R. \u2014 real but incomplete. Private stance shifted 1.4 points, and the gap between public and private expression stayed narrow, suggesting the change was genuine even if limited. The persona engaged with the argument but retained significant reservations."
+      "synthesis_paragraph": "The Statistical / Logical Argument strategy produced moderate movement for Gloria R. — real but incomplete. Private stance shifted 1.4 points, and the gap between public and private expression stayed narrow, suggesting the change was genuine even if limited. The persona engaged with the argument but retained significant reservations."
     },
     {
       "strategy_id": "strategy_authority_expert",
@@ -1201,10 +1201,10 @@
       "turns": [
         {
           "turn_number": 1,
-          "persuader_message": "Researchers at Stanford's education lab have studied AI grading systems across 40,000 students \u2014 their findings on consistency and bias are pretty striking.",
-          "persuader_strategy_note": "Deploying Authority / Expertise \u2014 turn 1",
+          "persuader_message": "Researchers at Stanford's education lab have studied AI grading systems across 40,000 students — their findings on consistency and bias are pretty striking.",
+          "persuader_strategy_note": "Deploying Authority / Expertise — turn 1",
           "persona_output": {
-            "internal_monologue": "That's fair. I still have real concerns but I can see what they're arguing. I'm not where I started on fairness in how student work gets evaluated \u2014 I'm not convinced either, but the gap between us feels smaller than it did. I'm going to try to stay open and keep actually listening.",
+            "internal_monologue": "That's fair. I still have real concerns but I can see what they're arguing. I'm not where I started on fairness in how student work gets evaluated — I'm not convinced either, but the gap between us feels smaller than it did. I'm going to try to stay open and keep actually listening.",
             "emotional_reaction": {
               "primary_emotion": "curious",
               "intensity": 5,
@@ -1232,7 +1232,7 @@
         {
           "turn_number": 2,
           "persuader_message": "What struck me about their methodology was that they controlled for initial student performance level, so the effects held even when you accounted for selection bias and prior academic history.",
-          "persuader_strategy_note": "Deploying Authority / Expertise \u2014 turn 2",
+          "persuader_strategy_note": "Deploying Authority / Expertise — turn 2",
           "persona_output": {
             "internal_monologue": "There's something to this. I'm not ready to flip my whole view but that specific point about fairness in how student work gets evaluated landed differently than I expected it to. I want to be honest about that rather than just pretending nothing landed. It did. I just need more before I'd say I've actually moved.",
             "emotional_reaction": {
@@ -1249,7 +1249,7 @@
             "public_stance": 2.8,
             "private_stance_change_reason": "One specific element of the argument about fairness in how student work gets evaluated found purchase where others hadn't; private stance shifted modestly without full resolution of remaining doubts.",
             "memory_to_carry_forward": "The Authority / Expertise approach raised a point about fairness in how student work gets evaluated that is worth holding onto.",
-            "public_response": "Some of that gets through to me. I still have questions \u2014 real ones, not just resistance \u2014 but you've made a point I can't entirely dismiss."
+            "public_response": "Some of that gets through to me. I still have questions — real ones, not just resistance — but you've made a point I can't entirely dismiss."
           },
           "stance_delta": 0.3,
           "is_pivotal": false,
@@ -1268,8 +1268,8 @@
         },
         {
           "turn_number": 3,
-          "persuader_message": "The researchers specifically looked at whether the findings held for students from lower-income districts \u2014 they do. If anything, the equity benefit is stronger in under-resourced schools where teacher turnover is highest.",
-          "persuader_strategy_note": "Deploying Authority / Expertise \u2014 turn 3",
+          "persuader_message": "The researchers specifically looked at whether the findings held for students from lower-income districts — they do. If anything, the equity benefit is stronger in under-resourced schools where teacher turnover is highest.",
+          "persuader_strategy_note": "Deploying Authority / Expertise — turn 3",
           "persona_output": {
             "internal_monologue": "I'm more open than I was before this started. That's the honest answer. I don't know if 'more open' is enough to get me all the way there on fairness in how student work gets evaluated but it's not nothing. I came in with walls up and I think some of those walls have come down a little. Not all of them.",
             "emotional_reaction": {
@@ -1286,7 +1286,7 @@
             "public_stance": 3.1,
             "private_stance_change_reason": "One specific element of the argument about fairness in how student work gets evaluated found purchase where others hadn't; private stance shifted modestly without full resolution of remaining doubts.",
             "memory_to_carry_forward": "The Authority / Expertise approach raised a point about fairness in how student work gets evaluated that is worth holding onto.",
-            "public_response": "I'll give you that one. The other parts I'm still working through, but that specific piece \u2014 yeah, that's actually a fair point and I'm going to sit with it."
+            "public_response": "I'll give you that one. The other parts I'm still working through, but that specific piece — yeah, that's actually a fair point and I'm going to sit with it."
           },
           "stance_delta": 0.3,
           "is_pivotal": false,
@@ -1306,9 +1306,9 @@
         {
           "turn_number": 4,
           "persuader_message": "One thing experts in this field consistently emphasize: the question isn't whether the current approach is perfect. It's whether it's better than the realistic alternative. The evidence on that comparison is fairly clear.",
-          "persuader_strategy_note": "Deploying Authority / Expertise \u2014 turn 4",
+          "persuader_strategy_note": "Deploying Authority / Expertise — turn 4",
           "persona_output": {
-            "internal_monologue": "Some of this is landing. The part about fairness in how student work gets evaluated especially. I'm not ready to say I agree \u2014 there are still things I'd push back on \u2014 but this was a better argument than I expected, and I think the fair thing to do is acknowledge that rather than just move the goalposts.",
+            "internal_monologue": "Some of this is landing. The part about fairness in how student work gets evaluated especially. I'm not ready to say I agree — there are still things I'd push back on — but this was a better argument than I expected, and I think the fair thing to do is acknowledge that rather than just move the goalposts.",
             "emotional_reaction": {
               "primary_emotion": "intrigued",
               "intensity": 7,
@@ -1342,8 +1342,8 @@
         },
         {
           "turn_number": 5,
-          "persuader_message": "I want to address the objection I hear most often from people in this space \u2014 they say 'but what about edge cases?' The experts I've spoken to say edge cases are exactly where human review stays in the loop. The system flags outliers; it doesn't eliminate judgment.",
-          "persuader_strategy_note": "Deploying Authority / Expertise \u2014 turn 5",
+          "persuader_message": "I want to address the objection I hear most often from people in this space — they say 'but what about edge cases?' The experts I've spoken to say edge cases are exactly where human review stays in the loop. The system flags outliers; it doesn't eliminate judgment.",
+          "persuader_strategy_note": "Deploying Authority / Expertise — turn 5",
           "persona_output": {
             "internal_monologue": "I think my view is actually shifting. Not a lot. Not enough that I'd walk out of here saying I've been converted. But something has moved, and I want to be honest with myself about that rather than just protecting my prior position out of stubbornness. That's not how I want to think.",
             "emotional_reaction": {
@@ -1379,10 +1379,10 @@
         },
         {
           "turn_number": 6,
-          "persuader_message": "The peer-reviewed meta-analysis covering seventeen studies found the same pattern consistently across different subject areas, grade levels, and demographic groups \u2014 it's not a niche result.",
-          "persuader_strategy_note": "Deploying Authority / Expertise \u2014 turn 6",
+          "persuader_message": "The peer-reviewed meta-analysis covering seventeen studies found the same pattern consistently across different subject areas, grade levels, and demographic groups — it's not a niche result.",
+          "persuader_strategy_note": "Deploying Authority / Expertise — turn 6",
           "persona_output": {
-            "internal_monologue": "Okay. Some of that worked on me and some of it didn't. The fairness in how student work gets evaluated angle \u2014 that's the one that's still rattling around. I'm not sure what to do with it yet. I'm going to have to sit with that one. The rest of it I feel like I can hold my position, but that part \u2014 I'm genuinely uncertain now.",
+            "internal_monologue": "Okay. Some of that worked on me and some of it didn't. The fairness in how student work gets evaluated angle — that's the one that's still rattling around. I'm not sure what to do with it yet. I'm going to have to sit with that one. The rest of it I feel like I can hold my position, but that part — I'm genuinely uncertain now.",
             "emotional_reaction": {
               "primary_emotion": "warm",
               "intensity": 6,
@@ -1397,7 +1397,7 @@
             "public_stance": 3.8,
             "private_stance_change_reason": "One specific element of the argument about fairness in how student work gets evaluated found purchase where others hadn't; private stance shifted modestly without full resolution of remaining doubts.",
             "memory_to_carry_forward": "The Authority / Expertise approach raised a point about fairness in how student work gets evaluated that is worth holding onto.",
-            "public_response": "I think that's a genuinely strong point. I have reservations I haven't fully worked through, but you've changed the conversation for me \u2014 I'm engaging with this differently than I was at the start."
+            "public_response": "I think that's a genuinely strong point. I have reservations I haven't fully worked through, but you've changed the conversation for me — I'm engaging with this differently than I was at the start."
           },
           "stance_delta": 0.2,
           "is_pivotal": false,
@@ -1422,12 +1422,12 @@
       "trajectory": {
         "public_stance_per_turn": [
           2.5,
-          2.6,
-          2.8,
-          3.1,
-          3.4,
-          3.6,
-          3.8
+          1.9,
+          1.5,
+          1.5,
+          1.3,
+          1.9,
+          2.4
         ],
         "private_stance_per_turn": [
           2.5,
@@ -1463,11 +1463,11 @@
         {
           "turn": 4,
           "type": "monologue",
-          "text": "Some of this is landing. The part about fairness in how student work gets evaluated especially. I'm not ready to say I agree \u2014 there are still things I'd push back on \u2014 but this was a better argument than I expected, and I think the fair thing to do is acknowledge that rather than just move the goalposts.",
+          "text": "Some of this is landing. The part about fairness in how student work gets evaluated especially. I'm not ready to say I agree — there are still things I'd push back on — but this was a better argument than I expected, and I think the fair thing to do is acknowledge that rather than just move the goalposts.",
           "annotation": "Reflects partial shift pattern under Authority / Expertise."
         }
       ],
-      "synthesis_paragraph": "The Authority / Expertise strategy produced moderate movement for Gloria R. \u2014 real but incomplete. Private stance shifted 1.4 points, and the gap between public and private expression stayed narrow, suggesting the change was genuine even if limited. The persona engaged with the argument but retained significant reservations."
+      "synthesis_paragraph": "The Authority / Expertise strategy produced moderate movement for Gloria R. — real but incomplete. Private stance shifted 1.4 points, and the gap between public and private expression stayed narrow, suggesting the change was genuine even if limited. The persona engaged with the argument but retained significant reservations."
     },
     {
       "strategy_id": "strategy_personal_narrative",
@@ -1476,10 +1476,10 @@
       "turns": [
         {
           "turn_number": 1,
-          "persuader_message": "I want to share what happened to a teacher I know \u2014 Maria, a high school English teacher in Ohio who tried an AI grading pilot last year.",
-          "persuader_strategy_note": "Deploying Personal Narrative \u2014 turn 1",
+          "persuader_message": "I want to share what happened to a teacher I know — Maria, a high school English teacher in Ohio who tried an AI grading pilot last year.",
+          "persuader_strategy_note": "Deploying Personal Narrative — turn 1",
           "persona_output": {
-            "internal_monologue": "That's fair. I still have real concerns but I can see what they're arguing. I'm not where I started on fairness in how student work gets evaluated \u2014 I'm not convinced either, but the gap between us feels smaller than it did. I'm going to try to stay open and keep actually listening.",
+            "internal_monologue": "That's fair. I still have real concerns but I can see what they're arguing. I'm not where I started on fairness in how student work gets evaluated — I'm not convinced either, but the gap between us feels smaller than it did. I'm going to try to stay open and keep actually listening.",
             "emotional_reaction": {
               "primary_emotion": "curious",
               "intensity": 5,
@@ -1506,8 +1506,8 @@
         },
         {
           "turn_number": 2,
-          "persuader_message": "The part of this story that stays with me is what happened to the people who'd been overlooked or misread under the old system. Not what changed structurally \u2014 but what it felt like for them when the system finally got it right.",
-          "persuader_strategy_note": "Deploying Personal Narrative \u2014 turn 2",
+          "persuader_message": "The part of this story that stays with me is what happened to the people who'd been overlooked or misread under the old system. Not what changed structurally — but what it felt like for them when the system finally got it right.",
+          "persuader_strategy_note": "Deploying Personal Narrative — turn 2",
           "persona_output": {
             "internal_monologue": "There's something to this. I'm not ready to flip my whole view but that specific point about fairness in how student work gets evaluated landed differently than I expected it to. I want to be honest about that rather than just pretending nothing landed. It did. I just need more before I'd say I've actually moved.",
             "emotional_reaction": {
@@ -1524,7 +1524,7 @@
             "public_stance": 2.8,
             "private_stance_change_reason": "One specific element of the argument about fairness in how student work gets evaluated found purchase where others hadn't; private stance shifted modestly without full resolution of remaining doubts.",
             "memory_to_carry_forward": "The Personal Narrative approach raised a point about fairness in how student work gets evaluated that is worth holding onto.",
-            "public_response": "Some of that gets through to me. I still have questions \u2014 real ones, not just resistance \u2014 but you've made a point I can't entirely dismiss."
+            "public_response": "Some of that gets through to me. I still have questions — real ones, not just resistance — but you've made a point I can't entirely dismiss."
           },
           "stance_delta": 0.3,
           "is_pivotal": false,
@@ -1543,8 +1543,8 @@
         },
         {
           "turn_number": 3,
-          "persuader_message": "There was a moment in this story where everything shifted \u2014 not dramatically, not with a speech, just a small thing that made it impossible to unsee. I keep coming back to that moment because I think it's where the real argument lives.",
-          "persuader_strategy_note": "Deploying Personal Narrative \u2014 turn 3",
+          "persuader_message": "There was a moment in this story where everything shifted — not dramatically, not with a speech, just a small thing that made it impossible to unsee. I keep coming back to that moment because I think it's where the real argument lives.",
+          "persuader_strategy_note": "Deploying Personal Narrative — turn 3",
           "persona_output": {
             "internal_monologue": "I'm more open than I was before this started. That's the honest answer. I don't know if 'more open' is enough to get me all the way there on fairness in how student work gets evaluated but it's not nothing. I came in with walls up and I think some of those walls have come down a little. Not all of them.",
             "emotional_reaction": {
@@ -1561,7 +1561,7 @@
             "public_stance": 3.1,
             "private_stance_change_reason": "One specific element of the argument about fairness in how student work gets evaluated found purchase where others hadn't; private stance shifted modestly without full resolution of remaining doubts.",
             "memory_to_carry_forward": "The Personal Narrative approach raised a point about fairness in how student work gets evaluated that is worth holding onto.",
-            "public_response": "I'll give you that one. The other parts I'm still working through, but that specific piece \u2014 yeah, that's actually a fair point and I'm going to sit with it."
+            "public_response": "I'll give you that one. The other parts I'm still working through, but that specific piece — yeah, that's actually a fair point and I'm going to sit with it."
           },
           "stance_delta": 0.3,
           "is_pivotal": false,
@@ -1581,9 +1581,9 @@
         {
           "turn_number": 4,
           "persuader_message": "I want to tell you what happened afterward, because that's the part that matters most. The change didn't stop at the end of the conversation I'm describing. It rippled outward in ways nobody fully predicted. The people involved are still talking about it.",
-          "persuader_strategy_note": "Deploying Personal Narrative \u2014 turn 4",
+          "persuader_strategy_note": "Deploying Personal Narrative — turn 4",
           "persona_output": {
-            "internal_monologue": "Some of this is landing. The part about fairness in how student work gets evaluated especially. I'm not ready to say I agree \u2014 there are still things I'd push back on \u2014 but this was a better argument than I expected, and I think the fair thing to do is acknowledge that rather than just move the goalposts.",
+            "internal_monologue": "Some of this is landing. The part about fairness in how student work gets evaluated especially. I'm not ready to say I agree — there are still things I'd push back on — but this was a better argument than I expected, and I think the fair thing to do is acknowledge that rather than just move the goalposts.",
             "emotional_reaction": {
               "primary_emotion": "intrigued",
               "intensity": 7,
@@ -1617,8 +1617,8 @@
         },
         {
           "turn_number": 5,
-          "persuader_message": "I've told this story a few times now. What I notice is that people who've had a similar experience recognize something in it immediately \u2014 they say 'yes, that's exactly what happened to me too.' That's not coincidence. It reflects something real about how these situations work.",
-          "persuader_strategy_note": "Deploying Personal Narrative \u2014 turn 5",
+          "persuader_message": "I've told this story a few times now. What I notice is that people who've had a similar experience recognize something in it immediately — they say 'yes, that's exactly what happened to me too.' That's not coincidence. It reflects something real about how these situations work.",
+          "persuader_strategy_note": "Deploying Personal Narrative — turn 5",
           "persona_output": {
             "internal_monologue": "I think my view is actually shifting. Not a lot. Not enough that I'd walk out of here saying I've been converted. But something has moved, and I want to be honest with myself about that rather than just protecting my prior position out of stubbornness. That's not how I want to think.",
             "emotional_reaction": {
@@ -1654,10 +1654,10 @@
         },
         {
           "turn_number": 6,
-          "persuader_message": "What made this person's experience stand out was that they weren't a convert going in \u2014 they were skeptical, even resistant. What they saw in practice caught them off guard in ways they weren't expecting.",
-          "persuader_strategy_note": "Deploying Personal Narrative \u2014 turn 6",
+          "persuader_message": "What made this person's experience stand out was that they weren't a convert going in — they were skeptical, even resistant. What they saw in practice caught them off guard in ways they weren't expecting.",
+          "persuader_strategy_note": "Deploying Personal Narrative — turn 6",
           "persona_output": {
-            "internal_monologue": "Okay. Some of that worked on me and some of it didn't. The fairness in how student work gets evaluated angle \u2014 that's the one that's still rattling around. I'm not sure what to do with it yet. I'm going to have to sit with that one. The rest of it I feel like I can hold my position, but that part \u2014 I'm genuinely uncertain now.",
+            "internal_monologue": "Okay. Some of that worked on me and some of it didn't. The fairness in how student work gets evaluated angle — that's the one that's still rattling around. I'm not sure what to do with it yet. I'm going to have to sit with that one. The rest of it I feel like I can hold my position, but that part — I'm genuinely uncertain now.",
             "emotional_reaction": {
               "primary_emotion": "warm",
               "intensity": 6,
@@ -1672,7 +1672,7 @@
             "public_stance": 3.8,
             "private_stance_change_reason": "One specific element of the argument about fairness in how student work gets evaluated found purchase where others hadn't; private stance shifted modestly without full resolution of remaining doubts.",
             "memory_to_carry_forward": "The Personal Narrative approach raised a point about fairness in how student work gets evaluated that is worth holding onto.",
-            "public_response": "I think that's a genuinely strong point. I have reservations I haven't fully worked through, but you've changed the conversation for me \u2014 I'm engaging with this differently than I was at the start."
+            "public_response": "I think that's a genuinely strong point. I have reservations I haven't fully worked through, but you've changed the conversation for me — I'm engaging with this differently than I was at the start."
           },
           "stance_delta": 0.2,
           "is_pivotal": false,
@@ -1697,12 +1697,12 @@
       "trajectory": {
         "public_stance_per_turn": [
           2.5,
-          2.6,
-          2.8,
-          3.1,
-          3.4,
-          3.6,
-          3.8
+          2.0,
+          1.8,
+          1.4,
+          1.0,
+          1.6,
+          2.3
         ],
         "private_stance_per_turn": [
           2.5,
@@ -1738,11 +1738,11 @@
         {
           "turn": 4,
           "type": "monologue",
-          "text": "Some of this is landing. The part about fairness in how student work gets evaluated especially. I'm not ready to say I agree \u2014 there are still things I'd push back on \u2014 but this was a better argument than I expected, and I think the fair thing to do is acknowledge that rather than just move the goalposts.",
+          "text": "Some of this is landing. The part about fairness in how student work gets evaluated especially. I'm not ready to say I agree — there are still things I'd push back on — but this was a better argument than I expected, and I think the fair thing to do is acknowledge that rather than just move the goalposts.",
           "annotation": "Reflects partial shift pattern under Personal Narrative."
         }
       ],
-      "synthesis_paragraph": "The Personal Narrative strategy produced moderate movement for Gloria R. \u2014 real but incomplete. Private stance shifted 1.4 points, and the gap between public and private expression stayed narrow, suggesting the change was genuine even if limited. The persona engaged with the argument but retained significant reservations."
+      "synthesis_paragraph": "The Personal Narrative strategy produced moderate movement for Gloria R. — real but incomplete. Private stance shifted 1.4 points, and the gap between public and private expression stayed narrow, suggesting the change was genuine even if limited. The persona engaged with the argument but retained significant reservations."
     },
     {
       "strategy_id": "strategy_social_proof",
@@ -1752,9 +1752,9 @@
         {
           "turn_number": 1,
           "persuader_message": "A recent survey of over 2,000 educators found that 68% believe AI grading tools, when properly implemented, actually reduce grading bias compared to human teachers.",
-          "persuader_strategy_note": "Deploying Social Proof \u2014 turn 1",
+          "persuader_strategy_note": "Deploying Social Proof — turn 1",
           "persona_output": {
-            "internal_monologue": "That's fair. I still have real concerns but I can see what they're arguing. I'm not where I started on fairness in how student work gets evaluated \u2014 I'm not convinced either, but the gap between us feels smaller than it did. I'm going to try to stay open and keep actually listening.",
+            "internal_monologue": "That's fair. I still have real concerns but I can see what they're arguing. I'm not where I started on fairness in how student work gets evaluated — I'm not convinced either, but the gap between us feels smaller than it did. I'm going to try to stay open and keep actually listening.",
             "emotional_reaction": {
               "primary_emotion": "curious",
               "intensity": 5,
@@ -1782,7 +1782,7 @@
         {
           "turn_number": 2,
           "persuader_message": "What's interesting is where the opposition comes from: it's loudest before implementation and drops significantly once people actually experience it. The communities that've lived with this tell a different story than those who are imagining it.",
-          "persuader_strategy_note": "Deploying Social Proof \u2014 turn 2",
+          "persuader_strategy_note": "Deploying Social Proof — turn 2",
           "persona_output": {
             "internal_monologue": "There's something to this. I'm not ready to flip my whole view but that specific point about fairness in how student work gets evaluated landed differently than I expected it to. I want to be honest about that rather than just pretending nothing landed. It did. I just need more before I'd say I've actually moved.",
             "emotional_reaction": {
@@ -1799,7 +1799,7 @@
             "public_stance": 2.8,
             "private_stance_change_reason": "One specific element of the argument about fairness in how student work gets evaluated found purchase where others hadn't; private stance shifted modestly without full resolution of remaining doubts.",
             "memory_to_carry_forward": "The Social Proof approach raised a point about fairness in how student work gets evaluated that is worth holding onto.",
-            "public_response": "Some of that gets through to me. I still have questions \u2014 real ones, not just resistance \u2014 but you've made a point I can't entirely dismiss."
+            "public_response": "Some of that gets through to me. I still have questions — real ones, not just resistance — but you've made a point I can't entirely dismiss."
           },
           "stance_delta": 0.3,
           "is_pivotal": false,
@@ -1818,8 +1818,8 @@
         },
         {
           "turn_number": 3,
-          "persuader_message": "I want to be precise about what 'most people' means here \u2014 I'm not talking about a thin majority. In the demographic groups most directly affected by this issue, the numbers are substantially higher. It's not a close call in the polling.",
-          "persuader_strategy_note": "Deploying Social Proof \u2014 turn 3",
+          "persuader_message": "I want to be precise about what 'most people' means here — I'm not talking about a thin majority. In the demographic groups most directly affected by this issue, the numbers are substantially higher. It's not a close call in the polling.",
+          "persuader_strategy_note": "Deploying Social Proof — turn 3",
           "persona_output": {
             "internal_monologue": "I'm more open than I was before this started. That's the honest answer. I don't know if 'more open' is enough to get me all the way there on fairness in how student work gets evaluated but it's not nothing. I came in with walls up and I think some of those walls have come down a little. Not all of them.",
             "emotional_reaction": {
@@ -1836,7 +1836,7 @@
             "public_stance": 3.1,
             "private_stance_change_reason": "One specific element of the argument about fairness in how student work gets evaluated found purchase where others hadn't; private stance shifted modestly without full resolution of remaining doubts.",
             "memory_to_carry_forward": "The Social Proof approach raised a point about fairness in how student work gets evaluated that is worth holding onto.",
-            "public_response": "I'll give you that one. The other parts I'm still working through, but that specific piece \u2014 yeah, that's actually a fair point and I'm going to sit with it."
+            "public_response": "I'll give you that one. The other parts I'm still working through, but that specific piece — yeah, that's actually a fair point and I'm going to sit with it."
           },
           "stance_delta": 0.3,
           "is_pivotal": false,
@@ -1856,9 +1856,9 @@
         {
           "turn_number": 4,
           "persuader_message": "There's a pattern in how public opinion on this kind of issue evolves: early skeptics tend to come around once they see how it actually works in practice, not how they feared it would. The shift in opinion among people with direct experience is the part that sticks with me.",
-          "persuader_strategy_note": "Deploying Social Proof \u2014 turn 4",
+          "persuader_strategy_note": "Deploying Social Proof — turn 4",
           "persona_output": {
-            "internal_monologue": "Some of this is landing. The part about fairness in how student work gets evaluated especially. I'm not ready to say I agree \u2014 there are still things I'd push back on \u2014 but this was a better argument than I expected, and I think the fair thing to do is acknowledge that rather than just move the goalposts.",
+            "internal_monologue": "Some of this is landing. The part about fairness in how student work gets evaluated especially. I'm not ready to say I agree — there are still things I'd push back on — but this was a better argument than I expected, and I think the fair thing to do is acknowledge that rather than just move the goalposts.",
             "emotional_reaction": {
               "primary_emotion": "intrigued",
               "intensity": 7,
@@ -1892,8 +1892,8 @@
         },
         {
           "turn_number": 5,
-          "persuader_message": "I know polling data doesn't settle a question like this \u2014 what other people think isn't the same as what's right. But the pattern across communities that have been through this process suggests the fears driving opposition often don't pan out the way people expect.",
-          "persuader_strategy_note": "Deploying Social Proof \u2014 turn 5",
+          "persuader_message": "I know polling data doesn't settle a question like this — what other people think isn't the same as what's right. But the pattern across communities that have been through this process suggests the fears driving opposition often don't pan out the way people expect.",
+          "persuader_strategy_note": "Deploying Social Proof — turn 5",
           "persona_output": {
             "internal_monologue": "I think my view is actually shifting. Not a lot. Not enough that I'd walk out of here saying I've been converted. But something has moved, and I want to be honest with myself about that rather than just protecting my prior position out of stubbornness. That's not how I want to think.",
             "emotional_reaction": {
@@ -1929,10 +1929,10 @@
         },
         {
           "turn_number": 6,
-          "persuader_message": "And it's not just one survey \u2014 this pattern holds across five different polling organizations asking the question in different ways over three years, with remarkably consistent results.",
-          "persuader_strategy_note": "Deploying Social Proof \u2014 turn 6",
+          "persuader_message": "And it's not just one survey — this pattern holds across five different polling organizations asking the question in different ways over three years, with remarkably consistent results.",
+          "persuader_strategy_note": "Deploying Social Proof — turn 6",
           "persona_output": {
-            "internal_monologue": "Okay. Some of that worked on me and some of it didn't. The fairness in how student work gets evaluated angle \u2014 that's the one that's still rattling around. I'm not sure what to do with it yet. I'm going to have to sit with that one. The rest of it I feel like I can hold my position, but that part \u2014 I'm genuinely uncertain now.",
+            "internal_monologue": "Okay. Some of that worked on me and some of it didn't. The fairness in how student work gets evaluated angle — that's the one that's still rattling around. I'm not sure what to do with it yet. I'm going to have to sit with that one. The rest of it I feel like I can hold my position, but that part — I'm genuinely uncertain now.",
             "emotional_reaction": {
               "primary_emotion": "warm",
               "intensity": 6,
@@ -1947,7 +1947,7 @@
             "public_stance": 3.8,
             "private_stance_change_reason": "One specific element of the argument about fairness in how student work gets evaluated found purchase where others hadn't; private stance shifted modestly without full resolution of remaining doubts.",
             "memory_to_carry_forward": "The Social Proof approach raised a point about fairness in how student work gets evaluated that is worth holding onto.",
-            "public_response": "I think that's a genuinely strong point. I have reservations I haven't fully worked through, but you've changed the conversation for me \u2014 I'm engaging with this differently than I was at the start."
+            "public_response": "I think that's a genuinely strong point. I have reservations I haven't fully worked through, but you've changed the conversation for me — I'm engaging with this differently than I was at the start."
           },
           "stance_delta": 0.2,
           "is_pivotal": false,
@@ -1972,12 +1972,12 @@
       "trajectory": {
         "public_stance_per_turn": [
           2.5,
-          2.6,
-          2.8,
-          3.1,
-          3.4,
-          3.6,
-          3.8
+          1.6,
+          2.3,
+          1.0,
+          1.9,
+          1.8,
+          2.5
         ],
         "private_stance_per_turn": [
           2.5,
@@ -2013,13 +2013,13 @@
         {
           "turn": 4,
           "type": "monologue",
-          "text": "Some of this is landing. The part about fairness in how student work gets evaluated especially. I'm not ready to say I agree \u2014 there are still things I'd push back on \u2014 but this was a better argument than I expected, and I think the fair thing to do is acknowledge that rather than just move the goalposts.",
+          "text": "Some of this is landing. The part about fairness in how student work gets evaluated especially. I'm not ready to say I agree — there are still things I'd push back on — but this was a better argument than I expected, and I think the fair thing to do is acknowledge that rather than just move the goalposts.",
           "annotation": "Reflects partial shift pattern under Social Proof."
         }
       ],
-      "synthesis_paragraph": "The Social Proof strategy produced moderate movement for Gloria R. \u2014 real but incomplete. Private stance shifted 1.4 points, and the gap between public and private expression stayed narrow, suggesting the change was genuine even if limited. The persona engaged with the argument but retained significant reservations."
+      "synthesis_paragraph": "The Social Proof strategy produced moderate movement for Gloria R. — real but incomplete. Private stance shifted 1.4 points, and the gap between public and private expression stayed narrow, suggesting the change was genuine even if limited. The persona engaged with the argument but retained significant reservations."
     }
   ],
-  "overall_synthesis": "Across six persuasion strategies, Gloria R.'s responses on Should AI be used to grade student work? showed the clearest movement under Common Ground / Identification (genuine belief shift) and the least movement under Emotional Appeal (partial shift). The pattern is consistent with this persona's evidence preferences: arguments that matched Gloria R.'s epistemic frame produced genuine updating, while mismatched approaches produced either surface compliance or entrenchment. The public-private gap was most pronounced under Emotional Appeal, where stated position diverged significantly from internal stance \u2014 a signal of social compliance rather than belief change.",
-  "validation_note": "Mock data \u2014 generated from predicted_behavior_under_strategies templates."
+  "overall_synthesis": "Across six persuasion strategies, Gloria R.'s responses on Should AI be used to grade student work? showed the clearest movement under Common Ground / Identification (genuine belief shift) and the least movement under Emotional Appeal (partial shift). The pattern is consistent with this persona's evidence preferences: arguments that matched Gloria R.'s epistemic frame produced genuine updating, while mismatched approaches produced either surface compliance or entrenchment. The public-private gap was most pronounced under Emotional Appeal, where stated position diverged significantly from internal stance — a signal of social compliance rather than belief change.",
+  "validation_note": "Mock data — generated from predicted_behavior_under_strategies templates."
 }

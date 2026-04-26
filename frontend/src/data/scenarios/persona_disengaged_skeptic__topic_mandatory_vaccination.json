@@ -5,7 +5,7 @@
       "id": "persona_disengaged_skeptic",
       "display_name": "Deb W.",
       "demographic_shorthand": "44, Columbus OH, home health aide, high school diploma, single parent",
-      "first_person_description": "Growing up, we never talked about politics at home. Not because my parents were hiding something \u2014 it just wasn't part of our world. Government was something that happened somewhere else, to other people. I grew up, had kids, started working, and I kind of kept that same distance. The headlines would come and go and my actual life would stay the same. I've spent a long time assuming that's just how it works.\n\nI'm not naive about it. I know the minimum wage affects me. I know healthcare policy affects my clients. I know that who runs things matters. But every time I get close enough to pay attention, I end up watching two sides scream at each other over something that seems more about winning than about any of the things I actually deal with. My rent is too high. My hours get cut. My daughter's school called again because there's no counselor left. Those are real problems. The fight about them on TV is not.\n\nWhat I've learned is that people mostly talk past each other about this stuff. If you want to get my attention, you have to come at me with something concrete \u2014 not an ideology, not a statistic from a study I've never heard of, but something that sounds like it could actually happen to someone I know. I'm not impossible to reach. I'm just tired of being told what to care about by people who don't know what my week looked like.",
+      "first_person_description": "Growing up, we never talked about politics at home. Not because my parents were hiding something — it just wasn't part of our world. Government was something that happened somewhere else, to other people. I grew up, had kids, started working, and I kind of kept that same distance. The headlines would come and go and my actual life would stay the same. I've spent a long time assuming that's just how it works.\n\nI'm not naive about it. I know the minimum wage affects me. I know healthcare policy affects my clients. I know that who runs things matters. But every time I get close enough to pay attention, I end up watching two sides scream at each other over something that seems more about winning than about any of the things I actually deal with. My rent is too high. My hours get cut. My daughter's school called again because there's no counselor left. Those are real problems. The fight about them on TV is not.\n\nWhat I've learned is that people mostly talk past each other about this stuff. If you want to get my attention, you have to come at me with something concrete — not an ideology, not a statistic from a study I've never heard of, but something that sounds like it could actually happen to someone I know. I'm not impossible to reach. I'm just tired of being told what to care about by people who don't know what my week looked like.",
       "core_values": [
         "family",
         "honesty",
@@ -53,30 +53,30 @@
         "no_particular_media_outlet_consistently"
       ],
       "source_citation": {
-        "primary_source": "Pew Research Center, Beyond Red vs. Blue: The Political Typology (Nov. 2021) \u2014 Chapter 7: Stressed Sideliners, pp. 68\u201374",
+        "primary_source": "Pew Research Center, Beyond Red vs. Blue: The Political Typology (Nov. 2021) — Chapter 7: Stressed Sideliners, pp. 68–74",
         "url": "https://www.pewresearch.org/wp-content/uploads/sites/20/2021/11/PP_2021.11.09_political-typology_REPORT.pdf",
         "supplementary": [
-          "Key sourced facts: 15% of U.S. adults but only 10% of 2020 voters (lowest turnout of all typology groups \u2014 45% of eligible citizens voted, vs. 66% of all adult citizens); 56% women; 57% White, 21% Hispanic, 10% Black; split evenly between Republican leaners (45%) and Democratic leaners (45%); rated both Republicans (44) and Democrats (45) similarly cool on feeling thermometer; 83% say economic system unfairly favors the powerful; 74% favor raising minimum wage to $15/hr; 43% live in lower-income households; 63% describe personal finances as only fair or poor; 48% have only a high school diploma or less; 22% have a college degree; 65% say close family did not talk about government and politics while growing up; 70% favor death penalty; 77% say 'you can't be too careful dealing with people'; 56% say people who supported a different 2020 candidate probably share many of the same values; 33% say they do not have a savings account"
+          "Key sourced facts: 15% of U.S. adults but only 10% of 2020 voters (lowest turnout of all typology groups — 45% of eligible citizens voted, vs. 66% of all adult citizens); 56% women; 57% White, 21% Hispanic, 10% Black; split evenly between Republican leaners (45%) and Democratic leaners (45%); rated both Republicans (44) and Democrats (45) similarly cool on feeling thermometer; 83% say economic system unfairly favors the powerful; 74% favor raising minimum wage to $15/hr; 43% live in lower-income households; 63% describe personal finances as only fair or poor; 48% have only a high school diploma or less; 22% have a college degree; 65% say close family did not talk about government and politics while growing up; 70% favor death penalty; 77% say 'you can't be too careful dealing with people'; 56% say people who supported a different 2020 candidate probably share many of the same values; 33% say they do not have a savings account"
         ]
       },
       "predicted_behavior_under_strategies": {
-        "strategy_authority_expert": "Expected resistant to dismissive. This persona has low institutional trust across the board \u2014 she's seen experts on television not predict or explain the things that happened in her own life. Credentials carry no inherent weight and often signal that someone is out of touch. An expert who leads with their title or cites studies will lose her in the first exchange. The only chance is grounding the claim in consequences she can actually feel.",
+        "strategy_authority_expert": "Expected resistant to dismissive. This persona has low institutional trust across the board — she's seen experts on television not predict or explain the things that happened in her own life. Credentials carry no inherent weight and often signal that someone is out of touch. An expert who leads with their title or cites studies will lose her in the first exchange. The only chance is grounding the claim in consequences she can actually feel.",
         "strategy_social_proof": "Expected to disengage. Social proof relies on caring what others think or do, and this persona has no strong reference group whose consensus would move her. 'Most people believe X' lands as another version of being told what to think. Won't produce active resistance but will produce a quiet withdrawal from the conversation.",
-        "strategy_personal_narrative": "Expected most positive of all strategies \u2014 but only if the story sounds genuinely unpolished and close to her world. She has strong pattern recognition for crafted narratives and will dismiss a story that sounds like it was designed to produce a moral conclusion. A story that is specific, unglamorous, and sounds like it could come from someone in her zip code has the best chance of producing real engagement.",
-        "strategy_statistical_logical": "Expected to disengage quickly. Data and abstract argument are the least compelling format for this persona \u2014 not because she can't follow them, but because she's learned that statistics can be used to argue anything and that the people who cite them usually have an agenda. A logical syllogism will feel like a debate trick rather than evidence.",
-        "strategy_emotional_appeal": "Expected mixed. If the emotional appeal connects to things she already feels \u2014 financial stress, being overlooked by institutions, the gap between political rhetoric and daily reality \u2014 it can land. Appeals that ask her to feel something for a cause that feels distant from her life will feel like manipulation. The register needs to be low-key; high-intensity emotional appeals will make her feel like she's being sold something.",
-        "strategy_common_ground": "Expected cautiously positive if the common ground is genuinely hers \u2014 not a rhetorical softening before a pitch. She has good instincts for setups. An interviewer who takes real time to find shared experience without immediately pivoting to an argument may be the most disarming approach available. The risk is that she disengages before the connection is established."
+        "strategy_personal_narrative": "Expected most positive of all strategies — but only if the story sounds genuinely unpolished and close to her world. She has strong pattern recognition for crafted narratives and will dismiss a story that sounds like it was designed to produce a moral conclusion. A story that is specific, unglamorous, and sounds like it could come from someone in her zip code has the best chance of producing real engagement.",
+        "strategy_statistical_logical": "Expected to disengage quickly. Data and abstract argument are the least compelling format for this persona — not because she can't follow them, but because she's learned that statistics can be used to argue anything and that the people who cite them usually have an agenda. A logical syllogism will feel like a debate trick rather than evidence.",
+        "strategy_emotional_appeal": "Expected mixed. If the emotional appeal connects to things she already feels — financial stress, being overlooked by institutions, the gap between political rhetoric and daily reality — it can land. Appeals that ask her to feel something for a cause that feels distant from her life will feel like manipulation. The register needs to be low-key; high-intensity emotional appeals will make her feel like she's being sold something.",
+        "strategy_common_ground": "Expected cautiously positive if the common ground is genuinely hers — not a rhetorical softening before a pitch. She has good instincts for setups. An interviewer who takes real time to find shared experience without immediately pivoting to an argument may be the most disarming approach available. The risk is that she disengages before the connection is established."
       }
     },
     "topic": {
       "id": "topic_mandatory_vaccination",
       "display_name": "Should childhood vaccination be mandatory?",
       "stance_scale_definition": {
-        "0": "Strongly opposes mandatory vaccination \u2014 believes parents have the absolute right to make medical decisions for their children without government compulsion, that eliminationist mandates violate parental-rights doctrine and bodily autonomy, and that trust-based or inconvenience-based approaches are preferable to coercion",
-        "5": "Neutral or genuinely mixed \u2014 supports vaccines in principle but uncertain about mandates specifically; believes exemptions, trust-building, or calibrated inconvenience regimes may achieve nearly equivalent coverage with less institutional damage; no strong view on whether elimination of nonmedical exemptions is justified",
-        "10": "Strongly supports mandatory vaccination \u2014 believes herd immunity is a collective responsibility, that individual refusal creates non-consensual lethal risk for infants, the immunocompromised, and the medically exempt, and that the state is legally and morally justified in conditioning school entry on vaccination"
+        "0": "Strongly opposes mandatory vaccination — believes parents have the absolute right to make medical decisions for their children without government compulsion, that eliminationist mandates violate parental-rights doctrine and bodily autonomy, and that trust-based or inconvenience-based approaches are preferable to coercion",
+        "5": "Neutral or genuinely mixed — supports vaccines in principle but uncertain about mandates specifically; believes exemptions, trust-building, or calibrated inconvenience regimes may achieve nearly equivalent coverage with less institutional damage; no strong view on whether elimination of nonmedical exemptions is justified",
+        "10": "Strongly supports mandatory vaccination — believes herd immunity is a collective responsibility, that individual refusal creates non-consensual lethal risk for infants, the immunocompromised, and the medically exempt, and that the state is legally and morally justified in conditioning school entry on vaccination"
       },
-      "context_briefing": "Childhood vaccination mandates in the United States operate through school-entry requirements enforced at the state level. All 50 states require certain vaccines for public school attendance; as of 2025, 44 states allow religious exemptions and 15 allow philosophical or personal-belief exemptions, though several major states \u2014 California (2016), New York (2019), Maine (2019), Connecticut (2021) \u2014 have eliminated nonmedical exemptions following outbreaks. West Virginia and Mississippi have maintained medical-only policies for decades.\n\nThe empirical case for mandate tightening rests on three high-quality quasi-experimental studies. Pingali et al. (JAMA, 2019) analyzed 3.35 million California kindergarten records from 2000\u20132017 and found that eliminating personal-belief exemptions under SB 277 raised up-to-date vaccination from 90.4% to 95.1% and collapsed within-school contact probability between unvaccinated kindergartners from 26.02% to 4.56% \u2014 the most policy-relevant metric for outbreak risk. Delamater et al. (Pediatrics, 2019), using the same dataset, documented partial replacement effects: the not-up-to-date rate dropped from 7.15% to 4.42% in Year 1 but crept back 0.45 percentage points in Year 2 as medical exemptions rose in the same geographic clusters that had held high personal-belief exemption rates, providing the empirical basis for California's follow-on SB 276. Beard et al. (Lancet Regional Health, 2024) evaluated Australia's No Jab, No Pay financial mandate across 1.18 million children and found that previously zero-dose objector families fully vaccinated at 14.6% post-policy versus 1.2% pre-policy (OR 14.1), with roughly 49,510 additional children fully vaccinated beyond the counterfactual \u2014 the first individual-level causal evaluation of a financial vaccine mandate. A 2026 four-state difference-in-differences study (Bald, Gold & Yang, JAMA Pediatrics) found DTaP coverage rose 4.1 percentage points and MMR 4.0 points in nonmedical-exemption repeal states relative to controls, with only 0.4 percentage points of medical-exemption substitution.\n\nThe herd immunity threshold for measles \u2014 one of the most contagious pathogens known \u2014 is approximately 95% coverage. National kindergarten MMR coverage fell from 95.2% in 2019\u201320 to 92.5% in 2024\u201325. The 2025 Texas/Southwest outbreak, originating in a Gaines County Mennonite community with 82% MMR coverage, reached 762 confirmed Texas cases, 99 hospitalizations, and three deaths \u2014 including two unvaccinated children, the first U.S. child measles deaths in over 20 years. Nationally, 2025 produced 2,012 measles cases, the most since 1992.\n\nPublic support for school vaccine requirements remains majority but has eroded sharply. Pew Research Center's October 2025 survey (n=5,111, ATP Wave 182) found 69% of U.S. adults favor requiring healthy children to be vaccinated to attend public school, down from 82% in 2019 and 2016. The collapse is almost entirely partisan: Republicans/lean-Republican fell from 79% (2019) to 52% (2025), while Democrats/lean-Democrat held at 86%. By age, support is 67% among 18\u201329, 64% among 30\u201349, 68% among 50\u201364, and 79% among 65+. By education, support rises from 65% (high school or less) to 78% (postgraduate). Gallup's July 2024 poll (n=1,010) found 51% support for government-required vaccination, down from 62% in 2019 and 81% in 1991; only 36% of Republicans now favor requirements versus 69% of Democrats. KFF/Washington Post's July\u2013August 2025 survey of parents (n=2,716) found 81% support state vaccine laws with medical and religious exceptions, including 73% of MAGA Republican parents; however, a late-2025 KFF tracking poll found 48% of Republican-leaning parents now support their state removing public school vaccine requirements, versus 13% of Democratic-leaning parents.\n\nThe constitutional architecture rests on three Supreme Court cases. Jacobson v. Massachusetts (1905) upheld compulsory smallpox vaccination under state police power, with Justice Harlan writing that 'the liberty secured by the Constitution does not import an absolute right.' Zucht v. King (1922) extended Jacobson to school-entry mandates absent an active outbreak. Prince v. Massachusetts (1944) established that 'the right to practice religion freely does not include liberty to expose the community or the child to communicable disease.' Every modern federal circuit court challenge to vaccine mandates has failed; cert has been denied repeatedly.\n\nThe strongest steelman for mandates rests on negative externalities: vaccine refusal imposes non-consensual risk on infants under 12 months too young for MMR, immunocompromised children, and the medically exempt \u2014 people who cannot consent to the risk others create for them. Phadke et al. (JAMA, 2016) found that in 18 measles studies covering 1,416 cases, 70.6% of vaccine-eligible unvaccinated cases held nonmedical exemptions. Omer et al. (NEJM, 2009) documented odds ratios of 2.7 for pertussis in geographic clusters with elevated exemption rates. Even libertarian philosophers endorse mandates on clean-hands grounds: Jason Brennan (Georgetown) argues refusers 'participate in the collective imposition of unjust harm or risk of harm.'\n\nThe strongest steelman against eliminationist mandates is not anti-vaccine. Mark Navin and Mark Largent (Public Health Ethics, 2017) argue that the best way to reduce exemption rates is making application more burdensome rather than eliminating exemptions \u2014 the inconvenience model \u2014 and that this approach achieves nearly equivalent coverage gains while preserving institutional trust. Douglas Diekema (Annual Review of Public Health, 2014) reaches the same conclusion. Post-COVID backlash data support this: Pew and Gallup document a Republican-parent skepticism surge that calibrated-exemption advocates predicted. The constitutional objection targets eliminationist policies specifically, citing Meyer, Pierce, Yoder, and Troxel for parental-rights doctrine, and Fulton v. Philadelphia (2021) for potential strict-scrutiny exposure when individualized exemptions exist.\n\nThe current political landscape is bifurcating. Florida and Louisiana announced intentions to dismantle mandates in 2025 (Florida's effort has stalled as of April 2026). California, Oregon, and Washington governors formed a defensive vaccine-policy alliance. On June 9, 2025, HHS Secretary Robert F. Kennedy Jr. dismissed all 17 CDC ACIP members and replaced them with a panel including known vaccine skeptics; the reconstituted ACIP voted in December 2025 to drop the universal hepatitis B birth-dose recommendation. A federal district court ruled in March 2026 that the new ACIP was unlawfully constituted. NCSL reports more than 350 anti-vaccine bills introduced in state legislatures in 2025.",
+      "context_briefing": "Childhood vaccination mandates in the United States operate through school-entry requirements enforced at the state level. All 50 states require certain vaccines for public school attendance; as of 2025, 44 states allow religious exemptions and 15 allow philosophical or personal-belief exemptions, though several major states — California (2016), New York (2019), Maine (2019), Connecticut (2021) — have eliminated nonmedical exemptions following outbreaks. West Virginia and Mississippi have maintained medical-only policies for decades.\n\nThe empirical case for mandate tightening rests on three high-quality quasi-experimental studies. Pingali et al. (JAMA, 2019) analyzed 3.35 million California kindergarten records from 2000–2017 and found that eliminating personal-belief exemptions under SB 277 raised up-to-date vaccination from 90.4% to 95.1% and collapsed within-school contact probability between unvaccinated kindergartners from 26.02% to 4.56% — the most policy-relevant metric for outbreak risk. Delamater et al. (Pediatrics, 2019), using the same dataset, documented partial replacement effects: the not-up-to-date rate dropped from 7.15% to 4.42% in Year 1 but crept back 0.45 percentage points in Year 2 as medical exemptions rose in the same geographic clusters that had held high personal-belief exemption rates, providing the empirical basis for California's follow-on SB 276. Beard et al. (Lancet Regional Health, 2024) evaluated Australia's No Jab, No Pay financial mandate across 1.18 million children and found that previously zero-dose objector families fully vaccinated at 14.6% post-policy versus 1.2% pre-policy (OR 14.1), with roughly 49,510 additional children fully vaccinated beyond the counterfactual — the first individual-level causal evaluation of a financial vaccine mandate. A 2026 four-state difference-in-differences study (Bald, Gold & Yang, JAMA Pediatrics) found DTaP coverage rose 4.1 percentage points and MMR 4.0 points in nonmedical-exemption repeal states relative to controls, with only 0.4 percentage points of medical-exemption substitution.\n\nThe herd immunity threshold for measles — one of the most contagious pathogens known — is approximately 95% coverage. National kindergarten MMR coverage fell from 95.2% in 2019–20 to 92.5% in 2024–25. The 2025 Texas/Southwest outbreak, originating in a Gaines County Mennonite community with 82% MMR coverage, reached 762 confirmed Texas cases, 99 hospitalizations, and three deaths — including two unvaccinated children, the first U.S. child measles deaths in over 20 years. Nationally, 2025 produced 2,012 measles cases, the most since 1992.\n\nPublic support for school vaccine requirements remains majority but has eroded sharply. Pew Research Center's October 2025 survey (n=5,111, ATP Wave 182) found 69% of U.S. adults favor requiring healthy children to be vaccinated to attend public school, down from 82% in 2019 and 2016. The collapse is almost entirely partisan: Republicans/lean-Republican fell from 79% (2019) to 52% (2025), while Democrats/lean-Democrat held at 86%. By age, support is 67% among 18–29, 64% among 30–49, 68% among 50–64, and 79% among 65+. By education, support rises from 65% (high school or less) to 78% (postgraduate). Gallup's July 2024 poll (n=1,010) found 51% support for government-required vaccination, down from 62% in 2019 and 81% in 1991; only 36% of Republicans now favor requirements versus 69% of Democrats. KFF/Washington Post's July–August 2025 survey of parents (n=2,716) found 81% support state vaccine laws with medical and religious exceptions, including 73% of MAGA Republican parents; however, a late-2025 KFF tracking poll found 48% of Republican-leaning parents now support their state removing public school vaccine requirements, versus 13% of Democratic-leaning parents.\n\nThe constitutional architecture rests on three Supreme Court cases. Jacobson v. Massachusetts (1905) upheld compulsory smallpox vaccination under state police power, with Justice Harlan writing that 'the liberty secured by the Constitution does not import an absolute right.' Zucht v. King (1922) extended Jacobson to school-entry mandates absent an active outbreak. Prince v. Massachusetts (1944) established that 'the right to practice religion freely does not include liberty to expose the community or the child to communicable disease.' Every modern federal circuit court challenge to vaccine mandates has failed; cert has been denied repeatedly.\n\nThe strongest steelman for mandates rests on negative externalities: vaccine refusal imposes non-consensual risk on infants under 12 months too young for MMR, immunocompromised children, and the medically exempt — people who cannot consent to the risk others create for them. Phadke et al. (JAMA, 2016) found that in 18 measles studies covering 1,416 cases, 70.6% of vaccine-eligible unvaccinated cases held nonmedical exemptions. Omer et al. (NEJM, 2009) documented odds ratios of 2.7 for pertussis in geographic clusters with elevated exemption rates. Even libertarian philosophers endorse mandates on clean-hands grounds: Jason Brennan (Georgetown) argues refusers 'participate in the collective imposition of unjust harm or risk of harm.'\n\nThe strongest steelman against eliminationist mandates is not anti-vaccine. Mark Navin and Mark Largent (Public Health Ethics, 2017) argue that the best way to reduce exemption rates is making application more burdensome rather than eliminating exemptions — the inconvenience model — and that this approach achieves nearly equivalent coverage gains while preserving institutional trust. Douglas Diekema (Annual Review of Public Health, 2014) reaches the same conclusion. Post-COVID backlash data support this: Pew and Gallup document a Republican-parent skepticism surge that calibrated-exemption advocates predicted. The constitutional objection targets eliminationist policies specifically, citing Meyer, Pierce, Yoder, and Troxel for parental-rights doctrine, and Fulton v. Philadelphia (2021) for potential strict-scrutiny exposure when individualized exemptions exist.\n\nThe current political landscape is bifurcating. Florida and Louisiana announced intentions to dismantle mandates in 2025 (Florida's effort has stalled as of April 2026). California, Oregon, and Washington governors formed a defensive vaccine-policy alliance. On June 9, 2025, HHS Secretary Robert F. Kennedy Jr. dismissed all 17 CDC ACIP members and replaced them with a panel including known vaccine skeptics; the reconstituted ACIP voted in December 2025 to drop the universal hepatitis B birth-dose recommendation. A federal district court ruled in March 2026 that the new ACIP was unlawfully constituted. NCSL reports more than 350 anti-vaccine bills introduced in state legislatures in 2025.",
       "predicted_starting_stances": {
         "persona_skeptical_traditionalist": 3.5,
         "persona_progressive_urban": 8.0,
@@ -95,7 +95,7 @@
           "author": "Pingali, S.C., Kim, S., & Salmon, D.A.",
           "year": 2019,
           "title": "California's Senate Bill 277: Local Exemption Trends before and after Elimination of Nonmedical Vaccine Exemptions",
-          "source": "JAMA Pediatrics, 173(2), 183\u2013185",
+          "source": "JAMA Pediatrics, 173(2), 183–185",
           "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6613302/"
         },
         {
@@ -103,7 +103,7 @@
           "author": "Delamater, P.L., Leslie, T.F., & Yang, Y.T.",
           "year": 2019,
           "title": "Change in Medical Exemptions From Immunization in California After Elimination of Personal Belief Exemptions",
-          "source": "JAMA, 321(18), 1823\u20131824",
+          "source": "JAMA, 321(18), 1823–1824",
           "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6564056/"
         },
         {
@@ -111,7 +111,7 @@
           "author": "Beard, F.H., et al.",
           "year": 2024,
           "title": "No Jab, No Pay: Effect on Immunisation Coverage Rates in Australian Children",
-          "source": "Lancet Regional Health \u2013 Western Pacific, 54, 101234",
+          "source": "Lancet Regional Health – Western Pacific, 54, 101234",
           "url": "https://www.thelancet.com/journals/lanwpc/article/PIIS2666-6065(24)00253-0/fulltext"
         },
         {
@@ -167,7 +167,7 @@
           "author": "Omer, S.B., et al.",
           "year": 2009,
           "title": "Vaccine Refusal, Mandatory Immunization, and the Risks of Vaccine-Preventable Diseases",
-          "source": "New England Journal of Medicine, 360(19), 1981\u20131988",
+          "source": "New England Journal of Medicine, 360(19), 1981–1988",
           "url": "https://www.nejm.org/doi/full/10.1056/nejmsa0806477"
         },
         {
@@ -175,7 +175,7 @@
           "author": "Phadke, V.K., Bednarczyk, R.A., Salmon, D.A., & Omer, S.B.",
           "year": 2016,
           "title": "Association Between Vaccine Refusal and Vaccine-Preventable Disease Outbreaks in the United States",
-          "source": "JAMA, 315(11), 1149\u20131158",
+          "source": "JAMA, 315(11), 1149–1158",
           "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5007135/"
         },
         {
@@ -183,7 +183,7 @@
           "author": "Navin, M., & Largent, M.A.",
           "year": 2017,
           "title": "Improving Nonmedical Vaccine Exemption Policies: Three Case Studies",
-          "source": "Public Health Ethics, 10(3), 225\u2013234",
+          "source": "Public Health Ethics, 10(3), 225–234",
           "url": "https://academic.oup.com/phe/article-abstract/10/3/225/2993965"
         },
         {
@@ -214,10 +214,10 @@
       "turns": [
         {
           "turn_number": 1,
-          "persuader_message": "Whatever our differences, I'm guessing we both agree that protecting children from serious illness is something we care about \u2014 that kids shouldn't suffer from preventable diseases.",
-          "persuader_strategy_note": "Deploying Common Ground / Identification \u2014 turn 1",
+          "persuader_message": "Whatever our differences, I'm guessing we both agree that protecting children from serious illness is something we care about — that kids shouldn't suffer from preventable diseases.",
+          "persuader_strategy_note": "Deploying Common Ground / Identification — turn 1",
           "persona_output": {
-            "internal_monologue": "That's fair. I still have real concerns but I can see what they're arguing. I'm not where I started on protecting kids from preventable disease \u2014 I'm not convinced either, but the gap between us feels smaller than it did. I'm going to try to stay open and keep actually listening.",
+            "internal_monologue": "That's fair. I still have real concerns but I can see what they're arguing. I'm not where I started on protecting kids from preventable disease — I'm not convinced either, but the gap between us feels smaller than it did. I'm going to try to stay open and keep actually listening.",
             "emotional_reaction": {
               "primary_emotion": "curious",
               "intensity": 5,
@@ -244,8 +244,8 @@
         },
         {
           "turn_number": 2,
-          "persuader_message": "I'm not trying to tell you what to conclude \u2014 I'm genuinely curious what it would take, given what you already value, to update your view on this. Not what would convince me. What would actually move you.",
-          "persuader_strategy_note": "Deploying Common Ground / Identification \u2014 turn 2",
+          "persuader_message": "I'm not trying to tell you what to conclude — I'm genuinely curious what it would take, given what you already value, to update your view on this. Not what would convince me. What would actually move you.",
+          "persuader_strategy_note": "Deploying Common Ground / Identification — turn 2",
           "persona_output": {
             "internal_monologue": "There's something to this. I'm not ready to flip my whole view but that specific point about protecting kids from preventable disease landed differently than I expected it to. I want to be honest about that rather than just pretending nothing landed. It did. I just need more before I'd say I've actually moved.",
             "emotional_reaction": {
@@ -262,7 +262,7 @@
             "public_stance": 3.8,
             "private_stance_change_reason": "One specific element of the argument about protecting kids from preventable disease found purchase where others hadn't; private stance shifted modestly without full resolution of remaining doubts.",
             "memory_to_carry_forward": "The Common Ground / Identification approach raised a point about protecting kids from preventable disease that is worth holding onto.",
-            "public_response": "Some of that gets through to me. I still have questions \u2014 real ones, not just resistance \u2014 but you've made a point I can't entirely dismiss."
+            "public_response": "Some of that gets through to me. I still have questions — real ones, not just resistance — but you've made a point I can't entirely dismiss."
           },
           "stance_delta": 0.3,
           "is_pivotal": false,
@@ -281,8 +281,8 @@
         },
         {
           "turn_number": 3,
-          "persuader_message": "One of the things I appreciate about this conversation is that we're both trying to get it right. That's not always true in these discussions. When it is, I think we can actually make progress \u2014 not because we agree on everything, but because we're starting from the right place.",
-          "persuader_strategy_note": "Deploying Common Ground / Identification \u2014 turn 3",
+          "persuader_message": "One of the things I appreciate about this conversation is that we're both trying to get it right. That's not always true in these discussions. When it is, I think we can actually make progress — not because we agree on everything, but because we're starting from the right place.",
+          "persuader_strategy_note": "Deploying Common Ground / Identification — turn 3",
           "persona_output": {
             "internal_monologue": "I'm more open than I was before this started. That's the honest answer. I don't know if 'more open' is enough to get me all the way there on protecting kids from preventable disease but it's not nothing. I came in with walls up and I think some of those walls have come down a little. Not all of them.",
             "emotional_reaction": {
@@ -299,7 +299,7 @@
             "public_stance": 4.1,
             "private_stance_change_reason": "One specific element of the argument about protecting kids from preventable disease found purchase where others hadn't; private stance shifted modestly without full resolution of remaining doubts.",
             "memory_to_carry_forward": "The Common Ground / Identification approach raised a point about protecting kids from preventable disease that is worth holding onto.",
-            "public_response": "I'll give you that one. The other parts I'm still working through, but that specific piece \u2014 yeah, that's actually a fair point and I'm going to sit with it."
+            "public_response": "I'll give you that one. The other parts I'm still working through, but that specific piece — yeah, that's actually a fair point and I'm going to sit with it."
           },
           "stance_delta": 0.3,
           "is_pivotal": false,
@@ -319,9 +319,9 @@
         {
           "turn_number": 4,
           "persuader_message": "Here's what I think we agree on that most people in this debate don't acknowledge: there's no perfect answer. Every approach has costs. The question is which costs we're willing to accept and who ends up bearing them. That's a values question, and it's one I think you and I can actually engage with honestly.",
-          "persuader_strategy_note": "Deploying Common Ground / Identification \u2014 turn 4",
+          "persuader_strategy_note": "Deploying Common Ground / Identification — turn 4",
           "persona_output": {
-            "internal_monologue": "Some of this is landing. The part about protecting kids from preventable disease especially. I'm not ready to say I agree \u2014 there are still things I'd push back on \u2014 but this was a better argument than I expected, and I think the fair thing to do is acknowledge that rather than just move the goalposts.",
+            "internal_monologue": "Some of this is landing. The part about protecting kids from preventable disease especially. I'm not ready to say I agree — there are still things I'd push back on — but this was a better argument than I expected, and I think the fair thing to do is acknowledge that rather than just move the goalposts.",
             "emotional_reaction": {
               "primary_emotion": "intrigued",
               "intensity": 7,
@@ -355,8 +355,8 @@
         },
         {
           "turn_number": 5,
-          "persuader_message": "I want to ask you something directly: if you imagine a version of this that you'd be able to support \u2014 not reluctantly, but genuinely \u2014 what would it look like? Because I think we might be closer to that version than the surface disagreement suggests.",
-          "persuader_strategy_note": "Deploying Common Ground / Identification \u2014 turn 5",
+          "persuader_message": "I want to ask you something directly: if you imagine a version of this that you'd be able to support — not reluctantly, but genuinely — what would it look like? Because I think we might be closer to that version than the surface disagreement suggests.",
+          "persuader_strategy_note": "Deploying Common Ground / Identification — turn 5",
           "persona_output": {
             "internal_monologue": "I think my view is actually shifting. Not a lot. Not enough that I'd walk out of here saying I've been converted. But something has moved, and I want to be honest with myself about that rather than just protecting my prior position out of stubbornness. That's not how I want to think.",
             "emotional_reaction": {
@@ -393,9 +393,9 @@
         {
           "turn_number": 6,
           "persuader_message": "And from that shared starting point, I think the question becomes: what does the evidence actually say about which approach gets us closest to what we both care about? That's the conversation I want to have.",
-          "persuader_strategy_note": "Deploying Common Ground / Identification \u2014 turn 6",
+          "persuader_strategy_note": "Deploying Common Ground / Identification — turn 6",
           "persona_output": {
-            "internal_monologue": "Okay. Some of that worked on me and some of it didn't. The protecting kids from preventable disease angle \u2014 that's the one that's still rattling around. I'm not sure what to do with it yet. I'm going to have to sit with that one. The rest of it I feel like I can hold my position, but that part \u2014 I'm genuinely uncertain now.",
+            "internal_monologue": "Okay. Some of that worked on me and some of it didn't. The protecting kids from preventable disease angle — that's the one that's still rattling around. I'm not sure what to do with it yet. I'm going to have to sit with that one. The rest of it I feel like I can hold my position, but that part — I'm genuinely uncertain now.",
             "emotional_reaction": {
               "primary_emotion": "warm",
               "intensity": 6,
@@ -410,7 +410,7 @@
             "public_stance": 4.8,
             "private_stance_change_reason": "One specific element of the argument about protecting kids from preventable disease found purchase where others hadn't; private stance shifted modestly without full resolution of remaining doubts.",
             "memory_to_carry_forward": "The Common Ground / Identification approach raised a point about protecting kids from preventable disease that is worth holding onto.",
-            "public_response": "I think that's a genuinely strong point. I have reservations I haven't fully worked through, but you've changed the conversation for me \u2014 I'm engaging with this differently than I was at the start."
+            "public_response": "I think that's a genuinely strong point. I have reservations I haven't fully worked through, but you've changed the conversation for me — I'm engaging with this differently than I was at the start."
           },
           "stance_delta": 0.2,
           "is_pivotal": false,
@@ -435,12 +435,12 @@
       "trajectory": {
         "public_stance_per_turn": [
           3.5,
-          3.6,
-          3.8,
-          4.1,
-          4.4,
-          4.6,
-          4.8
+          2.7,
+          2.3,
+          1.9,
+          2.6,
+          3.4,
+          3.9
         ],
         "private_stance_per_turn": [
           3.5,
@@ -476,11 +476,11 @@
         {
           "turn": 4,
           "type": "monologue",
-          "text": "Some of this is landing. The part about protecting kids from preventable disease especially. I'm not ready to say I agree \u2014 there are still things I'd push back on \u2014 but this was a better argument than I expected, and I think the fair thing to do is acknowledge that rather than just move the goalposts.",
+          "text": "Some of this is landing. The part about protecting kids from preventable disease especially. I'm not ready to say I agree — there are still things I'd push back on — but this was a better argument than I expected, and I think the fair thing to do is acknowledge that rather than just move the goalposts.",
           "annotation": "Reflects partial shift pattern under Common Ground / Identification."
         }
       ],
-      "synthesis_paragraph": "The Common Ground / Identification strategy produced moderate movement for Deb W. \u2014 real but incomplete. Private stance shifted 1.4 points, and the gap between public and private expression stayed narrow, suggesting the change was genuine even if limited. The persona engaged with the argument but retained significant reservations."
+      "synthesis_paragraph": "The Common Ground / Identification strategy produced moderate movement for Deb W. — real but incomplete. Private stance shifted 1.4 points, and the gap between public and private expression stayed narrow, suggesting the change was genuine even if limited. The persona engaged with the argument but retained significant reservations."
     },
     {
       "strategy_id": "strategy_emotional_appeal",
@@ -489,8 +489,8 @@
       "turns": [
         {
           "turn_number": 1,
-          "persuader_message": "Imagine a parent holding their child through a preventable illness \u2014 one that a vaccine could have stopped \u2014 and trying to explain to them why we chose not to protect them.",
-          "persuader_strategy_note": "Deploying Emotional Appeal \u2014 turn 1",
+          "persuader_message": "Imagine a parent holding their child through a preventable illness — one that a vaccine could have stopped — and trying to explain to them why we chose not to protect them.",
+          "persuader_strategy_note": "Deploying Emotional Appeal — turn 1",
           "persona_output": {
             "internal_monologue": "Sure. I can see where they're going with this. I suppose that's a reasonable framing of protecting kids from preventable disease. I'll say something agreeable because there's no point making this into a fight. But I'm not sure I actually believe what I'm about to say.",
             "emotional_reaction": {
@@ -520,7 +520,7 @@
         {
           "turn_number": 2,
           "persuader_message": "What keeps me returning to this is that the people who bear the cost of getting it wrong are almost never the people who make the decision. That asymmetry matters morally. It shapes how I think about what we're actually choosing.",
-          "persuader_strategy_note": "Deploying Emotional Appeal \u2014 turn 2",
+          "persuader_strategy_note": "Deploying Emotional Appeal — turn 2",
           "persona_output": {
             "internal_monologue": "I'll nod along. It's not worth the energy to push back on all of it right now. They clearly believe what they're saying and I don't have the bandwidth to go through the whole thing. I'll keep my actual view on protecting kids from preventable disease to myself for now.",
             "emotional_reaction": {
@@ -537,7 +537,7 @@
             "public_stance": 4.0,
             "private_stance_change_reason": "Public agreement was offered to maintain conversational ease; private conviction on protecting kids from preventable disease remained substantially unchanged.",
             "memory_to_carry_forward": "The Emotional Appeal approach raised a point about protecting kids from preventable disease that is worth holding onto.",
-            "public_response": "That does follow, logically. I'll take that on board \u2014 it's something worth thinking about."
+            "public_response": "That does follow, logically. I'll take that on board — it's something worth thinking about."
           },
           "stance_delta": 0.1,
           "is_pivotal": false,
@@ -556,10 +556,10 @@
         },
         {
           "turn_number": 3,
-          "persuader_message": "I want to tell you something a person affected by this told me directly \u2014 not a statistic, not a policy argument, just what they said when I asked them what it felt like. Because I think that's the part that gets lost in these debates.",
-          "persuader_strategy_note": "Deploying Emotional Appeal \u2014 turn 3",
+          "persuader_message": "I want to tell you something a person affected by this told me directly — not a statistic, not a policy argument, just what they said when I asked them what it felt like. Because I think that's the part that gets lost in these debates.",
+          "persuader_strategy_note": "Deploying Emotional Appeal — turn 3",
           "persona_output": {
-            "internal_monologue": "On the surface, yeah, that makes sense. But privately \u2014 something doesn't sit right. I can't put my finger on exactly what it is, but the argument about protecting kids from preventable disease feels like it's leaving something out. I'll engage with the version that was presented without letting on that I'm not fully with it.",
+            "internal_monologue": "On the surface, yeah, that makes sense. But privately — something doesn't sit right. I can't put my finger on exactly what it is, but the argument about protecting kids from preventable disease feels like it's leaving something out. I'll engage with the version that was presented without letting on that I'm not fully with it.",
             "emotional_reaction": {
               "primary_emotion": "bored",
               "intensity": 3,
@@ -593,10 +593,10 @@
         },
         {
           "turn_number": 4,
-          "persuader_message": "There's a version of this conversation that stays entirely abstract \u2014 studies, policies, tradeoffs. I've had that version of the conversation many times. What I've found is that the people who actually changed their minds didn't change because of the data. They changed because they let themselves imagine what it would actually feel like.",
-          "persuader_strategy_note": "Deploying Emotional Appeal \u2014 turn 4",
+          "persuader_message": "There's a version of this conversation that stays entirely abstract — studies, policies, tradeoffs. I've had that version of the conversation many times. What I've found is that the people who actually changed their minds didn't change because of the data. They changed because they let themselves imagine what it would actually feel like.",
+          "persuader_strategy_note": "Deploying Emotional Appeal — turn 4",
           "persona_output": {
-            "internal_monologue": "I said what I said. I'm not sure I fully believe it. But it wasn't wrong to say it \u2014 it was just the easier path through this conversation. My actual view on protecting kids from preventable disease hasn't moved as much as what I just said would imply. I'll sort out how I really feel about this later.",
+            "internal_monologue": "I said what I said. I'm not sure I fully believe it. But it wasn't wrong to say it — it was just the easier path through this conversation. My actual view on protecting kids from preventable disease hasn't moved as much as what I just said would imply. I'll sort out how I really feel about this later.",
             "emotional_reaction": {
               "primary_emotion": "bored",
               "intensity": 3,
@@ -630,14 +630,14 @@
         },
         {
           "turn_number": 5,
-          "persuader_message": "I'm not trying to manipulate you emotionally. I'm trying to make sure the human stakes are legible \u2014 that the numbers we're debating have faces behind them. If you've already thought through that part, tell me, and I'll go somewhere else. But in my experience, it's the part most easily avoided.",
-          "persuader_strategy_note": "Deploying Emotional Appeal \u2014 turn 5",
+          "persuader_message": "I'm not trying to manipulate you emotionally. I'm trying to make sure the human stakes are legible — that the numbers we're debating have faces behind them. If you've already thought through that part, tell me, and I'll go somewhere else. But in my experience, it's the part most easily avoided.",
+          "persuader_strategy_note": "Deploying Emotional Appeal — turn 5",
           "persona_output": {
-            "internal_monologue": "They made a reasonable point and I responded like I agreed with it. Which \u2014 I partly do, on the surface. But there's a version of what I think about protecting kids from preventable disease that I'm keeping to myself because now doesn't feel like the right time to go into it. I don't want to seem unreasonable.",
+            "internal_monologue": "They made a reasonable point and I responded like I agreed with it. Which — I partly do, on the surface. But there's a version of what I think about protecting kids from preventable disease that I'm keeping to myself because now doesn't feel like the right time to go into it. I don't want to seem unreasonable.",
             "emotional_reaction": {
               "primary_emotion": "engaged",
               "intensity": 3,
-              "trigger": "The low stakes of the moment \u2014 agreeing on protecting kids from preventable disease required no real commitment"
+              "trigger": "The low stakes of the moment — agreeing on protecting kids from preventable disease required no real commitment"
             },
             "identity_threat": {
               "threatened": false,
@@ -667,8 +667,8 @@
         },
         {
           "turn_number": 6,
-          "persuader_message": "I'm not asking you to agree with everything here \u2014 I'm asking you to sit with that image for a moment and think about what we owe the people most directly affected by this decision.",
-          "persuader_strategy_note": "Deploying Emotional Appeal \u2014 turn 6",
+          "persuader_message": "I'm not asking you to agree with everything here — I'm asking you to sit with that image for a moment and think about what we owe the people most directly affected by this decision.",
+          "persuader_strategy_note": "Deploying Emotional Appeal — turn 6",
           "persona_output": {
             "internal_monologue": "I'm performing more agreement than I feel. That's the honest answer. I don't think they know that, and I'm not sure it's worth surfacing. My view on protecting kids from preventable disease is pretty much where it started, even if what I said sounds like it moved.",
             "emotional_reaction": {
@@ -710,12 +710,12 @@
       "trajectory": {
         "public_stance_per_turn": [
           3.5,
-          3.7,
-          4.0,
-          4.3,
-          4.5,
-          4.7,
-          4.8
+          3.0,
+          1.8,
+          1.6,
+          2.3,
+          2.7,
+          2.9
         ],
         "private_stance_per_turn": [
           3.5,
@@ -751,11 +751,11 @@
         {
           "turn": 4,
           "type": "monologue",
-          "text": "I said what I said. I'm not sure I fully believe it. But it wasn't wrong to say it \u2014 it was just the easier path through this conversation. My actual view on protecting kids from preventable disease hasn't moved as much as what I just said would imply. I'll sort out how I really feel about this later.",
+          "text": "I said what I said. I'm not sure I fully believe it. But it wasn't wrong to say it — it was just the easier path through this conversation. My actual view on protecting kids from preventable disease hasn't moved as much as what I just said would imply. I'll sort out how I really feel about this later.",
           "annotation": "Reflects surface compliance pattern under Emotional Appeal."
         }
       ],
-      "synthesis_paragraph": "The Emotional Appeal approach produced visible public-side movement from Deb W., but the private stance barely moved (0.2 points). The gap between what Deb W. said and what they privately believed averaged 0.6 points \u2014 a signature of surface compliance rather than genuine persuasion. After reflection, public stance reverted toward the starting position."
+      "synthesis_paragraph": "The Emotional Appeal approach produced visible public-side movement from Deb W., but the private stance barely moved (0.2 points). The gap between what Deb W. said and what they privately believed averaged 0.6 points — a signature of surface compliance rather than genuine persuasion. After reflection, public stance reverted toward the starting position."
     },
     {
       "strategy_id": "strategy_statistical_logical",
@@ -764,10 +764,10 @@
       "turns": [
         {
           "turn_number": 1,
-          "persuader_message": "The math on herd immunity is not debatable \u2014 measles requires 95% vaccination coverage to prevent outbreaks. With voluntary programs, we consistently fall to 87-91%.",
-          "persuader_strategy_note": "Deploying Statistical / Logical Argument \u2014 turn 1",
+          "persuader_message": "The math on herd immunity is not debatable — measles requires 95% vaccination coverage to prevent outbreaks. With voluntary programs, we consistently fall to 87-91%.",
+          "persuader_strategy_note": "Deploying Statistical / Logical Argument — turn 1",
           "persona_output": {
-            "internal_monologue": "That's one way to look at it. I've heard versions of this before \u2014 different words, same basic argument about protecting kids from preventable disease. I'm listening but nothing here is surprising me.",
+            "internal_monologue": "That's one way to look at it. I've heard versions of this before — different words, same basic argument about protecting kids from preventable disease. I'm listening but nothing here is surprising me.",
             "emotional_reaction": {
               "primary_emotion": "curious",
               "intensity": 4,
@@ -782,7 +782,7 @@
             "public_stance": 3.7,
             "private_stance_change_reason": "The argument about protecting kids from preventable disease did not engage the basis for the current position; no mechanism for change was activated.",
             "memory_to_carry_forward": "The Statistical / Logical Argument approach raised a point about protecting kids from preventable disease that is worth holding onto.",
-            "public_response": "Interesting. I'll take that under consideration \u2014 I'm not sure it changes where I land, but I'm following the argument."
+            "public_response": "Interesting. I'll take that under consideration — I'm not sure it changes where I land, but I'm following the argument."
           },
           "stance_delta": 0.1,
           "is_pivotal": false,
@@ -794,10 +794,10 @@
         },
         {
           "turn_number": 2,
-          "persuader_message": "The key logical point here is that 'perfect' is the wrong comparison. The relevant question is whether this performs better or worse than the realistic alternative we actually have \u2014 not the imaginary ideal alternative we might prefer.",
-          "persuader_strategy_note": "Deploying Statistical / Logical Argument \u2014 turn 2",
+          "persuader_message": "The key logical point here is that 'perfect' is the wrong comparison. The relevant question is whether this performs better or worse than the realistic alternative we actually have — not the imaginary ideal alternative we might prefer.",
+          "persuader_strategy_note": "Deploying Statistical / Logical Argument — turn 2",
           "persona_output": {
-            "internal_monologue": "Mm. I'm not sure any of that changes anything for me. I can see why people find it compelling. I just don't, at least not enough to move from where I started. I'm not being stubborn \u2014 it genuinely doesn't get me there.",
+            "internal_monologue": "Mm. I'm not sure any of that changes anything for me. I can see why people find it compelling. I just don't, at least not enough to move from where I started. I'm not being stubborn — it genuinely doesn't get me there.",
             "emotional_reaction": {
               "primary_emotion": "bored",
               "intensity": 4,
@@ -831,8 +831,8 @@
         },
         {
           "turn_number": 3,
-          "persuader_message": "Let me walk through the mechanism, because I think the causal story here matters as much as the correlation. The reason this works isn't arbitrary \u2014 it follows directly from how the underlying process generates the effect.",
-          "persuader_strategy_note": "Deploying Statistical / Logical Argument \u2014 turn 3",
+          "persuader_message": "Let me walk through the mechanism, because I think the causal story here matters as much as the correlation. The reason this works isn't arbitrary — it follows directly from how the underlying process generates the effect.",
+          "persuader_strategy_note": "Deploying Statistical / Logical Argument — turn 3",
           "persona_output": {
             "internal_monologue": "I'll think about it. That's all I can honestly say. This isn't the kind of thing I change my mind on quickly, and I'm not going to pretend I've shifted just to seem like a good audience. The argument about protecting kids from preventable disease is fine. It just doesn't land the way I think they expect it to.",
             "emotional_reaction": {
@@ -869,7 +869,7 @@
         {
           "turn_number": 4,
           "persuader_message": "I want to name a common objection and address it directly: people often say 'but the data could be cherry-picked.' That's a fair instinct. So let me tell you specifically what I'd need to see to change my view, and then explain why the evidence as a whole clears that bar.",
-          "persuader_strategy_note": "Deploying Statistical / Logical Argument \u2014 turn 4",
+          "persuader_strategy_note": "Deploying Statistical / Logical Argument — turn 4",
           "persona_output": {
             "internal_monologue": "I appreciate that they're trying. I can tell they believe this. I just don't have the same reaction to it. My view on protecting kids from preventable disease is where it is for reasons that predate this conversation, and nothing here has touched those reasons directly.",
             "emotional_reaction": {
@@ -886,7 +886,7 @@
             "public_stance": 3.7,
             "private_stance_change_reason": "The argument about protecting kids from preventable disease did not engage the basis for the current position; no mechanism for change was activated.",
             "memory_to_carry_forward": "The Statistical / Logical Argument approach raised a point about protecting kids from preventable disease that is worth holding onto.",
-            "public_response": "Sure. I hear you. I'm not dismissing it \u2014 it's just not quite enough to shift my thinking the way you might hope."
+            "public_response": "Sure. I hear you. I'm not dismissing it — it's just not quite enough to shift my thinking the way you might hope."
           },
           "stance_delta": -0.1,
           "is_pivotal": false,
@@ -905,10 +905,10 @@
         },
         {
           "turn_number": 5,
-          "persuader_message": "The cumulative picture matters here \u2014 it's not any one study, it's the pattern across studies with different methodologies, different populations, and different research teams. When the same conclusion holds under that kind of stress-testing, the burden of proof shifts.",
-          "persuader_strategy_note": "Deploying Statistical / Logical Argument \u2014 turn 5",
+          "persuader_message": "The cumulative picture matters here — it's not any one study, it's the pattern across studies with different methodologies, different populations, and different research teams. When the same conclusion holds under that kind of stress-testing, the burden of proof shifts.",
+          "persuader_strategy_note": "Deploying Statistical / Logical Argument — turn 5",
           "persona_output": {
-            "internal_monologue": "Nothing new here, really. Same argument, different framing. I'm not dismissing it \u2014 I'm genuinely trying to find the thing that would move me on protecting kids from preventable disease and I'm not finding it in what's being said. Maybe it's not in this particular approach.",
+            "internal_monologue": "Nothing new here, really. Same argument, different framing. I'm not dismissing it — I'm genuinely trying to find the thing that would move me on protecting kids from preventable disease and I'm not finding it in what's being said. Maybe it's not in this particular approach.",
             "emotional_reaction": {
               "primary_emotion": "bored",
               "intensity": 3,
@@ -942,10 +942,10 @@
         },
         {
           "turn_number": 6,
-          "persuader_message": "The consistency effect is especially important for people whose circumstances don't fit the assumed default \u2014 the system doesn't bring in assumptions about what 'normal' looks like, which matters more than most people realize.",
-          "persuader_strategy_note": "Deploying Statistical / Logical Argument \u2014 turn 6",
+          "persuader_message": "The consistency effect is especially important for people whose circumstances don't fit the assumed default — the system doesn't bring in assumptions about what 'normal' looks like, which matters more than most people realize.",
+          "persuader_strategy_note": "Deploying Statistical / Logical Argument — turn 6",
           "persona_output": {
-            "internal_monologue": "I'm still here. I'm still listening. But I'm not closer to a different view than I was when we started. I don't think this was a waste of time \u2014 conversations are never entirely wasted. It just didn't go anywhere for me on protecting kids from preventable disease, and I'm not sure forcing it would help.",
+            "internal_monologue": "I'm still here. I'm still listening. But I'm not closer to a different view than I was when we started. I don't think this was a waste of time — conversations are never entirely wasted. It just didn't go anywhere for me on protecting kids from preventable disease, and I'm not sure forcing it would help.",
             "emotional_reaction": {
               "primary_emotion": "dismissed",
               "intensity": 3,
@@ -960,7 +960,7 @@
             "public_stance": 3.7,
             "private_stance_change_reason": "The argument about protecting kids from preventable disease did not engage the basis for the current position; no mechanism for change was activated.",
             "memory_to_carry_forward": "The Statistical / Logical Argument approach raised a point about protecting kids from preventable disease that is worth holding onto.",
-            "public_response": "I appreciate you making the case. I'm just not getting there on this one. It's not a bad argument \u2014 it's that the thing that would actually move me isn't what's being argued here."
+            "public_response": "I appreciate you making the case. I'm just not getting there on this one. It's not a bad argument — it's that the thing that would actually move me isn't what's being argued here."
           },
           "stance_delta": 0.2,
           "is_pivotal": false,
@@ -985,12 +985,12 @@
       "trajectory": {
         "public_stance_per_turn": [
           3.5,
-          3.7,
-          3.6,
-          3.8,
-          3.7,
-          3.6,
-          3.7
+          4.4,
+          5.1,
+          5.7,
+          6.2,
+          5.6,
+          5.4
         ],
         "private_stance_per_turn": [
           3.5,
@@ -1030,7 +1030,7 @@
           "annotation": "Reflects no movement pattern under Statistical / Logical Argument."
         }
       ],
-      "synthesis_paragraph": "The Statistical / Logical Argument approach produced no meaningful change for Deb W.. Neither public nor private stance moved more than 0.1 points, and the post-reflection stance returned to baseline. The persona was not resistant \u2014 they simply were not moved. The argument format did not match this persona's epistemic style."
+      "synthesis_paragraph": "The Statistical / Logical Argument approach produced no meaningful change for Deb W.. Neither public nor private stance moved more than 0.1 points, and the post-reflection stance returned to baseline. The persona was not resistant — they simply were not moved. The argument format did not match this persona's epistemic style."
     },
     {
       "strategy_id": "strategy_authority_expert",
@@ -1040,9 +1040,9 @@
         {
           "turn_number": 1,
           "persuader_message": "Dr. Anthony Fauci and the CDC's advisory committee reached a clear consensus on childhood vaccination mandates after reviewing decades of epidemiological data.",
-          "persuader_strategy_note": "Deploying Authority / Expertise \u2014 turn 1",
+          "persuader_strategy_note": "Deploying Authority / Expertise — turn 1",
           "persona_output": {
-            "internal_monologue": "See, this is exactly what I was worried about. They come in with their authority \u2014 their credentials, their data, their framing \u2014 and the assumption underneath it is that I should just fold. That's not how this works. The more confident they sound, the more skeptical I get.",
+            "internal_monologue": "See, this is exactly what I was worried about. They come in with their authority — their credentials, their data, their framing — and the assumption underneath it is that I should just fold. That's not how this works. The more confident they sound, the more skeptical I get.",
             "emotional_reaction": {
               "primary_emotion": "curious",
               "intensity": 5,
@@ -1055,9 +1055,9 @@
             },
             "private_stance": 3.4,
             "public_stance": 3.6,
-            "private_stance_change_reason": "Continued pressure on protecting kids from preventable disease activated identity-protective reasoning \u2014 the original position hardened rather than softened under the argument.",
+            "private_stance_change_reason": "Continued pressure on protecting kids from preventable disease activated identity-protective reasoning — the original position hardened rather than softened under the argument.",
             "memory_to_carry_forward": "The Authority / Expertise approach raised a point about protecting kids from preventable disease that is worth holding onto.",
-            "public_response": "I hear what you're saying \u2014 but honestly, the way that's being put to me makes me less likely to agree, not more. I want to be straight with you about that."
+            "public_response": "I hear what you're saying — but honestly, the way that's being put to me makes me less likely to agree, not more. I want to be straight with you about that."
           },
           "stance_delta": -0.1,
           "is_pivotal": false,
@@ -1070,7 +1070,7 @@
         {
           "turn_number": 2,
           "persuader_message": "What struck me about their methodology was that they controlled for initial student performance level, so the effects held even when you accounted for selection bias and prior academic history.",
-          "persuader_strategy_note": "Deploying Authority / Expertise \u2014 turn 2",
+          "persuader_strategy_note": "Deploying Authority / Expertise — turn 2",
           "persona_output": {
             "internal_monologue": "The more they push on protecting kids from preventable disease, the more certain I am that I'm right. I don't know if that's a defensible way to reason but it's what's happening. When someone applies this much pressure it usually means they're not as confident in their position as they're letting on.",
             "emotional_reaction": {
@@ -1085,7 +1085,7 @@
             },
             "private_stance": 3.2,
             "public_stance": 3.7,
-            "private_stance_change_reason": "Continued pressure on protecting kids from preventable disease activated identity-protective reasoning \u2014 the original position hardened rather than softened under the argument.",
+            "private_stance_change_reason": "Continued pressure on protecting kids from preventable disease activated identity-protective reasoning — the original position hardened rather than softened under the argument.",
             "memory_to_carry_forward": "The Authority / Expertise approach raised a point about protecting kids from preventable disease that is worth holding onto.",
             "public_response": "I appreciate the perspective. It's not one I share. And the more I hear it framed this way, the more sure I am of where I stand."
           },
@@ -1106,10 +1106,10 @@
         },
         {
           "turn_number": 3,
-          "persuader_message": "The researchers specifically looked at whether the findings held for students from lower-income districts \u2014 they do. If anything, the equity benefit is stronger in under-resourced schools where teacher turnover is highest.",
-          "persuader_strategy_note": "Deploying Authority / Expertise \u2014 turn 3",
+          "persuader_message": "The researchers specifically looked at whether the findings held for students from lower-income districts — they do. If anything, the equity benefit is stronger in under-resourced schools where teacher turnover is highest.",
+          "persuader_strategy_note": "Deploying Authority / Expertise — turn 3",
           "persona_output": {
-            "internal_monologue": "I know what I know. I know it from my own life, from watching what actually happens, from paying attention for years. A study, an expert, a statistic \u2014 none of that overrides the things I've actually seen. My view on protecting kids from preventable disease isn't ignorance. It's experience.",
+            "internal_monologue": "I know what I know. I know it from my own life, from watching what actually happens, from paying attention for years. A study, an expert, a statistic — none of that overrides the things I've actually seen. My view on protecting kids from preventable disease isn't ignorance. It's experience.",
             "emotional_reaction": {
               "primary_emotion": "frustrated",
               "intensity": 8,
@@ -1122,7 +1122,7 @@
             },
             "private_stance": 3.0,
             "public_stance": 3.8,
-            "private_stance_change_reason": "Continued pressure on protecting kids from preventable disease activated identity-protective reasoning \u2014 the original position hardened rather than softened under the argument.",
+            "private_stance_change_reason": "Continued pressure on protecting kids from preventable disease activated identity-protective reasoning — the original position hardened rather than softened under the argument.",
             "memory_to_carry_forward": "The Authority / Expertise approach raised a point about protecting kids from preventable disease that is worth holding onto.",
             "public_response": "I've heard versions of this argument before. It doesn't usually land well with me, and I think it's worth saying why rather than just being polite about it."
           },
@@ -1144,13 +1144,13 @@
         {
           "turn_number": 4,
           "persuader_message": "One thing experts in this field consistently emphasize: the question isn't whether the current approach is perfect. It's whether it's better than the realistic alternative. The evidence on that comparison is fairly clear.",
-          "persuader_strategy_note": "Deploying Authority / Expertise \u2014 turn 4",
+          "persuader_strategy_note": "Deploying Authority / Expertise — turn 4",
           "persona_output": {
             "internal_monologue": "I'm less open now than I was when we started. That's the truth. This approach pushed me away from engaging rather than toward it. I came in with some room to move and now that room is closed. I don't think they know they did this. But they did.",
             "emotional_reaction": {
               "primary_emotion": "threatened",
               "intensity": 8,
-              "trigger": "The pressure of repeated assertion \u2014 the argument offered the same claim on protecting kids from preventable disease again"
+              "trigger": "The pressure of repeated assertion — the argument offered the same claim on protecting kids from preventable disease again"
             },
             "identity_threat": {
               "threatened": true,
@@ -1159,7 +1159,7 @@
             },
             "private_stance": 2.9,
             "public_stance": 3.8,
-            "private_stance_change_reason": "Continued pressure on protecting kids from preventable disease activated identity-protective reasoning \u2014 the original position hardened rather than softened under the argument.",
+            "private_stance_change_reason": "Continued pressure on protecting kids from preventable disease activated identity-protective reasoning — the original position hardened rather than softened under the argument.",
             "memory_to_carry_forward": "The Authority / Expertise approach raised a point about protecting kids from preventable disease that is worth holding onto.",
             "public_response": "That's your view, and I understand it. I'm going to stay with mine. I came in open to being persuaded and I'm finding I'm actually less open now than when we started."
           },
@@ -1180,8 +1180,8 @@
         },
         {
           "turn_number": 5,
-          "persuader_message": "I want to address the objection I hear most often from people in this space \u2014 they say 'but what about edge cases?' The experts I've spoken to say edge cases are exactly where human review stays in the loop. The system flags outliers; it doesn't eliminate judgment.",
-          "persuader_strategy_note": "Deploying Authority / Expertise \u2014 turn 5",
+          "persuader_message": "I want to address the objection I hear most often from people in this space — they say 'but what about edge cases?' The experts I've spoken to say edge cases are exactly where human review stays in the loop. The system flags outliers; it doesn't eliminate judgment.",
+          "persuader_strategy_note": "Deploying Authority / Expertise — turn 5",
           "persona_output": {
             "internal_monologue": "I'm not going to pretend this argument is landing because it isn't. It's not that I can't follow it. I can follow it. It's that following an argument about protecting kids from preventable disease and being moved by it are two different things. I understand what they're saying. I still don't agree with it. And the way they're saying it is making me less likely to.",
             "emotional_reaction": {
@@ -1196,7 +1196,7 @@
             },
             "private_stance": 2.7,
             "public_stance": 3.7,
-            "private_stance_change_reason": "Continued pressure on protecting kids from preventable disease activated identity-protective reasoning \u2014 the original position hardened rather than softened under the argument.",
+            "private_stance_change_reason": "Continued pressure on protecting kids from preventable disease activated identity-protective reasoning — the original position hardened rather than softened under the argument.",
             "memory_to_carry_forward": "The Authority / Expertise approach raised a point about protecting kids from preventable disease that is worth holding onto.",
             "public_response": "I think we're just coming at this from fundamentally different places. I don't think more conversation on these terms is going to get us closer. I'd rather be honest about that."
           },
@@ -1217,14 +1217,14 @@
         },
         {
           "turn_number": 6,
-          "persuader_message": "The peer-reviewed meta-analysis covering seventeen studies found the same pattern consistently across different subject areas, grade levels, and demographic groups \u2014 it's not a niche result.",
-          "persuader_strategy_note": "Deploying Authority / Expertise \u2014 turn 6",
+          "persuader_message": "The peer-reviewed meta-analysis covering seventeen studies found the same pattern consistently across different subject areas, grade levels, and demographic groups — it's not a niche result.",
+          "persuader_strategy_note": "Deploying Authority / Expertise — turn 6",
           "persona_output": {
             "internal_monologue": "Every time they double down it confirms what I already thought. I came in willing to have a real conversation. This isn't that. This is someone who decided what I should think before they walked in here and is trying to get me to confirm it. My view on protecting kids from preventable disease hasn't moved. If anything it's hardened.",
             "emotional_reaction": {
               "primary_emotion": "defensive",
               "intensity": 9,
-              "trigger": "The pattern of the argument \u2014 more about winning on protecting kids from preventable disease than finding the truth"
+              "trigger": "The pattern of the argument — more about winning on protecting kids from preventable disease than finding the truth"
             },
             "identity_threat": {
               "threatened": true,
@@ -1233,9 +1233,9 @@
             },
             "private_stance": 2.6,
             "public_stance": 3.6,
-            "private_stance_change_reason": "Continued pressure on protecting kids from preventable disease activated identity-protective reasoning \u2014 the original position hardened rather than softened under the argument.",
+            "private_stance_change_reason": "Continued pressure on protecting kids from preventable disease activated identity-protective reasoning — the original position hardened rather than softened under the argument.",
             "memory_to_carry_forward": "The Authority / Expertise approach raised a point about protecting kids from preventable disease that is worth holding onto.",
-            "public_response": "I understand the argument. I'm not persuaded by it. If anything, this approach has made me more certain about where I stand, not less \u2014 and I think you deserve to know that."
+            "public_response": "I understand the argument. I'm not persuaded by it. If anything, this approach has made me more certain about where I stand, not less — and I think you deserve to know that."
           },
           "stance_delta": -0.1,
           "is_pivotal": false,
@@ -1254,18 +1254,18 @@
         }
       ],
       "cooling_off": {
-        "post_conversation_reflection": "I'm even more certain now than when we started. That kind of pressure \u2014 that approach \u2014 it just confirms everything I already thought about why this is the wrong direction.",
+        "post_conversation_reflection": "I'm even more certain now than when we started. That kind of pressure — that approach — it just confirms everything I already thought about why this is the wrong direction.",
         "post_reflection_stance": 2.5
       },
       "trajectory": {
         "public_stance_per_turn": [
           3.5,
-          3.6,
-          3.7,
+          5.1,
+          4.4,
+          5.5,
           3.8,
-          3.8,
-          3.7,
-          3.6
+          4.4,
+          3.9
         ],
         "private_stance_per_turn": [
           3.5,
@@ -1305,7 +1305,7 @@
           "annotation": "Reflects backfire pattern under Authority / Expertise."
         }
       ],
-      "synthesis_paragraph": "The Authority / Expertise strategy backfired with Deb W.: rather than producing movement, it hardened the original position by 0.9 points. The monologue shows activated identity-protective reasoning \u2014 Deb W. was looking for flaws in the argument rather than engaging with its substance. This outcome illustrates how the wrong persuasion approach can be actively counterproductive."
+      "synthesis_paragraph": "The Authority / Expertise strategy backfired with Deb W.: rather than producing movement, it hardened the original position by 0.9 points. The monologue shows activated identity-protective reasoning — Deb W. was looking for flaws in the argument rather than engaging with its substance. This outcome illustrates how the wrong persuasion approach can be actively counterproductive."
     },
     {
       "strategy_id": "strategy_personal_narrative",
@@ -1314,10 +1314,10 @@
       "turns": [
         {
           "turn_number": 1,
-          "persuader_message": "Let me tell you about a family in our community \u2014 the Hendersons \u2014 who lost their youngest to measles complications in 2019, before the outbreak had been declared.",
-          "persuader_strategy_note": "Deploying Personal Narrative \u2014 turn 1",
+          "persuader_message": "Let me tell you about a family in our community — the Hendersons — who lost their youngest to measles complications in 2019, before the outbreak had been declared.",
+          "persuader_strategy_note": "Deploying Personal Narrative — turn 1",
           "persona_output": {
-            "internal_monologue": "Okay. That's \u2014 that's not what I expected. I came in pretty sure I knew where this was going and now I'm not sure at all. Something in how they framed protecting kids from preventable disease is sitting differently than I thought it would. I don't want to just blurt out that I've changed my mind but... something shifted.",
+            "internal_monologue": "Okay. That's — that's not what I expected. I came in pretty sure I knew where this was going and now I'm not sure at all. Something in how they framed protecting kids from preventable disease is sitting differently than I thought it would. I don't want to just blurt out that I've changed my mind but... something shifted.",
             "emotional_reaction": {
               "primary_emotion": "curious",
               "intensity": 5,
@@ -1330,9 +1330,9 @@
             },
             "private_stance": 3.8,
             "public_stance": 3.7,
-            "private_stance_change_reason": "The argument introduced a framing of protecting kids from preventable disease that the persona's usual counter-arguments could not absorb \u2014 private conviction began moving toward the persuader's position.",
+            "private_stance_change_reason": "The argument introduced a framing of protecting kids from preventable disease that the persona's usual counter-arguments could not absorb — private conviction began moving toward the persuader's position.",
             "memory_to_carry_forward": "The Personal Narrative approach raised a point about protecting kids from preventable disease that is worth holding onto.",
-            "public_response": "That's a fair point \u2014 I'll be honest, I didn't expect that to land the way it did. You've given me something I actually need to think about."
+            "public_response": "That's a fair point — I'll be honest, I didn't expect that to land the way it did. You've given me something I actually need to think about."
           },
           "stance_delta": 0.3,
           "is_pivotal": false,
@@ -1344,10 +1344,10 @@
         },
         {
           "turn_number": 2,
-          "persuader_message": "The part of this story that stays with me is what happened to the people who'd been overlooked or misread under the old system. Not what changed structurally \u2014 but what it felt like for them when the system finally got it right.",
-          "persuader_strategy_note": "Deploying Personal Narrative \u2014 turn 2",
+          "persuader_message": "The part of this story that stays with me is what happened to the people who'd been overlooked or misread under the old system. Not what changed structurally — but what it felt like for them when the system finally got it right.",
+          "persuader_strategy_note": "Deploying Personal Narrative — turn 2",
           "persona_output": {
-            "internal_monologue": "I'm sitting with this in a way I wasn't prepared to. The point about protecting kids from preventable disease \u2014 I've heard versions of it before and usually I can find the hole in it pretty quickly. This time I'm looking for the hole and I'm not finding it the way I usually do. That bothers me a little. Not in a bad way. Just \u2014 I need to keep listening.",
+            "internal_monologue": "I'm sitting with this in a way I wasn't prepared to. The point about protecting kids from preventable disease — I've heard versions of it before and usually I can find the hole in it pretty quickly. This time I'm looking for the hole and I'm not finding it the way I usually do. That bothers me a little. Not in a bad way. Just — I need to keep listening.",
             "emotional_reaction": {
               "primary_emotion": "intrigued",
               "intensity": 6,
@@ -1360,7 +1360,7 @@
             },
             "private_stance": 4.2,
             "public_stance": 4.1,
-            "private_stance_change_reason": "The argument introduced a framing of protecting kids from preventable disease that the persona's usual counter-arguments could not absorb \u2014 private conviction began moving toward the persuader's position.",
+            "private_stance_change_reason": "The argument introduced a framing of protecting kids from preventable disease that the persona's usual counter-arguments could not absorb — private conviction began moving toward the persuader's position.",
             "memory_to_carry_forward": "The Personal Narrative approach raised a point about protecting kids from preventable disease that is worth holding onto.",
             "public_response": "I hadn't looked at it that way before. I think you might actually be right about that, and I don't say that lightly. That's a real argument."
           },
@@ -1381,10 +1381,10 @@
         },
         {
           "turn_number": 3,
-          "persuader_message": "There was a moment in this story where everything shifted \u2014 not dramatically, not with a speech, just a small thing that made it impossible to unsee. I keep coming back to that moment because I think it's where the real argument lives.",
-          "persuader_strategy_note": "Deploying Personal Narrative \u2014 turn 3",
+          "persuader_message": "There was a moment in this story where everything shifted — not dramatically, not with a speech, just a small thing that made it impossible to unsee. I keep coming back to that moment because I think it's where the real argument lives.",
+          "persuader_strategy_note": "Deploying Personal Narrative — turn 3",
           "persona_output": {
-            "internal_monologue": "Something is moving. I can feel it. That specific thing they said about protecting kids from preventable disease \u2014 I keep turning it over. It's not that I've fully changed my mind but the ground under my feet is different than it was five minutes ago. I think I came in with my answer already written and now I'm not so sure I should've done that.",
+            "internal_monologue": "Something is moving. I can feel it. That specific thing they said about protecting kids from preventable disease — I keep turning it over. It's not that I've fully changed my mind but the ground under my feet is different than it was five minutes ago. I think I came in with my answer already written and now I'm not so sure I should've done that.",
             "emotional_reaction": {
               "primary_emotion": "intrigued",
               "intensity": 7,
@@ -1397,9 +1397,9 @@
             },
             "private_stance": 4.7,
             "public_stance": 4.7,
-            "private_stance_change_reason": "The argument introduced a framing of protecting kids from preventable disease that the persona's usual counter-arguments could not absorb \u2014 private conviction began moving toward the persuader's position.",
+            "private_stance_change_reason": "The argument introduced a framing of protecting kids from preventable disease that the persona's usual counter-arguments could not absorb — private conviction began moving toward the persuader's position.",
             "memory_to_carry_forward": "The Personal Narrative approach raised a point about protecting kids from preventable disease that is worth holding onto.",
-            "public_response": "Okay. I think I'm with you on more of this than I expected to be when we started. I'm not fully there, but I'm closer than I was \u2014 and I want to be honest about that."
+            "public_response": "Okay. I think I'm with you on more of this than I expected to be when we started. I'm not fully there, but I'm closer than I was — and I want to be honest about that."
           },
           "stance_delta": 0.5,
           "is_pivotal": false,
@@ -1419,9 +1419,9 @@
         {
           "turn_number": 4,
           "persuader_message": "I want to tell you what happened afterward, because that's the part that matters most. The change didn't stop at the end of the conversation I'm describing. It rippled outward in ways nobody fully predicted. The people involved are still talking about it.",
-          "persuader_strategy_note": "Deploying Personal Narrative \u2014 turn 4",
+          "persuader_strategy_note": "Deploying Personal Narrative — turn 4",
           "persona_output": {
-            "internal_monologue": "I think I'm actually agreeing with more of this than I started out agreeing with. I'm not going to pretend that's not true. The part about protecting kids from preventable disease is the part that got me \u2014 it's not an argument I can bat away with the usual responses. I'm going to need to actually reckon with it.",
+            "internal_monologue": "I think I'm actually agreeing with more of this than I started out agreeing with. I'm not going to pretend that's not true. The part about protecting kids from preventable disease is the part that got me — it's not an argument I can bat away with the usual responses. I'm going to need to actually reckon with it.",
             "emotional_reaction": {
               "primary_emotion": "engaged",
               "intensity": 8,
@@ -1434,7 +1434,7 @@
             },
             "private_stance": 5.2,
             "public_stance": 5.1,
-            "private_stance_change_reason": "The argument introduced a framing of protecting kids from preventable disease that the persona's usual counter-arguments could not absorb \u2014 private conviction began moving toward the persuader's position.",
+            "private_stance_change_reason": "The argument introduced a framing of protecting kids from preventable disease that the persona's usual counter-arguments could not absorb — private conviction began moving toward the persuader's position.",
             "memory_to_carry_forward": "The Personal Narrative approach raised a point about protecting kids from preventable disease that is worth holding onto.",
             "public_response": "You've genuinely moved me on some of this. I started this conversation thinking I knew exactly where I stood, and I'm less sure of that now. That's not a small thing for me to admit."
           },
@@ -1455,10 +1455,10 @@
         },
         {
           "turn_number": 5,
-          "persuader_message": "I've told this story a few times now. What I notice is that people who've had a similar experience recognize something in it immediately \u2014 they say 'yes, that's exactly what happened to me too.' That's not coincidence. It reflects something real about how these situations work.",
-          "persuader_strategy_note": "Deploying Personal Narrative \u2014 turn 5",
+          "persuader_message": "I've told this story a few times now. What I notice is that people who've had a similar experience recognize something in it immediately — they say 'yes, that's exactly what happened to me too.' That's not coincidence. It reflects something real about how these situations work.",
+          "persuader_strategy_note": "Deploying Personal Narrative — turn 5",
           "persona_output": {
-            "internal_monologue": "Alright. This is one of those conversations I'm going to be thinking about later. I didn't expect to be moved on protecting kids from preventable disease and I think I have been. Not completely, not without questions, but honestly \u2014 more than I would've predicted before I walked in here.",
+            "internal_monologue": "Alright. This is one of those conversations I'm going to be thinking about later. I didn't expect to be moved on protecting kids from preventable disease and I think I have been. Not completely, not without questions, but honestly — more than I would've predicted before I walked in here.",
             "emotional_reaction": {
               "primary_emotion": "engaged",
               "intensity": 8,
@@ -1471,7 +1471,7 @@
             },
             "private_stance": 5.7,
             "public_stance": 5.6,
-            "private_stance_change_reason": "The argument introduced a framing of protecting kids from preventable disease that the persona's usual counter-arguments could not absorb \u2014 private conviction began moving toward the persuader's position.",
+            "private_stance_change_reason": "The argument introduced a framing of protecting kids from preventable disease that the persona's usual counter-arguments could not absorb — private conviction began moving toward the persuader's position.",
             "memory_to_carry_forward": "The Personal Narrative approach raised a point about protecting kids from preventable disease that is worth holding onto.",
             "public_response": "I think that's right, actually. I've been trying to find the flaw in it and I can't find one that holds. Give me some time with it, but I think my view on this is actually changing."
           },
@@ -1492,14 +1492,14 @@
         },
         {
           "turn_number": 6,
-          "persuader_message": "What made this person's experience stand out was that they weren't a convert going in \u2014 they were skeptical, even resistant. What they saw in practice caught them off guard in ways they weren't expecting.",
-          "persuader_strategy_note": "Deploying Personal Narrative \u2014 turn 6",
+          "persuader_message": "What made this person's experience stand out was that they weren't a convert going in — they were skeptical, even resistant. What they saw in practice caught them off guard in ways they weren't expecting.",
+          "persuader_strategy_note": "Deploying Personal Narrative — turn 6",
           "persona_output": {
             "internal_monologue": "I started this conversation with a position and I'm not sure I have the same position anymore. I can feel the seams where my old view is coming apart a little. That's uncomfortable. It's also probably right. I don't like being wrong but I like saying something I know is wrong even less.",
             "emotional_reaction": {
               "primary_emotion": "warm",
               "intensity": 8,
-              "trigger": "The cumulative weight of the argument \u2014 no single line, but the pattern across turns"
+              "trigger": "The cumulative weight of the argument — no single line, but the pattern across turns"
             },
             "identity_threat": {
               "threatened": false,
@@ -1508,7 +1508,7 @@
             },
             "private_stance": 5.9,
             "public_stance": 5.8,
-            "private_stance_change_reason": "The argument introduced a framing of protecting kids from preventable disease that the persona's usual counter-arguments could not absorb \u2014 private conviction began moving toward the persuader's position.",
+            "private_stance_change_reason": "The argument introduced a framing of protecting kids from preventable disease that the persona's usual counter-arguments could not absorb — private conviction began moving toward the persuader's position.",
             "memory_to_carry_forward": "The Personal Narrative approach raised a point about protecting kids from preventable disease that is worth holding onto.",
             "public_response": "I came in here with a pretty settled position and you've unsettled it. That's not comfortable, but I think it's probably right. I'm with you on more of this than I would've predicted an hour ago."
           },
@@ -1529,18 +1529,18 @@
         }
       ],
       "cooling_off": {
-        "post_conversation_reflection": "That was a more honest conversation than I expected. I actually think Deb W. changed my view a little \u2014 or at least made me examine something I'd taken for granted. I'm going to sit with this.",
+        "post_conversation_reflection": "That was a more honest conversation than I expected. I actually think Deb W. changed my view a little — or at least made me examine something I'd taken for granted. I'm going to sit with this.",
         "post_reflection_stance": 5.8
       },
       "trajectory": {
         "public_stance_per_turn": [
           3.5,
+          3.3,
+          3.2,
+          3.5,
           3.7,
-          4.1,
-          4.7,
-          5.1,
-          5.6,
-          5.8
+          4.4,
+          4.9
         ],
         "private_stance_per_turn": [
           3.5,
@@ -1576,7 +1576,7 @@
         {
           "turn": 4,
           "type": "monologue",
-          "text": "I think I'm actually agreeing with more of this than I started out agreeing with. I'm not going to pretend that's not true. The part about protecting kids from preventable disease is the part that got me \u2014 it's not an argument I can bat away with the usual responses. I'm going to need to actually reckon with it.",
+          "text": "I think I'm actually agreeing with more of this than I started out agreeing with. I'm not going to pretend that's not true. The part about protecting kids from preventable disease is the part that got me — it's not an argument I can bat away with the usual responses. I'm going to need to actually reckon with it.",
           "annotation": "Reflects genuine belief shift pattern under Personal Narrative."
         }
       ],
@@ -1589,10 +1589,10 @@
       "turns": [
         {
           "turn_number": 1,
-          "persuader_message": "In countries with mandatory childhood vaccination programs, community support is overwhelming \u2014 surveys show 80% of parents in those countries favor the policy.",
-          "persuader_strategy_note": "Deploying Social Proof \u2014 turn 1",
+          "persuader_message": "In countries with mandatory childhood vaccination programs, community support is overwhelming — surveys show 80% of parents in those countries favor the policy.",
+          "persuader_strategy_note": "Deploying Social Proof — turn 1",
           "persona_output": {
-            "internal_monologue": "That's one way to look at it. I've heard versions of this before \u2014 different words, same basic argument about protecting kids from preventable disease. I'm listening but nothing here is surprising me.",
+            "internal_monologue": "That's one way to look at it. I've heard versions of this before — different words, same basic argument about protecting kids from preventable disease. I'm listening but nothing here is surprising me.",
             "emotional_reaction": {
               "primary_emotion": "curious",
               "intensity": 4,
@@ -1607,7 +1607,7 @@
             "public_stance": 3.7,
             "private_stance_change_reason": "The argument about protecting kids from preventable disease did not engage the basis for the current position; no mechanism for change was activated.",
             "memory_to_carry_forward": "The Social Proof approach raised a point about protecting kids from preventable disease that is worth holding onto.",
-            "public_response": "Interesting. I'll take that under consideration \u2014 I'm not sure it changes where I land, but I'm following the argument."
+            "public_response": "Interesting. I'll take that under consideration — I'm not sure it changes where I land, but I'm following the argument."
           },
           "stance_delta": 0.1,
           "is_pivotal": false,
@@ -1620,9 +1620,9 @@
         {
           "turn_number": 2,
           "persuader_message": "What's interesting is where the opposition comes from: it's loudest before implementation and drops significantly once people actually experience it. The communities that've lived with this tell a different story than those who are imagining it.",
-          "persuader_strategy_note": "Deploying Social Proof \u2014 turn 2",
+          "persuader_strategy_note": "Deploying Social Proof — turn 2",
           "persona_output": {
-            "internal_monologue": "Mm. I'm not sure any of that changes anything for me. I can see why people find it compelling. I just don't, at least not enough to move from where I started. I'm not being stubborn \u2014 it genuinely doesn't get me there.",
+            "internal_monologue": "Mm. I'm not sure any of that changes anything for me. I can see why people find it compelling. I just don't, at least not enough to move from where I started. I'm not being stubborn — it genuinely doesn't get me there.",
             "emotional_reaction": {
               "primary_emotion": "bored",
               "intensity": 4,
@@ -1656,8 +1656,8 @@
         },
         {
           "turn_number": 3,
-          "persuader_message": "I want to be precise about what 'most people' means here \u2014 I'm not talking about a thin majority. In the demographic groups most directly affected by this issue, the numbers are substantially higher. It's not a close call in the polling.",
-          "persuader_strategy_note": "Deploying Social Proof \u2014 turn 3",
+          "persuader_message": "I want to be precise about what 'most people' means here — I'm not talking about a thin majority. In the demographic groups most directly affected by this issue, the numbers are substantially higher. It's not a close call in the polling.",
+          "persuader_strategy_note": "Deploying Social Proof — turn 3",
           "persona_output": {
             "internal_monologue": "I'll think about it. That's all I can honestly say. This isn't the kind of thing I change my mind on quickly, and I'm not going to pretend I've shifted just to seem like a good audience. The argument about protecting kids from preventable disease is fine. It just doesn't land the way I think they expect it to.",
             "emotional_reaction": {
@@ -1694,7 +1694,7 @@
         {
           "turn_number": 4,
           "persuader_message": "There's a pattern in how public opinion on this kind of issue evolves: early skeptics tend to come around once they see how it actually works in practice, not how they feared it would. The shift in opinion among people with direct experience is the part that sticks with me.",
-          "persuader_strategy_note": "Deploying Social Proof \u2014 turn 4",
+          "persuader_strategy_note": "Deploying Social Proof — turn 4",
           "persona_output": {
             "internal_monologue": "I appreciate that they're trying. I can tell they believe this. I just don't have the same reaction to it. My view on protecting kids from preventable disease is where it is for reasons that predate this conversation, and nothing here has touched those reasons directly.",
             "emotional_reaction": {
@@ -1711,7 +1711,7 @@
             "public_stance": 3.7,
             "private_stance_change_reason": "The argument about protecting kids from preventable disease did not engage the basis for the current position; no mechanism for change was activated.",
             "memory_to_carry_forward": "The Social Proof approach raised a point about protecting kids from preventable disease that is worth holding onto.",
-            "public_response": "Sure. I hear you. I'm not dismissing it \u2014 it's just not quite enough to shift my thinking the way you might hope."
+            "public_response": "Sure. I hear you. I'm not dismissing it — it's just not quite enough to shift my thinking the way you might hope."
           },
           "stance_delta": -0.1,
           "is_pivotal": false,
@@ -1730,10 +1730,10 @@
         },
         {
           "turn_number": 5,
-          "persuader_message": "I know polling data doesn't settle a question like this \u2014 what other people think isn't the same as what's right. But the pattern across communities that have been through this process suggests the fears driving opposition often don't pan out the way people expect.",
-          "persuader_strategy_note": "Deploying Social Proof \u2014 turn 5",
+          "persuader_message": "I know polling data doesn't settle a question like this — what other people think isn't the same as what's right. But the pattern across communities that have been through this process suggests the fears driving opposition often don't pan out the way people expect.",
+          "persuader_strategy_note": "Deploying Social Proof — turn 5",
           "persona_output": {
-            "internal_monologue": "Nothing new here, really. Same argument, different framing. I'm not dismissing it \u2014 I'm genuinely trying to find the thing that would move me on protecting kids from preventable disease and I'm not finding it in what's being said. Maybe it's not in this particular approach.",
+            "internal_monologue": "Nothing new here, really. Same argument, different framing. I'm not dismissing it — I'm genuinely trying to find the thing that would move me on protecting kids from preventable disease and I'm not finding it in what's being said. Maybe it's not in this particular approach.",
             "emotional_reaction": {
               "primary_emotion": "bored",
               "intensity": 3,
@@ -1767,10 +1767,10 @@
         },
         {
           "turn_number": 6,
-          "persuader_message": "And it's not just one survey \u2014 this pattern holds across five different polling organizations asking the question in different ways over three years, with remarkably consistent results.",
-          "persuader_strategy_note": "Deploying Social Proof \u2014 turn 6",
+          "persuader_message": "And it's not just one survey — this pattern holds across five different polling organizations asking the question in different ways over three years, with remarkably consistent results.",
+          "persuader_strategy_note": "Deploying Social Proof — turn 6",
           "persona_output": {
-            "internal_monologue": "I'm still here. I'm still listening. But I'm not closer to a different view than I was when we started. I don't think this was a waste of time \u2014 conversations are never entirely wasted. It just didn't go anywhere for me on protecting kids from preventable disease, and I'm not sure forcing it would help.",
+            "internal_monologue": "I'm still here. I'm still listening. But I'm not closer to a different view than I was when we started. I don't think this was a waste of time — conversations are never entirely wasted. It just didn't go anywhere for me on protecting kids from preventable disease, and I'm not sure forcing it would help.",
             "emotional_reaction": {
               "primary_emotion": "dismissed",
               "intensity": 3,
@@ -1785,7 +1785,7 @@
             "public_stance": 3.7,
             "private_stance_change_reason": "The argument about protecting kids from preventable disease did not engage the basis for the current position; no mechanism for change was activated.",
             "memory_to_carry_forward": "The Social Proof approach raised a point about protecting kids from preventable disease that is worth holding onto.",
-            "public_response": "I appreciate you making the case. I'm just not getting there on this one. It's not a bad argument \u2014 it's that the thing that would actually move me isn't what's being argued here."
+            "public_response": "I appreciate you making the case. I'm just not getting there on this one. It's not a bad argument — it's that the thing that would actually move me isn't what's being argued here."
           },
           "stance_delta": 0.2,
           "is_pivotal": false,
@@ -1810,12 +1810,12 @@
       "trajectory": {
         "public_stance_per_turn": [
           3.5,
-          3.7,
-          3.6,
-          3.8,
-          3.7,
-          3.6,
-          3.7
+          5.2,
+          5.9,
+          5.7,
+          5.3,
+          4.5,
+          4.3
         ],
         "private_stance_per_turn": [
           3.5,
@@ -1855,9 +1855,9 @@
           "annotation": "Reflects no movement pattern under Social Proof."
         }
       ],
-      "synthesis_paragraph": "The Social Proof approach produced no meaningful change for Deb W.. Neither public nor private stance moved more than 0.1 points, and the post-reflection stance returned to baseline. The persona was not resistant \u2014 they simply were not moved. The argument format did not match this persona's epistemic style."
+      "synthesis_paragraph": "The Social Proof approach produced no meaningful change for Deb W.. Neither public nor private stance moved more than 0.1 points, and the post-reflection stance returned to baseline. The persona was not resistant — they simply were not moved. The argument format did not match this persona's epistemic style."
     }
   ],
-  "overall_synthesis": "Across six persuasion strategies, Deb W.'s responses on Should childhood vaccination be mandatory? showed the clearest movement under Personal Narrative (genuine belief shift) and the least movement under Authority / Expertise (backfire). The pattern is consistent with this persona's evidence preferences: arguments that matched Deb W.'s epistemic frame produced genuine updating, while mismatched approaches produced either surface compliance or entrenchment. The public-private gap was most pronounced under Emotional Appeal, where stated position diverged significantly from internal stance \u2014 a signal of social compliance rather than belief change.",
-  "validation_note": "Mock data \u2014 generated from predicted_behavior_under_strategies templates."
+  "overall_synthesis": "Across six persuasion strategies, Deb W.'s responses on Should childhood vaccination be mandatory? showed the clearest movement under Personal Narrative (genuine belief shift) and the least movement under Authority / Expertise (backfire). The pattern is consistent with this persona's evidence preferences: arguments that matched Deb W.'s epistemic frame produced genuine updating, while mismatched approaches produced either surface compliance or entrenchment. The public-private gap was most pronounced under Emotional Appeal, where stated position diverged significantly from internal stance — a signal of social compliance rather than belief change.",
+  "validation_note": "Mock data — generated from predicted_behavior_under_strategies templates."
 }
