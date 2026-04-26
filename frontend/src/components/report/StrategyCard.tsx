@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import type { StrategyOutcome, VerdictCategory } from '../../types/simulation'
+import SynthesisText from './SynthesisText'
 
 const VERDICT_LABEL: Record<VerdictCategory, string> = {
   GENUINE_BELIEF_SHIFT: 'GENUINE SHIFT',
@@ -130,7 +131,7 @@ export default function StrategyCard({ outcome, strategyDisplayName, onViewTrans
           {/* Synthesis paragraph */}
           <div data-testid={`synthesis-${outcome.strategy_id}`} className="pt-4 border-t-2 border-[#0f0f0f]">
             <p className="text-xs font-mono font-bold text-[#0f0f0f] uppercase tracking-wider mb-2">Synthesis</p>
-            <p className="font-serif text-base text-[#0f0f0f] leading-relaxed">{synthesis_paragraph}</p>
+            <SynthesisText text={synthesis_paragraph} className="font-serif text-base text-[#0f0f0f] leading-relaxed" />
           </div>
 
           {/* Watch transcript CTA */}
