@@ -1,6 +1,7 @@
 import type { SimulationOutput, StrategyOutcome, VerdictCategory, ConversationTurn } from '../../types/simulation'
 import TrajectoryChart from './TrajectoryChart'
 import StrategyCard from './StrategyCard'
+import ConversationTimeline from './ConversationTimeline'
 import mechanisms from '../../data/cognitive_mechanisms.json'
 
 const CATEGORY_COLOR: Record<string, string> = {
@@ -105,6 +106,9 @@ export default function ComparisonReport({ simulation, onViewTranscript, onBackT
       </header>
 
       <div className="max-w-4xl mx-auto px-8 py-12 space-y-16">
+
+        {/* Conversation timeline — first visual on the report */}
+        <ConversationTimeline outcomes={outcomes} />
 
         {/* Insight synthesis */}
         <div data-testid="synthesis-card">
