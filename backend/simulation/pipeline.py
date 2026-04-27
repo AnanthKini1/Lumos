@@ -24,7 +24,7 @@ from datetime import datetime, timezone
 
 import anthropic
 
-from config import ANTHROPIC_API_KEY, API_MAX_RETRIES, DEFAULT_TURNS, MODEL_ID, OUTPUT_DIR
+from config import ANTHROPIC_API_KEY, API_MAX_RETRIES, DEFAULT_TURNS, MAX_TOKENS_SYNTHESIS, MODEL_ID, OUTPUT_DIR
 from agents.mechanism_agent import classify_mechanism
 from agents.strategy_judge import run_strategy_judge
 from data.loader import list_all, load_cognitive_mechanisms, load_persona, load_strategy, load_topic
@@ -43,7 +43,6 @@ from models import (
 from simulation.cooling_off import run_cooling_off
 from simulation.orchestrator import run_parallel_conversations
 
-_SYNTHESIS_MAX_TOKENS = 300
 _PIVOTAL_THRESHOLD = 1.0  # private stance delta >= this point flags as pivotal
 
 
@@ -168,7 +167,7 @@ async def _generate_overall_synthesis(
 
     msg = await client.messages.create(
         model=MODEL_ID,
-        max_tokens=_SYNTHESIS_MAX_TOKENS,
+        max_tokens=MAX_TOKENS_SYNTHESIS,
         messages=[{"role": "user", "content": user}],
     )
     return msg.content[0].text.strip()

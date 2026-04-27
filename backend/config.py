@@ -31,6 +31,7 @@ API_MAX_RETRIES: int = 6
 MAX_TOKENS_PERSONA: int = 1500
 MAX_TOKENS_INTERVIEWER: int = 250
 MAX_TOKENS_JUDGE: int = 300
+MAX_TOKENS_SYNTHESIS: int = 300
 
 # ---------------------------------------------------------------------------
 # Conversation settings

@@ -22,7 +22,7 @@ import anthropic
 
 _JUDGE_SEMAPHORE = asyncio.Semaphore(4)
 
-from config import ANTHROPIC_API_KEY, API_MAX_RETRIES, MAX_TOKENS_JUDGE, MODEL_ID
+from config import ANTHROPIC_API_KEY, API_MAX_RETRIES, MAX_TOKENS_JUDGE, MAX_TOKENS_SYNTHESIS, MODEL_ID
 from measurement.judge_agent import JudgeResult, run_judge_call
 from measurement.judge_prompts import (
     AMBIVALENCE_PRESENCE_PROMPT,
@@ -41,7 +41,6 @@ from models import (
     StandoutQuote,
 )
 
-_SYNTHESIS_MAX_TOKENS = 300
 _STANDOUT_COUNT = 3
 
 
@@ -152,7 +151,7 @@ async def _generate_synthesis(
 
     message = await client.messages.create(
         model=MODEL_ID,
-        max_tokens=_SYNTHESIS_MAX_TOKENS,
+        max_tokens=MAX_TOKENS_SYNTHESIS,
         system=system,
         messages=[{"role": "user", "content": user}],
     )

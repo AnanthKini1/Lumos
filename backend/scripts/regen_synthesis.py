@@ -38,11 +38,9 @@ from models import (
     SimulationOutput,
 )
 import anthropic
-from config import ANTHROPIC_API_KEY, API_MAX_RETRIES, MODEL_ID
+from config import ANTHROPIC_API_KEY, API_MAX_RETRIES, MAX_TOKENS_SYNTHESIS, MODEL_ID
 
 SCENARIOS_DIR = Path(__file__).parent.parent.parent / "frontend" / "src" / "data" / "scenarios"
-
-_SYNTHESIS_MAX_TOKENS = 300
 
 
 async def regen_overall_synthesis(persona_name: str, topic_name: str, outcomes: list[dict]) -> str:
@@ -66,7 +64,7 @@ async def regen_overall_synthesis(persona_name: str, topic_name: str, outcomes: 
     )
     msg = await client.messages.create(
         model=MODEL_ID,
-        max_tokens=_SYNTHESIS_MAX_TOKENS,
+        max_tokens=MAX_TOKENS_SYNTHESIS,
         messages=[{"role": "user", "content": user}],
     )
     return msg.content[0].text.strip()
